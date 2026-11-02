@@ -1,0 +1,35 @@
+{
+  "format": "hypernet.fresh_replay_selection.v12",
+  "created_utc": "2026-11-02T20:51:43.279952+00:00",
+  "selection_rule": "First two and last two sorted fresh TEST family IDs, both enrollments, both query rows",
+  "family_ids": [
+    19,
+    161,
+    4084,
+    4092
+  ],
+  "query_ids": [
+    "v12_test_f0019_e0_positive",
+    "v12_test_f0019_e0_negative",
+    "v12_test_f0019_e1_positive",
+    "v12_test_f0019_e1_negative",
+    "v12_test_f0161_e0_positive",
+    "v12_test_f0161_e0_negative",
+    "v12_test_f0161_e1_positive",
+    "v12_test_f0161_e1_negative",
+    "v12_test_f4084_e0_positive",
+    "v12_test_f4084_e0_negative",
+    "v12_test_f4084_e1_positive",
+    "v12_test_f4084_e1_negative",
+    "v12_test_f4092_e0_positive",
+    "v12_test_f4092_e0_negative",
+    "v12_test_f4092_e1_positive",
+    "v12_test_f4092_e1_negative"
+  ],
+  "cases_per_frozen_method": 16,
+  "apply_to_all_protocol_methods": true,
+  "fresh_images_existed_at_selection": false,
+  "fresh_plan_sha256": "1049f8c5f9e690649a23574ac5e293d7fa4319c2bfa0807b97a478403ac86396",
+  "fresh_data_freeze_sha256": "933b74d24212e0f027739e5d18e68caa8e729cadb4b90501ed9fcb93de20bd29",
+  "selector_sha256": "7314b81154e8948248740373ed48ce9db4334337cc0d308b5389eafaf8a28799"
+}

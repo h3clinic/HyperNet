@@ -24,3 +24,7 @@ experiments/*
 !experiments/audit_2d_grammar.py
 !experiments/analytic_detail_bypass.py
 viewer_assets/
+
+!data/SHAPES2D_FRESH_CONTRACT.json
+
+.asset_cache/

@@ -1,0 +1,1282 @@
+{
+  "completed": true,
+  "posthoc": true,
+  "no_model_execution": true,
+  "no_parameter_changes": true,
+  "scope": "Every primary native_patch TEST error after frozen evaluation; descriptive associations, not causal proof",
+  "results_sha256": "dc6611aa3ef0a70981308f006f54c8640ecdb29e046ba3afc10cb6c169cd36b8",
+  "score_log_sha256": "fa03b13ba964d00993f69bf0aae88cf3305c84f39dd5b97154197a8ac6697c53",
+  "manifest_sha256": "fbe10b0e4d46b1d35fe599a3578a860d128632125a3ac2ae7cf59aa3663d4dfe",
+  "threshold": 0.41308703128766816,
+  "error_count": 16,
+  "error_counts": {
+    "positive_rejected": 3,
+    "positive_localization_error": 0,
+    "negative_accepted": 13
+  },
+  "selected_roles": {
+    "candidate": 14,
+    "distractor": 2,
+    "unresolved": 0
+  },
+  "all_error_candidates_have_IoU50_proposal": true,
+  "errors_with_positive_pair_ranked_higher": 16,
+  "errors": [
+    {
+      "id": "v12_test_f0920_e1_positive",
+      "episode_id": "v12_test_f0920_e1",
+      "family_id": 920,
+      "enrolled_variant": 1,
+      "error": "positive_rejected",
+      "observed_failure": "Matching candidate scored below the frozen global cutoff",
+      "score": 0.4126667070173895,
+      "cutoff": 0.41308703128766816,
+      "score_minus_cutoff": -0.00042032427027866026,
+      "accepted": false,
+      "selected_role": "candidate",
+      "selected_object_family": 920,
+      "selected_object_iou": 1.0,
+      "candidate_proposal_iou": 1.0,
+      "candidate_proposal_score": 0.4126667070173895,
+      "candidate_evidence": {
+        "outline": 0.9433375597000122,
+        "detail": 0.5211118226134122,
+        "angle": 105.0,
+        "patch_count": 9,
+        "mean_patch_NCC": 0.8370523426193162,
+        "min_patch_NCC": 0.5665353148554017,
+        "patch_NCC": [
+          0.9241254060821916,
+          0.8043569325851616,
+          0.8489502596976205,
+          0.9044231706795246,
+          0.9439036391312725,
+          0.9403410461907363,
+          0.9168999749760727,
+          0.6839353393758636,
+          0.5665353148554017
+        ]
+      },
+      "selected_evidence": {
+        "outline": 0.9433375597000122,
+        "detail": 0.5211118226134122,
+        "angle": 105.0,
+        "patch_count": 9,
+        "mean_patch_NCC": 0.8370523426193162,
+        "min_patch_NCC": 0.5665353148554017,
+        "patch_NCC": [
+          0.9241254060821916,
+          0.8043569325851616,
+          0.8489502596976205,
+          0.9044231706795246,
+          0.9439036391312725,
+          0.9403410461907363,
+          0.9168999749760727,
+          0.6839353393758636,
+          0.5665353148554017
+        ]
+      },
+      "positive_score": 0.4126667070173895,
+      "negative_score": 0.29735766376014133,
+      "pair_positive_above_negative": true,
+      "pair_score_gap": 0.11530904325724817,
+      "support_path": "test/f0920/support_v1.rgb.png",
+      "query_path": "test/f0920/query_v1.rgb.png",
+      "support_bbox": [
+        10,
+        12,
+        88,
+        86
+      ],
+      "predicted_bbox": [
+        12,
+        161,
+        68,
+        224
+      ],
+      "annotated_candidate_bbox": [
+        12,
+        161,
+        68,
+        224
+      ]
+    },
+    {
+      "id": "v12_test_f3046_e0_positive",
+      "episode_id": "v12_test_f3046_e0",
+      "family_id": 3046,
+      "enrolled_variant": 0,
+      "error": "positive_rejected",
+      "observed_failure": "Matching candidate scored below the frozen global cutoff",
+      "score": 0.3604186647035432,
+      "cutoff": 0.41308703128766816,
+      "score_minus_cutoff": -0.05266836658412494,
+      "accepted": false,
+      "selected_role": "candidate",
+      "selected_object_family": 3046,
+      "selected_object_iou": 0.9694602272727273,
+      "candidate_proposal_iou": 0.9694602272727273,
+      "candidate_proposal_score": 0.3604186647035432,
+      "candidate_evidence": {
+        "outline": 0.8840136528015137,
+        "detail": 0.5901621925342279,
+        "angle": 97.0,
+        "patch_count": 10,
+        "mean_patch_NCC": 0.8681605306848045,
+        "min_patch_NCC": 0.5314024288810767,
+        "patch_NCC": [
+          0.9429420095533224,
+          0.8712050654208672,
+          0.9265874659877875,
+          0.8865018228398668,
+          0.8731855693793027,
+          0.9414566746989312,
+          0.8820584389698745,
+          0.9110168933602842,
+          0.5314024288810767,
+          0.9152489377567318
+        ]
+      },
+      "selected_evidence": {
+        "outline": 0.8840136528015137,
+        "detail": 0.5901621925342279,
+        "angle": 97.0,
+        "patch_count": 10,
+        "mean_patch_NCC": 0.8681605306848045,
+        "min_patch_NCC": 0.5314024288810767,
+        "patch_NCC": [
+          0.9429420095533224,
+          0.8712050654208672,
+          0.9265874659877875,
+          0.8865018228398668,
+          0.8731855693793027,
+          0.9414566746989312,
+          0.8820584389698745,
+          0.9110168933602842,
+          0.5314024288810767,
+          0.9152489377567318
+        ]
+      },
+      "positive_score": 0.3604186647035432,
+      "negative_score": 0.24804706136916602,
+      "pair_positive_above_negative": true,
+      "pair_score_gap": 0.11237160333437721,
+      "support_path": "test/f3046/support_v0.rgb.png",
+      "query_path": "test/f3046/query_v0.rgb.png",
+      "support_bbox": [
+        10,
+        9,
+        87,
+        86
+      ],
+      "predicted_bbox": [
+        98,
+        32,
+        164,
+        96
+      ],
+      "annotated_candidate_bbox": [
+        98,
+        32,
+        163,
+        95
+      ]
+    },
+    {
+      "id": "v12_test_f3046_e1_positive",
+      "episode_id": "v12_test_f3046_e1",
+      "family_id": 3046,
+      "enrolled_variant": 1,
+      "error": "positive_rejected",
+      "observed_failure": "Matching candidate scored below the frozen global cutoff",
+      "score": 0.3590285210244941,
+      "cutoff": 0.41308703128766816,
+      "score_minus_cutoff": -0.05405851026317404,
+      "accepted": false,
+      "selected_role": "candidate",
+      "selected_object_family": 3046,
+      "selected_object_iou": 0.9694602272727273,
+      "candidate_proposal_iou": 0.9694602272727273,
+      "candidate_proposal_score": 0.3590285210244941,
+      "candidate_evidence": {
+        "outline": 0.8840136528015137,
+        "detail": 0.5878859224019914,
+        "angle": 97.0,
+        "patch_count": 10,
+        "mean_patch_NCC": 0.8671944101434464,
+        "min_patch_NCC": 0.5314024288810767,
+        "patch_NCC": [
+          0.8712050654208672,
+          0.9410522552235216,
+          0.8834724846443776,
+          0.8923069935093279,
+          0.9018609712763218,
+          0.9553183171739675,
+          0.9215460195971655,
+          0.5314024288810767,
+          0.8969131531083484,
+          0.8768664125994899
+        ]
+      },
+      "selected_evidence": {
+        "outline": 0.8840136528015137,
+        "detail": 0.5878859224019914,
+        "angle": 97.0,
+        "patch_count": 10,
+        "mean_patch_NCC": 0.8671944101434464,
+        "min_patch_NCC": 0.5314024288810767,
+        "patch_NCC": [
+          0.8712050654208672,
+          0.9410522552235216,
+          0.8834724846443776,
+          0.8923069935093279,
+          0.9018609712763218,
+          0.9553183171739675,
+          0.9215460195971655,
+          0.5314024288810767,
+          0.8969131531083484,
+          0.8768664125994899
+        ]
+      },
+      "positive_score": 0.3590285210244941,
+      "negative_score": 0.25774152403669337,
+      "pair_positive_above_negative": true,
+      "pair_score_gap": 0.10128699698780075,
+      "support_path": "test/f3046/support_v1.rgb.png",
+      "query_path": "test/f3046/query_v1.rgb.png",
+      "support_bbox": [
+        10,
+        9,
+        87,
+        86
+      ],
+      "predicted_bbox": [
+        98,
+        32,
+        164,
+        96
+      ],
+      "annotated_candidate_bbox": [
+        98,
+        32,
+        163,
+        95
+      ]
+    },
+    {
+      "id": "v12_test_f0177_e1_negative",
+      "episode_id": "v12_test_f0177_e1",
+      "family_id": 177,
+      "enrolled_variant": 1,
+      "error": "negative_accepted",
+      "observed_failure": "Other-family distractor passed the frozen cutoff",
+      "score": 0.5459392328311115,
+      "cutoff": 0.41308703128766816,
+      "score_minus_cutoff": 0.1328522015434433,
+      "accepted": true,
+      "selected_role": "distractor",
+      "selected_object_family": 161,
+      "selected_object_iou": 0.9827586206896551,
+      "candidate_proposal_iou": 0.964250573958675,
+      "candidate_proposal_score": 0.2853650029382048,
+      "candidate_evidence": {
+        "outline": 0.9521651268005371,
+        "detail": 0.34717754278022855,
+        "angle": 199.0,
+        "patch_count": 9,
+        "mean_patch_NCC": 0.7355202551949086,
+        "min_patch_NCC": 0.5442944453101985,
+        "patch_NCC": [
+          0.9195053063570771,
+          0.7060539416276911,
+          0.6122401918353608,
+          0.7464489242847935,
+          0.7613757837788073,
+          0.8038695456198528,
+          0.7967020409591623,
+          0.7291921169812348,
+          0.5442944453101985
+        ]
+      },
+      "selected_evidence": {
+        "outline": 0.9354298114776611,
+        "detail": 0.7130163346981279,
+        "angle": 164.0,
+        "patch_count": 9,
+        "mean_patch_NCC": 0.9154372627461947,
+        "min_patch_NCC": 0.7891219972342615,
+        "patch_NCC": [
+          0.7891219972342615,
+          0.8937538128845649,
+          0.9703263894526047,
+          0.8871728394174638,
+          0.944337420319854,
+          0.9623594010023006,
+          0.8997631922597289,
+          0.9296753551863266,
+          0.9624249569586482
+        ]
+      },
+      "positive_score": 0.6285566752400493,
+      "negative_score": 0.5459392328311115,
+      "pair_positive_above_negative": true,
+      "pair_score_gap": 0.08261744240893787,
+      "support_path": "test/f0177/support_v1.rgb.png",
+      "query_path": "test/f0177/query_v0.rgb.png",
+      "support_bbox": [
+        11,
+        12,
+        84,
+        69
+      ],
+      "predicted_bbox": [
+        10,
+        170,
+        68,
+        220
+      ],
+      "annotated_candidate_bbox": [
+        186,
+        39,
+        247,
+        88
+      ]
+    },
+    {
+      "id": "v12_test_f0557_e1_negative",
+      "episode_id": "v12_test_f0557_e1",
+      "family_id": 557,
+      "enrolled_variant": 1,
+      "error": "negative_accepted",
+      "observed_failure": "Opposite-microstate candidate passed the frozen cutoff",
+      "score": 0.41749696659834523,
+      "cutoff": 0.41308703128766816,
+      "score_minus_cutoff": 0.004409935310677071,
+      "accepted": true,
+      "selected_role": "candidate",
+      "selected_object_family": 557,
+      "selected_object_iou": 1.0,
+      "candidate_proposal_iou": 1.0,
+      "candidate_proposal_score": 0.41749696659834523,
+      "candidate_evidence": {
+        "outline": 0.9640988707542419,
+        "detail": 0.48324461999530427,
+        "angle": 8.0,
+        "patch_count": 9,
+        "mean_patch_NCC": 0.8181919265201643,
+        "min_patch_NCC": 0.7029229916783827,
+        "patch_NCC": [
+          0.8354081243681257,
+          0.8402695049364972,
+          0.8508193999045064,
+          0.811946370225684,
+          0.7935039397294174,
+          0.8005038296774293,
+          0.9218530139946258,
+          0.7029229916783827,
+          0.8065001641668093
+        ]
+      },
+      "selected_evidence": {
+        "outline": 0.9640988707542419,
+        "detail": 0.48324461999530427,
+        "angle": 8.0,
+        "patch_count": 9,
+        "mean_patch_NCC": 0.8181919265201643,
+        "min_patch_NCC": 0.7029229916783827,
+        "patch_NCC": [
+          0.8354081243681257,
+          0.8402695049364972,
+          0.8508193999045064,
+          0.811946370225684,
+          0.7935039397294174,
+          0.8005038296774293,
+          0.9218530139946258,
+          0.7029229916783827,
+          0.8065001641668093
+        ]
+      },
+      "positive_score": 0.6051984572634691,
+      "negative_score": 0.41749696659834523,
+      "pair_positive_above_negative": true,
+      "pair_score_gap": 0.18770149066512387,
+      "support_path": "test/f0557/support_v1.rgb.png",
+      "query_path": "test/f0557/query_v0.rgb.png",
+      "support_bbox": [
+        26,
+        28,
+        85,
+        68
+      ],
+      "predicted_bbox": [
+        110,
+        46,
+        160,
+        82
+      ],
+      "annotated_candidate_bbox": [
+        110,
+        46,
+        160,
+        82
+      ]
+    },
+    {
+      "id": "v12_test_f0789_e0_negative",
+      "episode_id": "v12_test_f0789_e0",
+      "family_id": 789,
+      "enrolled_variant": 0,
+      "error": "negative_accepted",
+      "observed_failure": "Opposite-microstate candidate passed the frozen cutoff",
+      "score": 0.4407140975771576,
+      "cutoff": 0.41308703128766816,
+      "score_minus_cutoff": 0.027627066289489466,
+      "accepted": true,
+      "selected_role": "candidate",
+      "selected_object_family": 789,
+      "selected_object_iou": 0.9827586206896551,
+      "candidate_proposal_iou": 0.9827586206896551,
+      "candidate_proposal_score": 0.4407140975771576,
+      "candidate_evidence": {
+        "outline": 0.9236888289451599,
+        "detail": 0.6054163949885113,
+        "angle": 336.0,
+        "patch_count": 8,
+        "mean_patch_NCC": 0.874540299622099,
+        "min_patch_NCC": 0.7714322267470658,
+        "patch_NCC": [
+          0.7714322267470658,
+          0.9006362259045694,
+          0.8681061931135226,
+          0.9075052351074626,
+          0.8677168121578541,
+          0.8716743216634919,
+          0.8650499076909632,
+          0.9442014745918633
+        ]
+      },
+      "selected_evidence": {
+        "outline": 0.9236888289451599,
+        "detail": 0.6054163949885113,
+        "angle": 336.0,
+        "patch_count": 8,
+        "mean_patch_NCC": 0.874540299622099,
+        "min_patch_NCC": 0.7714322267470658,
+        "patch_NCC": [
+          0.7714322267470658,
+          0.9006362259045694,
+          0.8681061931135226,
+          0.9075052351074626,
+          0.8677168121578541,
+          0.8716743216634919,
+          0.8650499076909632,
+          0.9442014745918633
+        ]
+      },
+      "positive_score": 0.5182358016803886,
+      "negative_score": 0.4407140975771576,
+      "pair_positive_above_negative": true,
+      "pair_score_gap": 0.077521704103231,
+      "support_path": "test/f0789/support_v0.rgb.png",
+      "query_path": "test/f0789/query_v1.rgb.png",
+      "support_bbox": [
+        11,
+        9,
+        86,
+        85
+      ],
+      "predicted_bbox": [
+        181,
+        32,
+        244,
+        90
+      ],
+      "annotated_candidate_bbox": [
+        181,
+        33,
+        244,
+        90
+      ]
+    },
+    {
+      "id": "v12_test_f0789_e1_negative",
+      "episode_id": "v12_test_f0789_e1",
+      "family_id": 789,
+      "enrolled_variant": 1,
+      "error": "negative_accepted",
+      "observed_failure": "Opposite-microstate candidate passed the frozen cutoff",
+      "score": 0.45965352230597817,
+      "cutoff": 0.41308703128766816,
+      "score_minus_cutoff": 0.04656649101831001,
+      "accepted": true,
+      "selected_role": "candidate",
+      "selected_object_family": 789,
+      "selected_object_iou": 0.9827586206896551,
+      "candidate_proposal_iou": 0.9827586206896551,
+      "candidate_proposal_score": 0.45965352230597817,
+      "candidate_evidence": {
+        "outline": 0.9236888289451599,
+        "detail": 0.6314338024313747,
+        "angle": 336.0,
+        "patch_count": 9,
+        "mean_patch_NCC": 0.8850594578483896,
+        "min_patch_NCC": 0.7714322267470658,
+        "patch_NCC": [
+          0.7714322267470658,
+          0.8979775515016098,
+          0.877834562349778,
+          0.9359624631842532,
+          0.8728353717773345,
+          0.8386318339674823,
+          0.9323673686876304,
+          0.9043136333133893,
+          0.9341801091069617
+        ]
+      },
+      "selected_evidence": {
+        "outline": 0.9236888289451599,
+        "detail": 0.6314338024313747,
+        "angle": 336.0,
+        "patch_count": 9,
+        "mean_patch_NCC": 0.8850594578483896,
+        "min_patch_NCC": 0.7714322267470658,
+        "patch_NCC": [
+          0.7714322267470658,
+          0.8979775515016098,
+          0.877834562349778,
+          0.9359624631842532,
+          0.8728353717773345,
+          0.8386318339674823,
+          0.9323673686876304,
+          0.9043136333133893,
+          0.9341801091069617
+        ]
+      },
+      "positive_score": 0.5269208325933765,
+      "negative_score": 0.45965352230597817,
+      "pair_positive_above_negative": true,
+      "pair_score_gap": 0.06726731028739835,
+      "support_path": "test/f0789/support_v1.rgb.png",
+      "query_path": "test/f0789/query_v0.rgb.png",
+      "support_bbox": [
+        11,
+        9,
+        86,
+        85
+      ],
+      "predicted_bbox": [
+        181,
+        32,
+        244,
+        90
+      ],
+      "annotated_candidate_bbox": [
+        181,
+        33,
+        244,
+        90
+      ]
+    },
+    {
+      "id": "v12_test_f0846_e1_negative",
+      "episode_id": "v12_test_f0846_e1",
+      "family_id": 846,
+      "enrolled_variant": 1,
+      "error": "negative_accepted",
+      "observed_failure": "Opposite-microstate candidate passed the frozen cutoff",
+      "score": 0.4140538350307532,
+      "cutoff": 0.41308703128766816,
+      "score_minus_cutoff": 0.000966803743085054,
+      "accepted": true,
+      "selected_role": "candidate",
+      "selected_object_family": 846,
+      "selected_object_iou": 1.0,
+      "candidate_proposal_iou": 1.0,
+      "candidate_proposal_score": 0.4140538350307532,
+      "candidate_evidence": {
+        "outline": 0.9552170038223267,
+        "detail": 0.4973345519530487,
+        "angle": 7.0,
+        "patch_count": 9,
+        "mean_patch_NCC": 0.8253769158545491,
+        "min_patch_NCC": 0.7551218477469229,
+        "patch_NCC": [
+          0.7980103191518703,
+          0.8235344427546402,
+          0.8194771043254448,
+          0.8050635005176124,
+          0.7551218477469229,
+          0.9058439168594015,
+          0.8498138943518616,
+          0.7974093522777226,
+          0.8741178647054652
+        ]
+      },
+      "selected_evidence": {
+        "outline": 0.9552170038223267,
+        "detail": 0.4973345519530487,
+        "angle": 7.0,
+        "patch_count": 9,
+        "mean_patch_NCC": 0.8253769158545491,
+        "min_patch_NCC": 0.7551218477469229,
+        "patch_NCC": [
+          0.7980103191518703,
+          0.8235344427546402,
+          0.8194771043254448,
+          0.8050635005176124,
+          0.7551218477469229,
+          0.9058439168594015,
+          0.8498138943518616,
+          0.7974093522777226,
+          0.8741178647054652
+        ]
+      },
+      "positive_score": 0.622502265687168,
+      "negative_score": 0.4140538350307532,
+      "pair_positive_above_negative": true,
+      "pair_score_gap": 0.20844843065641483,
+      "support_path": "test/f0846/support_v1.rgb.png",
+      "query_path": "test/f0846/query_v0.rgb.png",
+      "support_bbox": [
+        11,
+        13,
+        86,
+        86
+      ],
+      "predicted_bbox": [
+        180,
+        168,
+        242,
+        226
+      ],
+      "annotated_candidate_bbox": [
+        180,
+        168,
+        242,
+        226
+      ]
+    },
+    {
+      "id": "v12_test_f0881_e0_negative",
+      "episode_id": "v12_test_f0881_e0",
+      "family_id": 881,
+      "enrolled_variant": 0,
+      "error": "negative_accepted",
+      "observed_failure": "Opposite-microstate candidate passed the frozen cutoff",
+      "score": 0.4410465472543608,
+      "cutoff": 0.41308703128766816,
+      "score_minus_cutoff": 0.02795951596669266,
+      "accepted": true,
+      "selected_role": "candidate",
+      "selected_object_family": 881,
+      "selected_object_iou": 0.9666666666666667,
+      "candidate_proposal_iou": 0.9666666666666667,
+      "candidate_proposal_score": 0.4410465472543608,
+      "candidate_evidence": {
+        "outline": 0.9517990946769714,
+        "detail": 0.5374069480277267,
+        "angle": 51.0,
+        "patch_count": 9,
+        "mean_patch_NCC": 0.8447500865210693,
+        "min_patch_NCC": 0.7331296984756894,
+        "patch_NCC": [
+          0.8874359302249453,
+          0.7331296984756894,
+          0.8846968372641943,
+          0.9164766873270201,
+          0.9312970100809616,
+          0.817437708766179,
+          0.767023786722593,
+          0.847079649700858,
+          0.8181734701271833
+        ]
+      },
+      "selected_evidence": {
+        "outline": 0.9517990946769714,
+        "detail": 0.5374069480277267,
+        "angle": 51.0,
+        "patch_count": 9,
+        "mean_patch_NCC": 0.8447500865210693,
+        "min_patch_NCC": 0.7331296984756894,
+        "patch_NCC": [
+          0.8874359302249453,
+          0.7331296984756894,
+          0.8846968372641943,
+          0.9164766873270201,
+          0.9312970100809616,
+          0.817437708766179,
+          0.767023786722593,
+          0.847079649700858,
+          0.8181734701271833
+        ]
+      },
+      "positive_score": 0.6259665075248048,
+      "negative_score": 0.4410465472543608,
+      "pair_positive_above_negative": true,
+      "pair_score_gap": 0.18491996027044394,
+      "support_path": "test/f0881/support_v0.rgb.png",
+      "query_path": "test/f0881/query_v1.rgb.png",
+      "support_bbox": [
+        12,
+        10,
+        86,
+        85
+      ],
+      "predicted_bbox": [
+        183,
+        34,
+        242,
+        94
+      ],
+      "annotated_candidate_bbox": [
+        183,
+        35,
+        242,
+        93
+      ]
+    },
+    {
+      "id": "v12_test_f0881_e1_negative",
+      "episode_id": "v12_test_f0881_e1",
+      "family_id": 881,
+      "enrolled_variant": 1,
+      "error": "negative_accepted",
+      "observed_failure": "Opposite-microstate candidate passed the frozen cutoff",
+      "score": 0.4164790517596202,
+      "cutoff": 0.41308703128766816,
+      "score_minus_cutoff": 0.0033920204719520286,
+      "accepted": true,
+      "selected_role": "candidate",
+      "selected_object_family": 881,
+      "selected_object_iou": 0.9666666666666667,
+      "candidate_proposal_iou": 0.9666666666666667,
+      "candidate_proposal_score": 0.4164790517596202,
+      "candidate_evidence": {
+        "outline": 0.9517990946769714,
+        "detail": 0.5074719154178938,
+        "angle": 51.0,
+        "patch_count": 9,
+        "mean_patch_NCC": 0.8304215228311251,
+        "min_patch_NCC": 0.6885137250535706,
+        "patch_NCC": [
+          0.8874359302249453,
+          0.8090380403061469,
+          0.8261490864818423,
+          0.8472765923419016,
+          0.9050169066105443,
+          0.8730090565532305,
+          0.6885137250535706,
+          0.8588183065482924,
+          0.7785360613596524
+        ]
+      },
+      "selected_evidence": {
+        "outline": 0.9517990946769714,
+        "detail": 0.5074719154178938,
+        "angle": 51.0,
+        "patch_count": 9,
+        "mean_patch_NCC": 0.8304215228311251,
+        "min_patch_NCC": 0.6885137250535706,
+        "patch_NCC": [
+          0.8874359302249453,
+          0.8090380403061469,
+          0.8261490864818423,
+          0.8472765923419016,
+          0.9050169066105443,
+          0.8730090565532305,
+          0.6885137250535706,
+          0.8588183065482924,
+          0.7785360613596524
+        ]
+      },
+      "positive_score": 0.6033380554504885,
+      "negative_score": 0.4164790517596202,
+      "pair_positive_above_negative": true,
+      "pair_score_gap": 0.18685900369086827,
+      "support_path": "test/f0881/support_v1.rgb.png",
+      "query_path": "test/f0881/query_v0.rgb.png",
+      "support_bbox": [
+        12,
+        10,
+        86,
+        85
+      ],
+      "predicted_bbox": [
+        183,
+        34,
+        242,
+        94
+      ],
+      "annotated_candidate_bbox": [
+        183,
+        35,
+        242,
+        93
+      ]
+    },
+    {
+      "id": "v12_test_f1161_e0_negative",
+      "episode_id": "v12_test_f1161_e0",
+      "family_id": 1161,
+      "enrolled_variant": 0,
+      "error": "negative_accepted",
+      "observed_failure": "Opposite-microstate candidate passed the frozen cutoff",
+      "score": 0.41742043993906214,
+      "cutoff": 0.41308703128766816,
+      "score_minus_cutoff": 0.004333408651393977,
+      "accepted": true,
+      "selected_role": "candidate",
+      "selected_object_family": 1161,
+      "selected_object_iou": 0.9803921568627451,
+      "candidate_proposal_iou": 0.9803921568627451,
+      "candidate_proposal_score": 0.41742043993906214,
+      "candidate_evidence": {
+        "outline": 0.9423875212669373,
+        "detail": 0.5292435874057009,
+        "angle": 322.0,
+        "patch_count": 8,
+        "mean_patch_NCC": 0.8409233786447714,
+        "min_patch_NCC": 0.7085057437579578,
+        "patch_NCC": [
+          0.8695419926079564,
+          0.8690574965618343,
+          0.888148388132948,
+          0.7085057437579578,
+          0.8640742177573275,
+          0.8605350518733692,
+          0.8751775941194467,
+          0.7923465443473312
+        ]
+      },
+      "selected_evidence": {
+        "outline": 0.9423875212669373,
+        "detail": 0.5292435874057009,
+        "angle": 322.0,
+        "patch_count": 8,
+        "mean_patch_NCC": 0.8409233786447714,
+        "min_patch_NCC": 0.7085057437579578,
+        "patch_NCC": [
+          0.8695419926079564,
+          0.8690574965618343,
+          0.888148388132948,
+          0.7085057437579578,
+          0.8640742177573275,
+          0.8605350518733692,
+          0.8751775941194467,
+          0.7923465443473312
+        ]
+      },
+      "positive_score": 0.5841315170827036,
+      "negative_score": 0.41742043993906214,
+      "pair_positive_above_negative": true,
+      "pair_score_gap": 0.16671107714364147,
+      "support_path": "test/f1161/support_v0.rgb.png",
+      "query_path": "test/f1161/query_v1.rgb.png",
+      "support_bbox": [
+        13,
+        10,
+        87,
+        71
+      ],
+      "predicted_bbox": [
+        24,
+        33,
+        74,
+        98
+      ],
+      "annotated_candidate_bbox": [
+        24,
+        33,
+        75,
+        98
+      ]
+    },
+    {
+      "id": "v12_test_f2189_e0_negative",
+      "episode_id": "v12_test_f2189_e0",
+      "family_id": 2189,
+      "enrolled_variant": 0,
+      "error": "negative_accepted",
+      "observed_failure": "Opposite-microstate candidate passed the frozen cutoff",
+      "score": 0.5223687049820748,
+      "cutoff": 0.41308703128766816,
+      "score_minus_cutoff": 0.10928167369440661,
+      "accepted": true,
+      "selected_role": "candidate",
+      "selected_object_family": 2189,
+      "selected_object_iou": 0.9791666666666666,
+      "candidate_proposal_iou": 0.9791666666666666,
+      "candidate_proposal_score": 0.5223687049820748,
+      "candidate_evidence": {
+        "outline": 0.9475904703140259,
+        "detail": 0.6478797599761416,
+        "angle": 47.0,
+        "patch_count": 8,
+        "mean_patch_NCC": 0.8914874611400487,
+        "min_patch_NCC": 0.8160199298541609,
+        "patch_NCC": [
+          0.8830778579717455,
+          0.8822695749178361,
+          0.9174640783964648,
+          0.9215211043853474,
+          0.9198621327320302,
+          0.8932418975022592,
+          0.8160199298541609,
+          0.8984431133605452
+        ]
+      },
+      "selected_evidence": {
+        "outline": 0.9475904703140259,
+        "detail": 0.6478797599761416,
+        "angle": 47.0,
+        "patch_count": 8,
+        "mean_patch_NCC": 0.8914874611400487,
+        "min_patch_NCC": 0.8160199298541609,
+        "patch_NCC": [
+          0.8830778579717455,
+          0.8822695749178361,
+          0.9174640783964648,
+          0.9215211043853474,
+          0.9198621327320302,
+          0.8932418975022592,
+          0.8160199298541609,
+          0.8984431133605452
+        ]
+      },
+      "positive_score": 0.620441489852722,
+      "negative_score": 0.5223687049820748,
+      "pair_positive_above_negative": true,
+      "pair_score_gap": 0.09807278487064719,
+      "support_path": "test/f2189/support_v0.rgb.png",
+      "query_path": "test/f2189/query_v1.rgb.png",
+      "support_bbox": [
+        11,
+        12,
+        86,
+        67
+      ],
+      "predicted_bbox": [
+        96,
+        46,
+        156,
+        94
+      ],
+      "annotated_candidate_bbox": [
+        96,
+        47,
+        156,
+        94
+      ]
+    },
+    {
+      "id": "v12_test_f2189_e1_negative",
+      "episode_id": "v12_test_f2189_e1",
+      "family_id": 2189,
+      "enrolled_variant": 1,
+      "error": "negative_accepted",
+      "observed_failure": "Opposite-microstate candidate passed the frozen cutoff",
+      "score": 0.5466495698237899,
+      "cutoff": 0.41308703128766816,
+      "score_minus_cutoff": 0.1335625385361217,
+      "accepted": true,
+      "selected_role": "candidate",
+      "selected_object_family": 2189,
+      "selected_object_iou": 0.9791666666666666,
+      "candidate_proposal_iou": 0.9791666666666666,
+      "candidate_proposal_score": 0.5466495698237899,
+      "candidate_evidence": {
+        "outline": 0.9475904703140259,
+        "detail": 0.6779946591567947,
+        "angle": 47.0,
+        "patch_count": 8,
+        "mean_patch_NCC": 0.902846032894343,
+        "min_patch_NCC": 0.8751797751795514,
+        "patch_NCC": [
+          0.8874857120098606,
+          0.8964037621099852,
+          0.925323247833324,
+          0.9328679929028808,
+          0.9047778275510328,
+          0.9103277494197151,
+          0.8904021961483937,
+          0.8751797751795514
+        ]
+      },
+      "selected_evidence": {
+        "outline": 0.9475904703140259,
+        "detail": 0.6779946591567947,
+        "angle": 47.0,
+        "patch_count": 8,
+        "mean_patch_NCC": 0.902846032894343,
+        "min_patch_NCC": 0.8751797751795514,
+        "patch_NCC": [
+          0.8874857120098606,
+          0.8964037621099852,
+          0.925323247833324,
+          0.9328679929028808,
+          0.9047778275510328,
+          0.9103277494197151,
+          0.8904021961483937,
+          0.8751797751795514
+        ]
+      },
+      "positive_score": 0.6122200846151534,
+      "negative_score": 0.5466495698237899,
+      "pair_positive_above_negative": true,
+      "pair_score_gap": 0.06557051479136355,
+      "support_path": "test/f2189/support_v1.rgb.png",
+      "query_path": "test/f2189/query_v0.rgb.png",
+      "support_bbox": [
+        11,
+        12,
+        86,
+        67
+      ],
+      "predicted_bbox": [
+        96,
+        46,
+        156,
+        94
+      ],
+      "annotated_candidate_bbox": [
+        96,
+        47,
+        156,
+        94
+      ]
+    },
+    {
+      "id": "v12_test_f2421_e0_negative",
+      "episode_id": "v12_test_f2421_e0",
+      "family_id": 2421,
+      "enrolled_variant": 0,
+      "error": "negative_accepted",
+      "observed_failure": "Opposite-microstate candidate passed the frozen cutoff",
+      "score": 0.44520200597420756,
+      "cutoff": 0.41308703128766816,
+      "score_minus_cutoff": 0.0321149746865394,
+      "accepted": true,
+      "selected_role": "candidate",
+      "selected_object_family": 2421,
+      "selected_object_iou": 0.9540566959921799,
+      "candidate_proposal_iou": 0.9540566959921799,
+      "candidate_proposal_score": 0.44520200597420756,
+      "candidate_evidence": {
+        "outline": 0.9103469252586365,
+        "detail": 0.6482303991977195,
+        "angle": 212.0,
+        "patch_count": 7,
+        "mean_patch_NCC": 0.891622727123287,
+        "min_patch_NCC": 0.8427873003974986,
+        "patch_NCC": [
+          0.8427873003974986,
+          0.8721029259283606,
+          0.9093140702542939,
+          0.8935236518107949,
+          0.9136529929268326,
+          0.8851664281910904,
+          0.9248117203541394
+        ]
+      },
+      "selected_evidence": {
+        "outline": 0.9103469252586365,
+        "detail": 0.6482303991977195,
+        "angle": 212.0,
+        "patch_count": 7,
+        "mean_patch_NCC": 0.891622727123287,
+        "min_patch_NCC": 0.8427873003974986,
+        "patch_NCC": [
+          0.8427873003974986,
+          0.8721029259283606,
+          0.9093140702542939,
+          0.8935236518107949,
+          0.9136529929268326,
+          0.8851664281910904,
+          0.9248117203541394
+        ]
+      },
+      "positive_score": 0.5268444922702443,
+      "negative_score": 0.44520200597420756,
+      "pair_positive_above_negative": true,
+      "pair_score_gap": 0.08164248629603676,
+      "support_path": "test/f2421/support_v0.rgb.png",
+      "query_path": "test/f2421/query_v1.rgb.png",
+      "support_bbox": [
+        11,
+        10,
+        87,
+        84
+      ],
+      "predicted_bbox": [
+        96,
+        160,
+        162,
+        222
+      ],
+      "annotated_candidate_bbox": [
+        97,
+        161,
+        161,
+        222
+      ]
+    },
+    {
+      "id": "v12_test_f2421_e1_negative",
+      "episode_id": "v12_test_f2421_e1",
+      "family_id": 2421,
+      "enrolled_variant": 1,
+      "error": "negative_accepted",
+      "observed_failure": "Opposite-microstate candidate passed the frozen cutoff",
+      "score": 0.4308151138218965,
+      "cutoff": 0.41308703128766816,
+      "score_minus_cutoff": 0.017728082534228362,
+      "accepted": true,
+      "selected_role": "candidate",
+      "selected_object_family": 2421,
+      "selected_object_iou": 0.9540566959921799,
+      "candidate_proposal_iou": 0.9540566959921799,
+      "candidate_proposal_score": 0.4308151138218965,
+      "candidate_evidence": {
+        "outline": 0.9103469252586365,
+        "detail": 0.6272825581773279,
+        "angle": 212.0,
+        "patch_count": 8,
+        "mean_patch_NCC": 0.8834104527846602,
+        "min_patch_NCC": 0.8158920379358503,
+        "patch_NCC": [
+          0.8600966753015936,
+          0.883654822129863,
+          0.9255153563557055,
+          0.871254459202026,
+          0.8158920379358503,
+          0.898284252292361,
+          0.9116749674175412,
+          0.900911051642342
+        ]
+      },
+      "selected_evidence": {
+        "outline": 0.9103469252586365,
+        "detail": 0.6272825581773279,
+        "angle": 212.0,
+        "patch_count": 8,
+        "mean_patch_NCC": 0.8834104527846602,
+        "min_patch_NCC": 0.8158920379358503,
+        "patch_NCC": [
+          0.8600966753015936,
+          0.883654822129863,
+          0.9255153563557055,
+          0.871254459202026,
+          0.8158920379358503,
+          0.898284252292361,
+          0.9116749674175412,
+          0.900911051642342
+        ]
+      },
+      "positive_score": 0.5409438970598586,
+      "negative_score": 0.4308151138218965,
+      "pair_positive_above_negative": true,
+      "pair_score_gap": 0.11012878323796205,
+      "support_path": "test/f2421/support_v1.rgb.png",
+      "query_path": "test/f2421/query_v0.rgb.png",
+      "support_bbox": [
+        11,
+        10,
+        87,
+        84
+      ],
+      "predicted_bbox": [
+        96,
+        160,
+        162,
+        222
+      ],
+      "annotated_candidate_bbox": [
+        97,
+        161,
+        161,
+        222
+      ]
+    },
+    {
+      "id": "v12_test_f4092_e1_negative",
+      "episode_id": "v12_test_f4092_e1",
+      "family_id": 4092,
+      "enrolled_variant": 1,
+      "error": "negative_accepted",
+      "observed_failure": "Other-family distractor passed the frozen cutoff",
+      "score": 0.4430617961493598,
+      "cutoff": 0.41308703128766816,
+      "score_minus_cutoff": 0.02997476486169165,
+      "accepted": true,
+      "selected_role": "distractor",
+      "selected_object_family": 4084,
+      "selected_object_iou": 0.95361328125,
+      "candidate_proposal_iou": 1.0,
+      "candidate_proposal_score": 0.30711264822403067,
+      "candidate_evidence": {
+        "outline": 0.9413308501243591,
+        "detail": 0.3911366708210486,
+        "angle": 34.0,
+        "patch_count": 7,
+        "mean_patch_NCC": 0.7653254404173896,
+        "min_patch_NCC": 0.6950822471664406,
+        "patch_NCC": [
+          0.7345774636985409,
+          0.8608481544406792,
+          0.7109346236458505,
+          0.7541934186133611,
+          0.704936811482917,
+          0.6950822471664406,
+          0.8967053638739377
+        ]
+      },
+      "selected_evidence": {
+        "outline": 0.8997635841369629,
+        "detail": 0.6760061629836174,
+        "angle": 230.0,
+        "patch_count": 7,
+        "mean_patch_NCC": 0.902111728464735,
+        "min_patch_NCC": 0.7647184024486723,
+        "patch_NCC": [
+          0.8999841396787306,
+          0.8921032845737071,
+          0.9175218830448171,
+          0.7647184024486723,
+          0.9265498908750308,
+          0.9618408797700012,
+          0.9520636188621853
+        ]
+      },
+      "positive_score": 0.5238262201672765,
+      "negative_score": 0.4430617961493598,
+      "pair_positive_above_negative": true,
+      "pair_score_gap": 0.08076442401791672,
+      "support_path": "test/f4092/support_v1.rgb.png",
+      "query_path": "test/f4092/query_v0.rgb.png",
+      "support_bbox": [
+        9,
+        9,
+        88,
+        85
+      ],
+      "predicted_bbox": [
+        12,
+        34,
+        76,
+        98
+      ],
+      "annotated_candidate_bbox": [
+        182,
+        34,
+        244,
+        96
+      ]
+    }
+  ],
+  "limitations": [
+    "Case descriptions use annotations only after evaluation; these are not inference features.",
+    "High or low local correlations describe remaining ambiguity; they do not establish its unique cause.",
+    "No threshold, patch selector, alignment, or model was changed after viewing these errors."
+  ],
+  "contact_sheet_sha256": "f79b58496f77528c6070252c2b61c10b23bddca4d0138b028f0e05e987b66b4d"
+}

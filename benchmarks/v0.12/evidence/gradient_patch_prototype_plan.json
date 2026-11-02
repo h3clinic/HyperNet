@@ -1,0 +1,113 @@
+{
+  "created_utc": "2026-11-02T20:50:12.446794+00:00",
+  "sources": {
+    "experiments/prototype_gradient_patch_matcher.py": "4fb93fc0dc549685a1c2673d67ef9624ced5093fbd4200fdf310e6ab26773175",
+    "hypernet/native_detail.py": "0ee79b0209f7f5b76c9dd6f5e2f274d06dc474d5485c741336ec18bf84dbc457",
+    "hypernet/one_shot_detector.py": "000f52fbc239fd4675e05aaa70f85dc330d6494aa286bf842c2a649c3e3d99a0",
+    "previous_v11/checkpoints/detector_micro_aware.pt": "15c64b81747f3ebec224ef19621793c2d24ed9dd6f93de25c6ad5f7c5c04d49a",
+    "previous_v11/data/shapes2d_v11/manifest.json": "515a46197650689e922dd00a63e8f08ce14a285f43142c1c0c93733b661b2d27"
+  },
+  "selected_train_families": [
+    20,
+    158,
+    315,
+    189,
+    205,
+    228,
+    60,
+    127,
+    961,
+    833,
+    688,
+    643,
+    724,
+    665,
+    880,
+    797,
+    1336,
+    1052,
+    1474,
+    1187,
+    1508,
+    1460,
+    1209,
+    1102,
+    1861,
+    1545,
+    2043,
+    1718,
+    1754,
+    2002,
+    1756,
+    1900,
+    2464,
+    2097,
+    2266,
+    2271,
+    2243,
+    2103,
+    2427,
+    2334,
+    2751,
+    3025,
+    2983,
+    2784,
+    2680,
+    2719,
+    2683,
+    2636,
+    3290,
+    3224,
+    3505,
+    3375,
+    3238,
+    3212,
+    3537,
+    3460,
+    3606,
+    4081,
+    3657,
+    3833,
+    3998,
+    3621,
+    3925,
+    3890
+  ],
+  "configuration": {
+    "patch_side": 7,
+    "max_patches": 12,
+    "suppression_radius": 5,
+    "query_pixel_translations": [
+      [
+        0,
+        0
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "selection": "Reference interior Sobel-gradient peaks; filled-mask distance>3; no hole enumeration",
+    "detail": "exp(-8*mean((1-local_NCC)/2)); equal patch weights",
+    "outline_weight": "outline^4"
+  },
+  "query_proposals": "Exact frozen v11 micro_aware foreground-CNN proposals, no query annotation",
+  "excluded": [
+    "v11 DEV",
+    "v11 TEST",
+    "all fresh v12 data"
+  ],
+  "purpose": "TRAIN-only fixed prototype comparison; not heldout accuracy"
+}

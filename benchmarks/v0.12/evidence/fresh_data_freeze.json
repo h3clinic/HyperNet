@@ -1,0 +1,36 @@
+{
+  "format": "hypernet.shapes2d.fresh_data_freeze.v12",
+  "created_utc": "2026-11-02T20:48:38.554233+00:00",
+  "plan": {
+    "path": "data/shapes2d_fresh_v12/plan.json",
+    "sha256": "1049f8c5f9e690649a23574ac5e293d7fa4319c2bfa0807b97a478403ac86396"
+  },
+  "behavior_files": {
+    "hypernet/mathematical_shapes2d.py": "1f9c35619a84ba65e761fcce4f38df9b5ee7a7220a192555b355236d7a4b77a1",
+    "scripts/prepare_fresh_2d_v12.py": "1a59820f29cf04f12712e00b8aa2f567a9b131ba77a6ee8aff841d55e2392aa1",
+    "data/SHAPES2D_FRESH_CONTRACT.json": "3296e46a278def761aa1be960bb798f7e43005d4e7507ba2bbf21a3122f2a8e1"
+  },
+  "workers": 6,
+  "prior_evidence_files": {
+    "previous_v11/data/shapes2d_v11/plan.json": "850c2b54211fb0329c8f53be5e5b8603282cfc8a660b326e23d36d989038603b",
+    "previous_v11/data/shapes2d_v11/manifest.json": "515a46197650689e922dd00a63e8f08ce14a285f43142c1c0c93733b661b2d27",
+    "previous_v11/assets/grammar_preview/manifest.json": "1e74a0cfe915bc2d2c84a1a0fa8c98901c052a3e10b5a3b22041fedb480722da",
+    "previous_v11/tests/test_2d_dataset.py": "4584ce2bb530c8857806ec3f5f7167e792abb0eb4abf181fd33afdbc81e20775",
+    "previous_v11/experiments/shapes2d_evidence_bundle.json": "d8b0c02679fa28f1043b9d55d250f6196ede362c9d86d92145353fe8122034ed",
+    "data/shapes2d_fresh_v12/prior_rgb_inventory.json": "fd601505bb81f10680066bb6cd82feb58dee76ac8d0370c78d6282365c700a86"
+  },
+  "renderer_validation": {
+    "path": "previous_v11/experiments/canonical_2d_grammar_audit.json",
+    "sha256": "62fcae803307da29d65c735b86c865195a0b0858a741b1342c0b18af632c6f75"
+  },
+  "generation_started_before_freeze": false,
+  "model_scores_used_for_selection": false,
+  "natural_images": 0,
+  "external_assets": 0,
+  "external_pretrained_weights": false,
+  "runtime": {
+    "python": "3.12.10",
+    "numpy": "2.5.3",
+    "pillow": "12.3.0"
+  }
+}

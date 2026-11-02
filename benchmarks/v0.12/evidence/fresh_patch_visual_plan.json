@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-11-02T21:05:16.905339+00:00",
+  "protocol_sha256": "09e9b228afaf05e6c0d53e63852d2881e74860940b28c826ac8226aa5610a87b",
+  "renderer_source_sha256": "9cf45db005262d877860cb55445f0df030b70ecdc2a11a45a77a4b6360838b0d",
+  "selection": "First sorted TEST family (19), enrolled_variant0, positive and paired-negative query; first4 selected reference patches",
+  "family_id": 19,
+  "enrolled_variant": 0,
+  "patch_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "outcomes_used_for_selection": false,
+  "fresh_images_read_at_declaration": 0,
+  "scoring_complete_at_declaration": false,
+  "outputs": [
+    "assets/fresh_patch_comparison.png",
+    "experiments/fresh_patch_visual_audit.json"
+  ]
+}

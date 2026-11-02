@@ -1,0 +1,121 @@
+{
+  "source_diagnosis_sha256": "08674b8c2484361de08ef87fafd48ea256bfd5f21ef59eb6a2e710f8a13373a6",
+  "scope": "Descriptive summaries of the same64 TRAIN families; no new image/model evaluation",
+  "candidate_ground_truth_regions_for_analysis_only": true,
+  "stages": {
+    "rgb_roi96": {
+      "positive_mean": 0.8568545711752196,
+      "negative_mean": 0.8564529894800904,
+      "pair_mean_score_standard_deviation": 0.05014392338235648,
+      "mean_signed_pair_margin": 0.00040158169512915804,
+      "mean_absolute_pair_margin": 0.0012360562566385595,
+      "candidate_only_AUROC": 0.500244140625,
+      "paired_ranking": 0.453125,
+      "pair_mean_score_sd_over_mean_abs_margin": 40.56767085886713
+    },
+    "rgb_roi24": {
+      "positive_mean": 0.8553308805982665,
+      "negative_mean": 0.8550181487245878,
+      "pair_mean_score_standard_deviation": 0.05104717629098244,
+      "mean_signed_pair_margin": 0.0003127318736784847,
+      "mean_absolute_pair_margin": 0.0018588672639730111,
+      "candidate_only_AUROC": 0.50042724609375,
+      "paired_ranking": 0.5078125,
+      "pair_mean_score_sd_over_mean_abs_margin": 27.461442395772693
+    },
+    "native_roi24": {
+      "positive_mean": 0.5505554945051204,
+      "negative_mean": 0.547872187358801,
+      "pair_mean_score_standard_deviation": 0.14167546931608846,
+      "mean_signed_pair_margin": 0.002683307146319287,
+      "mean_absolute_pair_margin": 0.0072898689747767555,
+      "candidate_only_AUROC": 0.5003662109375,
+      "paired_ranking": 0.5703125,
+      "pair_mean_score_sd_over_mean_abs_margin": 19.434570059666555
+    },
+    "fine_roi24": {
+      "positive_mean": 0.6272010259051781,
+      "negative_mean": 0.6256545129437963,
+      "pair_mean_score_standard_deviation": 0.13124876965665794,
+      "mean_signed_pair_margin": 0.0015465129613818763,
+      "mean_absolute_pair_margin": 0.005603783466124333,
+      "candidate_only_AUROC": 0.5015869140625,
+      "paired_ranking": 0.5625,
+      "pair_mean_score_sd_over_mean_abs_margin": 23.421456316089905
+    },
+    "coarse_roi24": {
+      "positive_mean": 0.7079167644221784,
+      "negative_mean": 0.7074990687638447,
+      "pair_mean_score_standard_deviation": 0.11709653327392165,
+      "mean_signed_pair_margin": 0.00041769565833368275,
+      "mean_absolute_pair_margin": 0.002685195577631334,
+      "candidate_only_AUROC": 0.5030517578125,
+      "paired_ranking": 0.53125,
+      "pair_mean_score_sd_over_mean_abs_margin": 43.608195339430324
+    },
+    "joint_roi24": {
+      "positive_mean": 0.6521794967194925,
+      "negative_mean": 0.650991306062725,
+      "pair_mean_score_standard_deviation": 0.12432403057273267,
+      "mean_signed_pair_margin": 0.001188190656767321,
+      "mean_absolute_pair_margin": 0.003888907649504621,
+      "candidate_only_AUROC": 0.50189208984375,
+      "paired_ranking": 0.515625,
+      "pair_mean_score_sd_over_mean_abs_margin": 31.96888221003895
+    },
+    "head12_roi24": {
+      "positive_mean": 0.530069347017843,
+      "negative_mean": 0.5270382606044697,
+      "pair_mean_score_standard_deviation": 0.16632656294014647,
+      "mean_signed_pair_margin": 0.003031086413373388,
+      "mean_absolute_pair_margin": 0.010521702272848958,
+      "candidate_only_AUROC": 0.50537109375,
+      "paired_ranking": 0.625,
+      "pair_mean_score_sd_over_mean_abs_margin": 15.807951852938173
+    },
+    "projection128": {
+      "positive_mean": 0.8583009309846532,
+      "negative_mean": 0.857434910422145,
+      "pair_mean_score_standard_deviation": 0.08519637898751597,
+      "mean_signed_pair_margin": 0.0008660205625082239,
+      "mean_absolute_pair_margin": 0.007936541444901938,
+      "candidate_only_AUROC": 0.50262451171875,
+      "paired_ranking": 0.53125,
+      "pair_mean_score_sd_over_mean_abs_margin": 10.734698429911449
+    }
+  },
+  "pose_groups": [
+    {
+      "residual_degrees": [
+        0,
+        15
+      ],
+      "families": 19,
+      "projection_pair_ranking": 0.5789473684210527,
+      "projection_mean_signed_margin": 0.001924490240328422
+    },
+    {
+      "residual_degrees": [
+        15,
+        30
+      ],
+      "families": 20,
+      "projection_pair_ranking": 0.5,
+      "projection_mean_signed_margin": 0.00024359646186974948
+    },
+    {
+      "residual_degrees": [
+        30,
+        45
+      ],
+      "families": 25,
+      "projection_pair_ranking": 0.52,
+      "projection_mean_signed_margin": 0.0005595228878756531
+    }
+  ],
+  "cautions": [
+    "The observational pose bins do not isolate pose from family/instance difficulty.",
+    "Candidate-only AUROC uses annotated candidate regions; it is a diagnosis, not a detector result.",
+    "Different-stage cosine distances are descriptive geometry measures, not retained-information fractions."
+  ]
+}

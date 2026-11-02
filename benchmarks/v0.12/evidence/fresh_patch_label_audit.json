@@ -1,0 +1,11 @@
+{
+  "display_only": true,
+  "no_model_inference": true,
+  "no_scoring_change": true,
+  "original_figure_sha256": "f6fe72b721456e3da1d9ae04588377a5f8baa356f0ad5ba812e33db23931e951",
+  "original_visual_audit_sha256": "60b805c023f4376893dcdc88bd4fbaeb944dee5655a03fd0bb99c771511090c6",
+  "result_sha256": "dc6611aa3ef0a70981308f006f54c8640ecdb29e046ba3afc10cb6c169cd36b8",
+  "labeled_figure_sha256": "4bdf5cf590e398a6da4cef138e5a7fca2200f8194c4f0eb8e4720c0b4bbb4125",
+  "caption": "Scores are method-specific, not comparable probabilities. Frozen cutoffs: native patch 0.41309; old CNN 0.98066.\nFor this fixed example, the old CNN rejects both scenes; the native matcher accepts the present target and rejects the paired negative.",
+  "output": "assets\\fresh_patch_comparison_labeled.png"
+}

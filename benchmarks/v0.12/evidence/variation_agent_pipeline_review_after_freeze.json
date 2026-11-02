@@ -1,0 +1,31 @@
+{
+  "review_scope": "Independent source/API review; not an inference or generalization accuracy claim.",
+  "protocol_sha256": "09e9b228afaf05e6c0d53e63852d2881e74860940b28c826ac8226aa5610a87b",
+  "sources": {
+    "hypernet/native_detail.py": "89600f68350fef1c9c60c12c0a701a64d0278acace113d636c9a981645ebce8e",
+    "hypernet/gradient_detail.py": "1425b86cd9a3082e64816c81cb22d7fdaf65e8fb43323413b809fddbbab75538",
+    "hypernet/detail_pipeline.py": "17faf610ee2921adfe5878695ac4513c2ee6ce3d448baaba74a704fa8c4a6dbf",
+    "hypernet/detail_metrics.py": "d2c12775bdeaf8f192aa06ea728c31844fcdfaa4b0ab0edc24e7eb495fe3bc44",
+    "scripts/evaluate_detail.py": "bae1a52b3ebdca3646f451f0027515e011e8150ab4c815646f7ae60bf7dbe7be"
+  },
+  "no_blocking_findings": true,
+  "checks": [
+    "Inference interfaces accept support RGB+support box and query RGB; no query annotation or family identity.",
+    "All six arms share CNN foreground proposals and original own-trained checkpoint.",
+    "Native-patch scoring does not consult connected-feature/covariance descriptors, although the joint evaluation computes them for moment controls.",
+    "Lowres control preserves native outline alignment and patch positions/count/weights; only fine RGB evidence is degraded.",
+    "RMS floor handles near-constant patches; blank/empty proposals return finite rejection scores.",
+    "Centroid/size/missing-count control keeps outline gate and assignments while removing covariance cost.",
+    "Original CNN descriptor recipe remains intact; no optimizers are created.",
+    "Old-development evaluation filters only declared old DEV rows; fresh evaluation requires frozen source, admission and data-audit hash bindings.",
+    "Ground-truth boxes and labels are read for metrics only after prediction."
+  ],
+  "limitations": [
+    "New matching logic is analytic, not newly learned CNN weights.",
+    "High-contrast separated-object and internal-gradient priors restrict scope.",
+    "Native sampling still uses bilinear interpolation.",
+    "A direct baseline improvement combines alignment and matching changes; matched lowres ablation is the narrower information-preservation comparison."
+  ],
+  "smoke_evidence": "experiments/native_detail_independent_smoke_frozen.json",
+  "tests": "6 production gradient-detail unit tests passed; separate5gallery tests passed."
+}

@@ -1,0 +1,38 @@
+{
+  "valid": true,
+  "scope": "Independent static/API review, exported provenance verification, and10 wrapper tests; author smoke replay is separately recorded",
+  "wrapper_path": "public/HyperNet/examples/replay_v12.py",
+  "wrapper_sha256": "1bfee2eb5b5de13569abfe3a9ee23ff4d4639673d4a168be83fe6012113632f0",
+  "test_command": "python -m pytest tests/test_replay_v12.py -q",
+  "tests_passed": 10,
+  "tests_failed": 0,
+  "inference_sources_bit_identical_to_original_freeze": {
+    "hypernet/detail_pipeline.py": "17faf610ee2921adfe5878695ac4513c2ee6ce3d448baaba74a704fa8c4a6dbf",
+    "hypernet/gradient_detail.py": "1425b86cd9a3082e64816c81cb22d7fdaf65e8fb43323413b809fddbbab75538",
+    "hypernet/native_detail.py": "89600f68350fef1c9c60c12c0a701a64d0278acace113d636c9a981645ebce8e",
+    "hypernet/one_shot_detector.py": "000f52fbc239fd4675e05aaa70f85dc330d6494aa286bf842c2a649c3e3d99a0",
+    "hypernet/training_v3.py": "ad1dbae310cb12fd0a23a068a393407c58818f7735fe6bcbed095c87b5cac956",
+    "hypernet/detail_metrics.py": "d2c12775bdeaf8f192aa06ea728c31844fcdfaa4b0ab0edc24e7eb495fe3bc44",
+    "scripts/evaluate_detail.py": "bae1a52b3ebdca3646f451f0027515e011e8150ab4c815646f7ae60bf7dbe7be"
+  },
+  "published_metrics_and_bootstrap_exactly_equal_original": true,
+  "public_enrollment_roster_exactly_equal_original": true,
+  "default_selection": [
+    "v12_dev_f0023_e0",
+    "v12_test_f0019_e0",
+    "v12_dev_f0023_e1",
+    "v12_test_f0019_e1"
+  ],
+  "verified_properties": [
+    "Own checkpoint raw hash and tensor-state hash guards.",
+    "Original driver validates raw PNG and decoded RGB hashes before inference.",
+    "Exact IDs, boxes, booleans, field sets, and threshold decisions; absolute float tolerance0..1e-6 only.",
+    "Published DEV thresholds are reused without refitting; full mode recomputes metrics and paired family bootstrap.",
+    "Output is explicitly a reproduction of published synthetic images, not a new heldout evaluation.",
+    "Defaults resolve relative to public checkout; --data/--checkpoint/--output make external artifact paths explicit.",
+    "No fabricated original freeze records; nonempty output evidence is preserved."
+  ],
+  "wrapper_modified_by_reviewer": false,
+  "frozen_math_modified": false,
+  "new_model_runs_by_reviewer": 0
+}

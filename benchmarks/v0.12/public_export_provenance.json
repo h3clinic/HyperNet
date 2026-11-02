@@ -1,0 +1,240 @@
+{
+  "original_protocol_sha256": "09e9b228afaf05e6c0d53e63852d2881e74860940b28c826ac8226aa5610a87b",
+  "path_remapping": {
+    "v12_workspace": "relative experiment paths",
+    "v11_workspace": "previous_v11/",
+    "other_experiment_workspace": "previous_experiments/",
+    "public_checkout": "public_source/"
+  },
+  "files": {
+    "aggregate_metrics.json": {
+      "original_logical_path": "results/fresh_eval/fresh_results.json",
+      "original_sha256": "dc6611aa3ef0a70981308f006f54c8640ecdb29e046ba3afc10cb6c169cd36b8",
+      "public_sha256": "4d9402731383cd4c158b3d7f3f3be3a3c03ba37b692f6b330a7dd647ee54927b",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "cohort_manifest.json": {
+      "original_logical_path": "data/shapes2d_fresh_v12/manifest.json",
+      "original_sha256": "fbe10b0e4d46b1d35fe599a3578a860d128632125a3ac2ae7cf59aa3663d4dfe",
+      "public_sha256": "c7bdb1427d4896acb8db987469ea870302e4e7d23449f5423a2c5bf9247f8d06",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "dataset_plan.json": {
+      "original_logical_path": "data/shapes2d_fresh_v12/plan.json",
+      "original_sha256": "1049f8c5f9e690649a23574ac5e293d7fa4319c2bfa0807b97a478403ac86396",
+      "public_sha256": "95e20694817e93679937756977fd420c29cd61d2e1c832aa16b994358239843b",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/detail_pipeline_review.json": {
+      "original_logical_path": "experiments/detail_pipeline_review.json",
+      "original_sha256": "b5cfbbf169ed9c1507a8c730da917e71ca47e475b2c5cd33e37fbc0a7b96fada",
+      "public_sha256": "b7e2924dae09797b2ac3d00e642e52ad7565bd76217405ffebdae025e34ce921",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/detail_protocol_freeze.json": {
+      "original_logical_path": "experiments/detail_protocol_freeze.json",
+      "original_sha256": "09e9b228afaf05e6c0d53e63852d2881e74860940b28c826ac8226aa5610a87b",
+      "public_sha256": "8118cf448938da6b0f2b201249206c9b288ae4d5f70bdcf038626af28d937fbb",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/fresh_data_audit.json": {
+      "original_logical_path": "experiments/fresh_data_audit.json",
+      "original_sha256": "cadb714af9e7dd588c87320c7f61e012624f8f4f553f14f9e703e5661d381858",
+      "public_sha256": "1985b69f6eb95787825a0ce61466787adc49a13149658b81219800385c85bce4",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/fresh_data_freeze.json": {
+      "original_logical_path": "experiments/fresh_data_freeze.json",
+      "original_sha256": "933b74d24212e0f027739e5d18e68caa8e729cadb4b90501ed9fcb93de20bd29",
+      "public_sha256": "446ff25b39cba594461d810896b4abac2fe92285caf9323fe2fecf8a75e4b9b0",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/fresh_detail_run_audit.json": {
+      "original_logical_path": "experiments/fresh_detail_run_audit.json",
+      "original_sha256": "7378eba1f731963ce7c2d57c7f7bce220eb7c3c1bea05f9493fc91440a30c242",
+      "public_sha256": "0405ffd5e431e4bf7eb40c7129fc2ed7dd8ae6e3c7896e136b47aa716fe24f90",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/fresh_error_analysis.json": {
+      "original_logical_path": "experiments/fresh_error_analysis.json",
+      "original_sha256": "e9969b431fb97f11c663799e5d693167a8dd31bca2b136a763fac8bf3ce658cf",
+      "public_sha256": "2c20a637e95730c0f20003e3d05785cfd8e078919fc290aa6526bdd3837336e7",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/fresh_error_geometry_notes.json": {
+      "original_logical_path": "experiments/fresh_error_geometry_notes.json",
+      "original_sha256": "1596e87a6d5a081a2c2c6231cc2c47030823bdea940e21ddaa52178d327d5c2b",
+      "public_sha256": "cd88ad478c1a22bf4347379e849046c4e285a924f393b1e968b0fecac36c48d2",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/fresh_evidence_bundle.json": {
+      "original_logical_path": "experiments/fresh_evidence_bundle.json",
+      "original_sha256": "ff1c2ff195cff7076a460c0f9b125be93d140d7d12750b2ae804be5a88c4feae",
+      "public_sha256": "cd44b971363935b8696eedf5bb35df4b84b6b78628d05f106d72ec916fd47991",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/fresh_gallery_live_audit.json": {
+      "original_logical_path": "experiments/fresh_gallery_live_audit.json",
+      "original_sha256": "8c4e6e5ec7aa875f3eb2872683dc5c290825cbdbccd44917dd9df8a2bbd08c6c",
+      "public_sha256": "3a6ccd221a3de7294f2cf8169945783e7804fb282746e08f8e2606a735cc00e2",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/fresh_generation_admission.json": {
+      "original_logical_path": "experiments/fresh_generation_admission.json",
+      "original_sha256": "98aea01586bfa6c7cb79499a1c883ffe90f645946f37172adbeaba320f5af190",
+      "public_sha256": "2a8ad8ef87dd3651591bcbcaf9e2c9cc12fd5b341cba5c4b3ecebcd1ad72b3af",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/fresh_patch_label_audit.json": {
+      "original_logical_path": "experiments/fresh_patch_label_audit.json",
+      "original_sha256": "aa39e8d60af2b431235fdf65b49ab490cc4fd03eb2c1cdae42b0b4a1c72427e4",
+      "public_sha256": "f6e0b56bb32e2a110400a7b8b0b3b7d2fe2c1ebd5320938a3b0474a5ea261715",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/fresh_patch_visual_audit.json": {
+      "original_logical_path": "experiments/fresh_patch_visual_audit.json",
+      "original_sha256": "60b805c023f4376893dcdc88bd4fbaeb944dee5655a03fd0bb99c771511090c6",
+      "public_sha256": "beee6cf48980172034ba0ff96294665fcf63eaf2551656762081854f936102a1",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/fresh_patch_visual_plan.json": {
+      "original_logical_path": "experiments/fresh_patch_visual_plan.json",
+      "original_sha256": "f51e8730e0ee23de0db5db5b3991da5e1141606b7cf28f87ff947f8c120d7464",
+      "public_sha256": "5f6d30236593d4ac24884539b42422222602ef6dd59462fbe360a3f33260c2e0",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/fresh_replay_plan.json": {
+      "original_logical_path": "experiments/fresh_replay_plan.json",
+      "original_sha256": "c6aec0ff80f6d0141aa6bc5fcd2dd37ec5a57c6923e995cf061dc76f35ca72a8",
+      "public_sha256": "8a76d7d95c21110dd76879ec76bd977488936cdeb98d7f3263c66ac087e753d5",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/gradient_patch_prototype_plan.json": {
+      "original_logical_path": "experiments/gradient_patch_prototype_plan.json",
+      "original_sha256": "01de1c00343c54729e57a9d296197aebd57956b1afa19704928ff865c05ab1f9",
+      "public_sha256": "d16e367753476965445a8052e160e454cf2ce251e1e0b35c8ba12049d305c630",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/gradient_patch_prototype_results.json": {
+      "original_logical_path": "experiments/gradient_patch_prototype_results.json",
+      "original_sha256": "dbe0ed108519ee10a35a0f95cf0fdde82feea26bfcdd5ab69cf494db36233419",
+      "public_sha256": "749f1d39472cf26a6ce1d84c559616231ba802ba5093c990c6904fcf7b443760",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/native_detail_development_train_initial.json": {
+      "original_logical_path": "experiments/native_detail_development_train_initial.json",
+      "original_sha256": "f98a4b165a1ba1c731a8c08cc4dded479f3c9e0d7d01150de3a530d2a686aba1",
+      "public_sha256": "9548a2262cb07c5ba3f689837d19b282aba963d38e5a1a2cff5e8c6b32d7ccd6",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/native_detail_independent_smoke.json": {
+      "original_logical_path": "experiments/native_detail_independent_smoke.json",
+      "original_sha256": "59d6e3873f56404107a0ebd5ff6597ffdd4ebdc6282184e0df9cbb720b3d66b6",
+      "public_sha256": "676580b6dc4696314d5e4b1d227a3c673f8a63c51fc4b4f2fbe474b91c768ac7",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/packaged_gradient_train_replay.json": {
+      "original_logical_path": "experiments/packaged_gradient_train_replay.json",
+      "original_sha256": "8c367d035086c85e7a52b35f5ff0bd4dee73355803f05a51c525540569a81755",
+      "public_sha256": "832d7498fd7ef86e28fb6ebbb14a83b22e409a26c9241deebc9a3640459a2213",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/pipeline_independent_review.json": {
+      "original_logical_path": "experiments/pipeline_independent_review.json",
+      "original_sha256": "28dd8f9f50e4c4932074436f9344057753d610f27eba163259f4b09a6b6faad4",
+      "public_sha256": "764e8279af94059974e26c96c06bf6fcdd13f7c2dcf5f0bf0e3800b0fe13f8be",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/pipeline_independent_review_recovery_candidate.json": {
+      "original_logical_path": "experiments/pipeline_independent_review_recovery_candidate.json",
+      "original_sha256": "28dd8f9f50e4c4932074436f9344057753d610f27eba163259f4b09a6b6faad4",
+      "public_sha256": "764e8279af94059974e26c96c06bf6fcdd13f7c2dcf5f0bf0e3800b0fe13f8be",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/pipeline_review_collision_recovery.json": {
+      "original_logical_path": "experiments/pipeline_review_collision_recovery.json",
+      "original_sha256": "78d189b59d77a04ca74907cecf8962d6d3f2ce7cee0008614e9f174ba92374aa",
+      "public_sha256": "0e7d9cec79e7e6d21e808211da47766ccf6ace6803cee2cf0f89d42cb1b3bb4d",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/portable_wrapper_independent_review.json": {
+      "original_logical_path": "experiments/portable_wrapper_independent_review.json",
+      "original_sha256": "f65e49fe15f66356f94e19567db4c1fc26ed00773506a549a5eb0a7e35dec385",
+      "public_sha256": "55c1fd7631eac3a74b4c3d7e416d39ccd27effc3a503adc73172fe3772fa8a1a",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/portable_wrapper_review_addendum.json": {
+      "original_logical_path": "experiments/portable_wrapper_review_addendum.json",
+      "original_sha256": "6d1cfd48f4e99d58281af013c263e1eccd39b79ab3796ee8835190e8a7ea8278",
+      "public_sha256": "5234df7722da61ff2d23067d3544789bf79859d6227e919f8641f98a69682b62",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/train_detail_diagnosis.json": {
+      "original_logical_path": "experiments/train_detail_diagnosis.json",
+      "original_sha256": "08674b8c2484361de08ef87fafd48ea256bfd5f21ef59eb6a2e710f8a13373a6",
+      "public_sha256": "8833410588598e9b7f84864749205c3602169b2d24022755647a7758c11747fa",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/train_detail_diagnosis_interpretation.json": {
+      "original_logical_path": "experiments/train_detail_diagnosis_interpretation.json",
+      "original_sha256": "ae8f081963399337f08463ae73c3bc8ad8e3a1c10fecc1fc8fe212cb5827430e",
+      "public_sha256": "35bfe186ff96cd26102b636f73475890a140979c60d102947d3d34ea56f5ec6a",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/train_detail_diagnosis_plan.json": {
+      "original_logical_path": "experiments/train_detail_diagnosis_plan.json",
+      "original_sha256": "30631ca55907eab2925f988b6b7e4ff9f7e8dac6fad04d475e7b324e2990fc50",
+      "public_sha256": "f0600fcde2e51f77862517a29c935edbb70813cb1e61502ca7de14ae3764dfec",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/variation_agent_pipeline_review_after_freeze.json": {
+      "original_logical_path": "experiments/variation_agent_pipeline_review_after_freeze.json",
+      "original_sha256": "ac873ab9840fb51095a850438bec166cd8de5b22e12d23313e1798ace80d8f4d",
+      "public_sha256": "c4834f58b14144fe4bf93fcb66bfb73fa70156c687a378ba5a53692a108ae0ca",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "evidence/old_dev_stability.json": {
+      "original_logical_path": "experiments/old_dev_stability/fresh_results.json",
+      "original_sha256": "d0b3b45ea1b3c52e92cb21eba23169edb06d28c48ff02d95b5261c202d3d9cd8",
+      "public_sha256": "02b8c262c92968147374afc6d0db50c16683a5c90b1546b322142a99f0ef5309",
+      "transformation": "JSON serialization and absolute provenance paths mapped to logical identifiers only"
+    },
+    "old_cnn_scores.jsonl": {
+      "original_logical_path": "results/fresh_eval/old_cnn_scores.jsonl",
+      "original_sha256": "bdeefa91f54aedcc4e5adcd52206f1449fccb6d04a577616ccb38374e0e38417",
+      "public_sha256": "bdeefa91f54aedcc4e5adcd52206f1449fccb6d04a577616ccb38374e0e38417",
+      "transformation": "none: exact bytes"
+    },
+    "outline_only_scores.jsonl": {
+      "original_logical_path": "results/fresh_eval/outline_only_scores.jsonl",
+      "original_sha256": "643f989bf99b6afec4ce62937256cf951906338ba271dc6f87556aac099d5217",
+      "public_sha256": "643f989bf99b6afec4ce62937256cf951906338ba271dc6f87556aac099d5217",
+      "transformation": "none: exact bytes"
+    },
+    "centroid_only_scores.jsonl": {
+      "original_logical_path": "results/fresh_eval/centroid_only_scores.jsonl",
+      "original_sha256": "41dbbd0269b95658fb51aedbc8293e31bff0af4ca08a44527029859aee2fc555",
+      "public_sha256": "41dbbd0269b95658fb51aedbc8293e31bff0af4ca08a44527029859aee2fc555",
+      "transformation": "none: exact bytes"
+    },
+    "local_moments_scores.jsonl": {
+      "original_logical_path": "results/fresh_eval/local_moments_scores.jsonl",
+      "original_sha256": "5231945a4aa1b13508b6a4a3a23aa9630b9b8d09a3659ea93f57d6e6bd185bbe",
+      "public_sha256": "5231945a4aa1b13508b6a4a3a23aa9630b9b8d09a3659ea93f57d6e6bd185bbe",
+      "transformation": "none: exact bytes"
+    },
+    "lowres_patch_scores.jsonl": {
+      "original_logical_path": "results/fresh_eval/lowres_patch_scores.jsonl",
+      "original_sha256": "2267f01ef5479ebc32674f567bb5d3eac81ec543f0ef113332fb4adced79f7ae",
+      "public_sha256": "2267f01ef5479ebc32674f567bb5d3eac81ec543f0ef113332fb4adced79f7ae",
+      "transformation": "none: exact bytes"
+    },
+    "native_patch_scores.jsonl": {
+      "original_logical_path": "results/fresh_eval/native_patch_scores.jsonl",
+      "original_sha256": "fa03b13ba964d00993f69bf0aae88cf3305c84f39dd5b97154197a8ac6697c53",
+      "public_sha256": "fa03b13ba964d00993f69bf0aae88cf3305c84f39dd5b97154197a8ac6697c53",
+      "transformation": "none: exact bytes"
+    }
+  },
+  "warning": "Original hashes refer to original local JSON bytes; sanitized public JSON has separate public hashes. No model or scoring source changes."
+}

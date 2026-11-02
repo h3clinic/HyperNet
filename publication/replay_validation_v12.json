@@ -1,0 +1,81 @@
+{
+  "format": "hypernet.portable_replication.v12",
+  "replication": true,
+  "verified": true,
+  "original_experiment_freeze_recreated": false,
+  "full_cohort": false,
+  "selected_episode_ids": [
+    "v12_dev_f0023_e0",
+    "v12_test_f0019_e0",
+    "v12_dev_f0023_e1",
+    "v12_test_f0019_e1"
+  ],
+  "enrollments": 4,
+  "reference_query_rows": 8,
+  "method_prediction_rows": 48,
+  "float_absolute_tolerance": 0.0,
+  "float_relative_tolerance": 0.0,
+  "acceptance_decisions_match": true,
+  "comparison": {
+    "float_values_checked": 2781,
+    "leaf_values_checked": 5117,
+    "max_absolute_float_error": 0.0,
+    "nonzero_float_differences": 0
+  },
+  "threshold_source": "Published fresh DEV thresholds; no refitting",
+  "checkpoint_sha256": "15c64b81747f3ebec224ef19621793c2d24ed9dd6f93de25c6ad5f7c5c04d49a",
+  "model_state_before": "6dda19f85dd3fa035ca605b6db7d83966e2a247b439c6606174fdc2e9f775e09",
+  "model_state_after": "6dda19f85dd3fa035ca605b6db7d83966e2a247b439c6606174fdc2e9f775e09",
+  "dataset_manifest_sha256": "c7bdb1427d4896acb8db987469ea870302e4e7d23449f5423a2c5bf9247f8d06",
+  "published_manifest_sha256": "c7bdb1427d4896acb8db987469ea870302e4e7d23449f5423a2c5bf9247f8d06",
+  "published_aggregate_sha256": "4d9402731383cd4c158b3d7f3f3be3a3c03ba37b692f6b330a7dd647ee54927b",
+  "source_bindings": {
+    "hypernet/detail_pipeline.py": "17faf610ee2921adfe5878695ac4513c2ee6ce3d448baaba74a704fa8c4a6dbf",
+    "hypernet/gradient_detail.py": "1425b86cd9a3082e64816c81cb22d7fdaf65e8fb43323413b809fddbbab75538",
+    "hypernet/native_detail.py": "89600f68350fef1c9c60c12c0a701a64d0278acace113d636c9a981645ebce8e",
+    "hypernet/one_shot_detector.py": "000f52fbc239fd4675e05aaa70f85dc330d6494aa286bf842c2a649c3e3d99a0",
+    "hypernet/training_v3.py": "ad1dbae310cb12fd0a23a068a393407c58818f7735fe6bcbed095c87b5cac956",
+    "hypernet/detail_metrics.py": "d2c12775bdeaf8f192aa06ea728c31844fcdfaa4b0ab0edc24e7eb495fe3bc44",
+    "scripts/evaluate_detail.py": "bae1a52b3ebdca3646f451f0027515e011e8150ab4c815646f7ae60bf7dbe7be"
+  },
+  "learned_weight_updates": 0,
+  "new_threshold_fitting": false,
+  "reference_images_per_enrollment": 1,
+  "elapsed_seconds": 0.8576532000006409,
+  "runtime": {
+    "python": "3.12.10",
+    "numpy": "2.5.3",
+    "torch": "2.14.1+cpu",
+    "opencv": "5.0.0",
+    "torch_threads": 4
+  },
+  "score_files": {
+    "old_cnn": {
+      "path": "old_cnn_replication_scores.jsonl",
+      "sha256": "01f70400aaa20884f59e4eb1130037bf872df85fd25a424d4c4fd9d274958e4f"
+    },
+    "outline_only": {
+      "path": "outline_only_replication_scores.jsonl",
+      "sha256": "7d2bb51a8fe25b2042a74586b9f22bd4925fcbc2859255376b7f792087dbfca7"
+    },
+    "centroid_only": {
+      "path": "centroid_only_replication_scores.jsonl",
+      "sha256": "6c911044d38f7e4646e5bdf8a6fa230eb4a3d26d5e2f7f767317cb5cec60d976"
+    },
+    "local_moments": {
+      "path": "local_moments_replication_scores.jsonl",
+      "sha256": "34ddeccfd7ce35cf9d46bc6870e641d5c9a573f04e0e032930eb8930109795b0"
+    },
+    "lowres_patch": {
+      "path": "lowres_patch_replication_scores.jsonl",
+      "sha256": "7610f85cfe828dc1a0f773ee2a88f7b100653a00fad324ef371dd3f361411823"
+    },
+    "native_patch": {
+      "path": "native_patch_replication_scores.jsonl",
+      "sha256": "8e5387f45254165903c12d6abebcf7986b1f34b4526527fd5f581c2f1c011ce4"
+    }
+  },
+  "full_metrics": null,
+  "full_bootstrap": null,
+  "scope": "Replay of already published synthetic images, not a new heldout evaluation or new evidence of natural-image accuracy."
+}

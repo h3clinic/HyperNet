@@ -1,0 +1,319 @@
+{
+  "format": "hypernet.native_detail_evaluation.v12",
+  "completed": true,
+  "scope": "FROZEN FRESH 2D SYNTHETIC EVALUATION",
+  "primary_method": "native_patch",
+  "primary_metric": "localized_recall_at_iou50",
+  "methods": {
+    "old_cnn": {
+      "dev": {
+        "positive_scenes": 256,
+        "negative_scenes": 256,
+        "threshold": 0.9806613922119142,
+        "accepted_positive": 14,
+        "false_positive": 12,
+        "localized_true_positive": 11,
+        "recall": 0.0546875,
+        "false_positive_rate": 0.046875,
+        "localized_recall_at_iou50": 0.04296875,
+        "proposal_recall_at_iou50": 1.0,
+        "auroc": 0.5009918212890625,
+        "single_box_ap50": 0.37289595825960375,
+        "paired_scene_ranking_accuracy": 0.5390625,
+        "balanced_accuracy": 0.50390625
+      },
+      "test": {
+        "positive_scenes": 256,
+        "negative_scenes": 256,
+        "threshold": 0.9806613922119142,
+        "accepted_positive": 15,
+        "false_positive": 11,
+        "localized_true_positive": 13,
+        "recall": 0.05859375,
+        "false_positive_rate": 0.04296875,
+        "localized_recall_at_iou50": 0.05078125,
+        "proposal_recall_at_iou50": 1.0,
+        "auroc": 0.5019378662109375,
+        "single_box_ap50": 0.3505507034963965,
+        "paired_scene_ranking_accuracy": 0.5234375,
+        "balanced_accuracy": 0.5078125
+      }
+    },
+    "outline_only": {
+      "dev": {
+        "positive_scenes": 256,
+        "negative_scenes": 256,
+        "threshold": 0.9609987735748292,
+        "accepted_positive": 12,
+        "false_positive": 12,
+        "localized_true_positive": 12,
+        "recall": 0.046875,
+        "false_positive_rate": 0.046875,
+        "localized_recall_at_iou50": 0.046875,
+        "proposal_recall_at_iou50": 1.0,
+        "auroc": 0.5001220703125,
+        "single_box_ap50": 0.48246402047767506,
+        "paired_scene_ranking_accuracy": 0.50390625,
+        "balanced_accuracy": 0.5
+      },
+      "test": {
+        "positive_scenes": 256,
+        "negative_scenes": 256,
+        "threshold": 0.9609987735748292,
+        "accepted_positive": 24,
+        "false_positive": 24,
+        "localized_true_positive": 24,
+        "recall": 0.09375,
+        "false_positive_rate": 0.09375,
+        "localized_recall_at_iou50": 0.09375,
+        "proposal_recall_at_iou50": 1.0,
+        "auroc": 0.5086669921875,
+        "single_box_ap50": 0.5044650366615908,
+        "paired_scene_ranking_accuracy": 0.51171875,
+        "balanced_accuracy": 0.5
+      }
+    },
+    "centroid_only": {
+      "dev": {
+        "positive_scenes": 256,
+        "negative_scenes": 256,
+        "threshold": 0.8319280056277252,
+        "accepted_positive": 17,
+        "false_positive": 12,
+        "localized_true_positive": 17,
+        "recall": 0.06640625,
+        "false_positive_rate": 0.046875,
+        "localized_recall_at_iou50": 0.06640625,
+        "proposal_recall_at_iou50": 1.0,
+        "auroc": 0.5232391357421875,
+        "single_box_ap50": 0.5197672855580235,
+        "paired_scene_ranking_accuracy": 0.55078125,
+        "balanced_accuracy": 0.509765625
+      },
+      "test": {
+        "positive_scenes": 256,
+        "negative_scenes": 256,
+        "threshold": 0.8319280056277252,
+        "accepted_positive": 16,
+        "false_positive": 14,
+        "localized_true_positive": 16,
+        "recall": 0.0625,
+        "false_positive_rate": 0.0546875,
+        "localized_recall_at_iou50": 0.0625,
+        "proposal_recall_at_iou50": 1.0,
+        "auroc": 0.5351638793945312,
+        "single_box_ap50": 0.5196884228560612,
+        "paired_scene_ranking_accuracy": 0.5,
+        "balanced_accuracy": 0.50390625
+      }
+    },
+    "local_moments": {
+      "dev": {
+        "positive_scenes": 256,
+        "negative_scenes": 256,
+        "threshold": 0.15007721291475112,
+        "accepted_positive": 253,
+        "false_positive": 12,
+        "localized_true_positive": 252,
+        "recall": 0.98828125,
+        "false_positive_rate": 0.046875,
+        "localized_recall_at_iou50": 0.984375,
+        "proposal_recall_at_iou50": 1.0,
+        "auroc": 0.9971389770507812,
+        "single_box_ap50": 0.992583319618071,
+        "paired_scene_ranking_accuracy": 0.998046875,
+        "balanced_accuracy": 0.970703125
+      },
+      "test": {
+        "positive_scenes": 256,
+        "negative_scenes": 256,
+        "threshold": 0.15007721291475112,
+        "accepted_positive": 251,
+        "false_positive": 19,
+        "localized_true_positive": 250,
+        "recall": 0.98046875,
+        "false_positive_rate": 0.07421875,
+        "localized_recall_at_iou50": 0.9765625,
+        "proposal_recall_at_iou50": 1.0,
+        "auroc": 0.9862594604492188,
+        "single_box_ap50": 0.9814293096814565,
+        "paired_scene_ranking_accuracy": 0.994140625,
+        "balanced_accuracy": 0.953125
+      }
+    },
+    "lowres_patch": {
+      "dev": {
+        "positive_scenes": 256,
+        "negative_scenes": 256,
+        "threshold": 0.6800581249791867,
+        "accepted_positive": 69,
+        "false_positive": 12,
+        "localized_true_positive": 69,
+        "recall": 0.26953125,
+        "false_positive_rate": 0.046875,
+        "localized_recall_at_iou50": 0.26953125,
+        "proposal_recall_at_iou50": 1.0,
+        "auroc": 0.6825180053710938,
+        "single_box_ap50": 0.7014725594935329,
+        "paired_scene_ranking_accuracy": 0.900390625,
+        "balanced_accuracy": 0.611328125
+      },
+      "test": {
+        "positive_scenes": 256,
+        "negative_scenes": 256,
+        "threshold": 0.6800581249791867,
+        "accepted_positive": 57,
+        "false_positive": 22,
+        "localized_true_positive": 57,
+        "recall": 0.22265625,
+        "false_positive_rate": 0.0859375,
+        "localized_recall_at_iou50": 0.22265625,
+        "proposal_recall_at_iou50": 1.0,
+        "auroc": 0.677734375,
+        "single_box_ap50": 0.6769633528456287,
+        "paired_scene_ranking_accuracy": 0.9296875,
+        "balanced_accuracy": 0.568359375
+      }
+    },
+    "native_patch": {
+      "dev": {
+        "positive_scenes": 256,
+        "negative_scenes": 256,
+        "threshold": 0.41308703128766816,
+        "accepted_positive": 254,
+        "false_positive": 12,
+        "localized_true_positive": 253,
+        "recall": 0.9921875,
+        "false_positive_rate": 0.046875,
+        "localized_recall_at_iou50": 0.98828125,
+        "proposal_recall_at_iou50": 1.0,
+        "auroc": 0.9981155395507812,
+        "single_box_ap50": 0.9937805886835378,
+        "paired_scene_ranking_accuracy": 0.998046875,
+        "balanced_accuracy": 0.97265625
+      },
+      "test": {
+        "positive_scenes": 256,
+        "negative_scenes": 256,
+        "threshold": 0.41308703128766816,
+        "accepted_positive": 253,
+        "false_positive": 13,
+        "localized_true_positive": 253,
+        "recall": 0.98828125,
+        "false_positive_rate": 0.05078125,
+        "localized_recall_at_iou50": 0.98828125,
+        "proposal_recall_at_iou50": 1.0,
+        "auroc": 0.9951019287109375,
+        "single_box_ap50": 0.9949002782529591,
+        "paired_scene_ranking_accuracy": 1.0,
+        "balanced_accuracy": 0.96875
+      }
+    }
+  },
+  "protocol_sha256": "09e9b228afaf05e6c0d53e63852d2881e74860940b28c826ac8226aa5610a87b",
+  "manifest_sha256": "fbe10b0e4d46b1d35fe599a3578a860d128632125a3ac2ae7cf59aa3663d4dfe",
+  "checkpoint_sha256": "15c64b81747f3ebec224ef19621793c2d24ed9dd6f93de25c6ad5f7c5c04d49a",
+  "model_state_before": "6dda19f85dd3fa035ca605b6db7d83966e2a247b439c6606174fdc2e9f775e09",
+  "model_state_after": "6dda19f85dd3fa035ca605b6db7d83966e2a247b439c6606174fdc2e9f775e09",
+  "gradients_created": false,
+  "seconds": 116.56187339999451,
+  "natural_training_images": 0,
+  "externally_pretrained_weights": false,
+  "learned_weight_updates_this_version": 0,
+  "reference_images_per_enrollment": 1,
+  "created_utc": "2026-11-02T21:06:31.131952+00:00",
+  "score_files": {
+    "old_cnn": {
+      "path": "old_cnn_scores.jsonl",
+      "sha256": "bdeefa91f54aedcc4e5adcd52206f1449fccb6d04a577616ccb38374e0e38417"
+    },
+    "outline_only": {
+      "path": "outline_only_scores.jsonl",
+      "sha256": "643f989bf99b6afec4ce62937256cf951906338ba271dc6f87556aac099d5217"
+    },
+    "centroid_only": {
+      "path": "centroid_only_scores.jsonl",
+      "sha256": "41dbbd0269b95658fb51aedbc8293e31bff0af4ca08a44527029859aee2fc555"
+    },
+    "local_moments": {
+      "path": "local_moments_scores.jsonl",
+      "sha256": "5231945a4aa1b13508b6a4a3a23aa9630b9b8d09a3659ea93f57d6e6bd185bbe"
+    },
+    "lowres_patch": {
+      "path": "lowres_patch_scores.jsonl",
+      "sha256": "2267f01ef5479ebc32674f567bb5d3eac81ec543f0ef113332fb4adced79f7ae"
+    },
+    "native_patch": {
+      "path": "native_patch_scores.jsonl",
+      "sha256": "fa03b13ba964d00993f69bf0aae88cf3305c84f39dd5b97154197a8ac6697c53"
+    }
+  },
+  "bootstrap": {
+    "unit": "family",
+    "families": 128,
+    "samples": 10000,
+    "seed": 1812,
+    "metric": "localized_recall_at_iou50",
+    "methods": {
+      "old_cnn": {
+        "estimate": 0.05078125,
+        "ci95": [
+          0.015625,
+          0.08984375
+        ]
+      },
+      "outline_only": {
+        "estimate": 0.09375,
+        "ci95": [
+          0.046875,
+          0.1484375
+        ]
+      },
+      "centroid_only": {
+        "estimate": 0.0625,
+        "ci95": [
+          0.0234375,
+          0.109375
+        ]
+      },
+      "local_moments": {
+        "estimate": 0.9765625,
+        "ci95": [
+          0.953125,
+          0.99609375
+        ]
+      },
+      "lowres_patch": {
+        "estimate": 0.22265625,
+        "ci95": [
+          0.15625,
+          0.29296875
+        ]
+      },
+      "native_patch": {
+        "estimate": 0.98828125,
+        "ci95": [
+          0.96875,
+          1.0
+        ]
+      }
+    },
+    "differences": {
+      "native_patch_minus_old_cnn": {
+        "estimate": 0.9375,
+        "ci95": [
+          0.89453125,
+          0.9765625
+        ]
+      },
+      "native_patch_minus_lowres_patch": {
+        "estimate": 0.765625,
+        "ci95": [
+          0.6953125,
+          0.8359375
+        ]
+      }
+    },
+    "scope": "Percentile intervals conditional on frozen DEV thresholds; no threshold refitting."
+  }
+}

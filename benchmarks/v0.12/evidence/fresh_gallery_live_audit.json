@@ -1,0 +1,53 @@
+{
+  "valid": true,
+  "scope": "Live HTTP/API verification only; no browser DOM or visual UI interaction performed",
+  "base_url": "http://127.0.0.1:8793",
+  "total_query_rows": 1024,
+  "split_counts": {
+    "dev": 512,
+    "test": 512
+  },
+  "displayed_prediction_records_verified": 6144,
+  "prediction_methods": [
+    "centroid_only",
+    "local_moments",
+    "lowres_patch",
+    "native_patch",
+    "old_cnn",
+    "outline_only"
+  ],
+  "exact_prediction_fields": [
+    "score",
+    "threshold",
+    "accepted",
+    "bbox_xyxy",
+    "iou",
+    "evidence"
+  ],
+  "unique_rgb_endpoints_verified": 1024,
+  "query_mask_endpoints_verified": 3072,
+  "exact_rgb_file_and_decoded_hashes": true,
+  "exact_mask_pixels": true,
+  "api_pages_verified": 22,
+  "exhaustive_family_filters": 256,
+  "exhaustive_episode_filters": 512,
+  "filter_checks": 776,
+  "page_limit_clamping_verified": true,
+  "gallery_html_and_root_route_verified": true,
+  "frozen_score_files_manifest_and_gallery_sources_unchanged": true,
+  "source_result_hashes": {
+    "scripts/serve_fresh_gallery.py": "e00e9a42da905aa28631e921fc3a1d05da061502c66faa87e78c25ca8364068d",
+    "fresh_gallery.html": "65e268baca3e4026c058e698740304aa90cd7c575388cf41d9a0401a090df813",
+    "results/fresh_eval/fresh_results.json": "dc6611aa3ef0a70981308f006f54c8640ecdb29e046ba3afc10cb6c169cd36b8",
+    "data/shapes2d_fresh_v12/manifest.json": "fbe10b0e4d46b1d35fe599a3578a860d128632125a3ac2ae7cf59aa3663d4dfe",
+    "results/fresh_eval/old_cnn_scores.jsonl": "bdeefa91f54aedcc4e5adcd52206f1449fccb6d04a577616ccb38374e0e38417",
+    "results/fresh_eval/outline_only_scores.jsonl": "643f989bf99b6afec4ce62937256cf951906338ba271dc6f87556aac099d5217",
+    "results/fresh_eval/centroid_only_scores.jsonl": "41dbbd0269b95658fb51aedbc8293e31bff0af4ca08a44527029859aee2fc555",
+    "results/fresh_eval/local_moments_scores.jsonl": "5231945a4aa1b13508b6a4a3a23aa9630b9b8d09a3659ea93f57d6e6bd185bbe",
+    "results/fresh_eval/lowres_patch_scores.jsonl": "2267f01ef5479ebc32674f567bb5d3eac81ec543f0ef113332fb4adced79f7ae",
+    "results/fresh_eval/native_patch_scores.jsonl": "fa03b13ba964d00993f69bf0aae88cf3305c84f39dd5b97154197a8ac6697c53"
+  },
+  "seconds": 9.295969300001161,
+  "model_inference": false,
+  "training_updates": 0
+}

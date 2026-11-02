@@ -1,0 +1,347 @@
+{
+  "posthoc": true,
+  "no_model_execution": true,
+  "source_error_analysis_sha256": "e9969b431fb97f11c663799e5d693167a8dd31bca2b136a763fac8bf3ce658cf",
+  "rows": [
+    {
+      "id": "v12_test_f0920_e1_positive",
+      "selected_role": "candidate",
+      "reference_grammar_digits": [
+        1,
+        6,
+        3,
+        0
+      ],
+      "selected_grammar_digits": [
+        1,
+        6,
+        3,
+        0
+      ],
+      "differing_program_axes": [],
+      "renderer_relative_angle_degrees": 105.44435306689431,
+      "estimated_angle_degrees": 105.0,
+      "absolute_rotation_discrepancy_degrees": 0.4443530668943083,
+      "scope": "Renderer pose is used only after evaluation to contextualize an observed error; shape jitter/aliasing can change optimal image registration"
+    },
+    {
+      "id": "v12_test_f3046_e0_positive",
+      "selected_role": "candidate",
+      "reference_grammar_digits": [
+        5,
+        7,
+        4,
+        6
+      ],
+      "selected_grammar_digits": [
+        5,
+        7,
+        4,
+        6
+      ],
+      "differing_program_axes": [],
+      "renderer_relative_angle_degrees": 97.14321099404268,
+      "estimated_angle_degrees": 97.0,
+      "absolute_rotation_discrepancy_degrees": 0.14321099404267557,
+      "scope": "Renderer pose is used only after evaluation to contextualize an observed error; shape jitter/aliasing can change optimal image registration"
+    },
+    {
+      "id": "v12_test_f3046_e1_positive",
+      "selected_role": "candidate",
+      "reference_grammar_digits": [
+        5,
+        7,
+        4,
+        6
+      ],
+      "selected_grammar_digits": [
+        5,
+        7,
+        4,
+        6
+      ],
+      "differing_program_axes": [],
+      "renderer_relative_angle_degrees": 97.14321099404268,
+      "estimated_angle_degrees": 97.0,
+      "absolute_rotation_discrepancy_degrees": 0.14321099404267557,
+      "scope": "Renderer pose is used only after evaluation to contextualize an observed error; shape jitter/aliasing can change optimal image registration"
+    },
+    {
+      "id": "v12_test_f0177_e1_negative",
+      "selected_role": "distractor",
+      "reference_grammar_digits": [
+        0,
+        2,
+        6,
+        1
+      ],
+      "selected_grammar_digits": [
+        0,
+        2,
+        4,
+        1
+      ],
+      "differing_program_axes": [
+        "connector_profile"
+      ],
+      "renderer_relative_angle_degrees": 164.10976285514099,
+      "estimated_angle_degrees": 164.0,
+      "absolute_rotation_discrepancy_degrees": 0.1097628551409855,
+      "scope": "Renderer pose is used only after evaluation to contextualize an observed error; shape jitter/aliasing can change optimal image registration"
+    },
+    {
+      "id": "v12_test_f0557_e1_negative",
+      "selected_role": "candidate",
+      "reference_grammar_digits": [
+        1,
+        0,
+        5,
+        5
+      ],
+      "selected_grammar_digits": [
+        1,
+        0,
+        5,
+        5
+      ],
+      "differing_program_axes": [],
+      "renderer_relative_angle_degrees": 7.556383815957384,
+      "estimated_angle_degrees": 8.0,
+      "absolute_rotation_discrepancy_degrees": 0.44361618404261094,
+      "scope": "Renderer pose is used only after evaluation to contextualize an observed error; shape jitter/aliasing can change optimal image registration"
+    },
+    {
+      "id": "v12_test_f0789_e0_negative",
+      "selected_role": "candidate",
+      "reference_grammar_digits": [
+        1,
+        4,
+        2,
+        5
+      ],
+      "selected_grammar_digits": [
+        1,
+        4,
+        2,
+        5
+      ],
+      "differing_program_axes": [],
+      "renderer_relative_angle_degrees": 335.9262959053868,
+      "estimated_angle_degrees": 336.0,
+      "absolute_rotation_discrepancy_degrees": 0.0737040946132197,
+      "scope": "Renderer pose is used only after evaluation to contextualize an observed error; shape jitter/aliasing can change optimal image registration"
+    },
+    {
+      "id": "v12_test_f0789_e1_negative",
+      "selected_role": "candidate",
+      "reference_grammar_digits": [
+        1,
+        4,
+        2,
+        5
+      ],
+      "selected_grammar_digits": [
+        1,
+        4,
+        2,
+        5
+      ],
+      "differing_program_axes": [],
+      "renderer_relative_angle_degrees": 335.9262959053868,
+      "estimated_angle_degrees": 336.0,
+      "absolute_rotation_discrepancy_degrees": 0.0737040946132197,
+      "scope": "Renderer pose is used only after evaluation to contextualize an observed error; shape jitter/aliasing can change optimal image registration"
+    },
+    {
+      "id": "v12_test_f0846_e1_negative",
+      "selected_role": "candidate",
+      "reference_grammar_digits": [
+        1,
+        5,
+        1,
+        6
+      ],
+      "selected_grammar_digits": [
+        1,
+        5,
+        1,
+        6
+      ],
+      "differing_program_axes": [],
+      "renderer_relative_angle_degrees": 7.15846338911879,
+      "estimated_angle_degrees": 7.0,
+      "absolute_rotation_discrepancy_degrees": 0.15846338911879343,
+      "scope": "Renderer pose is used only after evaluation to contextualize an observed error; shape jitter/aliasing can change optimal image registration"
+    },
+    {
+      "id": "v12_test_f0881_e0_negative",
+      "selected_role": "candidate",
+      "reference_grammar_digits": [
+        1,
+        5,
+        6,
+        1
+      ],
+      "selected_grammar_digits": [
+        1,
+        5,
+        6,
+        1
+      ],
+      "differing_program_axes": [],
+      "renderer_relative_angle_degrees": 50.871169055996376,
+      "estimated_angle_degrees": 51.0,
+      "absolute_rotation_discrepancy_degrees": 0.12883094400362438,
+      "scope": "Renderer pose is used only after evaluation to contextualize an observed error; shape jitter/aliasing can change optimal image registration"
+    },
+    {
+      "id": "v12_test_f0881_e1_negative",
+      "selected_role": "candidate",
+      "reference_grammar_digits": [
+        1,
+        5,
+        6,
+        1
+      ],
+      "selected_grammar_digits": [
+        1,
+        5,
+        6,
+        1
+      ],
+      "differing_program_axes": [],
+      "renderer_relative_angle_degrees": 50.871169055996376,
+      "estimated_angle_degrees": 51.0,
+      "absolute_rotation_discrepancy_degrees": 0.12883094400362438,
+      "scope": "Renderer pose is used only after evaluation to contextualize an observed error; shape jitter/aliasing can change optimal image registration"
+    },
+    {
+      "id": "v12_test_f1161_e0_negative",
+      "selected_role": "candidate",
+      "reference_grammar_digits": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "selected_grammar_digits": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "differing_program_axes": [],
+      "renderer_relative_angle_degrees": 322.68880505230453,
+      "estimated_angle_degrees": 322.0,
+      "absolute_rotation_discrepancy_degrees": 0.6888050523045308,
+      "scope": "Renderer pose is used only after evaluation to contextualize an observed error; shape jitter/aliasing can change optimal image registration"
+    },
+    {
+      "id": "v12_test_f2189_e0_negative",
+      "selected_role": "candidate",
+      "reference_grammar_digits": [
+        4,
+        2,
+        1,
+        5
+      ],
+      "selected_grammar_digits": [
+        4,
+        2,
+        1,
+        5
+      ],
+      "differing_program_axes": [],
+      "renderer_relative_angle_degrees": 46.74309419158311,
+      "estimated_angle_degrees": 47.0,
+      "absolute_rotation_discrepancy_degrees": 0.2569058084168887,
+      "scope": "Renderer pose is used only after evaluation to contextualize an observed error; shape jitter/aliasing can change optimal image registration"
+    },
+    {
+      "id": "v12_test_f2189_e1_negative",
+      "selected_role": "candidate",
+      "reference_grammar_digits": [
+        4,
+        2,
+        1,
+        5
+      ],
+      "selected_grammar_digits": [
+        4,
+        2,
+        1,
+        5
+      ],
+      "differing_program_axes": [],
+      "renderer_relative_angle_degrees": 46.74309419158311,
+      "estimated_angle_degrees": 47.0,
+      "absolute_rotation_discrepancy_degrees": 0.2569058084168887,
+      "scope": "Renderer pose is used only after evaluation to contextualize an observed error; shape jitter/aliasing can change optimal image registration"
+    },
+    {
+      "id": "v12_test_f2421_e0_negative",
+      "selected_role": "candidate",
+      "reference_grammar_digits": [
+        4,
+        5,
+        6,
+        5
+      ],
+      "selected_grammar_digits": [
+        4,
+        5,
+        6,
+        5
+      ],
+      "differing_program_axes": [],
+      "renderer_relative_angle_degrees": 212.40178016741658,
+      "estimated_angle_degrees": 212.0,
+      "absolute_rotation_discrepancy_degrees": 0.4017801674165753,
+      "scope": "Renderer pose is used only after evaluation to contextualize an observed error; shape jitter/aliasing can change optimal image registration"
+    },
+    {
+      "id": "v12_test_f2421_e1_negative",
+      "selected_role": "candidate",
+      "reference_grammar_digits": [
+        4,
+        5,
+        6,
+        5
+      ],
+      "selected_grammar_digits": [
+        4,
+        5,
+        6,
+        5
+      ],
+      "differing_program_axes": [],
+      "renderer_relative_angle_degrees": 212.40178016741658,
+      "estimated_angle_degrees": 212.0,
+      "absolute_rotation_discrepancy_degrees": 0.4017801674165753,
+      "scope": "Renderer pose is used only after evaluation to contextualize an observed error; shape jitter/aliasing can change optimal image registration"
+    },
+    {
+      "id": "v12_test_f4092_e1_negative",
+      "selected_role": "distractor",
+      "reference_grammar_digits": [
+        7,
+        7,
+        7,
+        4
+      ],
+      "selected_grammar_digits": [
+        7,
+        7,
+        6,
+        4
+      ],
+      "differing_program_axes": [
+        "connector_profile"
+      ],
+      "renderer_relative_angle_degrees": 229.91166846274209,
+      "estimated_angle_degrees": 230.0,
+      "absolute_rotation_discrepancy_degrees": 0.08833153725791476,
+      "scope": "Renderer pose is used only after evaluation to contextualize an observed error; shape jitter/aliasing can change optimal image registration"
+    }
+  ]
+}

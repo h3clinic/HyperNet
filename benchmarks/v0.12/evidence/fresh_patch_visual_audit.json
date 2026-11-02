@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "plan_sha256": "f51e8730e0ee23de0db5db5b3991da5e1141606b7cf28f87ff947f8c120d7464",
+  "protocol_sha256": "09e9b228afaf05e6c0d53e63852d2881e74860940b28c826ac8226aa5610a87b",
+  "figure_path": "assets\\fresh_patch_comparison.png",
+  "figure_sha256": "f6fe72b721456e3da1d9ae04588377a5f8baa356f0ad5ba812e33db23931e951",
+  "selection_family": 19,
+  "enrollment": 0,
+  "patch_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "cases": [
+    {
+      "id": "v12_test_f0019_e0_positive",
+      "present": true,
+      "native_score": 0.6243561141409111,
+      "old_cnn_score": 0.8091986179351807,
+      "bbox_xyxy": [
+        24,
+        164,
+        62,
+        210
+      ],
+      "native_accepted": true,
+      "chosen_patch_correlations": [
+        0.7938863274735817,
+        0.9540836270941545,
+        0.9433316083380713,
+        0.952590572061826
+      ],
+      "full_predictions_exact": true
+    },
+    {
+      "id": "v12_test_f0019_e0_negative",
+      "present": false,
+      "native_score": 0.2862946978430429,
+      "old_cnn_score": 0.8206726312637329,
+      "bbox_xyxy": [
+        24,
+        164,
+        62,
+        210
+      ],
+      "native_accepted": false,
+      "chosen_patch_correlations": [
+        0.5287667052436923,
+        0.7197742635659179,
+        0.7433093685573764,
+        0.8655030449207248
+      ],
+      "full_predictions_exact": true
+    }
+  ],
+  "model_state_before": "6dda19f85dd3fa035ca605b6db7d83966e2a247b439c6606174fdc2e9f775e09",
+  "model_state_after": "6dda19f85dd3fa035ca605b6db7d83966e2a247b439c6606174fdc2e9f775e09",
+  "training_updates": 0,
+  "full_saved_predictions_exact": true,
+  "source_checkpoint_prediction_hashes_unchanged": true,
+  "tracked_hashes": {
+    "experiments/detail_protocol_freeze.json": "09e9b228afaf05e6c0d53e63852d2881e74860940b28c826ac8226aa5610a87b",
+    "results/fresh_eval/fresh_results.json": "dc6611aa3ef0a70981308f006f54c8640ecdb29e046ba3afc10cb6c169cd36b8",
+    "data/shapes2d_fresh_v12/manifest.json": "fbe10b0e4d46b1d35fe599a3578a860d128632125a3ac2ae7cf59aa3663d4dfe",
+    "results/fresh_eval/native_patch_scores.jsonl": "fa03b13ba964d00993f69bf0aae88cf3305c84f39dd5b97154197a8ac6697c53",
+    "results/fresh_eval/old_cnn_scores.jsonl": "bdeefa91f54aedcc4e5adcd52206f1449fccb6d04a577616ccb38374e0e38417",
+    "previous_v11/checkpoints/detector_micro_aware.pt": "15c64b81747f3ebec224ef19621793c2d24ed9dd6f93de25c6ad5f7c5c04d49a"
+  },
+  "selection_uses_correctness": false
+}

@@ -1,0 +1,80 @@
+{
+  "reviewed_on": "2026-11-02",
+  "source_policy": "Primary papers read beyond abstracts; no external code or trained weights downloaded.",
+  "sources": [
+    {
+      "id": "loftr",
+      "title": "LoFTR: Detector-Free Local Feature Matching with Transformers",
+      "first_preprint": "2021-04-01",
+      "publication": "CVPR 2021, June",
+      "url": "https://arxiv.org/pdf/2104.00680",
+      "primary_publication_url": "https://openaccess.thecvf.com/content/CVPR2021/html/Sun_LoFTR_Detector-Free_Local_Feature_Matching_With_Transformers_CVPR_2021_paper.html",
+      "sections_read": "3.4\u20133.6;4.2",
+      "math": "Coarse correspondence followed by local fine matching; fine features are conditioned using coarse context.",
+      "budget": "Random initialization; separate ScanNet and MegaDepth training. ScanNet uses 230M sampled pairs, batch64 and approximately24hours on64GTX1080Ti GPUs. MegaDepth comprises about1M natural photographs.",
+      "adoption": "Separate alignment of broad geometry from scoring fine evidence. Do not import weights or claim the transformer architecture was reproduced.",
+      "caveat": "Local correspondence and pose benchmarks do not establish one-reference semantic-category recognition."
+    },
+    {
+      "id": "efficient_loftr",
+      "title": "Efficient LoFTR: Semi-Dense Local Feature Matching with Sparse-Like Speed",
+      "first_preprint": "2024-03-07",
+      "publication": "CVPR 2024, June",
+      "url": "https://arxiv.org/pdf/2403.04765",
+      "primary_publication_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Wang_Efficient_LoFTR_Semi-Dense_Local_Feature_Matching_with_Sparse-Like_Speed_CVPR_2024_paper.html",
+      "sections_read": "3.4\u20133.5;4.1;4.5",
+      "math": "Fine matching first selects mutual pixel correspondences, then refines within a3\u00d73 neighborhood; this limits displacement from unrelated correlation peaks.",
+      "budget": "Coarse and fine modules trained jointly from scratch on natural MegaDepth images; batch16, approximately15hours on8V100 GPUs.",
+      "adoption": "Keep alignment search and local evidence scoring explicit; avoid averaging distant ambiguous peaks into an apparently precise match.",
+      "caveat": "Full-resolution output is fused from lower-resolution features; it is not a theorem that every input detail survives."
+    },
+    {
+      "id": "r2d2",
+      "title": "R2D2: Repeatable and Reliable Detector and Descriptor",
+      "first_preprint": "2019-06-14",
+      "publication": "NeurIPS 2019",
+      "url": "https://papers.nips.cc/paper_files/paper/2019/file/3198dfd0aef271d22f7bcddd6f12f5cb-Paper.pdf",
+      "sections_read": "2\u20133.3;4.4",
+      "math": "Separate repeatability and descriptor reliability; ranking-derived reliability suppresses ambiguous local evidence.",
+      "budget": "Joint training from scratch:25epochs, batch8 pairs of192px crops. Three natural-image sources contribute roughly4000images each: web images, transformed Aachen images, and nearby Aachen view pairs with correspondence estimates. A localization variant also adds style-transferred night images.",
+      "adoption": "Do not treat a large, repeatable outline as automatically discriminative for a tiny-pattern decision.",
+      "caveat": "Its learned reliability is not equivalent to a heuristic interior mask; no pretrained descriptors are adopted."
+    },
+    {
+      "id": "d2net",
+      "title": "D2-Net: A Trainable CNN for Joint Description and Detection of Local Features",
+      "first_preprint": "2019-05-09",
+      "publication": "CVPR 2019, June",
+      "url": "https://arxiv.org/pdf/1905.03561",
+      "sections_read": "4.1\u20134.3;5.1;AppendixB",
+      "math": "Dense descriptors and detections share features; distinctive correspondences receive a detection-weighted triplet loss. Test-time dilated convolutions improve feature-grid resolution.",
+      "budget": "ImageNet-pretrained VGG16; only conv4_3 fine-tuned for50epochs. MegaDepth yields327036pairs, with18149validation pairs and118training scenes;100pairs per training scene per epoch.",
+      "adoption": "Descriptor discrimination and spatial localization are separate requirements. Compare native-detail preservation under identical proposals/alignment.",
+      "caveat": "The paper reports poorer accuracy at strict localization tolerances and a low-viewpoint-change training bias. Its pretrained weights violate this project\u2019s external-weight constraint."
+    },
+    {
+      "id": "sift",
+      "title": "Distinctive Image Features from Scale-Invariant Keypoints",
+      "first_preprint": null,
+      "publication": "International Journal of Computer Vision, 2004; author manuscript dated2004-01-05",
+      "url": "https://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf",
+      "sections_read": "6.1\u20136.2;7.1",
+      "math": "Locally normalized orientation descriptors, magnitude clipping and renormalization reduce dominant-gradient effects; nearest/second-nearest distance ratios reject ambiguous matches.",
+      "budget": "Handcrafted descriptors require no learned neural weights. Several constants were chosen empirically using image experiments; this is not an absence of designed priors or development data.",
+      "adoption": "Normalize fine-detail evidence separately instead of letting outline energy dominate; measure ambiguity relative to competing matches.",
+      "caveat": "A ratio to the next proposal can still accept a distinctive wrong object. It needs DEV calibration and explicit absent-target tests."
+    },
+    {
+      "id": "scattering",
+      "title": "Group Invariant Scattering",
+      "first_preprint": "2011-01-12",
+      "publication": "2012; reviewed arXivv3 dated2012-04-15",
+      "url": "https://arxiv.org/pdf/1101.2286",
+      "sections_read": "Introduction;Sections2.1\u20132.5",
+      "math": "Cascaded wavelet modulus transforms move high-frequency variation into stable coefficients before local averaging, under stated wavelet and deformation assumptions.",
+      "budget": "Mathematical construction, not an externally trained CNN. No one-shot natural-category benchmark is established by the theorem.",
+      "adoption": "Preserve a high-frequency channel before downsampling; stability should not be implemented by simply erasing the discriminative signal.",
+      "caveat": "Norm/stability results concern the specified scattering construction. They do not transfer automatically to truncated handcrafted filters or this proposed matcher; increasing invariance can remove orientation identity."
+    }
+  ]
+}

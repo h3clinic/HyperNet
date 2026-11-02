@@ -1,0 +1,11 @@
+{
+  "format": "hypernet.portable_review_addendum.v12",
+  "valid": true,
+  "bundle_unchanged": true,
+  "bundle_sha256": "ff1c2ff195cff7076a460c0f9b125be93d140d7d12750b2ae804be5a88c4feae",
+  "independent_wrapper_review": {
+    "path": "experiments/portable_wrapper_independent_review.json",
+    "sha256": "f65e49fe15f66356f94e19567db4c1fc26ed00773506a549a5eb0a7e35dec385"
+  },
+  "scope": "Independent source/API/path-portability review and10tests; no new inference or training."
+}

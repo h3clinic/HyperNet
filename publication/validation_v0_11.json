@@ -1,0 +1,40 @@
+{
+  "version": "0.11.0",
+  "date": "2026-11-02",
+  "portable_tests": {
+    "total_distinct_passed": 230,
+    "initial_complete_suite": {
+      "passed": 225,
+      "seconds": 25.76
+    },
+    "added_diagnostic_and_changed_gallery_checks": {
+      "passed": 10,
+      "seconds": 1.13,
+      "new_distinct_tests": 5
+    }
+  },
+  "core_files": 71,
+  "previous_core_unchanged": 69,
+  "frozen_new_model_and_renderer_byte_identical": true,
+  "independent_checks": {
+    "cnn_metric_values": 56,
+    "cnn_localization_rows": 2048,
+    "cnn_exact_replays": 32,
+    "paired_contrast_values": 15,
+    "hybrid_metric_values": 28,
+    "hybrid_localization_rows": 1024,
+    "hybrid_exact_replays": 4
+  },
+  "public_arithmetic_verification": {
+    "passed": true,
+    "prediction_rows": 3072,
+    "metric_values": 84,
+    "paired_contrast_values": 15,
+    "post_hoc_type_present_counts_verified": true
+  },
+  "natural_training_images": 0,
+  "external_pretrained_weights": false,
+  "photos_or_checkpoints_published": false,
+  "primary_finding": "No established improvement: localized recall 4.30% versus 5.47%; paired interval crosses zero.",
+  "scope": "Controlled synthetic 2D micro-pattern probe, not natural semantic category validation."
+}

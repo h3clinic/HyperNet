@@ -1,0 +1,59 @@
+{
+  "format": "hypernet.shapes2d.fresh_dataset.v12",
+  "status": "Agreed generation contract; plan and source hashes are recorded separately before dataset generation",
+  "dataset_root": "data/shapes2d_fresh_v12",
+  "manifest_path": "data/shapes2d_fresh_v12/manifest.json",
+  "support_size": 96,
+  "query_size": 256,
+  "family_universe": 4096,
+  "grammar_axes": ["outline", "layout", "stroke_profile", "microprogram"],
+  "family_splits": {"train": 0, "dev": 128, "test": 128, "remaining_eligible_reserved": 1507},
+  "episode_counts": {"dev": 256, "test": 256},
+  "query_row_counts": {"dev": 512, "test": 512},
+  "unique_rgb_counts": {"support": 512, "query": 512, "total": 1024},
+  "partition_rule": "From the v11 reserved pool of1792 IDs, exclude29 preview/smoke-exposed IDs. Rank the remaining1763 IDs by SHA256('HyperNet-v12-2D-fresh-family-split-1:'+decimalID). First128 DEV,next128 TEST. Distractors exclusively from the same partition, excluding enrolled family. No model scores enter selection.",
+  "freshness_rule": "All model/scorer selection is finished and hash-frozen before fresh image generation. New v12 seed namespace. Prior v11 main/preview raw-file and decoded-pixel hashes are excluded. Fresh DEV calibrates thresholds only; fresh TEST is evaluation-only; no fresh training rows.",
+  "episode_schema": {
+    "episode_id": "v12_dev_f0000_e0",
+    "split": "dev|test",
+    "family_id": 0,
+    "grammar_digits": [0, 0, 0, 0],
+    "object_seed": "integer",
+    "scene_seed": "integer",
+    "enrolled_variant": "0|1",
+    "support": {
+      "rgb_path": "dev/f0000/support_v0.rgb.png",
+      "mask_path": "dev/f0000/support_v0.mask.png",
+      "bbox_xyxy": [0, 0, 96, 96],
+      "rgb_sha256": "file digest",
+      "rgb_array_sha256": "decoded RGB digest",
+      "mask_sha256": "file digest"
+    },
+    "queries": [
+      {
+        "id": "v12_dev_f0000_e0_positive",
+        "present": true,
+        "candidate_variant": 0,
+        "rgb_path": "dev/f0000/query_v0.rgb.png",
+        "target_path": "dev/f0000/e0_positive.targets.npz",
+        "target_bbox_xyxy": [0, 0, 256, 256],
+        "candidate_bbox_xyxy": [0, 0, 256, 256],
+        "all_boxes": [
+          {"family_id": 0, "micro_variant": 0, "role": "candidate|distractor", "bbox_xyxy": [0, 0, 256, 256]}
+        ],
+        "rgb_sha256": "file digest",
+        "rgb_array_sha256": "decoded RGB digest",
+        "target_sha256": "file digest"
+      }
+    ]
+  },
+  "targets_npz": {
+    "union_mask": "bool[256,256]; union of all rendered foreground shapes",
+    "target_mask": "bool[256,256]; enrolled microvariant foreground on positives, allFalse on negatives",
+    "candidate_mask": "bool[256,256]; candidate foreground for provenance and diagnostics only"
+  },
+  "bbox_convention": "xyxy in pixel coordinates; exclusive right/bottom; tight foreground bounds",
+  "counterbalance": "Two enrollment variants per family. Shared candidate scene pixels are intentionally reused with opposite labels, making presence depend on the support. No shared grammar families or seeds with v11 main/preview/smoke exposures; fresh DEV/TEST family splits and pixels are disjoint. Candidate query is an independently jittered macro instance, with +/-3% axis/connector variation from support. Both microstates have equal continuous removed area and primitive count; rasterized ink counts can differ slightly.",
+  "inference_access": "Model receives only support RGB/support box and query RGB. Query boxes, masks, object roles, family labels and presence labels are evaluation targets, never inference inputs.",
+  "scope": "Heldout grammar combinations share designed mathematical building blocks; they are not new semantic natural-object categories. No natural images or external pretrained weights."
+}

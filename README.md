@@ -1,6 +1,22 @@
 # HyperNet
 
-**One-reference recognition experiments with explicit training budgets. The current v11 experiment detects a matching 2D shape and micro-pattern inside a larger scene, after training our own CNN on procedural images. No borrowed pretrained weights are used in these HyperNet paths.**
+**One-reference recognition experiments with explicit training budgets. v12 combines our synthetic-trained CNN proposals with analytic matching of native-resolution local patches. No borrowed pretrained weights are used in these HyperNet paths.**
+
+Version **0.12.0** improves the controlled 2D micro-pattern probe on an entirely fresh cohort: **253/256 positives localized and accepted (98.83%)**, compared with **13/256 (5.08%)** for the previous CNN on those same images. False positives are **13/256 (5.08%)** versus **11/256 (4.30%)**. The paired localized-recall gain is **93.75 percentage points**, 95% family-bootstrap interval **[89.45,97.66]**. Reducing only the fine RGB evidence by four times, while preserving native alignment and patch locations, lowers recall to **22.27%**, with **8.59%** false positives. See [all six methods, errors and audits](benchmarks/v0.12/README.md) and the [illustrated report](benchmarks/v0.12/report.html).
+
+**This is a CNN-plus-analytic matcher on separated synthetic 2D shapes. It is not a new CNN-only accuracy result or evidence of natural-category recognition.** One reference describes enrollment. The reused CNN previously trained on 8,192 distinct procedural images; v12 makes no new optimizer updates and uses no natural training images. The primary method was selected on old development data and frozen before generating 128 fresh DEV and 128 fresh TEST composition families. Only DEV negatives calibrate acceptance thresholds. All six methods share the same CNN proposals. The original goal—recognizing any natural example of a type from one reference—remains unvalidated.
+
+After installation below, reproduce a small inference sample with the exact project-trained checkpoint and synthetic images:
+
+```bash
+python examples/download_v12_assets.py
+python examples/replay_v12.py --output results/replay_v12_smoke
+python publication/verify_v12_results.py
+# Optional full inference replay:
+python examples/replay_v12.py --full --output results/replay_v12_full
+```
+
+The two [v0.12 release assets](https://github.com/h3clinic/HyperNet/releases/tag/v0.12.0) are a 3.60 MB synthetic-only checkpoint and a 5.42 MB procedural RGB archive. The downloader checks SHA-256 hashes before use. Code remains byte-identical to the frozen experiment; portable wrappers handle public paths and mark outputs as replication. No natural photographs, credentials or local user paths are included. Historical experiments below remain available, including unsuccessful approaches.
 
 Version **0.11.0** is a **controlled 2D micro-pattern detection probe**, using a 96px reference and a 256px scene with six objects. The CNN trains on 2,048 procedural composition families and is evaluated on 128 DEV plus 128 TEST families with unseen combinations of familiar drawing rules. Two counterbalanced enrollments reuse identical query scenes with opposite labels. The micro-aware objective is compared against the same architecture, initialization and images without candidate micro-negative match supervision. **The added micro-pattern objective did not establish an improvement:** TEST localized recall was **4.30% versus 5.47%** for the family-only control, with **4.30% false positives in both arms**. The paired difference was −1.17 percentage points, 95% family-bootstrap interval [−3.52,+0.39]. All target boxes were available among the proposals, while pooled AUROC remained near 50%. See [all v11 results and audits](benchmarks/v0.11/README.md).
 
@@ -142,13 +158,13 @@ Open HTML reports locally after cloning. The potential contribution is an audite
 
 ## Reproducibility and publication status
 
-[Source hashes](publication/source_snapshot.json) bind **all 69 package files**. All 67 v09 package files remain unchanged; the two new renderer/encoder files match the frozen v10 experiment byte for byte. The dataset builder and training driver are exported unchanged as well. Packaging, portable examples and publication documents are separate additions. The historical internal version string is preserved; distribution metadata is0.10.0. The [v09 source snapshot](publication/source_snapshot_v0_9.json) preserves that earlier binding.
+[Source hashes](publication/source_snapshot.json) bind **all 75 package files** to the frozen v12 implementation. Of the 71 previously published package files, 70 are unchanged; the remaining change is the package version string. Four new detail-matching modules are exact frozen copies. Acquisition and evaluation drivers are exported unchanged; portable examples and publication documents are separate additions. The [v11 source snapshot](publication/source_snapshot_v0_11.json) and earlier snapshots preserve historical bindings. Distribution and package metadata now identify version 0.12.0.
 
 The [prior source manifest](publication/source_snapshot_v0_8_1.json), Git history and [v0.8.1 benchmark](benchmarks/v0.8.1/README.md) preserve the previous experiment. Its interpolation roundoff repair changed only input-boundary handling; it did not improve the model algorithm. All earlier audited score records remain available.
 
 The v09 fresh-photo protocol has 720 reference/query pairs: 360 DEV and 360 TEST, each with 180 positives and 180 negatives, across six categories per split. Seven HyperNet controls and a separately pretrained OWL-ViT comparator are reported with the same metrics in the [audited v09 benchmark](benchmarks/v0.9/README.md). There are only six TEST category clusters, limiting uncertainty estimates. No fresh-score tuning is permitted.
 
-Portable tests check implementation and provenance properties, not recognition accuracy. No photographs, trained checkpoints, caches, credentials or machine-specific experiment paths are distributed. The [full v09 control results](benchmarks/v0.9/README.md) include 5,760 score rows, the reconstructable cohort, paired intervals, localization and independent arithmetic verification.
+Portable tests check implementation and provenance properties, not recognition accuracy. No natural photographs, caches, credentials or private machine paths are distributed. v12 release assets explicitly include our own synthetic-trained CNN and generated RGB cohort for exact inference replay; earlier releases retain their original pixel-free records. The [full v09 control results](benchmarks/v0.9/README.md) include 5,760 score rows, the reconstructable cohort, paired intervals, localization and independent arithmetic verification.
 
 ## License status
 

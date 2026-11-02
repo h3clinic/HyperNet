@@ -1,0 +1,123 @@
+{
+  "passed": true,
+  "selection": "First2 sorted old DEV family IDs; both enrollments and both queries",
+  "family_ids": [
+    4,
+    43
+  ],
+  "query_rows": 8,
+  "checks": [
+    {
+      "id": "dev_f0004_e0_positive",
+      "split": "dev",
+      "old_cnn_exact": true,
+      "all6_methods_share_proposals": true,
+      "fixed_native_lowres_locations_and_outline": true,
+      "proposal_count": 6,
+      "score": 0.9423261880874634
+    },
+    {
+      "id": "dev_f0004_e0_negative",
+      "split": "dev",
+      "old_cnn_exact": true,
+      "all6_methods_share_proposals": true,
+      "fixed_native_lowres_locations_and_outline": true,
+      "proposal_count": 6,
+      "score": 0.9276081323623657
+    },
+    {
+      "id": "dev_f0004_e1_positive",
+      "split": "dev",
+      "old_cnn_exact": true,
+      "all6_methods_share_proposals": true,
+      "fixed_native_lowres_locations_and_outline": true,
+      "proposal_count": 6,
+      "score": 0.940264105796814
+    },
+    {
+      "id": "dev_f0004_e1_negative",
+      "split": "dev",
+      "old_cnn_exact": true,
+      "all6_methods_share_proposals": true,
+      "fixed_native_lowres_locations_and_outline": true,
+      "proposal_count": 6,
+      "score": 0.9529517889022827
+    },
+    {
+      "id": "dev_f0043_e0_positive",
+      "split": "dev",
+      "old_cnn_exact": true,
+      "all6_methods_share_proposals": true,
+      "fixed_native_lowres_locations_and_outline": true,
+      "proposal_count": 6,
+      "score": 0.9880040884017944
+    },
+    {
+      "id": "dev_f0043_e0_negative",
+      "split": "dev",
+      "old_cnn_exact": true,
+      "all6_methods_share_proposals": true,
+      "fixed_native_lowres_locations_and_outline": true,
+      "proposal_count": 6,
+      "score": 0.9862596392631531
+    },
+    {
+      "id": "dev_f0043_e1_positive",
+      "split": "dev",
+      "old_cnn_exact": true,
+      "all6_methods_share_proposals": true,
+      "fixed_native_lowres_locations_and_outline": true,
+      "proposal_count": 6,
+      "score": 0.9883091449737549
+    },
+    {
+      "id": "dev_f0043_e1_negative",
+      "split": "dev",
+      "old_cnn_exact": true,
+      "all6_methods_share_proposals": true,
+      "fixed_native_lowres_locations_and_outline": true,
+      "proposal_count": 6,
+      "score": 0.987870991230011
+    }
+  ],
+  "sources_before": {
+    "hypernet/detail_pipeline.py": "17faf610ee2921adfe5878695ac4513c2ee6ce3d448baaba74a704fa8c4a6dbf",
+    "hypernet/detail_metrics.py": "d2c12775bdeaf8f192aa06ea728c31844fcdfaa4b0ab0edc24e7eb495fe3bc44",
+    "scripts/evaluate_detail.py": "bae1a52b3ebdca3646f451f0027515e011e8150ab4c815646f7ae60bf7dbe7be",
+    "hypernet/native_detail.py": "89600f68350fef1c9c60c12c0a701a64d0278acace113d636c9a981645ebce8e",
+    "hypernet/gradient_detail.py": "1425b86cd9a3082e64816c81cb22d7fdaf65e8fb43323413b809fddbbab75538",
+    "hypernet/one_shot_detector.py": "000f52fbc239fd4675e05aaa70f85dc330d6494aa286bf842c2a649c3e3d99a0",
+    "previous_v11/hypernet/one_shot_detector.py": "000f52fbc239fd4675e05aaa70f85dc330d6494aa286bf842c2a649c3e3d99a0",
+    "previous_v11/checkpoints/detector_micro_aware.pt": "15c64b81747f3ebec224ef19621793c2d24ed9dd6f93de25c6ad5f7c5c04d49a",
+    "previous_v11/data/shapes2d_v11/manifest.json": "515a46197650689e922dd00a63e8f08ce14a285f43142c1c0c93733b661b2d27"
+  },
+  "sources_after": {
+    "hypernet/detail_pipeline.py": "17faf610ee2921adfe5878695ac4513c2ee6ce3d448baaba74a704fa8c4a6dbf",
+    "hypernet/detail_metrics.py": "d2c12775bdeaf8f192aa06ea728c31844fcdfaa4b0ab0edc24e7eb495fe3bc44",
+    "scripts/evaluate_detail.py": "bae1a52b3ebdca3646f451f0027515e011e8150ab4c815646f7ae60bf7dbe7be",
+    "hypernet/native_detail.py": "89600f68350fef1c9c60c12c0a701a64d0278acace113d636c9a981645ebce8e",
+    "hypernet/gradient_detail.py": "1425b86cd9a3082e64816c81cb22d7fdaf65e8fb43323413b809fddbbab75538",
+    "hypernet/one_shot_detector.py": "000f52fbc239fd4675e05aaa70f85dc330d6494aa286bf842c2a649c3e3d99a0",
+    "previous_v11/hypernet/one_shot_detector.py": "000f52fbc239fd4675e05aaa70f85dc330d6494aa286bf842c2a649c3e3d99a0",
+    "previous_v11/checkpoints/detector_micro_aware.pt": "15c64b81747f3ebec224ef19621793c2d24ed9dd6f93de25c6ad5f7c5c04d49a",
+    "previous_v11/data/shapes2d_v11/manifest.json": "515a46197650689e922dd00a63e8f08ce14a285f43142c1c0c93733b661b2d27"
+  },
+  "sources_unchanged": true,
+  "state_sha256_before": "6dda19f85dd3fa035ca605b6db7d83966e2a247b439c6606174fdc2e9f775e09",
+  "state_sha256_after": "6dda19f85dd3fa035ca605b6db7d83966e2a247b439c6606174fdc2e9f775e09",
+  "training_updates": 0,
+  "query_input_gradients": false,
+  "parameter_gradients": false,
+  "runner_load_rgb_file_and_pixel_hash_validated": true,
+  "v11_detector_source_identical": true,
+  "fresh_images_read": 0,
+  "old_test_images_read": 0,
+  "static_review": [
+    "Scoring APIs consume enrollment RGB+box and query RGB only.",
+    "All six scores are computed before evaluator reads query targets.",
+    "DEV-only strict tied-score calibration is held unchanged on TEST.",
+    "Family bootstrap resamples matching family indices across methods with thresholds fixed.",
+    "centroid_only includes position, size, feature-count, and outline controls; covariance is the omitted term.",
+    "Fresh runner requires completed manifest and passing data audit tied to exact protocol/admission; RGB files and decoded arrays are verified."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "restored_exact_original_bytes": true,
+  "expected_and_restored_sha256": "28dd8f9f50e4c4932074436f9344057753d610f27eba163259f4b09a6b6faad4",
+  "overwritten_review_sha256": "ac873ab9840fb51095a850438bec166cd8de5b22e12d23313e1798ace80d8f4d",
+  "preserved_overwritten_review": "experiments\\variation_agent_pipeline_review_after_freeze.json",
+  "recovery_candidate": "experiments\\pipeline_independent_review_recovery_candidate.json",
+  "method": "Deterministic reconstruction from unchanged detail_pipeline_review.json plus original fixed test dictionaries; exact SHA matched immutable protocol before restoration",
+  "restored_utc": "2026-11-02T21:06:54.468194+00:00",
+  "protocol_sha256": "09e9b228afaf05e6c0d53e63852d2881e74860940b28c826ac8226aa5610a87b",
+  "model_or_inference_behavior_changed": false,
+  "disclosure": "An offline review filename collision temporarily replaced this evidence file after freeze; original bytes were recovered and the overwritten version preserved."
+}

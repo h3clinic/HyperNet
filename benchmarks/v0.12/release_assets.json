@@ -1,0 +1,12 @@
+{
+  "detector_micro_aware.pt": {
+    "sha256": "15c64b81747f3ebec224ef19621793c2d24ed9dd6f93de25c6ad5f7c5c04d49a",
+    "bytes": 3598069,
+    "url": "https://github.com/h3clinic/HyperNet/releases/download/v0.12.0/detector_micro_aware.pt"
+  },
+  "fresh_v12_rgb.zip": {
+    "sha256": "4f2791b900bbeaf97de336407fecd4457f38d340193b770f9c42f42985259694",
+    "bytes": 5417752,
+    "url": "https://github.com/h3clinic/HyperNet/releases/download/v0.12.0/fresh_v12_rgb.zip"
+  }
+}
