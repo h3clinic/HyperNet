@@ -1,0 +1,2 @@
+# Preserve the experiment source bytes; no platform-dependent newline conversion.
+* -text

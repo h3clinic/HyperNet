@@ -1,0 +1,88 @@
+{
+  "verified_on": "2026-11-02",
+  "scope": "Primary-source mathematical ideas for one-support-image recognition without pretrained weights. These are not direct benchmark comparisons.",
+  "novelty_assessment": "Gaussian augmentation, covariance distances, invariance regularization and deformable matching are established. Support-derived tolerance combined with constrained part correspondence and counterfactual structural evidence is an experimental combination; originality and superiority are not established.",
+  "sources": [
+    {
+      "title": "Learning from one and only one shot (Distortable Canvas)",
+      "primary_url": "https://www.nature.com/articles/s44387-025-00017-7",
+      "date": "2025-07-14",
+      "status": "npj Artificial Intelligence journal article",
+      "math": "Bounded spatial deformation and appearance matching, optimized coarse to fine; deformation cost regularizes similarity.",
+      "prior_budget": "No extra pretraining; one to ten exemplars per class, evaluated on handwritten characters and sketches including MNIST, EMNIST, Omniglot and QuickDraw.",
+      "adoption": "Retain a bounded deformation cost when matching support parts.",
+      "caveats": "Natural-photo abstraction is explicitly future work. Abstract-image results do not establish cluttered-photo category recognition."
+    },
+    {
+      "title": "Mahalanobis++: Improving OOD Detection via Feature Normalization",
+      "primary_url": "https://arxiv.org/abs/2505.18032",
+      "date": "2025-05-23",
+      "status": "ICML 2025",
+      "math": "L2 normalization improves Gaussian-distance scoring; class means and shared covariance define Mahalanobis distances.",
+      "prior_budget": "Evaluates 44 pretrained ImageNet models and estimates statistics from many in-distribution training features.",
+      "adoption": "Use bounded, strongly shrunk support-augmentation covariance as local nuisance tolerance.",
+      "caveats": "HyperNet already normalizes descriptors. Synthetic variance is not natural category covariance or a calibrated probability. Blank-part precision must remain bounded."
+    },
+    {
+      "title": "Augmentation Invariant Manifold Learning",
+      "primary_url": "https://arxiv.org/html/2211.00460v3",
+      "date": "2025-01-14",
+      "status": "2025 revision and JRSSB publication; original preprint 2022",
+      "math": "A product manifold separates underlying structure from augmentation nuisance; invariant representations estimate the structural coordinate.",
+      "prior_budget": "Experiments use 60000 MNIST images, 100000 unlabeled STL-10 images and ImageNet pretraining.",
+      "adoption": "Preserve object structure while learning tolerance to chosen nuisance transformations.",
+      "caveats": "One reference explores a single augmentation fiber. Additional variants do not reveal differences between members of a category. Guarantees rely on manifold assumptions and multiple underlying samples."
+    },
+    {
+      "title": "LeJEPA: Provable and Scalable Self-Supervised Learning Without the Heuristics",
+      "primary_url": "https://arxiv.org/abs/2511.08544",
+      "date": "2025-11-11",
+      "status": "arXiv version examined",
+      "math": "SIGReg compares characteristic functions of random feature projections with an isotropic Gaussian target to discourage collapse.",
+      "prior_budget": "Dataset-scale self-supervised training, including ImageNet; downstream one-shot experiments follow substantial representation training.",
+      "adoption": "Possible separate unnormalized auxiliary-head ablation; preserve the analytic shape descriptor head.",
+      "caveats": "A unit-normalized descriptor cannot follow a full Euclidean Gaussian. Distribution regularization does not create missing category observations; this work does not validate strict one-image learning."
+    },
+    {
+      "title": "KerJEPA: Kernel Discrepancies for Euclidean Self-Supervised Learning",
+      "primary_url": "https://arxiv.org/html/2512.19605v1",
+      "date": "2025-12-22",
+      "status": "arXiv version examined",
+      "math": "MMD and kernel Stein discrepancies generalize latent-distribution regularization; analytic alternatives avoid finite-slicing noise. Hyperspherical representations receive separate treatment.",
+      "prior_budget": "Principal experiment trains ViT-S/8 on ImageNette for 800 epochs, batch 256, four views.",
+      "adoption": "Prefer small-batch exact regularization over unnecessary random slicing if adding an invariance head.",
+      "caveats": "Detection and segmentation transfer remain future work. Projector geometry need not describe backbone geometry. No one-image category result."
+    },
+    {
+      "title": "FACTOR: Counterfactual Training-Free Test-Time Adaptation for Open-Vocabulary Object Detection",
+      "primary_url": "https://arxiv.org/html/2605.03294v1",
+      "date": "2026-05-05",
+      "status": "arXiv version examined",
+      "math": "Original-versus-perturbed region predictions quantify attribute sensitivity and drive confidence adjustment.",
+      "prior_budget": "Frozen pretrained Grounding DINO with Swin visual backbone and BERT text encoder; COCO-C, PASCAL-C and FoggyCityscapes evaluation.",
+      "adoption": "Compare intact and counterfactual evidence using HyperNet's own features.",
+      "caveats": "Training-free means no adaptation updates, not no pretraining. Arbitrary part shuffles are not exchangeable statistical nulls. Use a counterfactual margin, not a claimed p-value or causal guarantee."
+    },
+    {
+      "title": "Recurrent connections facilitate occluded object recognition by explaining-away",
+      "primary_url": "https://www.nature.com/articles/s41467-026-68806-5",
+      "date": "2026-01-31",
+      "status": "Nature Communications journal article",
+      "math": "Recognizing an occluder helps explain missing or altered features of the occluded object; benefits depend on computational task organization.",
+      "prior_budget": "Includes 50000 training composites from 24000 FashionMNIST images and fine-tuned CORnet experiments.",
+      "adoption": "Use explicit unmatched-part/background explanations in partial matching.",
+      "caveats": "Neither recurrence alone nor one support image reproduces the reported effect. Sufficiently deep feedforward models can also perform well; no universal recurrent advantage is established."
+    },
+    {
+      "title": "Systematic image perturbations reveal persistent gaps between human and machine vision",
+      "primary_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13639169/",
+      "author_code_url": "https://github.com/BiyuHeLab/DNNObjectRec_Kato2026",
+      "date": "2026-10",
+      "status": "iScience October 2026 issue; date denotes issue month",
+      "math": "Controlled perturbations separate global outline, internal parts and texture contributions to recognition.",
+      "prior_budget": "Tests over 200 networks against humans using 240 exemplars across 48 categories with manually removed backgrounds.",
+      "adoption": "Diagnose whether scores depend on coherent structure using shuffled-part and texture/shape ablations.",
+      "caveats": "A diagnostic study, not a one-image recognizer. Its prepared object images do not establish robustness to full-scene background clutter."
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "review_date": "2026-11-02",
+  "scope": "Eight primary papers, methods and assumptions read beyond abstracts; recent publication years are distinguished from original preprint dates. These are mathematical ingredients, not evidence that HyperNet matches published recognition accuracy.",
+  "sources": [
+    {
+      "id": "opgm_iclr2025",
+      "title": "Learning Partial Graph Matching via Optimal Partial Transport",
+      "authors": "Gathika Ratnayaka, James Nichols, Qing Wang",
+      "publication": "ICLR 2025; first arXiv submission 2024-10-22",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/cfa8440d500a6a6867157dfd4eaff66e-Paper-Conference.pdf",
+      "arxiv": "https://arxiv.org/abs/2410.16718",
+      "read_sections": "Weighted total variation formulation, partial assignment reduction, Section 8.1 experimental setup",
+      "reusable_math": "For unit node capacities minimize <P,C> + rho[alpha.(1-P1) + beta.(1-P^T1)], with P binary, P1<=1, P^T1<=1. After dropping constants, maximize sum P_ij[rho(alpha_i+beta_j)-C_ij]. Zero-gain dummy choices permit unmatched nodes; solve the linear assignment exactly.",
+      "training_requirements": "The optimization needs no learned weights. Published image benchmarks use pretrained VGG16 features and trained GCAN node embeddings; their results do not satisfy HyperNet's no-pretraining constraint.",
+      "assumptions_and_limits": "Node similarity must already be meaningful. One-to-one assignment prevents duplicate query reuse but cannot distinguish stable background from foreground. Plain linear assignment is not full quadratic graph matching.",
+      "decision": "Apply the assignment idea using our descriptors. Full-support normalization and a minimum-coverage gate are separate engineering choices, not claims of reproducing the paper."
+    },
+    {
+      "id": "cruot_2025",
+      "title": "Structured Matching via Cost-Regularized Unbalanced Optimal Transport",
+      "authors": "Emanuele Pardini, Katerina Papagiannouli",
+      "publication": "arXiv preprint, 2025-11-24",
+      "url": "https://arxiv.org/html/2511.19075v1",
+      "arxiv": "https://arxiv.org/abs/2511.19075",
+      "read_sections": "Cost regularization, alternating optimization, convergence assumptions and single-cell experiments",
+      "reusable_math": "Alternate minimizing -integral <Mx,y> dP + D_phi1(P1|a) + D_phi2(P2|b) + epsilon KL(P|a tensor b), and updating M on a Frobenius ball. For S=integral yx^T dP, the constrained inner-product update is M=r*S/||S||_F when S is nonzero.",
+      "training_requirements": "No pretrained network is required by the transport formulation; M and the coupling are fitted to the supplied pair. Experiments include scGEM/SNARE-seq multiomics, not one-shot natural-photo recognition.",
+      "assumptions_and_limits": "Stationary-point convergence uses discrete positive masses and entropy assumptions; it is not a global-optimum guarantee. Joint cost adaptation can make an unrelated pair easier to align.",
+      "decision": "Borrow regularization discipline; defer query-specific descriptor metric fitting. Do not call the current fixed-cost linear matcher a CR-UOT implementation."
+    },
+    {
+      "id": "iot_pr2026",
+      "title": "Iterative optimal transport for multimodal image registration",
+      "authors": "Mengyu Li, Cheng Meng, Xiaodan Fan",
+      "publication": "Pattern Recognition 172 (2026), 112736; accepted 2025-11-11 and online 2025-11-15",
+      "url": "https://mengyu8042.github.io/files/PR_IOT.pdf",
+      "doi": "https://doi.org/10.1016/j.patcog.2025.112736",
+      "read_sections": "Objective, alternating MM/BFGS solver, edge extraction and medical registration experiments",
+      "reusable_math": "Minimize sum_ij ||f(x_i)-y_j||^2 T_ij + lambda[KL(T1|a)+KL(T^T1|b)] + epsilon sum_i ||f(x_i)-x_i||^2 over T>=0 and a low-degree polynomial f. The quadratic displacement penalty restricts deformation; KL marginal penalties allow unmatched structure.",
+      "training_requirements": "The method is training-free and works on extracted edge points, with Canny for MRI/CT and a specialized vessel detector for retina. It is not a pretrained CNN.",
+      "assumptions_and_limits": "Experiments register the same anatomical scene across modalities. This differs fundamentally from recognizing different category instances. Alternation guarantees under stated assumptions concern stationarity, not semantic correctness. Flexible warping may align irrelevant background.",
+      "decision": "Consider only bounded geometric refinement after appearance matching; defer free polynomial deformation. Journal year 2026 does not mean first release in 2026."
+    },
+    {
+      "id": "pgw_iclr2025",
+      "title": "Partial Gromov-Wasserstein Metric",
+      "authors": "Yikun Bai, Rocio Diaz Martin, Abihith Kothapalli, Hengrong Du, Xinran Liu, Soheil Kolouri",
+      "publication": "ICLR 2025; first arXiv submission 2024-02-06; final listed revision 2025-03-27",
+      "url": "https://arxiv.org/html/2402.03664v5",
+      "arxiv": "https://arxiv.org/abs/2402.03664",
+      "read_sections": "Sections 3-5, total-variation mass penalty, Frank-Wolfe solver and shape retrieval protocol",
+      "reusable_math": "With M_ijkl=|dX(i,k)-dY(j,l)|^p, minimize sum M_ijkl P_ij P_kl + lambda(|a|^2+|b|^2-2|P|^2), subject to P>=0, P1<=a, P^T1<=b. The quadratic term compares internal distances while allowing partial mass.",
+      "training_requirements": "The distance solver and nearest-representative shape matching need no pretrained features. The paper also reports an SVM trained with ten-fold cross-validation; those figures are not one-reference learning results.",
+      "assumptions_and_limits": "Compact metric-measure spaces and specified distance losses support the metric/existence results. Frank-Wolfe reaches stationary points for the nonconvex objective. Identical tile-coordinate grids contain no object-specific geometry.",
+      "decision": "Use as a future contour/feature-graph objective. Do not label a simple position penalty or Hungarian solver PGW."
+    },
+    {
+      "id": "fpgw_2025",
+      "title": "Fused Partial Gromov-Wasserstein for Structured Objects",
+      "authors": "Yikun Bai, Shuang Wang, Huy Tran, Hengrong Du, Juexin Wang, Soheil Kolouri",
+      "publication": "arXiv preprint, first submitted 2025-02-14; revision read 2025-09-26",
+      "url": "https://arxiv.org/html/2502.09934v2",
+      "arxiv": "https://arxiv.org/abs/2502.09934",
+      "read_sections": "Section 3 formulations, Theorem 3.1, Frank-Wolfe and Sinkhorn algorithms",
+      "reusable_math": "Fuse appearance with partial structural transport: omega1 <C,P> + omega2 sum M_ijkl P_ij P_kl + lambda(|a|^2+|b|^2-2|P|^2), with nonnegative costs and sub-marginal constraints. A mass-constrained variant fixes |P|=rho. Frank-Wolfe linearizes the quadratic term and solves partial OT subproblems.",
+      "training_requirements": "The mathematical solver does not require external visual training; it takes supplied features, graph distances and masses. Graph classification experiments are not proof of one-image image classification.",
+      "assumptions_and_limits": "Metric claims depend on specified costs and powers. Entropic alternating solvers optimize a relaxed lower-bound formulation; do not treat them as exact global solutions. Fused appearance is useful because pure geometry admits ambiguous symmetries.",
+      "decision": "Good longer-term formulation for extracted contour/keypoint graphs. Current implementation borrows partial assignment only, not this quadratic objective."
+    },
+    {
+      "id": "robust_pgw_2025",
+      "title": "Robust Alignment via Partial Gromov-Wasserstein Distances",
+      "authors": "Xiaoyun Gong, Sloan Nietert, Ziv Goldfeld",
+      "publication": "arXiv preprint, 2025-06-26",
+      "url": "https://arxiv.org/html/2506.21507v1",
+      "arxiv": "https://arxiv.org/abs/2506.21507",
+      "read_sections": "Partial-GW construction, Sections 2.1-2.2, minimax contamination bounds and breakdown remark",
+      "reusable_math": "Trim an epsilon fraction of mass before GW alignment. For bounded kth moments k>=4, the population robust-estimation risk scales as sigma^2 epsilon^(1/2-2/k), under the paper's TV contamination model. Partial GW is an approximate pseudo-metric rather than an ordinary metric in this trimming formulation.",
+      "training_requirements": "This is a statistical distance-estimation result, not a pretrained vision architecture.",
+      "assumptions_and_limits": "The theorem assumes bounded moments and contamination below one third; the authors explicitly describe breakdown at epsilon>=1/3. The result does not promise semantic foreground recovery and cannot justify an arbitrary 40% discard allowance in HyperNet.",
+      "decision": "Justifies testing explicit partial matching under contamination, while documenting the mismatch between theoretical mass contamination and image clutter. No theorem transfers automatically to our coverage heuristic."
+    },
+    {
+      "id": "sgw_siam2025",
+      "title": "Supervised Gromov-Wasserstein Optimal Transport with Metric-Preserving Constraints",
+      "authors": "Zixuan Cang, Yaqi Wu, Yanxiang Zhao",
+      "publication": "SIAM Journal on Mathematics of Data Science 7(1):301-328, 2025-02-20",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12395365/",
+      "doi": "https://doi.org/10.1137/24m1630499",
+      "read_sections": "Metric-preserving constraints, minimum vertex cover reduction, entropy-regularized solver and experiments",
+      "reusable_math": "Prohibit simultaneous matches (i,j) and (k,l) when |dX(i,k)-dY(j,l)| exceeds a specified tolerance. Infinite entries in the quadratic cost encode incompatibility; a minimum-vertex-cover reformulation produces coupling-zero constraints, followed by mirror descent and generalized Sinkhorn.",
+      "training_requirements": "Supervised here refers to application-induced metric constraints, not a mandatory pretrained neural network. Demonstrations include synthetic and single-cell data.",
+      "assumptions_and_limits": "A meaningful geometry and tolerance must be supplied. Approximate constraint selection and nonconvex optimization do not yield a general global guarantee. Fixed regular grids alone do not encode object contours.",
+      "decision": "Use explicit bounded geometric costs or separately report post-assignment coherence. A unary displacement penalty is not a reproduction of pairwise incompatibility optimization."
+    },
+    {
+      "id": "partialtsw_neurips2025",
+      "title": "Tree-Sliced Entropy Partial Transport",
+      "authors": "Viet-Hoang Tran, Thanh Tran, Thanh Chu, Tam Le, Tan M. Nguyen",
+      "publication": "NeurIPS 2025",
+      "url": "https://papers.neurips.cc/paper_files/paper/2025/file/181a027913d36bc0a8857c0da661d621-Paper-Conference.pdf",
+      "read_sections": "Sections 2-3, tree measures, weighted total variation partial transport and Definition 3.1",
+      "reusable_math": "On a tree, W1 equals the integral of absolute subtree-mass differences. Their regularized partial tree cost adds a total-mass difference term; PartialTSW averages this cost after measure-preserving Radon projections onto random tree systems. Thus partial matching can be computed through cumulative subtree masses.",
+      "training_requirements": "Distance evaluation requires no pretrained vision encoder. FFHQ image translation uses a pretrained ALAE autoencoder and tens of thousands of faces; MNIST generation pretrains an autoencoder and classifier. Those experiments do not fit HyperNet's one-image budget.",
+      "assumptions_and_limits": "Depends on the tree sampling distribution, splitting map and regularization. Projection/regularization changes the compared geometry; it is not exact full Euclidean partial transport. Closed-form tree computation is mainly attractive for many points.",
+      "decision": "Defer: for four or nine tile nodes, exact assignment is already cheap and more directly interpretable. Revisit for large contour clouds."
+    }
+  ],
+  "implementation": {
+    "module": "hypernet/partial_assignment.py",
+    "name": "Partial one-to-one linear assignment with unmatched choices and support coverage",
+    "objective": "max over binary P with row/column sums <=1: sum_ij P_ij w_i (similarity_ij - min_similarity - geometry_penalty_ij); sum_i w_i=1",
+    "solver": "Exact augmented linear assignment with zero-gain dummy rows/columns; report strictly positive real edges only.",
+    "score": "sum selected positive gains / (1-min_similarity), gated to zero if matched support weight < min_coverage. Never divide by matched support weight. Coverage gate is after optimization, not a minimum-coverage constraint during assignment.",
+    "defaults": {"min_similarity": 0.2, "min_coverage": 0.6},
+    "not_claimed": ["Full ICLR2025 graph matcher reproduction", "Gromov-Wasserstein optimization", "Human-like reasoning", "Guaranteed semantic category invariance", "Guaranteed improvement on held-out photographs"],
+    "validation": {"unit_tests_passed": 26, "oracle": "60 random small rectangular cases against exhaustive enumeration of all partial matchings", "other_checks": ["No column reuse", "Coverage rejection", "No matched-subset normalization", "Empty and forbidden edges", "Zero and large weights", "Score bounded in [0,1]"]},
+    "microbenchmark": {"calls": 1000, "matrix_shape": [9,9], "elapsed_seconds": 0.05561070000021573, "seconds_per_call": 0.00005561070000021573, "excludes": ["Feature extraction", "Image loading", "Window extraction", "CNN inference"], "note": "One local warm-process measurement; 238 equivalent calls extrapolate to about 0.013 seconds, not an end-to-end pair timing guarantee."}
+  },
+  "engineering_recommendations": [
+    "Keep descriptor, windows and test split fixed for the first assignment ablation.",
+    "Estimate reference descriptor mean and shrinkage uncertainty from source-only variations; uncertainty alone cannot identify foreground because background can also be stable.",
+    "Separate appearance, coverage and geometric evidence in saved diagnostics; classify unary spatial penalties accurately.",
+    "A fixed 3x3 grid has identical geometry for every object. Full GW needs object-dependent contour, keypoint or feature-distance structure to add discriminative shape evidence.",
+    "Any null/counterfactual control should reflect the same maximum-over-windows search as the positive score; otherwise proposal selection inflates false matches.",
+    "Keep all parameter selection on development data and freeze before fresh test photographs. Count development images as method-design data separately from per-episode training images.",
+    "Novelty is at most the tested integration and constrained learning protocol unless a separate literature assessment establishes a new mathematical contribution. The underlying assignment, uncertainty and partial transport ideas are prior art."
+  ]
+}

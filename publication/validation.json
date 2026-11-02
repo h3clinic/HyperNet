@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-02",
+  "scope": "Portable source-publication checks; not a recognition benchmark",
+  "portable_tests": {
+    "command": "python -m pytest -q",
+    "passed": 50,
+    "failed": 0,
+    "elapsed_seconds": 10.59,
+    "coverage": ["Partial assignment against exhaustive small-matrix oracle", "Finite deterministic support statistics and unchanged inputs/model state", "Region scoring controls", "Synthetic cohort freshness and split separation"]
+  },
+  "source_equivalence": {
+    "core_python_files": 60,
+    "byte_identical_to_frozen_experiment": true,
+    "verification_command": "python publication/verify_snapshot.py"
+  },
+  "example_smoke_check": {
+    "completed": true,
+    "model": "v08_full",
+    "training_steps": 2,
+    "threads": 2,
+    "inputs": "Deterministic synthetic RGB fixture and its horizontal flip; no dataset photographs",
+    "purpose": "Checks that scratch initialization, checkpoint writing and the portable example execute; not accuracy evidence"
+  },
+  "experimental_accuracy": "Not asserted; fresh-photo evaluation and independent audits are in progress."
+}
