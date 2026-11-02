@@ -1,54 +1,56 @@
 {
   "date": "2026-11-02",
-  "scope": "Portable source-publication checks; not a recognition benchmark",
+  "release": "0.9.0",
+  "scope": "Portable implementation checks, not recognition accuracy",
   "portable_tests": {
     "command": "python -m pytest -q",
-    "passed": 68,
+    "passed": 112,
     "failed": 0,
-    "elapsed_seconds": 7.66,
-    "coverage": [
-      "Partial assignment against exhaustive small-matrix oracle",
-      "Finite deterministic support statistics and unchanged inputs/model state",
-      "Region scoring controls",
-      "Synthetic cohort freshness and split separation",
-      "Float32/float64 interpolation roundoff, rejection of invalid input, and unchanged RNG/input"
-    ]
+    "elapsed_seconds": 20.8
   },
   "source_equivalence": {
-    "core_python_files": 60,
-    "byte_identical_to_corrected_v0_8_1_source": true,
-    "unchanged_from_v0_8_frozen_experiment": 59,
-    "numerical_boundary_repair_files": 1,
-    "verification_command": "python publication/verify_snapshot.py",
-    "byte_identical_to_frozen_corrected_experiment": true
+    "core_python_files": 67,
+    "byte_identical_to_frozen_v09_source": true,
+    "unchanged_v0_8_1_core_files": 60,
+    "verification_command": "python publication/verify_snapshot.py"
   },
-  "example_smoke_check": {
-    "completed": true,
-    "model": "v08_full",
-    "training_steps": 2,
-    "threads": 2,
-    "inputs": "Deterministic synthetic RGB fixture and its horizontal flip; no dataset photographs",
-    "purpose": "Checks that scratch initialization, checkpoint writing and the portable example execute; not accuracy evidence",
-    "release_tested": "0.8.0; valid-input numerical compatibility separately confirmed for 0.8.1"
+  "examples": {
+    "pretrain_shapes": {
+      "passed": true,
+      "steps": 2,
+      "triplets_per_step": 2,
+      "natural_images": 0
+    },
+    "match_procedural_frozen": {
+      "passed": true,
+      "real_weight_updates": 0
+    },
+    "match_procedural_adapted": {
+      "passed": true,
+      "real_weight_updates": 2
+    },
+    "inputs": "Generated synthetic RGB fixture; no dataset photographs"
   },
-  "experimental_accuracy": "Audited benchmark published separately at benchmarks/v0.8.1; predeclared full method underperformed the previous CNN. This validation file describes implementation checks.",
-  "numerical_compatibility": {
-    "evidence": "numerical_boundary_compatibility.json",
+  "curriculum_viewer": {
     "passed": true,
-    "valid_bitwise_comparisons": 24,
-    "roundoff_cases_accepted": 4,
-    "invalid_cases_rejected": 12,
-    "real_failing_batch_fixed": true
+    "recipe": {
+      "steps": 2000,
+      "triplets": 16,
+      "seed": 73
+    },
+    "rng_states_computed": 2001,
+    "independent_corruption_transition_checks": [
+      0,
+      19,
+      1999
+    ],
+    "full_batches_rendered_for_smoke_check": [
+      0,
+      1999
+    ],
+    "images_per_batch": 48,
+    "finite_and_png_encoding_checked": true,
+    "source_hash_check": true
   },
-  "public_result_verification": {
-    "passed": true,
-    "models": 9,
-    "prediction_rows": 8640,
-    "aggregate_partitions_checked": 18,
-    "max_metric_absolute_error": 5.551115123125783e-16,
-    "pair_identity_sets_equal": true,
-    "all_cutoffs_recovered_from_dev_only": true,
-    "score_identities_match_public_cohort": true,
-    "scope": "Checks published arithmetic and model pairing; does not rerun inference or establish data provenance"
-  }
+  "experimental_accuracy": "Fresh v09 results pending final independent audits; primitive curriculum is a control. Historical audited results remain at benchmarks/v0.8.1."
 }

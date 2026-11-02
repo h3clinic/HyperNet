@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-11-02",
+  "status": "Primary-source research and proposed design; not experimental validation",
+  "constraint": "Own randomly initialized CNN; procedural-only pretraining; one real reference and one support box per episode; no externally pretrained weights or natural-image pretraining.",
+  "sources": [
+    {
+      "id": "fractaldb",
+      "title": "Pre-training without Natural Images",
+      "first_preprint": "2021-01-21",
+      "publication": "ACCV 2020; later IJCV extension (2022)",
+      "url": "https://arxiv.org/abs/2101.08515",
+      "full_text": "https://arxiv.org/pdf/2101.08515",
+      "read_sections": "3.3; 4; 4.1",
+      "math": "Affine iterated-function systems generate labeled fractal families.",
+      "budget": "FractalDB-1k: 1,000 classes × 1,000 instances. ResNet-50, 90 epochs, batch256; natural-data fine-tuning follows.",
+      "caveat": "Evidence concerns transfer after natural-image fine-tuning, not one-reference category recognition.",
+      "adoption": "Established foundation for training our own CNN on synthetic geometry; record rendered images and exposures separately."
+    },
+    {
+      "id": "visualatom",
+      "title": "Visual Atoms: Pre-training Vision Transformers with Sinusoidal Waves",
+      "first_preprint": "2023-03-02",
+      "publication": "CVPR 2023",
+      "url": "https://arxiv.org/abs/2303.01112",
+      "full_text": "https://arxiv.org/pdf/2303.01112",
+      "read_sections": "3, equations 3–10; 4.1; 4.2",
+      "math": "Elliptical contours multiplied by 1 plus two sinusoidal waves and periodic noise; quantized contour segments.",
+      "budget": "1k/21k classes × 1,000 instances: 1M/21M images; pretraining300/90 epochs. Classification and COCO results follow natural-data fine-tuning.",
+      "caveat": "Primarily transformer evidence; 21k denotes classes, not images. No one-photo result.",
+      "adoption": "Use diverse contour frequencies, sizes and smoothness; our Gaussian generator is an adaptation, not a reproduction."
+    },
+    {
+      "id": "ofdb",
+      "title": "Pre-training Vision Transformers with Very Limited Synthesized Images",
+      "first_preprint": "2023-07-27",
+      "revision": "2023-07-31",
+      "publication": "ICCV 2023",
+      "url": "https://arxiv.org/abs/2307.14710",
+      "full_text": "https://arxiv.org/pdf/2307.14710",
+      "read_sections": "3; 4.1 Tables2–3; 4.2",
+      "math": "One base fractal per synthetic class, expanded through online pattern/texture augmentation.",
+      "budget": "OFDB-21k: 21,000 base images, 300,000 updates × batch1,024. Separate small-dataset experiment: 800 pretraining epochs, 200 natural-data fine-tuning epochs.",
+      "caveat": "One-instance means per synthetic class, not one photograph total. Few stored images can mean extensive compute.",
+      "adoption": "A small deterministic program bank is practical; count repeated augmented exposures."
+    },
+    {
+      "id": "fdsml",
+      "title": "FDSML: Formula-Driven Supervised Metric Learning with Parameter-Aware Triplet Loss",
+      "first_preprint": "2026-10-29",
+      "publication": "arXiv preprint v1; peer review not established",
+      "url": "https://arxiv.org/abs/2610.39423",
+      "full_text": "https://arxiv.org/html/2610.39423v1",
+      "read_sections": "3.3–3.5; 4.1–4.3; 5.1; retrieval evaluation",
+      "math": "Triplet hinge loss orders embeddings by distances between probability-weighted six-parameter IFS descriptors.",
+      "budget": "1M FineFractalDB images; ResNet-50 134 epochs, ViT536. Retrieval gains follow natural-data Proxy-Anchor fine-tuning.",
+      "caveat": "Parameter/Chamfer ranking agreement47.2% unrestricted versus80.6% within-class. Not one-reference natural-photo evidence.",
+      "adoption": "Restrict continuous triplets to a compatible family and verify ordering against rendered geometry; do not equate parameter distance with semantics."
+    },
+    {
+      "id": "warmup",
+      "title": "Can You Learn to See Without Images? Procedural Warm-Up for Vision Transformers",
+      "first_preprint": "2025-11-17",
+      "revision": "2026-03-23",
+      "publication": "arXiv v2; venue not established here",
+      "url": "https://arxiv.org/abs/2511.13945",
+      "full_text": "https://arxiv.org/html/2511.13945v2",
+      "read_sections": "3; 4.3; AppendicesA–B",
+      "math": "Masked prediction on generated formal-language tokens, bypassing visual patch embeddings.",
+      "budget": "15,000 steps × batch256, then300 epochs natural-image training; transfer experiments add50 fine-tuning epochs.",
+      "caveat": "Neither Gaussian-image learning nor CNN evidence; natural-image training supplies visual semantics.",
+      "adoption": "Conceptual motivation for relational synthetic tasks, not a direct implementation template."
+    },
+    {
+      "id": "fractal_ad",
+      "title": "Fractals as Pre-training Datasets for Anomaly Detection and Localization",
+      "first_preprint": "2024-05-11",
+      "publication": "CVPR Workshops 2024, June",
+      "url": "https://arxiv.org/abs/2405.06980",
+      "full_text": "https://arxiv.org/pdf/2405.06980",
+      "read_sections": "4; 5",
+      "math": "Fractal classification pretraining supplies features to eight anomaly-detection methods.",
+      "budget": "100,000 IFS codes grouped into1,000 classes; WideResNet50, 100 epochs × 1M images, batch512. Downstream MVTec/VisA normal-image training remains.",
+      "caveat": "ImageNet features win overall. Fixed-feature transfer is closer to our question, but anomaly detection is not one-photo category recognition.",
+      "adoption": "Retain low-level feature controls; attractive early-layer filters alone do not prove useful category embeddings."
+    }
+  ],
+  "implementation_hypotheses": [
+    {
+      "idea": "Separate structural identity from nuisance",
+      "formula": "x=R(theta, nu); theta controls contour/topology, nu controls pose/color/background.",
+      "reason": "Independent nuisance prevents class IDs becoming accidental background or color shortcuts. Texture descriptors remain available separately."
+    },
+    {
+      "idea": "Bound Gaussian shape variation",
+      "formula": "u=G_sigma * epsilon; T(p)=p+alpha*u(p); enforce ||alpha*grad(u)||_op < 1 when claiming no folding.",
+      "reason": "A displacement cap alone does not guarantee an invertible deformation. Reject blank/degenerate renderings and inspect coverage."
+    },
+    {
+      "idea": "Combine detail preservation and shape discrimination",
+      "formula": "L=L_detail + lambda_pair*||z_s(x1)-z_s(x2)||^2 + lambda_rank*max(0, d(z_a,z_p)-d(z_a,z_n)+m).",
+      "reason": "Detail targets come from the correctly transformed synthetic image; the shape head uses compatible-family geometry, with hard negatives sharing texture. This composite objective is our engineering proposal, not a quoted paper method."
+    },
+    {
+      "idea": "Keep the CPU pilot bounded",
+      "formula": "Example starting budget: 256–1024 deterministic base programs; batch32; 500–2000 steps; 32–64px patches.",
+      "reason": "Budget is a proposed engineering choice, not an evidence-backed optimum or reproduction of large published schedules."
+    },
+    {
+      "idea": "Preserve procedural knowledge during one-photo adaptation",
+      "formula": "Compare frozen synthetic backbone, head-only reference adaptation, and full reference adaptation.",
+      "reason": "A support-only objective can overwrite transferable features. Use old development photos for selection, then freeze before new test photos."
+    }
+  ],
+  "reporting_requirements": [
+    "Describe this as synthetic-only pretraining plus one real reference, not no pretraining or one image total.",
+    "Log RNG seeds, generator version, base programs, generated views, exposures, updates and checkpoint hash.",
+    "Count development calibration/query data separately from model training and freeze all choices before new test photos.",
+    "No cited source establishes our exact one-reference natural-photo category task or guarantees superiority."
+  ],
+  "originality": "Formula-driven pretraining, Gaussian deformation, triplet learning and analytic detail targets are established ingredients. The testable contribution is their constrained integration and audited evaluation in HyperNet; priority or breakthrough is not established by this review."
+}

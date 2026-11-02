@@ -1,23 +1,16 @@
 # HyperNet
 
-**Experimental category recognition from one reference photograph, with no pretrained weights.**
+**Category recognition from one real reference, using either a reference-only CNN or a CNN we pretrain ourselves on procedural images. No borrowed pretrained weights are used in these HyperNet paths.**
 
-HyperNet asks whether a small CNN trained from patches and synthetic variations of one image can recognize another example of the same object type in a different photograph. The v0.8 experiment combines an existing one-reference CNN with partial part assignment, support-only Gaussian variation statistics, foreground heuristics and structural counterfactual scores.
+Version **0.9.0** adds synthetic-only pretraining before reference enrollment. The CNN starts at random weights and learns from generated shapes, Gaussian variations and surface patterns. The primary control keeps that CNN frozen when it receives a real reference; optional controls adapt an independent copy using only that reference. No natural photographs train the shared backbone.
 
-This is a research prototype. It does not claim human-like reasoning, state-of-the-art recognition, a new optimal-transport theorem or superiority over pretrained detectors. **The audited v0.8.1 result is negative: the predeclared full method found 7/240 positive TEST pairs versus 20/240 for the previous CNN, with 1/240 versus 3/240 false alarms. Its paired balanced-accuracy difference was -2.29 percentage points (95% category-bootstrap interval [-4.17, -0.42]).** Read the [complete benchmark, all ablations and data budgets](benchmarks/v0.8.1/README.md).
+**v09 is a primitive-shape control experiment, not the final richer shape curriculum. Its fresh-photo evaluation is still awaiting final audits.** It does not establish human-like reasoning, a breakthrough in fine-detail recognition, or superiority over published detectors. Formula-driven pretraining and triplet learning are established ideas. More complex, named mathematical shapes are a separate development direction.
 
-## What is included
-
-- The v0.8.1 Python package: the v0.8 experiment snapshot plus a numerical input-boundary repair, including earlier components needed by its imports.
-- Portable tests for exact partial assignment, support statistics, region scoring and fresh-cohort separation using synthetic fixtures.
-- A command-line example that trains from your reference image and scores your query image.
-- Sixteen primary-source research entries and a synthesis explaining the adopted mathematics and its limitations.
-
-Photographs, pretrained checkpoints, learned per-reference checkpoints and machine-specific experimental evidence are not distributed in this source snapshot.
+The previous audited result remains available: the full v0.8.1 method found **7/240 positive TEST pairs**, versus **20/240** for the previous CNN, with **1/240 versus 3/240 false alarms**. Its paired balanced-accuracy difference was **−2.29 percentage points**, 95% category-bootstrap interval **[−4.17, −0.42]**. See [all v0.8.1 ablations and data budgets](benchmarks/v0.8.1/README.md).
 
 ## Install
 
-Python 3.11 or later is required. CPU execution is supported. Create and activate a virtual environment, then install the package:
+Use Python 3.11 or later. CPU execution is supported:
 
 ```bash
 python -m venv .venv
@@ -26,69 +19,86 @@ python -m venv .venv
 python -m pip install --upgrade pip
 python -m pip install -e ".[neural,data,dev]"
 python -m pytest -q
+python publication/verify_snapshot.py
 ```
 
-The `neural` extra installs PyTorch and torchvision. Merely installing these libraries does not load pretrained weights. The v0.8 example uses only a freshly initialized CNN and fixed mathematical image descriptors. For hardware-specific PyTorch installation, follow the [official PyTorch instructions](https://pytorch.org/get-started/locally/).
+Installing PyTorch/torchvision does not download or load pretrained weights. For hardware-specific installation, follow the [official PyTorch instructions](https://pytorch.org/get-started/locally/). The examples below construct our CNN and never call a pretrained model loader.
 
-## Score a pair of your own photographs
-
-Choose a tightly cropped reference showing the intended object type. The query should be a separate photograph. Selecting the support crop is part of the reference specification; automatic support cropping is not claimed.
+## Train the procedural CNN
 
 ```bash
-python examples/match_one_image.py --reference path/to/reference.jpg --query path/to/query.jpg --output match.json
+python examples/pretrain_shapes.py --mode detail_metric --output checkpoints/procedural_detail_metric.pt
+python examples/pretrain_shapes.py --mode restoration --output checkpoints/procedural_restoration.pt
 ```
 
-The default run trains one 40,976-parameter CNN for 120 steps from the reference alone, stores a reference-bound checkpoint under `checkpoints/`, then evaluates the full v0.8 scoring method. Repeating the command reuses a matching checkpoint. You can select a fixed-feature control without CNN training:
+Each default run uses **2,000 updates × 16 triplets**, seed 73 and a 40,976-parameter CNN. That is **32,000 base-program draws + 32,000 mutant-program draws**, **96,000 generated RGB exposures**, and **192,000 corrupted training-view exposures** per arm. Unique image counts are not measured. Both objectives receive the same generated sequence and initial CNN weights. Each run saves its metadata beside the checkpoint and refuses to overwrite existing outputs.
+
+The restoration control predicts a fixed 64-D HOG/gray/edge descriptor. The combined objective adds a **0.25-weight foreground mask/detail head** and a **0.2-weight matched-nuisance triplet loss**. Its auxiliary head is discarded for inference. A comparison of these two arms cannot identify the separate effects of the extra head and triplet term.
+
+For a quick execution check, use `--steps 2 --triplets 2` and a different output path. That produces a small smoke-test model, not the evaluated 2,000-update model. [Published control metadata](publication/procedural_control.json) records the full experimental budget without distributing weights.
+
+## Inspect every procedural training image
 
 ```bash
-python examples/match_one_image.py --reference path/to/reference.jpg --query path/to/query.jpg --model fixed_v08 --output fixed_match.json
+python examples/view_curriculum.py
 ```
 
-The output includes a raw score, selected candidate box and provenance. **The score is not a probability.** Counterfactual scores may be negative. No universal cutoff is provided: estimate a decision threshold on separate development photographs, freeze it, and only then evaluate held-out photographs. A high score on one pair does not establish accuracy.
+Open the printed localhost URL. The browser exposes **all 2,000 batches**, including raw RGB, Gaussian targets, both actual corrupted CNN inputs, and known procedural masks. It regenerates the published seed 73, 16-triplet curriculum with exact corruption RNG replay; no sample filtering is used. This viewer is fixed to that published recipe and does not represent custom command-line training settings. Rendered PNGs quantize the float32 training inputs to 8-bit for display. The 32×32 images are enlarged with nearest-neighbor display, so they should not be mistaken for detailed natural photographs.
 
-Other available examples are `v07_cnn`, `v08_assignment`, `v08_foreground`, `v08_tolerance`, `v08_counterfactual` and `fixed_v06`. They isolate scoring changes while sharing a descriptor family.
+## Enroll a reference and score another photograph
 
-## The data constraint
+Supply a tightly cropped reference showing the intended object type and a separate query image:
 
-For each learned reference model:
+```bash
+python examples/match_procedural.py --pretrained checkpoints/procedural_detail_metric.pt --reference path/to/reference.jpg --query path/to/query.jpg --output match.json
+```
 
-- Exactly one support image supplies training pixels.
-- All Gaussian fields, resampling, detail variations and crops derive from that support; they are synthetic variants, not additional natural category observations.
-- No pretrained visual or language weights, learned teacher, query labels or query-time weight updates are used.
-- The support model is newly initialized for its reference; training does not transfer weights between references.
+By default, the procedural CNN remains frozen. The reference supplies descriptors for matching, **not gradient updates**. To adapt a fresh copy with that one reference:
 
-Development images used to design a method or select thresholds are a separate research budget. “One image per reference model” does not mean the whole research program examined only one photograph. Natural category recognition is substantially harder than recognizing transformations of the original image.
+```bash
+python examples/match_procedural.py --pretrained checkpoints/procedural_detail_metric.pt --reference path/to/reference.jpg --query path/to/query.jpg --adapt --output adapted_match.json
+```
 
-The package preserves optional historical pretrained comparison adapters. Those are outside the v0.8 scratch-only experiment. OWL-ViT, when reported as a separate comparator, uses external pretraining and must have its training budget stated separately. No OWL-ViT model or pretrained weights are included here. Use `examples/match_one_image.py` for the explicit scratch-only path.
+Adaptation uses the unchanged v07 recipe: 297 reference patches, 120 AdamW updates at learning rate 0.002, and Gaussian shape/pattern variations. Every reference starts from the same synthetic checkpoint; adapted weights do not pass between references. Query photographs never update the weights. The source checkpoint and tensor hashes are recorded.
 
-## What v0.8 changes
+The output contains a raw score, selected candidate box and provenance. **The score is not a probability.** No universal cutoff is supplied. Select thresholds on separate development photographs, freeze them, and then evaluate held-out photographs. Support-box selection and development calibration are additional supervision/research budgets and must be disclosed.
 
-The reference and each fixed candidate window produce fourteen descriptors: whole region, 2×2 grid and 3×3 grid. One-to-one partial assignment prevents several support parts from claiming the same query tile. Zero-gain dummy choices permit missing parts. A post-solve weighted coverage gate rejects weak support explanations; it is not a coverage-constrained optimization.
+## Controls and older reference-only path
 
-Sixteen synthetic variants estimate a strongly regularized diagonal tolerance metric. Half ordinary cosine and half precision-weighted cosine form each pair similarity. This is not a Mahalanobis likelihood or an estimate of semantic class uncertainty. GrabCut and grayscale contrast provide bounded support-part weights, with an explicit all-foreground fallback. Four fixed part shuffles supply a per-region counterfactual margin; that margin is not a statistical p-value.
+The v09 registry includes `scratch_reference`, `procedural_restoration_frozen`, `procedural_restoration_adapted`, `procedural_detail_frozen`, `procedural_detail_adapted`, `random_frozen`, and `fixed_shape`. They use the same 32px tiles, 64-D descriptors, candidate windows and spatial scorer. Frozen models reuse one synthetic backbone; scratch/adapted controls use separate reference models.
 
-The fixed coordinate grid does not represent object anatomy. Background matches, imperfect foreground masks, pose changes, unseen within-category variation and proposal coverage remain material limitations.
+The earlier scratch-only example remains usable:
+
+```bash
+python examples/match_one_image.py --reference path/to/reference.jpg --query path/to/query.jpg --model v07_cnn --output scratch_match.json
+```
+
+Its one support image supplies all training pixels and it uses no pretraining. The default `v08_full` option retains the negative-result v08 scoring experiment for reproducibility; it is not recommended as a proven improvement.
+
+Optional historical pretrained comparison adapters remain in the package. OWL-ViT is a separate comparator using external pretrained weights, outside the HyperNet constraint. No such weights are distributed here.
+
+## Training scope and limitations
+
+The new protocol is **synthetic-only pretraining plus one real reference**, not “one image total” and not “no pretraining.” Synthetic shapes introduce a hand-designed visual prior and additional optimization. Natural category variation, articulation, perspective, material, occlusion and background complexity remain unresolved. More Gaussian samples do not automatically supply missing category semantics.
+
+The historical `external_pretraining: false` field means no externally supplied weights. v09 explicitly also reports `pretrained: true`, the procedural origin and synthetic exposure counts. Frozen reference enrollment uses zero real-image weight updates; adapted controls use one real training source. Calibration images and research development images are reported separately.
 
 ## Research and originality
 
-The potential contribution is a tested integration under an unusually restrictive data budget. Gaussian augmentation, covariance weighting, graph cuts, partial assignment and optimal transport are established ingredients. This repository does not establish broad algorithmic novelty.
+- [Procedural-pretraining synthesis](research/procedural_research.html) and [six primary-source entries](research/procedural_primary_sources.json), including FractalDB, VisualAtom, OFDB and FDSML.
+- [v08 mathematical synthesis](research/research_synthesis.html), [geometry sources](research/geometry_primary_sources.json), and [variation/invariance sources](research/variation_primary_sources.json).
 
-- [Mathematical synthesis](research/research_synthesis.html) — open locally in a browser after cloning.
-- [Geometry and partial-transport sources](research/geometry_primary_sources.json).
-- [Variation, invariance and human-vision sources](research/variation_primary_sources.json).
-- [Distortable Canvas](https://www.nature.com/articles/s44387-025-00017-7), [optimal partial graph matching](https://arxiv.org/abs/2410.16718), and [GrabCut](https://www.microsoft.com/en-us/research/wp-content/uploads/2004/08/siggraph04-grabcut.pdf) are relevant prior work, not implementations reproduced in full here.
-
-No published paper's benchmark score is presented as a direct comparison to this experiment. Such a comparison requires the same photographs, task, threshold protocol and metric, with pretraining budgets disclosed.
+Open HTML reports locally after cloning. The potential contribution is an audited integration and evaluation under explicit budgets. Gaussian augmentation, formula-driven pretraining, metric learning, covariance weighting and partial assignment are established components. Published transfer-learning scores are not evidence for our exact one-reference photograph task.
 
 ## Reproducibility and publication status
 
-[Source hashes](publication/source_snapshot.json) identify every exported package file and bind all 60 package files to the corrected frozen experiment. The v0.8.1 update changes only `gaussian_variation.py` within the model package; the other 59 Python files match the original frozen experiment byte for byte. Publication documentation, packaging and the portable example are separate additions. The historical internal `hypernet.__version__` string remains unchanged; package distribution metadata identifies this release as 0.8.1.
+[Source hashes](publication/source_snapshot.json) bind **all 67 package files** byte for byte to the frozen v09 experiment. All 60 previous v0.8.1 package files remain unchanged. Packaging, portable examples and publication documents are separate additions. The historical internal version string is preserved; distribution metadata is 0.9.0.
 
-The original fresh run stopped when interpolation produced a value just above one (`1.0000001192` in float32), triggering a strict RGB-range check. Its 47 trained reference models and 15 completed category outputs have been preserved as incomplete evidence. They are not presented as a completed benchmark. Version 0.8.1 permits only roundoff within four dtype epsilons, then clamps to `[0,1]` without mutating the caller's input. Materially invalid or nonfinite inputs still fail. Regression tests cover both float32 and float64. No model architecture, augmentation strength, scoring parameter, support-selection rule or threshold-selection rule changes.
+The [prior source manifest](publication/source_snapshot_v0_8_1.json), Git history and [v0.8.1 benchmark](benchmarks/v0.8.1/README.md) preserve the previous experiment. Its interpolation roundoff repair changed only input-boundary handling; it did not improve the model algorithm. All earlier audited score records remain available.
 
-The corrected experiment reran all 48 reference models and 960 reference/query pairs. Independent audits verified the completed results, exact inference replay and compatibility with previously completed outputs. The first public snapshot remains available in Git history. The numerical repair is not an algorithmic improvement; the predeclared full method underperformed the previous CNN on this cohort.
+The v09 fresh-photo protocol has 720 reference/query pairs: 360 DEV and 360 TEST, each with 180 positives and 180 negatives, across six categories per split. Seven HyperNet controls and a separately pretrained OWL-ViT comparator will be reported with the same metrics after audits. There are only six TEST category clusters, limiting uncertainty estimates. No fresh-score tuning is permitted.
 
-The portable test suite validates implementation properties. It does not validate recognition accuracy. Local cohort-specific experiment drivers are not portable artifacts and are excluded from this initial release. [Audited results and reproducibility instructions](benchmarks/v0.8.1/README.md) include all nine methods, 8,640 compact score records, a public cohort reconstruction manifest, source hashes and an independent metric verifier.
+Portable tests check implementation and provenance properties, not recognition accuracy. No photographs, trained checkpoints, caches, credentials or machine-specific experiment paths are distributed. The full v09 control results will be added after final independent audits.
 
 ## License status
 
