@@ -1,7 +1,7 @@
 {
-  "snapshot": "HyperNet v0.9.0 procedural control experiment",
+  "snapshot": "HyperNet v0.10.0 mathematical surface pilot",
   "created_date": "2026-11-02",
-  "core_file_count": 67,
+  "core_file_count": 69,
   "core_files": {
     "hypernet/__init__.py": "99f2b5e6f202d9114442844c17dedc09da6caf4a4bc8bf795a2fcea34ee2350a",
     "hypernet/__main__.py": "f79f435118a72f512c016292dd60e11e3be9fdbff9cbe82915656fa3d6b81b51",
@@ -24,6 +24,7 @@
     "hypernet/exports.py": "40bae4a2c2af5ba180033d945f3609772623ad6c6f86b749cfa592c8ef28d779",
     "hypernet/gaussian_variation.py": "7f69679e027e5344028b921421469c6912500d0f984607a39665f9fa04d92f3e",
     "hypernet/geometry.py": "77c113346195a6b572c6cd23cad350bb78e63e45002eeffe6707f1f6ec4f7bab",
+    "hypernet/mathematical_surfaces.py": "c4438068ca75eb222115339d69d093366e873effffbbb17dcbb360fd67a68157",
     "hypernet/metrics.py": "c6ecc0c7545d88190fce8ebb7fd8525f98250b57c2b784c979a9c1fd08ed58f2",
     "hypernet/models/__init__.py": "fd6073d02bfaaadbfc8eff2589f9d88916867ba3301032c6d1a536c865b898a4",
     "hypernet/models/alignment.py": "29a875f52989f1b2b08e9967d057aa381995c3a9aa870d5a138513936d28cd6c",
@@ -57,6 +58,7 @@
     "hypernet/runner.py": "c45f164b274cb49f57f556407b808cd258c6d43943aa1b49f3c1ce39115712c4",
     "hypernet/scratch_registry.py": "c376f5382c8af42a4c851f73fcef274bfd953af6aee8592a58e918e9094f8c83",
     "hypernet/support_statistics.py": "6f6c1c538fcc864a159de886a2c1cc03fd804877d69f323fb5d772aaabcd07a0",
+    "hypernet/surface_encoder.py": "c682947ed4201c803726e1a43926afcb0764f74ccf20a2fe6ece7770ec067f93",
     "hypernet/training.py": "fb7767562080fa6d0ee1cf8d1c3099ac2b502e672fbf703ec952d332135e164b",
     "hypernet/training_gaussian.py": "d86df6ad2f5bab25cc67f873c49beb694cea685063141e43006bdc08aebf0c7f",
     "hypernet/training_procedural_reference.py": "284d92b28e30bbdb6fdfb16fee768a3b52c67ec258b259b295f6d12be54ba9df",
@@ -71,14 +73,37 @@
     "hypernet/v08_registry.py": "b7173d0fcbb98037e4f00684804eb75e15766674a21625ce79f3dbf76ec5a369",
     "hypernet/v09_registry.py": "c8f151cd562ef8ac2caf48ca7bcf5cfb7e21edc20614d53e2d06e7f058778002"
   },
-  "experimental_freeze_sha256": "5960053002621697fcfb69b46dde5c480d40b2aa7804407b3adcb7a0b82d2720",
-  "all_core_files_byte_identical_to_frozen_experiment": true,
-  "prior_snapshot": "publication/source_snapshot_v0_8_1.json",
-  "unchanged_prior_core_files": 60,
-  "evaluation_status": "Audited v09 primitive control complete: primary balanced accuracy50%, paired difference+1.39ppCI[-.56,+3.33]; no established improvement. See benchmarks/v0.9.",
+  "prior_snapshot": "publication/source_snapshot_v0_9.json",
+  "unchanged_prior_core_files": 67,
+  "experimental_freeze_sha256": "0cbe706d2cd7ca38a7c97b25bb3dfcb4783fc9d2582368aa891412487901fc65",
+  "new_frozen_behavior_files": {
+    "hypernet\\surface_encoder.py": "c682947ed4201c803726e1a43926afcb0764f74ccf20a2fe6ece7770ec067f93",
+    "hypernet\\training_v3.py": "ad1dbae310cb12fd0a23a068a393407c58818f7735fe6bcbed095c87b5cac956",
+    "hypernet\\mathematical_surfaces.py": "c4438068ca75eb222115339d69d093366e873effffbbb17dcbb360fd67a68157",
+    "scripts\\train_surface_encoder.py": "6f403b35c8e227db9f1be3070ee22a4671bfcd8499c22552e773944508209454"
+  },
+  "additional_exported_files": {
+    "hypernet/mathematical_surfaces.py": "c4438068ca75eb222115339d69d093366e873effffbbb17dcbb360fd67a68157",
+    "hypernet/surface_encoder.py": "c682947ed4201c803726e1a43926afcb0764f74ccf20a2fe6ece7770ec067f93",
+    "scripts/prepare_surface_data.py": "da61c6e24175182d4eb81e40af0e3744a8007342b440c82ee47a5e2368878b16",
+    "scripts/train_surface_encoder.py": "6f403b35c8e227db9f1be3070ee22a4671bfcd8499c22552e773944508209454",
+    "scripts/audit_surface_encoder.py": "3b890b8e8ecbcc6b94fbb9a8d5111446595cb607083f36f380c906700b28be3b",
+    "scripts/serve_surface_gallery.py": "76a1e9f3dfa9c55a73259ba11266590b8859bd777c48afe3f16ad2d03ade4c3f",
+    "tests/test_mathematical_surfaces.py": "2d60f7d6befb761e7ada40261e449c2aebd4042c85a173476acfa436d76e2d2b",
+    "tests/test_surface_encoder.py": "9151cbed9bec881ae831d8a9e99756fd833557f2578e4f05f6e235e0a65560d6",
+    "tests/test_surface_dataset.py": "f1486798ee01b7a4c7166a0ae648c72c8ede4a9d6206f4e38a91ad474c15739e",
+    "surface_gallery.html": "06afe3a54587972e627c826360f5d4ac530a9b1f773ee6a7a18dc802067a883a",
+    "research/surface_primary_sources.json": "614ef9ffd9887a27cc51bf87e82ecc1e629fe5bb866e1e0639df21cff594f220",
+    "research/surface_math.html": "f23804634adcfa495fdbd68406fa9fe9ecbbd23087ee46a08537da55228627b1",
+    "research/mathematical_surface_notes.json": "84e4f4975f87d39a8bb113cdb3e4ee2afb8e5af7cfa653a8f8221efa6d75158c",
+    "tests/test_surface_audit.py": "6ae1ea4712b814d280dfb4b440b1b6d8c9eb9d744e3f65db92b032411a6b5b13"
+  },
+  "new_renderer_and_encoder_byte_identical_to_frozen_experiment": true,
+  "evaluation_status": "Known supervised synthetic families: native128 93.23%, matched lowpass32 93.45%; no natural-transfer claim.",
   "notes": [
-    "No photographs, checkpoints or private paths are exported.",
-    "Packaging, examples and publication documents are outside frozen model code.",
-    "This primitive-shape curriculum is a control; richer named-shape work is separate."
+    "No generated pixels or checkpoint weights are distributed.",
+    "Held-out NPZ files contain derived features, logits and spectrum predictions only.",
+    "Public synthesis navigation is adapted; frozen behavior code is unchanged.",
+    "Portable gallery navigation omits an unpublished initial contact sheet and links the public data audit; renderer and inference behavior remain unchanged."
   ]
 }

@@ -2,9 +2,11 @@
 
 **Category recognition from one real reference, using either a reference-only CNN or a CNN we pretrain ourselves on procedural images. No borrowed pretrained weights are used in these HyperNet paths.**
 
-Version **0.9.0** adds synthetic-only pretraining before reference enrollment. The CNN starts at random weights and learns from generated shapes, Gaussian variations and surface patterns. The primary control keeps that CNN frozen when it receives a real reference; optional controls adapt an independent copy using only that reference. No natural photographs train the shared backbone.
+Version **0.10.0** adds a separate mathematical-surface curriculum and a native128 CNN with shape and detail heads. It learns from our own analytic geometry and renderer targets, with no natural photographs or externally pretrained weights. On different objects from eight **known, explicitly supervised synthetic families**, its one-support-per-family accuracy was **93.23%**, versus **93.45%** for the matched lowpass32 control. Higher resolution did not improve this primary metric. These synthetic scores are not natural-photo recognition results. Read [all v10 controls, protocol and reproducibility data](benchmarks/v0.10/README.md).
 
-**v09 is an audited primitive-shape control, not the final richer shape curriculum. The primary reached only 50.00% balanced accuracy: 10/180 positives detected and 10/180 false alarms.** Its change from scratch was +1.39 percentage points, 95% paired category-bootstrap interval [−0.56,+3.33]; this does not establish improvement. Read [all v09 results and reproducibility data](benchmarks/v0.9/README.md). It does not establish human-like reasoning, a breakthrough in fine-detail recognition, or superiority over published detectors. Formula-driven pretraining and triplet learning are established ideas. More complex, named mathematical shapes are a separate development direction.
+The v09 pathway adds synthetic-only pretraining before real-reference enrollment. The CNN starts at random weights and learns from generated primitive shapes, Gaussian variations and surface patterns. The primary control keeps that CNN frozen when it receives a real reference; optional controls adapt an independent copy using only that reference. No natural photographs train the shared backbone.
+
+**v09 is an audited primitive-shape control. The primary reached only 50.00% balanced accuracy: 10/180 positives detected and 10/180 false alarms.** Its change from scratch was +1.39 percentage points, 95% paired category-bootstrap interval [−0.56,+3.33]; this does not establish improvement. Read [all v09 results and reproducibility data](benchmarks/v0.9/README.md). Neither experiment establishes human-like reasoning, a breakthrough in minute-detail recognition, or superiority over published detectors. Formula-driven pretraining and triplet learning are established ideas.
 
 The previous audited result remains available: the full v0.8.1 method found **7/240 positive TEST pairs**, versus **20/240** for the previous CNN, with **1/240 versus 3/240 false alarms**. Its paired balanced-accuracy difference was **−2.29 percentage points**, 95% category-bootstrap interval **[−4.17, −0.42]**. See [all v0.8.1 ablations and data budgets](benchmarks/v0.8.1/README.md).
 
@@ -24,7 +26,26 @@ python publication/verify_snapshot.py
 
 Installing PyTorch/torchvision does not download or load pretrained weights. For hardware-specific installation, follow the [official PyTorch instructions](https://pytorch.org/get-started/locally/). The examples below construct our CNN and never call a pretrained model loader.
 
-## Train the procedural CNN
+## Generate and train on mathematical surfaces
+
+```bash
+python scripts/prepare_surface_data.py --stage all
+python scripts/train_surface_encoder.py --steps 400 --threads 4
+python scripts/audit_surface_encoder.py
+python scripts/serve_surface_gallery.py
+```
+
+The gallery exposes all 1,920 generated RGB frames, masks, normals and depth. The dataset has 256 training object programs and 64 held-out programs from the same eight labeled families. Both training arms use the same 181,525-parameter network, initialization and batch plan, with 400 × 16 = 6,400 image exposures per arm. The native arm receives original 128px renders; the control receives32px-reduced images enlarged to128px. This is a controlled synthetic information-preservation study, not the completed one-reference natural-category model.
+
+The native detail head's balanced surface matching was66.41% versus58.59% for lowpass, but the combined embedding scored57.81% versus60.94%, and primary family recognition did not improve. General roughness sensitivity can solve this surface task without identifying individual tiny grooves. The [full v10 benchmark](benchmarks/v0.10/README.md) retains every head, random controls and alternate-input evaluations.
+
+These drivers write local data and checkpoints and refuse to overwrite frozen evidence. No generated pixels or trained weights are distributed. Four derived-feature archives permit arithmetic checking without training:
+
+```bash
+python publication/verify_v10_results.py benchmarks/v0.10
+```
+
+## Train the v09 procedural CNN
 
 ```bash
 python examples/pretrain_shapes.py --mode detail_metric --output checkpoints/procedural_detail_metric.pt
@@ -86,13 +107,14 @@ The historical `external_pretraining: false` field means no externally supplied 
 ## Research and originality
 
 - [Procedural-pretraining synthesis](research/procedural_research.html) and [six primary-source entries](research/procedural_primary_sources.json), including FractalDB, VisualAtom, OFDB and FDSML.
+- [Surface mathematics review](research/surface_math.html), [primary sources](research/surface_primary_sources.json) and [exact implemented renderer formulas](research/mathematical_surface_notes.json). Current ingredients are separated from researched future alternatives.
 - [v08 mathematical synthesis](research/research_synthesis.html), [geometry sources](research/geometry_primary_sources.json), and [variation/invariance sources](research/variation_primary_sources.json).
 
 Open HTML reports locally after cloning. The potential contribution is an audited integration and evaluation under explicit budgets. Gaussian augmentation, formula-driven pretraining, metric learning, covariance weighting and partial assignment are established components. Published transfer-learning scores are not evidence for our exact one-reference photograph task.
 
 ## Reproducibility and publication status
 
-[Source hashes](publication/source_snapshot.json) bind **all 67 package files** byte for byte to the frozen v09 experiment. All 60 previous v0.8.1 package files remain unchanged. Packaging, portable examples and publication documents are separate additions. The historical internal version string is preserved; distribution metadata is 0.9.0.
+[Source hashes](publication/source_snapshot.json) bind **all 69 package files**. All 67 v09 package files remain unchanged; the two new renderer/encoder files match the frozen v10 experiment byte for byte. The dataset builder and training driver are exported unchanged as well. Packaging, portable examples and publication documents are separate additions. The historical internal version string is preserved; distribution metadata is0.10.0. The [v09 source snapshot](publication/source_snapshot_v0_9.json) preserves that earlier binding.
 
 The [prior source manifest](publication/source_snapshot_v0_8_1.json), Git history and [v0.8.1 benchmark](benchmarks/v0.8.1/README.md) preserve the previous experiment. Its interpolation roundoff repair changed only input-boundary handling; it did not improve the model algorithm. All earlier audited score records remain available.
 

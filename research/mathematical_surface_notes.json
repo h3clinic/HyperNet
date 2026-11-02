@@ -1,0 +1,46 @@
+{
+  "scope": "Actual v10 renderer mathematics and established antecedents; no claim that these named surfaces or formulas are new discoveries",
+  "renderer_sha256": "c4438068ca75eb222115339d69d093366e873effffbbb17dcbb360fd67a68157",
+  "primary_sources": [
+    {
+      "title": "Superquadrics and Angle-Preserving Transformations",
+      "author": "Alan H. Barr",
+      "date": "1981-01",
+      "url": "https://authors.library.caltech.edu/records/rtr62-f2882",
+      "readable_original_paper_mirror": "https://scee86bccd27a6ab2.jimcontent.com/download/version/1508494237/module/13622135978/name/BARieeecga81.pdf",
+      "read_sections": "Mathematical preliminaries; tangent/normal vectors; canonical superquadrics; superellipsoid position vectors; curvature-dependent sampling",
+      "used": "Signed-power trigonometric superquadric parameterizations, tangent cross-product normals, and denser sampling near rapid geometric variation.",
+      "implementation_distinction": "Normals here are finite differences recomputed after displacement, followed by barycentric interpolation. The inverse signed-power angular resampling and eight-family simulator are engineering implementations, not a reproduction of the full paper."
+    },
+    {
+      "title": "Mathematical Documentation of 3D-XplorMath: Torus Knots",
+      "authors": "3D-XplorMath project; torus-knot section signed H.K.",
+      "date": "2020-11-29",
+      "url": "https://3d-xplormath.org/Downloads/Collected_ATOs.pdf#page=146",
+      "read_sections": "Torus Knots, PDF pages146-147; Trefoil Knot, page150",
+      "used": "A torus-knot centerline c(u)=((R+r cos(3u))cos(2u),(R+r cos(3u))sin(2u),r sin(3u)); winding numbers2and3 give a trefoil.",
+      "implementation_distinction": "The tube uses our periodic radial-projection frame, not the document's Frenet or parallel-transport frame; no external mesh or rendered image was used."
+    }
+  ],
+  "implemented_definitions": {
+    "signed_powers": "C_e(t)=sign(cos t)|cos t|^e, S_e(t)=sign(sin t)|sin t|^e",
+    "superellipsoid": "(a C_e1(v) C_e2(u), b C_e1(v) S_e2(u), c S_e1(v))",
+    "supertoroid": "((R+r C_e2(v)) C_e1(u), (R+r C_e2(v)) S_e1(u), r S_e2(v))",
+    "lobed_vase": "A z-dependent trigonometric/Gaussian radial profile revolved about z, modulated by cos(k u), plus toroidal rim and foot. It is an open wall, not a watertight vessel.",
+    "trefoil_tube": "Sweep a circular section about the(2,3) torus-knot centerline. T=normalize(c'), N=normalize(q-(q dot T)T) with q=normalize(c_x,c_y,0), B=T cross N.",
+    "corrugated_torus": "A torus with section radius r[1+a cos(k u+2v)], creating geometrically helical ribs.",
+    "saddle_shell": "(a x,b y,c(x^2-y^2)+d sin(3x)cos(2y)), x,y in[-1,1]; open two-sided shell.",
+    "radial_rosette": "A spherical radial function1+a cos(k u)cos(v)^2+b cos(m v), with independent height scaling.",
+    "multipart_spindle": "Revolved Gaussian bulge r(t)=r0+b exp(-(t/w)^2), z=h t, plus three toroidal collars. Components intersect; they are not Boolean-unioned.",
+    "surface_displacement": "S'=S+strength*f(u,v)*N, where f=.8 sum_j[w_j exp(-.5((du/sigma_u)^2+(dv/sigma_v)^2))]/sum_j|w_j|+.2 cos(k u+3v+phase)E(v). E=1 on periodic tubes and sin(pi v_normalized)^2 on open latitude coordinates. Thus |f|<=1.",
+    "normals": "Normalize finite-difference du(S') cross dv(S'); recompute after geometric displacement. Interpolate normals barycentrically on visible triangles and normalize. Display normals face the camera for two-sided shading.",
+    "rasterizer": "Dense parametric triangles, exact pixel-center coverage, barycentric depth and normals, frontmost z-buffer. Lambertian diffuse plus a bounded specular term; no Gaussian image blur, post-render resizing, or point-splat hole filling."
+  },
+  "interpretation_limits": [
+    "The Gaussian fields use parameter-domain distances, not intrinsic geodesic distances or a learned distribution of real object variation.",
+    "The surface names describe established primitives and our explicit compositions; novelty must be evaluated at the complete learning method and controlled results.",
+    "Two-view invariance and sensitivity to small synthetic geometric changes do not establish human-like cognition or natural-category recognition.",
+    "The renderer is orthographic and omits cast shadows, physical materials, topology validation, and true mesh Boolean union. Native128 rasterization still has ordinary pixel aliasing.",
+    "The held-out set contains unseen object seeds within the same eight surface families, not unseen mathematical families."
+  ]
+}

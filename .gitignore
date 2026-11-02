@@ -19,3 +19,5 @@ fixed_match.json
 publication_smoke/
 adapted_match.json
 scratch_match.json
+experiments/
+viewer_assets/

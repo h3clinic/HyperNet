@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-02",
+  "release": "0.9.0",
+  "scope": "Portable implementation checks, not recognition accuracy",
+  "portable_tests": {
+    "command": "python -m pytest -q",
+    "passed": 112,
+    "failed": 0,
+    "elapsed_seconds": 20.8
+  },
+  "source_equivalence": {
+    "core_python_files": 67,
+    "byte_identical_to_frozen_v09_source": true,
+    "unchanged_v0_8_1_core_files": 60,
+    "verification_command": "python publication/verify_snapshot.py"
+  },
+  "examples": {
+    "pretrain_shapes": {
+      "passed": true,
+      "steps": 2,
+      "triplets_per_step": 2,
+      "natural_images": 0
+    },
+    "match_procedural_frozen": {
+      "passed": true,
+      "real_weight_updates": 0
+    },
+    "match_procedural_adapted": {
+      "passed": true,
+      "real_weight_updates": 2
+    },
+    "inputs": "Generated synthetic RGB fixture; no dataset photographs"
+  },
+  "curriculum_viewer": {
+    "passed": true,
+    "recipe": {
+      "steps": 2000,
+      "triplets": 16,
+      "seed": 73
+    },
+    "rng_states_computed": 2001,
+    "independent_corruption_transition_checks": [
+      0,
+      19,
+      1999
+    ],
+    "full_batches_rendered_for_smoke_check": [
+      0,
+      1999
+    ],
+    "images_per_batch": 48,
+    "finite_and_png_encoding_checked": true,
+    "source_hash_check": true
+  },
+  "experimental_accuracy": "Audited v09 results published at benchmarks/v0.9; primary remains near chance. This file describes implementation checks.",
+  "public_result_verification": {
+    "passed": true,
+    "models": 8,
+    "prediction_rows": 5760,
+    "aggregate_partitions_checked": 16,
+    "max_metric_absolute_error": 5.551115123125783e-16,
+    "paired_category_bootstrap_verified": true,
+    "localization_verified": true,
+    "all_cutoffs_recovered_from_dev_only": true,
+    "score_identities_match_public_cohort": true,
+    "scope": "Independent arithmetic, pairing, intervals and box diagnostics; not an inference rerun"
+  }
+}

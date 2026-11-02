@@ -1,0 +1,31 @@
+{
+  "original_artifact_sha256": {
+    "results/surface_results.json": "6857a6ea9c8f6bb9f3035a04345ecd61703f50075c14a51800e8ceb903c1009d",
+    "experiments/surface_training_freeze.json": "0cbe706d2cd7ca38a7c97b25bb3dfcb4783fc9d2582368aa891412487901fc65",
+    "experiments/surface_batch_plan.json": "b20f7da5487d6b90ee9e353fb97b0eac85fd51a8963d61e6c27f1a2bef1fd2ff",
+    "data/surfaces_v10/plan.json": "e2cbeb55d9469e0b9eb9f5786efb9ff8eaf93d92ee336551b81b8300062a38fb",
+    "data/surfaces_v10/manifest.json": "3b04fb762c094cf2ddfd1db18862e47b2408c9eef5ccdc0b1aa145f9a61c1912",
+    "experiments/surface_data_audit.json": "f08b07bf68ab6fe7357c520732e1089b1e181e458e8a73b1b6a6a172e6012248",
+    "experiments/surface_encoder_audit.json": "561d96bcd2170e907c4fd0d23958d7f7c1c32b6c090f1d7e870183e3d441d228",
+    "results/heldout_native128.npz": "6de8990e27053f1bdde47edbd6406d29032f8bbf7f59322c3d2d4af3b93e9e9f",
+    "results/heldout_lowpass32.npz": "23265507ce1646e733da038bac5b9749ce83b306e8c89e4d2fa90dc721e660a9",
+    "results/heldout_random_native128.npz": "168815239c2c004603ea42d0de59f25edeb5008534a5fcc3ed512af45fcdcb17",
+    "results/heldout_random_lowpass32.npz": "1e8dfd8010115c8a289bc90fadee2a80a655a711a1bfdc4a114fd25152841fa7"
+  },
+  "public_artifact_sha256": {
+    "aggregate_metrics.json": "7411ff28bd76485560be96004302b8a37f4aeed150049739c0604fc3ad192718",
+    "batch_plan.json": "9bd37b6e4240b0c12d2cab68dddc5a88b02ac3e7cbb2d055ac2ec55c2ac37e7a",
+    "data_audit.json": "a0f6238da22e0321cc32a91444b064c7390699636802a683a1ceeb45679b9c2f",
+    "dataset_plan.json": "fca70d6f4d94ce76afadde1a0aac2c432a6a83709e2b21782e1cde7670553583",
+    "frame_manifest.json": "0960f5c8d472604224683212ed71a58b1913e8d7ec1ef6140cd6a89c852d3101",
+    "heldout_lowpass32.npz": "23265507ce1646e733da038bac5b9749ce83b306e8c89e4d2fa90dc721e660a9",
+    "heldout_native128.npz": "6de8990e27053f1bdde47edbd6406d29032f8bbf7f59322c3d2d4af3b93e9e9f",
+    "heldout_random_lowpass32.npz": "1e8dfd8010115c8a289bc90fadee2a80a655a711a1bfdc4a114fd25152841fa7",
+    "heldout_random_native128.npz": "168815239c2c004603ea42d0de59f25edeb5008534a5fcc3ed512af45fcdcb17",
+    "inference_metric_audit.json": "801c3b39506a22598465a80392e9c43d0df663534eb520627fdca2b2b35a1f61",
+    "training_protocol.json": "fb147e55efcc09889c54e5f44fb83ec482a85952a0837d77dcd98ac6d0f7d95b"
+  },
+  "sanitization": "Absolute experiment paths are replaced by logical paths relative to the experiment root; original hashes retained.",
+  "pixels_exported": false,
+  "learned_parameters_exported": false
+}

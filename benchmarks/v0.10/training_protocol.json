@@ -1,0 +1,54 @@
+{
+  "format": "hypernet.mathematical_surface_encoder.v10",
+  "sources": {
+    "hypernet\\surface_encoder.py": "c682947ed4201c803726e1a43926afcb0764f74ccf20a2fe6ece7770ec067f93",
+    "hypernet\\training_v3.py": "ad1dbae310cb12fd0a23a068a393407c58818f7735fe6bcbed095c87b5cac956",
+    "hypernet\\mathematical_surfaces.py": "c4438068ca75eb222115339d69d093366e873effffbbb17dcbb360fd67a68157",
+    "scripts\\train_surface_encoder.py": "6f403b35c8e227db9f1be3070ee22a4671bfcd8499c22552e773944508209454"
+  },
+  "manifest_sha256": "3b04fb762c094cf2ddfd1db18862e47b2408c9eef5ccdc0b1aa145f9a61c1912",
+  "batch_plan_sha256": "b20f7da5487d6b90ee9e353fb97b0eac85fd51a8963d61e6c27f1a2bef1fd2ff",
+  "initial_state_sha256": "ff3b84647ff1e68337b62f1fd36daeda4c2abd24cbd346d43f13ba9a0a18e086",
+  "parameters": 181525,
+  "native_resolution": 128,
+  "arms": [
+    "native128",
+    "lowpass32"
+  ],
+  "steps_per_arm": 400,
+  "batch_images": 16,
+  "image_exposures_per_arm": 6400,
+  "unique_training_frames": 1536,
+  "training_object_programs": 256,
+  "heldout_object_programs": 64,
+  "families": 8,
+  "natural_training_images": 0,
+  "external_pretrained_weights": false,
+  "seed": 731,
+  "runtime": {
+    "python": "3.12.10",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.5.3",
+    "threads": 4,
+    "device": "cpu"
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001
+  },
+  "loss_weights": {
+    "family": 1.0,
+    "contrastive": 0.3,
+    "spectrum": 0.5,
+    "mask": 0.2,
+    "normal": 0.2,
+    "depth": 0.2
+  },
+  "primary_metric": "embedding.one_support_per_family_accuracy",
+  "evaluation": "8-way family nearest support: 8 enrollment rotations; different heldout objects in queries",
+  "surface_metric": "balanced cross-view clean-versus-.07 matching; 128 triples",
+  "selection": "fixed final step; no heldout-based model selection or early stopping",
+  "cross_resolution_diagnostic": "Also evaluate each final checkpoint with the other input arm; no retraining",
+  "limitation": "Synthetic heldout objects from known generated families; no natural-category generalization claim"
+}

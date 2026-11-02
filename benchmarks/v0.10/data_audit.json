@@ -1,0 +1,42 @@
+{
+  "valid": true,
+  "created_utc": "2026-11-02T15:19:11.891120+00:00",
+  "manifest_sha256": "3b04fb762c094cf2ddfd1db18862e47b2408c9eef5ccdc0b1aa145f9a61c1912",
+  "plan_sha256": "e2cbeb55d9469e0b9eb9f5786efb9ff8eaf93d92ee336551b81b8300062a38fb",
+  "plan_freeze_sha256": "d9cb6150f06fa587f8c7b3f62d36bad4099db7f9adaa27decac3ccdd4b58807b",
+  "renderer_sha256": "c4438068ca75eb222115339d69d093366e873effffbbb17dcbb360fd67a68157",
+  "builder_sha256": "da61c6e24175182d4eb81e40af0e3744a8007342b440c82ee47a5e2368878b16",
+  "records_verified": 1920,
+  "files_verified": 5760,
+  "objects_by_split": {
+    "train": 256,
+    "heldout": 64
+  },
+  "frames_by_split": {
+    "train": 1536,
+    "heldout": 384
+  },
+  "paired_view_checks": 960,
+  "zero_strength_frames": 640,
+  "unique_rgb_arrays": 1920,
+  "no_object_seed_or_base_program_overlap": true,
+  "all_actual_camera_and_material_pairs_differ": true,
+  "all_strength_controls_share_view_parameters": true,
+  "all_strengths_have_distinct_geometry": true,
+  "native_resolution": 128,
+  "image_blur_or_resizing": false,
+  "natural_images": 0,
+  "external_assets": 0,
+  "pretrained_models": false,
+  "max_float16_normal_norm_error": 0.0004114508628845215,
+  "max_float16_depth_quantization_error": 0.0009765625,
+  "target_conventions": {
+    "mask": "bool[H,W]; foreground is True",
+    "normal": "float16[H,W,3]; camera-space unit normal facing camera, not intrinsic outward orientation; zero outside mask",
+    "depth": "float16[H,W]; positive orthographic camera distance 3-z in normalized object coordinates; zero outside mask",
+    "component": "uint8[H,W]; renderer surface-component index, 255 background",
+    "normal_training_note": "Convert to float32 and optionally renormalize after float16 decoding; use foreground mask for losses",
+    "surface_strength": "Displacement bound before fixed base-object bounding-sphere normalization; not image blur"
+  },
+  "scope": "Synthetic family/detail and same-object different-view evaluation; not fresh-natural-image accuracy"
+}

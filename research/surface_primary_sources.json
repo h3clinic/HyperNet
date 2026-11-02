@@ -1,0 +1,53 @@
+{
+  "review_date": "2026-11-02",
+  "scope": "Established procedural geometry and surface priors relevant to the v10 curriculum. These sources provide no one-shot natural-photo recognition result.",
+  "sources": [
+    {
+      "title": "Superquadrics and Angle-Preserving Transformations",
+      "authors": "Alan H. Barr",
+      "publication_date": "1981-01",
+      "venue": "IEEE Computer Graphics and Applications 1(1), 11–23",
+      "primary_url": "https://authors.library.caltech.edu/records/rtr62-f2882",
+      "full_text_read": "https://scee86bccd27a6ab2.jimcontent.com/download/version/1508494237/module/13622135978/name/BARieeecga81.pdf",
+      "mathematics": "Signed powers of trigonometric coordinates control the shape of superellipsoids and supertoroids. Surface tangents define normals by a normalized cross product; cusps require care.",
+      "adoption": "Implemented superquadric families. The parameter remapping used for stable sampling is our numerical choice, not a new surface family.",
+      "learning_budget": "No machine-learning training or recognition benchmark.",
+      "caveat": "This established geometry supplies a prior; it does not establish transfer to unknown natural categories."
+    },
+    {
+      "title": "A generic geometric transformation that unifies a wide range of natural and abstract shapes",
+      "authors": "Johan Gielis",
+      "publication_date": "2003-03-01",
+      "venue": "American Journal of Botany 90(3), 333–338",
+      "primary_url": "https://bsapubs.onlinelibrary.wiley.com/doi/10.3732/ajb.90.3.333",
+      "mathematics": "The polar superformula varies angular symmetry and contour exponents; parameter choices determine closure and corner behavior.",
+      "adoption": "Researched extension only. Current radial_rosette uses explicit harmonics, not the Gielis superformula.",
+      "learning_budget": "No learned weights or image-recognition evaluation.",
+      "caveat": "A broad contour family is not a distribution of natural object semantics. Rational and asymmetric parameter choices require closure checks."
+    },
+    {
+      "title": "Improving Noise",
+      "authors": "Ken Perlin",
+      "publication_date": "2002",
+      "venue": "ACM Transactions on Graphics 21(3), 681–682; SIGGRAPH 2002",
+      "primary_url": "https://mrl.nyu.edu/~perlin/paper445.pdf",
+      "mathematics": "Gradient noise uses quintic interpolation 6t^5−15t^4+10t^3 with vanishing endpoint first and second derivatives, and a discrete gradient set.",
+      "adoption": "Future texture/displacement alternative only; v10 uses explicit Gaussian bumps plus grooves, not Perlin noise.",
+      "learning_budget": "Graphics method, no machine-learning pretraining.",
+      "caveat": "Smooth interpolation controls derivatives, not realistic material statistics. No published source code was copied into v10."
+    },
+    {
+      "title": "A Cellular Texture Basis Function",
+      "authors": "Steven Worley",
+      "publication_date": "1996",
+      "venue": "SIGGRAPH 1996, 291–294",
+      "primary_url": "https://doi.org/10.1145/237170.237267",
+      "full_text_read": "https://cedric.cnam.fr/~cubaud/PROCEDURAL/worley.pdf",
+      "mathematics": "F_n(x) is distance to the nth nearest scattered feature point. F_2−F_1 supplies a cellular boundary cue, not exact distance to that boundary.",
+      "adoption": "Possible future cellular texture prior; not used by the frozen v10 renderer.",
+      "learning_budget": "Procedural graphics method; no learned model or one-image experiment.",
+      "caveat": "Feature-point statistics and spatial scale become designed priors. Surface parameter distances are not automatically geodesic distances."
+    }
+  ],
+  "originality_scope": "The renderer, supervised shape/detail objective and controlled input-bandwidth experiment are an engineering combination. Neither superquadrics, Gaussian radial basis functions, FFT power descriptors nor contrastive learning are claimed as newly invented math."
+}
