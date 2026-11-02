@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-11-02T21:33:00.865284+00:00",
+  "data_freeze_sha256": "559021255a7899e53d077f86ae5135d4def769b0a2ffe25f9e5310e4b204e989",
+  "original_fetch_admission_sha256": "0f8929eeea1a69792c001175fe876307944be7fbb8af5e6a60c2cb1b7503ed73",
+  "plan_sha256": "6d1d30cfa90576fdb0558e7d5367cbc03f17b6b3fa243ac35983999bd1871b5d",
+  "recovery_script_sha256": "84672634cfe15379ea1afe7a13808c09ece53f3282b0a3573474b5636242b82b",
+  "reason": "Original virtual-host HTTPS endpoint fails certificate hostname verification; official S3 bucket path endpoint has valid TLS.",
+  "original_dataset_images_written": 0,
+  "transport_url_template": "https://s3.amazonaws.com/images.cocodataset.org/val2017/{file_name}",
+  "selection_annotations_and_criteria_unchanged": true,
+  "model_runs": 0
+}

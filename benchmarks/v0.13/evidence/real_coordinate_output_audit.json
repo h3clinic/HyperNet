@@ -1,0 +1,24 @@
+{
+  "valid": true,
+  "scope": "Posthoc arithmetic audit, not model replay or segmentation validation.",
+  "source_sha256": "5d9e28e7725ded7ee213ffc5e871f17b4a33ddb6755ee31d02ba3110c39a3cb1",
+  "result_sha256": "29dc37a49730d386172b3296a8e3d9ae2210bcc2cb62980f7a5c96993a0f0e9b",
+  "manifest_sha256": "6f587f088f37116e4aa694016024d4a7f9cd840f7920ceb3c0bc0bb4994a0bb6",
+  "prediction_rows": 1152,
+  "proposal_boxes": 40462,
+  "max_absolute_errors": {
+    "grid_original_coordinate": 0.0,
+    "cnn_inverse_integer": 5.684341886080802e-14,
+    "selected_iou": 0.0,
+    "proposal_iou": 0.0,
+    "reference_mapping": 0.0
+  },
+  "checks": [
+    "Query geometry exactly matches independently recomputed detail/CNN dimensions and bottom/right padding.",
+    "Every51-window grid maps to direct original-image formulas independently of resize code.",
+    "All learned proposal coordinates invert to integer CNN connected-component boxes.",
+    "Reference supplied boxes and normalized transformed boxes match manifest and recorded crop/scales.",
+    "All selected and best-proposal IoUs independently recomputed with scalar arithmetic over all target boxes."
+  ],
+  "limitation": "This rejects these coordinate bookkeeping explanations; it does not prove intended object segmentation, semantic matching, or absence of every implementation defect."
+}

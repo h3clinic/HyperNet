@@ -1,0 +1,64 @@
+{
+  "created_utc": "2026-11-02T21:30:58.681040+00:00",
+  "plan_sha256": "6d1d30cfa90576fdb0558e7d5367cbc03f17b6b3fa243ac35983999bd1871b5d",
+  "prior_inventory_sha256": "5966d70b5d9da2944934b601af6b4095b7be8f44b9898eccdead1f930d5c1446",
+  "annotation_sha256": "e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f",
+  "builder_sha256": "bc4bae0446e48c8bb7ffb12d3e5c8a630ebdfc7dc4736f387c01fd22909382e2",
+  "photos_fetched_for_v13": false,
+  "model_scores_read": false,
+  "prior_manifests": [
+    {
+      "path": "outputs/hypernet_starter/data/coco24_category_v03/manifest.json",
+      "sha256": "bad5d65fc9e52790beff81500f5adbd149a78ac1be257e496647aab13eb6384b"
+    },
+    {
+      "path": "outputs/hypernet_starter/data/coco24_scratch_v04/manifest.json",
+      "sha256": "8f4b83578e7beba1a08a57f9c43aa819b200c5eba2c181e2829c9998d3af0990"
+    },
+    {
+      "path": "outputs/hypernet_v05/data/coco_scratch_v05/manifest.json",
+      "sha256": "c4fd712693d83c93678c149c2f5c58c21cabcb3d6ff6f926f7df9d2a5d086922"
+    },
+    {
+      "path": "outputs/hypernet_v06/data/coco_fresh_v06/manifest.json",
+      "sha256": "b0ef7fef591a4dca5868813a74e9fd966e7e5b846eb910c0502880872ba14508"
+    },
+    {
+      "path": "outputs/hypernet_v08/data/coco_fresh_v08/manifest.json",
+      "sha256": "80f52734eabc60c70a12abb03eeaf6950e9863d992aa753c2ae91673d34000f3"
+    },
+    {
+      "path": "outputs/hypernet_v09/data/coco_fresh_v09/manifest.json",
+      "sha256": "ea7e1bf54915a3a0aa647729a428b851372b9c952427df1ef7e2da75578dbda3"
+    },
+    {
+      "path": "outputs\\hypernet_starter\\data\\caltech24_category_v03\\manifest.json",
+      "sha256": "4c962151062731c1c54be3c9ec6de3a1806ec5ce3a2466f75703948276834ab6"
+    },
+    {
+      "path": "outputs\\hypernet_starter\\data\\synthetic24\\manifest.json",
+      "sha256": "86d243880fab69d919166ff8e4627bb2769af45b5b444ff52502f18b0a250ec7"
+    },
+    {
+      "path": "outputs\\hypernet_starter\\data\\synthetic32_fresh\\manifest.json",
+      "sha256": "302c22b968fc286c6dc19bab42f20d3208fd75ed8bb98ad6467e5a4f52e91f4c"
+    },
+    {
+      "path": "outputs\\hypernet_starter\\data\\synthetic32_workarounds\\manifest.json",
+      "sha256": "79b23e8799fdfa0df0c0103e581de5e19b140e60a1b826b791f1d8b94007d5f6"
+    },
+    {
+      "path": "outputs\\hypernet_starter\\data\\oxford8\\manifest.json",
+      "sha256": "8f62815404112511e03f0d3973936ebbb2088c2a65d52af5e5e0d3e8e78c5fe1"
+    }
+  ],
+  "counts": {
+    "categories": 12,
+    "references": 12,
+    "dev_queries": 96,
+    "test_queries": 192,
+    "positive_queries": 144,
+    "negative_queries": 144,
+    "unique_source_photos": 300
+  }
+}

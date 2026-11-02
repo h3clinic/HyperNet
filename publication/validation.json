@@ -1,76 +1,67 @@
 {
-  "version": "0.12.0",
+  "version": "0.13.0",
   "date": "2026-11-02",
   "portable_tests": {
-    "total_distinct_passed": 261,
-    "complete_suite_before_new_wrapper": {
-      "passed": 251,
-      "seconds": 19.22
+    "distinct_passed": 320,
+    "complete_suite_before_final_presentation_fallback": {
+      "passed": 318,
+      "seconds": 21.96
     },
-    "new_wrapper_tests": {
-      "passed": 10
+    "final_app_checks": {
+      "passed": 22,
+      "seconds": 5.88,
+      "new_distinct_tests": 2
     }
   },
-  "core_files": 75,
-  "unchanged_prior_core_files": 70,
-  "prior_version_metadata_change": "hypernet/__init__.py only: 0.3.0 to 0.12.0; exact frozen source",
-  "all_exported_package_sources_byte_identical_to_frozen_experiment": true,
-  "independent_checks": {
-    "metric_values": 168,
-    "localization_rows": 6144,
-    "bootstrap_values": 24,
-    "full_prediction_exact_replays": 96,
-    "original_cnn_exact_replays": 16
+  "package_files": 77,
+  "prior_package_files_unchanged": 75,
+  "all_exported_package_files_exact_frozen_bytes": true,
+  "independent_audit": {
+    "prediction_rows": 1152,
+    "iou_checks": 2304,
+    "metric_numbers": 2920,
+    "bootstrap_numbers": 66,
+    "exact_full_prediction_replays": 96,
+    "original_photo_hashes_verified": 300,
+    "unchanged_tracked_files": 395
   },
-  "public_arithmetic_verification": {
-    "passed": true,
-    "prediction_rows": 6144,
-    "metric_values": 168,
-    "bootstrap_values": 24
+  "portable_replay": {
+    "queries": 2,
+    "predictions": 8,
+    "numeric_values": 4792,
+    "maximum_error": 0,
+    "absolute_tolerance": 0,
+    "evidence": "publication/replay_validation_v13.json"
   },
-  "portable_inference_replay": {
-    "passed": true,
-    "enrollments": 4,
-    "predictions": 48,
-    "float_values_checked": 2781,
-    "max_absolute_float_error": 0.0,
-    "absolute_tolerance_used": 0.0,
-    "evidence": "publication/replay_validation_v12.json"
+  "direct_photo_cli": {
+    "predictions_equal_original": 4,
+    "weights_unchanged": true,
+    "input_pixels_written": false
   },
-  "live_gallery_audit": {
-    "rows": 1024,
-    "predictions": 6144,
-    "rgb_endpoints": 1024,
-    "mask_endpoints": 3072,
-    "passed": true
+  "manual_localhost_upload": {
+    "predictions": 4,
+    "weights_unchanged": true,
+    "uploaded_pixels_saved": false
   },
-  "public_report_relative_links_verified": 25,
-  "privacy_scan": {
+  "official_download_smoke": {
+    "sources": 1,
+    "raw_and_decoded_hashes_verified": true,
+    "tls_verification_enabled": true
+  },
+  "natural_photo_pixels_exported": 0,
+  "user_upload_pixels_exported": 0,
+  "metric_only_plots_exported": 2,
+  "core_protocol_sha256": "9c5b4361972b2ab066b4fec44d1630f58fb199237f0a71cfa14630389a81d956",
+  "evidence_bundle_sha256": "4ccd8a1a17b5a78dcde70741cf2353cbaf89f35464b167421667cf4b31dfc938",
+  "primary_finding": "Failed natural-photo transfer: zero of96 positive TEST photos correctly localized and accepted; transferred mode rejects all TEST positives and negatives. Secondary calibration still has zero correct localization.",
+  "scope": "One fixed automatically selected reference per reused COCO category; new photos, not unseen category labels or proof about every possible clearer reference.",
+  "final_export_scan": {
     "private_paths": 0,
-    "credential_patterns": 0
+    "credential_patterns": 0,
+    "embedded_natural_pixels": 0,
+    "natural_photo_files": 0,
+    "metric_plots": 2
   },
-  "natural_training_images": 0,
-  "externally_pretrained_weights": false,
-  "v12_optimizer_updates": 0,
-  "release_assets": {
-    "detector_micro_aware.pt": {
-      "sha256": "15c64b81747f3ebec224ef19621793c2d24ed9dd6f93de25c6ad5f7c5c04d49a",
-      "bytes": 3598069,
-      "url": "https://github.com/h3clinic/HyperNet/releases/download/v0.12.0/detector_micro_aware.pt"
-    },
-    "fresh_v12_rgb.zip": {
-      "sha256": "4f2791b900bbeaf97de336407fecd4457f38d340193b770f9c42f42985259694",
-      "bytes": 5417752,
-      "url": "https://github.com/h3clinic/HyperNet/releases/download/v0.12.0/fresh_v12_rgb.zip"
-    }
-  },
-  "primary_finding": "Fresh localized recall 98.83% versus 5.08%; false positives 5.08% versus 4.30%; paired gain 93.75 points, 95% interval [89.45, 97.66].",
-  "scope": "Controlled separated synthetic 2D micro-pattern hybrid, not natural semantic category validation.",
-  "portable_wrapper_independent_review": {
-    "passed": true,
-    "wrapper_sha256": "1bfee2eb5b5de13569abfe3a9ee23ff4d4639673d4a168be83fe6012113632f0",
-    "tests_passed": 10,
-    "review_scope": "Own checkpoint and tensor hash, pixel validation, frozen source binding, threshold reuse, bounded float comparison and exact discrete decisions; no edits required."
-  },
-  "final_evidence_bundle_original_sha256": "ff1c2ff195cff7076a460c0f9b125be93d140d7d12750b2ae804be5a88c4feae"
+  "public_report_links_verified": 13,
+  "final_local_http_review": "Passed report, app, results JSON, manifest, audit JSON, reference contact sheet and TEST192/288 gallery with4methods; inference available."
 }

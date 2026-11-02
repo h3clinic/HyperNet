@@ -1,0 +1,35 @@
+{
+  "valid": true,
+  "scope": "Synthetic arrays, mocked inference, and temporary protocol fixtures only; no real-photo model scoring or real-photo pixel inspection.",
+  "created_utc": "2026-11-02T21:37:39.510050+00:00",
+  "tests": {
+    "command": "python -m pytest tests/test_real_photo_evaluation.py -q",
+    "passed": 10,
+    "failed": 0,
+    "seconds": 3.68
+  },
+  "controls": [
+    "All-target maximum IoU including no prediction",
+    "Strict DEV-only tied cutoff permits at most2 of48 real negative scenes",
+    "Presence versus localization, tied AUROC and grouped single-box AP50",
+    "Category cluster bootstrap uses shared category draws and fixed thresholds",
+    "Raw file, decoded pixels, dimensions and path containment",
+    "Prediction scores, selected proposals and original-image coordinates",
+    "Full288-query mock:12 one-image enrollments; annotations inaccessible until predict() returns",
+    "Transferred cutoffs fixed; TEST scores cannot affect realDEV calibration",
+    "Actual schema completion relies on audited manifest hash, not nonexistent completed flag",
+    "Transport recovery admission, recovery source, original data freeze/fetch and checkpoint bindings"
+  ],
+  "static_adapter_review": "No coordinate-space blocker found: actual rounded axis scales propagate CNN padded coordinates to detail and original pixels; RGB-only reference crop and fixed-grid diagnostic remain explicit. Parent separately reports11 synthetic adapter tests passed.",
+  "source_sha256": {
+    "hypernet/real_photo.py": "e6912ee9a16a6ccfbaaf76768b6aa80b12054a2a0d42c3b40da0238dc6d0bd73",
+    "hypernet/real_photo_metrics.py": "148c0554cd67a21a321c323ee0389a2ff2c56d042fec9eafbfb17aa7449537bf",
+    "scripts/evaluate_real_photo.py": "8353a82be15ff126473626d577e41d37883e8a1392666c77106afc22f885757c",
+    "tests/test_real_photo_evaluation.py": "4a86888a7c693cc21c422612896255abb5e6d90991e8c08cb0133142da2abd7f"
+  },
+  "notes": [
+    "No model, mathematical scorer, checkpoint, dataset, or frozen prior version changed.",
+    "Metrics are custom one-selected-box scene metrics, not official COCO AP.",
+    "RealDEV secondary calibration consumes96 additional calibration photos; no weight updates."
+  ]
+}

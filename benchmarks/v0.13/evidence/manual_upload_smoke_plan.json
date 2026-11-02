@@ -1,0 +1,10 @@
+{
+  "selection": "First sorted TEST positive query ID, with its unique category reference; no score-dependent selection",
+  "query_id": "coco_v13_003_test_positive_00",
+  "query_image_id": 476119,
+  "reference_image_id": 231508,
+  "protocol_sha256": "9c5b4361972b2ab066b4fec44d1630f58fb199237f0a71cfa14630389a81d956",
+  "manifest_sha256": "6f587f088f37116e4aa694016024d4a7f9cd840f7920ceb3c0bc0bb4994a0bb6",
+  "script_sha256": "29666b5316de37cd18a62368058fcd6c03c7044681de830fad99372cd5d8245c",
+  "purpose": "Manual HTTP enrollment/inference integration smoke only; not new performance evidence"
+}

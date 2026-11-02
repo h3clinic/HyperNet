@@ -1,0 +1,32 @@
+{
+  "valid": true,
+  "created_utc": "2026-11-02T21:50:02.515773+00:00",
+  "scope": "Independent static/source/evidence review and6 synthetic unit tests; no additional natural-photo model calls. Author runs the separate8-row model replay smoke.",
+  "wrapper_sha256": "4e5571da6eba3d644836b908d9b2ad929790909463980110f263996276172ce2",
+  "tests_sha256": "a5adaff8587add31e3d97da92ba0fc24bd2ed986d4447224c53909963598070b",
+  "tests": {
+    "passed": 6,
+    "failed": 0,
+    "seconds": 0.05,
+    "command": "python -m pytest tests/test_replay_v13.py -q"
+  },
+  "published_inference_files_verified": 78,
+  "inference_sources_exact_original_freeze": true,
+  "both_mode_metrics_and_thresholds_exact_original": true,
+  "published_roster_exact_original": true,
+  "checks": [
+    "Deterministic two-TEST-query default selection without outcomes; optionalfull288queries",
+    "All imported inference source and evaluator bytes match original frozen bindings",
+    "Own-checkpoint rawSHA and tensor-state guard before inference; no-grad/state/sourceguard afterward",
+    "All images use original evaluator rawSHA/decodedpixel/dimension/path validation",
+    "Exact selectedboxes/proposals/discretevalues/decisions; floating tolerance0..1e-6 absolute with no relative tolerance",
+    "Both published modes reuse originalcutoffs; fullreplay recomputes aggregate metrics and clusterbootstrap without recalibration",
+    "Query annotations consulted only after predict; one enrolledreference per selectedcategory",
+    "Dataset public manifest may change provenancepaths but actual roster/referenceboxes/hashfields must remainexact",
+    "Outputrequiresnewemptydirectory and explicitly labelsreplication, notnewheldout experiment"
+  ],
+  "limitations": [
+    "Independent reviewer did not run additional image inference; source author supplies model replay evidence.",
+    "The optionalfullmode recomputes aggregate splitmetrics andbootstrap; percategorymetrics remain published evidence rather than recomputed in that wrapper."
+  ]
+}

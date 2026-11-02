@@ -1,0 +1,3913 @@
+{
+  "format": "hypernet.real_photo_transfer.v13",
+  "completed": true,
+  "scope": "One boxed natural-photo reference per category; full-scene category detection on disjoint COCO val2017 photos. Not official COCO AP.",
+  "primary_mode": "transferred",
+  "primary_method": "native_patch",
+  "primary_metric": "localized_recall_at_iou50",
+  "diagnostic_methods": [
+    "old_cnn_grid",
+    "native_patch_grid"
+  ],
+  "method_aliases": [
+    "old_cnn",
+    "native_patch",
+    "old_cnn_grid",
+    "native_patch_grid"
+  ],
+  "modes": {
+    "transferred": {
+      "primary": true,
+      "thresholds": {
+        "old_cnn": 0.9806613922119142,
+        "native_patch": 0.41308703128766816,
+        "old_cnn_grid": 0.9806613922119142,
+        "native_patch_grid": 0.41308703128766816
+      },
+      "methods": {
+        "old_cnn": {
+          "dev": {
+            "positive_scenes": 48,
+            "negative_scenes": 48,
+            "threshold": 0.9806613922119142,
+            "accepted_positive": 0,
+            "false_positive": 0,
+            "localized_true_positive": 0,
+            "recall": 0.0,
+            "false_positive_rate": 0.0,
+            "localized_recall_at_iou50": 0.0,
+            "top1_iou_recall_at_iou50": 0.0,
+            "proposal_recall_at_iou50": 0.0625,
+            "balanced_accuracy": 0.5,
+            "auroc": 0.5221354166666666,
+            "single_box_ap50": 0.0
+          },
+          "test": {
+            "positive_scenes": 96,
+            "negative_scenes": 96,
+            "threshold": 0.9806613922119142,
+            "accepted_positive": 0,
+            "false_positive": 0,
+            "localized_true_positive": 0,
+            "recall": 0.0,
+            "false_positive_rate": 0.0,
+            "localized_recall_at_iou50": 0.0,
+            "top1_iou_recall_at_iou50": 0.010416666666666666,
+            "proposal_recall_at_iou50": 0.14583333333333334,
+            "balanced_accuracy": 0.5,
+            "auroc": 0.5189887152777778,
+            "single_box_ap50": 0.00017655367231638418
+          }
+        },
+        "native_patch": {
+          "dev": {
+            "positive_scenes": 48,
+            "negative_scenes": 48,
+            "threshold": 0.41308703128766816,
+            "accepted_positive": 0,
+            "false_positive": 0,
+            "localized_true_positive": 0,
+            "recall": 0.0,
+            "false_positive_rate": 0.0,
+            "localized_recall_at_iou50": 0.0,
+            "top1_iou_recall_at_iou50": 0.0,
+            "proposal_recall_at_iou50": 0.0625,
+            "balanced_accuracy": 0.5,
+            "auroc": 0.5104166666666666,
+            "single_box_ap50": 0.0
+          },
+          "test": {
+            "positive_scenes": 96,
+            "negative_scenes": 96,
+            "threshold": 0.41308703128766816,
+            "accepted_positive": 0,
+            "false_positive": 0,
+            "localized_true_positive": 0,
+            "recall": 0.0,
+            "false_positive_rate": 0.0,
+            "localized_recall_at_iou50": 0.0,
+            "top1_iou_recall_at_iou50": 0.0,
+            "proposal_recall_at_iou50": 0.14583333333333334,
+            "balanced_accuracy": 0.5,
+            "auroc": 0.5213758680555556,
+            "single_box_ap50": 0.0
+          }
+        },
+        "old_cnn_grid": {
+          "dev": {
+            "positive_scenes": 48,
+            "negative_scenes": 48,
+            "threshold": 0.9806613922119142,
+            "accepted_positive": 0,
+            "false_positive": 0,
+            "localized_true_positive": 0,
+            "recall": 0.0,
+            "false_positive_rate": 0.0,
+            "localized_recall_at_iou50": 0.0,
+            "top1_iou_recall_at_iou50": 0.041666666666666664,
+            "proposal_recall_at_iou50": 0.6875,
+            "balanced_accuracy": 0.5,
+            "auroc": 0.5043402777777778,
+            "single_box_ap50": 0.0027447089947089946
+          },
+          "test": {
+            "positive_scenes": 96,
+            "negative_scenes": 96,
+            "threshold": 0.9806613922119142,
+            "accepted_positive": 0,
+            "false_positive": 0,
+            "localized_true_positive": 0,
+            "recall": 0.0,
+            "false_positive_rate": 0.0,
+            "localized_recall_at_iou50": 0.0,
+            "top1_iou_recall_at_iou50": 0.0625,
+            "proposal_recall_at_iou50": 0.6666666666666666,
+            "balanced_accuracy": 0.5,
+            "auroc": 0.5157335069444444,
+            "single_box_ap50": 0.0016005211474842016
+          }
+        },
+        "native_patch_grid": {
+          "dev": {
+            "positive_scenes": 48,
+            "negative_scenes": 48,
+            "threshold": 0.41308703128766816,
+            "accepted_positive": 0,
+            "false_positive": 0,
+            "localized_true_positive": 0,
+            "recall": 0.0,
+            "false_positive_rate": 0.0,
+            "localized_recall_at_iou50": 0.0,
+            "top1_iou_recall_at_iou50": 0.020833333333333332,
+            "proposal_recall_at_iou50": 0.6875,
+            "balanced_accuracy": 0.5,
+            "auroc": 0.5277777777777778,
+            "single_box_ap50": 0.0005630630630630631
+          },
+          "test": {
+            "positive_scenes": 96,
+            "negative_scenes": 96,
+            "threshold": 0.41308703128766816,
+            "accepted_positive": 0,
+            "false_positive": 0,
+            "localized_true_positive": 0,
+            "recall": 0.0,
+            "false_positive_rate": 0.0,
+            "localized_recall_at_iou50": 0.0,
+            "top1_iou_recall_at_iou50": 0.0,
+            "proposal_recall_at_iou50": 0.6666666666666666,
+            "balanced_accuracy": 0.5,
+            "auroc": 0.5091145833333334,
+            "single_box_ap50": 0.0
+          }
+        }
+      },
+      "per_category": {
+        "3": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.4375,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.421875,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.484375,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.3125,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.125,
+              "proposal_recall_at_iou50": 0.625,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.484375,
+              "single_box_ap50": 0.0625
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.375,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.625,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.296875,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "6": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.6875,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.125,
+              "proposal_recall_at_iou50": 0.375,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.578125,
+              "single_box_ap50": 0.020833333333333332
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.375,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.609375,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.125,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.53125,
+              "single_box_ap50": 0.008928571428571428
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.625,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "7": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.59375,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.375,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.65625,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.25,
+              "proposal_recall_at_iou50": 0.75,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.625,
+              "single_box_ap50": 0.25
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.125,
+              "proposal_recall_at_iou50": 0.875,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.390625,
+              "single_box_ap50": 0.008333333333333333
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.25,
+              "proposal_recall_at_iou50": 0.75,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.3125,
+              "single_box_ap50": 0.041666666666666664
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.875,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.59375,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "16": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.25,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.9375,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.59375,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.25,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.796875,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.21875,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "17": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.3125,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.375,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.65625,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.375,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.375,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.46875,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.25,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5,
+              "single_box_ap50": 0.125
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.125,
+              "proposal_recall_at_iou50": 0.625,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.40625,
+              "single_box_ap50": 0.013888888888888888
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.75,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.625,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "18": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.4375,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.578125,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.375,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.265625,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.1875,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.71875,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.34375,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "19": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.9375,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.375,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.6875,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.296875,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.75,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.234375,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.625,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "31": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.46875,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.4375,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.6875,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.25,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.546875,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.25,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.203125,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "47": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.375,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.4375,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.375,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.875,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.75,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.125,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.009615384615384616
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.828125,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "51": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.8125,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.46875,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 1.0,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.578125,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.125,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.125,
+              "proposal_recall_at_iou50": 0.875,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.21875,
+              "single_box_ap50": 0.013888888888888888
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.4375,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.875,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.6875,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "61": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.0,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.3125,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.390625,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.75,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.375,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.453125,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.75,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.875,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.375,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.640625,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "70": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.671875,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.125,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.328125,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.75,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.75,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.9806613922119142,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.75,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.640625,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.75,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.3125,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.41308703128766816,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.75,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.34375,
+              "single_box_ap50": 0.0
+            }
+          }
+        }
+      },
+      "real_calibration_photos": 0,
+      "real_calibration_negative_photos": 0,
+      "threshold_source": "Unchanged v12 synthetic DEV cutoffs",
+      "bootstrap": {
+        "unit": "category",
+        "categories": 12,
+        "category_ids": [
+          3,
+          6,
+          7,
+          16,
+          17,
+          18,
+          19,
+          31,
+          47,
+          51,
+          61,
+          70
+        ],
+        "samples": 10000,
+        "seed": 1313,
+        "methods": {
+          "old_cnn": {
+            "localized_recall_at_iou50": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "false_positive_rate": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "native_patch": {
+            "localized_recall_at_iou50": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "false_positive_rate": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "old_cnn_grid": {
+            "localized_recall_at_iou50": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "false_positive_rate": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "native_patch_grid": {
+            "localized_recall_at_iou50": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "false_positive_rate": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "localized_recall_differences": {
+          "native_patch_minus_old_cnn": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "native_patch_grid_minus_native_patch": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "old_cnn_grid_minus_old_cnn": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "scope": "Percentile cluster intervals conditional on the frozen operating thresholds and selected reference images; thresholds are not refitted in resamples."
+      }
+    },
+    "real_dev_calibrated": {
+      "primary": false,
+      "thresholds": {
+        "old_cnn": 0.8812538385391236,
+        "native_patch": 0.06563349857876612,
+        "old_cnn_grid": 0.8970637321472169,
+        "native_patch_grid": 0.06214874887256898
+      },
+      "methods": {
+        "old_cnn": {
+          "dev": {
+            "positive_scenes": 48,
+            "negative_scenes": 48,
+            "threshold": 0.8812538385391236,
+            "accepted_positive": 2,
+            "false_positive": 2,
+            "localized_true_positive": 0,
+            "recall": 0.041666666666666664,
+            "false_positive_rate": 0.041666666666666664,
+            "localized_recall_at_iou50": 0.0,
+            "top1_iou_recall_at_iou50": 0.0,
+            "proposal_recall_at_iou50": 0.0625,
+            "balanced_accuracy": 0.5,
+            "auroc": 0.5221354166666666,
+            "single_box_ap50": 0.0
+          },
+          "test": {
+            "positive_scenes": 96,
+            "negative_scenes": 96,
+            "threshold": 0.8812538385391236,
+            "accepted_positive": 14,
+            "false_positive": 11,
+            "localized_true_positive": 0,
+            "recall": 0.14583333333333334,
+            "false_positive_rate": 0.11458333333333333,
+            "localized_recall_at_iou50": 0.0,
+            "top1_iou_recall_at_iou50": 0.010416666666666666,
+            "proposal_recall_at_iou50": 0.14583333333333334,
+            "balanced_accuracy": 0.515625,
+            "auroc": 0.5189887152777778,
+            "single_box_ap50": 0.00017655367231638418
+          }
+        },
+        "native_patch": {
+          "dev": {
+            "positive_scenes": 48,
+            "negative_scenes": 48,
+            "threshold": 0.06563349857876612,
+            "accepted_positive": 3,
+            "false_positive": 2,
+            "localized_true_positive": 0,
+            "recall": 0.0625,
+            "false_positive_rate": 0.041666666666666664,
+            "localized_recall_at_iou50": 0.0,
+            "top1_iou_recall_at_iou50": 0.0,
+            "proposal_recall_at_iou50": 0.0625,
+            "balanced_accuracy": 0.5104166666666666,
+            "auroc": 0.5104166666666666,
+            "single_box_ap50": 0.0
+          },
+          "test": {
+            "positive_scenes": 96,
+            "negative_scenes": 96,
+            "threshold": 0.06563349857876612,
+            "accepted_positive": 7,
+            "false_positive": 2,
+            "localized_true_positive": 0,
+            "recall": 0.07291666666666667,
+            "false_positive_rate": 0.020833333333333332,
+            "localized_recall_at_iou50": 0.0,
+            "top1_iou_recall_at_iou50": 0.0,
+            "proposal_recall_at_iou50": 0.14583333333333334,
+            "balanced_accuracy": 0.5260416666666667,
+            "auroc": 0.5213758680555556,
+            "single_box_ap50": 0.0
+          }
+        },
+        "old_cnn_grid": {
+          "dev": {
+            "positive_scenes": 48,
+            "negative_scenes": 48,
+            "threshold": 0.8970637321472169,
+            "accepted_positive": 5,
+            "false_positive": 2,
+            "localized_true_positive": 0,
+            "recall": 0.10416666666666667,
+            "false_positive_rate": 0.041666666666666664,
+            "localized_recall_at_iou50": 0.0,
+            "top1_iou_recall_at_iou50": 0.041666666666666664,
+            "proposal_recall_at_iou50": 0.6875,
+            "balanced_accuracy": 0.53125,
+            "auroc": 0.5043402777777778,
+            "single_box_ap50": 0.0027447089947089946
+          },
+          "test": {
+            "positive_scenes": 96,
+            "negative_scenes": 96,
+            "threshold": 0.8970637321472169,
+            "accepted_positive": 12,
+            "false_positive": 17,
+            "localized_true_positive": 0,
+            "recall": 0.125,
+            "false_positive_rate": 0.17708333333333334,
+            "localized_recall_at_iou50": 0.0,
+            "top1_iou_recall_at_iou50": 0.0625,
+            "proposal_recall_at_iou50": 0.6666666666666666,
+            "balanced_accuracy": 0.4739583333333333,
+            "auroc": 0.5157335069444444,
+            "single_box_ap50": 0.0016005211474842016
+          }
+        },
+        "native_patch_grid": {
+          "dev": {
+            "positive_scenes": 48,
+            "negative_scenes": 48,
+            "threshold": 0.06214874887256898,
+            "accepted_positive": 1,
+            "false_positive": 2,
+            "localized_true_positive": 0,
+            "recall": 0.020833333333333332,
+            "false_positive_rate": 0.041666666666666664,
+            "localized_recall_at_iou50": 0.0,
+            "top1_iou_recall_at_iou50": 0.020833333333333332,
+            "proposal_recall_at_iou50": 0.6875,
+            "balanced_accuracy": 0.4895833333333333,
+            "auroc": 0.5277777777777778,
+            "single_box_ap50": 0.0005630630630630631
+          },
+          "test": {
+            "positive_scenes": 96,
+            "negative_scenes": 96,
+            "threshold": 0.06214874887256898,
+            "accepted_positive": 3,
+            "false_positive": 2,
+            "localized_true_positive": 0,
+            "recall": 0.03125,
+            "false_positive_rate": 0.020833333333333332,
+            "localized_recall_at_iou50": 0.0,
+            "top1_iou_recall_at_iou50": 0.0,
+            "proposal_recall_at_iou50": 0.6666666666666666,
+            "balanced_accuracy": 0.5052083333333334,
+            "auroc": 0.5091145833333334,
+            "single_box_ap50": 0.0
+          }
+        }
+      },
+      "per_category": {
+        "3": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.4375,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 1,
+              "false_positive": 2,
+              "localized_true_positive": 0,
+              "recall": 0.125,
+              "false_positive_rate": 0.25,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.4375,
+              "auroc": 0.421875,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.484375,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.3125,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.125,
+              "proposal_recall_at_iou50": 0.625,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.484375,
+              "single_box_ap50": 0.0625
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.375,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.625,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.296875,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "6": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.6875,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 0,
+              "false_positive": 1,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.125,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.125,
+              "proposal_recall_at_iou50": 0.375,
+              "balanced_accuracy": 0.4375,
+              "auroc": 0.578125,
+              "single_box_ap50": 0.020833333333333332
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.375,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.609375,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.125,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.53125,
+              "single_box_ap50": 0.008928571428571428
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.625,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "7": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 3,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.375,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.6875,
+              "auroc": 0.59375,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.375,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.65625,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.25,
+              "proposal_recall_at_iou50": 0.75,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.625,
+              "single_box_ap50": 0.25
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 1,
+              "false_positive": 3,
+              "localized_true_positive": 0,
+              "recall": 0.125,
+              "false_positive_rate": 0.375,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.125,
+              "proposal_recall_at_iou50": 0.875,
+              "balanced_accuracy": 0.375,
+              "auroc": 0.390625,
+              "single_box_ap50": 0.008333333333333333
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.25,
+              "proposal_recall_at_iou50": 0.75,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.3125,
+              "single_box_ap50": 0.041666666666666664
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 1,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.125,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.875,
+              "balanced_accuracy": 0.4375,
+              "auroc": 0.59375,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "16": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.25,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.9375,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.59375,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.25,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.796875,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.21875,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "17": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.3125,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.375,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.65625,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.375,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.375,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.46875,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.25,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5,
+              "single_box_ap50": 0.125
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.125,
+              "proposal_recall_at_iou50": 0.625,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.40625,
+              "single_box_ap50": 0.013888888888888888
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.75,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.625,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "18": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.4375,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.578125,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.375,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.265625,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.1875,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 1,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.125,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5625,
+              "auroc": 0.71875,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.34375,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "19": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.9375,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.375,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.6875,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.296875,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.75,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 1,
+              "false_positive": 5,
+              "localized_true_positive": 0,
+              "recall": 0.125,
+              "false_positive_rate": 0.625,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.25,
+              "auroc": 0.234375,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 1.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.625,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "31": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.46875,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.4375,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.6875,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.25,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.546875,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.25,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.203125,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "47": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.375,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.4375,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 2,
+              "false_positive": 2,
+              "localized_true_positive": 0,
+              "recall": 0.5,
+              "false_positive_rate": 0.5,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 6,
+              "false_positive": 2,
+              "localized_true_positive": 0,
+              "recall": 0.75,
+              "false_positive_rate": 0.25,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.375,
+              "balanced_accuracy": 0.75,
+              "auroc": 0.875,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.75,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.125,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.009615384615384616
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 1,
+              "false_positive": 2,
+              "localized_true_positive": 0,
+              "recall": 0.25,
+              "false_positive_rate": 0.5,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.375,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 3,
+              "false_positive": 1,
+              "localized_true_positive": 0,
+              "recall": 0.375,
+              "false_positive_rate": 0.125,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.625,
+              "auroc": 0.828125,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "51": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 1,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.25,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.625,
+              "auroc": 0.8125,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.46875,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 1,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.25,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.625,
+              "auroc": 1.0,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 1,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.125,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5625,
+              "auroc": 0.578125,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.125,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.125,
+              "proposal_recall_at_iou50": 0.875,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.21875,
+              "single_box_ap50": 0.013888888888888888
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.4375,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.875,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.6875,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "61": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.0,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 6,
+              "false_positive": 5,
+              "localized_true_positive": 0,
+              "recall": 0.75,
+              "false_positive_rate": 0.625,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5625,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.5,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.3125,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.390625,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 1,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.25,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.75,
+              "balanced_accuracy": 0.625,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 4,
+              "false_positive": 4,
+              "localized_true_positive": 0,
+              "recall": 0.5,
+              "false_positive_rate": 0.5,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.375,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.453125,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.75,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.875,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.375,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.640625,
+              "single_box_ap50": 0.0
+            }
+          }
+        },
+        "70": {
+          "old_cnn": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 1,
+              "false_positive": 2,
+              "localized_true_positive": 0,
+              "recall": 0.25,
+              "false_positive_rate": 0.5,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.375,
+              "auroc": 0.5625,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8812538385391236,
+              "accepted_positive": 4,
+              "false_positive": 3,
+              "localized_true_positive": 0,
+              "recall": 0.5,
+              "false_positive_rate": 0.375,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5625,
+              "auroc": 0.671875,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.0,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.125,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06563349857876612,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.125,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.328125,
+              "single_box_ap50": 0.0
+            }
+          },
+          "old_cnn_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 4,
+              "false_positive": 2,
+              "localized_true_positive": 0,
+              "recall": 1.0,
+              "false_positive_rate": 0.5,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.75,
+              "balanced_accuracy": 0.75,
+              "auroc": 0.75,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.8970637321472169,
+              "accepted_positive": 5,
+              "false_positive": 5,
+              "localized_true_positive": 0,
+              "recall": 0.625,
+              "false_positive_rate": 0.625,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.75,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.640625,
+              "single_box_ap50": 0.0
+            }
+          },
+          "native_patch_grid": {
+            "dev": {
+              "positive_scenes": 4,
+              "negative_scenes": 4,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.75,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.3125,
+              "single_box_ap50": 0.0
+            },
+            "test": {
+              "positive_scenes": 8,
+              "negative_scenes": 8,
+              "threshold": 0.06214874887256898,
+              "accepted_positive": 0,
+              "false_positive": 0,
+              "localized_true_positive": 0,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "localized_recall_at_iou50": 0.0,
+              "top1_iou_recall_at_iou50": 0.0,
+              "proposal_recall_at_iou50": 0.75,
+              "balanced_accuracy": 0.5,
+              "auroc": 0.34375,
+              "single_box_ap50": 0.0
+            }
+          }
+        }
+      },
+      "real_calibration_photos": 96,
+      "real_calibration_negative_photos": 48,
+      "threshold_source": "Pooled96 additional real DEV photos; strict cutoff accepts at most2 of48 negatives; no weight fitting",
+      "bootstrap": {
+        "unit": "category",
+        "categories": 12,
+        "category_ids": [
+          3,
+          6,
+          7,
+          16,
+          17,
+          18,
+          19,
+          31,
+          47,
+          51,
+          61,
+          70
+        ],
+        "samples": 10000,
+        "seed": 1313,
+        "methods": {
+          "old_cnn": {
+            "localized_recall_at_iou50": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "false_positive_rate": {
+              "estimate": 0.11458333333333333,
+              "ci95": [
+                0.020833333333333332,
+                0.23958333333333334
+              ]
+            }
+          },
+          "native_patch": {
+            "localized_recall_at_iou50": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "false_positive_rate": {
+              "estimate": 0.020833333333333332,
+              "ci95": [
+                0.0,
+                0.0625
+              ]
+            }
+          },
+          "old_cnn_grid": {
+            "localized_recall_at_iou50": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "false_positive_rate": {
+              "estimate": 0.17708333333333334,
+              "ci95": [
+                0.041666666666666664,
+                0.3229166666666667
+              ]
+            }
+          },
+          "native_patch_grid": {
+            "localized_recall_at_iou50": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "false_positive_rate": {
+              "estimate": 0.020833333333333332,
+              "ci95": [
+                0.0,
+                0.052083333333333336
+              ]
+            }
+          }
+        },
+        "localized_recall_differences": {
+          "native_patch_minus_old_cnn": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "native_patch_grid_minus_native_patch": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "old_cnn_grid_minus_old_cnn": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "scope": "Percentile cluster intervals conditional on the frozen operating thresholds and selected reference images; thresholds are not refitted in resamples."
+      }
+    }
+  },
+  "reference_categories": 12,
+  "reference_images": 12,
+  "reference_images_per_enrollment": 1,
+  "query_images": 288,
+  "dev_photos": 96,
+  "test_photos": 192,
+  "total_unique_photos": 300,
+  "natural_training_images": 0,
+  "learned_weight_updates_this_version": 0,
+  "borrowed_pretrained_weights": false,
+  "model_provenance": {
+    "reference_images_per_enrollment": 1,
+    "learned_weight_updates": 0,
+    "shared_checkpoint": "own synthetic-only v11 CNN, reused by v12",
+    "synthetic_pretraining_unique_images": 8192,
+    "borrowed_pretrained_weights": false,
+    "natural_pretraining_images": 0,
+    "model_state_sha256": "6dda19f85dd3fa035ca605b6db7d83966e2a247b439c6606174fdc2e9f775e09",
+    "reference_processing": "1.25x boxed crop, aspect-preserving96px letterbox",
+    "query_processing": "detail image maxedge1024; CNN maxedge512; boxes mapped to original pixels",
+    "diagnostic_grid": "51 fixed windows, separate from learned CNN proposals"
+  },
+  "model_state_before": "6dda19f85dd3fa035ca605b6db7d83966e2a247b439c6606174fdc2e9f775e09",
+  "model_state_after": "6dda19f85dd3fa035ca605b6db7d83966e2a247b439c6606174fdc2e9f775e09",
+  "gradients_created": false,
+  "protocol_sha256": "9c5b4361972b2ab066b4fec44d1630f58fb199237f0a71cfa14630389a81d956",
+  "manifest_sha256": "6f587f088f37116e4aa694016024d4a7f9cd840f7920ceb3c0bc0bb4994a0bb6",
+  "checkpoint_sha256": "15c64b81747f3ebec224ef19621793c2d24ed9dd6f93de25c6ad5f7c5c04d49a",
+  "frozen_sources_and_inputs_unchanged": true,
+  "seconds": 384.11636340000405,
+  "created_utc": "2026-11-02T21:44:46.552520+00:00",
+  "score_files": {
+    "old_cnn": {
+      "path": "old_cnn_scores.jsonl",
+      "sha256": "17ba66586bdc8936eb646735ed2341517be6550417f41867944958bb4e534a86"
+    },
+    "native_patch": {
+      "path": "native_patch_scores.jsonl",
+      "sha256": "bfdac2c654e3bb8ca82d16dbb483ca6a38c5707b0cd9eb8fa866f312c0ab2e38"
+    },
+    "old_cnn_grid": {
+      "path": "old_cnn_grid_scores.jsonl",
+      "sha256": "9c789fb06afb33fef1179a12ad0dac2ae173e20b1025e1cac7d879d2e9d492dd"
+    },
+    "native_patch_grid": {
+      "path": "native_patch_grid_scores.jsonl",
+      "sha256": "7a98beb93ad6613dbb9e8cf1601cd4e5cc48f463b172d87543ea8d0174fc4570"
+    }
+  },
+  "metric_notes": [
+    "A positive scene succeeds when the selected box overlaps any eligible same-category instance at IoU>=.5 and its score passes the mode threshold.",
+    "Top1 IoU recall and proposal recall ignore score thresholds and diagnose localization coverage.",
+    "Single-box AP50 is tied-score scene ranking, not COCO multi-detection/multi-IoU AP.",
+    "The primary mode uses no real calibration labels. Secondary realDEV calibration uses96 extra photos and does not modify weights.",
+    "Fixed51-window grid methods are diagnostic proposal controls, not learned model improvements.",
+    "Category-cluster bootstrap intervals condition on selected support images and fixed thresholds."
+  ]
+}

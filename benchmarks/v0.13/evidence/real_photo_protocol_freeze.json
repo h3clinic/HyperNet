@@ -1,0 +1,212 @@
+{
+  "format": "hypernet.real_photo_transfer_protocol.v13",
+  "created_utc": "2026-11-02T21:38:10.987077+00:00",
+  "model_selection_complete": true,
+  "photo_scores_computed_before_freeze": false,
+  "primary_mode": "transferred",
+  "primary_method": "native_patch",
+  "methods": [
+    "old_cnn",
+    "native_patch",
+    "old_cnn_grid",
+    "native_patch_grid"
+  ],
+  "primary_metric": "localized_recall_at_iou50",
+  "transferred_thresholds": {
+    "old_cnn": 0.9806613922119142,
+    "native_patch": 0.41308703128766816,
+    "old_cnn_grid": 0.9806613922119142,
+    "native_patch_grid": 0.41308703128766816
+  },
+  "threshold_source": {
+    "path": "previous_v12/results/fresh_eval/fresh_results.json",
+    "sha256": "dc6611aa3ef0a70981308f006f54c8640ecdb29e046ba3afc10cb6c169cd36b8"
+  },
+  "behavior_files": {
+    "hypernet/__init__.py": "431f19268bb7f552fafd2a4ac636e7890f45bbeb53ec3bf295beecf287b432fc",
+    "hypernet/__main__.py": "f79f435118a72f512c016292dd60e11e3be9fdbff9cbe82915656fa3d6b81b51",
+    "hypernet/benchmarks.py": "57eac5ab5cd39d5f5a3e972dcd699272eec7d4b9450e19a3abbfd56895d807d1",
+    "hypernet/calibration.py": "2fbba8df4cc0de57c2201b4464561d512032ebc05819c036fee84e91dbf2c45c",
+    "hypernet/category_coco.py": "e045b0ac8fdf6225a6cc2b2a698c26820be7ac4b651b8ed8239293839a2c2088",
+    "hypernet/category_data.py": "1c5dece2f6c607a7ad77c3b59cad40e0ed5a642d95bcd1789d5ccca5c4c2c5ea",
+    "hypernet/category_fresh.py": "ea13e6366d7f185981af9620e9f73ffee384bad58d3a8382379fe8e84f34e4ec",
+    "hypernet/category_fresh_v05.py": "5482e57aac967f5f2b4d7cbbf1d873ddc480574395e431473ab95eae43a14d82",
+    "hypernet/category_fresh_v06.py": "2be56a7bc24136b826063b4f548ecd8d8605fafdd11412a85caf59fc73490512",
+    "hypernet/category_fresh_v08.py": "cfbcf3b3f851be7155fc205aad6a5fd7d4f4a0db5061247fba5b0418f025901e",
+    "hypernet/category_fresh_v09.py": "ec73bcaf106f1a7adf11d17ff30913736e8d8d4a45e51cd7c93401b8396d4dc4",
+    "hypernet/category_registry.py": "30d9dfdb77116b380b6016c98d37b99b797a7d35a9377e2311e6cf37b382ac53",
+    "hypernet/category_reporting.py": "1c2ed858dd2182c6d4a61b3dd3880e8c948055e2264bbc74ff6a573f952282cb",
+    "hypernet/category_runner.py": "55ba1dc2dc8cfbcd1bbefd8a3195f7d96bff5e7d2e7a1833c7b1033d35a660cb",
+    "hypernet/cli.py": "f172c4dc88d12bd198e4a3a499305500df67892e972384a22e1e815610bce2ec",
+    "hypernet/comparison.py": "047e1f424588fa3d600ec1b6a8009db527afb3709482b7e7a02025d44b7a4218",
+    "hypernet/data.py": "037b1fafd9a718244b8e4159bbfa761f91bf34915c67906054e3c26743e6c5f4",
+    "hypernet/detail_benchmark.py": "64822ce6cc1d81610ce1c8b0ad115465102e5413538062984bd9e2bf85d058d9",
+    "hypernet/detail_metrics.py": "d2c12775bdeaf8f192aa06ea728c31844fcdfaa4b0ab0edc24e7eb495fe3bc44",
+    "hypernet/detail_pipeline.py": "17faf610ee2921adfe5878695ac4513c2ee6ce3d448baaba74a704fa8c4a6dbf",
+    "hypernet/exports.py": "40bae4a2c2af5ba180033d945f3609772623ad6c6f86b749cfa592c8ef28d779",
+    "hypernet/gaussian_variation.py": "7f69679e027e5344028b921421469c6912500d0f984607a39665f9fa04d92f3e",
+    "hypernet/geometry.py": "77c113346195a6b572c6cd23cad350bb78e63e45002eeffe6707f1f6ec4f7bab",
+    "hypernet/gradient_detail.py": "1425b86cd9a3082e64816c81cb22d7fdaf65e8fb43323413b809fddbbab75538",
+    "hypernet/mathematical_shapes2d.py": "1f9c35619a84ba65e761fcce4f38df9b5ee7a7220a192555b355236d7a4b77a1",
+    "hypernet/mathematical_surfaces.py": "c4438068ca75eb222115339d69d093366e873effffbbb17dcbb360fd67a68157",
+    "hypernet/metrics.py": "c6ecc0c7545d88190fce8ebb7fd8525f98250b57c2b784c979a9c1fd08ed58f2",
+    "hypernet/models/__init__.py": "fd6073d02bfaaadbfc8eff2589f9d88916867ba3301032c6d1a536c865b898a4",
+    "hypernet/models/alignment.py": "29a875f52989f1b2b08e9967d057aa381995c3a9aa870d5a138513936d28cd6c",
+    "hypernet/models/analytic_patches.py": "216da9c5de4a67eb57c7145a53ff0ed17d6e835920b0a00e83c5218046ebb156",
+    "hypernet/models/category.py": "a33435e2e6cc8357ebea109a3098c64107d92d402304a5bf22d42a82a0e0a4ab",
+    "hypernet/models/classical.py": "1198d26e134dd990b7a53ae4a08514fad258fd2892f9254921497e99926e7d05",
+    "hypernet/models/cnn.py": "8001ac1e04c8df1aecfd3f041c576c5cd7a2d302a7c928d3a75ca86ce4a21b09",
+    "hypernet/models/fusion.py": "0b1e0402214a0c0a095504f4b7556167819e1a334ea63b0d73b638d23d38f372",
+    "hypernet/models/gated.py": "5a4715b40e88e72668d037dc854d0faadfe5cbd384a6925625c1b225088a8f68",
+    "hypernet/models/gaussian_reference.py": "b86b88949f25ca31d193228b77752fcdccd6dea0878be50ee0614bdb76fab098",
+    "hypernet/models/guarded_shape.py": "14ad91e18756e5f2ef6aa1b7c2eb3f563270375c3e104034154c6081115fe5a1",
+    "hypernet/models/learned_matchers.py": "99df194abd02059c9da80078976d021242259aab7b2ae2a9d3ef60ffe2991739",
+    "hypernet/models/partgraph.py": "006ef8fb9670ce091e8c139a98ca02170ecc3b10a1dd036b45a0af6a284a8f8b",
+    "hypernet/models/procedural_reference.py": "845b3ec25b8207efb84c1f674985c266c6cc9a8ba71a2aa51652d6c444e0f0b6",
+    "hypernet/models/region_shape.py": "6c0c1185c1921e54f74e55f67d1f08f2489a36d63cfe59d9f6dbdf73d94edc06",
+    "hypernet/models/score_guard.py": "fac547dd9c59bb26bf89c6ab5fbad06100872c6b34471313d74ada40b8c0ef2d",
+    "hypernet/models/scratch_centered.py": "b5cad2ace1d835c7bdfee8a96cc8187d33a14eaada0b5acffebcd1cb694a1f45",
+    "hypernet/models/shape_bypass.py": "6aa875a6278ad82040a437e5f27a2905f3e0de77c0c1f18e2395569bbec85ae8",
+    "hypernet/models/shape_texture.py": "a05b7e82a156aca142291d23c5bb4644a99fda56f2c3a04412913547b7ef8c11",
+    "hypernet/models/spatial_reference.py": "367056a64e86959263b7eae35b94da4f1ccf45787af46327c25709fdf48c0d26",
+    "hypernet/models/spatial_uniform.py": "cec76378d9094b301a6c91e0a05970e2b7077c66a2a611724dccdc4249c7a2ef",
+    "hypernet/models/tiny_v2.py": "6efc34aceb068cd458c4b7027a58d5d8c203b51040d8e87f600dc0267ba5d546",
+    "hypernet/models/tiny_v3.py": "b49578474d70a96b9ade2f50d6b7f39f2087ad3054c3533e66ff97994c7196cc",
+    "hypernet/models/transport_region.py": "54ed03de4577f108226079bd0b3f19551453a883506af46c966eadec8ec34916",
+    "hypernet/models/whitened.py": "be263a82e9cdd33d968e78339d84b1811dc705bb5c1c5b981b3cfe6d2dde4a08",
+    "hypernet/native_detail.py": "89600f68350fef1c9c60c12c0a701a64d0278acace113d636c9a981645ebce8e",
+    "hypernet/one_shot_detector.py": "000f52fbc239fd4675e05aaa70f85dc330d6494aa286bf842c2a649c3e3d99a0",
+    "hypernet/partial_assignment.py": "20ffebcd4250c18e1627686575cf7f2ab5b1abca2e3f7e7f182acf95b5afaf90",
+    "hypernet/procedural_pretraining.py": "a427a057ad45ceb4b685815fb911727470ebd6fe0f7bc689b82ce5bdc749e3d0",
+    "hypernet/procedural_shapes.py": "c86fe183daaad932def3fea5d6050027b69eacac1c8e17dc8df95dd5194276e1",
+    "hypernet/real_photo.py": "e6912ee9a16a6ccfbaaf76768b6aa80b12054a2a0d42c3b40da0238dc6d0bd73",
+    "hypernet/real_photo_metrics.py": "148c0554cd67a21a321c323ee0389a2ff2c56d042fec9eafbfb17aa7449537bf",
+    "hypernet/registry.py": "3d0d78e5a188539b01c99c31205aa7ee5bfa50d6c9634ac30d0d58f1e4e662fa",
+    "hypernet/reporting.py": "1c318c39d23a23a193eb974036aeb381387a4e1e6390a2744d26f5fac5617f21",
+    "hypernet/runner.py": "c45f164b274cb49f57f556407b808cd258c6d43943aa1b49f3c1ce39115712c4",
+    "hypernet/scratch_registry.py": "c376f5382c8af42a4c851f73fcef274bfd953af6aee8592a58e918e9094f8c83",
+    "hypernet/support_statistics.py": "6f6c1c538fcc864a159de886a2c1cc03fd804877d69f323fb5d772aaabcd07a0",
+    "hypernet/surface_encoder.py": "c682947ed4201c803726e1a43926afcb0764f74ccf20a2fe6ece7770ec067f93",
+    "hypernet/training.py": "fb7767562080fa6d0ee1cf8d1c3099ac2b502e672fbf703ec952d332135e164b",
+    "hypernet/training_gaussian.py": "d86df6ad2f5bab25cc67f873c49beb694cea685063141e43006bdc08aebf0c7f",
+    "hypernet/training_procedural_reference.py": "284d92b28e30bbdb6fdfb16fee768a3b52c67ec258b259b295f6d12be54ba9df",
+    "hypernet/training_v2.py": "a4f63112b19d26bdf96fa387bbef7cc7337d84d14cb94b211cd42cadc95ec829",
+    "hypernet/training_v3.py": "ad1dbae310cb12fd0a23a068a393407c58818f7735fe6bcbed095c87b5cac956",
+    "hypernet/training_v4.py": "bb462e5fca9d28dacc35fed3eaf83c78a76677b6731b3819fc34a4d0a3c3f42e",
+    "hypernet/training_v5.py": "0484cd4e2d0c48cec8664a2f28f8c334fd651a648c22f263cacaf81a26ea6441",
+    "hypernet/training_v5_uniform.py": "19cb655f384e900fc1d53173b1f67d97a6d66b0ae902403c9da1802d3c478c35",
+    "hypernet/types.py": "d462c7870f3ab3cddd144169b3709dc7381f36806f6baa93658b4819188cc87b",
+    "hypernet/v05_registry.py": "55b2538c030f9e8d51863d57206f487177a195ccd6530ce553fbae0c2dda0ddd",
+    "hypernet/v06_registry.py": "0a51c5be43727ad76297b5fb43acc4b7146effeeb127d78cf8f1a2d8ae24187b",
+    "hypernet/v08_registry.py": "b7173d0fcbb98037e4f00684804eb75e15766674a21625ce79f3dbf76ec5a369",
+    "hypernet/v09_registry.py": "c8f151cd562ef8ac2caf48ca7bcf5cfb7e21edc20614d53e2d06e7f058778002",
+    "scripts/evaluate_real_photo.py": "8353a82be15ff126473626d577e41d37883e8a1392666c77106afc22f885757c",
+    "scripts/freeze_real_photo_protocol.py": "6d9b7137da006ce3f41e30fcaa7ea06a49578a5e42eb7276b6ab5f68bea1cca6",
+    "scripts/prepare_real_photos.py": "bc4bae0446e48c8bb7ffb12d3e5c8a630ebdfc7dc4736f387c01fd22909382e2",
+    "scripts/recover_real_photo_transport.py": "84672634cfe15379ea1afe7a13808c09ece53f3282b0a3573474b5636242b82b",
+    "experiments/real_photo_replay_plan.json": "fe03ea8a577d4ba3ee342a0c05594a7c145e378d6481c6d02bda18228df328ca",
+    "experiments/real_photo_positive_replay_supplement.json": "bbbeb81a97ad4490a2e54f8d0436f94524ad91d1e4413582b58725620cfa029e"
+  },
+  "checkpoint_sha256": "15c64b81747f3ebec224ef19621793c2d24ed9dd6f93de25c6ad5f7c5c04d49a",
+  "data_manifest_sha256": "6f587f088f37116e4aa694016024d4a7f9cd840f7920ceb3c0bc0bb4994a0bb6",
+  "data_audit_sha256": "7933febfd309a744bcd96d02520664d241f5c634c4fc059385b6ed4f1f5b6f39",
+  "data_freeze_sha256": "559021255a7899e53d077f86ae5135d4def769b0a2ffe25f9e5310e4b204e989",
+  "fetch_admission_sha256": "0f8929eeea1a69792c001175fe876307944be7fbb8af5e6a60c2cb1b7503ed73",
+  "transport_recovery_admission_sha256": "133895395ce80bb6d0e78cca2f49c75a8369cb5372bdfaa1a5486ba5be517208",
+  "runner_review_sha256": "20d97442d8df74718808107b64fe9448f19a7f108dee19351e213ea2e7dbcc2d",
+  "data_counts": {
+    "categories": 12,
+    "references": 12,
+    "dev_queries": 96,
+    "test_queries": 192,
+    "positive_queries": 144,
+    "negative_queries": 144,
+    "unique_source_photos": 300
+  },
+  "categories": [
+    {
+      "category_id": 47,
+      "name": "cup"
+    },
+    {
+      "category_id": 17,
+      "name": "cat"
+    },
+    {
+      "category_id": 19,
+      "name": "horse"
+    },
+    {
+      "category_id": 61,
+      "name": "cake"
+    },
+    {
+      "category_id": 70,
+      "name": "toilet"
+    },
+    {
+      "category_id": 6,
+      "name": "bus"
+    },
+    {
+      "category_id": 31,
+      "name": "handbag"
+    },
+    {
+      "category_id": 18,
+      "name": "dog"
+    },
+    {
+      "category_id": 7,
+      "name": "train"
+    },
+    {
+      "category_id": 16,
+      "name": "bird"
+    },
+    {
+      "category_id": 51,
+      "name": "bowl"
+    },
+    {
+      "category_id": 3,
+      "name": "car"
+    }
+  ],
+  "enrollment": "One reference photograph with one subject box per category. The existing model extracts descriptors and local patches; zero natural-photo gradient updates. A categoryID selects the enrolled reference in the evaluator but is never passed into inference.",
+  "preprocessing": "Reference box expanded1.25x, cropped and aspect-preserving letterboxed to96px. Querydetail cap1024px, CNN cap512px, no query enlargement, pad bottom/right to multiple4 and at least32px. All boxes mapped with actual rounded x/y scales to original photo coordinates.",
+  "primary": "Native-patch matching using only CNN proposals, unchanged own weights and v12 syntheticDEV cutoff. Old128D CNN descriptor is compared on identical CNN proposals.",
+  "diagnostic_grid": "51 fixed overlapping rectangles from image dimensions only, separately named old_cnn_grid/native_patch_grid; no learned weights or query annotations construct these boxes.",
+  "secondary_calibration": "Each method additionally gets one pooled cutoff from48 negative photos among96 realDEV photos, accepting at mostfloor(.05*48)=2. This uses extra validation data and is not the primary one-reference-only transferred operating point. TEST never fits or selects a cutoff.",
+  "metric": "One selected box per query. Positive success requires score>=cutoff and IoU>=.5 with any annotated noncrowd instance of the enrolled category. FPR uses annotation-absent negative scenes. This is not official COCO AP(.50:.95).",
+  "uncertainty": {
+    "unit": "category",
+    "clusters": 12,
+    "bootstrap_draws": 10000,
+    "seed": 1313,
+    "conditional_on": "Selected support photos, this finite category roster and fixed mode thresholds. No threshold refitting; both modes reuse identical predictions."
+  },
+  "budgets": {
+    "real_support_images_per_category": 1,
+    "real_support_boxes_per_category": 1,
+    "total_real_supports": 12,
+    "primary_real_calibration_photos": 0,
+    "secondary_real_calibration_photos": 96,
+    "test_photos": 192,
+    "real_weight_training_images": 0,
+    "real_gradient_steps": 0,
+    "inherited_unique_synthetic_training_rgb": 8192,
+    "inherited_training_compositions": 2048,
+    "inherited_optimizer_steps": 1024,
+    "borrowed_pretrained_weights": 0
+  },
+  "limitations": [
+    "A natural-category transfer test differs from v12 synthetic micro-pattern identity detection.",
+    "Same12categories and same one-reference enrollment appear in DEV/TEST, but all300 photos are distinct.",
+    "Exact source IDs and pixel hashes do not rule out near-duplicates, shared capture sessions or same physical objects.",
+    "COCO annotations may miss objects, and annotation-based reference cropping supplies one subject box.",
+    "Support96px preprocessing resamples fine detail; native query evidence stays original only below1024px.",
+    "Clean synthetic segmentation/alignment and local texture correspondences may fail on photographs.",
+    "No parameter, method, photo inclusion or threshold will be changed based on TEST outcomes."
+  ]
+}

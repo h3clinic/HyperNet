@@ -1,0 +1,7 @@
+{
+  "created_utc": "2026-11-02T21:31:10.864120+00:00",
+  "data_freeze_sha256": "559021255a7899e53d077f86ae5135d4def769b0a2ffe25f9e5310e4b204e989",
+  "plan_sha256": "6d1d30cfa90576fdb0558e7d5367cbc03f17b6b3fa243ac35983999bd1871b5d",
+  "before_first_v13_image_write": true,
+  "inference_performed": false
+}

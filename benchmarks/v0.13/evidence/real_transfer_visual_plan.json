@@ -1,0 +1,28 @@
+{
+  "selection": "Smallest numeric category ID; first lexicographically sorted TEST query ID of each presence class; selected without outcomes.",
+  "created_utc": "2026-11-02T21:39:00.631802+00:00",
+  "manifest_sha256": "6f587f088f37116e4aa694016024d4a7f9cd840f7920ceb3c0bc0bb4994a0bb6",
+  "protocol_sha256": "9c5b4361972b2ab066b4fec44d1630f58fb199237f0a71cfa14630389a81d956",
+  "category_id": 3,
+  "category_name": "car",
+  "reference_image_id": 231508,
+  "query_ids": [
+    "coco_v13_003_test_positive_00",
+    "coco_v13_003_test_negative_00"
+  ],
+  "present": [
+    true,
+    false
+  ],
+  "reference_path": "images/000000231508.jpg",
+  "query_paths": [
+    "images/000000476119.jpg",
+    "images/000000266768.jpg"
+  ],
+  "local_only": true,
+  "no_public_photo_export": true,
+  "notes": [
+    "Read-only posthoc diagnosis; no tuning, retraining or threshold change.",
+    "Selection ignores scores, correctness, bounding-box quality and visual appeal."
+  ]
+}

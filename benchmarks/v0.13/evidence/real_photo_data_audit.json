@@ -1,0 +1,49 @@
+{
+  "valid": true,
+  "created_utc": "2026-11-02T21:33:17.315176+00:00",
+  "manifest_sha256": "6f587f088f37116e4aa694016024d4a7f9cd840f7920ceb3c0bc0bb4994a0bb6",
+  "plan_sha256": "6d1d30cfa90576fdb0558e7d5367cbc03f17b6b3fa243ac35983999bd1871b5d",
+  "data_freeze_sha256": "559021255a7899e53d077f86ae5135d4def769b0a2ffe25f9e5310e4b204e989",
+  "fetch_admission_sha256": "0f8929eeea1a69792c001175fe876307944be7fbb8af5e6a60c2cb1b7503ed73",
+  "prior_inventory_sha256": "5966d70b5d9da2944934b601af6b4095b7be8f44b9898eccdead1f930d5c1446",
+  "source_licenses_sha256": "60d1d4ccbd324d6402dbf9f5a6611b736e470e0dee365a54fedda44da204f5b0",
+  "download_provenance_sha256": "895ce53a09bf7cd2b5e9182aaa388e16907bf08ad39abd2b43a29352d5de22d9",
+  "new_photos_verified": 300,
+  "prior_files_verified": 7979,
+  "excluded_prior_coco_ids": 2472,
+  "source_id_overlap": [],
+  "raw_hash_overlap": [],
+  "decoded_pixel_overlap": [],
+  "unique_photos_across_references_categories_dev_test": true,
+  "counts": {
+    "categories": 12,
+    "references": 12,
+    "dev_queries": 96,
+    "test_queries": 192,
+    "positive_queries": 144,
+    "negative_queries": 144,
+    "unique_source_photos": 300
+  },
+  "budget": {
+    "real_reference_photos_per_category": 1,
+    "real_reference_boxes_per_category": 1,
+    "dev_calibration_photos": 96,
+    "test_photos": 192,
+    "natural_photo_weight_training": 0,
+    "query_boxes_or_labels_model_inputs": 0
+  },
+  "all_matching_noncrowd_boxes_preserved": true,
+  "all_exif_orientations_missing_or_one": true,
+  "query_annotations_for_evaluation_only": true,
+  "no_model_runs": true,
+  "photo_license_counts": {
+    "4": 198,
+    "5": 102
+  },
+  "limitations": [
+    "COCO category types were used in earlier project studies; photographs are new to these studies.",
+    "Exact original IDs/raw/decoded hashes cannot prove different physical individuals, capture sessions, or absence of near-duplicates.",
+    "Annotation-absent negatives can include missed COCO annotations.",
+    "This tests synthetic-to-natural category transfer, a different task from synthetic micro-identity discrimination."
+  ]
+}

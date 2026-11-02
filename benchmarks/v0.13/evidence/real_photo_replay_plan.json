@@ -1,0 +1,32 @@
+{
+  "schema": "hypernet-v13-independent-replay-plan-v1",
+  "created_utc": "2026-11-02T21:35:02.044698+00:00",
+  "manifest_sha256": "6f587f088f37116e4aa694016024d4a7f9cd840f7920ceb3c0bc0bb4994a0bb6",
+  "selection": "First lexicographically sorted TEST query ID per category, categories sorted numeric; fixed before score files exist",
+  "query_ids": [
+    "coco_v13_003_test_negative_00",
+    "coco_v13_006_test_negative_00",
+    "coco_v13_007_test_negative_00",
+    "coco_v13_016_test_negative_00",
+    "coco_v13_017_test_negative_00",
+    "coco_v13_018_test_negative_00",
+    "coco_v13_019_test_negative_00",
+    "coco_v13_031_test_negative_00",
+    "coco_v13_047_test_negative_00",
+    "coco_v13_051_test_negative_00",
+    "coco_v13_061_test_negative_00",
+    "coco_v13_070_test_negative_00"
+  ],
+  "method_aliases": [
+    "old_cnn",
+    "native_patch",
+    "old_cnn_grid",
+    "native_patch_grid"
+  ],
+  "comparisons": 48,
+  "selection_inputs": "Frozen manifest identifiers only; no image pixels or model outcomes",
+  "scope_note": "The predeclared lexical rule picks negative_00 in each category. All positive-scene IoUs/metrics are independently recomputed across complete saved rows; this subset tests deterministic inference across12 references.",
+  "no_existing_scores": true,
+  "training_allowed": false,
+  "expected_exact_full_prediction_equality": true
+}

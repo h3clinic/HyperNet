@@ -1,0 +1,76 @@
+{
+  "version": "0.12.0",
+  "date": "2026-11-02",
+  "portable_tests": {
+    "total_distinct_passed": 261,
+    "complete_suite_before_new_wrapper": {
+      "passed": 251,
+      "seconds": 19.22
+    },
+    "new_wrapper_tests": {
+      "passed": 10
+    }
+  },
+  "core_files": 75,
+  "unchanged_prior_core_files": 70,
+  "prior_version_metadata_change": "hypernet/__init__.py only: 0.3.0 to 0.12.0; exact frozen source",
+  "all_exported_package_sources_byte_identical_to_frozen_experiment": true,
+  "independent_checks": {
+    "metric_values": 168,
+    "localization_rows": 6144,
+    "bootstrap_values": 24,
+    "full_prediction_exact_replays": 96,
+    "original_cnn_exact_replays": 16
+  },
+  "public_arithmetic_verification": {
+    "passed": true,
+    "prediction_rows": 6144,
+    "metric_values": 168,
+    "bootstrap_values": 24
+  },
+  "portable_inference_replay": {
+    "passed": true,
+    "enrollments": 4,
+    "predictions": 48,
+    "float_values_checked": 2781,
+    "max_absolute_float_error": 0.0,
+    "absolute_tolerance_used": 0.0,
+    "evidence": "publication/replay_validation_v12.json"
+  },
+  "live_gallery_audit": {
+    "rows": 1024,
+    "predictions": 6144,
+    "rgb_endpoints": 1024,
+    "mask_endpoints": 3072,
+    "passed": true
+  },
+  "public_report_relative_links_verified": 25,
+  "privacy_scan": {
+    "private_paths": 0,
+    "credential_patterns": 0
+  },
+  "natural_training_images": 0,
+  "externally_pretrained_weights": false,
+  "v12_optimizer_updates": 0,
+  "release_assets": {
+    "detector_micro_aware.pt": {
+      "sha256": "15c64b81747f3ebec224ef19621793c2d24ed9dd6f93de25c6ad5f7c5c04d49a",
+      "bytes": 3598069,
+      "url": "https://github.com/h3clinic/HyperNet/releases/download/v0.12.0/detector_micro_aware.pt"
+    },
+    "fresh_v12_rgb.zip": {
+      "sha256": "4f2791b900bbeaf97de336407fecd4457f38d340193b770f9c42f42985259694",
+      "bytes": 5417752,
+      "url": "https://github.com/h3clinic/HyperNet/releases/download/v0.12.0/fresh_v12_rgb.zip"
+    }
+  },
+  "primary_finding": "Fresh localized recall 98.83% versus 5.08%; false positives 5.08% versus 4.30%; paired gain 93.75 points, 95% interval [89.45, 97.66].",
+  "scope": "Controlled separated synthetic 2D micro-pattern hybrid, not natural semantic category validation.",
+  "portable_wrapper_independent_review": {
+    "passed": true,
+    "wrapper_sha256": "1bfee2eb5b5de13569abfe3a9ee23ff4d4639673d4a168be83fe6012113632f0",
+    "tests_passed": 10,
+    "review_scope": "Own checkpoint and tensor hash, pixel validation, frozen source binding, threshold reuse, bounded float comparison and exact discrete decisions; no edits required."
+  },
+  "final_evidence_bundle_original_sha256": "ff1c2ff195cff7076a460c0f9b125be93d140d7d12750b2ae804be5a88c4feae"
+}

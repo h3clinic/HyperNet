@@ -1,6 +1,32 @@
 # HyperNet
 
-**One-reference recognition experiments with explicit training budgets. v12 combines our synthetic-trained CNN proposals with analytic matching of native-resolution local patches. No borrowed pretrained weights are used in these HyperNet paths.**
+**One-reference recognition experiments with explicit training budgets. The latest v13 real-photo test failed: zero of 96 positive TEST photographs were correctly localized and accepted.** The earlier synthetic-pattern result did not transfer to natural-category detection in this cohort. No borrowed pretrained weights or natural-photo weight training are used in these HyperNet paths.
+
+Version **0.13.0** tests one automatically selected boxed reference per category on 288 new COCO query photos. The primary keeps its synthetic cutoff and rejects all TEST positives and negatives. A secondary cutoff calibrated using **96 additional real DEV photos** accepts 7/96 positive scenes and 2/96 negative scenes for the native matcher, but **none of its selected positive boxes is correct at IoU ≥0.5**. Presence balanced accuracy of 52.60% does not establish successful localization. [All four methods, both operating points and audits](benchmarks/v0.13/README.md) are published, including the failure.
+
+The learned proposals cover 14/96 positive TEST scenes; the native matcher selects zero correct top boxes even without a cutoff. A separate fixed-grid diagnostic covers 64/96 but still selects zero correct native-match boxes. Proposal coverage and ranking both fail. References were annotation-selected, sometimes small or occluded, then normalized to 96px. This result is conditional on those twelve references, not proof that every clearer reference would fail.
+
+The local app and CLI let you inspect the frozen model with your own images. **Enrollment extracts features; it does not perform SGD or update weights.** After installation below:
+
+```bash
+python examples/download_v13_cohort.py --checkpoint-only
+python scripts/serve_photo_lab.py --enable-uploads --checkpoint checkpoints/detector_micro_aware.pt
+# Open http://127.0.0.1:8794/photo_lab.html, choose two files, and draw a reference crop.
+# Or use the whole reference from the command line:
+python examples/photo_match.py --reference reference.jpg --query query.jpg --output results/photo_comparison.json
+```
+
+Uploads remain in localhost request memory. The CLI writes scores and geometry only. The default decision uses the unchanged synthetic cutoff; the optional `--operating-mode real_dev_calibrated` explicitly adds the 96-photo calibration budget. These tools are experimental and the benchmark does not establish reliable natural-photo recognition.
+
+To reproduce published predictions, acquire the original licensed photos directly from their official source, then run a small replay or the image-free arithmetic verifier:
+
+```bash
+python examples/download_v13_cohort.py
+python examples/replay_v13.py --output results/v13_replay
+python publication/verify_v13_results.py
+```
+
+The downloader verifies original bytes, decoded pixels and dimensions, and saves source/license attributions locally. **No v13 natural photographs, natural-photo montages or user uploads are included in GitHub or release assets.** The 300 original photos are globally distinct: 12 references, 96 DEV queries and 192 TEST queries. Both splits share the same twelve category labels and enrolled references. Historical results below remain unchanged.
 
 Version **0.12.0** improves the controlled 2D micro-pattern probe on an entirely fresh cohort: **253/256 positives localized and accepted (98.83%)**, compared with **13/256 (5.08%)** for the previous CNN on those same images. False positives are **13/256 (5.08%)** versus **11/256 (4.30%)**. The paired localized-recall gain is **93.75 percentage points**, 95% family-bootstrap interval **[89.45,97.66]**. Reducing only the fine RGB evidence by four times, while preserving native alignment and patch locations, lowers recall to **22.27%**, with **8.59%** false positives. See [all six methods, errors and audits](benchmarks/v0.12/README.md) and the [illustrated report](benchmarks/v0.12/report.html).
 
@@ -158,7 +184,7 @@ Open HTML reports locally after cloning. The potential contribution is an audite
 
 ## Reproducibility and publication status
 
-[Source hashes](publication/source_snapshot.json) bind **all 75 package files** to the frozen v12 implementation. Of the 71 previously published package files, 70 are unchanged; the remaining change is the package version string. Four new detail-matching modules are exact frozen copies. Acquisition and evaluation drivers are exported unchanged; portable examples and publication documents are separate additions. The [v11 source snapshot](publication/source_snapshot_v0_11.json) and earlier snapshots preserve historical bindings. Distribution and package metadata now identify version 0.12.0.
+[Source hashes](publication/source_snapshot.json) bind **all 77 package files** to the frozen v13 implementation. All 75 v12 package files are unchanged; two real-photo adapter/metric modules are added. Acquisition and evaluation drivers are exact copies; portable examples and publication documents are separate additions. The [v12 source snapshot](publication/source_snapshot_v0_12.json) and earlier snapshots preserve historical bindings. Distribution metadata identifies 0.13.0 while frozen internal metadata remains unchanged.
 
 The [prior source manifest](publication/source_snapshot_v0_8_1.json), Git history and [v0.8.1 benchmark](benchmarks/v0.8.1/README.md) preserve the previous experiment. Its interpolation roundoff repair changed only input-boundary handling; it did not improve the model algorithm. All earlier audited score records remain available.
 

@@ -1,0 +1,818 @@
+{
+  "valid": true,
+  "posthoc": true,
+  "local_only": true,
+  "model_calls": 0,
+  "references_changed": 0,
+  "test_reruns": 0,
+  "created_utc": "2026-11-02T21:49:11.872499+00:00",
+  "source_sha256": "f935b1bd4631e71c0701bdd07ba3be96d931f5fd12204d68c006dbde080cb14f",
+  "helper_source_sha256": "cec07883ce222e9a9be95ffe774f0576ec42d69d453d4dfa0ae1b4177462243c",
+  "manifest_sha256": "6f587f088f37116e4aa694016024d4a7f9cd840f7920ceb3c0bc0bb4994a0bb6",
+  "result_sha256": "29dc37a49730d386172b3296a8e3d9ae2210bcc2cb62980f7a5c96993a0f0e9b",
+  "diagnostics_sha256": "a8677abe04dbc691dc1620ff04711c52cbf0df71b8d4cbb19d564eef818a827c",
+  "protocol_sha256": "9c5b4361972b2ab066b4fec44d1630f58fb199237f0a71cfa14630389a81d956",
+  "figure": {
+    "path": "assets\\real_reference_contact_sheet.png",
+    "sha256": "e46da781b893f3479b1a86006fbd83549869bc419488fe94da110008f09ffbdc",
+    "public_export": false
+  },
+  "all12_references": [
+    {
+      "category_id": 3,
+      "category": "car",
+      "image_id": 231508,
+      "original_image_size": [
+        335,
+        500
+      ],
+      "bbox_xyxy": [
+        127.53,
+        103.18,
+        221.26,
+        144.76
+      ],
+      "original_bbox_width": 93.72999999999999,
+      "original_bbox_height": 41.579999999999984,
+      "original_bbox_minimum_side": 41.579999999999984,
+      "original_bbox_area": 3897.293399999998,
+      "original_bbox_area_fraction": 0.02326742328358208,
+      "normalized_target_width": 76.25491525423729,
+      "normalized_target_height": 33.73471698113207,
+      "normalized_target_minimum_side": 33.73471698113207,
+      "normalized_input_pixel_sha256": "eeeb445b28af7e39c4d2c3054c31af9c84ab76c2451a8cf04379ce3636ce0ef8",
+      "reference_metadata": {
+        "original_size": [
+          335,
+          500
+        ],
+        "supplied_box": [
+          127.53,
+          103.18,
+          221.26,
+          144.76
+        ],
+        "expanded_crop": [
+          115,
+          97,
+          233,
+          150
+        ],
+        "model_size": [
+          96,
+          96
+        ],
+        "model_box": [
+          10.193898305084748,
+          31.013962264150948,
+          86.44881355932203,
+          64.74867924528301
+        ],
+        "actual_resize_scales": [
+          0.8135593220338984,
+          0.8113207547169812
+        ],
+        "padding_xy": [
+          0,
+          26
+        ],
+        "reference_images": 1,
+        "resolved_reference_foreground": true,
+        "reference_patch_count": 12
+      }
+    },
+    {
+      "category_id": 6,
+      "category": "bus",
+      "image_id": 15517,
+      "original_image_size": [
+        640,
+        480
+      ],
+      "bbox_xyxy": [
+        162.58,
+        322.33,
+        348.22,
+        406.82
+      ],
+      "original_bbox_width": 185.64000000000001,
+      "original_bbox_height": 84.49000000000001,
+      "original_bbox_minimum_side": 84.49000000000001,
+      "original_bbox_area": 15684.723600000003,
+      "original_bbox_area_fraction": 0.05105704296875001,
+      "normalized_target_width": 76.48686695278971,
+      "normalized_target_height": 34.74355140186917,
+      "normalized_target_minimum_side": 34.74355140186917,
+      "normalized_input_pixel_sha256": "97f9d02b935d42e0a269ee10ef1223ac1fb74e1c3c7599a0a294bf0427544b34",
+      "reference_metadata": {
+        "original_size": [
+          640,
+          480
+        ],
+        "supplied_box": [
+          162.58,
+          322.33,
+          348.22,
+          406.82
+        ],
+        "expanded_crop": [
+          139,
+          311,
+          372,
+          418
+        ],
+        "model_size": [
+          96,
+          96
+        ],
+        "model_box": [
+          9.715364806866958,
+          30.65906542056074,
+          86.20223175965667,
+          65.4026168224299
+        ],
+        "actual_resize_scales": [
+          0.41201716738197425,
+          0.411214953271028
+        ],
+        "padding_xy": [
+          0,
+          26
+        ],
+        "reference_images": 1,
+        "resolved_reference_foreground": true,
+        "reference_patch_count": 12
+      }
+    },
+    {
+      "category_id": 7,
+      "category": "train",
+      "image_id": 495146,
+      "original_image_size": [
+        640,
+        480
+      ],
+      "bbox_xyxy": [
+        96.0,
+        252.4,
+        638.56,
+        363.51
+      ],
+      "original_bbox_width": 542.56,
+      "original_bbox_height": 111.10999999999999,
+      "original_bbox_minimum_side": 111.10999999999999,
+      "original_bbox_area": 60283.841599999985,
+      "original_bbox_area_fraction": 0.19623646354166663,
+      "normalized_target_width": 85.10745098039214,
+      "normalized_target_height": 17.460142857142856,
+      "normalized_target_minimum_side": 17.460142857142856,
+      "normalized_input_pixel_sha256": "e647a282f200fd056cce8d26dfe27a92fedf1dc8f255c762c690b99dcfaeb167",
+      "reference_metadata": {
+        "original_size": [
+          640,
+          480
+        ],
+        "supplied_box": [
+          96.0,
+          252.4,
+          638.56,
+          363.51
+        ],
+        "expanded_crop": [
+          28,
+          238,
+          640,
+          378
+        ],
+        "model_size": [
+          96,
+          96
+        ],
+        "model_box": [
+          10.666666666666666,
+          39.26285714285714,
+          95.77411764705882,
+          56.723
+        ],
+        "actual_resize_scales": [
+          0.1568627450980392,
+          0.15714285714285714
+        ],
+        "padding_xy": [
+          0,
+          37
+        ],
+        "reference_images": 1,
+        "resolved_reference_foreground": true,
+        "reference_patch_count": 12
+      }
+    },
+    {
+      "category_id": 16,
+      "category": "bird",
+      "image_id": 407518,
+      "original_image_size": [
+        640,
+        427
+      ],
+      "bbox_xyxy": [
+        372.02,
+        89.75,
+        557.12,
+        384.8
+      ],
+      "original_bbox_width": 185.10000000000002,
+      "original_bbox_height": 295.05,
+      "original_bbox_minimum_side": 185.10000000000002,
+      "original_bbox_area": 54613.75500000001,
+      "original_bbox_area_fraction": 0.19984541495901645,
+      "normalized_target_width": 47.66523605150215,
+      "normalized_target_height": 76.55351351351352,
+      "normalized_target_minimum_side": 47.66523605150215,
+      "normalized_input_pixel_sha256": "2a973fcff145ae792de2ed057d30773d3deef0d9927309e4c5a397ac7f235faf",
+      "reference_metadata": {
+        "original_size": [
+          640,
+          427
+        ],
+        "supplied_box": [
+          372.02,
+          89.75,
+          557.12,
+          384.8
+        ],
+        "expanded_crop": [
+          348,
+          52,
+          581,
+          422
+        ],
+        "model_size": [
+          96,
+          96
+        ],
+        "model_box": [
+          24.185407725321884,
+          9.794594594594596,
+          71.85064377682403,
+          86.34810810810812
+        ],
+        "actual_resize_scales": [
+          0.2575107296137339,
+          0.2594594594594595
+        ],
+        "padding_xy": [
+          18,
+          0
+        ],
+        "reference_images": 1,
+        "resolved_reference_foreground": true,
+        "reference_patch_count": 11
+      }
+    },
+    {
+      "category_id": 17,
+      "category": "cat",
+      "image_id": 189806,
+      "original_image_size": [
+        500,
+        400
+      ],
+      "bbox_xyxy": [
+        130.91,
+        165.2,
+        225.45,
+        269.93
+      ],
+      "original_bbox_width": 94.53999999999999,
+      "original_bbox_height": 104.73000000000002,
+      "original_bbox_minimum_side": 94.53999999999999,
+      "original_bbox_area": 9901.174200000001,
+      "original_bbox_area_fraction": 0.04950587100000001,
+      "normalized_target_width": 69.11747899159663,
+      "normalized_target_height": 76.16727272727275,
+      "normalized_target_minimum_side": 69.11747899159663,
+      "normalized_input_pixel_sha256": "1696966f8dc870e274b6df15844a6420aa94e4debb032218d738f3b74e4cecb8",
+      "reference_metadata": {
+        "original_size": [
+          500,
+          400
+        ],
+        "supplied_box": [
+          130.91,
+          165.2,
+          225.45,
+          269.93
+        ],
+        "expanded_crop": [
+          119,
+          152,
+          238,
+          284
+        ],
+        "model_size": [
+          96,
+          96
+        ],
+        "model_box": [
+          12.707310924369745,
+          9.599999999999993,
+          81.82478991596638,
+          85.76727272727274
+        ],
+        "actual_resize_scales": [
+          0.7310924369747899,
+          0.7272727272727273
+        ],
+        "padding_xy": [
+          4,
+          0
+        ],
+        "reference_images": 1,
+        "resolved_reference_foreground": true,
+        "reference_patch_count": 12
+      }
+    },
+    {
+      "category_id": 18,
+      "category": "dog",
+      "image_id": 377575,
+      "original_image_size": [
+        426,
+        640
+      ],
+      "bbox_xyxy": [
+        58.42,
+        159.35,
+        280.41,
+        622.8
+      ],
+      "original_bbox_width": 221.99,
+      "original_bbox_height": 463.44999999999993,
+      "original_bbox_minimum_side": 221.99,
+      "original_bbox_area": 102881.2655,
+      "original_bbox_area_fraction": 0.3773520594923709,
+      "normalized_target_width": 39.7831541218638,
+      "normalized_target_height": 82.54397031539888,
+      "normalized_target_minimum_side": 39.7831541218638,
+      "normalized_input_pixel_sha256": "23440d376e80b7178e639ace4ac6cf34da3bd65220f4e583abc9641cef54055a",
+      "reference_metadata": {
+        "original_size": [
+          426,
+          640
+        ],
+        "supplied_box": [
+          58.42,
+          159.35,
+          280.41,
+          622.8
+        ],
+        "expanded_crop": [
+          30,
+          101,
+          309,
+          640
+        ],
+        "model_size": [
+          96,
+          96
+        ],
+        "model_box": [
+          28.093189964157705,
+          10.392578849721705,
+          67.8763440860215,
+          92.93654916512058
+        ],
+        "actual_resize_scales": [
+          0.17921146953405018,
+          0.17810760667903525
+        ],
+        "padding_xy": [
+          23,
+          0
+        ],
+        "reference_images": 1,
+        "resolved_reference_foreground": true,
+        "reference_patch_count": 12
+      }
+    },
+    {
+      "category_id": 19,
+      "category": "horse",
+      "image_id": 227686,
+      "original_image_size": [
+        427,
+        640
+      ],
+      "bbox_xyxy": [
+        17.82,
+        226.32,
+        342.61,
+        625.12
+      ],
+      "original_bbox_width": 324.79,
+      "original_bbox_height": 398.8,
+      "original_bbox_minimum_side": 324.79,
+      "original_bbox_area": 129526.25200000001,
+      "original_bbox_area_fraction": 0.4739690134660422,
+      "normalized_target_width": 66.81877604166667,
+      "normalized_target_height": 82.51034482758621,
+      "normalized_target_minimum_side": 66.81877604166667,
+      "normalized_input_pixel_sha256": "d1a1ab7e3ba69ce4a878828731b498dab3c88cfc2016347adb6fcda245887019",
+      "reference_metadata": {
+        "original_size": [
+          427,
+          640
+        ],
+        "supplied_box": [
+          17.82,
+          226.32,
+          342.61,
+          625.12
+        ],
+        "expanded_crop": [
+          0,
+          176,
+          384,
+          640
+        ],
+        "model_size": [
+          96,
+          96
+        ],
+        "model_box": [
+          11.66609375,
+          10.41103448275862,
+          78.48486979166667,
+          92.92137931034483
+        ],
+        "actual_resize_scales": [
+          0.20572916666666666,
+          0.20689655172413793
+        ],
+        "padding_xy": [
+          8,
+          0
+        ],
+        "reference_images": 1,
+        "resolved_reference_foreground": true,
+        "reference_patch_count": 12
+      }
+    },
+    {
+      "category_id": 31,
+      "category": "handbag",
+      "image_id": 1268,
+      "original_image_size": [
+        640,
+        427
+      ],
+      "bbox_xyxy": [
+        492.47,
+        197.95,
+        595.54,
+        425.29999999999995
+      ],
+      "original_bbox_width": 103.06999999999994,
+      "original_bbox_height": 227.34999999999997,
+      "original_bbox_minimum_side": 103.06999999999994,
+      "original_bbox_area": 23432.964499999984,
+      "original_bbox_area_fraction": 0.08574708906615919,
+      "normalized_target_width": 38.05661538461537,
+      "normalized_target_height": 84.59534883720929,
+      "normalized_target_minimum_side": 38.05661538461537,
+      "normalized_input_pixel_sha256": "b6915b17918a349812d1ea9085a63b7cb15383ac6d8a7852219c4301a50272b5",
+      "reference_metadata": {
+        "original_size": [
+          640,
+          427
+        ],
+        "supplied_box": [
+          492.47,
+          197.95,
+          595.54,
+          425.29999999999995
+        ],
+        "expanded_crop": [
+          479,
+          169,
+          609,
+          427
+        ],
+        "model_size": [
+          96,
+          96
+        ],
+        "model_box": [
+          28.97353846153847,
+          10.77209302325581,
+          67.03015384615384,
+          95.36744186046509
+        ],
+        "actual_resize_scales": [
+          0.36923076923076925,
+          0.37209302325581395
+        ],
+        "padding_xy": [
+          24,
+          0
+        ],
+        "reference_images": 1,
+        "resolved_reference_foreground": true,
+        "reference_patch_count": 12
+      }
+    },
+    {
+      "category_id": 47,
+      "category": "cup",
+      "image_id": 80932,
+      "original_image_size": [
+        480,
+        640
+      ],
+      "bbox_xyxy": [
+        0.0,
+        325.05,
+        50.45,
+        479.28
+      ],
+      "original_bbox_width": 50.45,
+      "original_bbox_height": 154.22999999999996,
+      "original_bbox_minimum_side": 50.45,
+      "original_bbox_area": 7780.9034999999985,
+      "original_bbox_area_fraction": 0.025328461914062496,
+      "normalized_target_width": 24.782456140350874,
+      "normalized_target_height": 76.31999999999998,
+      "normalized_target_minimum_side": 24.782456140350874,
+      "normalized_input_pixel_sha256": "61936b1574e06e347a53b6be4617c2fbf7d966386be92e3fd261ae0f3c2a0a51",
+      "reference_metadata": {
+        "original_size": [
+          480,
+          640
+        ],
+        "supplied_box": [
+          0.0,
+          325.05,
+          50.45,
+          479.28
+        ],
+        "expanded_crop": [
+          0,
+          305,
+          57,
+          499
+        ],
+        "model_size": [
+          96,
+          96
+        ],
+        "model_box": [
+          34.0,
+          9.921649484536088,
+          58.782456140350874,
+          86.24164948453607
+        ],
+        "actual_resize_scales": [
+          0.49122807017543857,
+          0.4948453608247423
+        ],
+        "padding_xy": [
+          34,
+          0
+        ],
+        "reference_images": 1,
+        "resolved_reference_foreground": true,
+        "reference_patch_count": 4
+      }
+    },
+    {
+      "category_id": 51,
+      "category": "bowl",
+      "image_id": 153632,
+      "original_image_size": [
+        640,
+        480
+      ],
+      "bbox_xyxy": [
+        43.98,
+        0.2,
+        217.57999999999998,
+        49.800000000000004
+      ],
+      "original_bbox_width": 173.6,
+      "original_bbox_height": 49.6,
+      "original_bbox_minimum_side": 49.6,
+      "original_bbox_area": 8610.56,
+      "original_bbox_area_fraction": 0.028029166666666664,
+      "normalized_target_width": 76.44770642201834,
+      "normalized_target_height": 22.142857142857146,
+      "normalized_target_minimum_side": 22.142857142857146,
+      "normalized_input_pixel_sha256": "4e350248bc771f4ba13f65a086ff4cdab50365665556dbe58d262f2b89e7dd4b",
+      "reference_metadata": {
+        "original_size": [
+          640,
+          480
+        ],
+        "supplied_box": [
+          43.98,
+          0.2,
+          217.57999999999998,
+          49.800000000000004
+        ],
+        "expanded_crop": [
+          22,
+          0,
+          240,
+          56
+        ],
+        "model_size": [
+          96,
+          96
+        ],
+        "model_box": [
+          9.67926605504587,
+          35.089285714285715,
+          86.12697247706421,
+          57.23214285714286
+        ],
+        "actual_resize_scales": [
+          0.44036697247706424,
+          0.44642857142857145
+        ],
+        "padding_xy": [
+          0,
+          35
+        ],
+        "reference_images": 1,
+        "resolved_reference_foreground": true,
+        "reference_patch_count": 12
+      }
+    },
+    {
+      "category_id": 61,
+      "category": "cake",
+      "image_id": 321214,
+      "original_image_size": [
+        640,
+        480
+      ],
+      "bbox_xyxy": [
+        277.21,
+        318.2,
+        539.3299999999999,
+        474.61
+      ],
+      "original_bbox_width": 262.11999999999995,
+      "original_bbox_height": 156.41000000000003,
+      "original_bbox_minimum_side": 156.41000000000003,
+      "original_bbox_area": 40998.1892,
+      "original_bbox_area_fraction": 0.13345764713541666,
+      "normalized_target_width": 76.48486322188447,
+      "normalized_target_height": 45.547967032967044,
+      "normalized_target_minimum_side": 45.547967032967044,
+      "normalized_input_pixel_sha256": "7656c14419adc4b083cbf190d142ba123835a798dfb812e1876d90900067af01",
+      "reference_metadata": {
+        "original_size": [
+          640,
+          480
+        ],
+        "supplied_box": [
+          277.21,
+          318.2,
+          539.3299999999999,
+          474.61
+        ],
+        "expanded_crop": [
+          244,
+          298,
+          573,
+          480
+        ],
+        "model_size": [
+          96,
+          96
+        ],
+        "model_box": [
+          9.690455927051666,
+          26.88241758241758,
+          86.17531914893614,
+          72.43038461538463
+        ],
+        "actual_resize_scales": [
+          0.2917933130699088,
+          0.29120879120879123
+        ],
+        "padding_xy": [
+          0,
+          21
+        ],
+        "reference_images": 1,
+        "resolved_reference_foreground": true,
+        "reference_patch_count": 12
+      }
+    },
+    {
+      "category_id": 70,
+      "category": "toilet",
+      "image_id": 403385,
+      "original_image_size": [
+        640,
+        511
+      ],
+      "bbox_xyxy": [
+        411.1,
+        237.7,
+        504.11,
+        480.0
+      ],
+      "original_bbox_width": 93.00999999999999,
+      "original_bbox_height": 242.3,
+      "original_bbox_minimum_side": 93.00999999999999,
+      "original_bbox_area": 22536.323,
+      "original_bbox_area_fraction": 0.0689099896037182,
+      "normalized_target_width": 29.4134188034188,
+      "normalized_target_height": 76.51578947368421,
+      "normalized_target_minimum_side": 29.4134188034188,
+      "normalized_input_pixel_sha256": "4d10473d549c082ec1f90c995f54a3e8bfe895c3c814d5605c16bec28fe31d0c",
+      "reference_metadata": {
+        "original_size": [
+          640,
+          511
+        ],
+        "supplied_box": [
+          411.1,
+          237.7,
+          504.11,
+          480.0
+        ],
+        "expanded_crop": [
+          399,
+          207,
+          516,
+          511
+        ],
+        "model_size": [
+          96,
+          96
+        ],
+        "model_box": [
+          32.826495726495736,
+          9.694736842105259,
+          62.239914529914536,
+          86.21052631578947
+        ],
+        "actual_resize_scales": [
+          0.3162393162393162,
+          0.3157894736842105
+        ],
+        "padding_xy": [
+          29,
+          0
+        ],
+        "reference_images": 1,
+        "resolved_reference_foreground": true,
+        "reference_patch_count": 12
+      }
+    }
+  ],
+  "summary": {
+    "original_bbox_width": {
+      "minimum": 50.45,
+      "median": 179.35000000000002,
+      "maximum": 542.56
+    },
+    "original_bbox_height": {
+      "minimum": 41.579999999999984,
+      "median": 155.32,
+      "maximum": 463.44999999999993
+    },
+    "original_bbox_minimum_side": {
+      "minimum": 41.579999999999984,
+      "median": 98.80499999999996,
+      "maximum": 324.79
+    },
+    "original_bbox_area": {
+      "minimum": 3897.293399999998,
+      "median": 22984.643749999992,
+      "maximum": 129526.25200000001
+    },
+    "original_bbox_area_fraction": {
+      "minimum": 0.02326742328358208,
+      "median": 0.07732853933493869,
+      "maximum": 0.4739690134660422
+    },
+    "normalized_target_minimum_side": {
+      "minimum": 17.460142857142856,
+      "median": 36.40008339324227,
+      "maximum": 69.11747899159663
+    }
+  },
+  "selection": "One automatically selected image per category under the frozen hash-ranked roster. Largest eligible noncrowd box within each selected image; minimum edge32px and annotation box area>=2% image area. No visual clarity/occlusion/sharpness curation.",
+  "qualification": "Failure is conditional on these12 frozen references, their supplied boxes and preprocessing. This experiment does not prove that every possible clear reference would fail. References cannot be replaced using these TEST outcomes without declaring a new study.",
+  "visual_observation": "The preselected car enrollment is small in the full scene and includes people/fence occluding the vehicle; its96px presentation has limited fine detail. This is a qualitative observation, not a quantitative occlusion or sharpness annotation.",
+  "limitations": [
+    "Annotation area is not visible-object area and does not measure blur, occlusion or quality.",
+    "The 96px enrollment crop includes context and letterbox padding, so the target uses fewer than96pixels along some dimensions.",
+    "This contact sheet examines all12 references after results; it is descriptive and triggers no image replacement or model tuning."
+  ]
+}

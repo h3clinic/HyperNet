@@ -1,0 +1,164 @@
+{
+  "files": {
+    "cohort_manifest.json": {
+      "original_logical_path": "data/coco_real_v13/manifest.json",
+      "original_sha256": "6f587f088f37116e4aa694016024d4a7f9cd840f7920ceb3c0bc0bb4994a0bb6",
+      "public_sha256": "73b67efade283b5e249330667cc91b0de0d9b08136cb1478734cc0c7d485f331",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "dataset_plan.json": {
+      "original_logical_path": "data/coco_real_v13/plan.json",
+      "original_sha256": "6d1d30cfa90576fdb0558e7d5367cbc03f17b6b3fa243ac35983999bd1871b5d",
+      "public_sha256": "54bbc2eff312c8f8ee46d59027b1e0d5c1047fe209d60b23ab5fda60a827bd56",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "source_licenses.json": {
+      "original_logical_path": "data/coco_real_v13/source_licenses.json",
+      "original_sha256": "60d1d4ccbd324d6402dbf9f5a6611b736e470e0dee365a54fedda44da204f5b0",
+      "public_sha256": "3034e2e3c688bc18068292e6945ba4c4a120a2d33abd0ba0eb056d4c6a204aec",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "evidence/real_photo_protocol_freeze.json": {
+      "original_logical_path": "experiments/real_photo_protocol_freeze.json",
+      "original_sha256": "9c5b4361972b2ab066b4fec44d1630f58fb199237f0a71cfa14630389a81d956",
+      "public_sha256": "e2cba7088109d6a1d9bb588fa7007dc04a88f6fc9e2195a2a0fc3e14ec9f2245",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "aggregate_metrics.json": {
+      "original_logical_path": "results/real_eval/real_results.json",
+      "original_sha256": "29dc37a49730d386172b3296a8e3d9ae2210bcc2cb62980f7a5c96993a0f0e9b",
+      "public_sha256": "ce0da04e60846b2800621c89fdac993b1ffd524f1fd393b28ef62c5d80e26c34",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "evidence/manual_upload_smoke.json": {
+      "original_logical_path": "experiments/manual_upload_smoke.json",
+      "original_sha256": "8e800a7872332fc27dbe3468a0836269da917ff474927d75c74785aa90b3f702",
+      "public_sha256": "6a24719b10c98ee9ca81c801ce04b5563cd3d2caa62456e0a7d9a2fefdcc8a1c",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "evidence/manual_upload_smoke_plan.json": {
+      "original_logical_path": "experiments/manual_upload_smoke_plan.json",
+      "original_sha256": "7d141a6a840723541f991e29910dea7d9efd4041cc1b9d4ed8d687c966fc762d",
+      "public_sha256": "62a05e58a52d44a1326bd10b5aac357e9ade787f65d6c1f2ebabdb0e4ffdd106",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "evidence/portable_v13_wrapper_independent_review.json": {
+      "original_logical_path": "experiments/portable_v13_wrapper_independent_review.json",
+      "original_sha256": "fd3d218fb274b2eed758b17ee7ed3bc77d209978ee86e1db6dab9fb4fa52057a",
+      "public_sha256": "483761a982917c6aeb72b6d4229c1a6c7309a1b8549c9db503a156a3781d21d4",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "evidence/real_coordinate_output_audit.json": {
+      "original_logical_path": "experiments/real_coordinate_output_audit.json",
+      "original_sha256": "654a9cd51049b3df6bb7f546f9bda6ba43adfc58a052b15fe5660c1dd612bc99",
+      "public_sha256": "4b028873109238a6c2157d2db0a8ec1bbbc381ded0640006bfe664c434245aff",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "evidence/real_photo_data_audit.json": {
+      "original_logical_path": "experiments/real_photo_data_audit.json",
+      "original_sha256": "7933febfd309a744bcd96d02520664d241f5c634c4fc059385b6ed4f1f5b6f39",
+      "public_sha256": "704f15666b9dcd2fd90f5efb317ef52e7c4694c5efb4a6732076cb1e6a82b4c3",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "evidence/real_photo_data_freeze.json": {
+      "original_logical_path": "experiments/real_photo_data_freeze.json",
+      "original_sha256": "559021255a7899e53d077f86ae5135d4def769b0a2ffe25f9e5310e4b204e989",
+      "public_sha256": "6955a6ffedde75bf18605095a08ea767d7501d95b4148117121098f83fbab115",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "evidence/real_photo_evidence_bundle.json": {
+      "original_logical_path": "experiments/real_photo_evidence_bundle.json",
+      "original_sha256": "4ccd8a1a17b5a78dcde70741cf2353cbaf89f35464b167421667cf4b31dfc938",
+      "public_sha256": "4ccd8a1a17b5a78dcde70741cf2353cbaf89f35464b167421667cf4b31dfc938",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "evidence/real_photo_fetch_admission.json": {
+      "original_logical_path": "experiments/real_photo_fetch_admission.json",
+      "original_sha256": "0f8929eeea1a69792c001175fe876307944be7fbb8af5e6a60c2cb1b7503ed73",
+      "public_sha256": "2bfe80c23bdbebe559f08836008ef621e6f2f090790c6408d4ea1dd772a9d065",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "evidence/real_photo_independent_audit.json": {
+      "original_logical_path": "experiments/real_photo_independent_audit.json",
+      "original_sha256": "0088a8da7c145945e346babcf740d50ac3c7a6a3c6570ab37f1fd5109d5a17b8",
+      "public_sha256": "0088a8da7c145945e346babcf740d50ac3c7a6a3c6570ab37f1fd5109d5a17b8",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "evidence/real_photo_positive_replay_supplement.json": {
+      "original_logical_path": "experiments/real_photo_positive_replay_supplement.json",
+      "original_sha256": "bbbeb81a97ad4490a2e54f8d0436f94524ad91d1e4413582b58725620cfa029e",
+      "public_sha256": "bbbeb81a97ad4490a2e54f8d0436f94524ad91d1e4413582b58725620cfa029e",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "evidence/real_photo_replay_plan.json": {
+      "original_logical_path": "experiments/real_photo_replay_plan.json",
+      "original_sha256": "fe03ea8a577d4ba3ee342a0c05594a7c145e378d6481c6d02bda18228df328ca",
+      "public_sha256": "fe03ea8a577d4ba3ee342a0c05594a7c145e378d6481c6d02bda18228df328ca",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "evidence/real_photo_runner_review.json": {
+      "original_logical_path": "experiments/real_photo_runner_review.json",
+      "original_sha256": "20d97442d8df74718808107b64fe9448f19a7f108dee19351e213ea2e7dbcc2d",
+      "public_sha256": "65a3aab46196e8e3ac8341017330f4dabb472a3d711dfd06c26ce726bd4e8bac",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "evidence/real_photo_transport_recovery_admission.json": {
+      "original_logical_path": "experiments/real_photo_transport_recovery_admission.json",
+      "original_sha256": "133895395ce80bb6d0e78cca2f49c75a8369cb5372bdfaa1a5486ba5be517208",
+      "public_sha256": "6f3f9d92b87d9759d32c7b25e93db31d5deb024d3a710d9366068be121481dd6",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "evidence/real_reference_quality_addendum.json": {
+      "original_logical_path": "experiments/real_reference_quality_addendum.json",
+      "original_sha256": "c36f55dd37ba4cfae7af9716642da71f927b123b9b93d425f507b1ac4b2c7772",
+      "public_sha256": "741cdc153e9c15f0ccc05c8190c712b1beb4ac80f45441b1329e43709845fbfd",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "evidence/real_transfer_diagnostics.json": {
+      "original_logical_path": "experiments/real_transfer_diagnostics.json",
+      "original_sha256": "a8677abe04dbc691dc1620ff04711c52cbf0df71b8d4cbb19d564eef818a827c",
+      "public_sha256": "ea62929d7e7ed2a98466310ce2349844d507c0659b7e64b2fec8bb7b8ce31ebd",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "evidence/real_transfer_interpretation.json": {
+      "original_logical_path": "experiments/real_transfer_interpretation.json",
+      "original_sha256": "8e56d6b75648eeea13b23d42ad6a1226027e05719fea16778d9966d510798520",
+      "public_sha256": "5678c270468018ad34206d961ff2528b03e06416e4a6226d4b3e8c9cae4a7006",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "evidence/real_transfer_visual_plan.json": {
+      "original_logical_path": "experiments/real_transfer_visual_plan.json",
+      "original_sha256": "f291793b7838f2b3a81bbdfbcda81520050526c9394a034ff64ed387873e45db",
+      "public_sha256": "3bc9deb7a1794a159ca52d2c7073b0446b3094ec7a9ff090f2a59c39b2273595",
+      "transformation": "JSON serialization and absolute provenance path remapping only; no embedded image pixels"
+    },
+    "old_cnn_scores.jsonl": {
+      "original_logical_path": "results/real_eval/old_cnn_scores.jsonl",
+      "original_sha256": "17ba66586bdc8936eb646735ed2341517be6550417f41867944958bb4e534a86",
+      "public_sha256": "17ba66586bdc8936eb646735ed2341517be6550417f41867944958bb4e534a86",
+      "transformation": "none: exact bytes"
+    },
+    "native_patch_scores.jsonl": {
+      "original_logical_path": "results/real_eval/native_patch_scores.jsonl",
+      "original_sha256": "bfdac2c654e3bb8ca82d16dbb483ca6a38c5707b0cd9eb8fa866f312c0ab2e38",
+      "public_sha256": "bfdac2c654e3bb8ca82d16dbb483ca6a38c5707b0cd9eb8fa866f312c0ab2e38",
+      "transformation": "none: exact bytes"
+    },
+    "old_cnn_grid_scores.jsonl": {
+      "original_logical_path": "results/real_eval/old_cnn_grid_scores.jsonl",
+      "original_sha256": "9c789fb06afb33fef1179a12ad0dac2ae173e20b1025e1cac7d879d2e9d492dd",
+      "public_sha256": "9c789fb06afb33fef1179a12ad0dac2ae173e20b1025e1cac7d879d2e9d492dd",
+      "transformation": "none: exact bytes"
+    },
+    "native_patch_grid_scores.jsonl": {
+      "original_logical_path": "results/real_eval/native_patch_grid_scores.jsonl",
+      "original_sha256": "7a98beb93ad6613dbb9e8cf1601cd4e5cc48f463b172d87543ea8d0174fc4570",
+      "public_sha256": "7a98beb93ad6613dbb9e8cf1601cd4e5cc48f463b172d87543ea8d0174fc4570",
+      "transformation": "none: exact bytes"
+    }
+  },
+  "original_protocol_sha256": "9c5b4361972b2ab066b4fec44d1630f58fb199237f0a71cfa14630389a81d956",
+  "natural_photo_pixels_exported": 0,
+  "user_upload_pixels_exported": 0,
+  "warning": "Original hashes refer to original local JSON bytes; public JSON has separate hashes after path remapping. Images must be acquired from original licensed sources; no model/scoring code changes."
+}
