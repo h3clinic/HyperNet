@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "models": 8,
+  "prediction_rows": 5760,
+  "aggregate_partitions_checked": 16,
+  "max_metric_absolute_error": 5.551115123125783e-16,
+  "paired_category_bootstrap_verified": true,
+  "localization_verified": true,
+  "all_cutoffs_recovered_from_dev_only": true,
+  "score_identities_match_public_cohort": true,
+  "scope": "Independent arithmetic, pairing, intervals and box diagnostics; not an inference rerun"
+}

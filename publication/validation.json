@@ -52,5 +52,17 @@
     "finite_and_png_encoding_checked": true,
     "source_hash_check": true
   },
-  "experimental_accuracy": "Fresh v09 results pending final independent audits; primitive curriculum is a control. Historical audited results remain at benchmarks/v0.8.1."
+  "experimental_accuracy": "Audited v09 results published at benchmarks/v0.9; primary remains near chance. This file describes implementation checks.",
+  "public_result_verification": {
+    "passed": true,
+    "models": 8,
+    "prediction_rows": 5760,
+    "aggregate_partitions_checked": 16,
+    "max_metric_absolute_error": 5.551115123125783e-16,
+    "paired_category_bootstrap_verified": true,
+    "localization_verified": true,
+    "all_cutoffs_recovered_from_dev_only": true,
+    "score_identities_match_public_cohort": true,
+    "scope": "Independent arithmetic, pairing, intervals and box diagnostics; not an inference rerun"
+  }
 }

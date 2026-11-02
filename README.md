@@ -4,7 +4,7 @@
 
 Version **0.9.0** adds synthetic-only pretraining before reference enrollment. The CNN starts at random weights and learns from generated shapes, Gaussian variations and surface patterns. The primary control keeps that CNN frozen when it receives a real reference; optional controls adapt an independent copy using only that reference. No natural photographs train the shared backbone.
 
-**v09 is a primitive-shape control experiment, not the final richer shape curriculum. Its fresh-photo evaluation is still awaiting final audits.** It does not establish human-like reasoning, a breakthrough in fine-detail recognition, or superiority over published detectors. Formula-driven pretraining and triplet learning are established ideas. More complex, named mathematical shapes are a separate development direction.
+**v09 is an audited primitive-shape control, not the final richer shape curriculum. The primary reached only 50.00% balanced accuracy: 10/180 positives detected and 10/180 false alarms.** Its change from scratch was +1.39 percentage points, 95% paired category-bootstrap interval [−0.56,+3.33]; this does not establish improvement. Read [all v09 results and reproducibility data](benchmarks/v0.9/README.md). It does not establish human-like reasoning, a breakthrough in fine-detail recognition, or superiority over published detectors. Formula-driven pretraining and triplet learning are established ideas. More complex, named mathematical shapes are a separate development direction.
 
 The previous audited result remains available: the full v0.8.1 method found **7/240 positive TEST pairs**, versus **20/240** for the previous CNN, with **1/240 versus 3/240 false alarms**. Its paired balanced-accuracy difference was **−2.29 percentage points**, 95% category-bootstrap interval **[−4.17, −0.42]**. See [all v0.8.1 ablations and data budgets](benchmarks/v0.8.1/README.md).
 
@@ -96,9 +96,9 @@ Open HTML reports locally after cloning. The potential contribution is an audite
 
 The [prior source manifest](publication/source_snapshot_v0_8_1.json), Git history and [v0.8.1 benchmark](benchmarks/v0.8.1/README.md) preserve the previous experiment. Its interpolation roundoff repair changed only input-boundary handling; it did not improve the model algorithm. All earlier audited score records remain available.
 
-The v09 fresh-photo protocol has 720 reference/query pairs: 360 DEV and 360 TEST, each with 180 positives and 180 negatives, across six categories per split. Seven HyperNet controls and a separately pretrained OWL-ViT comparator will be reported with the same metrics after audits. There are only six TEST category clusters, limiting uncertainty estimates. No fresh-score tuning is permitted.
+The v09 fresh-photo protocol has 720 reference/query pairs: 360 DEV and 360 TEST, each with 180 positives and 180 negatives, across six categories per split. Seven HyperNet controls and a separately pretrained OWL-ViT comparator are reported with the same metrics in the [audited v09 benchmark](benchmarks/v0.9/README.md). There are only six TEST category clusters, limiting uncertainty estimates. No fresh-score tuning is permitted.
 
-Portable tests check implementation and provenance properties, not recognition accuracy. No photographs, trained checkpoints, caches, credentials or machine-specific experiment paths are distributed. The full v09 control results will be added after final independent audits.
+Portable tests check implementation and provenance properties, not recognition accuracy. No photographs, trained checkpoints, caches, credentials or machine-specific experiment paths are distributed. The [full v09 control results](benchmarks/v0.9/README.md) include 5,760 score rows, the reconstructable cohort, paired intervals, localization and independent arithmetic verification.
 
 ## License status
 

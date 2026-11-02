@@ -1,5 +1,5 @@
 {
-  "status": "Frozen procedural control; fresh-photo results pending final audits",
+  "status": "Audited primitive-shape control complete; primary remains near chance; see benchmarks/v0.9.",
   "models": {
     "restoration": {
       "mode": "restoration",

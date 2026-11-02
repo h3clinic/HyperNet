@@ -1,0 +1,598 @@
+{
+  "method": "Paired percentile bootstrap over TEST target categories, fixed DEV thresholds",
+  "test_categories": [
+    "airplane",
+    "banana",
+    "bed",
+    "bicycle",
+    "cow",
+    "keyboard"
+  ],
+  "bootstrap": {
+    "resamples": 10000,
+    "seed": 1809,
+    "confidence_level": 0.95,
+    "same_category_draws_all_methods": true,
+    "interval_status": "Post-evaluation paired analysis; original marginal intervals remain in summary"
+  },
+  "limitations": "Only six TEST category clusters; queries recur across episodes and can recur across categories. Conditional on one procedural seed, fitted reference models and fixed DEV thresholds; does not propagate training or calibration uncertainty. Other contrasts are descriptive, without multiplicity correction.",
+  "contrasts_against_scratch": {
+    "scratch_reference": {
+      "tpr": {
+        "difference": 0.0,
+        "low": 0.0,
+        "high": 0.0
+      },
+      "fpr": {
+        "difference": 0.0,
+        "low": 0.0,
+        "high": 0.0
+      },
+      "balanced_accuracy": {
+        "difference": 0.0,
+        "low": 0.0,
+        "high": 0.0
+      },
+      "auroc_category_macro": {
+        "difference": 0.0,
+        "low": 0.0,
+        "high": 0.0
+      }
+    },
+    "procedural_restoration_frozen": {
+      "tpr": {
+        "difference": 0.02777777777777778,
+        "low": -0.011111111111111112,
+        "high": 0.08888888888888889
+      },
+      "fpr": {
+        "difference": -0.022222222222222227,
+        "low": -0.10000000000000002,
+        "high": 0.03333333333333333
+      },
+      "balanced_accuracy": {
+        "difference": 0.025000000000000005,
+        "low": 0.0027777777777777866,
+        "high": 0.05277777777777776
+      },
+      "auroc_category_macro": {
+        "difference": -0.026481481481481477,
+        "low": -0.07296296296296294,
+        "high": 0.014629629629629604
+      }
+    },
+    "procedural_restoration_adapted": {
+      "tpr": {
+        "difference": 0.022222222222222227,
+        "low": -0.005555555555555556,
+        "high": 0.05000000000000001
+      },
+      "fpr": {
+        "difference": 1.1564823173178713e-18,
+        "low": -0.04444444444444445,
+        "high": 0.02777777777777778
+      },
+      "balanced_accuracy": {
+        "difference": 0.011111111111111108,
+        "low": -0.011111111111111072,
+        "high": 0.03611111111111107
+      },
+      "auroc_category_macro": {
+        "difference": -0.021851851851851862,
+        "low": -0.05166666666666664,
+        "high": 0.0027777777777777493
+      }
+    },
+    "procedural_detail_frozen": {
+      "tpr": {
+        "difference": 0.03333333333333333,
+        "low": -0.011111111111111112,
+        "high": 0.10555555555555556
+      },
+      "fpr": {
+        "difference": 0.0055555555555555506,
+        "low": -0.05555555555555557,
+        "high": 0.05555555555555555
+      },
+      "balanced_accuracy": {
+        "difference": 0.013888888888888876,
+        "low": -0.005555555555555554,
+        "high": 0.033333333333333326
+      },
+      "auroc_category_macro": {
+        "difference": -0.008703703703703722,
+        "low": -0.057962962962963015,
+        "high": 0.04074074074074077
+      }
+    },
+    "procedural_detail_adapted": {
+      "tpr": {
+        "difference": 0.03333333333333334,
+        "low": -0.005555555555555554,
+        "high": 0.07222222222222223
+      },
+      "fpr": {
+        "difference": 0.022222222222222227,
+        "low": 0.005555555555555556,
+        "high": 0.04444444444444445
+      },
+      "balanced_accuracy": {
+        "difference": 0.005555555555555554,
+        "low": -0.019444444444444386,
+        "high": 0.024999999999999977
+      },
+      "auroc_category_macro": {
+        "difference": -0.018518518518518535,
+        "low": -0.049444444444444485,
+        "high": 0.013518518518518513
+      }
+    },
+    "random_frozen": {
+      "tpr": {
+        "difference": 0.07777777777777779,
+        "low": 1.1564823173178713e-18,
+        "high": 0.1888888888888889
+      },
+      "fpr": {
+        "difference": 0.022222222222222223,
+        "low": -0.011111111111111112,
+        "high": 0.07222222222222223
+      },
+      "balanced_accuracy": {
+        "difference": 0.027777777777777762,
+        "low": -0.005555555555555573,
+        "high": 0.06388888888888887
+      },
+      "auroc_category_macro": {
+        "difference": -0.024629629629629612,
+        "low": -0.13962962962962963,
+        "high": 0.06629629629629631
+      }
+    },
+    "fixed_shape": {
+      "tpr": {
+        "difference": 0.03888888888888889,
+        "low": 0.011111111111111112,
+        "high": 0.07222222222222223
+      },
+      "fpr": {
+        "difference": 0.027777777777777776,
+        "low": -0.016666666666666673,
+        "high": 0.06666666666666667
+      },
+      "balanced_accuracy": {
+        "difference": 0.005555555555555554,
+        "low": -0.005555555555555554,
+        "high": 0.01944444444444442
+      },
+      "auroc_category_macro": {
+        "difference": -0.03740740740740742,
+        "low": -0.07907407407407409,
+        "high": 0.005555555555555582
+      }
+    },
+    "owlvit_base_patch32": {
+      "tpr": {
+        "difference": 0.28888888888888886,
+        "low": 0.09444444444444444,
+        "high": 0.4777777777777778
+      },
+      "fpr": {
+        "difference": -0.022222222222222223,
+        "low": -0.08333333333333333,
+        "high": 0.022222222222222227
+      },
+      "balanced_accuracy": {
+        "difference": 0.15555555555555553,
+        "low": 0.05833333333333337,
+        "high": 0.24444444444444438
+      },
+      "auroc_category_macro": {
+        "difference": 0.27870370370370373,
+        "low": 0.19111111111111112,
+        "high": 0.36481481481481487
+      }
+    }
+  },
+  "localization": {
+    "scratch_reference": {
+      "positive_pairs": 180,
+      "accepted_positive_pairs": 4,
+      "all_positive_iou50": 4,
+      "accepted_iou50": 0,
+      "accepted_zero_overlap": 1,
+      "all_positive_mean_iou": 0.0912590270746186,
+      "accepted_mean_iou": 0.1829851697294797,
+      "interpretation": "Top selected box vs annotated target boxes; counts, not detector AP"
+    },
+    "procedural_restoration_frozen": {
+      "positive_pairs": 180,
+      "accepted_positive_pairs": 9,
+      "all_positive_iou50": 3,
+      "accepted_iou50": 1,
+      "accepted_zero_overlap": 4,
+      "all_positive_mean_iou": 0.0831921860471016,
+      "accepted_mean_iou": 0.12790942172384362,
+      "interpretation": "Top selected box vs annotated target boxes; counts, not detector AP"
+    },
+    "procedural_restoration_adapted": {
+      "positive_pairs": 180,
+      "accepted_positive_pairs": 8,
+      "all_positive_iou50": 3,
+      "accepted_iou50": 0,
+      "accepted_zero_overlap": 2,
+      "all_positive_mean_iou": 0.0817583471596422,
+      "accepted_mean_iou": 0.11452151464369437,
+      "interpretation": "Top selected box vs annotated target boxes; counts, not detector AP"
+    },
+    "procedural_detail_frozen": {
+      "positive_pairs": 180,
+      "accepted_positive_pairs": 10,
+      "all_positive_iou50": 2,
+      "accepted_iou50": 1,
+      "accepted_zero_overlap": 4,
+      "all_positive_mean_iou": 0.0820984715622115,
+      "accepted_mean_iou": 0.16081283322481174,
+      "interpretation": "Top selected box vs annotated target boxes; counts, not detector AP"
+    },
+    "procedural_detail_adapted": {
+      "positive_pairs": 180,
+      "accepted_positive_pairs": 10,
+      "all_positive_iou50": 4,
+      "accepted_iou50": 0,
+      "accepted_zero_overlap": 2,
+      "all_positive_mean_iou": 0.08433691516975292,
+      "accepted_mean_iou": 0.09788142739111887,
+      "interpretation": "Top selected box vs annotated target boxes; counts, not detector AP"
+    },
+    "random_frozen": {
+      "positive_pairs": 180,
+      "accepted_positive_pairs": 18,
+      "all_positive_iou50": 7,
+      "accepted_iou50": 0,
+      "accepted_zero_overlap": 12,
+      "all_positive_mean_iou": 0.11989239712398951,
+      "accepted_mean_iou": 0.0329938236455976,
+      "interpretation": "Top selected box vs annotated target boxes; counts, not detector AP"
+    },
+    "fixed_shape": {
+      "positive_pairs": 180,
+      "accepted_positive_pairs": 11,
+      "all_positive_iou50": 0,
+      "accepted_iou50": 0,
+      "accepted_zero_overlap": 4,
+      "all_positive_mean_iou": 0.07345028894165362,
+      "accepted_mean_iou": 0.11569845673253831,
+      "interpretation": "Top selected box vs annotated target boxes; counts, not detector AP"
+    },
+    "owlvit_base_patch32": {
+      "positive_pairs": 180,
+      "accepted_positive_pairs": 56,
+      "all_positive_iou50": 92,
+      "accepted_iou50": 39,
+      "accepted_zero_overlap": 1,
+      "all_positive_mean_iou": 0.45501424925536477,
+      "accepted_mean_iou": 0.6125952127941778,
+      "interpretation": "Top selected box vs annotated target boxes; counts, not detector AP"
+    }
+  },
+  "input_summary_sha256": "122c6dffec70c7f515545615a2cc63aba77d2f08b96ed991720ceacb21c2d5f3",
+  "input_owl_summary_sha256": "e5dfa95a7aa70a9081e4ee0dde6f8b344655306a57ee0b05734112d2e8cfbc07",
+  "input_manifest_sha256": "ea7e1bf54915a3a0aa647729a428b851372b9c952427df1ef7e2da75578dbda3",
+  "per_category_metric_order": [
+    "tpr",
+    "fpr",
+    "balanced_accuracy",
+    "auroc_category_macro"
+  ],
+  "category_metrics": {
+    "scratch_reference": [
+      [
+        0.03333333333333333,
+        0.0,
+        0.5166666666666667,
+        0.7988888888888889
+      ],
+      [
+        0.0,
+        0.0,
+        0.5,
+        0.4433333333333333
+      ],
+      [
+        0.0,
+        0.06666666666666667,
+        0.4666666666666667,
+        0.5255555555555556
+      ],
+      [
+        0.03333333333333333,
+        0.2,
+        0.41666666666666674,
+        0.42000000000000004
+      ],
+      [
+        0.0,
+        0.0,
+        0.5,
+        0.5233333333333333
+      ],
+      [
+        0.06666666666666667,
+        0.03333333333333333,
+        0.5166666666666666,
+        0.5911111111111111
+      ]
+    ],
+    "procedural_restoration_frozen": [
+      [
+        0.03333333333333333,
+        0.0,
+        0.5166666666666667,
+        0.6711111111111112
+      ],
+      [
+        0.0,
+        0.0,
+        0.5,
+        0.45999999999999996
+      ],
+      [
+        0.16666666666666666,
+        0.13333333333333333,
+        0.5166666666666667,
+        0.57
+      ],
+      [
+        0.0,
+        0.0,
+        0.5,
+        0.4188888888888889
+      ],
+      [
+        0.0,
+        0.0,
+        0.5,
+        0.4755555555555555
+      ],
+      [
+        0.1,
+        0.03333333333333333,
+        0.5333333333333333,
+        0.5477777777777778
+      ]
+    ],
+    "procedural_restoration_adapted": [
+      [
+        0.1,
+        0.03333333333333333,
+        0.5333333333333333,
+        0.7100000000000001
+      ],
+      [
+        0.0,
+        0.0,
+        0.5,
+        0.4511111111111111
+      ],
+      [
+        0.06666666666666667,
+        0.1,
+        0.48333333333333334,
+        0.5422222222222222
+      ],
+      [
+        0.06666666666666667,
+        0.1,
+        0.48333333333333334,
+        0.4033333333333333
+      ],
+      [
+        0.0,
+        0.0,
+        0.5,
+        0.5133333333333333
+      ],
+      [
+        0.03333333333333333,
+        0.06666666666666667,
+        0.4833333333333334,
+        0.5511111111111111
+      ]
+    ],
+    "procedural_detail_frozen": [
+      [
+        0.03333333333333333,
+        0.03333333333333333,
+        0.5,
+        0.6799999999999999
+      ],
+      [
+        0.0,
+        0.0,
+        0.5,
+        0.5266666666666667
+      ],
+      [
+        0.2,
+        0.16666666666666666,
+        0.5166666666666666,
+        0.5744444444444444
+      ],
+      [
+        0.0,
+        0.06666666666666667,
+        0.4666666666666667,
+        0.3922222222222222
+      ],
+      [
+        0.0,
+        0.0,
+        0.5,
+        0.49666666666666665
+      ],
+      [
+        0.1,
+        0.06666666666666667,
+        0.5166666666666667,
+        0.58
+      ]
+    ],
+    "procedural_detail_adapted": [
+      [
+        0.13333333333333333,
+        0.03333333333333333,
+        0.5499999999999999,
+        0.7266666666666666
+      ],
+      [
+        0.0,
+        0.0,
+        0.5,
+        0.4822222222222223
+      ],
+      [
+        0.06666666666666667,
+        0.1,
+        0.48333333333333334,
+        0.5533333333333332
+      ],
+      [
+        0.1,
+        0.2,
+        0.45000000000000007,
+        0.3944444444444445
+      ],
+      [
+        0.0,
+        0.0,
+        0.5,
+        0.49666666666666665
+      ],
+      [
+        0.03333333333333333,
+        0.1,
+        0.46666666666666673,
+        0.5377777777777778
+      ]
+    ],
+    "random_frozen": [
+      [
+        0.0,
+        0.0,
+        0.5,
+        0.5077777777777778
+      ],
+      [
+        0.0,
+        0.0,
+        0.5,
+        0.4688888888888889
+      ],
+      [
+        0.1,
+        0.03333333333333333,
+        0.5333333333333333,
+        0.4933333333333333
+      ],
+      [
+        0.1,
+        0.2,
+        0.45000000000000007,
+        0.56
+      ],
+      [
+        0.0,
+        0.03333333333333333,
+        0.48333333333333334,
+        0.48000000000000004
+      ],
+      [
+        0.4,
+        0.16666666666666666,
+        0.6166666666666666,
+        0.6444444444444445
+      ]
+    ],
+    "fixed_shape": [
+      [
+        0.1,
+        0.03333333333333333,
+        0.5333333333333333,
+        0.7122222222222222
+      ],
+      [
+        0.0,
+        0.0,
+        0.5,
+        0.4244444444444444
+      ],
+      [
+        0.1,
+        0.16666666666666666,
+        0.46666666666666673,
+        0.5722222222222223
+      ],
+      [
+        0.03333333333333333,
+        0.13333333333333333,
+        0.45000000000000007,
+        0.3055555555555556
+      ],
+      [
+        0.0,
+        0.03333333333333333,
+        0.48333333333333334,
+        0.5222222222222221
+      ],
+      [
+        0.13333333333333333,
+        0.1,
+        0.5166666666666666,
+        0.5411111111111111
+      ]
+    ],
+    "owlvit_base_patch32": [
+      [
+        0.6666666666666666,
+        0.0,
+        0.8333333333333333,
+        0.93
+      ],
+      [
+        0.1,
+        0.03333333333333333,
+        0.5333333333333333,
+        0.6022222222222222
+      ],
+      [
+        0.4,
+        0.1,
+        0.6499999999999999,
+        0.8366666666666667
+      ],
+      [
+        0.23333333333333334,
+        0.03333333333333333,
+        0.6,
+        0.8188888888888889
+      ],
+      [
+        0.4666666666666667,
+        0.0,
+        0.7333333333333334,
+        0.9400000000000001
+      ],
+      [
+        0.0,
+        0.0,
+        0.5,
+        0.8466666666666667
+      ]
+    ]
+  },
+  "primary_predeclared": "procedural_detail_frozen",
+  "baseline_predeclared": "scratch_reference",
+  "model_selection_from_this_analysis": false,
+  "source_analysis_sha256": "d49b8b4273b57e2cb34f62a1910074066f77d85f5a396f0c15656d7705c4ac23"
+}

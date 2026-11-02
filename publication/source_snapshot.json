@@ -75,7 +75,7 @@
   "all_core_files_byte_identical_to_frozen_experiment": true,
   "prior_snapshot": "publication/source_snapshot_v0_8_1.json",
   "unchanged_prior_core_files": 60,
-  "evaluation_status": "Fresh-photo evaluation pending independent final audits; no v09 superiority claim.",
+  "evaluation_status": "Audited v09 primitive control complete: primary balanced accuracy50%, paired difference+1.39ppCI[-.56,+3.33]; no established improvement. See benchmarks/v0.9.",
   "notes": [
     "No photographs, checkpoints or private paths are exported.",
     "Packaging, examples and publication documents are outside frozen model code.",

@@ -1,0 +1,183 @@
+{
+  "scope": "Fixed descriptor mechanism diagnostic, not natural-photo category accuracy",
+  "configuration": {
+    "seed": 29073,
+    "model_seed": 73,
+    "examples_per_family": 24,
+    "modes": [
+      "native32",
+      "downsample96"
+    ]
+  },
+  "rows": [
+    {
+      "method": "analytic",
+      "mode": "native32",
+      "n": 96,
+      "triplet_win": 0.8229166666666666,
+      "nuisance_distance": 0.03879838978981973,
+      "detail_only_distance": 0.009473250316989224,
+      "negative_distance": 0.04459301144226102,
+      "bounded_margin": 0.5028973108262207,
+      "detail_to_nuisance_ratio": 0.3006157468996666,
+      "tie_fraction": 0.0,
+      "visible_query_detail_fraction": 1.0,
+      "normalized_feature_variance_sum": 0.36688360536270986,
+      "zero_norm_fraction": 0.0,
+      "per_family_triplet_win": {
+        "corner": 0.8333333333333334,
+        "gap": 0.7083333333333334,
+        "notch": 0.9583333333333334,
+        "texture_frequency": 0.7916666666666666
+      }
+    },
+    {
+      "method": "analytic",
+      "mode": "downsample96",
+      "n": 96,
+      "triplet_win": 0.6979166666666666,
+      "nuisance_distance": 0.035041714764660996,
+      "detail_only_distance": 0.0009924642949155598,
+      "negative_distance": 0.03583754804428666,
+      "bounded_margin": 0.5003979166398128,
+      "detail_to_nuisance_ratio": 0.0695880770052036,
+      "tie_fraction": 0.0,
+      "visible_query_detail_fraction": 1.0,
+      "normalized_feature_variance_sum": 0.286149625865795,
+      "zero_norm_fraction": 0.0,
+      "per_family_triplet_win": {
+        "corner": 0.6666666666666666,
+        "gap": 0.6666666666666666,
+        "notch": 0.6666666666666666,
+        "texture_frequency": 0.7916666666666666
+      }
+    },
+    {
+      "method": "random",
+      "mode": "native32",
+      "n": 96,
+      "triplet_win": 0.7708333333333334,
+      "nuisance_distance": 0.022544050800423588,
+      "detail_only_distance": 0.003228284316865678,
+      "negative_distance": 0.02455066714042592,
+      "bounded_margin": 0.5010033081700012,
+      "detail_to_nuisance_ratio": 0.2295136603435167,
+      "tie_fraction": 0.0,
+      "visible_query_detail_fraction": 1.0,
+      "normalized_feature_variance_sum": 0.07117392864476392,
+      "zero_norm_fraction": 0.0,
+      "per_family_triplet_win": {
+        "corner": 0.7916666666666666,
+        "gap": 0.7083333333333334,
+        "notch": 0.7916666666666666,
+        "texture_frequency": 0.7916666666666666
+      }
+    },
+    {
+      "method": "random",
+      "mode": "downsample96",
+      "n": 96,
+      "triplet_win": 0.6770833333333334,
+      "nuisance_distance": 0.018610101213794347,
+      "detail_only_distance": 0.000230584585171689,
+      "negative_distance": 0.018765013379748906,
+      "bounded_margin": 0.5000774560829773,
+      "detail_to_nuisance_ratio": 0.04466136701715004,
+      "tie_fraction": 0.0,
+      "visible_query_detail_fraction": 1.0,
+      "normalized_feature_variance_sum": 0.058969729210969365,
+      "zero_norm_fraction": 0.0,
+      "per_family_triplet_win": {
+        "corner": 0.625,
+        "gap": 0.7083333333333334,
+        "notch": 0.5416666666666666,
+        "texture_frequency": 0.8333333333333334
+      }
+    },
+    {
+      "method": "procedural_restoration",
+      "mode": "native32",
+      "n": 96,
+      "triplet_win": 0.8020833333333334,
+      "nuisance_distance": 0.030142517013846553,
+      "detail_only_distance": 0.007797540671613393,
+      "negative_distance": 0.03569912253281007,
+      "bounded_margin": 0.5027783027594818,
+      "detail_to_nuisance_ratio": 0.38839128358669966,
+      "tie_fraction": 0.0,
+      "visible_query_detail_fraction": 1.0,
+      "normalized_feature_variance_sum": 0.21969235942491616,
+      "zero_norm_fraction": 0.0,
+      "per_family_triplet_win": {
+        "corner": 0.875,
+        "gap": 0.7916666666666666,
+        "notch": 0.875,
+        "texture_frequency": 0.6666666666666666
+      }
+    },
+    {
+      "method": "procedural_restoration",
+      "mode": "downsample96",
+      "n": 96,
+      "triplet_win": 0.6979166666666666,
+      "nuisance_distance": 0.026630468308906013,
+      "detail_only_distance": 0.0005839311878321485,
+      "negative_distance": 0.027162543386061246,
+      "bounded_margin": 0.5002660375385776,
+      "detail_to_nuisance_ratio": 0.09763139905385458,
+      "tie_fraction": 0.0,
+      "visible_query_detail_fraction": 1.0,
+      "normalized_feature_variance_sum": 0.17041015121995187,
+      "zero_norm_fraction": 0.0,
+      "per_family_triplet_win": {
+        "corner": 0.625,
+        "gap": 0.8333333333333334,
+        "notch": 0.625,
+        "texture_frequency": 0.7083333333333334
+      }
+    },
+    {
+      "method": "procedural_detail_metric",
+      "mode": "native32",
+      "n": 96,
+      "triplet_win": 0.8125,
+      "nuisance_distance": 0.030960401327944368,
+      "detail_only_distance": 0.008877953739122932,
+      "negative_distance": 0.03752082608784313,
+      "bounded_margin": 0.5032802123799494,
+      "detail_to_nuisance_ratio": 0.38818450474112876,
+      "tie_fraction": 0.0,
+      "visible_query_detail_fraction": 1.0,
+      "normalized_feature_variance_sum": 0.2162833365318419,
+      "zero_norm_fraction": 0.0,
+      "per_family_triplet_win": {
+        "corner": 0.875,
+        "gap": 0.7916666666666666,
+        "notch": 0.875,
+        "texture_frequency": 0.7083333333333334
+      }
+    },
+    {
+      "method": "procedural_detail_metric",
+      "mode": "downsample96",
+      "n": 96,
+      "triplet_win": 0.7083333333333334,
+      "nuisance_distance": 0.027918011694161318,
+      "detail_only_distance": 0.0005865143340553098,
+      "negative_distance": 0.028359877379267946,
+      "bounded_margin": 0.5002209328425533,
+      "detail_to_nuisance_ratio": 0.09371545847571051,
+      "tie_fraction": 0.0,
+      "visible_query_detail_fraction": 1.0,
+      "normalized_feature_variance_sum": 0.1706333053880543,
+      "zero_norm_fraction": 0.0,
+      "per_family_triplet_win": {
+        "corner": 0.7083333333333334,
+        "gap": 0.7916666666666666,
+        "notch": 0.625,
+        "texture_frequency": 0.7083333333333334
+      }
+    }
+  ],
+  "source_sha256": "f59843fdbffdef89cde31182b6e108858c4b2de28f7d6e2106f2e237def2caa6"
+}
