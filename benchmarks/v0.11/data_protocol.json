@@ -1,0 +1,28 @@
+{
+  "format": "hypernet.shapes2d.data_freeze.v11",
+  "created_utc": "2026-11-02T20:17:16.390684+00:00",
+  "plan": {
+    "path": "data/shapes2d_v11/plan.json",
+    "sha256": "850c2b54211fb0329c8f53be5e5b8603282cfc8a660b326e23d36d989038603b"
+  },
+  "behavior_files": {
+    "hypernet/mathematical_shapes2d.py": "1f9c35619a84ba65e761fcce4f38df9b5ee7a7220a192555b355236d7a4b77a1",
+    "scripts/prepare_2d_data.py": "4677aec54441c7aca97fbca90c8026c5dab048b6acbb9d90b568a0a7678646dc",
+    "data/SHAPES2D_CONTRACT.json": "4a12bfccb92f88de48c16e226bdec144b3d601de8b280696e811eb6ceec506a6"
+  },
+  "workers": 6,
+  "renderer_validation": {
+    "path": "experiments/canonical_2d_grammar_audit.json",
+    "sha256": "62fcae803307da29d65c735b86c865195a0b0858a741b1342c0b18af632c6f75"
+  },
+  "generation_started_before_freeze": false,
+  "model_scores_used_for_selection": false,
+  "natural_images": 0,
+  "external_assets": 0,
+  "external_pretrained_weights": false,
+  "runtime": {
+    "python": "3.12.10",
+    "numpy": "2.5.3",
+    "pillow": "12.3.0"
+  }
+}

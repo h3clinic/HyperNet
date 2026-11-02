@@ -1,45 +1,40 @@
 {
-  "release": "0.10.0",
+  "version": "0.11.0",
   "date": "2026-11-02",
   "portable_tests": {
-    "passed": 168,
-    "failed": 0,
-    "runs": [
-      {
-        "passed": 164,
-        "seconds": 29.03
-      },
-      {
-        "passed": 4,
-        "seconds": 4.93
-      }
-    ],
-    "scope": "Implementation/provenance checks, not recognition accuracy"
+    "total_distinct_passed": 230,
+    "initial_complete_suite": {
+      "passed": 225,
+      "seconds": 25.76
+    },
+    "added_diagnostic_and_changed_gallery_checks": {
+      "passed": 10,
+      "seconds": 1.13,
+      "new_distinct_tests": 5
+    }
   },
-  "source_equivalence": {
-    "core_files": 69,
-    "unchanged_v09_core_files": 67,
-    "new_frozen_behavior_files_byte_identical": true,
-    "dataset_and_training_driver_byte_identical": true
+  "core_files": 71,
+  "previous_core_unchanged": 69,
+  "frozen_new_model_and_renderer_byte_identical": true,
+  "independent_checks": {
+    "cnn_metric_values": 56,
+    "cnn_localization_rows": 2048,
+    "cnn_exact_replays": 32,
+    "paired_contrast_values": 15,
+    "hybrid_metric_values": 28,
+    "hybrid_localization_rows": 1024,
+    "hybrid_exact_replays": 4
   },
-  "arithmetic_verification": {
+  "public_arithmetic_verification": {
     "passed": true,
-    "feature_archives": 4,
-    "representations": 12,
-    "classifiers": 4
+    "prediction_rows": 3072,
+    "metric_values": 84,
+    "paired_contrast_values": 15,
+    "post_hoc_type_present_counts_verified": true
   },
-  "portable_surface_viewer": {
-    "passed": true,
-    "generated_fixture_frames": 1,
-    "target_channels": 3,
-    "dom_references_resolve": true,
-    "browser_opened": false
-  },
-  "public_scan": {
-    "passed": true,
-    "files": 146,
-    "text_files": 142,
-    "private_paths_tokens_images_weights_found": false
-  },
-  "prior_validation": "publication/validation_v0_9.json"
+  "natural_training_images": 0,
+  "external_pretrained_weights": false,
+  "photos_or_checkpoints_published": false,
+  "primary_finding": "No established improvement: localized recall 4.30% versus 5.47%; paired interval crosses zero.",
+  "scope": "Controlled synthetic 2D micro-pattern probe, not natural semantic category validation."
 }

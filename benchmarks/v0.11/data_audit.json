@@ -1,0 +1,28 @@
+{
+  "valid": true,
+  "created_utc": "2026-11-02T20:20:29.525408+00:00",
+  "manifest_sha256": "515a46197650689e922dd00a63e8f08ce14a285f43142c1c0c93733b661b2d27",
+  "freeze_sha256": "4ae860e5cf1ac21f02bb074cd9bb11892644d3276ba808351a67ed434e1c124b",
+  "auditor_sha256": "4677aec54441c7aca97fbca90c8026c5dab048b6acbb9d90b568a0a7678646dc",
+  "files_verified": 25344,
+  "episodes_verified": 4608,
+  "query_rows_verified": 9216,
+  "unique_rgb_arrays": 9216,
+  "same_scene_opposite_enrollment_checks": 4608,
+  "counts": {
+    "train_queries": 8192,
+    "dev_queries": 512,
+    "test_queries": 512
+  },
+  "whole_grammar_family_split_disjoint": true,
+  "distractors_within_split_only": true,
+  "cross_split_pixel_overlap": 0,
+  "paired_scene_changes_confined_to_candidate": true,
+  "continuous_microfeature_removed_area_equal": true,
+  "independently_jittered_reference_query_instances": 2304,
+  "rasterized_candidate_area_difference_max": 23,
+  "minimum_nominal_feature_width_pixels": 4.320032179748353,
+  "query_annotations_are_evaluation_targets_not_model_inputs": true,
+  "natural_images": 0,
+  "external_assets": 0
+}

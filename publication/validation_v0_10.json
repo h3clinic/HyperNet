@@ -1,0 +1,45 @@
+{
+  "release": "0.10.0",
+  "date": "2026-11-02",
+  "portable_tests": {
+    "passed": 168,
+    "failed": 0,
+    "runs": [
+      {
+        "passed": 164,
+        "seconds": 29.03
+      },
+      {
+        "passed": 4,
+        "seconds": 4.93
+      }
+    ],
+    "scope": "Implementation/provenance checks, not recognition accuracy"
+  },
+  "source_equivalence": {
+    "core_files": 69,
+    "unchanged_v09_core_files": 67,
+    "new_frozen_behavior_files_byte_identical": true,
+    "dataset_and_training_driver_byte_identical": true
+  },
+  "arithmetic_verification": {
+    "passed": true,
+    "feature_archives": 4,
+    "representations": 12,
+    "classifiers": 4
+  },
+  "portable_surface_viewer": {
+    "passed": true,
+    "generated_fixture_frames": 1,
+    "target_channels": 3,
+    "dom_references_resolve": true,
+    "browser_opened": false
+  },
+  "public_scan": {
+    "passed": true,
+    "files": 146,
+    "text_files": 142,
+    "private_paths_tokens_images_weights_found": false
+  },
+  "prior_validation": "publication/validation_v0_9.json"
+}

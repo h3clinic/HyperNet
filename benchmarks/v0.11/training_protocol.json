@@ -1,0 +1,61 @@
+{
+  "format": "hypernet.one_reference_2d_detector.v11",
+  "sources": {
+    "hypernet\\one_shot_detector.py": "000f52fbc239fd4675e05aaa70f85dc330d6494aa286bf842c2a649c3e3d99a0",
+    "hypernet\\training_v3.py": "ad1dbae310cb12fd0a23a068a393407c58818f7735fe6bcbed095c87b5cac956",
+    "scripts\\train_2d_detector.py": "2fc683d4399ace020a68fee7bdd69b130a7daccdc1beee5c1c79088978b614c0"
+  },
+  "manifest_sha256": "515a46197650689e922dd00a63e8f08ce14a285f43142c1c0c93733b661b2d27",
+  "batch_plan_sha256": "4a6ec1abea1be696372d38f1cf169ba71096ed1092b9883a20fd47fdf193af21",
+  "initial_state_sha256": "920c53293197a4989b8876b312406be5e4ec44421a0a515ed3cb0da77c9ee4fe",
+  "data_audit_sha256": "0b29de1900af4fb28b3f37ecbef4fb090c2266d3e619313a5620a472f1b3931f",
+  "data_freeze_sha256": "4ae860e5cf1ac21f02bb074cd9bb11892644d3276ba808351a67ed434e1c124b",
+  "replay_plan_sha256": "ad5e84aa816607e3bd9d970af515b3606c35d35e757d2b6ed0eeb9cce6e85450",
+  "parameter_count": 897207,
+  "seed": 111,
+  "arms": [
+    "coarse_match",
+    "micro_aware"
+  ],
+  "steps_per_arm": 1024,
+  "episodes_per_step": 4,
+  "query_rows_per_step": 8,
+  "reference_exposures_per_arm": 4096,
+  "query_exposures_per_arm": 8192,
+  "reference_cnn_views_per_arm": 16384,
+  "reference_augmentation": "four exact quarter-turn pixel permutations per enrolled image",
+  "training_families": 2048,
+  "dev_families": 128,
+  "test_families": 128,
+  "natural_training_images": 0,
+  "externally_pretrained_weights": false,
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001
+  },
+  "loss": {
+    "match": "balanced binary cross entropy",
+    "foreground_weight": 0.4,
+    "paired_micro_margin": 0.08,
+    "paired_micro_weight": 0.5,
+    "ablation": "coarse_match omits candidate hard-negative BCE and paired margin; all other inputs/labels/steps identical"
+  },
+  "primary_metric": "TEST localized recall IoU>=0.5 using threshold fixed at <=5% DEV negative-scene FPR",
+  "detection": "learned scene foreground -> connected components -> shared spatial CNN region descriptor -> reference cosine",
+  "inference_inputs": [
+    "one support RGB",
+    "support bounding box",
+    "full query RGB"
+  ],
+  "query_annotations_at_inference": false,
+  "checkpoint_selection": "fixed final step, no DEV/TEST early stopping",
+  "calibration": "Separate threshold per arm, DEV only; strict tie handling",
+  "runtime": {
+    "torch": "2.14.1+cpu",
+    "numpy": "2.5.3",
+    "python": "3.12.10",
+    "threads": 4
+  },
+  "scope": "2D synthetic composed shapes in separated clutter; heldout compositions share grammar building blocks, not natural semantic categories"
+}

@@ -1,0 +1,45 @@
+{
+  "valid": true,
+  "created_utc": "2026-11-02T20:22:38.456559+00:00",
+  "script_sha256": "a5a3cd0994da8f5a7dce467fa687647f28ccb3caadcc8352e3ed7834914cc9f3",
+  "manifest_sha256": "515a46197650689e922dd00a63e8f08ce14a285f43142c1c0c93733b661b2d27",
+  "model_outputs_read": false,
+  "source_or_dataset_mutations": false,
+  "unique_queries_checked": 4608,
+  "supports_checked": 4608,
+  "candidate_8connected_components_histogram": {
+    "1": 4608
+  },
+  "union_8connected_components_histogram": {
+    "6": 4608
+  },
+  "support_8connected_components_histogram": {
+    "1": 4606,
+    "2": 2
+  },
+  "by_split": {
+    "train": {
+      "unique_query_scenes": 4096,
+      "candidate_connected": 4096,
+      "union_exactly_six_components": 4096
+    },
+    "dev": {
+      "unique_query_scenes": 256,
+      "candidate_connected": 256,
+      "union_exactly_six_components": 256
+    },
+    "test": {
+      "unique_query_scenes": 256,
+      "candidate_connected": 256,
+      "union_exactly_six_components": 256
+    }
+  },
+  "disconnected_candidates": [],
+  "candidate_foreground_pixels_min_max": [
+    741,
+    2149
+  ],
+  "paired_raster_area_relative_difference_mean": 0.0014734387682527436,
+  "paired_raster_area_relative_difference_max": 0.018878400888395337,
+  "interpretation": "Diagnostic of exact sampled masks; does not alter frozen training/evaluation. Equal continuous microfeature area is not exactly equal rasterized ink."
+}

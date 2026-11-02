@@ -1,0 +1,23 @@
+{
+  "scope": "Post-hoc descriptive diagnostic: top selected box localizes the macro-family candidate when that family is always present, ignoring microstate and acceptance threshold. Not an absence-detection result. Reused scenes/enrollments are dependent.",
+  "methods": {
+    "coarse_match": {
+      "correct_candidate_box": 393,
+      "queries": 512,
+      "fraction": 0.767578125,
+      "source_sha256": "ffdc6571826057d4e48dbba897c2c214a150bf0bf9f668ec90009314b308afa7"
+    },
+    "micro_aware": {
+      "correct_candidate_box": 401,
+      "queries": 512,
+      "fraction": 0.783203125,
+      "source_sha256": "1296f6d6d2fd6ffba3075c92c1bdcd697912d3ffe24f743101ef093d91129b57"
+    },
+    "analytic_detail_bypass": {
+      "correct_candidate_box": 288,
+      "queries": 512,
+      "fraction": 0.5625,
+      "source_sha256": "00f801b3474ac55bf283aec79cebb75ed354297d883f71dd06b2d475003f063c"
+    }
+  }
+}

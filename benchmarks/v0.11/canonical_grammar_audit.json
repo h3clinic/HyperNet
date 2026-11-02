@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "family_programs": 4096,
+  "microstates_checked": 8192,
+  "canonical_resolution": 96,
+  "duplicate_canonical_masks": [],
+  "duplicate_up_to_right_angle_rotation": [],
+  "microvariants_identical": [],
+  "unique_program_ids": 4096,
+  "disconnected_canonical_masks": [],
+  "max_paired_foreground_area_relative_difference": 0.0016246953696181965,
+  "renderer_sha256": "1f9c35619a84ba65e761fcce4f38df9b5ee7a7220a192555b355236d7a4b77a1",
+  "elapsed_seconds": 8.131730000000971,
+  "scope": "Distinct canonical raster masks and discrete program definitions; not a proof of semantic classes or equivalence under every continuous affine transform"
+}

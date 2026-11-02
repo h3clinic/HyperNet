@@ -1,6 +1,10 @@
 # HyperNet
 
-**Category recognition from one real reference, using either a reference-only CNN or a CNN we pretrain ourselves on procedural images. No borrowed pretrained weights are used in these HyperNet paths.**
+**One-reference recognition experiments with explicit training budgets. The current v11 experiment detects a matching 2D shape and micro-pattern inside a larger scene, after training our own CNN on procedural images. No borrowed pretrained weights are used in these HyperNet paths.**
+
+Version **0.11.0** is a **controlled 2D micro-pattern detection probe**, using a 96px reference and a 256px scene with six objects. The CNN trains on 2,048 procedural composition families and is evaluated on 128 DEV plus 128 TEST families with unseen combinations of familiar drawing rules. Two counterbalanced enrollments reuse identical query scenes with opposite labels. The micro-aware objective is compared against the same architecture, initialization and images without candidate micro-negative match supervision. **The added micro-pattern objective did not establish an improvement:** TEST localized recall was **4.30% versus 5.47%** for the family-only control, with **4.30% false positives in both arms**. The paired difference was −1.17 percentage points, 95% family-bootstrap interval [−3.52,+0.39]. All target boxes were available among the proposals, while pooled AUROC remained near 50%. See [all v11 results and audits](benchmarks/v0.11/README.md).
+
+The v11 model takes one support image and its support box, plus the full query image. It receives no query box, mask or family label at inference. Training uses 8,192 distinct procedural RGB images, so “one reference” describes enrollment rather than total training data. Natural training images and externally pretrained weights are both zero. These controlled synthetic compositions are not thousands of natural semantic classes. The original goal remains recognizing any example of the same natural category. This probe deliberately rejects a near-identical broad shape with the wrong fine pattern, and does not replace or validate that semantic-category goal.
 
 Version **0.10.0** adds a separate mathematical-surface curriculum and a native128 CNN with shape and detail heads. It learns from our own analytic geometry and renderer targets, with no natural photographs or externally pretrained weights. On different objects from eight **known, explicitly supervised synthetic families**, its one-support-per-family accuracy was **93.23%**, versus **93.45%** for the matched lowpass32 control. Higher resolution did not improve this primary metric. These synthetic scores are not natural-photo recognition results. Read [all v10 controls, protocol and reproducibility data](benchmarks/v0.10/README.md).
 
@@ -25,6 +29,30 @@ python publication/verify_snapshot.py
 ```
 
 Installing PyTorch/torchvision does not download or load pretrained weights. For hardware-specific installation, follow the [official PyTorch instructions](https://pytorch.org/get-started/locally/). The examples below construct our CNN and never call a pretrained model loader.
+
+## Reproduce the 2D detector
+
+Start from a clean checkout with no generated v11 data, freezes or checkpoints. The drivers preserve prior evidence and refuse to overwrite frozen runs.
+
+```bash
+python experiments/audit_2d_grammar.py
+python scripts/prepare_2d_data.py --stage plan --expected-renderer-sha 1f9c35619a84ba65e761fcce4f38df9b5ee7a7220a192555b355236d7a4b77a1
+python scripts/prepare_2d_data.py --stage render
+python scripts/prepare_2d_data.py --stage audit
+python scripts/audit_2d_detector.py --stage plan
+python scripts/train_2d_detector.py --epochs 1 --threads 4
+python scripts/audit_2d_detector.py --stage audit
+python scripts/report_2d_detector.py
+python scripts/serve_2d_gallery.py
+```
+
+Open `http://127.0.0.1:8792/two_dimensional_gallery.html` for the paginated gallery, or `/index.html` for the generated report. The gallery includes all 9,216 query rows and their references, masks and renderer annotations; completed DEV/TEST predictions have a separate magenta overlay. It loads only 24 rows per page. Pixel images and checkpoints are generated locally and are not distributed in the repository.
+
+Both arms use the same 897,207-parameter CNN, 1,024 optimizer updates and 8,192 query-image exposures. Four exact quarter-turn views of each enrolled support produce 16,384 reference CNN views from 4,096 support enrollments. A native-resolution branch precedes downsampling, but the final region descriptor is still compressed to 128 dimensions. The controlled primary metric is TEST localized recall at IoU ≥0.5 with each arm's threshold fixed using DEV negatives at ≤5% false positives. A measured TEST false-positive rate can differ from 5%.
+
+A separately declared classical diagnostic reuses the exact CNN proposal boxes and scores raw grayscale crops over a fixed alignment bank. It reached 7.03% localized recall, 4.30% false positives and 71.48% within-pair ranking, but only 51.79% pooled AUROC. This is a hybrid diagnostic, not a successful new CNN; its different rotation/alignment search prevents attributing the difference solely to lost CNN detail. Verify the pixel-free saved results with `python publication/verify_v11_results.py benchmarks/v0.11`.
+
+The [research synthesis](research/two_dimensional_research.html) separates adopted Siamese matching and ranking ideas from the experimental curriculum. A new combination of established components is not evidence of a novel mathematical operation, human-like reasoning or natural-photo superiority.
 
 ## Generate and train on mathematical surfaces
 

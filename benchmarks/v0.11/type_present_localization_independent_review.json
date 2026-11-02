@@ -1,0 +1,80 @@
+{
+  "format": "hypernet.type_present_localization_review.v11",
+  "valid": true,
+  "created_utc": "2026-11-02T20:37:10.201212+00:00",
+  "script_sha256": "2cf41fbc11c80e2573eae0052af2aab7aaafb6fe9fcd351e898de4a8f3eff619",
+  "original_evidence_bundle_sha256": "d8b0c02679fa28f1043b9d55d250f6196ede362c9d86d92145353fe8122034ed",
+  "bound_inputs": {
+    "data/shapes2d_v11/manifest.json": "515a46197650689e922dd00a63e8f08ce14a285f43142c1c0c93733b661b2d27",
+    "experiments/type_present_localization_diagnostic.json": "514a334bc32c1fa4a4c7adbcf5c3996279e9924df46dc8b7c6273d9683de4e05",
+    "experiments/shapes2d_evidence_bundle.json": "d8b0c02679fa28f1043b9d55d250f6196ede362c9d86d92145353fe8122034ed",
+    "results/coarse_match_predictions.jsonl": "ffdc6571826057d4e48dbba897c2c214a150bf0bf9f668ec90009314b308afa7",
+    "results/micro_aware_predictions.jsonl": "1296f6d6d2fd6ffba3075c92c1bdcd697912d3ffe24f743101ef093d91129b57",
+    "results/analytic_detail_bypass_predictions.jsonl": "00f801b3474ac55bf283aec79cebb75ed354297d883f71dd06b2d475003f063c"
+  },
+  "post_hoc": true,
+  "predeclared_primary_metric": false,
+  "type_presence_guaranteed": true,
+  "uses_previously_selected_top_box_only": true,
+  "acceptance_threshold_used": false,
+  "microidentity_required": false,
+  "new_inference_or_training": false,
+  "original_bundle_unchanged": true,
+  "test_families": 128,
+  "unique_test_query_images": 256,
+  "test_reference_enrollments": 256,
+  "dependent_test_query_rows": 512,
+  "localization_rows_checked": 1536,
+  "methods": {
+    "coarse_match": {
+      "correct_candidate_box": 393,
+      "query_rows": 512,
+      "fraction": 0.767578125,
+      "correct_by_enrolled_variant": {
+        "0": 199,
+        "1": 194
+      },
+      "correct_by_micro_match_status": {
+        "same_microstate": 195,
+        "opposite_microstate": 198
+      },
+      "source_sha256": "ffdc6571826057d4e48dbba897c2c214a150bf0bf9f668ec90009314b308afa7"
+    },
+    "micro_aware": {
+      "correct_candidate_box": 401,
+      "query_rows": 512,
+      "fraction": 0.783203125,
+      "correct_by_enrolled_variant": {
+        "0": 200,
+        "1": 201
+      },
+      "correct_by_micro_match_status": {
+        "same_microstate": 200,
+        "opposite_microstate": 201
+      },
+      "source_sha256": "1296f6d6d2fd6ffba3075c92c1bdcd697912d3ffe24f743101ef093d91129b57"
+    },
+    "analytic_detail_bypass": {
+      "correct_candidate_box": 288,
+      "query_rows": 512,
+      "fraction": 0.5625,
+      "correct_by_enrolled_variant": {
+        "0": 145,
+        "1": 143
+      },
+      "correct_by_micro_match_status": {
+        "same_microstate": 147,
+        "opposite_microstate": 141
+      },
+      "source_sha256": "00f801b3474ac55bf283aec79cebb75ed354297d883f71dd06b2d475003f063c"
+    }
+  },
+  "scope": "Descriptive forced-choice localization of the enrolled mathematical composition family when that family is always present; microstates treated as the same macro type.",
+  "limits": [
+    "Post-hoc supplement; it does not replace the failed predeclared fine-pattern detection result.",
+    "No type-absent scenes, so this cannot estimate absence rejection or type-detection FPR.",
+    "Counterbalanced scenes and enrollments are dependent, not 512 independent test photographs.",
+    "Known grammar building blocks and synthetic separated objects; no natural-category accuracy claim.",
+    "The small between-CNN point difference is descriptive, without a claim of demonstrated improvement."
+  ]
+}

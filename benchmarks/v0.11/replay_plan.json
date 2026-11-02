@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-11-02T20:19:28.544604+00:00",
+  "selection": "First two and last two sorted TEST family IDs; both enrollments and both queries",
+  "selected_family_ids": [
+    40,
+    70,
+    3810,
+    3846
+  ],
+  "selected_query_ids": [
+    "test_f0040_e0_positive",
+    "test_f0040_e0_negative",
+    "test_f0040_e1_positive",
+    "test_f0040_e1_negative",
+    "test_f0070_e0_positive",
+    "test_f0070_e0_negative",
+    "test_f0070_e1_positive",
+    "test_f0070_e1_negative",
+    "test_f3810_e0_positive",
+    "test_f3810_e0_negative",
+    "test_f3810_e1_positive",
+    "test_f3810_e1_negative",
+    "test_f3846_e0_positive",
+    "test_f3846_e0_negative",
+    "test_f3846_e1_positive",
+    "test_f3846_e1_negative"
+  ],
+  "planned_comparisons": 32,
+  "data_plan_sha256": "850c2b54211fb0329c8f53be5e5b8603282cfc8a660b326e23d36d989038603b",
+  "data_freeze_sha256": "4ae860e5cf1ac21f02bb074cd9bb11892644d3276ba808351a67ed434e1c124b",
+  "model_results_existed_at_selection": false
+}

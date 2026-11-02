@@ -1,0 +1,43 @@
+{
+  "valid": true,
+  "created_utc": "2026-11-02T20:33:25.168789+00:00",
+  "script_sha256": "edb6a25a1a8aa641929c04c07e0e1b7b042132bf938fae80889c1569ddb5fe2b",
+  "metric_auditor_sha256": "3cf0235827e377424a851dd5bad5b7bba01aa214322bacea70fb73df00621fdb",
+  "analysis_sha256": "c0dc843bbfe81dd9f06fb0fbafa9a0a2bd2ba1ae5e5e29ed051134d91339f1f8",
+  "results_sha256": "224f86456819d6bec19c3e4839b215a713cc6a96f1e2f0dbbb8280877d261b58",
+  "bootstrap_seed": 1811,
+  "draws": 10000,
+  "clusters": 128,
+  "verified_contrast_values": 15,
+  "shared_family_draws_all_metrics": true,
+  "manual_sorted_linear_quantiles": true,
+  "fixed_dev_cutoffs_recomputed": true,
+  "new_inference_or_training": false,
+  "contrasts": {
+    "localized_recall": {
+      "difference": -0.01171875,
+      "low": -0.03515625,
+      "high": 0.00390625
+    },
+    "recall": {
+      "difference": -0.0078125,
+      "low": -0.03125,
+      "high": 0.01171875
+    },
+    "false_positive_rate": {
+      "difference": 0.0,
+      "low": -0.0234375,
+      "high": 0.01953125
+    },
+    "balanced_accuracy": {
+      "difference": -0.00390625,
+      "low": -0.013671875,
+      "high": 0.00390625
+    },
+    "paired_ranking_accuracy": {
+      "difference": -0.02734375,
+      "low": -0.0625,
+      "high": 0.0078125
+    }
+  }
+}

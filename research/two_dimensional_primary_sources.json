@@ -1,0 +1,79 @@
+{
+  "review_date": "2026-11-02",
+  "scope": "Targeted primary-source research for a 2D exemplar-conditioned detector trained only on our procedural scenes. Published natural-data scores are not comparable to the planned synthetic experiment.",
+  "sources": [
+    {
+      "title": "Fully-Convolutional Siamese Networks for Object Tracking",
+      "authors": "Luca Bertinetto, Jack Valmadre, Joao F. Henriques, Andrea Vedaldi, Philip H. S. Torr",
+      "first_preprint": "2016-06-30",
+      "version_read": "arXiv v3, 2021-12-01",
+      "primary_url": "https://arxiv.org/abs/1606.09549",
+      "full_text": "https://arxiv.org/pdf/1606.09549",
+      "mechanism": "Shared convolutional embeddings; exemplar/search cross-correlation produces a dense response map, trained with logistic loss.",
+      "budget": "Gaussian random initialization; ILSVRC15 video pairs; 50 epochs of 50,000 pairs, batch8. One inference exemplar follows substantial offline natural-video training.",
+      "adoption": "Architectural antecedent for exemplar-conditioned spatial matching; no published weights or natural training data imported.",
+      "limit": "Tracking uses temporal search context and exact object appearance; it is not a one-image-total category learner."
+    },
+    {
+      "title": "One-Shot Object Detection with Co-Attention and Co-Excitation",
+      "authors": "Ting-I Hsieh, Yi-Chen Lo, Hwann-Tzong Chen, Tyng-Luh Liu",
+      "publication": "NeurIPS 2019",
+      "first_preprint": "2019-11-28",
+      "primary_url": "https://papers.nips.cc/paper_files/paper/2019/hash/92af93f73faf3cefc129b6bc55a748a9-Abstract.html",
+      "full_text": "https://arxiv.org/html/1911.12529v1",
+      "mechanism": "Query-conditioned proposals, channel co-excitation and margin-based proposal ranking.",
+      "budget": "Reduced ResNet50 pretraining uses933,052 ImageNet images from725 classes; detector training uses VOC/COCO,10epochs,batch128. COCO support filtering also uses pretrained MaskRCNN.",
+      "adoption": "Separate proposal quality from reference-match quality; matched hard-negative ranking is an established idea.",
+      "limit": "Paper scores average five sampled support trials and require large prior data budgets; they are not our exact one-reference synthetic metric."
+    },
+    {
+      "title": "Dense Contrastive Learning for Self-Supervised Visual Pre-Training",
+      "authors": "Xinlong Wang, Rufeng Zhang, Chunhua Shen, Tao Kong, Lei Li",
+      "first_preprint": "2020-11-18",
+      "publication": "CVPR 2021",
+      "primary_url": "https://openaccess.thecvf.com/content/CVPR2021/html/Wang_Dense_Contrastive_Learning_for_Self-Supervised_Visual_Pre-Training_CVPR_2021_paper.html",
+      "full_text": "https://arxiv.org/pdf/2011.09157",
+      "mechanism": "Local correspondence contrast complements a global contrastive objective.",
+      "budget": "COCO roughly118k natural images for800epochs or ImageNet roughly1.28M for200epochs, followed by supervised downstream fine-tuning.",
+      "adoption": "Potential local-feature consistency objective using our known2D transforms instead of inferred correspondence.",
+      "limit": "Local visual correspondence does not by itself define semantic category equivalence or resolve unobservable micro-patterns."
+    },
+    {
+      "title": "SuperPoint: Self-Supervised Interest Point Detection and Description",
+      "authors": "Daniel DeTone, Tomasz Malisiewicz, Andrew Rabinovich",
+      "first_preprint": "2017-12-20",
+      "publication": "CVPR Workshops 2018; camera-ready arXiv2018-04-19",
+      "primary_url": "https://arxiv.org/abs/1712.07629",
+      "full_text": "https://arxiv.org/pdf/1712.07629",
+      "mechanism": "Synthetic corner supervision followed by homographic adaptation and joint interest-point/descriptor learning.",
+      "budget": "MagicPoint synthetic stage200,000 iterations; paper statesbatch32. Final SuperPoint uses80,000 COCO2014 training photographs and100 homographies for pseudo-labeling, repeated twice.",
+      "adoption": "Known procedural transforms can supply correspondence without an external learned teacher.",
+      "limit": "The full published model is not synthetic-only; a homography models a planar warp, not arbitrary category variation."
+    },
+    {
+      "title": "Making Convolutional Networks Shift-Invariant Again",
+      "authors": "Richard Zhang",
+      "first_preprint": "2019-04-25",
+      "publication": "ICML 2019, June9–15",
+      "primary_url": "https://proceedings.mlr.press/v97/zhang19a.html",
+      "full_text": "https://proceedings.mlr.press/v97/zhang19a/zhang19a.pdf",
+      "mechanism": "Low-pass filtering directly before subsampling reduces aliasing in strided CNNs.",
+      "budget": "Natural-image classification and image-translation experiments; no one-exemplar synthetic-only detection claim.",
+      "adoption": "Motivates explicit stride/visibility diagnostics and preserving a high-resolution matching path.",
+      "limit": "Antialiasing removes unsupported frequencies; it cannot preserve every tiny pattern after aggressive downsampling. No automatic blur module is implied by this review."
+    },
+    {
+      "title": "CLEVR: A Diagnostic Dataset for Compositional Language and Elementary Visual Reasoning",
+      "authors": "Justin Johnson, Bharath Hariharan, Laurens van der Maaten, Li Fei-Fei, C. Lawrence Zitnick, Ross Girshick",
+      "publication": "CVPR 2017",
+      "primary_url": "https://cs.stanford.edu/people/jcjohns/clevr/",
+      "mechanism": "CoGenT holds out attribute combinations, rather than merely new random examples with familiar combinations.",
+      "budget": "CoGenT conditionA has70,000 training scenes and699,960 questions; distinct evaluation conditions swap color/shape combinations.",
+      "adoption": "Split whole2D grammar compositions and audit overlap of factor combinations.",
+      "limit": "We borrow a split-design principle only, not its3D renderer, VQA task or published scores. Thousands of procedural combinations are not thousands of semantic natural categories."
+    }
+  ],
+  "proposed_loss": "L=L_objectness+L_box+L_family_match+lambda_b*BCE(s,y)+lambda_m*max(0,margin+s_micro_negative−s_positive). Keep object proposals/data/initialization fixed across the family-only and micro-aware arms.",
+  "visibility_note": "A2px feature is near a sampling limit, not guaranteed recognizable identity. Audit the actual projected support/query widths, occlusion and changed pixels; report failures rather than silently removing hard TEST cases.",
+  "originality": "Siamese matching, proposal ranking and local contrastive learning are established. The candidate contribution is the constrained procedural curriculum, counterbalanced microidentity task and reproducible data-budget evaluation; firstness and natural-category transfer remain unproved."
+}

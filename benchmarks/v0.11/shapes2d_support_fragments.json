@@ -1,0 +1,71 @@
+{
+  "created_utc": "2026-11-02T20:23:16.049326+00:00",
+  "script_sha256": "bf835c94cb8b5a6e5b049417cf486deb85a8e17660e4bd23b942f72eb5190846",
+  "manifest_sha256": "515a46197650689e922dd00a63e8f08ce14a285f43142c1c0c93733b661b2d27",
+  "support_masks_checked": 4608,
+  "disconnected_supports": [
+    {
+      "episode_id": "train_f3753_e0",
+      "split": "train",
+      "family_id": 3753,
+      "mask_path": "train/f3753/support_v0.mask.png",
+      "bbox_xyxy": [
+        14,
+        9,
+        88,
+        73
+      ],
+      "component_areas": [
+        1704,
+        1
+      ],
+      "component_boxes": [
+        [
+          14,
+          9,
+          74,
+          64
+        ],
+        [
+          45,
+          33,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "episode_id": "train_f3753_e1",
+      "split": "train",
+      "family_id": 3753,
+      "mask_path": "train/f3753/support_v1.mask.png",
+      "bbox_xyxy": [
+        14,
+        9,
+        88,
+        73
+      ],
+      "component_areas": [
+        1704,
+        1
+      ],
+      "component_boxes": [
+        [
+          14,
+          9,
+          74,
+          64
+        ],
+        [
+          45,
+          33,
+          1,
+          1
+        ]
+      ]
+    }
+  ],
+  "model_outputs_read": false,
+  "dataset_modified": false,
+  "scope": "Sampling artifacts in support silhouettes; the enrolled tight box still includes every component."
+}

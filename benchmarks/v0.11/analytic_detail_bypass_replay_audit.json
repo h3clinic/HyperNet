@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "plan_sha256": "40af50a786394cbc1dfb883f53147302a285bb0ee1727693cf0f174a3b07e8f2",
+  "summary_sha256": "7519bd40f9c4b4d221a31d318c8b719f7d04fac9bafbd571d61a9182ddddb87e",
+  "score_rows": 4,
+  "checks": [
+    {
+      "id": "test_f0040_e0_positive",
+      "exact": true,
+      "score": 0.9230868220329285,
+      "bbox_xyxy": [
+        114,
+        160,
+        148,
+        210
+      ]
+    },
+    {
+      "id": "test_f0040_e1_positive",
+      "exact": true,
+      "score": 0.9264895915985107,
+      "bbox_xyxy": [
+        114,
+        160,
+        148,
+        210
+      ]
+    },
+    {
+      "id": "test_f0040_e0_negative",
+      "exact": true,
+      "score": 0.9230868220329285,
+      "bbox_xyxy": [
+        114,
+        160,
+        148,
+        210
+      ]
+    },
+    {
+      "id": "test_f0040_e1_negative",
+      "exact": true,
+      "score": 0.9264895915985107,
+      "bbox_xyxy": [
+        114,
+        160,
+        148,
+        210
+      ]
+    }
+  ],
+  "all_compared_fields_exact": true,
+  "model_loaded": false,
+  "training_updates": 0,
+  "checkpoints_predictions_frozen_sources_unchanged": true
+}

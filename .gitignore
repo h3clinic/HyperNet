@@ -7,7 +7,8 @@ venv/
 build/
 dist/
 checkpoints/
-data/
+data/*
+!data/SHAPES2D_CONTRACT.json
 results/
 *.pt
 *.pth
@@ -19,5 +20,7 @@ fixed_match.json
 publication_smoke/
 adapted_match.json
 scratch_match.json
-experiments/
+experiments/*
+!experiments/audit_2d_grammar.py
+!experiments/analytic_detail_bypass.py
 viewer_assets/

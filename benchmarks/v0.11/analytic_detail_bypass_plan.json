@@ -1,0 +1,148 @@
+{
+  "format": "hypernet.analytic_detail_bypass.v11",
+  "created_utc": "2026-11-02T20:26:25.441011+00:00",
+  "source_sha256": "6decdf1ec04b8199cc7d0273b5425704ddeed0338c6cd88584bf6f51a975fffe",
+  "training_freeze_sha256": "3aea6ab1558425dc1c8ea891f170a1ffcb5b1c758c7ee6415d574ddd002d9d11",
+  "manifest_sha256": "515a46197650689e922dd00a63e8f08ce14a285f43142c1c0c93733b661b2d27",
+  "full_scored_prediction_files_exist_at_declaration": {
+    "coarse_match": false,
+    "micro_aware": false
+  },
+  "trained_checkpoints_exist_at_declaration": {
+    "detector_coarse_match.pt": true,
+    "detector_micro_aware.pt": false
+  },
+  "interpretation": "Classical NCC descriptor bypass using the micro_aware CNN predicted proposals; diagnostic hybrid, not a novel algorithm.",
+  "scorer_inputs": [
+    "support RGB",
+    "support enrollment bbox",
+    "query RGB",
+    "saved micro_aware predicted proposal boxes"
+  ],
+  "forbidden_scoring_inputs": [
+    "query ground-truth boxes",
+    "query masks",
+    "presence labels",
+    "family identity",
+    "candidate pose"
+  ],
+  "configuration": {
+    "patch_size": 96,
+    "square_box_padding": 1.35,
+    "angles_degrees": [
+      0,
+      15,
+      30,
+      45,
+      60,
+      75,
+      90,
+      105,
+      120,
+      135,
+      150,
+      165,
+      180,
+      195,
+      210,
+      225,
+      240,
+      255,
+      270,
+      285,
+      300,
+      315,
+      330,
+      345
+    ],
+    "relative_reference_scales": [
+      0.85,
+      1.0,
+      1.15
+    ],
+    "query_translations_patch_pixels": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.0,
+        0.0
+      ],
+      [
+        2.0,
+        0.0
+      ],
+      [
+        0.0,
+        -2.0
+      ],
+      [
+        0.0,
+        2.0
+      ]
+    ],
+    "grayscale_weights": [
+      0.299,
+      0.587,
+      0.114
+    ],
+    "constant_rms_floor_luma_units": 0.001,
+    "score": "maximum zero-mean unit-L2 normalized cross correlation",
+    "sampling": "single bilinear affine resampling from native RGB-derived grayscale; no Gaussian blur",
+    "border": "median original-image perimeter",
+    "transforms_per_proposal": 360,
+    "proposal_source": "exact saved micro_aware proposal lists, same order; no added/refined proposals"
+  },
+  "calibration": "DEV negatives only: strict nextafter above floor(.05*N)-indexed descending score; unchanged threshold on TEST",
+  "primary": "TEST localized recall IoU>=.5 at <=5% DEV negative-scene FPR",
+  "training_updates": 0,
+  "external_pretrained_weights": false,
+  "unique_enrollment_images": 1,
+  "limitations": [
+    "Uses the trained CNN proposal stage, so it is not a wholly training-free detector.",
+    "Fixed affine search interpolates pixels and can miss rotations/scales between bank samples.",
+    "Full-patch NCC can favor macro silhouettes and background over microdetail.",
+    "Any gain does not isolate information loss from rotation/alignment search differences.",
+    "Synthetic separated-object scope; not a natural category result."
+  ],
+  "preview_checks": {
+    "passed": true,
+    "scope": "Reserved preview timing and synthetic unit cases; no DEV/TEST evaluation",
+    "episode_seconds": [
+      0.03234129999691504,
+      0.026373500000772765
+    ],
+    "mean_seconds_per_query_including_half_enrollment": 0.014678699999421951,
+    "preview_cases": [
+      {
+        "id": "preview_f0136_r0_q0",
+        "box_count": 6,
+        "finite": true
+      },
+      {
+        "id": "preview_f0136_r0_q1",
+        "box_count": 6,
+        "finite": true
+      },
+      {
+        "id": "preview_f0136_r1_q0",
+        "box_count": 6,
+        "finite": true
+      },
+      {
+        "id": "preview_f0136_r1_q1",
+        "box_count": 6,
+        "finite": true
+      }
+    ],
+    "exact_identity_score": 1.0,
+    "constant_score": 0.0,
+    "empty_score": -1.0
+  },
+  "runtime": {
+    "numpy": "2.5.3",
+    "opencv": "5.0.0",
+    "python": "3.12.10"
+  }
+}

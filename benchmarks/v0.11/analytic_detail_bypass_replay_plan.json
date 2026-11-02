@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-11-02T20:31:07.147723+00:00",
+  "replay_source_sha256": "3e22b54fccd226dd32128c9ef14959baf58d165a48ae1e6320477129ee90cb0e",
+  "scorer_source_sha256": "6decdf1ec04b8199cc7d0273b5425704ddeed0338c6cd88584bf6f51a975fffe",
+  "diagnostic_plan_sha256": "a8eaeb4db60b310b2fea9adf4b582d326d9be445e9d30d2b50dcfd9816f17fac",
+  "selection": "Lexicographically first2 positive and first2 negative TEST row IDs, separately sorted",
+  "comparisons": [
+    "score",
+    "bbox_xyxy",
+    "proposals",
+    "proposal_scores",
+    "winning_transform"
+  ],
+  "diagnostic_predictions_exist": false,
+  "trained_micro_predictions_exist": false
+}

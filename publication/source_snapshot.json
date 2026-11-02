@@ -1,7 +1,7 @@
 {
-  "snapshot": "HyperNet v0.10.0 mathematical surface pilot",
+  "snapshot": "HyperNet v0.11.0 procedural 2D exemplar detection",
   "created_date": "2026-11-02",
-  "core_file_count": 69,
+  "core_file_count": 71,
   "core_files": {
     "hypernet/__init__.py": "99f2b5e6f202d9114442844c17dedc09da6caf4a4bc8bf795a2fcea34ee2350a",
     "hypernet/__main__.py": "f79f435118a72f512c016292dd60e11e3be9fdbff9cbe82915656fa3d6b81b51",
@@ -24,6 +24,7 @@
     "hypernet/exports.py": "40bae4a2c2af5ba180033d945f3609772623ad6c6f86b749cfa592c8ef28d779",
     "hypernet/gaussian_variation.py": "7f69679e027e5344028b921421469c6912500d0f984607a39665f9fa04d92f3e",
     "hypernet/geometry.py": "77c113346195a6b572c6cd23cad350bb78e63e45002eeffe6707f1f6ec4f7bab",
+    "hypernet/mathematical_shapes2d.py": "1f9c35619a84ba65e761fcce4f38df9b5ee7a7220a192555b355236d7a4b77a1",
     "hypernet/mathematical_surfaces.py": "c4438068ca75eb222115339d69d093366e873effffbbb17dcbb360fd67a68157",
     "hypernet/metrics.py": "c6ecc0c7545d88190fce8ebb7fd8525f98250b57c2b784c979a9c1fd08ed58f2",
     "hypernet/models/__init__.py": "fd6073d02bfaaadbfc8eff2589f9d88916867ba3301032c6d1a536c865b898a4",
@@ -50,6 +51,7 @@
     "hypernet/models/tiny_v3.py": "b49578474d70a96b9ade2f50d6b7f39f2087ad3054c3533e66ff97994c7196cc",
     "hypernet/models/transport_region.py": "54ed03de4577f108226079bd0b3f19551453a883506af46c966eadec8ec34916",
     "hypernet/models/whitened.py": "be263a82e9cdd33d968e78339d84b1811dc705bb5c1c5b981b3cfe6d2dde4a08",
+    "hypernet/one_shot_detector.py": "000f52fbc239fd4675e05aaa70f85dc330d6494aa286bf842c2a649c3e3d99a0",
     "hypernet/partial_assignment.py": "20ffebcd4250c18e1627686575cf7f2ab5b1abca2e3f7e7f182acf95b5afaf90",
     "hypernet/procedural_pretraining.py": "a427a057ad45ceb4b685815fb911727470ebd6fe0f7bc689b82ce5bdc749e3d0",
     "hypernet/procedural_shapes.py": "c86fe183daaad932def3fea5d6050027b69eacac1c8e17dc8df95dd5194276e1",
@@ -73,37 +75,39 @@
     "hypernet/v08_registry.py": "b7173d0fcbb98037e4f00684804eb75e15766674a21625ce79f3dbf76ec5a369",
     "hypernet/v09_registry.py": "c8f151cd562ef8ac2caf48ca7bcf5cfb7e21edc20614d53e2d06e7f058778002"
   },
-  "prior_snapshot": "publication/source_snapshot_v0_9.json",
-  "unchanged_prior_core_files": 67,
-  "experimental_freeze_sha256": "0cbe706d2cd7ca38a7c97b25bb3dfcb4783fc9d2582368aa891412487901fc65",
+  "prior_snapshot": "publication/source_snapshot_v0_10.json",
+  "unchanged_prior_core_files": 69,
+  "experimental_freeze_sha256": "3aea6ab1558425dc1c8ea891f170a1ffcb5b1c758c7ee6415d574ddd002d9d11",
   "new_frozen_behavior_files": {
-    "hypernet\\surface_encoder.py": "c682947ed4201c803726e1a43926afcb0764f74ccf20a2fe6ece7770ec067f93",
+    "hypernet\\one_shot_detector.py": "000f52fbc239fd4675e05aaa70f85dc330d6494aa286bf842c2a649c3e3d99a0",
     "hypernet\\training_v3.py": "ad1dbae310cb12fd0a23a068a393407c58818f7735fe6bcbed095c87b5cac956",
-    "hypernet\\mathematical_surfaces.py": "c4438068ca75eb222115339d69d093366e873effffbbb17dcbb360fd67a68157",
-    "scripts\\train_surface_encoder.py": "6f403b35c8e227db9f1be3070ee22a4671bfcd8499c22552e773944508209454"
+    "scripts\\train_2d_detector.py": "2fc683d4399ace020a68fee7bdd69b130a7daccdc1beee5c1c79088978b614c0"
   },
   "additional_exported_files": {
-    "hypernet/mathematical_surfaces.py": "c4438068ca75eb222115339d69d093366e873effffbbb17dcbb360fd67a68157",
-    "hypernet/surface_encoder.py": "c682947ed4201c803726e1a43926afcb0764f74ccf20a2fe6ece7770ec067f93",
-    "scripts/prepare_surface_data.py": "da61c6e24175182d4eb81e40af0e3744a8007342b440c82ee47a5e2368878b16",
-    "scripts/train_surface_encoder.py": "6f403b35c8e227db9f1be3070ee22a4671bfcd8499c22552e773944508209454",
-    "scripts/audit_surface_encoder.py": "3b890b8e8ecbcc6b94fbb9a8d5111446595cb607083f36f380c906700b28be3b",
-    "scripts/serve_surface_gallery.py": "76a1e9f3dfa9c55a73259ba11266590b8859bd777c48afe3f16ad2d03ade4c3f",
-    "tests/test_mathematical_surfaces.py": "2d60f7d6befb761e7ada40261e449c2aebd4042c85a173476acfa436d76e2d2b",
-    "tests/test_surface_encoder.py": "9151cbed9bec881ae831d8a9e99756fd833557f2578e4f05f6e235e0a65560d6",
-    "tests/test_surface_dataset.py": "f1486798ee01b7a4c7166a0ae648c72c8ede4a9d6206f4e38a91ad474c15739e",
-    "surface_gallery.html": "06afe3a54587972e627c826360f5d4ac530a9b1f773ee6a7a18dc802067a883a",
-    "research/surface_primary_sources.json": "614ef9ffd9887a27cc51bf87e82ecc1e629fe5bb866e1e0639df21cff594f220",
-    "research/surface_math.html": "f23804634adcfa495fdbd68406fa9fe9ecbbd23087ee46a08537da55228627b1",
-    "research/mathematical_surface_notes.json": "84e4f4975f87d39a8bb113cdb3e4ee2afb8e5af7cfa653a8f8221efa6d75158c",
-    "tests/test_surface_audit.py": "6ae1ea4712b814d280dfb4b440b1b6d8c9eb9d744e3f65db92b032411a6b5b13"
+    "hypernet/mathematical_shapes2d.py": "1f9c35619a84ba65e761fcce4f38df9b5ee7a7220a192555b355236d7a4b77a1",
+    "hypernet/one_shot_detector.py": "000f52fbc239fd4675e05aaa70f85dc330d6494aa286bf842c2a649c3e3d99a0",
+    "scripts/prepare_2d_data.py": "4677aec54441c7aca97fbca90c8026c5dab048b6acbb9d90b568a0a7678646dc",
+    "scripts/train_2d_detector.py": "2fc683d4399ace020a68fee7bdd69b130a7daccdc1beee5c1c79088978b614c0",
+    "scripts/audit_2d_detector.py": "3cf0235827e377424a851dd5bad5b7bba01aa214322bacea70fb73df00621fdb",
+    "scripts/serve_2d_gallery.py": "6ccd9048decc1f2dda99cc7bea6b45fc3691d8823451435febf17fa19b7f5583",
+    "scripts/report_2d_detector.py": "02b877711a19a511101eb277b8957c40dd0bdacf386208f8da7a8cc8747e734f",
+    "two_dimensional_gallery.html": "4984790aae1e8c0f0a330bd9e0cfce2097a8c21290ff5605c394c6dc6dc26979",
+    "research/two_dimensional_primary_sources.json": "822d2fd8edc5eaae037ba57aac19ddeeaa782d39a2c398d9d9149a58e41ca350",
+    "research/two_dimensional_research.html": "15d3f35aba30d0041c1d8d65775422df3c2a6ef51550885b61bc61df4dad7f59",
+    "data/SHAPES2D_CONTRACT.json": "4a12bfccb92f88de48c16e226bdec144b3d601de8b280696e811eb6ceec506a6",
+    "experiments/audit_2d_grammar.py": "696a4a10ae3277fc247ad18b87e3253e182444d8ef1119f6e1bc8da09ff982d0",
+    "experiments/analytic_detail_bypass.py": "6decdf1ec04b8199cc7d0273b5425704ddeed0338c6cd88584bf6f51a975fffe",
+    "tests/test_2d_audit.py": "44ccdcf7cf0396938619f704ae84aa2650860785eb0c8f22c04bf988d220d43e",
+    "tests/test_2d_dataset.py": "4584ce2bb530c8857806ec3f5f7167e792abb0eb4abf181fd33afdbc81e20775",
+    "tests/test_2d_gallery.py": "3ca0dcf14081f2b0d7d2499bd492103c92c4712d36f451cf1d645e0c54bb41c7",
+    "tests/test_analytic_detail_bypass.py": "b92ffa561c834b29e36e1591087d610be0837c59de3f62ad429ff348255e70ea",
+    "tests/test_detection_protocol.py": "c8557bab973cc49c4414e910f50fe08a626b4c3669b4a65aa8043b61df487c6f",
+    "tests/test_mathematical_shapes2d.py": "c7ef3402a6dc6661237af05772d537e6eb2a93f5fdadb4b80ce2b34b4b6bfbe6",
+    "tests/test_one_shot_detector.py": "86c4846024fa8c783ca04fd28458c5a7066a6d7e5ddfe030857cc3e06bb5bc0e"
   },
-  "new_renderer_and_encoder_byte_identical_to_frozen_experiment": true,
-  "evaluation_status": "Known supervised synthetic families: native128 93.23%, matched lowpass32 93.45%; no natural-transfer claim.",
+  "evaluation_status": "Audited 2D procedural detection; see benchmarks/v0.11 for both arms and paired uncertainty. No natural-photo transfer claim.",
   "notes": [
-    "No generated pixels or checkpoint weights are distributed.",
-    "Held-out NPZ files contain derived features, logits and spectrum predictions only.",
-    "Public synthesis navigation is adapted; frozen behavior code is unchanged.",
-    "Portable gallery navigation omits an unpublished initial contact sheet and links the public data audit; renderer and inference behavior remain unchanged."
+    "The two new package files and training/data/audit drivers are byte-identical to the experiment.",
+    "No generated image pixels or trained weights are exported."
   ]
 }
