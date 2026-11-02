@@ -78,7 +78,7 @@
       "v0_8_1_sha256": "7f69679e027e5344028b921421469c6912500d0f984607a39665f9fa04d92f3e"
     }
   ],
-  "evaluation_status": "Complete corrected fresh-photo rerun in progress; no recognition results asserted.",
+  "evaluation_status": "Complete corrected fresh-photo rerun independently audited; predeclared full method did not improve the previous CNN. See benchmarks/v0.8.1.",
   "experimental_freeze_sha256": "d898c4507771248388b702b7d0e9e32cf970addb863797919cee66dc1415b32a",
   "all_core_files_byte_identical_to_frozen_corrected_experiment": true
 }

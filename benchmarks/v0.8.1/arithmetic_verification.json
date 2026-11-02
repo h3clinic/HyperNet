@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "models": 9,
+  "prediction_rows": 8640,
+  "aggregate_partitions_checked": 18,
+  "max_metric_absolute_error": 5.551115123125783e-16,
+  "pair_identity_sets_equal": true,
+  "all_cutoffs_recovered_from_dev_only": true,
+  "score_identities_match_public_cohort": true,
+  "scope": "Checks published arithmetic and model pairing; does not rerun inference or establish data provenance"
+}

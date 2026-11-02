@@ -4,7 +4,7 @@
 
 HyperNet asks whether a small CNN trained from patches and synthetic variations of one image can recognize another example of the same object type in a different photograph. The v0.8 experiment combines an existing one-reference CNN with partial part assignment, support-only Gaussian variation statistics, foreground heuristics and structural counterfactual scores.
 
-This is a research prototype. It does not claim human-like reasoning, state-of-the-art recognition, a new optimal-transport theorem or superiority over pretrained detectors. **Version 0.8.1 repairs an interpolation-roundoff boundary check. A complete fresh-photo evaluation rerun is in progress; audited results will be added separately.**
+This is a research prototype. It does not claim human-like reasoning, state-of-the-art recognition, a new optimal-transport theorem or superiority over pretrained detectors. **The audited v0.8.1 result is negative: the predeclared full method found 7/240 positive TEST pairs versus 20/240 for the previous CNN, with 1/240 versus 3/240 false alarms. Its paired balanced-accuracy difference was -2.29 percentage points (95% category-bootstrap interval [-4.17, -0.42]).** Read the [complete benchmark, all ablations and data budgets](benchmarks/v0.8.1/README.md).
 
 ## What is included
 
@@ -86,9 +86,9 @@ No published paper's benchmark score is presented as a direct comparison to this
 
 The original fresh run stopped when interpolation produced a value just above one (`1.0000001192` in float32), triggering a strict RGB-range check. Its 47 trained reference models and 15 completed category outputs have been preserved as incomplete evidence. They are not presented as a completed benchmark. Version 0.8.1 permits only roundoff within four dtype epsilons, then clamps to `[0,1]` without mutating the caller's input. Materially invalid or nonfinite inputs still fail. Regression tests cover both float32 and float64. No model architecture, augmentation strength, scoring parameter, support-selection rule or threshold-selection rule changes.
 
-The corrected experiment is rerunning all 48 reference models and 960 reference/query pairs. The first public snapshot remains available in Git history. No completed evaluation or accuracy gain is claimed from this repair.
+The corrected experiment reran all 48 reference models and 960 reference/query pairs. Independent audits verified the completed results, exact inference replay and compatibility with previously completed outputs. The first public snapshot remains available in Git history. The numerical repair is not an algorithmic improvement; the predeclared full method underperformed the previous CNN on this cohort.
 
-The portable test suite validates implementation properties. It does not validate recognition accuracy. Local cohort-specific experiment drivers are not portable artifacts and are excluded from this initial release. Sanitized audited experimental results and reproducibility instructions will be added when ready.
+The portable test suite validates implementation properties. It does not validate recognition accuracy. Local cohort-specific experiment drivers are not portable artifacts and are excluded from this initial release. [Audited results and reproducibility instructions](benchmarks/v0.8.1/README.md) include all nine methods, 8,640 compact score records, a public cohort reconstruction manifest, source hashes and an independent metric verifier.
 
 ## License status
 

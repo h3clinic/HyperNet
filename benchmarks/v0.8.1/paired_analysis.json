@@ -1,0 +1,252 @@
+{
+  "method": "Paired category-cluster percentile bootstrap, 10000 draws, seed1807; fixed DEV thresholds",
+  "test_categories": [
+    "airplane",
+    "banana",
+    "bed",
+    "bicycle",
+    "cow",
+    "keyboard",
+    "pizza",
+    "sheep"
+  ],
+  "limitations": "Eight clusters; query photos may recur across categories/episodes. Intervals are approximate, not a formal independence guarantee.",
+  "contrasts_against_v07": {
+    "v07_cnn": {
+      "tpr": {
+        "difference": 0.0,
+        "low": 0.0,
+        "high": 0.0
+      },
+      "fpr": {
+        "difference": 0.0,
+        "low": 0.0,
+        "high": 0.0
+      },
+      "balanced_accuracy": {
+        "difference": 0.0,
+        "low": 0.0,
+        "high": 0.0
+      }
+    },
+    "v08_assignment": {
+      "tpr": {
+        "difference": -0.012499999999999997,
+        "low": -0.024999999999999994,
+        "high": -0.004166666666666666
+      },
+      "fpr": {
+        "difference": -0.004166666666666667,
+        "low": -0.0125,
+        "high": 0.0
+      },
+      "balanced_accuracy": {
+        "difference": -0.00416666666666668,
+        "low": -0.012499999999999983,
+        "high": 0.004166666666666638
+      }
+    },
+    "v08_foreground": {
+      "tpr": {
+        "difference": -0.03749999999999999,
+        "low": -0.07916666666666666,
+        "high": -0.012499999999999997
+      },
+      "fpr": {
+        "difference": -0.008333333333333333,
+        "low": -0.020833333333333332,
+        "high": 0.0
+      },
+      "balanced_accuracy": {
+        "difference": -0.014583333333333351,
+        "low": -0.031250000000000014,
+        "high": -0.0020833333333333814
+      }
+    },
+    "v08_tolerance": {
+      "tpr": {
+        "difference": -0.012499999999999997,
+        "low": -0.024999999999999994,
+        "high": -0.004166666666666666
+      },
+      "fpr": {
+        "difference": 0.004166666666666667,
+        "low": -0.008333333333333333,
+        "high": 0.016666666666666666
+      },
+      "balanced_accuracy": {
+        "difference": -0.008333333333333345,
+        "low": -0.018750000000000003,
+        "high": 0.002083333333333312
+      }
+    },
+    "v08_counterfactual": {
+      "tpr": {
+        "difference": -0.008333333333333335,
+        "low": -0.041666666666666664,
+        "high": 0.02083333333333333
+      },
+      "fpr": {
+        "difference": 0.020833333333333336,
+        "low": 0.0041666666666666675,
+        "high": 0.04166666666666667
+      },
+      "balanced_accuracy": {
+        "difference": -0.01458333333333333,
+        "low": -0.033333333333333354,
+        "high": 0.0020833333333333606
+      }
+    },
+    "v08_full": {
+      "tpr": {
+        "difference": -0.05416666666666667,
+        "low": -0.1,
+        "high": -0.0125
+      },
+      "fpr": {
+        "difference": -0.008333333333333333,
+        "low": -0.020833333333333332,
+        "high": 0.0
+      },
+      "balanced_accuracy": {
+        "difference": -0.02291666666666667,
+        "low": -0.04166666666666667,
+        "high": -0.004166666666666666
+      }
+    },
+    "fixed_v06": {
+      "tpr": {
+        "difference": -0.020833333333333332,
+        "low": -0.07916666666666666,
+        "high": 0.016666666666666673
+      },
+      "fpr": {
+        "difference": 0.02916666666666667,
+        "low": 0.008333333333333333,
+        "high": 0.05
+      },
+      "balanced_accuracy": {
+        "difference": -0.024999999999999994,
+        "low": -0.04999999999999999,
+        "high": -0.00416666666666668
+      }
+    },
+    "fixed_v08": {
+      "tpr": {
+        "difference": -0.02083333333333333,
+        "low": -0.058333333333333334,
+        "high": 0.02083333333333334
+      },
+      "fpr": {
+        "difference": 0.01666666666666667,
+        "low": 0.004166666666666667,
+        "high": 0.03333333333333334
+      },
+      "balanced_accuracy": {
+        "difference": -0.01875000000000003,
+        "low": -0.03541666666666671,
+        "high": -0.0020833333333333537
+      }
+    },
+    "owlvit_base_patch32": {
+      "tpr": {
+        "difference": 0.35833333333333334,
+        "low": 0.19583333333333333,
+        "high": 0.5
+      },
+      "fpr": {
+        "difference": 0.016666666666666666,
+        "low": -0.008333333333333333,
+        "high": 0.05416666666666667
+      },
+      "balanced_accuracy": {
+        "difference": 0.17083333333333328,
+        "low": 0.09166666666666665,
+        "high": 0.24374999999999997
+      }
+    }
+  },
+  "localization": {
+    "v07_cnn": {
+      "positive_pairs": 240,
+      "accepted_positive_pairs": 20,
+      "all_positive_iou50": 10,
+      "accepted_iou50": 0,
+      "accepted_zero_overlap": 6,
+      "all_positive_mean_iou": 0.12690496273107318
+    },
+    "v08_assignment": {
+      "positive_pairs": 240,
+      "accepted_positive_pairs": 17,
+      "all_positive_iou50": 10,
+      "accepted_iou50": 2,
+      "accepted_zero_overlap": 3,
+      "all_positive_mean_iou": 0.14029972595968396
+    },
+    "v08_foreground": {
+      "positive_pairs": 240,
+      "accepted_positive_pairs": 11,
+      "all_positive_iou50": 12,
+      "accepted_iou50": 1,
+      "accepted_zero_overlap": 3,
+      "all_positive_mean_iou": 0.14619717631689313
+    },
+    "v08_tolerance": {
+      "positive_pairs": 240,
+      "accepted_positive_pairs": 17,
+      "all_positive_iou50": 10,
+      "accepted_iou50": 2,
+      "accepted_zero_overlap": 3,
+      "all_positive_mean_iou": 0.13912417992489015
+    },
+    "v08_counterfactual": {
+      "positive_pairs": 240,
+      "accepted_positive_pairs": 18,
+      "all_positive_iou50": 8,
+      "accepted_iou50": 1,
+      "accepted_zero_overlap": 5,
+      "all_positive_mean_iou": 0.13793786401972158
+    },
+    "v08_full": {
+      "positive_pairs": 240,
+      "accepted_positive_pairs": 7,
+      "all_positive_iou50": 8,
+      "accepted_iou50": 1,
+      "accepted_zero_overlap": 0,
+      "all_positive_mean_iou": 0.13044305152881314
+    },
+    "fixed_v06": {
+      "positive_pairs": 240,
+      "accepted_positive_pairs": 15,
+      "all_positive_iou50": 8,
+      "accepted_iou50": 0,
+      "accepted_zero_overlap": 3,
+      "all_positive_mean_iou": 0.11615775341246029
+    },
+    "fixed_v08": {
+      "positive_pairs": 240,
+      "accepted_positive_pairs": 15,
+      "all_positive_iou50": 14,
+      "accepted_iou50": 2,
+      "accepted_zero_overlap": 2,
+      "all_positive_mean_iou": 0.12969802303901445
+    },
+    "owlvit_base_patch32": {
+      "positive_pairs": 240,
+      "accepted_positive_pairs": 106,
+      "all_positive_iou50": 127,
+      "accepted_iou50": 81,
+      "accepted_zero_overlap": 0,
+      "all_positive_mean_iou": 0.5103026855556692
+    }
+  },
+  "input_summary_sha256": "f52d1c55bb96a229274c7adff509237f21745631e8f4151489c988afbc987966",
+  "source_analysis_sha256": "5187d38591c9e4b85244a7037ff8aeeb4752d220dc1c7d4245283a7fd621f17b",
+  "bootstrap": {
+    "resamples": 10000,
+    "seed": 1807,
+    "confidence_level": 0.95,
+    "cluster": "TEST target category",
+    "thresholds": "fixed from DEV"
+  }
+}
