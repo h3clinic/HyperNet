@@ -1,9 +1,7 @@
 {
-  "snapshot": "HyperNet v0.8 source publication",
+  "snapshot": "HyperNet v0.8.1 numerical boundary repair",
   "created_date": "2026-11-02",
-  "all_core_files_byte_identical_to_frozen_experiment": true,
   "core_file_count": 60,
-  "experimental_freeze_sha256": "69f89892c37d6a09a58152ed4baf1a1cf3d0ea989d72e8cae7c98c17a8f2522c",
   "core_files": {
     "hypernet/__init__.py": "99f2b5e6f202d9114442844c17dedc09da6caf4a4bc8bf795a2fcea34ee2350a",
     "hypernet/__main__.py": "f79f435118a72f512c016292dd60e11e3be9fdbff9cbe82915656fa3d6b81b51",
@@ -22,7 +20,7 @@
     "hypernet/comparison.py": "047e1f424588fa3d600ec1b6a8009db527afb3709482b7e7a02025d44b7a4218",
     "hypernet/data.py": "037b1fafd9a718244b8e4159bbfa761f91bf34915c67906054e3c26743e6c5f4",
     "hypernet/exports.py": "40bae4a2c2af5ba180033d945f3609772623ad6c6f86b749cfa592c8ef28d779",
-    "hypernet/gaussian_variation.py": "f7760b82cef1d4e278a370f1a1c20377d9e3e90c8d69f1eeaff1548e6f10b1ed",
+    "hypernet/gaussian_variation.py": "7f69679e027e5344028b921421469c6912500d0f984607a39665f9fa04d92f3e",
     "hypernet/geometry.py": "77c113346195a6b572c6cd23cad350bb78e63e45002eeffe6707f1f6ec4f7bab",
     "hypernet/metrics.py": "c6ecc0c7545d88190fce8ebb7fd8525f98250b57c2b784c979a9c1fd08ed58f2",
     "hypernet/models/__init__.py": "fd6073d02bfaaadbfc8eff2589f9d88916867ba3301032c6d1a536c865b898a4",
@@ -69,5 +67,18 @@
   "notes": [
     "No local paths, photographs or weights are contained in this snapshot manifest.",
     "Documentation, portable example and publication packaging are outside the frozen model code."
-  ]
+  ],
+  "base_experimental_freeze_sha256": "69f89892c37d6a09a58152ed4baf1a1cf3d0ea989d72e8cae7c98c17a8f2522c",
+  "all_core_files_byte_identical_to_corrected_source": true,
+  "core_files_unchanged_from_v0_8_frozen_snapshot": 59,
+  "numerical_repair": [
+    {
+      "file": "hypernet/gaussian_variation.py",
+      "prior_v0_8_sha256": "f7760b82cef1d4e278a370f1a1c20377d9e3e90c8d69f1eeaff1548e6f10b1ed",
+      "v0_8_1_sha256": "7f69679e027e5344028b921421469c6912500d0f984607a39665f9fa04d92f3e"
+    }
+  ],
+  "evaluation_status": "Complete corrected fresh-photo rerun in progress; no recognition results asserted.",
+  "experimental_freeze_sha256": "d898c4507771248388b702b7d0e9e32cf970addb863797919cee66dc1415b32a",
+  "all_core_files_byte_identical_to_frozen_corrected_experiment": true
 }

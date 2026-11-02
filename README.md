@@ -4,11 +4,11 @@
 
 HyperNet asks whether a small CNN trained from patches and synthetic variations of one image can recognize another example of the same object type in a different photograph. The v0.8 experiment combines an existing one-reference CNN with partial part assignment, support-only Gaussian variation statistics, foreground heuristics and structural counterfactual scores.
 
-This is a research prototype. It does not claim human-like reasoning, state-of-the-art recognition, a new optimal-transport theorem or superiority over pretrained detectors. The fresh-photo evaluation is undergoing audit; audited results will be added separately.
+This is a research prototype. It does not claim human-like reasoning, state-of-the-art recognition, a new optimal-transport theorem or superiority over pretrained detectors. **Version 0.8.1 repairs an interpolation-roundoff boundary check. A complete fresh-photo evaluation rerun is pending; audited results will be added separately.**
 
 ## What is included
 
-- The frozen v0.8 Python package, including earlier experiment components needed by its imports.
+- The v0.8.1 Python package: the v0.8 experiment snapshot plus a numerical input-boundary repair, including earlier components needed by its imports.
 - Portable tests for exact partial assignment, support statistics, region scoring and fresh-cohort separation using synthetic fixtures.
 - A command-line example that trains from your reference image and scores your query image.
 - Sixteen primary-source research entries and a synthesis explaining the adopted mathematics and its limitations.
@@ -82,7 +82,11 @@ No published paper's benchmark score is presented as a direct comparison to this
 
 ## Reproducibility and publication status
 
-[Source hashes](publication/source_snapshot.json) identify every exported package file and its equality to the experiment snapshot. Package files are preserved byte for byte; only publication documentation, packaging and the portable example are added. The historical internal `hypernet.__version__` string remains unchanged to preserve that snapshot; package distribution metadata identifies this release as 0.8.0.
+[Source hashes](publication/source_snapshot.json) identify every exported package file. The v0.8.1 update changes only `gaussian_variation.py` within the model package; the other 59 Python files match the original frozen experiment byte for byte. Publication documentation, packaging and the portable example are separate additions. The historical internal `hypernet.__version__` string remains unchanged; package distribution metadata identifies this release as 0.8.1.
+
+The original fresh run stopped when interpolation produced a value just above one (`1.0000001192` in float32), triggering a strict RGB-range check. Its 47 trained reference models and 15 completed category outputs have been preserved as incomplete evidence. They are not presented as a completed benchmark. Version 0.8.1 permits only roundoff within four dtype epsilons, then clamps to `[0,1]` without mutating the caller's input. Materially invalid or nonfinite inputs still fail. Regression tests cover both float32 and float64. No model architecture, augmentation strength, scoring parameter, support-selection rule or threshold-selection rule changes.
+
+The corrected experiment will rerun all 48 reference models and 960 reference/query pairs. The first public snapshot remains available in Git history. No completed evaluation or accuracy gain is claimed from this repair.
 
 The portable test suite validates implementation properties. It does not validate recognition accuracy. Local cohort-specific experiment drivers are not portable artifacts and are excluded from this initial release. Sanitized audited experimental results and reproducibility instructions will be added when ready.
 

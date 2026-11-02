@@ -86,9 +86,11 @@ def _fields(field, gain, strength, kind):
 def gaussian_variation(patches, generator, kind='shape', strength=1., return_fields=False):
     """Vary RGB patches using only their existing pixels.
 
-    Inputs are N x 3 x 32 x 32 float32/float64 values in [0,1]. Return a tensor,
+    Inputs are N x 3 x 32 x 32 float32/float64 values in [0,1]. Interpolation
+    roundoff within four dtype epsilons is clipped without mutating the input.
+    Return a tensor,
     or (tensor, fields) when requested. ``none`` and zero strength are exact
-    identity paths and consume no randomness. Shape and shape_pattern consume
+    identity paths for valid RGB and consume no randomness. Shape and shape_pattern consume
     identical geometry draws; only the latter draws the extra detail-gain field.
 
     The geometric bounds always hold; a requested RMS can be reduced by the
@@ -99,8 +101,10 @@ def gaussian_variation(patches, generator, kind='shape', strength=1., return_fie
         raise ValueError('Expected a nonempty N x 3 x 32 x 32 RGB tensor')
     if patches.dtype not in (torch.float32,torch.float64):
         raise ValueError('Patches must use float32 or float64')
-    if not torch.isfinite(patches).all() or patches.min()<0 or patches.max()>1:
+    tolerance=4*torch.finfo(patches.dtype).eps
+    if not torch.isfinite(patches).all() or patches.min() < -tolerance or patches.max() > 1+tolerance:
         raise ValueError('Patches must be finite RGB values in [0,1]')
+    patches=patches.clamp(0.,1.)
     if kind not in ('none','shape','shape_pattern'):
         raise ValueError('kind must be none, shape, or shape_pattern')
     if isinstance(strength,bool) or not math.isfinite(strength) or strength<0:

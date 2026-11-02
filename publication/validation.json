@@ -3,15 +3,24 @@
   "scope": "Portable source-publication checks; not a recognition benchmark",
   "portable_tests": {
     "command": "python -m pytest -q",
-    "passed": 50,
+    "passed": 68,
     "failed": 0,
-    "elapsed_seconds": 10.59,
-    "coverage": ["Partial assignment against exhaustive small-matrix oracle", "Finite deterministic support statistics and unchanged inputs/model state", "Region scoring controls", "Synthetic cohort freshness and split separation"]
+    "elapsed_seconds": 7.66,
+    "coverage": [
+      "Partial assignment against exhaustive small-matrix oracle",
+      "Finite deterministic support statistics and unchanged inputs/model state",
+      "Region scoring controls",
+      "Synthetic cohort freshness and split separation",
+      "Float32/float64 interpolation roundoff, rejection of invalid input, and unchanged RNG/input"
+    ]
   },
   "source_equivalence": {
     "core_python_files": 60,
-    "byte_identical_to_frozen_experiment": true,
-    "verification_command": "python publication/verify_snapshot.py"
+    "byte_identical_to_corrected_v0_8_1_source": true,
+    "unchanged_from_v0_8_frozen_experiment": 59,
+    "numerical_boundary_repair_files": 1,
+    "verification_command": "python publication/verify_snapshot.py",
+    "byte_identical_to_frozen_corrected_experiment": true
   },
   "example_smoke_check": {
     "completed": true,
@@ -19,7 +28,16 @@
     "training_steps": 2,
     "threads": 2,
     "inputs": "Deterministic synthetic RGB fixture and its horizontal flip; no dataset photographs",
-    "purpose": "Checks that scratch initialization, checkpoint writing and the portable example execute; not accuracy evidence"
+    "purpose": "Checks that scratch initialization, checkpoint writing and the portable example execute; not accuracy evidence",
+    "release_tested": "0.8.0; valid-input numerical compatibility separately confirmed for 0.8.1"
   },
-  "experimental_accuracy": "Not asserted; fresh-photo evaluation and independent audits are in progress."
+  "experimental_accuracy": "Not asserted; original fresh run stopped on a numerical boundary check, and the complete corrected rerun is in progress.",
+  "numerical_compatibility": {
+    "evidence": "numerical_boundary_compatibility.json",
+    "passed": true,
+    "valid_bitwise_comparisons": 24,
+    "roundoff_cases_accepted": 4,
+    "invalid_cases_rejected": 12,
+    "real_failing_batch_fixed": true
+  }
 }

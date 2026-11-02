@@ -1,0 +1,292 @@
+{
+  "passed": true,
+  "training_performed": false,
+  "scope": "Numerical boundary regression; no model parameter or scoring change",
+  "source_hashes": {
+    "original_v0_8_gaussian_variation.py": "f7760b82cef1d4e278a370f1a1c20377d9e3e90c8d69f1eeaff1548e6f10b1ed",
+    "corrected_v0_8_1_gaussian_variation.py": "7f69679e027e5344028b921421469c6912500d0f984607a39665f9fa04d92f3e"
+  },
+  "valid_input_comparisons": [
+    {
+      "dtype": "torch.float32",
+      "sample": "random",
+      "kind": "none",
+      "strength": 1.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float32",
+      "sample": "random",
+      "kind": "shape",
+      "strength": 1.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float32",
+      "sample": "random",
+      "kind": "shape_pattern",
+      "strength": 1.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float32",
+      "sample": "random",
+      "kind": "shape_pattern",
+      "strength": 0.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float32",
+      "sample": "white",
+      "kind": "none",
+      "strength": 1.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float32",
+      "sample": "white",
+      "kind": "shape",
+      "strength": 1.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float32",
+      "sample": "white",
+      "kind": "shape_pattern",
+      "strength": 1.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float32",
+      "sample": "white",
+      "kind": "shape_pattern",
+      "strength": 0.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float32",
+      "sample": "black",
+      "kind": "none",
+      "strength": 1.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float32",
+      "sample": "black",
+      "kind": "shape",
+      "strength": 1.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float32",
+      "sample": "black",
+      "kind": "shape_pattern",
+      "strength": 1.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float32",
+      "sample": "black",
+      "kind": "shape_pattern",
+      "strength": 0.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float64",
+      "sample": "random",
+      "kind": "none",
+      "strength": 1.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float64",
+      "sample": "random",
+      "kind": "shape",
+      "strength": 1.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float64",
+      "sample": "random",
+      "kind": "shape_pattern",
+      "strength": 1.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float64",
+      "sample": "random",
+      "kind": "shape_pattern",
+      "strength": 0.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float64",
+      "sample": "white",
+      "kind": "none",
+      "strength": 1.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float64",
+      "sample": "white",
+      "kind": "shape",
+      "strength": 1.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float64",
+      "sample": "white",
+      "kind": "shape_pattern",
+      "strength": 1.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float64",
+      "sample": "white",
+      "kind": "shape_pattern",
+      "strength": 0.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float64",
+      "sample": "black",
+      "kind": "none",
+      "strength": 1.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float64",
+      "sample": "black",
+      "kind": "shape",
+      "strength": 1.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float64",
+      "sample": "black",
+      "kind": "shape_pattern",
+      "strength": 1.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    },
+    {
+      "dtype": "torch.float64",
+      "sample": "black",
+      "kind": "shape_pattern",
+      "strength": 0.0,
+      "output_and_fields_bitwise_equal": true,
+      "rng_state_equal": true
+    }
+  ],
+  "tolerated_roundoff_cases": [
+    {
+      "dtype": "torch.float32",
+      "value": -2.384185791015625e-07,
+      "clamped_without_input_mutation": true
+    },
+    {
+      "dtype": "torch.float32",
+      "value": 1.000000238418579,
+      "clamped_without_input_mutation": true
+    },
+    {
+      "dtype": "torch.float64",
+      "value": -4.440892098500626e-16,
+      "clamped_without_input_mutation": true
+    },
+    {
+      "dtype": "torch.float64",
+      "value": 1.0000000000000004,
+      "clamped_without_input_mutation": true
+    }
+  ],
+  "invalid_cases_rejected": [
+    {
+      "dtype": "torch.float32",
+      "value": "-9.5367431640625e-07"
+    },
+    {
+      "dtype": "torch.float32",
+      "value": "1.0000009536743164"
+    },
+    {
+      "dtype": "torch.float32",
+      "value": "-0.01"
+    },
+    {
+      "dtype": "torch.float32",
+      "value": "1.01"
+    },
+    {
+      "dtype": "torch.float32",
+      "value": "nan"
+    },
+    {
+      "dtype": "torch.float32",
+      "value": "inf"
+    },
+    {
+      "dtype": "torch.float64",
+      "value": "-1.7763568394002505e-15"
+    },
+    {
+      "dtype": "torch.float64",
+      "value": "1.0000000000000018"
+    },
+    {
+      "dtype": "torch.float64",
+      "value": "-0.01"
+    },
+    {
+      "dtype": "torch.float64",
+      "value": "1.01"
+    },
+    {
+      "dtype": "torch.float64",
+      "value": "nan"
+    },
+    {
+      "dtype": "torch.float64",
+      "value": "inf"
+    }
+  ],
+  "valid_case_count": 24,
+  "accepted_roundoff_case_count": 4,
+  "invalid_rejection_case_count": 12,
+  "valid_inputs_and_rng_bitwise_unchanged": true,
+  "chair": {
+    "source_sha256": "ca5d65671fa1155591cd88e975daa5a479981927bdf5eac9bb66eec71fa40d7b",
+    "reference": "coco_000000093437_support.png",
+    "original_exception": "Patches must be finite RGB values in [0,1]",
+    "first_batch_min": 0.030738458037376404,
+    "first_batch_max": 1.0000001192092896,
+    "values_above_one": 72,
+    "corrected_equals_original_after_explicit_clamp": true,
+    "corrected_output_finite_and_in_range": true
+  },
+  "test_script_sha256": "8ec2ac3bce5f93c88a2b02422d87b9b22919cc7afdc78fba5a9f4069bfa31e8c",
+  "unsanitized_local_evidence_sha256": "fd25cd750684cd27dc4d23a0e3444bf55bfb9081f411aebbf84c4bc071a98ae3",
+  "publication_note": "Local absolute paths removed; numerical measurements unchanged."
+}
