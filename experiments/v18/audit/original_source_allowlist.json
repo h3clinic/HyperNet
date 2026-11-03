@@ -1,0 +1,274 @@
+{
+  "status": "Prepared locally for root review; nothing copied to external repository or published",
+  "source_files": [
+    {
+      "path": "hypernet_v18/__init__.py",
+      "sha256": "89b00a3a34086531ed637a2b21faa45e41d61d33897111d0bb3dec321ad26f0d",
+      "bytes": 67
+    },
+    {
+      "path": "hypernet_v18/pair_curriculum.py",
+      "sha256": "8d0f4939e7dbc1f4f522b82a0510006c8c5a3b46f09bac8cdf8cefbcd472ebdf",
+      "bytes": 13829
+    },
+    {
+      "path": "hypernet_v18/pair_ranker.py",
+      "sha256": "5f50f88bd784bac286f3080c11a62ef7b3fc7d66928423c7b31f56c885520623",
+      "bytes": 5538
+    },
+    {
+      "path": "hypernet_v18/reranker.py",
+      "sha256": "a289cf632bbebf7bf97aba5d14823bd3255ca999c7c6abfed3c00ba78f773b4b",
+      "bytes": 5804
+    },
+    {
+      "path": "hypernet_v18/vendor_v17/__init__.py",
+      "sha256": "ad053109854cb3f9586664d153d83f549d3223c6f477b9f59bd8703cf10830f3",
+      "bytes": 71
+    },
+    {
+      "path": "hypernet_v18/vendor_v17/detection_metrics.py",
+      "sha256": "e975987e33335e412155d865962005d71a32e6adb9479964511f9b15c7cdc719",
+      "bytes": 4748
+    },
+    {
+      "path": "hypernet_v18/vendor_v17/local_matcher.py",
+      "sha256": "28a79e622bd48738a67dff126ed2bd4be83fa42a4c9c515c98974d29b57022f8",
+      "bytes": 8478
+    },
+    {
+      "path": "hypernet_v18/vendor_v17/local_relation_model.py",
+      "sha256": "b8dd441576334cfd436dfb12b2ab48f3a859311178f0b78ef0ce15a3f5ffdde9",
+      "bytes": 19301
+    },
+    {
+      "path": "hypernet_v18/vendor_v17/scene_curriculum.py",
+      "sha256": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+      "bytes": 34637
+    },
+    {
+      "path": "README.md",
+      "sha256": "fd9bcdbeb4ff3d5bd0956967bf69d1e96c724480e73c284891c7ae96fb9ac091",
+      "bytes": 7566
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "f9d863362c108099ff5ad34391c465b0a4c75af7fc1e89a88e318a2cafd872ee",
+      "bytes": 133
+    },
+    {
+      "path": "scripts/evaluate_ranker.py",
+      "sha256": "4910149dcd2a32c139933e9efa567875c2970d06d0f207fdf3bcafea8d8044b2",
+      "bytes": 9466
+    },
+    {
+      "path": "scripts/evaluate_real_dev_pilot.py",
+      "sha256": "f319df236eaf107319bc38a340261a227c810457198b45cbdd48d4489fe3e6ea",
+      "bytes": 7939
+    },
+    {
+      "path": "scripts/prepare_public_manifest.py",
+      "sha256": "22e146196ed76702718e13460343cd5f3fd84b2dd375a5ea71dfaa0c1e565247",
+      "bytes": 7356
+    },
+    {
+      "path": "scripts/smoke_ranker.py",
+      "sha256": "79396a4c02863e50672cc39e355772284ec1464e3b11639a642e4ec54ea47146",
+      "bytes": 3566
+    },
+    {
+      "path": "scripts/train_pair_ranker.py",
+      "sha256": "2c248ef15e65e076d301c9dbdeee43ec01473e9886a3a6bf8313252e5f498bd1",
+      "bytes": 10473
+    },
+    {
+      "path": "scripts/verify_proof.py",
+      "sha256": "783e9451296bcdea9efee3364c005f6da14a38051d90a6c389dd77e1fc246e1b",
+      "bytes": 2815
+    },
+    {
+      "path": "tests/test_pair_curriculum.py",
+      "sha256": "1d5a8ee7632243551b9aa1e7620cafcf73c699dab86c2642a28f0b56abc06bcd",
+      "bytes": 3969
+    },
+    {
+      "path": "tests/test_pair_ranker.py",
+      "sha256": "ce87405c64580d3e700fe0b729629d1e16b02aef110e5dfa34c9a65fd51f6743",
+      "bytes": 4950
+    }
+  ],
+  "audited_artifacts": [
+    {
+      "path": "assets/pair_preflight.json",
+      "sha256": "5c1d05f88d9a99fdea3d3130c8eef476ab77d16d2642e4e69bee6315df7ff281",
+      "bytes": 1926
+    },
+    {
+      "path": "experiments/proof512_eval/pair_results.json",
+      "sha256": "a4579e813c5bc652b498267f4a507a6901d675ad6cabdf78d64409779e7d0c77",
+      "bytes": 204627
+    },
+    {
+      "path": "experiments/proof512_eval/plan.json",
+      "sha256": "251746971d6d7453a4129552cfda858ff7a5596693bd1d44ed9e3f09dd6df3d2",
+      "bytes": 880
+    },
+    {
+      "path": "experiments/proof512_eval/scene_results.json",
+      "sha256": "5b7ce2296f9d82808e805a7e6170b6e9326fae9a9faf44102f219bcf03651776",
+      "bytes": 691299
+    },
+    {
+      "path": "experiments/real_dev_pilot/admission.json",
+      "sha256": "2f63b50077a57d0e95e99431a234a3ec2ef6551ad2a4627fcf351951052e58c8",
+      "bytes": 1891
+    },
+    {
+      "path": "experiments/real_dev_pilot/arrays.npz",
+      "sha256": "48e4fed309333f2086c76c963ee4b3649076b9cedde2c0c7b9ea1434ef97e8b6",
+      "bytes": 26893
+    },
+    {
+      "path": "experiments/real_dev_pilot/predictions.jsonl",
+      "sha256": "f303fef4e1c100a86546bd6df4c704d1b62eaf6848579d6b030b8c24b85e2d89",
+      "bytes": 110641
+    },
+    {
+      "path": "experiments/real_dev_pilot/result.json",
+      "sha256": "81fc235bc925955ba265f06993e9698fb69e78ab298d1742432e874adb07bc13",
+      "bytes": 22419
+    },
+    {
+      "path": "PUBLIC_PROVENANCE.json",
+      "sha256": "9bcf6882c75b8525ed992a650025d856931c1620a9273377d1b4562b27c9668c",
+      "bytes": 32181
+    },
+    {
+      "path": "runs/proof512/admission.json",
+      "sha256": "bbe88219244ba66c3be1a56aab74689df65cdd18b37afb8e868436352a464dc9",
+      "bytes": 4366
+    },
+    {
+      "path": "runs/proof512/completion.json",
+      "sha256": "a41a4c92ac1b4b0202c5b955cecc3406838987116b0303c4653c8a2f70a87012",
+      "bytes": 7349
+    },
+    {
+      "path": "runs/proof512/final.pt",
+      "sha256": "bfcf9b4c52098f1ece3c45be6eb68f627355c93fad330a83abcfd36b073a52cc",
+      "bytes": 390918
+    },
+    {
+      "path": "runs/proof512/history.jsonl",
+      "sha256": "eb9df58b8b7a9f779e55ba2bac3b189a7b9dede81547c2889ae3fc1dddb32229",
+      "bytes": 309579
+    },
+    {
+      "path": "runs/proof512/initial.pt",
+      "sha256": "f2c5235cf03032a2da365c8db63850b8ddca314647fd794ddd9b2b5fc1a54653",
+      "bytes": 395468
+    },
+    {
+      "path": "runs/proof512/ledger/000001_000064.npz",
+      "sha256": "b9d40cbe9e387229e03b312d912f547a13d35f35dd8537d5762d691486ef9714",
+      "bytes": 111943
+    },
+    {
+      "path": "runs/proof512/ledger/000065_000128.npz",
+      "sha256": "a068136358ba768c01cb199f3073a3308ace305b3d4341a84184a8d945d7bfd5",
+      "bytes": 111737
+    },
+    {
+      "path": "runs/proof512/ledger/000129_000192.npz",
+      "sha256": "de96ec6d5e538f3552a5451afb9ed41eacbc28d4528114e1a9b5befd2a06113f",
+      "bytes": 111067
+    },
+    {
+      "path": "runs/proof512/ledger/000193_000256.npz",
+      "sha256": "a28726f73316d08c1658ad132dba79233b951d79d33e0313859bfed3e13f4fbe",
+      "bytes": 111768
+    },
+    {
+      "path": "runs/proof512/ledger/000257_000320.npz",
+      "sha256": "32b296b067a788d0945dfb68bebf4e8c84a488fe3dd5477f2dbe37d9b070e68f",
+      "bytes": 112091
+    },
+    {
+      "path": "runs/proof512/ledger/000321_000384.npz",
+      "sha256": "dabea4c1a7fb106e1b992a8220b11a11517c02f93a01e79ad7f3bb5557db6608",
+      "bytes": 111864
+    },
+    {
+      "path": "runs/proof512/ledger/000385_000448.npz",
+      "sha256": "34ccebf997e8c688ec85eb3d4a9e10e2a000d76c1c53d73a41a872d5023ae531",
+      "bytes": 111481
+    },
+    {
+      "path": "runs/proof512/ledger/000449_000512.npz",
+      "sha256": "6ca89ef68853a088c7083e6bb0a5278a53a096725dac92c950606441debf66bb",
+      "bytes": 111627
+    },
+    {
+      "path": "runs/proof512/source_snapshot/hypernet_v18/pair_curriculum.py",
+      "sha256": "8d0f4939e7dbc1f4f522b82a0510006c8c5a3b46f09bac8cdf8cefbcd472ebdf",
+      "bytes": 13829
+    },
+    {
+      "path": "runs/proof512/source_snapshot/hypernet_v18/pair_ranker.py",
+      "sha256": "5f50f88bd784bac286f3080c11a62ef7b3fc7d66928423c7b31f56c885520623",
+      "bytes": 5538
+    },
+    {
+      "path": "runs/proof512/source_snapshot/hypernet_v18/reranker.py",
+      "sha256": "a289cf632bbebf7bf97aba5d14823bd3255ca999c7c6abfed3c00ba78f773b4b",
+      "bytes": 5804
+    },
+    {
+      "path": "runs/proof512/source_snapshot/hypernet_v18/vendor_v17/local_matcher.py",
+      "sha256": "28a79e622bd48738a67dff126ed2bd4be83fa42a4c9c515c98974d29b57022f8",
+      "bytes": 8478
+    },
+    {
+      "path": "runs/proof512/source_snapshot/hypernet_v18/vendor_v17/local_relation_model.py",
+      "sha256": "b8dd441576334cfd436dfb12b2ab48f3a859311178f0b78ef0ce15a3f5ffdde9",
+      "bytes": 19301
+    },
+    {
+      "path": "runs/proof512/source_snapshot/hypernet_v18/vendor_v17/scene_curriculum.py",
+      "sha256": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+      "bytes": 34637
+    },
+    {
+      "path": "runs/proof512/source_snapshot/scripts/train_pair_ranker.py",
+      "sha256": "2c248ef15e65e076d301c9dbdeee43ec01473e9886a3a6bf8313252e5f498bd1",
+      "bytes": 10473
+    },
+    {
+      "path": "runs/proof512/verification.json",
+      "sha256": "48baf1a912142f3f8a94a15743134252a1809679df61a2580de2426bcf0ca284",
+      "bytes": 727
+    }
+  ],
+  "explicit_own_checkpoint_dependency": {
+    "workspace_path": "outputs/hypernet_v17/runs/primary_2048/final.pt",
+    "suggested_public_path": "checkpoints/own_v17_proposal.pt",
+    "sha256": "e7f0c787ee963ce615c73fea355fc65a9a6ec39bee37561a931657967a756892",
+    "state_sha256": "db030621a2de347ec7a530b72ee4cdf4b1f147dab3082334285e056b55400016",
+    "purpose": "Own synthetic-only encoder initialization and separately frozen proposal stage",
+    "natural_training_images": 0,
+    "borrowed_pretrained_weights": false
+  },
+  "excluded": [
+    "Natural photographs and galleries",
+    "data/real_dev_only.json workspace-layout manifest",
+    "v17 fresh real TEST records/images/predictions",
+    "temporary smokes and discarded fit weights",
+    "__pycache__"
+  ],
+  "export_rules": [
+    "Do not mutate original trained checkpoints or frozen source snapshots.",
+    "The v18 checkpoint metadata contains no absolute filesystem paths; preserve bytes and SHA256.",
+    "If any future metadata normalization is required, edit only an exported copy and record original/exported SHA256 plus verified identical tensor state hash.",
+    "Preserve negative results and DEVELOPMENT labels; do not present cropped-pair AUROC as scene detection accuracy."
+  ]
+}

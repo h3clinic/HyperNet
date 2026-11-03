@@ -1,0 +1,93 @@
+{
+  "created_utc": "2026-11-03T12:20:03.541119+00:00",
+  "config": {
+    "steps": 512,
+    "batch_size": 8,
+    "stream_seed": 1801,
+    "initialization_seed": 1801,
+    "device": "cuda",
+    "workers": 2,
+    "threads": 2,
+    "learning_rate": 0.0005,
+    "final_learning_rate": 5e-05,
+    "weight_decay": 0.0001,
+    "gradient_clip": 5.0,
+    "dtype": "float32",
+    "amp": false,
+    "deterministic_algorithms": true,
+    "data_format": "hypernet.pair_curriculum.v18.1",
+    "data_config": {
+      "format": "hypernet.pair_curriculum.v18.1",
+      "size": 96,
+      "query_size": 192,
+      "default_seed": 1801,
+      "frozen_generator_sha256": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+      "max_nuisance_attempts": 32,
+      "minimum_final_changed_rgb_pixels": 8,
+      "changed_channel_threshold": 3,
+      "crop_margins": [
+        0.0,
+        0.05,
+        0.15,
+        0.3
+      ],
+      "jitter_as_fraction_of_margin": 0.75,
+      "crop_rule": "Same crop enclosing both amodal objects and every changed RGB pixel, plus1pixel guard; identical border RGB padding and aspect-preserving resize; fixed tight-union/full-slot fallbacks",
+      "wrong_reference_rule": "Different macro family, absent from every complete and contained scene program; same reference nuisance/background draw",
+      "compositional_wrong_reference_exception": "All programs are composite; use a different ordered constituent-family pair",
+      "positive_pair": [
+        "support",
+        "positive"
+      ],
+      "near_negative_pair": [
+        "support",
+        "near_negative"
+      ],
+      "wrong_family_pair": [
+        "wrong_support",
+        "positive"
+      ],
+      "natural_training_images": 0,
+      "borrowed_pretrained_weights": false
+    },
+    "model_format": "hypernet.pair_ranker.v18.1",
+    "checkpoint_rule": "Final planned update only; no real/syntheticTEST checkpoint selection",
+    "loss": "0.5 positive logistic +0.25 same-support near-negative logistic +0.25 wrong-support positive-patch logistic",
+    "source_sha256": {
+      "hypernet_v18/pair_ranker.py": "5f50f88bd784bac286f3080c11a62ef7b3fc7d66928423c7b31f56c885520623",
+      "hypernet_v18/pair_curriculum.py": "8d0f4939e7dbc1f4f522b82a0510006c8c5a3b46f09bac8cdf8cefbcd472ebdf",
+      "hypernet_v18/reranker.py": "a289cf632bbebf7bf97aba5d14823bd3255ca999c7c6abfed3c00ba78f773b4b",
+      "hypernet_v18/vendor_v17/local_relation_model.py": "b8dd441576334cfd436dfb12b2ab48f3a859311178f0b78ef0ce15a3f5ffdde9",
+      "hypernet_v18/vendor_v17/scene_curriculum.py": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+      "hypernet_v18/vendor_v17/local_matcher.py": "28a79e622bd48738a67dff126ed2bd4be83fa42a4c9c515c98974d29b57022f8",
+      "scripts/train_pair_ranker.py": "2c248ef15e65e076d301c9dbdeee43ec01473e9886a3a6bf8313252e5f498bd1"
+    }
+  },
+  "own_initialization": {
+    "kind": "Own synthetic-only v17 initialization, not third-party pretrained weights",
+    "checkpoint_sha256": "e7f0c787ee963ce615c73fea355fc65a9a6ec39bee37561a931657967a756892",
+    "state_sha256": "db030621a2de347ec7a530b72ee4cdf4b1f147dab3082334285e056b55400016",
+    "prior_optimizer_steps": 2048,
+    "prior_training_episodes": 32768,
+    "prior_training_views": 65536,
+    "prior_source_sha256": {
+      "hypernet/scene_curriculum.py": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+      "hypernet/local_relation_model.py": "b8dd441576334cfd436dfb12b2ab48f3a859311178f0b78ef0ce15a3f5ffdde9",
+      "scripts/train_local.py": "0e86d9678c9da2fd7dc5da37ff327d1fc4636b2619a599e093deca4f26a137fe"
+    }
+  },
+  "parameters": {
+    "total_parameters": 90708,
+    "trainable_parameters": 88649,
+    "ordered_evidence_entries": 256,
+    "source_cells": 16,
+    "region_cells": 16,
+    "loss": "0.5 positive logistic +0.25 near-negative logistic +0.25 wrong-support logistic"
+  },
+  "natural_training_images": 0,
+  "borrowed_pretrained_weights": false,
+  "torch_version": "2.14.1+cu130",
+  "numpy_version": "2.5.3",
+  "ledger_program_encoding": "Raw32byteSHA256program ID, parsedfromhex (not hash-of-hex-string)",
+  "training_input_policy": "Four RGB96px patches only; procedural program IDs, masks and boxes used for label/crop generation, never network inputs"
+}

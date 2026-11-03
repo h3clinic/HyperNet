@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "saved_ledger_complete": true,
+  "source_snapshots_unchanged": true,
+  "checkpoint_hashes_verified": true,
+  "training_quartets": 4096,
+  "additional_processed_rgb_views": 16384,
+  "unique_v18_input_images": 16384,
+  "unique_target_programs": 2387,
+  "cumulative_own_processed_rgb_exposures": 81920,
+  "input_stream_sha256": "da69d7519f947ece92b84e886596bbc6c30a896a5d227e9aaec973637b6ec31e",
+  "completion_sha256": "a41a4c92ac1b4b0202c5b955cecc3406838987116b0303c4653c8a2f70a87012",
+  "scope": "Saved-ledger integrity; not exhaustive image regeneration or proof of semantic type identifiability",
+  "source_sha256": "783e9451296bcdea9efee3364c005f6da14a38051d90a6c389dd77e1fc246e1b"
+}

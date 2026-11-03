@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "scope": "CPU data preflight only; zero optimizer steps or natural images",
+  "source_sha256": "8d0f4939e7dbc1f4f522b82a0510006c8c5a3b46f09bac8cdf8cefbcd472ebdf",
+  "generator_sha256": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+  "config_sha256": "affd678705e02659ed8e60eed8db43382a2e88bd39fe6189863dfcfbd550dd53",
+  "plans": [
+    {
+      "split": "train",
+      "seed": 1801,
+      "count": 4096
+    },
+    {
+      "split": "development",
+      "seed": 1877,
+      "count": 256
+    },
+    {
+      "split": "test",
+      "seed": 1888,
+      "count": 256
+    },
+    {
+      "split": "compositional",
+      "seed": 1888,
+      "count": 128
+    }
+  ],
+  "completed": 4736,
+  "planned": 4736,
+  "seconds": 367.82221440000285,
+  "workers": 4,
+  "failures": [],
+  "minimum_final_changed_rgb_pixels": 8,
+  "minimum_positive_visibility": 0.6506024096385542,
+  "nuisance_attempt_histogram": {
+    "0": 4731,
+    "1": 5
+  },
+  "crop_choice_counts": {
+    "jittered_union": 4734,
+    "tight_union": 2
+  },
+  "distinct_input_rgb_count": 18944,
+  "distinct_program_ids_all_roles_by_split": {
+    "train": 5070,
+    "development": 378,
+    "test": 389,
+    "compositional": 384
+  },
+  "family_counts": {
+    "train:contour": 683,
+    "train:repetition": 683,
+    "train:ridge": 683,
+    "train:texture": 683,
+    "train:composite": 682,
+    "train:branch": 682,
+    "development:composite": 43,
+    "development:branch": 43,
+    "development:contour": 43,
+    "development:repetition": 43,
+    "development:ridge": 42,
+    "development:texture": 42,
+    "test:texture": 43,
+    "test:composite": 43,
+    "test:branch": 43,
+    "test:contour": 43,
+    "test:repetition": 42,
+    "test:ridge": 42,
+    "compositional:composite": 128
+  },
+  "sources_unchanged": true,
+  "optimizer_steps": 0,
+  "natural_images": 0
+}

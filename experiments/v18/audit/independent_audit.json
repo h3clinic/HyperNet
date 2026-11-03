@@ -1,0 +1,114 @@
+{
+  "status": "passed",
+  "scope": "Independent read-only recorded-evidence audit; no inference, training, rendering, natural pixel access or downloads.",
+  "independent_metric_values_checked": 546,
+  "synthetic_scene_box_ious_checked": 1280,
+  "real_box_ious_checked": 1152,
+  "real_pilot": {
+    "v17_saved_dev_subset": {
+      "positive_pairs": 42,
+      "negative_pairs": 534,
+      "localized_hits": 1,
+      "false_presence": 26,
+      "micro_presence_auroc": 0.4462725164972356,
+      "micro_localized_recall": 0.023809523809523808,
+      "micro_false_positive_rate": 0.04868913857677903,
+      "unthresholded_micro_localized_recall": 0.047619047619047616,
+      "cutoff": -1.7402358055114744,
+      "unthresholded_localized_hits": 2
+    },
+    "v18_proof512": {
+      "positive_pairs": 42,
+      "negative_pairs": 534,
+      "localized_hits": 0,
+      "false_presence": 26,
+      "micro_presence_auroc": 0.4556358123773855,
+      "micro_localized_recall": 0.0,
+      "micro_false_positive_rate": 0.04868913857677903,
+      "unthresholded_micro_localized_recall": 0.047619047619047616,
+      "cutoff": 1.270300626754761,
+      "unthresholded_localized_hits": 2
+    }
+  },
+  "synthetic_pair_test": {
+    "quartets": 256,
+    "near_negative_auroc": 0.573455810546875,
+    "wrong_family_auroc": 0.9723968505859375,
+    "all_nonmatch_auroc": 0.7729263305664062,
+    "paired_near_ranking_accuracy": 0.6328125,
+    "paired_wrong_ranking_accuracy": 0.9765625,
+    "positive_recall": 0.19140625,
+    "near_negative_false_positive_rate": 0.13671875,
+    "wrong_reference_false_positive_rate": 0.0078125,
+    "mean_near_logit_gap": 0.24007882288424298,
+    "mean_wrong_logit_gap": 3.072517615451943
+  },
+  "synthetic_scene_test": {
+    "v17": {
+      "episodes": 256,
+      "positives": 129,
+      "negatives": 127,
+      "localized_true_positives": 1,
+      "false_alarms": 4,
+      "localized_recall": 0.007751937984496124,
+      "false_positive_rate": 0.031496062992125984,
+      "false_alarms_per10000": 314.96062992125985,
+      "presence_auroc": 0.5660745895135201,
+      "unthresholded_top1_localized_recall": 0.3333333333333333,
+      "proposal_recall_at100": 0.8527131782945736
+    },
+    "v18": {
+      "episodes": 256,
+      "positives": 129,
+      "negatives": 127,
+      "localized_true_positives": 5,
+      "false_alarms": 11,
+      "localized_recall": 0.03875968992248062,
+      "false_positive_rate": 0.08661417322834646,
+      "false_alarms_per10000": 866.1417322834645,
+      "presence_auroc": 0.5495330525544772,
+      "unthresholded_top1_localized_recall": 0.31007751937984496,
+      "proposal_recall_at100": 0.8527131782945736
+    }
+  },
+  "training_ledger": {
+    "quartets": 4096,
+    "unique_images": 16384,
+    "unique_target_programs": 2387,
+    "stream_sha256": "da69d7519f947ece92b84e886596bbc6c30a896a5d227e9aaec973637b6ec31e",
+    "source_hashes": 7,
+    "checkpoint_checks": [
+      {
+        "path": "runs\\proof512\\initial.pt",
+        "file_sha256": "f2c5235cf03032a2da365c8db63850b8ddca314647fd794ddd9b2b5fc1a54653",
+        "state_sha256": "bec23c510b78a76a6a17137ac7d6326db91d4004a6c07e3205ce0df18a0d6784"
+      },
+      {
+        "path": "runs\\proof512\\final.pt",
+        "file_sha256": "bfcf9b4c52098f1ece3c45be6eb68f627355c93fad330a83abcfd36b073a52cc",
+        "state_sha256": "e52b4af0845b312ff7d69385cf0601fffc139a03f927efe5e92991d94bda4c47"
+      }
+    ],
+    "scope": "All saved records verified; not full image regeneration."
+  },
+  "allowlist": {
+    "source_files_verified": 19,
+    "artifact_files_verified": 30,
+    "mismatches": [],
+    "manifest_sha256": "94c1fd0ed2029f55de473696973b21d8ed20b9cd199b192693f14b448f9baa35",
+    "readme_sha256": "fd9bcdbeb4ff3d5bd0956967bf69d1e96c724480e73c284891c7ae96fb9ac091"
+  },
+  "split_checks": {
+    "dev_manifest_contains_no_test_key": true,
+    "selected_old_dev_photos": 48,
+    "train_eval_target_ids_disjoint": true,
+    "evaluation_split_target_ids_disjoint": true,
+    "limitations": "Whole-program disjointness does not establish primitive-subprogram or nuisance-distribution disjointness; code paths reviewed for no fresh-real-TEST access."
+  },
+  "issues": [
+    {
+      "severity": "wording",
+      "detail": "README historical claim that no v17 fresh TEST scores were accessed to develop v18 is broader than runner/file isolation; aggregate v17 outcome was already known. State runner-level/per-example isolation and exploratory DEV-only status."
+    }
+  ]
+}

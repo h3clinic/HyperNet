@@ -1,0 +1,29 @@
+{
+  "plan": {
+    "format": "hypernet.v18.synthetic_proof_eval.v1",
+    "splits": {
+      "development": {
+        "seed": 1877,
+        "count": 256
+      },
+      "test": {
+        "seed": 1888,
+        "count": 256
+      },
+      "compositional": {
+        "seed": 1888,
+        "count": 128
+      }
+    },
+    "nominal_development_fpr": 0.05,
+    "scene_iou_threshold": 0.5,
+    "proposal_limit": 100,
+    "patch_batch": 32,
+    "scene_query_max_side": 192,
+    "checkpoint_rule": "Final512updates only; no checkpoint selection",
+    "natural_images": 0,
+    "v17_fresh_real_test_access": false,
+    "interpretation": "Pair discrimination and full-scene detection are separate metrics; only same-scene v17/v18 results are directly comparable"
+  },
+  "evaluation_source_sha256": "4910149dcd2a32c139933e9efa567875c2970d06d0f207fdf3bcafea8d8044b2"
+}

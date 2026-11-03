@@ -1,0 +1,164 @@
+{
+  "status": "complete",
+  "config": {
+    "steps": 512,
+    "batch_size": 8,
+    "stream_seed": 1801,
+    "initialization_seed": 1801,
+    "device": "cuda",
+    "workers": 2,
+    "threads": 2,
+    "learning_rate": 0.0005,
+    "final_learning_rate": 5e-05,
+    "weight_decay": 0.0001,
+    "gradient_clip": 5.0,
+    "dtype": "float32",
+    "amp": false,
+    "deterministic_algorithms": true,
+    "data_format": "hypernet.pair_curriculum.v18.1",
+    "data_config": {
+      "format": "hypernet.pair_curriculum.v18.1",
+      "size": 96,
+      "query_size": 192,
+      "default_seed": 1801,
+      "frozen_generator_sha256": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+      "max_nuisance_attempts": 32,
+      "minimum_final_changed_rgb_pixels": 8,
+      "changed_channel_threshold": 3,
+      "crop_margins": [
+        0.0,
+        0.05,
+        0.15,
+        0.3
+      ],
+      "jitter_as_fraction_of_margin": 0.75,
+      "crop_rule": "Same crop enclosing both amodal objects and every changed RGB pixel, plus1pixel guard; identical border RGB padding and aspect-preserving resize; fixed tight-union/full-slot fallbacks",
+      "wrong_reference_rule": "Different macro family, absent from every complete and contained scene program; same reference nuisance/background draw",
+      "compositional_wrong_reference_exception": "All programs are composite; use a different ordered constituent-family pair",
+      "positive_pair": [
+        "support",
+        "positive"
+      ],
+      "near_negative_pair": [
+        "support",
+        "near_negative"
+      ],
+      "wrong_family_pair": [
+        "wrong_support",
+        "positive"
+      ],
+      "natural_training_images": 0,
+      "borrowed_pretrained_weights": false
+    },
+    "model_format": "hypernet.pair_ranker.v18.1",
+    "checkpoint_rule": "Final planned update only; no real/syntheticTEST checkpoint selection",
+    "loss": "0.5 positive logistic +0.25 same-support near-negative logistic +0.25 wrong-support positive-patch logistic",
+    "source_sha256": {
+      "hypernet_v18/pair_ranker.py": "5f50f88bd784bac286f3080c11a62ef7b3fc7d66928423c7b31f56c885520623",
+      "hypernet_v18/pair_curriculum.py": "8d0f4939e7dbc1f4f522b82a0510006c8c5a3b46f09bac8cdf8cefbcd472ebdf",
+      "hypernet_v18/reranker.py": "a289cf632bbebf7bf97aba5d14823bd3255ca999c7c6abfed3c00ba78f773b4b",
+      "hypernet_v18/vendor_v17/local_relation_model.py": "b8dd441576334cfd436dfb12b2ab48f3a859311178f0b78ef0ce15a3f5ffdde9",
+      "hypernet_v18/vendor_v17/scene_curriculum.py": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+      "hypernet_v18/vendor_v17/local_matcher.py": "28a79e622bd48738a67dff126ed2bd4be83fa42a4c9c515c98974d29b57022f8",
+      "scripts/train_pair_ranker.py": "2c248ef15e65e076d301c9dbdeee43ec01473e9886a3a6bf8313252e5f498bd1"
+    }
+  },
+  "own_initialization": {
+    "kind": "Own synthetic-only v17 initialization, not third-party pretrained weights",
+    "checkpoint_sha256": "e7f0c787ee963ce615c73fea355fc65a9a6ec39bee37561a931657967a756892",
+    "state_sha256": "db030621a2de347ec7a530b72ee4cdf4b1f147dab3082334285e056b55400016",
+    "prior_optimizer_steps": 2048,
+    "prior_training_episodes": 32768,
+    "prior_training_views": 65536,
+    "prior_source_sha256": {
+      "hypernet/scene_curriculum.py": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+      "hypernet/local_relation_model.py": "b8dd441576334cfd436dfb12b2ab48f3a859311178f0b78ef0ce15a3f5ffdde9",
+      "scripts/train_local.py": "0e86d9678c9da2fd7dc5da37ff327d1fc4636b2619a599e093deca4f26a137fe"
+    }
+  },
+  "optimizer_steps": 512,
+  "training_quartets": 4096,
+  "training_rgb_views": 16384,
+  "cumulative_own_processed_rgb_views": 81920,
+  "unique_target_programs": 2387,
+  "unique_input_images": 16384,
+  "minimum_final_changed_rgb_pixels": 8,
+  "input_stream_sha256": "da69d7519f947ece92b84e886596bbc6c30a896a5d227e9aaec973637b6ec31e",
+  "source_sha256": {
+    "hypernet_v18/pair_ranker.py": "5f50f88bd784bac286f3080c11a62ef7b3fc7d66928423c7b31f56c885520623",
+    "hypernet_v18/pair_curriculum.py": "8d0f4939e7dbc1f4f522b82a0510006c8c5a3b46f09bac8cdf8cefbcd472ebdf",
+    "hypernet_v18/reranker.py": "a289cf632bbebf7bf97aba5d14823bd3255ca999c7c6abfed3c00ba78f773b4b",
+    "hypernet_v18/vendor_v17/local_relation_model.py": "b8dd441576334cfd436dfb12b2ab48f3a859311178f0b78ef0ce15a3f5ffdde9",
+    "hypernet_v18/vendor_v17/scene_curriculum.py": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+    "hypernet_v18/vendor_v17/local_matcher.py": "28a79e622bd48738a67dff126ed2bd4be83fa42a4c9c515c98974d29b57022f8",
+    "scripts/train_pair_ranker.py": "2c248ef15e65e076d301c9dbdeee43ec01473e9886a3a6bf8313252e5f498bd1"
+  },
+  "checkpoints": [
+    {
+      "path": "runs\\proof512\\initial.pt",
+      "sha256": "f2c5235cf03032a2da365c8db63850b8ddca314647fd794ddd9b2b5fc1a54653",
+      "state_sha256": "bec23c510b78a76a6a17137ac7d6326db91d4004a6c07e3205ce0df18a0d6784",
+      "optimizer_steps": 0,
+      "quartets": 0,
+      "rgb_views": 0,
+      "cumulative_own_processed_rgb_views": 65536
+    },
+    {
+      "path": "runs\\proof512\\final.pt",
+      "sha256": "bfcf9b4c52098f1ece3c45be6eb68f627355c93fad330a83abcfd36b073a52cc",
+      "state_sha256": "e52b4af0845b312ff7d69385cf0601fffc139a03f927efe5e92991d94bda4c47",
+      "optimizer_steps": 512,
+      "quartets": 4096,
+      "rgb_views": 16384,
+      "cumulative_own_processed_rgb_views": 81920
+    }
+  ],
+  "ledger_shards": [
+    {
+      "path": "runs\\proof512\\ledger\\000001_000064.npz",
+      "sha256": "b9d40cbe9e387229e03b312d912f547a13d35f35dd8537d5762d691486ef9714",
+      "steps": 64
+    },
+    {
+      "path": "runs\\proof512\\ledger\\000065_000128.npz",
+      "sha256": "a068136358ba768c01cb199f3073a3308ace305b3d4341a84184a8d945d7bfd5",
+      "steps": 64
+    },
+    {
+      "path": "runs\\proof512\\ledger\\000129_000192.npz",
+      "sha256": "de96ec6d5e538f3552a5451afb9ed41eacbc28d4528114e1a9b5befd2a06113f",
+      "steps": 64
+    },
+    {
+      "path": "runs\\proof512\\ledger\\000193_000256.npz",
+      "sha256": "a28726f73316d08c1658ad132dba79233b951d79d33e0313859bfed3e13f4fbe",
+      "steps": 64
+    },
+    {
+      "path": "runs\\proof512\\ledger\\000257_000320.npz",
+      "sha256": "32b296b067a788d0945dfb68bebf4e8c84a488fe3dd5477f2dbe37d9b070e68f",
+      "steps": 64
+    },
+    {
+      "path": "runs\\proof512\\ledger\\000321_000384.npz",
+      "sha256": "dabea4c1a7fb106e1b992a8220b11a11517c02f93a01e79ad7f3bb5557db6608",
+      "steps": 64
+    },
+    {
+      "path": "runs\\proof512\\ledger\\000385_000448.npz",
+      "sha256": "34ccebf997e8c688ec85eb3d4a9e10e2a000d76c1c53d73a41a872d5023ae531",
+      "steps": 64
+    },
+    {
+      "path": "runs\\proof512\\ledger\\000449_000512.npz",
+      "sha256": "6ca89ef68853a088c7083e6bb0a5278a53a096725dac92c950606441debf66bb",
+      "steps": 64
+    }
+  ],
+  "history_sha256": "eb9df58b8b7a9f779e55ba2bac3b189a7b9dede81547c2889ae3fc1dddb32229",
+  "state_sha256": "e52b4af0845b312ff7d69385cf0601fffc139a03f927efe5e92991d94bda4c47",
+  "seconds": 121.44066389999352,
+  "peak_cuda_bytes": 908472320,
+  "natural_training_images": 0,
+  "borrowed_pretrained_weights": false
+}
