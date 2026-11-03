@@ -1,0 +1,259 @@
+{
+  "provenance": {
+    "format": "hypernet.dense_matcher.v19.1",
+    "model_format": "hypernet.dense_match.v19.1",
+    "checkpoint_sha256": "7ac9a64500da7f4d615fde54dec684e6061b547ae60db5b87f7d96887d9a96c2",
+    "state_sha256": "2565afe99960206eff6822913d2d6d82fc14e9a086b0a21531d1e26fa89f5982",
+    "model_config": {
+      "local_channels": 32,
+      "context_channels": 32,
+      "roi_side": 8,
+      "initialization": "random",
+      "borrowed_pretrained_weights": false,
+      "sampler": "Explicit bilinear gathers with border clamping",
+      "support_extent": "Predicted foreground >0.5; full support if empty; minimum4featurecells",
+      "descriptor_stride": 2,
+      "descriptor_pixel_origin": 0.5,
+      "query_pyramid_scales": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "normalized_roi_side": 96.0
+    },
+    "parameters": {
+      "total_parameters": 111076,
+      "trainable_parameters": 0,
+      "descriptor_channels": 64,
+      "reference_tokens": 64,
+      "region_tokens": 64,
+      "correlation_entries_per_roi": 4096,
+      "config": {
+        "local_channels": 32,
+        "context_channels": 32,
+        "roi_side": 8,
+        "initialization": "random",
+        "borrowed_pretrained_weights": false,
+        "sampler": "Explicit bilinear gathers with border clamping",
+        "support_extent": "Predicted foreground >0.5; full support if empty; minimum4featurecells",
+        "descriptor_stride": 2,
+        "descriptor_pixel_origin": 0.5,
+        "query_pyramid_scales": [
+          0.5,
+          1.0,
+          2.0
+        ],
+        "normalized_roi_side": 96.0
+      }
+    },
+    "max_side": 384,
+    "proposal_limit": 100,
+    "nms_iou": 0.5,
+    "region_batch": 128,
+    "proposals": {
+      "scales": [
+        0.1,
+        0.16,
+        0.24,
+        0.36,
+        0.54,
+        0.8,
+        1.0
+      ],
+      "aspects": [
+        0.33,
+        0.5,
+        0.75,
+        1.0,
+        1.5,
+        2.0,
+        3.0
+      ],
+      "spacing_fraction": 0.4,
+      "minimum_side": 8,
+      "edge_limit": 256,
+      "edge_thresholds": [
+        60,
+        140
+      ],
+      "edge_dilation_sides": [
+        1,
+        3,
+        7
+      ],
+      "selection": "All deduplicated generic anchors and bounded edge boxes; no learned filtering"
+    },
+    "reference_batching": "All supplied independent reference banks batched over each region chunk",
+    "support_preprocessing": "128px aspect-preserving resize and median-border letterbox",
+    "query_preprocessing": "Downscale only to max_side; aspect preserved; pad to multiple4",
+    "score": "Conditional IoU-quality logit; no confidence prefilter",
+    "cache": "Query pyramid and all sampled ROIs independent of reference; one encode per image",
+    "training": {
+      "optimizer_steps": 4096,
+      "training_episodes": 32768,
+      "training_views": 65536,
+      "raw_rgb_views": 65536,
+      "encoder_scale_views": 131072,
+      "roi_training_examples": 2097152
+    },
+    "natural_training_images": 0,
+    "borrowed_pretrained_weights": false,
+    "real_weight_updates": 0,
+    "reference_images": 1
+  },
+  "oracle_crops": {
+    "pipeline_learned_head": {
+      "correct_top1": 7,
+      "cases": 42,
+      "top1_accuracy": 0.16666666666666666,
+      "mean_pairwise_correct": 0.6164502164502165,
+      "pooled_correct_vs_wrong_reference_auroc": 0.5760960771973989,
+      "median_true_rank": 4.5,
+      "mean_true_score": -1.9510566648982821,
+      "mean_wrong_score": -2.2058260055825047,
+      "mean_eligible_wrong_references": 10.80952380952381
+    },
+    "pipeline_bidirectional_max_cosine": {
+      "correct_top1": 6,
+      "cases": 42,
+      "top1_accuracy": 0.14285714285714285,
+      "mean_pairwise_correct": 0.5595238095238095,
+      "pooled_correct_vs_wrong_reference_auroc": 0.5616215649255297,
+      "median_true_rank": 5.5,
+      "mean_true_score": 0.7127551635106405,
+      "mean_wrong_score": 0.702643157561445,
+      "mean_eligible_wrong_references": 10.80952380952381
+    },
+    "pipeline_foreground_mutual_geometry": {
+      "correct_top1": 3,
+      "cases": 42,
+      "top1_accuracy": 0.07142857142857142,
+      "mean_pairwise_correct": 0.4956709956709957,
+      "pooled_correct_vs_wrong_reference_auroc": 0.5187224669603525,
+      "median_true_rank": 6.0,
+      "mean_true_score": 0.018596718708674114,
+      "mean_wrong_score": 0.018490916068792867,
+      "mean_eligible_wrong_references": 10.80952380952381
+    },
+    "symmetric_learned_head": {
+      "correct_top1": 4,
+      "cases": 42,
+      "top1_accuracy": 0.09523809523809523,
+      "mean_pairwise_correct": 0.6400432900432902,
+      "pooled_correct_vs_wrong_reference_auroc": 0.60614642332704,
+      "median_true_rank": 4.0,
+      "mean_true_score": -1.2507948506446112,
+      "mean_wrong_score": -1.5238703072382884,
+      "mean_eligible_wrong_references": 10.80952380952381
+    },
+    "symmetric_bidirectional_max_cosine": {
+      "correct_top1": 3,
+      "cases": 42,
+      "top1_accuracy": 0.07142857142857142,
+      "mean_pairwise_correct": 0.6350649350649351,
+      "pooled_correct_vs_wrong_reference_auroc": 0.6172645269561569,
+      "median_true_rank": 4.5,
+      "mean_true_score": 0.7495695040339515,
+      "mean_wrong_score": 0.7319129201284064,
+      "mean_eligible_wrong_references": 10.80952380952381
+    },
+    "symmetric_foreground_mutual_geometry": {
+      "correct_top1": 4,
+      "cases": 42,
+      "top1_accuracy": 0.09523809523809523,
+      "mean_pairwise_correct": 0.5077922077922078,
+      "pooled_correct_vs_wrong_reference_auroc": 0.5288441367736522,
+      "median_true_rank": 6.0,
+      "mean_true_score": 0.02556352989215936,
+      "mean_wrong_score": 0.02522723958930124,
+      "mean_eligible_wrong_references": 10.80952380952381
+    }
+  },
+  "reference_self": {
+    "pipeline_learned_head": {
+      "correct_top1": 11,
+      "cases": 12,
+      "top1_accuracy": 0.9166666666666666,
+      "mean_pairwise_correct": 0.9924242424242425,
+      "pooled_correct_vs_wrong_reference_auroc": 0.9829545454545454,
+      "median_true_rank": 1.0,
+      "mean_true_score": 0.23905269180734953,
+      "mean_wrong_score": -1.7837311149095043,
+      "mean_eligible_wrong_references": 11.0
+    },
+    "pipeline_bidirectional_max_cosine": {
+      "correct_top1": 9,
+      "cases": 12,
+      "top1_accuracy": 0.75,
+      "mean_pairwise_correct": 0.9772727272727272,
+      "pooled_correct_vs_wrong_reference_auroc": 0.9122474747474748,
+      "median_true_rank": 1.0,
+      "mean_true_score": 0.7902301053206126,
+      "mean_wrong_score": 0.7185277536962972,
+      "mean_eligible_wrong_references": 11.0
+    },
+    "pipeline_foreground_mutual_geometry": {
+      "correct_top1": 6,
+      "cases": 12,
+      "top1_accuracy": 0.5,
+      "mean_pairwise_correct": 0.8030303030303032,
+      "pooled_correct_vs_wrong_reference_auroc": 0.8030303030303029,
+      "median_true_rank": 2.0,
+      "mean_true_score": 0.02997030837771793,
+      "mean_wrong_score": 0.020746127434187765,
+      "mean_eligible_wrong_references": 11.0
+    },
+    "symmetric_learned_head": {
+      "correct_top1": 12,
+      "cases": 12,
+      "top1_accuracy": 1.0,
+      "mean_pairwise_correct": 1.0,
+      "pooled_correct_vs_wrong_reference_auroc": 1.0,
+      "median_true_rank": 1.0,
+      "mean_true_score": 1.6774330139160156,
+      "mean_wrong_score": -1.3604353712589452,
+      "mean_eligible_wrong_references": 11.0
+    },
+    "symmetric_bidirectional_max_cosine": {
+      "correct_top1": 12,
+      "cases": 12,
+      "top1_accuracy": 1.0,
+      "mean_pairwise_correct": 1.0,
+      "pooled_correct_vs_wrong_reference_auroc": 1.0,
+      "median_true_rank": 1.0,
+      "mean_true_score": 0.9999999701976776,
+      "mean_wrong_score": 0.7353830346555421,
+      "mean_eligible_wrong_references": 11.0
+    },
+    "symmetric_foreground_mutual_geometry": {
+      "correct_top1": 12,
+      "cases": 12,
+      "top1_accuracy": 1.0,
+      "mean_pairwise_correct": 1.0,
+      "pooled_correct_vs_wrong_reference_auroc": 1.0,
+      "median_true_rank": 1.0,
+      "mean_true_score": 0.1304794621343414,
+      "mean_wrong_score": 0.026836811261477345,
+      "mean_eligible_wrong_references": 11.0
+    }
+  },
+  "seconds": 2.8439999999973224,
+  "scores_sha256": "93144f9377bf3318ad68216c36898f02e5fc9a8d234a01bf7c0db574312acf14",
+  "cases_sha256": "78effc35fe7a902fe94bff1c585e97ca96c61aead8ff2510c01ca14034cc73c0",
+  "formulas": {
+    "bidirectional_max_cosine": "0.5*(mean_i max_j C_ij + mean_j max_i C_ij)",
+    "foreground_mutual_geometry": "sum_i s_i*a_i*(1-r_i)/sum_i s_i; a_i=sum_j M_ij*q_j",
+    "definitions": {
+      "C": "Final descriptor cosine matrix",
+      "M": "Existing row-softmax times column-softmax including the model frozen temperature and dustbin",
+      "s_q": "Existing predicted support/query foreground probabilities; no oracle mask",
+      "r": "Existing per-reference-token normalized pair-distance geometry_residual",
+      "geometry_penalty_coefficient": 1.0,
+      "zero_denominator_guard": 1e-08
+    },
+    "selection": "Both formulas specified before inference; no natural fitting or hyperparameter sweep"
+  },
+  "learned_head_is_control_not_refitted": true,
+  "natural_fitted_parameters": 0,
+  "fresh_test_pixels_or_records_opened": 0
+}

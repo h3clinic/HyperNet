@@ -1,0 +1,25 @@
+{
+  "format": "hypernet.v19.full_renderer_preflight.v2",
+  "created_utc": "2026-11-03T13:43:39.580096+00:00",
+  "splits": {
+    "train": 32768,
+    "dev": 256,
+    "test": 256,
+    "compositional": 128
+  },
+  "planned_episodes": 33408,
+  "seed": 1901,
+  "difficulty": 1.0,
+  "workers": 8,
+  "chunksize": 8,
+  "ordered": true,
+  "source_sha256": {
+    "hypernet_v19/__init__.py": "6310572360af73efc5d3b88a981baae6362b1cca0507ce0d933bcd392c42c903",
+    "hypernet_v19/curriculum.py": "c3c4ecb012df20fdf5169466ead7fc66e5fdec87460415f4267869b817f4c147"
+  },
+  "script_sha256": "e50daab7b82ccbd18cac21b6706684914bd004ab168454340f65c9e701448195",
+  "natural_images": 0,
+  "gpu_used": false,
+  "model_training": false,
+  "scope": "Actual renderer and its visibility guards for every planned synthetic index. No index/program replacement and no independent full-scene rerender; raw image hashes, program IDs and metadata hashes bind the realized scenes for later training-consumption comparison."
+}

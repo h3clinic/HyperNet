@@ -1,0 +1,53 @@
+{
+  "scope": "Synthetic-only mathematical 2D pretraining, one fixed natural reference crop per target; natural development labels used for engineering and cutoff calibration, never weight updates",
+  "measured_previous_failures": {
+    "old_dev_positive_pairs": 42,
+    "v17_proposal_coverage_at_iou_0p5": 14,
+    "v18_unthresholded_correct_top1": 2,
+    "v18_calibrated_correct_top1": 0,
+    "v18_oracle_crop_correct_reference": 6,
+    "v18_reference_self_match_correct": 12,
+    "v18_reference_self_match_total": 12,
+    "v18_training_positive_crops_below_iou_0p5": "24/64 audited crops",
+    "v18_median_same_type_nuisance_distance_over_near_edit_distance": 8.23,
+    "v19_generic_proposal_dev_coverage_at_iou_0p5": "42/42 pairs before learned ranking; many more proposals, not a detection-accuracy result"
+  },
+  "changes_to_test": [
+    "Independent deformations and materials of reusable 2D construction graphs, including type-defining micro-hole patterns",
+    "Near negatives change one connection or local mark; independently check the edit remains visibly different after rendering, occlusion and camera effects",
+    "Keep local and contextual descriptors separate and supervise the final matching representation with visible point correspondences",
+    "Do not label common parts in near-negative objects as mismatches solely because the whole type differs",
+    "Train conditional region scores against IoU-qualified targets and nonmatching regions, not loose crop-presence labels",
+    "Use generic multiscale regions and explicit image-pyramid scale normalization instead of a pretrained-on-synthetic objectness filter that excludes true regions"
+  ],
+  "prior_art": [
+    {
+      "title": "SuperPoint: Self-Supervised Interest Point Detection and Description",
+      "url": "https://arxiv.org/abs/1712.07629",
+      "relevance": "Synthetic shape bootstrapping and descriptor correspondence supervision are established ideas. Its adaptation to natural imagery is not evidence that our mathematical-only category recognizer will transfer."
+    },
+    {
+      "title": "Learning to See by Looking at Noise",
+      "url": "https://arxiv.org/abs/2106.05963",
+      "relevance": "Procedural image statistics and diversity can support representation pretraining. This does not establish one-reference semantic detection without natural training."
+    },
+    {
+      "title": "SegRCDB: Semantic Segmentation via Formula-Driven Supervised Learning",
+      "url": "https://arxiv.org/abs/2309.17083",
+      "relevance": "Formula-driven masks and occluding 2D shapes support pretraining; reported downstream segmentation results include natural-data fine-tuning."
+    },
+    {
+      "title": "Few-Shot Pattern Detection via Template Matching and Regression",
+      "url": "https://chipmunk-g4.github.io/TMR/",
+      "relevance": "Spatially retained exemplar matching and template-conditioned localization already exist; the published approach uses a frozen backbone."
+    }
+  ],
+  "novelty_status": "Engineering hypothesis under test; no verified new algorithm or superiority claim",
+  "limits": [
+    "Procedural program identities are not natural semantic categories",
+    "Visible counterfactual differences do not prove disjoint type distributions under every allowed deformation",
+    "Matching broad image statistics is a diagnostic coverage check, not proof of natural-image transfer",
+    "Generic proposal coverage is an upper bound before ranking and acceptance; more proposals can increase false alarms",
+    "Fresh photos will be new to HyperNet development, not proven unseen by the pretrained OWL baseline"
+  ]
+}

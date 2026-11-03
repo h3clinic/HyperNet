@@ -1,0 +1,6 @@
+numpy
+Pillow
+opencv-python
+transformers
+safetensors
+# Install a suitable torch build separately.

@@ -1,0 +1,15 @@
+{
+  "runs": [
+    {
+      "run": "runs/primary_4096",
+      "successful_optimizer_steps": 12,
+      "consumed_synthetic_episodes": 96,
+      "error_type": "AmbiguousRenderError",
+      "reason": "Caught AmbiguousRenderError in DataLoader worker process 0.\nOriginal Traceback (most recent call last):\n  File \"<workspace>\\work\\hypernet_cuda_env\\Lib\\site-packages\\torch\\utils\\data\\_utils\\worker.py\", line 375, in _worker_loop\n    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"<workspace>\\work\\hypernet_cuda_env\\Lib\\site-packages\\torch\\utils\\data\\_utils\\fetch.py\", line 54, in fetch\n    data = [self.dataset[idx] for idx in possibly_batched_index]\n            ~~~~~~~~~~~~^^^^^\n  File \"<workspace>\\outputs\\hypernet_v19\\scripts\\train_v19.py\", line 53, in __getitem__\n    def __getitem__(self,index):return episode(index,split='train',seed=self.seed,difficulty=self.difficulty)\n                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<workspace>\\outputs\\hypernet_v19\\hypernet_v19\\curriculum.py\", line 415, in episode\n    raise AmbiguousRenderError(f'No valid draw for {split}:{index}; {rejected[-1:]}')\nhypernet_v19.curriculum.AmbiguousRenderError: No valid draw for train:99; ['A structural edit is not visible after rendering/occlusion/camera effects']\n",
+      "used_as_final_initialization": false,
+      "final_checkpoint_created": false,
+      "note": "Aborted attempt is disclosed separately; successful run restarts from random initialization, not these partial weights."
+    }
+  ],
+  "counts_are_additional_compute_not_final_model_training": true
+}

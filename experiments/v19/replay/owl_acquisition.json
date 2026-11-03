@@ -1,0 +1,17 @@
+{
+  "format": "hypernet.published_owl_acquisition.v1",
+  "repo_id": "google/owlvit-base-patch32",
+  "revision": "cbc355fb364588351c5d51c7f74465e8e7ec6f72",
+  "files": {
+    "config.json": {
+      "sha256": "b5934e0d2933194b8a85f93674e577feaa1a1ba2dc1d143b2d5e5305ff7a9d7c"
+    },
+    "preprocessor_config.json": {
+      "sha256": "2010d320cd2c68a8bb1de69aaa8f89daf173ef17cc22a30e4baf44b2f0e9bb6e"
+    },
+    "model.safetensors": {
+      "sha256": "4dbe0399f0b7d7c8dddf1535a98769cc30743bebc877aea681998c8d984ce52b"
+    }
+  },
+  "scope": "Metadata only, derived from measured official OWL provenance. No Google weights are redistributed."
+}

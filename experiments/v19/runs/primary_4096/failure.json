@@ -1,0 +1,35 @@
+{
+  "status": "failed",
+  "run": "runs/primary_4096",
+  "step_attempted": 12,
+  "successful_steps_recorded": 12,
+  "consumed_episodes_recorded": 96,
+  "error_type": "AmbiguousRenderError",
+  "error": "Caught AmbiguousRenderError in DataLoader worker process 0.\nOriginal Traceback (most recent call last):\n  File \"<workspace>\\work\\hypernet_cuda_env\\Lib\\site-packages\\torch\\utils\\data\\_utils\\worker.py\", line 375, in _worker_loop\n    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"<workspace>\\work\\hypernet_cuda_env\\Lib\\site-packages\\torch\\utils\\data\\_utils\\fetch.py\", line 54, in fetch\n    data = [self.dataset[idx] for idx in possibly_batched_index]\n            ~~~~~~~~~~~~^^^^^\n  File \"<workspace>\\outputs\\hypernet_v19\\scripts\\train_v19.py\", line 53, in __getitem__\n    def __getitem__(self,index):return episode(index,split='train',seed=self.seed,difficulty=self.difficulty)\n                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<workspace>\\outputs\\hypernet_v19\\hypernet_v19\\curriculum.py\", line 415, in episode\n    raise AmbiguousRenderError(f'No valid draw for {split}:{index}; {rejected[-1:]}')\nhypernet_v19.curriculum.AmbiguousRenderError: No valid draw for train:99; ['A structural edit is not visible after rendering/occlusion/camera effects']\n",
+  "deterministic_algorithms": true,
+  "determinism_disabled": false,
+  "updated_utc": "2026-11-03T13:37:06.484565+00:00",
+  "source_sha256": {
+    "hypernet_v19/__init__.py": "6310572360af73efc5d3b88a981baae6362b1cca0507ce0d933bcd392c42c903",
+    "hypernet_v19/curriculum.py": "97a874199b1394916a7e328c1a25426d4f6cec09f73481609cefb18d64184ccf",
+    "hypernet_v19/model.py": "16d6bb303694dbb8a208edb2587e68c2a65dc95b381894b1f3ca11c3f03fbacf",
+    "hypernet_v19/proposals.py": "1c7797b532cc9d168bde984504b8fc703d7bd769ac9d987f9258a426b169c0b5",
+    "hypernet_v19/training.py": "b91c69a48ab25f0453e6bcf525d5b3861033216c8b2c78d37c785de5e5a57f01",
+    "scripts/train_v19.py": "96a3ecb8ea6e3d04812edfc56030629c7c962a8e217cac6e69a8ccd2d7f404b5"
+  },
+  "input_stream_sha256": "0730e724763f5e497ae1d657c1ff2befc1ffd75a9be3a04dedde1f9def3032a3",
+  "ledger_shards": [
+    {
+      "path": "runs/primary_4096/ledger/000001_000012.npz",
+      "sha256": "c7aee899a7c135c7cadef53f6db16374d84207070c1af8ef80e527966a42fe30",
+      "steps": 12
+    }
+  ],
+  "history_shards": [
+    {
+      "path": "runs/primary_4096/history/000001_000012.jsonl",
+      "sha256": "6dbd44688e7d5f0e6e68aa23f3c57cc90ed6cfd912880b0b80325794da13797e",
+      "steps": 12
+    }
+  ]
+}

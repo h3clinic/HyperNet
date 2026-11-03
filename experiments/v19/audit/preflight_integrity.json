@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "result_sha256": "692f97668d9f05006a107d2b24957ba0486732e35927cfed36b89e228cd46390",
+  "episode_hashes_sha256": "4ffff87e901bc580e72d55638ded1f033609e875e77ea3339249f718ce03b10a",
+  "shards_verified": 131,
+  "all_shard_fields_equal_final_arrays": true,
+  "all_planned_indices_and_positive_labels_verified": true,
+  "source_snapshot_and_current_source_match": true,
+  "split_summary": {
+    "train": {
+      "episodes": 32768,
+      "positive": 16384,
+      "negative": 16384
+    },
+    "dev": {
+      "episodes": 256,
+      "positive": 128,
+      "negative": 128
+    },
+    "test": {
+      "episodes": 256,
+      "positive": 128,
+      "negative": 128
+    },
+    "compositional": {
+      "episodes": 128,
+      "positive": 64,
+      "negative": 64
+    }
+  },
+  "scope": "Read-only integrity verification of complete planned renderer evidence; actual training consumption must still be compared after training.",
+  "preflight_vs_trainer_ledger_sample_check": {
+    "indices": [
+      0,
+      99,
+      255,
+      511
+    ],
+    "fields": [
+      "raw_support_sha256",
+      "raw_query_sha256",
+      "program_id",
+      "near_program_id",
+      "replacement_program_id",
+      "instance_program_ids",
+      "metadata_sha256",
+      "family"
+    ],
+    "passed": true
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "valid": true,
+  "run": "runs/primary_4096_r2",
+  "completion_sha256": "87f50a0764b6e93d360f9bb892b1c8d386b2ff03b98295f111d74aecaa02b0dc",
+  "optimizer_steps": 4096,
+  "training_episodes": 32768,
+  "positive_episodes": 16384,
+  "negative_episodes": 16384,
+  "valid_point_correspondences": 792090,
+  "unique_support_rgb": 32768,
+  "unique_query_rgb": 32768,
+  "unique_rgb_across_input_roles": 65536,
+  "unique_structural_programs": 32768,
+  "family_episode_counts": {
+    "3": 8149,
+    "0": 8317,
+    "1": 8112,
+    "2": 8190
+  },
+  "input_stream_sha256": "9662ef293e025ef19efb5619f3a1cad197e46ed1126198ba5fc6f015e2510240",
+  "exact_replayed_episode_indices": [],
+  "checkpoint_count": 2,
+  "history_and_ledger_shards_verified": true,
+  "natural_images_read": 0,
+  "gpu_used": false
+}

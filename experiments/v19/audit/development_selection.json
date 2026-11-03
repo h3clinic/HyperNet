@@ -1,0 +1,31 @@
+{
+  "format": "hypernet.v19.development_selection.v1",
+  "selected_utc": "2026-11-03T15:05:55.767574+00:00",
+  "selected_method": {
+    "factory": "hypernet_v19.matcher:FrozenDenseMatcher",
+    "checkpoint": "outputs/hypernet_v19/runs/primary_4096_r2/final.pt",
+    "device": "cuda",
+    "kwargs": {
+      "max_side": 384,
+      "proposal_limit": 100,
+      "nms_iou": 0.5,
+      "region_batch": 128
+    }
+  },
+  "checkpoint_sha256": "7ac9a64500da7f4d615fde54dec684e6061b547ae60db5b87f7d96887d9a96c2",
+  "configuration_sha256": "55d67b0c63f28f15574b6c105b072fd260113da34c6eec26d5a8abd226ea3bcc",
+  "development_summary": {
+    "path": "outputs/hypernet_v19/evaluation/development_summary.json",
+    "sha256": "a1c843289e8be086da5ed08302123020ecd51413277f9fa53d92f0fa93c61103"
+  },
+  "decision_authority": "Root selected learned FrozenDenseMatcher at384px after inspecting the authorized existing-DEV controls.",
+  "reasons": [
+    "640px did not improve ordinary localization and reduced measured crop/self performance.",
+    "Analytic maxcosine and mutual-geometry controls did not beat the learned head on the exact42crop cases; no optional analytic full-photo pilot was run."
+  ],
+  "data_use": "12boxed references plus existing48DEVphotos used in development; subsequent288DEV scores will fit final global cutoffs. No natural-image weight updates.",
+  "final_checkpoint_only": true,
+  "fresh_test_pixels_accessed": 0,
+  "full_dev_started_before_selection": false,
+  "next_step": "Run all12targets on all288oldDEVphotos using the selected entry; root freeze required before freshTEST acquisition."
+}

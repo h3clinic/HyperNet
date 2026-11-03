@@ -1,0 +1,15 @@
+{
+  "format": "hypernet.v19.runtime_context.v1",
+  "timing_scope": "Observed local execution times, not an isolated performance benchmark",
+  "training": {
+    "fixed_run": "runs/primary_4096_r2",
+    "recorded_seconds": 3283.398440899997,
+    "hardware_delays": "Recorded timing includes two host stalls and temporary GPU thermal throttling",
+    "cooling_intervention": "Not performed because psutil was unavailable; no process was suspended and no system power, fan, or driver settings were changed"
+  },
+  "evaluation": {
+    "gpu_natural_methods": "Scheduled sequentially",
+    "parallel_cpu_work": "Synthetic learned/random diagnostics run on CPU with two torch threads during natural-photo evaluation",
+    "interpretation": "Do not use these wall times to claim a speed advantage over another model or an independently benchmarked implementation"
+  }
+}

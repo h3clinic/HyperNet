@@ -1,0 +1,41 @@
+{
+  "format": "hypernet.v19.synthetic_diagnosis.v1",
+  "seed": 1901,
+  "difficulty": 1.0,
+  "split_counts": {
+    "dev": 128,
+    "test": 128,
+    "compositional": 64
+  },
+  "index_rule": "Indices0..count-1 within each disjoint procedural split",
+  "primary": "Top1 full generic-search localization IoU>=0.5 at global5%DEV-negative scene-max FPR",
+  "calibration": "Each model/protocol uses only its own DEV negative maxima; cutoff fixed for TEST and composition",
+  "diagnostics": [
+    "GT-object-box-only search",
+    "Training-style64sampled-ROI search",
+    "Oracle correct-target versus near-negative ranking",
+    "Final-descriptor correspondence candidate accuracy",
+    "Generic proposal coverage before scoring and after top100NMS"
+  ],
+  "ground_truth_policy": "Masks/points/boxes enter privileged diagnostics only; full search receives RGB alone",
+  "small_sample_limit": "Only64TEST and32compositional negatives; false-alarms/10000 is a rate conversion, not10000observations",
+  "selection": "Frozen final and matching random checkpoint only; no selection or weight updates",
+  "device": "cpu",
+  "created_utc": "2026-11-03T15:07:09.033474+00:00",
+  "data_format": "hypernet.graph_curriculum.v19.1",
+  "checkpoint_sha256": {
+    "learned": "7ac9a64500da7f4d615fde54dec684e6061b547ae60db5b87f7d96887d9a96c2",
+    "random": "026787bc82971cb9b20296a5af060e03a5fa12f29d09f3eb36d9bb9f046e43f0"
+  },
+  "source_sha256": {
+    "hypernet_v19/model.py": "16d6bb303694dbb8a208edb2587e68c2a65dc95b381894b1f3ca11c3f03fbacf",
+    "hypernet_v19/matcher.py": "c28dbd8f3b80980adb09d1df9768e9d8b2dc235504874b057cec240d1b45dec8",
+    "hypernet_v19/proposals.py": "1c7797b532cc9d168bde984504b8fc703d7bd769ac9d987f9258a426b169c0b5",
+    "hypernet_v19/training.py": "b91c69a48ab25f0453e6bcf525d5b3861033216c8b2c78d37c785de5e5a57f01",
+    "hypernet_v19/curriculum.py": "c3c4ecb012df20fdf5169466ead7fc66e5fdec87460415f4267869b817f4c147",
+    "scripts/diagnose_synthetic.py": "e9caf97fb95f33071c727f975ca38dd74b8e277ac10edf00e69933cd6b6ac1d2",
+    "evaluation/vendor_v17/detection_metrics.py": "e975987e33335e412155d865962005d71a32e6adb9479964511f9b15c7cdc719"
+  },
+  "natural_images_opened": 0,
+  "optimizer_updates": 0
+}

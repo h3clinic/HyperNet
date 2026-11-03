@@ -1,0 +1,14 @@
+{
+  "all_final_training_episodes_matched": 32768,
+  "compared_fields": [
+    "raw_support_sha256",
+    "raw_query_sha256",
+    "program_id",
+    "near_program_id",
+    "replacement_program_id",
+    "instance_program_ids",
+    "metadata_sha256"
+  ],
+  "preflight_result_sha256": "692f97668d9f05006a107d2b24957ba0486732e35927cfed36b89e228cd46390",
+  "scope": "Exact raw RGB/program/metadata hashes, not an independent proof of GPU execution"
+}

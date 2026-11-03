@@ -1,0 +1,38 @@
+{
+  "format": "hypernet.v19.evaluation_config.v1",
+  "methods": {
+    "v19": {
+      "factory": "hypernet_v19.matcher:FrozenDenseMatcher",
+      "checkpoint": "outputs/hypernet_v19/runs/primary_4096_r2/final.pt",
+      "device": "cuda",
+      "kwargs": {
+        "max_side": 384,
+        "proposal_limit": 100,
+        "nms_iou": 0.5,
+        "region_batch": 128
+      }
+    },
+    "v17": {
+      "factory": "vendor_v17.local_matcher:FrozenLocalMatcher",
+      "checkpoint": "outputs/hypernet_v17/runs/primary_2048/final.pt",
+      "device": "cuda",
+      "kwargs": {
+        "max_side": 384,
+        "proposal_limit": 100,
+        "nms_iou": 0.4,
+        "pre_nms": 1000
+      }
+    },
+    "raw_template": {
+      "factory": "vendor_v17.raw_template:RawTemplate",
+      "device": "cpu",
+      "kwargs": {}
+    },
+    "owlvit_base_patch32": {
+      "factory": "vendor_v17.owl_baseline:OwlBaseline",
+      "checkpoint": "outputs/hypernet_published_compare/checkpoints/owlvit-base-patch32",
+      "device": "cuda",
+      "kwargs": {}
+    }
+  }
+}

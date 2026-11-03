@@ -1,0 +1,132 @@
+{
+  "data_plan_sha256": "4ad2886c2150ba0cf787c43595350e032a7b14fe5fdeb38c77d5bfa09c2368d1",
+  "split": "test",
+  "photos": 576,
+  "nominal_pairs": 6912,
+  "input_bindings": {
+    "evaluation/results/v19_test/arrays.npz": "c072e7a86a1577fd013b62d24ca7cf0e6adaca455ef6c3658ba517caff8421cd",
+    "evaluation/results/v19_dev/calibration.json": "5b99dcf613b2dca86969d7e6a18470b20416fbc9f996a065b9b1dbe9e2d4937c",
+    "evaluation/results/v17_test/arrays.npz": "8985eb853efa56183775521e5613fa69a833ca1f16d9a50a297412b7023e6d50",
+    "evaluation/results/v17_dev/calibration.json": "9be3bf63e08245b457004db56258e9aa6267cc032a275e490133508fdf749289",
+    "evaluation/results/raw_template_test/arrays.npz": "ae43668f134deef98027aef3a6818681dc9c5ea03e87bafb92824642ad1deebe",
+    "evaluation/results/raw_template_dev/calibration.json": "f51bb215dea2fafe04f288f5b26e93439fe3dcccc1f3534176bfc361f50483e9",
+    "evaluation/results/owlvit_base_patch32_test/arrays.npz": "626f9d161aebbd0bcd25287e952309d0ff1a6a574646afb398b60269c812d0a9",
+    "evaluation/results/owlvit_base_patch32_dev/calibration.json": "06b2e4f25b24aba27f4a862834777a2943c059fb925a7e2732a3285f9eea67ba"
+  },
+  "operating_points": {
+    "primary_5pct": {
+      "v19_minus_v17": {
+        "macro_localized_recall": {
+          "estimate": -2.0667989417989417e-05,
+          "ci95": [
+            -0.0036764705882352945,
+            0.0036764705882352945
+          ]
+        },
+        "macro_false_positive_rate": {
+          "estimate": 0.002304302184431513,
+          "ci95": [
+            -0.006115413161492354,
+            0.010604071792549422
+          ]
+        },
+        "observed_win_gate": false
+      },
+      "v19_minus_raw_template": {
+        "macro_localized_recall": {
+          "estimate": 0.0013020833333333333,
+          "ci95": [
+            0.0,
+            0.004310344827586207
+          ]
+        },
+        "macro_false_positive_rate": {
+          "estimate": 0.005274792213559948,
+          "ci95": [
+            -0.002623781000956058,
+            0.013099781615387674
+          ]
+        },
+        "observed_win_gate": false
+      },
+      "v19_minus_owlvit_base_patch32": {
+        "macro_localized_recall": {
+          "estimate": -0.5267071639043356,
+          "ci95": [
+            -0.5614171725572831,
+            -0.4915728826189262
+          ]
+        },
+        "macro_false_positive_rate": {
+          "estimate": 0.006335001050896773,
+          "ci95": [
+            -0.0017468256599274443,
+            0.014111394485388147
+          ]
+        },
+        "observed_win_gate": false
+      }
+    },
+    "secondary_1pct": {
+      "v19_minus_v17": {
+        "macro_localized_recall": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "macro_false_positive_rate": {
+          "estimate": -0.0031631621301946777,
+          "ci95": [
+            -0.006899122448927099,
+            0.00044671261374204735
+          ]
+        },
+        "observed_win_gate": false
+      },
+      "v19_minus_raw_template": {
+        "macro_localized_recall": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "macro_false_positive_rate": {
+          "estimate": 3.442559972883369e-05,
+          "ci95": [
+            -0.0035666681925210393,
+            0.0034341575348495017
+          ]
+        },
+        "observed_win_gate": false
+      },
+      "v19_minus_owlvit_base_patch32": {
+        "macro_localized_recall": {
+          "estimate": -0.39515548901089614,
+          "ci95": [
+            -0.4321841843819534,
+            -0.3586662964804082
+          ]
+        },
+        "macro_false_positive_rate": {
+          "estimate": -0.005163911420619315,
+          "ci95": [
+            -0.008630866426516701,
+            -0.0016053719330104779
+          ]
+        },
+        "observed_win_gate": false
+      }
+    }
+  },
+  "bootstrap": {
+    "replicates": 5000,
+    "seed": 190031,
+    "unit": "photo, all12 targets/methods carried together",
+    "fixed": "Supports and DEV cutoffs",
+    "interval": "95% percentile"
+  },
+  "zero_hit_caution": "Percentile bootstrap is degenerate when no observed hits occur; [0,0] does not prove exact population equivalence."
+}

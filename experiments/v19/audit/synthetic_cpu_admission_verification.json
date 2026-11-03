@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "natural_images_opened": 0,
+  "optimizer_updates": 0,
+  "comparison_sha256": "a8171d5d3353775eff7b4ebf2be6fb76e081895b9ee2fffa341d2af668b37de8",
+  "plan_sha256": "09f01a5deb3ef9d21881b08bec7b9df1188fd90ffb92af62265b411307bce17e",
+  "model_bindings": {
+    "learned": {
+      "results_sha256": "d5c5db1e72f54f22e6bbb243263fdadda291582816090c5450f64cc4a1a7cf65",
+      "records_sha256": "90edcef8c74c04f9188c39713b1521d95ae389d77db2209b1a67aec91b5c8d6d",
+      "episodes": 320,
+      "input_stream_sha256": "f26d65ab93621be54bbf0efcd4246692ff2971a12da2cd463c370b164f6a9eae"
+    },
+    "random": {
+      "results_sha256": "4955a66bbbfd1795e58e51a5c4d2a4b737c558b43dce0cc473df6d6d4ea23178",
+      "records_sha256": "cc1d83c36753f93cc28931b0ccd9f27eb58b84f2a611b1d2fccd6c1a588769f5",
+      "episodes": 320,
+      "input_stream_sha256": "f26d65ab93621be54bbf0efcd4246692ff2971a12da2cd463c370b164f6a9eae"
+    }
+  },
+  "all_numeric_summaries_recomputed": true,
+  "scope": "Recorded input identities, checkpoint/source bindings and numeric replay; no rendering or model inference."
+}

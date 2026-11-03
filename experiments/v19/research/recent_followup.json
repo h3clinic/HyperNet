@@ -1,0 +1,21 @@
+{
+  "review_date": "2026-11-03",
+  "timing": "Reviewed while the fixed v19 training run was already executing; no training change or checkpoint selection follows from this review",
+  "sources": [
+    {
+      "title": "FDSML: Formula-Driven Supervised Metric Learning with Parameter-Aware Triplet Loss",
+      "url": "https://arxiv.org/html/2610.39423v1",
+      "submitted": "2026-10-29",
+      "findings": "Uses a million procedural fractal images and parameter-derived triplets. Reported retrieval gains follow natural-data fine-tuning with Proxy-Anchor; they are not one-reference, synthetic-only detection scores. Its parameter-distance ordering agrees with rendered structural ordering in some sampling regimes but falls below chance in others.",
+      "implication_for_hypernet": "Relational supervision from mathematical generators is existing prior art. Validate which geometric variations should preserve a type instead of assuming parameter distance is semantic distance. The present v19 graph edits, visible-point correspondences and conditional region scoring differ from that experiment, but those differences do not establish novelty or superiority."
+    },
+    {
+      "title": "Stylized Structural Patterns for Improved Neural Network Pre-training",
+      "url": "https://arxiv.org/abs/2506.19465",
+      "submitted": "2025-06-24",
+      "findings": "Combines neural fractal structure with visual features transferred from a small real-image set. Its reported gains include classification and generative tasks.",
+      "implication_for_hypernet": "This supports investigating the appearance gap but does not validate our mathematical-only constraint. Importing real-photo style features or a borrowed generator would change the current experiment."
+    }
+  ],
+  "current_run_action": "Keep the fixed model and curriculum. Complete the planned synthetic diagnostics and untouched natural-photo comparison before drawing a transfer conclusion."
+}

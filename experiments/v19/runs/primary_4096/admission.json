@@ -1,0 +1,153 @@
+{
+  "created_utc": "2026-11-03T13:36:52.780618+00:00",
+  "config": {
+    "format": "hypernet.v19.training_configuration.v1",
+    "run": "runs/primary_4096",
+    "episodes": 32768,
+    "steps": 4096,
+    "batch_size": 8,
+    "initialization_seed": 1919,
+    "stream_seed": 1901,
+    "device": "cuda",
+    "workers": 6,
+    "threads": 4,
+    "difficulty": 1.0,
+    "learning_rate": 0.0005,
+    "final_learning_rate": 5e-05,
+    "weight_decay": 0.0001,
+    "gradient_clip": 5.0,
+    "optimizer": "AdamW",
+    "dtype": "float32",
+    "amp": false,
+    "deterministic_algorithms": true,
+    "cublas_workspace_config": ":4096:8",
+    "model_format": "hypernet.dense_match.v19.1",
+    "model_config": {
+      "local_channels": 32,
+      "context_channels": 32,
+      "roi_side": 8,
+      "initialization": "random",
+      "borrowed_pretrained_weights": false,
+      "sampler": "Explicit bilinear gathers with border clamping",
+      "support_extent": "Predicted foreground >0.5; full support if empty; minimum4featurecells",
+      "descriptor_stride": 2,
+      "descriptor_pixel_origin": 0.5,
+      "query_pyramid_scales": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "normalized_roi_side": 96.0
+    },
+    "curriculum_format": "hypernet.graph_curriculum.v19.1",
+    "curriculum_config": {
+      "format": "hypernet.graph_curriculum.v19.1",
+      "support_size": 128,
+      "query_size": 256,
+      "point_count": 64,
+      "natural_images": 0,
+      "borrowed_weights": false,
+      "identity": "Typed planar construction graph and part parameters",
+      "positive": "Independent geometry, material, lighting and background draws",
+      "negative": "One edge addition/deletion or one local micro-hole pattern change, under matched rendering",
+      "split": "Disjoint program seed namespaces, no natural category names"
+    },
+    "training_objective_config": {
+      "rois_per_episode": 64,
+      "reference_slot_jitters": 16,
+      "other_object_jitters": 4,
+      "target_match_iou": 0.5,
+      "quality_target": "IoU if target present and IoU>=0.5, otherwise0",
+      "roi_loss_weight": 1.0,
+      "correspondence_loss_weight": 0.2,
+      "foreground_loss_weight": 0.25,
+      "correspondence_candidate_grid_side": 16,
+      "correspondence_sigma_pixels": 2.0,
+      "point_target": "Gaussian distribution around visible canonical counterpart, otherwise dustbin",
+      "correspondence_scene_filter": "Positive scenes only; global type absence never labels all shared local parts unmatched",
+      "correspondence_negative_filter": "Exclude256-grid sites within2pixels of non-target objects; canonical sites plus target/background grid remain",
+      "foreground_use": "Auxiliary predicted weighting only; no ground-truth mask in model forward"
+    },
+    "proposal_config": {
+      "scales": [
+        0.1,
+        0.16,
+        0.24,
+        0.36,
+        0.54,
+        0.8,
+        1.0
+      ],
+      "aspects": [
+        0.33,
+        0.5,
+        0.75,
+        1.0,
+        1.5,
+        2.0,
+        3.0
+      ],
+      "spacing_fraction": 0.4,
+      "minimum_side": 8,
+      "edge_limit": 256,
+      "edge_thresholds": [
+        60,
+        140
+      ],
+      "edge_dilation_sides": [
+        1,
+        3,
+        7
+      ],
+      "selection": "All deduplicated generic anchors and bounded edge boxes; no learned filtering"
+    },
+    "source_sha256": {
+      "hypernet_v19/__init__.py": "6310572360af73efc5d3b88a981baae6362b1cca0507ce0d933bcd392c42c903",
+      "hypernet_v19/curriculum.py": "97a874199b1394916a7e328c1a25426d4f6cec09f73481609cefb18d64184ccf",
+      "hypernet_v19/model.py": "16d6bb303694dbb8a208edb2587e68c2a65dc95b381894b1f3ca11c3f03fbacf",
+      "hypernet_v19/proposals.py": "1c7797b532cc9d168bde984504b8fc703d7bd769ac9d987f9258a426b169c0b5",
+      "hypernet_v19/training.py": "b91c69a48ab25f0453e6bcf525d5b3861033216c8b2c78d37c785de5e5a57f01",
+      "scripts/train_v19.py": "96a3ecb8ea6e3d04812edfc56030629c7c962a8e217cac6e69a8ccd2d7f404b5"
+    },
+    "natural_training_images": 0,
+    "borrowed_pretrained_weights": false,
+    "checkpoint_rule": "Random initialization and final planned update only; no DEV/TEST checkpoint selection",
+    "smoke": false,
+    "ledger_flush_steps": 64,
+    "raw_rgb_views_per_episode": 2,
+    "encoder_scale_views_per_episode": 4
+  },
+  "approval_plan_sha256": "35718bdb0cb41260d96f08958b2e46cc24e92dd3dce724fd495e44aebbe299fb",
+  "parameters": {
+    "total_parameters": 111076,
+    "trainable_parameters": 111076,
+    "descriptor_channels": 64,
+    "reference_tokens": 64,
+    "region_tokens": 64,
+    "correlation_entries_per_roi": 4096,
+    "config": {
+      "local_channels": 32,
+      "context_channels": 32,
+      "roi_side": 8,
+      "initialization": "random",
+      "borrowed_pretrained_weights": false,
+      "sampler": "Explicit bilinear gathers with border clamping",
+      "support_extent": "Predicted foreground >0.5; full support if empty; minimum4featurecells",
+      "descriptor_stride": 2,
+      "descriptor_pixel_origin": 0.5,
+      "query_pyramid_scales": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "normalized_roi_side": 96.0
+    }
+  },
+  "torch_version": "2.14.1+cu130",
+  "numpy_version": "2.5.3",
+  "opencv_version": "5.0.0",
+  "cuda_device": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "ledger_encoding": "Raw RGB SHA256 hashes bytes only. Tensor hashes and stream entries include dtype+shape+bytes. Program IDs parse32bytes from hex.",
+  "supervision": "RGB enters the model; synthetic masks/correspondence/ROI-quality targets supervise losses. No natural photos or external pretrained weights.",
+  "history_policy": "Immutable atomic64-step history/ledger shards after successful optimizer updates; final history.jsonl assembled atomically."
+}

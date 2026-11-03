@@ -1,0 +1,198 @@
+{
+  "format": "hypernet.v19.published_benchmark.v1",
+  "completed": true,
+  "data_plan": {
+    "path": "evaluation/data/plan.json",
+    "sha256": "af255959d8640854e59537cb89a889664e81cbf18c20fdb90c07f85144281510"
+  },
+  "test_acquisition": {
+    "path": "evaluation/data/acquisition_public.json",
+    "sha256": "ec30e84a80008c4cb6c34b40c35184847ed7c07a54c8b466b3c5cec8dc7135ef"
+  },
+  "code_files": {
+    "hypernet_v19/__init__.py": "6310572360af73efc5d3b88a981baae6362b1cca0507ce0d933bcd392c42c903",
+    "hypernet_v19/model.py": "16d6bb303694dbb8a208edb2587e68c2a65dc95b381894b1f3ca11c3f03fbacf",
+    "hypernet_v19/matcher.py": "c28dbd8f3b80980adb09d1df9768e9d8b2dc235504874b057cec240d1b45dec8",
+    "hypernet_v19/proposals.py": "1c7797b532cc9d168bde984504b8fc703d7bd769ac9d987f9258a426b169c0b5",
+    "hypernet_v19/training.py": "b91c69a48ab25f0453e6bcf525d5b3861033216c8b2c78d37c785de5e5a57f01",
+    "hypernet_v19/curriculum.py": "c3c4ecb012df20fdf5169466ead7fc66e5fdec87460415f4267869b817f4c147",
+    "scripts/train_v19.py": "96a3ecb8ea6e3d04812edfc56030629c7c962a8e217cac6e69a8ccd2d7f404b5",
+    "scripts/diagnose_synthetic.py": "e9caf97fb95f33071c727f975ca38dd74b8e277ac10edf00e69933cd6b6ac1d2",
+    "scripts/profile_model.py": "a88affd1f804d52206088b30e8088597de6608087ed428ea5472cce7282e241a",
+    "scripts/profile_inference.py": "085578ca78fff5bc1a1c919156e63b8333440b87489759492dcad95677604573",
+    "scripts/fixed_fit.py": "cc5ef76dfd34adb51a90433e69aec032383971f7e78df21631802ea2fa12985a",
+    "scripts/preview_data.py": "840fa86e86c70f6268e5fc195a8a9f2fe88b863d50504c4870f4623a098e55ba",
+    "tests/test_model.py": "138044e9b8bf78a242942602b73d257bafc553a4b3164533b80de58cc8bc5196",
+    "tests/test_curriculum.py": "4b62e87da9faa978755b11141b6bef88430fb3d9dd55a0d553578e0e6d17275e",
+    "tests/test_synthetic_diagnostics.py": "6a58fcd9b9591241356260eee35981ec806c282fc0bcfbf7f9278abbb949ea17",
+    "evaluation/vendor_v17/__init__.py": "642e062e996e09ef601530678133ea6e96e0bd0eada16f71a60c6e5d4a55a0d4",
+    "evaluation/vendor_v17/local_matcher.py": "28a79e622bd48738a67dff126ed2bd4be83fa42a4c9c515c98974d29b57022f8",
+    "evaluation/vendor_v17/local_relation_model.py": "b8dd441576334cfd436dfb12b2ab48f3a859311178f0b78ef0ce15a3f5ffdde9",
+    "evaluation/vendor_v17/detection_metrics.py": "e975987e33335e412155d865962005d71a32e6adb9479964511f9b15c7cdc719",
+    "evaluation/vendor_v17/owl_baseline.py": "5850403174a6f2fc073ccf769c38582c085f645dfafea984e47df46551ac29d1",
+    "evaluation/vendor_v17/raw_template.py": "63fe4143ea3f8764cf13f0792976b037c17c9d3d36f2f6ee368660fe4001fb69",
+    "scripts/verify_training_v19.py": "1345e833044e287e17f208bc3ed2f4667f9f7896059ceba510b93ca130f96e2d",
+    "experiments/full_preflight_v2/source_snapshot/hypernet_v19/__init__.py": "6310572360af73efc5d3b88a981baae6362b1cca0507ce0d933bcd392c42c903",
+    "experiments/full_preflight_v2/source_snapshot/hypernet_v19/curriculum.py": "c3c4ecb012df20fdf5169466ead7fc66e5fdec87460415f4267869b817f4c147",
+    "experiments/full_preflight_v2/source_snapshot/preflight.py": "e50daab7b82ccbd18cac21b6706684914bd004ab168454340f65c9e701448195",
+    "scripts/replay_published.py": "60a1644584a062bc974a34c4cfb5b00dc803848c4bdf6e7303b8b8c0f90848b2"
+  },
+  "methods": {
+    "v19": {
+      "inference": {
+        "max_side": 384,
+        "proposal_limit": 100,
+        "nms_iou": 0.5,
+        "region_batch": 128
+      },
+      "calibration": {
+        "path": "evaluation/results/v19_dev/calibration.json",
+        "sha256": "5b99dcf613b2dca86969d7e6a18470b20416fbc9f996a065b9b1dbe9e2d4937c"
+      },
+      "expected": {
+        "dev": {
+          "arrays": {
+            "path": "evaluation/results/v19_dev/arrays.npz",
+            "sha256": "812f59f25dd19dd063da02547b41d7f3fdaeeea9aa50139b6b601e16f90be267"
+          },
+          "result": {
+            "path": "evaluation/results/v19_dev/result.json",
+            "sha256": "26fd7fb31391d915bbf946c5e6ff29b64ec665a05788759e4f66041401cc123f"
+          }
+        },
+        "test": {
+          "arrays": {
+            "path": "evaluation/results/v19_test/arrays.npz",
+            "sha256": "c072e7a86a1577fd013b62d24ca7cf0e6adaca455ef6c3658ba517caff8421cd"
+          },
+          "result": {
+            "path": "evaluation/results/v19_test/result.json",
+            "sha256": "ba10317debfd524cba173272bf24d4d5b5a6daf0169edd999459e7131bd4f68e"
+          }
+        }
+      },
+      "checkpoint_sha256": "7ac9a64500da7f4d615fde54dec684e6061b547ae60db5b87f7d96887d9a96c2",
+      "bundled_checkpoint": "runs/primary_4096_r2/final.pt"
+    },
+    "v17": {
+      "inference": {
+        "max_side": 384,
+        "proposal_limit": 100,
+        "nms_iou": 0.4,
+        "pre_nms": 1000
+      },
+      "calibration": {
+        "path": "evaluation/results/v17_dev/calibration.json",
+        "sha256": "9be3bf63e08245b457004db56258e9aa6267cc032a275e490133508fdf749289"
+      },
+      "expected": {
+        "dev": {
+          "arrays": {
+            "path": "evaluation/results/v17_dev/arrays.npz",
+            "sha256": "32e5a53b09c77fe452b9a6b6fabfd36f05792449aa833e5e21fbb50d824b8885"
+          },
+          "result": {
+            "path": "evaluation/results/v17_dev/result.json",
+            "sha256": "6da79e613fd3bee3b998e1a8910010741ad47637810d4283eac559ce250768de"
+          }
+        },
+        "test": {
+          "arrays": {
+            "path": "evaluation/results/v17_test/arrays.npz",
+            "sha256": "8985eb853efa56183775521e5613fa69a833ca1f16d9a50a297412b7023e6d50"
+          },
+          "result": {
+            "path": "evaluation/results/v17_test/result.json",
+            "sha256": "725e1432552251b2b42b0c7b24accdc329e4a7e37d0ae0b5edd428a3146b3821"
+          }
+        }
+      },
+      "checkpoint_sha256": "e7f0c787ee963ce615c73fea355fc65a9a6ec39bee37561a931657967a756892",
+      "suggested_repository_checkpoint": "experiments/v17/runs/primary_2048/final.pt"
+    },
+    "raw_template": {
+      "inference": {},
+      "calibration": {
+        "path": "evaluation/results/raw_template_dev/calibration.json",
+        "sha256": "f51bb215dea2fafe04f288f5b26e93439fe3dcccc1f3534176bfc361f50483e9"
+      },
+      "expected": {
+        "dev": {
+          "arrays": {
+            "path": "evaluation/results/raw_template_dev/arrays.npz",
+            "sha256": "81912f42e9b0f64095d9b631878343b0a81c62a55d59e108100ad8878ab81ca0"
+          },
+          "result": {
+            "path": "evaluation/results/raw_template_dev/result.json",
+            "sha256": "c6d62046ad08ad896fcfa0d701055fb4071352140beb0aef4f46a98a8e2daee5"
+          }
+        },
+        "test": {
+          "arrays": {
+            "path": "evaluation/results/raw_template_test/arrays.npz",
+            "sha256": "ae43668f134deef98027aef3a6818681dc9c5ea03e87bafb92824642ad1deebe"
+          },
+          "result": {
+            "path": "evaluation/results/raw_template_test/result.json",
+            "sha256": "ccf35abfcf0158f375ec674a837caa6fb19271f8582637b626cafba956578248"
+          }
+        }
+      }
+    },
+    "owlvit_base_patch32": {
+      "inference": {},
+      "calibration": {
+        "path": "evaluation/results/owlvit_base_patch32_dev/calibration.json",
+        "sha256": "06b2e4f25b24aba27f4a862834777a2943c059fb925a7e2732a3285f9eea67ba"
+      },
+      "expected": {
+        "dev": {
+          "arrays": {
+            "path": "evaluation/results/owlvit_base_patch32_dev/arrays.npz",
+            "sha256": "6900260bd59acd746f6a80e5bf98867ca55a53b6d09780621e5e14fcf29f4a77"
+          },
+          "result": {
+            "path": "evaluation/results/owlvit_base_patch32_dev/result.json",
+            "sha256": "e4bbd84ad4d2abb308fbcd325d40931ce839ec0501f0b1cfdfd9e73970b63a94"
+          }
+        },
+        "test": {
+          "arrays": {
+            "path": "evaluation/results/owlvit_base_patch32_test/arrays.npz",
+            "sha256": "626f9d161aebbd0bcd25287e952309d0ff1a6a574646afb398b60269c812d0a9"
+          },
+          "result": {
+            "path": "evaluation/results/owlvit_base_patch32_test/result.json",
+            "sha256": "47c63b6c3b45482b3eaafefca31862d28affbf0e1f4be30c85d5cdc083534728"
+          }
+        }
+      },
+      "owl_checkpoint_files": {
+        "config.json": "b5934e0d2933194b8a85f93674e577feaa1a1ba2dc1d143b2d5e5305ff7a9d7c",
+        "preprocessor_config.json": "2010d320cd2c68a8bb1de69aaa8f89daf173ef17cc22a30e4baf44b2f0e9bb6e",
+        "model.safetensors": "4dbe0399f0b7d7c8dddf1535a98769cc30743bebc877aea681998c8d984ce52b"
+      },
+      "owl_repo_id": "google/owlvit-base-patch32",
+      "owl_revision": "cbc355fb364588351c5d51c7f74465e8e7ec6f72",
+      "owl_acquisition": {
+        "path": "replay/owl_acquisition.json",
+        "sha256": "004e83fb1f5a159357ec9427a1655040e1063f045ca8d1d06611ae3a08b90875"
+      }
+    }
+  },
+  "random_checkpoint": {
+    "path": "runs/primary_4096_r2/random.pt",
+    "sha256": "026787bc82971cb9b20296a5af060e03a5fa12f29d09f3eb36d9bb9f046e43f0",
+    "state_sha256": "a963e8766bbfb5491f0f04bbc240aec7ce81179b93c01352d9256b1eabd8def4",
+    "optimizer_steps": 0,
+    "training_episodes": 0,
+    "training_views": 0,
+    "raw_rgb_views": 0,
+    "encoder_scale_views": 0,
+    "roi_training_examples": 0
+  },
+  "notes": [
+    "Random synthetic/DEV diagnostics are separate from the four-method fresh benchmark.",
+    "All full real TEST methods use exact frozen DEV thresholds. No result superiority is inferred from oracle crops."
+  ]
+}
