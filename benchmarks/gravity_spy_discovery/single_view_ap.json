@@ -1,0 +1,93 @@
+{
+ "format": "hypernet.gravity_spy_discovery_single_view_ap.v0.2",
+ "cohort": "v0.5 O3b TEST (second read, descriptive only)",
+ "duration": "0.5",
+ "classes": [
+  "1080Lines",
+  "1400Ripples",
+  "Air_Compressor",
+  "Blip",
+  "Extremely_Loud",
+  "Koi_Fish",
+  "Light_Modulation",
+  "Low_Frequency_Burst",
+  "Low_Frequency_Lines",
+  "Paired_Doves",
+  "Power_Line",
+  "Repeating_Blips",
+  "Scattered_Light",
+  "Scratchy",
+  "Tomte",
+  "Violin_Mode",
+  "Whistle"
+ ],
+ "v05_fused4_mean_ap": {
+  "hybrid": 0.4999528111648527,
+  "random": 0.4950491261762557,
+  "trained": 0.4768867417409966
+ },
+ "single_view_mean_ap": {
+  "hybrid": 0.5990863212725024,
+  "random": 0.5812571618080377,
+  "trained": 0.5471777738031528
+ },
+ "per_class": {
+  "hybrid": {
+   "1080Lines": 0.7281488316522785,
+   "1400Ripples": 0.4787737290603967,
+   "Air_Compressor": 0.9426433636655668,
+   "Blip": 0.8447721717116604,
+   "Extremely_Loud": 0.7551923960238954,
+   "Koi_Fish": 0.7987828600505846,
+   "Light_Modulation": 0.20562623552533663,
+   "Low_Frequency_Burst": 0.9825562960031008,
+   "Low_Frequency_Lines": 0.29805148841303436,
+   "Paired_Doves": 0.07355179854011593,
+   "Power_Line": 0.96586002888658,
+   "Repeating_Blips": 0.28982934833195545,
+   "Scattered_Light": 0.7300214895286629,
+   "Scratchy": 0.5159452076541573,
+   "Tomte": 0.9583523867424064,
+   "Violin_Mode": 0.233207497951985,
+   "Whistle": 0.38315233189082315
+  },
+  "random": {
+   "1080Lines": 0.5760423173603826,
+   "1400Ripples": 0.3641161706038526,
+   "Air_Compressor": 0.8740177130406681,
+   "Blip": 0.8511115065493101,
+   "Extremely_Loud": 0.8538814684004029,
+   "Koi_Fish": 0.8483952806772873,
+   "Light_Modulation": 0.12692264757897675,
+   "Low_Frequency_Burst": 0.9819088310725321,
+   "Low_Frequency_Lines": 0.38653553547475905,
+   "Paired_Doves": 0.028366019776738395,
+   "Power_Line": 0.8685489303852337,
+   "Repeating_Blips": 0.22898345787656257,
+   "Scattered_Light": 0.8276637430236875,
+   "Scratchy": 0.5728460452597168,
+   "Tomte": 0.9457844613681766,
+   "Violin_Mode": 0.16792378461744004,
+   "Whistle": 0.37832383767091204
+  },
+  "trained": {
+   "1080Lines": 0.6549603928538272,
+   "1400Ripples": 0.619767577054111,
+   "Air_Compressor": 0.7876234257003691,
+   "Blip": 0.7545440602741782,
+   "Extremely_Loud": 0.7300714796621862,
+   "Koi_Fish": 0.8421094496134826,
+   "Light_Modulation": 0.5804621557619812,
+   "Low_Frequency_Burst": 0.6256390550917473,
+   "Low_Frequency_Lines": 0.33691526762473134,
+   "Paired_Doves": 0.06720809277340736,
+   "Power_Line": 0.5585179795689196,
+   "Repeating_Blips": 0.3515964725871347,
+   "Scattered_Light": 0.8043514914150317,
+   "Scratchy": 0.31102442992314816,
+   "Tomte": 0.81591521387444,
+   "Violin_Mode": 0.16980416674896123,
+   "Whistle": 0.29151144412594004
+  }
+ }
+}
