@@ -1,0 +1,3497 @@
+{
+  "format": "hypernet.gravity_spy_oneshot.v0.2",
+  "protocol_sha256": "79d2ac66404a876972135147c4f809aac5d8d9bd3d0d7840c40e5d24b7d2c85d",
+  "selected": {
+    "best_cnn_readout": "random_early_concat",
+    "best_trained_readout": "trained_stem_grid6"
+  },
+  "test_items": 1179,
+  "methods": {
+    "trained_stem_grid6": {
+      "per_class": {
+        "1080Lines": {
+          "ap": 0.478174234766087,
+          "auroc": 0.9575978742249778,
+          "recall_at_1pct_dev_far": 0.272,
+          "false_alarms_per_10k": 85.03100088573959,
+          "top20_precision": 0.5800000000000001,
+          "base_rate": 0.04240882103477523
+        },
+        "1400Ripples": {
+          "ap": 0.33384247509063886,
+          "auroc": 0.9816524216524216,
+          "recall_at_1pct_dev_far": 0.4888888888888888,
+          "false_alarms_per_10k": 124.78632478632478,
+          "top20_precision": 0.23000000000000004,
+          "base_rate": 0.007633587786259542
+        },
+        "Air_Compressor": {
+          "ap": 0.7615260449307154,
+          "auroc": 0.9704843304843302,
+          "recall_at_1pct_dev_far": 0.7777777777777778,
+          "false_alarms_per_10k": 88.88888888888889,
+          "top20_precision": 0.36,
+          "base_rate": 0.007633587786259542
+        },
+        "Blip": {
+          "ap": 0.7238869755066314,
+          "auroc": 0.868690414423763,
+          "recall_at_1pct_dev_far": 0.33308823529411763,
+          "false_alarms_per_10k": 79.38257993384785,
+          "top20_precision": 0.95,
+          "base_rate": 0.23070398642917728
+        },
+        "Chirp": {
+          "ap": 0.30625274859981905,
+          "auroc": 0.9107442258340462,
+          "recall_at_1pct_dev_far": 0.32,
+          "false_alarms_per_10k": 85.5431993156544,
+          "top20_precision": 0.16999999999999998,
+          "base_rate": 0.008481764206955046
+        },
+        "Extremely_Loud": {
+          "ap": 0.3971664686735207,
+          "auroc": 0.7014924327354259,
+          "recall_at_1pct_dev_far": 0.29375,
+          "false_alarms_per_10k": 114.7982062780269,
+          "top20_precision": 0.72,
+          "base_rate": 0.0542832909245123
+        },
+        "Helix": {
+          "ap": 0.4999102751786815,
+          "auroc": 0.74916027976714,
+          "recall_at_1pct_dev_far": 0.41904761904761906,
+          "false_alarms_per_10k": 84.43271767810026,
+          "top20_precision": 0.6199999999999999,
+          "base_rate": 0.035623409669211195
+        },
+        "Koi_Fish": {
+          "ap": 0.77957360027942,
+          "auroc": 0.9777923425637663,
+          "recall_at_1pct_dev_far": 0.43725490196078426,
+          "false_alarms_per_10k": 83.56545961002786,
+          "top20_precision": 0.9,
+          "base_rate": 0.08651399491094147
+        },
+        "Light_Modulation": {
+          "ap": 0.4255359805530892,
+          "auroc": 0.7811919234262558,
+          "recall_at_1pct_dev_far": 0.27692307692307694,
+          "false_alarms_per_10k": 112.62488646684832,
+          "top20_precision": 0.75,
+          "base_rate": 0.06615776081424936
+        },
+        "Low_Frequency_Burst": {
+          "ap": 0.6103042902158095,
+          "auroc": 0.8107968574635243,
+          "recall_at_1pct_dev_far": 0.4888888888888888,
+          "false_alarms_per_10k": 134.06795224977043,
+          "top20_precision": 0.86,
+          "base_rate": 0.07633587786259542
+        },
+        "Low_Frequency_Lines": {
+          "ap": 0.6184884256481855,
+          "auroc": 0.8699964605624982,
+          "recall_at_1pct_dev_far": 0.4545454545454546,
+          "false_alarms_per_10k": 73.67475292003593,
+          "top20_precision": 0.9099999999999999,
+          "base_rate": 0.05597964376590331
+        },
+        "Paired_Doves": {
+          "ap": 0.16602274444297374,
+          "auroc": 0.9209361702127661,
+          "recall_at_1pct_dev_far": 0.2,
+          "false_alarms_per_10k": 69.7872340425532,
+          "top20_precision": 0.08,
+          "base_rate": 0.0033927056827820186
+        },
+        "Power_Line": {
+          "ap": 0.71203258318644,
+          "auroc": 0.9382352941176471,
+          "recall_at_1pct_dev_far": 0.6352941176470589,
+          "false_alarms_per_10k": 127.8127812781278,
+          "top20_precision": 0.9199999999999999,
+          "base_rate": 0.05767599660729432
+        },
+        "Repeating_Blips": {
+          "ap": 0.36554629487874446,
+          "auroc": 0.860817910730345,
+          "recall_at_1pct_dev_far": 0.2918918918918919,
+          "false_alarms_per_10k": 98.07355516637479,
+          "top20_precision": 0.49000000000000005,
+          "base_rate": 0.031382527565733676
+        },
+        "Scattered_Light": {
+          "ap": 0.8933552012090649,
+          "auroc": 0.9556345968001718,
+          "recall_at_1pct_dev_far": 0.8298507462686567,
+          "false_alarms_per_10k": 73.7410071942446,
+          "top20_precision": 0.9800000000000001,
+          "base_rate": 0.056827820186598814
+        },
+        "Scratchy": {
+          "ap": 0.6033553174979198,
+          "auroc": 0.9233162090345438,
+          "recall_at_1pct_dev_far": 0.4760000000000001,
+          "false_alarms_per_10k": 72.63064658990257,
+          "top20_precision": 0.8400000000000001,
+          "base_rate": 0.04240882103477523
+        },
+        "Tomte": {
+          "ap": 0.5340631448865891,
+          "auroc": 0.9791001451378809,
+          "recall_at_1pct_dev_far": 0.5692307692307692,
+          "false_alarms_per_10k": 97.77015437392797,
+          "top20_precision": 0.41000000000000003,
+          "base_rate": 0.01102629346904156
+        },
+        "Violin_Mode": {
+          "ap": 0.45830781738604065,
+          "auroc": 0.9094114349775785,
+          "recall_at_1pct_dev_far": 0.284375,
+          "false_alarms_per_10k": 86.09865470852017,
+          "top20_precision": 0.69,
+          "base_rate": 0.0542832909245123
+        },
+        "Wandering_Line": {
+          "ap": 0.19181317361456757,
+          "auroc": 0.7607264748902974,
+          "recall_at_1pct_dev_far": 0.2,
+          "false_alarms_per_10k": 56.31399317406143,
+          "top20_precision": 0.07999999999999999,
+          "base_rate": 0.005937234944868533
+        },
+        "Whistle": {
+          "ap": 0.30185320284020967,
+          "auroc": 0.9230844601214973,
+          "recall_at_1pct_dev_far": 0.1511111111111111,
+          "false_alarms_per_10k": 74.07407407407406,
+          "top20_precision": 0.36,
+          "base_rate": 0.03816793893129771
+        }
+      },
+      "mean_ap": 0.5080505499692575,
+      "rare_mean_ap": 0.35189143733574296,
+      "mean_auroc": 0.887543112958044,
+      "mean_recall_at_1pct_dev_far": 0.4099959239738048,
+      "rare_mean_recall_at_1pct_dev_far": 0.3973333333333333,
+      "mean_false_alarms_per_10k": 91.15490348075258,
+      "mean_top20_precision": 0.595,
+      "one_shot_accuracy_mean": 0.5176983435047952,
+      "one_shot_accuracy_draws": [
+        0.4864864864864865,
+        0.5553618134263295,
+        0.48299912816041846,
+        0.4908456843940715,
+        0.5727986050566696
+      ],
+      "one_shot_ways": 20
+    },
+    "trained_stem_pyramid": {
+      "per_class": {
+        "1080Lines": {
+          "ap": 0.3545614976819699,
+          "auroc": 0.9417147918511958,
+          "recall_at_1pct_dev_far": 0.152,
+          "false_alarms_per_10k": 111.60318866253321,
+          "top20_precision": 0.39,
+          "base_rate": 0.04240882103477523
+        },
+        "1400Ripples": {
+          "ap": 0.2689513007568497,
+          "auroc": 0.9786134852801519,
+          "recall_at_1pct_dev_far": 0.39999999999999997,
+          "false_alarms_per_10k": 135.04273504273505,
+          "top20_precision": 0.18,
+          "base_rate": 0.007633587786259542
+        },
+        "Air_Compressor": {
+          "ap": 0.7831298632085746,
+          "auroc": 0.9800949667616333,
+          "recall_at_1pct_dev_far": 0.8222222222222222,
+          "false_alarms_per_10k": 75.21367521367522,
+          "top20_precision": 0.38,
+          "base_rate": 0.007633587786259542
+        },
+        "Blip": {
+          "ap": 0.7500847670588706,
+          "auroc": 0.8720109929307996,
+          "recall_at_1pct_dev_far": 0.3602941176470588,
+          "false_alarms_per_10k": 63.9470782800441,
+          "top20_precision": 0.97,
+          "base_rate": 0.23070398642917728
+        },
+        "Chirp": {
+          "ap": 0.14888992761996778,
+          "auroc": 0.848229255774166,
+          "recall_at_1pct_dev_far": 0.12000000000000002,
+          "false_alarms_per_10k": 99.23011120615911,
+          "top20_precision": 0.08,
+          "base_rate": 0.008481764206955046
+        },
+        "Extremely_Loud": {
+          "ap": 0.39292584640882083,
+          "auroc": 0.7263410874439462,
+          "recall_at_1pct_dev_far": 0.28125,
+          "false_alarms_per_10k": 123.76681614349775,
+          "top20_precision": 0.65,
+          "base_rate": 0.0542832909245123
+        },
+        "Helix": {
+          "ap": 0.5588664586564719,
+          "auroc": 0.7755957616115927,
+          "recall_at_1pct_dev_far": 0.4809523809523809,
+          "false_alarms_per_10k": 103.78188214599825,
+          "top20_precision": 0.6300000000000001,
+          "base_rate": 0.035623409669211195
+        },
+        "Koi_Fish": {
+          "ap": 0.7768177760242706,
+          "auroc": 0.9776139239354051,
+          "recall_at_1pct_dev_far": 0.44117647058823534,
+          "false_alarms_per_10k": 90.99350046425255,
+          "top20_precision": 0.8699999999999999,
+          "base_rate": 0.08651399491094147
+        },
+        "Light_Modulation": {
+          "ap": 0.4118109988770313,
+          "auroc": 0.7677728871189362,
+          "recall_at_1pct_dev_far": 0.2717948717948718,
+          "false_alarms_per_10k": 112.62488646684832,
+          "top20_precision": 0.7300000000000001,
+          "base_rate": 0.06615776081424936
+        },
+        "Low_Frequency_Burst": {
+          "ap": 0.5086247279820576,
+          "auroc": 0.739181716151413,
+          "recall_at_1pct_dev_far": 0.3466666666666667,
+          "false_alarms_per_10k": 102.84664830119375,
+          "top20_precision": 0.8299999999999998,
+          "base_rate": 0.07633587786259542
+        },
+        "Low_Frequency_Lines": {
+          "ap": 0.44364347049876746,
+          "auroc": 0.8193716137112365,
+          "recall_at_1pct_dev_far": 0.25757575757575757,
+          "false_alarms_per_10k": 93.44115004492363,
+          "top20_precision": 0.67,
+          "base_rate": 0.05597964376590331
+        },
+        "Paired_Doves": {
+          "ap": 0.15749449827775006,
+          "auroc": 0.8968510638297872,
+          "recall_at_1pct_dev_far": 0.2,
+          "false_alarms_per_10k": 59.574468085106375,
+          "top20_precision": 0.08,
+          "base_rate": 0.0033927056827820186
+        },
+        "Power_Line": {
+          "ap": 0.6158208028319913,
+          "auroc": 0.8904299253454757,
+          "recall_at_1pct_dev_far": 0.5411764705882354,
+          "false_alarms_per_10k": 117.011701170117,
+          "top20_precision": 0.82,
+          "base_rate": 0.05767599660729432
+        },
+        "Repeating_Blips": {
+          "ap": 0.3610466241612257,
+          "auroc": 0.83753490793771,
+          "recall_at_1pct_dev_far": 0.29729729729729726,
+          "false_alarms_per_10k": 99.82486865148863,
+          "top20_precision": 0.52,
+          "base_rate": 0.031382527565733676
+        },
+        "Scattered_Light": {
+          "ap": 0.7381950299884166,
+          "auroc": 0.9501020079458821,
+          "recall_at_1pct_dev_far": 0.5850746268656717,
+          "false_alarms_per_10k": 107.9136690647482,
+          "top20_precision": 0.8,
+          "base_rate": 0.056827820186598814
+        },
+        "Scratchy": {
+          "ap": 0.6973013789876379,
+          "auroc": 0.9573852967227635,
+          "recall_at_1pct_dev_far": 0.5359999999999999,
+          "false_alarms_per_10k": 74.40212577502214,
+          "top20_precision": 0.8800000000000001,
+          "base_rate": 0.04240882103477523
+        },
+        "Tomte": {
+          "ap": 0.5113714884085665,
+          "auroc": 0.9725953291991027,
+          "recall_at_1pct_dev_far": 0.5384615384615385,
+          "false_alarms_per_10k": 102.91595197255575,
+          "top20_precision": 0.37,
+          "base_rate": 0.01102629346904156
+        },
+        "Violin_Mode": {
+          "ap": 0.4617406431383266,
+          "auroc": 0.9039013452914798,
+          "recall_at_1pct_dev_far": 0.28125,
+          "false_alarms_per_10k": 87.89237668161435,
+          "top20_precision": 0.66,
+          "base_rate": 0.0542832909245123
+        },
+        "Wandering_Line": {
+          "ap": 0.17403477404001794,
+          "auroc": 0.6925402242808387,
+          "recall_at_1pct_dev_far": 0.1714285714285714,
+          "false_alarms_per_10k": 87.03071672354949,
+          "top20_precision": 0.06999999999999999,
+          "base_rate": 0.005937234944868533
+        },
+        "Whistle": {
+          "ap": 0.3572504841922723,
+          "auroc": 0.9344385655496767,
+          "recall_at_1pct_dev_far": 0.24,
+          "false_alarms_per_10k": 79.36507936507937,
+          "top20_precision": 0.49000000000000005,
+          "base_rate": 0.03816793893129771
+        }
+      },
+      "mean_ap": 0.47362811793999293,
+      "rare_mean_ap": 0.30650007278063196,
+      "mean_auroc": 0.8731159574336596,
+      "mean_recall_at_1pct_dev_far": 0.3662310496044254,
+      "rare_mean_recall_at_1pct_dev_far": 0.3427301587301587,
+      "mean_false_alarms_per_10k": 96.42113147305712,
+      "mean_top20_precision": 0.5535,
+      "one_shot_accuracy_mean": 0.4917175239755885,
+      "one_shot_accuracy_draws": [
+        0.46556233653007845,
+        0.4978204010462075,
+        0.4559721011333915,
+        0.4882301656495205,
+        0.5510026155187445
+      ],
+      "one_shot_ways": 20
+    },
+    "trained_fine_grid6": {
+      "per_class": {
+        "1080Lines": {
+          "ap": 0.3662283682952266,
+          "auroc": 0.9367652790079717,
+          "recall_at_1pct_dev_far": 0.21999999999999997,
+          "false_alarms_per_10k": 118.68910540301151,
+          "top20_precision": 0.45999999999999996,
+          "base_rate": 0.04240882103477523
+        },
+        "1400Ripples": {
+          "ap": 0.2303608231777184,
+          "auroc": 0.962659069325736,
+          "recall_at_1pct_dev_far": 0.3333333333333333,
+          "false_alarms_per_10k": 114.52991452991452,
+          "top20_precision": 0.17,
+          "base_rate": 0.007633587786259542
+        },
+        "Air_Compressor": {
+          "ap": 0.3143448017458329,
+          "auroc": 0.952022792022792,
+          "recall_at_1pct_dev_far": 0.4444444444444445,
+          "false_alarms_per_10k": 99.14529914529915,
+          "top20_precision": 0.22999999999999998,
+          "base_rate": 0.007633587786259542
+        },
+        "Blip": {
+          "ap": 0.7436903203657379,
+          "auroc": 0.8948545625526947,
+          "recall_at_1pct_dev_far": 0.24264705882352938,
+          "false_alarms_per_10k": 88.20286659316427,
+          "top20_precision": 0.93,
+          "base_rate": 0.23070398642917728
+        },
+        "Chirp": {
+          "ap": 0.0971453332022337,
+          "auroc": 0.886672369546621,
+          "recall_at_1pct_dev_far": 0.12,
+          "false_alarms_per_10k": 88.96492728828058,
+          "top20_precision": 0.08,
+          "base_rate": 0.008481764206955046
+        },
+        "Extremely_Loud": {
+          "ap": 0.36632783528587287,
+          "auroc": 0.6726807735426009,
+          "recall_at_1pct_dev_far": 0.31875,
+          "false_alarms_per_10k": 145.29147982062779,
+          "top20_precision": 0.73,
+          "base_rate": 0.0542832909245123
+        },
+        "Helix": {
+          "ap": 0.537186480486546,
+          "auroc": 0.7928718013150731,
+          "recall_at_1pct_dev_far": 0.48571428571428577,
+          "false_alarms_per_10k": 87.95074758135443,
+          "top20_precision": 0.5900000000000001,
+          "base_rate": 0.035623409669211195
+        },
+        "Koi_Fish": {
+          "ap": 0.7205337115577477,
+          "auroc": 0.9703934312815191,
+          "recall_at_1pct_dev_far": 0.3686274509803922,
+          "false_alarms_per_10k": 92.85051067780871,
+          "top20_precision": 0.76,
+          "base_rate": 0.08651399491094147
+        },
+        "Light_Modulation": {
+          "ap": 0.4614431639606084,
+          "auroc": 0.8711194950976967,
+          "recall_at_1pct_dev_far": 0.2897435897435897,
+          "false_alarms_per_10k": 123.52406902815623,
+          "top20_precision": 0.75,
+          "base_rate": 0.06615776081424936
+        },
+        "Low_Frequency_Burst": {
+          "ap": 0.3883214138906931,
+          "auroc": 0.7256402407917559,
+          "recall_at_1pct_dev_far": 0.23777777777777773,
+          "false_alarms_per_10k": 104.68319559228651,
+          "top20_precision": 0.67,
+          "base_rate": 0.07633587786259542
+        },
+        "Low_Frequency_Lines": {
+          "ap": 0.47846747737400913,
+          "auroc": 0.884124261482752,
+          "recall_at_1pct_dev_far": 0.27878787878787875,
+          "false_alarms_per_10k": 66.4869721473495,
+          "top20_precision": 0.76,
+          "base_rate": 0.05597964376590331
+        },
+        "Paired_Doves": {
+          "ap": 0.17122360332051828,
+          "auroc": 0.8389787234042553,
+          "recall_at_1pct_dev_far": 0.2,
+          "false_alarms_per_10k": 71.48936170212765,
+          "top20_precision": 0.08,
+          "base_rate": 0.0033927056827820186
+        },
+        "Power_Line": {
+          "ap": 0.5550185860402677,
+          "auroc": 0.9488245883411871,
+          "recall_at_1pct_dev_far": 0.3029411764705882,
+          "false_alarms_per_10k": 91.80918091809181,
+          "top20_precision": 0.7100000000000001,
+          "base_rate": 0.05767599660729432
+        },
+        "Repeating_Blips": {
+          "ap": 0.32163509081933,
+          "auroc": 0.8573957495148388,
+          "recall_at_1pct_dev_far": 0.21621621621621623,
+          "false_alarms_per_10k": 80.56042031523643,
+          "top20_precision": 0.42000000000000004,
+          "base_rate": 0.031382527565733676
+        },
+        "Scattered_Light": {
+          "ap": 0.8849954111870947,
+          "auroc": 0.9579163534843765,
+          "recall_at_1pct_dev_far": 0.8059701492537314,
+          "false_alarms_per_10k": 91.72661870503597,
+          "top20_precision": 0.99,
+          "base_rate": 0.056827820186598814
+        },
+        "Scratchy": {
+          "ap": 0.754991600201547,
+          "auroc": 0.9576474756421611,
+          "recall_at_1pct_dev_far": 0.616,
+          "false_alarms_per_10k": 79.71656333038086,
+          "top20_precision": 0.9199999999999999,
+          "base_rate": 0.04240882103477523
+        },
+        "Tomte": {
+          "ap": 0.10976018984017133,
+          "auroc": 0.8979812640189998,
+          "recall_at_1pct_dev_far": 0.13846153846153847,
+          "false_alarms_per_10k": 84.04802744425386,
+          "top20_precision": 0.11000000000000001,
+          "base_rate": 0.01102629346904156
+        },
+        "Violin_Mode": {
+          "ap": 0.4257319276179007,
+          "auroc": 0.91855100896861,
+          "recall_at_1pct_dev_far": 0.221875,
+          "false_alarms_per_10k": 89.68609865470852,
+          "top20_precision": 0.5800000000000001,
+          "base_rate": 0.0542832909245123
+        },
+        "Wandering_Line": {
+          "ap": 0.22656708077419477,
+          "auroc": 0.7329839102876645,
+          "recall_at_1pct_dev_far": 0.22857142857142856,
+          "false_alarms_per_10k": 78.49829351535837,
+          "top20_precision": 0.09,
+          "base_rate": 0.005937234944868533
+        },
+        "Whistle": {
+          "ap": 0.18798302770322523,
+          "auroc": 0.8964530668234373,
+          "recall_at_1pct_dev_far": 0.05333333333333332,
+          "false_alarms_per_10k": 121.69312169312168,
+          "top20_precision": 0.16,
+          "base_rate": 0.03816793893129771
+        }
+      },
+      "mean_ap": 0.41709781234232385,
+      "rare_mean_ap": 0.20792832844409964,
+      "mean_auroc": 0.877826810822637,
+      "mean_recall_at_1pct_dev_far": 0.3061597330956034,
+      "rare_mean_recall_at_1pct_dev_far": 0.26526984126984127,
+      "mean_false_alarms_per_10k": 95.97733870427842,
+      "mean_top20_precision": 0.5095,
+      "one_shot_accuracy_mean": 0.41743679163034003,
+      "one_shot_accuracy_draws": [
+        0.36094158674803833,
+        0.4245858761987794,
+        0.4167393199651264,
+        0.4202266782911944,
+        0.46469049694856146
+      ],
+      "one_shot_ways": 20
+    },
+    "trained_fine_pyramid": {
+      "per_class": {
+        "1080Lines": {
+          "ap": 0.3387416826032569,
+          "auroc": 0.9264056687333925,
+          "recall_at_1pct_dev_far": 0.176,
+          "false_alarms_per_10k": 116.91762621789194,
+          "top20_precision": 0.39,
+          "base_rate": 0.04240882103477523
+        },
+        "1400Ripples": {
+          "ap": 0.2151446725561915,
+          "auroc": 0.9571130104463437,
+          "recall_at_1pct_dev_far": 0.3333333333333333,
+          "false_alarms_per_10k": 109.4017094017094,
+          "top20_precision": 0.16,
+          "base_rate": 0.007633587786259542
+        },
+        "Air_Compressor": {
+          "ap": 0.4986953644002849,
+          "auroc": 0.9711111111111113,
+          "recall_at_1pct_dev_far": 0.6222222222222222,
+          "false_alarms_per_10k": 97.43589743589743,
+          "top20_precision": 0.3,
+          "base_rate": 0.007633587786259542
+        },
+        "Blip": {
+          "ap": 0.7967672308873326,
+          "auroc": 0.9236364225954989,
+          "recall_at_1pct_dev_far": 0.3095588235294118,
+          "false_alarms_per_10k": 74.97243660418962,
+          "top20_precision": 0.9600000000000002,
+          "base_rate": 0.23070398642917728
+        },
+        "Chirp": {
+          "ap": 0.05875263017315317,
+          "auroc": 0.886672369546621,
+          "recall_at_1pct_dev_far": 0.04,
+          "false_alarms_per_10k": 100.9409751924722,
+          "top20_precision": 0.05,
+          "base_rate": 0.008481764206955046
+        },
+        "Extremely_Loud": {
+          "ap": 0.34625278041700003,
+          "auroc": 0.6582441143497759,
+          "recall_at_1pct_dev_far": 0.2875,
+          "false_alarms_per_10k": 105.82959641255604,
+          "top20_precision": 0.6699999999999999,
+          "base_rate": 0.0542832909245123
+        },
+        "Helix": {
+          "ap": 0.5538212849403759,
+          "auroc": 0.8168739791431084,
+          "recall_at_1pct_dev_far": 0.4904761904761905,
+          "false_alarms_per_10k": 94.9868073878628,
+          "top20_precision": 0.63,
+          "base_rate": 0.035623409669211195
+        },
+        "Koi_Fish": {
+          "ap": 0.6998564986656446,
+          "auroc": 0.9625666794108545,
+          "recall_at_1pct_dev_far": 0.3372549019607843,
+          "false_alarms_per_10k": 98.42154131847727,
+          "top20_precision": 0.78,
+          "base_rate": 0.08651399491094147
+        },
+        "Light_Modulation": {
+          "ap": 0.46804611977235455,
+          "auroc": 0.8644076480588743,
+          "recall_at_1pct_dev_far": 0.30256410256410254,
+          "false_alarms_per_10k": 130.7901907356948,
+          "top20_precision": 0.75,
+          "base_rate": 0.06615776081424936
+        },
+        "Low_Frequency_Burst": {
+          "ap": 0.3176347864676911,
+          "auroc": 0.6716865625956535,
+          "recall_at_1pct_dev_far": 0.15777777777777777,
+          "false_alarms_per_10k": 95.50045913682277,
+          "top20_precision": 0.6199999999999999,
+          "base_rate": 0.07633587786259542
+        },
+        "Low_Frequency_Lines": {
+          "ap": 0.42316755745080964,
+          "auroc": 0.860208554548177,
+          "recall_at_1pct_dev_far": 0.21818181818181817,
+          "false_alarms_per_10k": 57.50224618149146,
+          "top20_precision": 0.68,
+          "base_rate": 0.05597964376590331
+        },
+        "Paired_Doves": {
+          "ap": 0.1509333493631406,
+          "auroc": 0.8316595744680851,
+          "recall_at_1pct_dev_far": 0.15,
+          "false_alarms_per_10k": 71.48936170212767,
+          "top20_precision": 0.08,
+          "base_rate": 0.0033927056827820186
+        },
+        "Power_Line": {
+          "ap": 0.5673391042282223,
+          "auroc": 0.9420633239794567,
+          "recall_at_1pct_dev_far": 0.35,
+          "false_alarms_per_10k": 90.00900090009002,
+          "top20_precision": 0.76,
+          "base_rate": 0.05767599660729432
+        },
+        "Repeating_Blips": {
+          "ap": 0.3746236125508341,
+          "auroc": 0.8446348274719553,
+          "recall_at_1pct_dev_far": 0.2810810810810811,
+          "false_alarms_per_10k": 64.79859894921191,
+          "top20_precision": 0.51,
+          "base_rate": 0.031382527565733676
+        },
+        "Scattered_Light": {
+          "ap": 0.8622688890496031,
+          "auroc": 0.9551352947492753,
+          "recall_at_1pct_dev_far": 0.7850746268656716,
+          "false_alarms_per_10k": 77.33812949640287,
+          "top20_precision": 0.97,
+          "base_rate": 0.056827820186598814
+        },
+        "Scratchy": {
+          "ap": 0.7638127629542041,
+          "auroc": 0.9608538529672277,
+          "recall_at_1pct_dev_far": 0.64,
+          "false_alarms_per_10k": 60.23029229406554,
+          "top20_precision": 0.9199999999999999,
+          "base_rate": 0.04240882103477523
+        },
+        "Tomte": {
+          "ap": 0.11573629929686688,
+          "auroc": 0.8991819501253463,
+          "recall_at_1pct_dev_far": 0.12307692307692308,
+          "false_alarms_per_10k": 106.34648370497428,
+          "top20_precision": 0.12,
+          "base_rate": 0.01102629346904156
+        },
+        "Violin_Mode": {
+          "ap": 0.43438806273953734,
+          "auroc": 0.9198850896860986,
+          "recall_at_1pct_dev_far": 0.23125,
+          "false_alarms_per_10k": 111.21076233183855,
+          "top20_precision": 0.6,
+          "base_rate": 0.0542832909245123
+        },
+        "Wandering_Line": {
+          "ap": 0.19145033809254106,
+          "auroc": 0.7267918088737202,
+          "recall_at_1pct_dev_far": 0.19999999999999996,
+          "false_alarms_per_10k": 93.85665529010238,
+          "top20_precision": 0.06999999999999999,
+          "base_rate": 0.005937234944868533
+        },
+        "Whistle": {
+          "ap": 0.21149438931307,
+          "auroc": 0.9013286302175192,
+          "recall_at_1pct_dev_far": 0.08,
+          "false_alarms_per_10k": 121.6931216931217,
+          "top20_precision": 0.19,
+          "base_rate": 0.03816793893129771
+        }
+      },
+      "mean_ap": 0.4194463707961057,
+      "rare_mean_ap": 0.22299527091706223,
+      "mean_auroc": 0.8740230236539048,
+      "mean_recall_at_1pct_dev_far": 0.3057675900534658,
+      "rare_mean_recall_at_1pct_dev_far": 0.2691111111111111,
+      "mean_false_alarms_per_10k": 93.98359461935004,
+      "mean_top20_precision": 0.5105,
+      "one_shot_accuracy_mean": 0.4137750653879686,
+      "one_shot_accuracy_draws": [
+        0.3583260680034874,
+        0.42894507410636445,
+        0.3897122929380994,
+        0.41238012205754143,
+        0.47951176983435045
+      ],
+      "one_shot_ways": 20
+    },
+    "trained_middle_grid6": {
+      "per_class": {
+        "1080Lines": {
+          "ap": 0.30503912751405515,
+          "auroc": 0.9238405668733393,
+          "recall_at_1pct_dev_far": 0.148,
+          "false_alarms_per_10k": 152.34720992028343,
+          "top20_precision": 0.31000000000000005,
+          "base_rate": 0.04240882103477523
+        },
+        "1400Ripples": {
+          "ap": 0.21419208732052578,
+          "auroc": 0.9519848053181386,
+          "recall_at_1pct_dev_far": 0.28888888888888886,
+          "false_alarms_per_10k": 109.4017094017094,
+          "top20_precision": 0.13999999999999999,
+          "base_rate": 0.007633587786259542
+        },
+        "Air_Compressor": {
+          "ap": 0.07673467897965143,
+          "auroc": 0.885432098765432,
+          "recall_at_1pct_dev_far": 0.13333333333333333,
+          "false_alarms_per_10k": 95.72649572649573,
+          "top20_precision": 0.08,
+          "base_rate": 0.007633587786259542
+        },
+        "Blip": {
+          "ap": 0.7097028205017697,
+          "auroc": 0.8947726830533757,
+          "recall_at_1pct_dev_far": 0.18161764705882355,
+          "false_alarms_per_10k": 101.43329658213891,
+          "top20_precision": 0.89,
+          "base_rate": 0.23070398642917728
+        },
+        "Chirp": {
+          "ap": 0.061096518812040854,
+          "auroc": 0.8752437981180495,
+          "recall_at_1pct_dev_far": 0.06000000000000001,
+          "false_alarms_per_10k": 100.9409751924722,
+          "top20_precision": 0.09,
+          "base_rate": 0.008481764206955046
+        },
+        "Extremely_Loud": {
+          "ap": 0.35793727892649485,
+          "auroc": 0.6155927690582959,
+          "recall_at_1pct_dev_far": 0.315625,
+          "false_alarms_per_10k": 121.97309417040358,
+          "top20_precision": 0.71,
+          "base_rate": 0.0542832909245123
+        },
+        "Helix": {
+          "ap": 0.5494283494231965,
+          "auroc": 0.8261800058633831,
+          "recall_at_1pct_dev_far": 0.47142857142857136,
+          "false_alarms_per_10k": 96.74582233948988,
+          "top20_precision": 0.63,
+          "base_rate": 0.035623409669211195
+        },
+        "Koi_Fish": {
+          "ap": 0.7371815724214181,
+          "auroc": 0.9703697635042875,
+          "recall_at_1pct_dev_far": 0.38431372549019605,
+          "false_alarms_per_10k": 76.13741875580315,
+          "top20_precision": 0.76,
+          "base_rate": 0.08651399491094147
+        },
+        "Light_Modulation": {
+          "ap": 0.4318279769339982,
+          "auroc": 0.8438412631873122,
+          "recall_at_1pct_dev_far": 0.23076923076923075,
+          "false_alarms_per_10k": 110.80835603996368,
+          "top20_precision": 0.64,
+          "base_rate": 0.06615776081424936
+        },
+        "Low_Frequency_Burst": {
+          "ap": 0.2727461525821261,
+          "auroc": 0.7035220895826957,
+          "recall_at_1pct_dev_far": 0.1222222222222222,
+          "false_alarms_per_10k": 104.68319559228651,
+          "top20_precision": 0.43,
+          "base_rate": 0.07633587786259542
+        },
+        "Low_Frequency_Lines": {
+          "ap": 0.2766429018919735,
+          "auroc": 0.8080263551961664,
+          "recall_at_1pct_dev_far": 0.13636363636363635,
+          "false_alarms_per_10k": 59.299191374663074,
+          "top20_precision": 0.44000000000000006,
+          "base_rate": 0.05597964376590331
+        },
+        "Paired_Doves": {
+          "ap": 0.17586011651743932,
+          "auroc": 0.8740425531914893,
+          "recall_at_1pct_dev_far": 0.15,
+          "false_alarms_per_10k": 81.70212765957447,
+          "top20_precision": 0.08,
+          "base_rate": 0.0033927056827820186
+        },
+        "Power_Line": {
+          "ap": 0.3413937117585585,
+          "auroc": 0.9160189548366601,
+          "recall_at_1pct_dev_far": 0.08529411764705883,
+          "false_alarms_per_10k": 72.00720072007202,
+          "top20_precision": 0.4,
+          "base_rate": 0.05767599660729432
+        },
+        "Repeating_Blips": {
+          "ap": 0.3280440747710801,
+          "auroc": 0.8329956927154825,
+          "recall_at_1pct_dev_far": 0.2648648648648649,
+          "false_alarms_per_10k": 89.3169877408056,
+          "top20_precision": 0.43000000000000005,
+          "base_rate": 0.031382527565733676
+        },
+        "Scattered_Light": {
+          "ap": 0.693384739992934,
+          "auroc": 0.9252603887039623,
+          "recall_at_1pct_dev_far": 0.5492537313432836,
+          "false_alarms_per_10k": 93.5251798561151,
+          "top20_precision": 0.9199999999999999,
+          "base_rate": 0.056827820186598814
+        },
+        "Scratchy": {
+          "ap": 0.7245578643468809,
+          "auroc": 0.9510859167404784,
+          "recall_at_1pct_dev_far": 0.608,
+          "false_alarms_per_10k": 77.94508414526129,
+          "top20_precision": 0.8800000000000001,
+          "base_rate": 0.04240882103477523
+        },
+        "Tomte": {
+          "ap": 0.13036539967912358,
+          "auroc": 0.8820292914632537,
+          "recall_at_1pct_dev_far": 0.12307692307692308,
+          "false_alarms_per_10k": 73.75643224699829,
+          "top20_precision": 0.1,
+          "base_rate": 0.01102629346904156
+        },
+        "Violin_Mode": {
+          "ap": 0.328729943175865,
+          "auroc": 0.9054820627802691,
+          "recall_at_1pct_dev_far": 0.14375,
+          "false_alarms_per_10k": 118.38565022421524,
+          "top20_precision": 0.45,
+          "base_rate": 0.0542832909245123
+        },
+        "Wandering_Line": {
+          "ap": 0.13773502404969548,
+          "auroc": 0.7035592393954169,
+          "recall_at_1pct_dev_far": 0.14285714285714285,
+          "false_alarms_per_10k": 83.61774744027305,
+          "top20_precision": 0.07,
+          "base_rate": 0.005937234944868533
+        },
+        "Whistle": {
+          "ap": 0.1465241040228032,
+          "auroc": 0.8662825788751715,
+          "recall_at_1pct_dev_far": 0.04888888888888889,
+          "false_alarms_per_10k": 123.45679012345677,
+          "top20_precision": 0.14,
+          "base_rate": 0.03816793893129771
+        }
+      },
+      "mean_ap": 0.3499562221810815,
+      "rare_mean_ap": 0.13312368513587058,
+      "mean_auroc": 0.857778143861133,
+      "mean_recall_at_1pct_dev_far": 0.22942739621165323,
+      "rare_mean_recall_at_1pct_dev_far": 0.155015873015873,
+      "mean_false_alarms_per_10k": 97.16049826262407,
+      "mean_top20_precision": 0.4295,
+      "one_shot_accuracy_mean": 0.339843068875327,
+      "one_shot_accuracy_draws": [
+        0.3007846556233653,
+        0.35658238884045335,
+        0.34873583260680036,
+        0.3112467306015693,
+        0.3818657367044464
+      ],
+      "one_shot_ways": 20
+    },
+    "trained_middle_pyramid": {
+      "per_class": {
+        "1080Lines": {
+          "ap": 0.3213997704245427,
+          "auroc": 0.9102178919397697,
+          "recall_at_1pct_dev_far": 0.148,
+          "false_alarms_per_10k": 104.51727192205492,
+          "top20_precision": 0.36,
+          "base_rate": 0.04240882103477523
+        },
+        "1400Ripples": {
+          "ap": 0.20083474991530706,
+          "auroc": 0.9428490028490029,
+          "recall_at_1pct_dev_far": 0.2666666666666667,
+          "false_alarms_per_10k": 97.43589743589743,
+          "top20_precision": 0.15,
+          "base_rate": 0.007633587786259542
+        },
+        "Air_Compressor": {
+          "ap": 0.10013285356151627,
+          "auroc": 0.8691927825261159,
+          "recall_at_1pct_dev_far": 0.17777777777777776,
+          "false_alarms_per_10k": 87.17948717948718,
+          "top20_precision": 0.11000000000000001,
+          "base_rate": 0.007633587786259542
+        },
+        "Blip": {
+          "ap": 0.7753354549031988,
+          "auroc": 0.9214005447824112,
+          "recall_at_1pct_dev_far": 0.2485294117647059,
+          "false_alarms_per_10k": 90.40793825799338,
+          "top20_precision": 0.96,
+          "base_rate": 0.23070398642917728
+        },
+        "Chirp": {
+          "ap": 0.05212690567706896,
+          "auroc": 0.8766638152266895,
+          "recall_at_1pct_dev_far": 0.06,
+          "false_alarms_per_10k": 83.8323353293413,
+          "top20_precision": 0.04,
+          "base_rate": 0.008481764206955046
+        },
+        "Extremely_Loud": {
+          "ap": 0.33274863878818656,
+          "auroc": 0.6316017376681614,
+          "recall_at_1pct_dev_far": 0.296875,
+          "false_alarms_per_10k": 121.97309417040358,
+          "top20_precision": 0.6900000000000001,
+          "base_rate": 0.0542832909245123
+        },
+        "Helix": {
+          "ap": 0.5366697149592631,
+          "auroc": 0.8191900154960841,
+          "recall_at_1pct_dev_far": 0.47619047619047616,
+          "false_alarms_per_10k": 105.54089709762533,
+          "top20_precision": 0.6200000000000001,
+          "base_rate": 0.035623409669211195
+        },
+        "Koi_Fish": {
+          "ap": 0.7345657681810402,
+          "auroc": 0.9658182678828263,
+          "recall_at_1pct_dev_far": 0.38431372549019605,
+          "false_alarms_per_10k": 76.13741875580315,
+          "top20_precision": 0.78,
+          "base_rate": 0.08651399491094147
+        },
+        "Light_Modulation": {
+          "ap": 0.45585997162664577,
+          "auroc": 0.886070937842055,
+          "recall_at_1pct_dev_far": 0.27179487179487183,
+          "false_alarms_per_10k": 121.70753860127158,
+          "top20_precision": 0.6900000000000001,
+          "base_rate": 0.06615776081424936
+        },
+        "Low_Frequency_Burst": {
+          "ap": 0.2512253406171994,
+          "auroc": 0.6843342516069789,
+          "recall_at_1pct_dev_far": 0.10666666666666666,
+          "false_alarms_per_10k": 101.01010101010101,
+          "top20_precision": 0.38,
+          "base_rate": 0.07633587786259542
+        },
+        "Low_Frequency_Lines": {
+          "ap": 0.28860093669873266,
+          "auroc": 0.8208336736638623,
+          "recall_at_1pct_dev_far": 0.14545454545454545,
+          "false_alarms_per_10k": 75.47169811320754,
+          "top20_precision": 0.49000000000000005,
+          "base_rate": 0.05597964376590331
+        },
+        "Paired_Doves": {
+          "ap": 0.16828756046222157,
+          "auroc": 0.8391914893617022,
+          "recall_at_1pct_dev_far": 0.2,
+          "false_alarms_per_10k": 80.0,
+          "top20_precision": 0.08,
+          "base_rate": 0.0033927056827820186
+        },
+        "Power_Line": {
+          "ap": 0.2830731758688672,
+          "auroc": 0.901887541695346,
+          "recall_at_1pct_dev_far": 0.07058823529411765,
+          "false_alarms_per_10k": 95.4095409540954,
+          "top20_precision": 0.30000000000000004,
+          "base_rate": 0.05767599660729432
+        },
+        "Repeating_Blips": {
+          "ap": 0.3464418814229062,
+          "auroc": 0.8145217020873764,
+          "recall_at_1pct_dev_far": 0.24324324324324326,
+          "false_alarms_per_10k": 68.30122591943957,
+          "top20_precision": 0.44000000000000006,
+          "base_rate": 0.031382527565733676
+        },
+        "Scattered_Light": {
+          "ap": 0.7591808050802064,
+          "auroc": 0.9377536776548909,
+          "recall_at_1pct_dev_far": 0.6597014925373135,
+          "false_alarms_per_10k": 102.5179856115108,
+          "top20_precision": 0.9800000000000001,
+          "base_rate": 0.056827820186598814
+        },
+        "Scratchy": {
+          "ap": 0.7208465850267191,
+          "auroc": 0.9484534986713907,
+          "recall_at_1pct_dev_far": 0.5840000000000001,
+          "false_alarms_per_10k": 63.77325066430468,
+          "top20_precision": 0.8800000000000001,
+          "base_rate": 0.04240882103477523
+        },
+        "Tomte": {
+          "ap": 0.12279760242058983,
+          "auroc": 0.8782689009104103,
+          "recall_at_1pct_dev_far": 0.09230769230769231,
+          "false_alarms_per_10k": 72.04116638078901,
+          "top20_precision": 0.12,
+          "base_rate": 0.01102629346904156
+        },
+        "Violin_Mode": {
+          "ap": 0.3023498925958964,
+          "auroc": 0.9019590807174886,
+          "recall_at_1pct_dev_far": 0.121875,
+          "false_alarms_per_10k": 129.14798206278027,
+          "top20_precision": 0.36000000000000004,
+          "base_rate": 0.0542832909245123
+        },
+        "Wandering_Line": {
+          "ap": 0.09308325807481907,
+          "auroc": 0.7010726474890298,
+          "recall_at_1pct_dev_far": 0.11428571428571428,
+          "false_alarms_per_10k": 119.45392491467578,
+          "top20_precision": 0.05,
+          "base_rate": 0.005937234944868533
+        },
+        "Whistle": {
+          "ap": 0.142981152045674,
+          "auroc": 0.856848912404468,
+          "recall_at_1pct_dev_far": 0.062222222222222213,
+          "false_alarms_per_10k": 125.22045855379187,
+          "top20_precision": 0.15,
+          "base_rate": 0.03816793893129771
+        }
+      },
+      "mean_ap": 0.34942710091753004,
+      "rare_mean_ap": 0.1228930655381866,
+      "mean_auroc": 0.8554065186238031,
+      "mean_recall_at_1pct_dev_far": 0.23652463708481047,
+      "rare_mean_recall_at_1pct_dev_far": 0.16374603174603175,
+      "mean_false_alarms_per_10k": 96.0539606467287,
+      "mean_top20_precision": 0.43150000000000005,
+      "one_shot_accuracy_mean": 0.3464690496948562,
+      "one_shot_accuracy_draws": [
+        0.28596338273757627,
+        0.3853530950305144,
+        0.37314734088927637,
+        0.28247602441150826,
+        0.40540540540540543
+      ],
+      "one_shot_ways": 20
+    },
+    "trained_coarse_grid6": {
+      "per_class": {
+        "1080Lines": {
+          "ap": 0.3304832158373691,
+          "auroc": 0.9326873339238263,
+          "recall_at_1pct_dev_far": 0.168,
+          "false_alarms_per_10k": 104.51727192205492,
+          "top20_precision": 0.38,
+          "base_rate": 0.04240882103477523
+        },
+        "1400Ripples": {
+          "ap": 0.09589840645781153,
+          "auroc": 0.9112820512820512,
+          "recall_at_1pct_dev_far": 0.06666666666666667,
+          "false_alarms_per_10k": 99.14529914529915,
+          "top20_precision": 0.06,
+          "base_rate": 0.007633587786259542
+        },
+        "Air_Compressor": {
+          "ap": 0.06012175387449152,
+          "auroc": 0.7874833808167142,
+          "recall_at_1pct_dev_far": 0.06666666666666667,
+          "false_alarms_per_10k": 121.36752136752136,
+          "top20_precision": 0.04,
+          "base_rate": 0.007633587786259542
+        },
+        "Blip": {
+          "ap": 0.5545505711759215,
+          "auroc": 0.8028260587586743,
+          "recall_at_1pct_dev_far": 0.09338235294117647,
+          "false_alarms_per_10k": 92.61300992282249,
+          "top20_precision": 0.7700000000000001,
+          "base_rate": 0.23070398642917728
+        },
+        "Chirp": {
+          "ap": 0.02416737288909842,
+          "auroc": 0.7565098374679212,
+          "recall_at_1pct_dev_far": 0.02,
+          "false_alarms_per_10k": 94.09751924721985,
+          "top20_precision": 0.01,
+          "base_rate": 0.008481764206955046
+        },
+        "Extremely_Loud": {
+          "ap": 0.3355778216862804,
+          "auroc": 0.6746875,
+          "recall_at_1pct_dev_far": 0.259375,
+          "false_alarms_per_10k": 80.71748878923766,
+          "top20_precision": 0.65,
+          "base_rate": 0.0542832909245123
+        },
+        "Helix": {
+          "ap": 0.42769001661750694,
+          "auroc": 0.7761109017045693,
+          "recall_at_1pct_dev_far": 0.39047619047619053,
+          "false_alarms_per_10k": 121.37203166226914,
+          "top20_precision": 0.53,
+          "base_rate": 0.035623409669211195
+        },
+        "Koi_Fish": {
+          "ap": 0.6702575251057483,
+          "auroc": 0.9588417353942505,
+          "recall_at_1pct_dev_far": 0.2823529411764706,
+          "false_alarms_per_10k": 81.70844939647168,
+          "top20_precision": 0.7700000000000001,
+          "base_rate": 0.08651399491094147
+        },
+        "Light_Modulation": {
+          "ap": 0.24415304587095016,
+          "auroc": 0.7541978155057174,
+          "recall_at_1pct_dev_far": 0.1205128205128205,
+          "false_alarms_per_10k": 110.80835603996368,
+          "top20_precision": 0.4,
+          "base_rate": 0.06615776081424936
+        },
+        "Low_Frequency_Burst": {
+          "ap": 0.14161932053844922,
+          "auroc": 0.6374390368329763,
+          "recall_at_1pct_dev_far": 0.03333333333333333,
+          "false_alarms_per_10k": 71.62534435261708,
+          "top20_precision": 0.2,
+          "base_rate": 0.07633587786259542
+        },
+        "Low_Frequency_Lines": {
+          "ap": 0.1828515206904739,
+          "auroc": 0.7756214435459718,
+          "recall_at_1pct_dev_far": 0.05757575757575757,
+          "false_alarms_per_10k": 88.0503144654088,
+          "top20_precision": 0.26,
+          "base_rate": 0.05597964376590331
+        },
+        "Paired_Doves": {
+          "ap": 0.20531806371726366,
+          "auroc": 0.8289787234042553,
+          "recall_at_1pct_dev_far": 0.15,
+          "false_alarms_per_10k": 61.276595744680854,
+          "top20_precision": 0.08,
+          "base_rate": 0.0033927056827820186
+        },
+        "Power_Line": {
+          "ap": 0.28338540082200164,
+          "auroc": 0.8969423412929528,
+          "recall_at_1pct_dev_far": 0.08529411764705883,
+          "false_alarms_per_10k": 93.60936093609362,
+          "top20_precision": 0.37,
+          "base_rate": 0.05767599660729432
+        },
+        "Repeating_Blips": {
+          "ap": 0.26536962022556926,
+          "auroc": 0.7843991101434185,
+          "recall_at_1pct_dev_far": 0.1891891891891892,
+          "false_alarms_per_10k": 89.31698774080562,
+          "top20_precision": 0.38,
+          "base_rate": 0.031382527565733676
+        },
+        "Scattered_Light": {
+          "ap": 0.49580898546438074,
+          "auroc": 0.8625765059594116,
+          "recall_at_1pct_dev_far": 0.3492537313432836,
+          "false_alarms_per_10k": 100.71942446043167,
+          "top20_precision": 0.76,
+          "base_rate": 0.056827820186598814
+        },
+        "Scratchy": {
+          "ap": 0.47266013636720616,
+          "auroc": 0.9075535872453498,
+          "recall_at_1pct_dev_far": 0.28400000000000003,
+          "false_alarms_per_10k": 76.17360496014172,
+          "top20_precision": 0.6699999999999999,
+          "base_rate": 0.04240882103477523
+        },
+        "Tomte": {
+          "ap": 0.08945330394570955,
+          "auroc": 0.8204908299247922,
+          "recall_at_1pct_dev_far": 0.12307692307692308,
+          "false_alarms_per_10k": 80.61749571183533,
+          "top20_precision": 0.08,
+          "base_rate": 0.01102629346904156
+        },
+        "Violin_Mode": {
+          "ap": 0.25291634779568783,
+          "auroc": 0.8719366591928251,
+          "recall_at_1pct_dev_far": 0.10625,
+          "false_alarms_per_10k": 130.94170403587444,
+          "top20_precision": 0.33,
+          "base_rate": 0.0542832909245123
+        },
+        "Wandering_Line": {
+          "ap": 0.09289299900979267,
+          "auroc": 0.7585568015602145,
+          "recall_at_1pct_dev_far": 0.17142857142857143,
+          "false_alarms_per_10k": 98.97610921501708,
+          "top20_precision": 0.06000000000000001,
+          "base_rate": 0.005937234944868533
+        },
+        "Whistle": {
+          "ap": 0.14351057245895626,
+          "auroc": 0.841297276112091,
+          "recall_at_1pct_dev_far": 0.05333333333333333,
+          "false_alarms_per_10k": 112.8747795414462,
+          "top20_precision": 0.13999999999999999,
+          "base_rate": 0.03816793893129771
+        }
+      },
+      "mean_ap": 0.26843430002753343,
+      "rare_mean_ap": 0.09567971918969156,
+      "mean_auroc": 0.8170209465033992,
+      "mean_recall_at_1pct_dev_far": 0.1535083797683721,
+      "rare_mean_recall_at_1pct_dev_far": 0.09495238095238095,
+      "mean_false_alarms_per_10k": 95.52643343286061,
+      "mean_top20_precision": 0.34700000000000003,
+      "one_shot_accuracy_mean": 0.2734088927637315,
+      "one_shot_accuracy_draws": [
+        0.24237140366172624,
+        0.26068003487358327,
+        0.3016564952048823,
+        0.26591107236268524,
+        0.29642545771578027
+      ],
+      "one_shot_ways": 20
+    },
+    "trained_coarse_pyramid": {
+      "per_class": {
+        "1080Lines": {
+          "ap": 0.39532965106818024,
+          "auroc": 0.9412187776793622,
+          "recall_at_1pct_dev_far": 0.20800000000000002,
+          "false_alarms_per_10k": 102.74579273693534,
+          "top20_precision": 0.45,
+          "base_rate": 0.04240882103477523
+        },
+        "1400Ripples": {
+          "ap": 0.09174316254425842,
+          "auroc": 0.921519468186135,
+          "recall_at_1pct_dev_far": 0.08888888888888888,
+          "false_alarms_per_10k": 92.3076923076923,
+          "top20_precision": 0.06,
+          "base_rate": 0.007633587786259542
+        },
+        "Air_Compressor": {
+          "ap": 0.07558845119436844,
+          "auroc": 0.8463247863247861,
+          "recall_at_1pct_dev_far": 0.04444444444444444,
+          "false_alarms_per_10k": 99.14529914529915,
+          "top20_precision": 0.05,
+          "base_rate": 0.007633587786259542
+        },
+        "Blip": {
+          "ap": 0.7174113247020466,
+          "auroc": 0.9078774563849794,
+          "recall_at_1pct_dev_far": 0.1698529411764706,
+          "false_alarms_per_10k": 105.84343991179712,
+          "top20_precision": 0.8500000000000002,
+          "base_rate": 0.23070398642917728
+        },
+        "Chirp": {
+          "ap": 0.029147804489244776,
+          "auroc": 0.8022070145423438,
+          "recall_at_1pct_dev_far": 0.02,
+          "false_alarms_per_10k": 76.98887938408896,
+          "top20_precision": 0.02,
+          "base_rate": 0.008481764206955046
+        },
+        "Extremely_Loud": {
+          "ap": 0.3346475223148836,
+          "auroc": 0.613230100896861,
+          "recall_at_1pct_dev_far": 0.278125,
+          "false_alarms_per_10k": 89.68609865470852,
+          "top20_precision": 0.6700000000000002,
+          "base_rate": 0.0542832909245123
+        },
+        "Helix": {
+          "ap": 0.5119268602022515,
+          "auroc": 0.8250282698831513,
+          "recall_at_1pct_dev_far": 0.48571428571428577,
+          "false_alarms_per_10k": 128.40809146877749,
+          "top20_precision": 0.54,
+          "base_rate": 0.035623409669211195
+        },
+        "Koi_Fish": {
+          "ap": 0.6618204891972994,
+          "auroc": 0.9584848981375279,
+          "recall_at_1pct_dev_far": 0.30588235294117644,
+          "false_alarms_per_10k": 92.85051067780873,
+          "top20_precision": 0.7500000000000001,
+          "base_rate": 0.08651399491094147
+        },
+        "Light_Modulation": {
+          "ap": 0.3245517623501305,
+          "auroc": 0.8275041337711636,
+          "recall_at_1pct_dev_far": 0.16410256410256413,
+          "false_alarms_per_10k": 96.27611262488645,
+          "top20_precision": 0.52,
+          "base_rate": 0.06615776081424936
+        },
+        "Low_Frequency_Burst": {
+          "ap": 0.16367463506875396,
+          "auroc": 0.7042363024181206,
+          "recall_at_1pct_dev_far": 0.035555555555555556,
+          "false_alarms_per_10k": 108.35629017447198,
+          "top20_precision": 0.16999999999999998,
+          "base_rate": 0.07633587786259542
+        },
+        "Low_Frequency_Lines": {
+          "ap": 0.21803405948931337,
+          "auroc": 0.8156933213536988,
+          "recall_at_1pct_dev_far": 0.051515151515151514,
+          "false_alarms_per_10k": 71.87780772686433,
+          "top20_precision": 0.27,
+          "base_rate": 0.05597964376590331
+        },
+        "Paired_Doves": {
+          "ap": 0.20070645035726228,
+          "auroc": 0.7972765957446809,
+          "recall_at_1pct_dev_far": 0.2,
+          "false_alarms_per_10k": 66.38297872340425,
+          "top20_precision": 0.08,
+          "base_rate": 0.0033927056827820186
+        },
+        "Power_Line": {
+          "ap": 0.25989368644298944,
+          "auroc": 0.9018504791655637,
+          "recall_at_1pct_dev_far": 0.07352941176470588,
+          "false_alarms_per_10k": 93.60936093609362,
+          "top20_precision": 0.31,
+          "base_rate": 0.05767599660729432
+        },
+        "Repeating_Blips": {
+          "ap": 0.27043956299773814,
+          "auroc": 0.7767690632839495,
+          "recall_at_1pct_dev_far": 0.1891891891891892,
+          "false_alarms_per_10k": 92.81961471103327,
+          "top20_precision": 0.35,
+          "base_rate": 0.031382527565733676
+        },
+        "Scattered_Light": {
+          "ap": 0.5708993239007107,
+          "auroc": 0.8860785998067218,
+          "recall_at_1pct_dev_far": 0.41791044776119407,
+          "false_alarms_per_10k": 106.11510791366906,
+          "top20_precision": 0.8300000000000001,
+          "base_rate": 0.056827820186598814
+        },
+        "Scratchy": {
+          "ap": 0.47267817228772585,
+          "auroc": 0.9117803365810453,
+          "recall_at_1pct_dev_far": 0.372,
+          "false_alarms_per_10k": 120.46058458813108,
+          "top20_precision": 0.66,
+          "base_rate": 0.04240882103477523
+        },
+        "Tomte": {
+          "ap": 0.07947877253041201,
+          "auroc": 0.8480010555482254,
+          "recall_at_1pct_dev_far": 0.13846153846153847,
+          "false_alarms_per_10k": 97.77015437392797,
+          "top20_precision": 0.12,
+          "base_rate": 0.01102629346904156
+        },
+        "Violin_Mode": {
+          "ap": 0.27278529819201985,
+          "auroc": 0.8832539237668161,
+          "recall_at_1pct_dev_far": 0.1125,
+          "false_alarms_per_10k": 98.65470852017937,
+          "top20_precision": 0.35,
+          "base_rate": 0.0542832909245123
+        },
+        "Wandering_Line": {
+          "ap": 0.12922404894545786,
+          "auroc": 0.8459044368600683,
+          "recall_at_1pct_dev_far": 0.2,
+          "false_alarms_per_10k": 92.15017064846417,
+          "top20_precision": 0.09,
+          "base_rate": 0.005937234944868533
+        },
+        "Whistle": {
+          "ap": 0.15597875451188994,
+          "auroc": 0.8571898883009993,
+          "recall_at_1pct_dev_far": 0.05333333333333333,
+          "false_alarms_per_10k": 114.6384479717813,
+          "top20_precision": 0.14,
+          "base_rate": 0.03816793893129771
+        }
+      },
+      "mean_ap": 0.2967979896393469,
+      "rare_mean_ap": 0.10528198350611837,
+      "mean_auroc": 0.8435714454318101,
+      "mean_recall_at_1pct_dev_far": 0.1804502552424249,
+      "rare_mean_recall_at_1pct_dev_far": 0.11066666666666665,
+      "mean_false_alarms_per_10k": 97.35435716000072,
+      "mean_top20_precision": 0.364,
+      "one_shot_accuracy_mean": 0.29224062772449877,
+      "one_shot_accuracy_draws": [
+        0.25108979947689625,
+        0.31037489102005233,
+        0.32781168265039234,
+        0.2598081952920663,
+        0.3121185701830863
+      ],
+      "one_shot_ways": 20
+    },
+    "random_stem_grid6": {
+      "per_class": {
+        "1080Lines": {
+          "ap": 0.6432675266534654,
+          "auroc": 0.9530664304694418,
+          "recall_at_1pct_dev_far": 0.5279999999999999,
+          "false_alarms_per_10k": 100.97431355181577,
+          "top20_precision": 0.8300000000000001,
+          "base_rate": 0.04240882103477523
+        },
+        "1400Ripples": {
+          "ap": 0.5953776629800366,
+          "auroc": 0.9850522317188984,
+          "recall_at_1pct_dev_far": 0.6888888888888889,
+          "false_alarms_per_10k": 99.14529914529915,
+          "top20_precision": 0.31999999999999995,
+          "base_rate": 0.007633587786259542
+        },
+        "Air_Compressor": {
+          "ap": 0.5799935429850891,
+          "auroc": 0.9416714150047483,
+          "recall_at_1pct_dev_far": 0.6222222222222222,
+          "false_alarms_per_10k": 119.65811965811966,
+          "top20_precision": 0.27999999999999997,
+          "base_rate": 0.007633587786259542
+        },
+        "Blip": {
+          "ap": 0.7079459424909786,
+          "auroc": 0.8579820351514365,
+          "recall_at_1pct_dev_far": 0.36397058823529416,
+          "false_alarms_per_10k": 108.04851157662624,
+          "top20_precision": 0.97,
+          "base_rate": 0.23070398642917728
+        },
+        "Chirp": {
+          "ap": 0.257957987647808,
+          "auroc": 0.8280239520958084,
+          "recall_at_1pct_dev_far": 0.32,
+          "false_alarms_per_10k": 100.9409751924722,
+          "top20_precision": 0.16,
+          "base_rate": 0.008481764206955046
+        },
+        "Extremely_Loud": {
+          "ap": 0.3946701737687783,
+          "auroc": 0.6587710201793722,
+          "recall_at_1pct_dev_far": 0.30625,
+          "false_alarms_per_10k": 125.56053811659191,
+          "top20_precision": 0.6799999999999999,
+          "base_rate": 0.0542832909245123
+        },
+        "Helix": {
+          "ap": 0.3625877955999753,
+          "auroc": 0.7768396364702432,
+          "recall_at_1pct_dev_far": 0.28095238095238095,
+          "false_alarms_per_10k": 84.43271767810026,
+          "top20_precision": 0.51,
+          "base_rate": 0.035623409669211195
+        },
+        "Koi_Fish": {
+          "ap": 0.7857827453810182,
+          "auroc": 0.981014801463761,
+          "recall_at_1pct_dev_far": 0.4333333333333334,
+          "false_alarms_per_10k": 96.56453110492107,
+          "top20_precision": 0.85,
+          "base_rate": 0.08651399491094147
+        },
+        "Light_Modulation": {
+          "ap": 0.4124020705379941,
+          "auroc": 0.763534316122872,
+          "recall_at_1pct_dev_far": 0.2666666666666667,
+          "false_alarms_per_10k": 159.85467756584922,
+          "top20_precision": 0.6,
+          "base_rate": 0.06615776081424936
+        },
+        "Low_Frequency_Burst": {
+          "ap": 0.600678980607541,
+          "auroc": 0.8162616059585757,
+          "recall_at_1pct_dev_far": 0.45999999999999996,
+          "false_alarms_per_10k": 128.55831037649222,
+          "top20_precision": 0.9,
+          "base_rate": 0.07633587786259542
+        },
+        "Low_Frequency_Lines": {
+          "ap": 0.6629331558550661,
+          "auroc": 0.9127991505349996,
+          "recall_at_1pct_dev_far": 0.5151515151515151,
+          "false_alarms_per_10k": 86.2533692722372,
+          "top20_precision": 0.9099999999999999,
+          "base_rate": 0.05597964376590331
+        },
+        "Paired_Doves": {
+          "ap": 0.13602901330006642,
+          "auroc": 0.9354042553191488,
+          "recall_at_1pct_dev_far": 0.15,
+          "false_alarms_per_10k": 66.38297872340425,
+          "top20_precision": 0.06999999999999999,
+          "base_rate": 0.0033927056827820186
+        },
+        "Power_Line": {
+          "ap": 0.7153955102252665,
+          "auroc": 0.9558082278816118,
+          "recall_at_1pct_dev_far": 0.6029411764705882,
+          "false_alarms_per_10k": 120.61206120612061,
+          "top20_precision": 0.8800000000000001,
+          "base_rate": 0.05767599660729432
+        },
+        "Repeating_Blips": {
+          "ap": 0.18380502559097517,
+          "auroc": 0.7145595683248922,
+          "recall_at_1pct_dev_far": 0.16756756756756758,
+          "false_alarms_per_10k": 77.05779334500876,
+          "top20_precision": 0.29,
+          "base_rate": 0.031382527565733676
+        },
+        "Scattered_Light": {
+          "ap": 0.8858610640235319,
+          "auroc": 0.9573553097820252,
+          "recall_at_1pct_dev_far": 0.8298507462686567,
+          "false_alarms_per_10k": 62.94964028776978,
+          "top20_precision": 0.95,
+          "base_rate": 0.056827820186598814
+        },
+        "Scratchy": {
+          "ap": 0.5270585564823084,
+          "auroc": 0.8905828166519043,
+          "recall_at_1pct_dev_far": 0.396,
+          "false_alarms_per_10k": 113.37466784765279,
+          "top20_precision": 0.74,
+          "base_rate": 0.04240882103477523
+        },
+        "Tomte": {
+          "ap": 0.5570700238919563,
+          "auroc": 0.9847473281435544,
+          "recall_at_1pct_dev_far": 0.676923076923077,
+          "false_alarms_per_10k": 96.05488850771869,
+          "top20_precision": 0.45,
+          "base_rate": 0.01102629346904156
+        },
+        "Violin_Mode": {
+          "ap": 0.45324829966753716,
+          "auroc": 0.8997337443946188,
+          "recall_at_1pct_dev_far": 0.275,
+          "false_alarms_per_10k": 60.98654708520179,
+          "top20_precision": 0.72,
+          "base_rate": 0.0542832909245123
+        },
+        "Wandering_Line": {
+          "ap": 0.22953040141186834,
+          "auroc": 0.7624085811799122,
+          "recall_at_1pct_dev_far": 0.2857142857142857,
+          "false_alarms_per_10k": 83.61774744027302,
+          "top20_precision": 0.13999999999999999,
+          "base_rate": 0.005937234944868533
+        },
+        "Whistle": {
+          "ap": 0.34608250559431736,
+          "auroc": 0.9130629041740154,
+          "recall_at_1pct_dev_far": 0.18666666666666668,
+          "false_alarms_per_10k": 81.12874779541445,
+          "top20_precision": 0.38,
+          "base_rate": 0.03816793893129771
+        }
+      },
+      "mean_ap": 0.5018838992347789,
+      "rare_mean_ap": 0.3597777216649737,
+      "mean_auroc": 0.874433966551092,
+      "mean_recall_at_1pct_dev_far": 0.41780495575305726,
+      "rare_mean_recall_at_1pct_dev_far": 0.4133650793650793,
+      "mean_false_alarms_per_10k": 98.60782177385445,
+      "mean_top20_precision": 0.5815000000000001,
+      "one_shot_accuracy_mean": 0.541586748038361,
+      "one_shot_accuracy_draws": [
+        0.5152571926765476,
+        0.5265911072362686,
+        0.5431560592850916,
+        0.5431560592850916,
+        0.5797733217088056
+      ],
+      "one_shot_ways": 20
+    },
+    "random_stem_pyramid": {
+      "per_class": {
+        "1080Lines": {
+          "ap": 0.3319830708813359,
+          "auroc": 0.9269406554472985,
+          "recall_at_1pct_dev_far": 0.14400000000000002,
+          "false_alarms_per_10k": 115.14614703277236,
+          "top20_precision": 0.32,
+          "base_rate": 0.04240882103477523
+        },
+        "1400Ripples": {
+          "ap": 0.48545722321499385,
+          "auroc": 0.9888509021842357,
+          "recall_at_1pct_dev_far": 0.6222222222222222,
+          "false_alarms_per_10k": 116.23931623931624,
+          "top20_precision": 0.3,
+          "base_rate": 0.007633587786259542
+        },
+        "Air_Compressor": {
+          "ap": 0.5504303028564617,
+          "auroc": 0.9231908831908833,
+          "recall_at_1pct_dev_far": 0.6,
+          "false_alarms_per_10k": 85.47008547008548,
+          "top20_precision": 0.27999999999999997,
+          "base_rate": 0.007633587786259542
+        },
+        "Blip": {
+          "ap": 0.6899468811408991,
+          "auroc": 0.8346107075685841,
+          "recall_at_1pct_dev_far": 0.3786764705882353,
+          "false_alarms_per_10k": 97.02315325248071,
+          "top20_precision": 0.97,
+          "base_rate": 0.23070398642917728
+        },
+        "Chirp": {
+          "ap": 0.1628392696844237,
+          "auroc": 0.7650812660393498,
+          "recall_at_1pct_dev_far": 0.18,
+          "false_alarms_per_10k": 104.36270316509838,
+          "top20_precision": 0.11000000000000001,
+          "base_rate": 0.008481764206955046
+        },
+        "Extremely_Loud": {
+          "ap": 0.41043354860917686,
+          "auroc": 0.6881207959641256,
+          "recall_at_1pct_dev_far": 0.334375,
+          "false_alarms_per_10k": 125.56053811659191,
+          "top20_precision": 0.7,
+          "base_rate": 0.0542832909245123
+        },
+        "Helix": {
+          "ap": 0.31474825400633866,
+          "auroc": 0.7905432005695859,
+          "recall_at_1pct_dev_far": 0.21428571428571427,
+          "false_alarms_per_10k": 89.70976253298154,
+          "top20_precision": 0.4,
+          "base_rate": 0.035623409669211195
+        },
+        "Koi_Fish": {
+          "ap": 0.7925426744184616,
+          "auroc": 0.9815700839295791,
+          "recall_at_1pct_dev_far": 0.4450980392156863,
+          "false_alarms_per_10k": 81.70844939647168,
+          "top20_precision": 0.8300000000000001,
+          "base_rate": 0.08651399491094147
+        },
+        "Light_Modulation": {
+          "ap": 0.3894535722343696,
+          "auroc": 0.7590279233331004,
+          "recall_at_1pct_dev_far": 0.23076923076923078,
+          "false_alarms_per_10k": 110.80835603996368,
+          "top20_precision": 0.6,
+          "base_rate": 0.06615776081424936
+        },
+        "Low_Frequency_Burst": {
+          "ap": 0.4391301371546719,
+          "auroc": 0.7126048362411999,
+          "recall_at_1pct_dev_far": 0.2977777777777778,
+          "false_alarms_per_10k": 78.97153351698805,
+          "top20_precision": 0.8099999999999999,
+          "base_rate": 0.07633587786259542
+        },
+        "Low_Frequency_Lines": {
+          "ap": 0.5110875404192596,
+          "auroc": 0.8726891557080236,
+          "recall_at_1pct_dev_far": 0.35757575757575755,
+          "false_alarms_per_10k": 98.83198562443846,
+          "top20_precision": 0.7100000000000001,
+          "base_rate": 0.05597964376590331
+        },
+        "Paired_Doves": {
+          "ap": 0.12248152257742002,
+          "auroc": 0.8944680851063829,
+          "recall_at_1pct_dev_far": 0.1,
+          "false_alarms_per_10k": 56.170212765957444,
+          "top20_precision": 0.06999999999999999,
+          "base_rate": 0.0033927056827820186
+        },
+        "Power_Line": {
+          "ap": 0.5935452634565406,
+          "auroc": 0.9140096362577435,
+          "recall_at_1pct_dev_far": 0.47352941176470587,
+          "false_alarms_per_10k": 129.6129612961296,
+          "top20_precision": 0.75,
+          "base_rate": 0.05767599660729432
+        },
+        "Repeating_Blips": {
+          "ap": 0.19123005386854675,
+          "auroc": 0.7332086903015098,
+          "recall_at_1pct_dev_far": 0.14054054054054052,
+          "false_alarms_per_10k": 89.3169877408056,
+          "top20_precision": 0.24,
+          "base_rate": 0.031382527565733676
+        },
+        "Scattered_Light": {
+          "ap": 0.7195127946413921,
+          "auroc": 0.9492027273703426,
+          "recall_at_1pct_dev_far": 0.5223880597014926,
+          "false_alarms_per_10k": 75.53956834532374,
+          "top20_precision": 0.86,
+          "base_rate": 0.056827820186598814
+        },
+        "Scratchy": {
+          "ap": 0.6634419006295946,
+          "auroc": 0.9269406554472985,
+          "recall_at_1pct_dev_far": 0.532,
+          "false_alarms_per_10k": 97.4313551815766,
+          "top20_precision": 0.8800000000000001,
+          "base_rate": 0.04240882103477523
+        },
+        "Tomte": {
+          "ap": 0.47970770790772466,
+          "auroc": 0.9502968729383824,
+          "recall_at_1pct_dev_far": 0.5692307692307692,
+          "false_alarms_per_10k": 101.20068610634648,
+          "top20_precision": 0.39,
+          "base_rate": 0.01102629346904156
+        },
+        "Violin_Mode": {
+          "ap": 0.4504563637691804,
+          "auroc": 0.8929512331838565,
+          "recall_at_1pct_dev_far": 0.296875,
+          "false_alarms_per_10k": 86.09865470852017,
+          "top20_precision": 0.6599999999999999,
+          "base_rate": 0.0542832909245123
+        },
+        "Wandering_Line": {
+          "ap": 0.2575289267543558,
+          "auroc": 0.7501950268161872,
+          "recall_at_1pct_dev_far": 0.2857142857142857,
+          "false_alarms_per_10k": 40.955631399317404,
+          "top20_precision": 0.10999999999999999,
+          "base_rate": 0.005937234944868533
+        },
+        "Whistle": {
+          "ap": 0.3716469757725169,
+          "auroc": 0.9387262394669802,
+          "recall_at_1pct_dev_far": 0.16888888888888892,
+          "false_alarms_per_10k": 82.89241622574956,
+          "top20_precision": 0.4,
+          "base_rate": 0.03816793893129771
+        }
+      },
+      "mean_ap": 0.44638019919988325,
+      "rare_mean_ap": 0.315747449017531,
+      "mean_auroc": 0.8596614788532324,
+      "mean_recall_at_1pct_dev_far": 0.3446973584137653,
+      "rare_mean_recall_at_1pct_dev_far": 0.3575873015873016,
+      "mean_false_alarms_per_10k": 93.15252520784574,
+      "mean_top20_precision": 0.5195000000000001,
+      "one_shot_accuracy_mean": 0.4638186573670445,
+      "one_shot_accuracy_draws": [
+        0.44376634699215345,
+        0.4673060156931125,
+        0.4629468177855275,
+        0.4524847428073234,
+        0.4925893635571055
+      ],
+      "one_shot_ways": 20
+    },
+    "random_fine_grid6": {
+      "per_class": {
+        "1080Lines": {
+          "ap": 0.6644205032423027,
+          "auroc": 0.9595783879539417,
+          "recall_at_1pct_dev_far": 0.576,
+          "false_alarms_per_10k": 100.97431355181575,
+          "top20_precision": 0.8400000000000001,
+          "base_rate": 0.04240882103477523
+        },
+        "1400Ripples": {
+          "ap": 0.4131106884567938,
+          "auroc": 0.978974358974359,
+          "recall_at_1pct_dev_far": 0.5111111111111111,
+          "false_alarms_per_10k": 92.3076923076923,
+          "top20_precision": 0.24000000000000005,
+          "base_rate": 0.007633587786259542
+        },
+        "Air_Compressor": {
+          "ap": 0.5431219237943194,
+          "auroc": 0.9847293447293449,
+          "recall_at_1pct_dev_far": 0.6444444444444444,
+          "false_alarms_per_10k": 105.98290598290598,
+          "top20_precision": 0.32999999999999996,
+          "base_rate": 0.007633587786259542
+        },
+        "Blip": {
+          "ap": 0.753987743037593,
+          "auroc": 0.8778511900901484,
+          "recall_at_1pct_dev_far": 0.438235294117647,
+          "false_alarms_per_10k": 57.33186328555678,
+          "top20_precision": 0.95,
+          "base_rate": 0.23070398642917728
+        },
+        "Chirp": {
+          "ap": 0.4641329803746738,
+          "auroc": 0.9238494439692044,
+          "recall_at_1pct_dev_far": 0.5199999999999999,
+          "false_alarms_per_10k": 78.69974337040205,
+          "top20_precision": 0.27,
+          "base_rate": 0.008481764206955046
+        },
+        "Extremely_Loud": {
+          "ap": 0.3886013039500207,
+          "auroc": 0.6250042040358744,
+          "recall_at_1pct_dev_far": 0.340625,
+          "false_alarms_per_10k": 138.11659192825113,
+          "top20_precision": 0.7000000000000001,
+          "base_rate": 0.0542832909245123
+        },
+        "Helix": {
+          "ap": 0.3229685006519216,
+          "auroc": 0.8399966494953303,
+          "recall_at_1pct_dev_far": 0.18095238095238092,
+          "false_alarms_per_10k": 66.84256816182936,
+          "top20_precision": 0.38,
+          "base_rate": 0.035623409669211195
+        },
+        "Koi_Fish": {
+          "ap": 0.8448904938233188,
+          "auroc": 0.9841225626740947,
+          "recall_at_1pct_dev_far": 0.5627450980392157,
+          "false_alarms_per_10k": 83.56545961002784,
+          "top20_precision": 0.93,
+          "base_rate": 0.08651399491094147
+        },
+        "Light_Modulation": {
+          "ap": 0.38276120348111653,
+          "auroc": 0.7961573394815902,
+          "recall_at_1pct_dev_far": 0.2692307692307693,
+          "false_alarms_per_10k": 132.6067211625795,
+          "top20_precision": 0.58,
+          "base_rate": 0.06615776081424936
+        },
+        "Low_Frequency_Burst": {
+          "ap": 0.6553803044864762,
+          "auroc": 0.8523273135394348,
+          "recall_at_1pct_dev_far": 0.5288888888888887,
+          "false_alarms_per_10k": 106.51974288337924,
+          "top20_precision": 0.86,
+          "base_rate": 0.07633587786259542
+        },
+        "Low_Frequency_Lines": {
+          "ap": 0.6710005443784324,
+          "auroc": 0.9032263334150127,
+          "recall_at_1pct_dev_far": 0.5393939393939394,
+          "false_alarms_per_10k": 102.42587601078166,
+          "top20_precision": 0.8800000000000001,
+          "base_rate": 0.05597964376590331
+        },
+        "Paired_Doves": {
+          "ap": 0.1489736736237844,
+          "auroc": 0.9220851063829787,
+          "recall_at_1pct_dev_far": 0.15,
+          "false_alarms_per_10k": 51.06382978723404,
+          "top20_precision": 0.06999999999999999,
+          "base_rate": 0.0033927056827820186
+        },
+        "Power_Line": {
+          "ap": 0.5424973608168568,
+          "auroc": 0.815261820299677,
+          "recall_at_1pct_dev_far": 0.45294117647058824,
+          "false_alarms_per_10k": 108.01080108010801,
+          "top20_precision": 0.8699999999999999,
+          "base_rate": 0.05767599660729432
+        },
+        "Repeating_Blips": {
+          "ap": 0.224973013993253,
+          "auroc": 0.7573389501585649,
+          "recall_at_1pct_dev_far": 0.1783783783783784,
+          "false_alarms_per_10k": 78.8091068301226,
+          "top20_precision": 0.36000000000000004,
+          "base_rate": 0.031382527565733676
+        },
+        "Scattered_Light": {
+          "ap": 0.839985055337628,
+          "auroc": 0.9494845914313326,
+          "recall_at_1pct_dev_far": 0.7611940298507462,
+          "false_alarms_per_10k": 68.3453237410072,
+          "top20_precision": 0.93,
+          "base_rate": 0.056827820186598814
+        },
+        "Scratchy": {
+          "ap": 0.6454056846501575,
+          "auroc": 0.928311780336581,
+          "recall_at_1pct_dev_far": 0.54,
+          "false_alarms_per_10k": 99.20283436669618,
+          "top20_precision": 0.8699999999999999,
+          "base_rate": 0.04240882103477523
+        },
+        "Tomte": {
+          "ap": 0.7537157219503413,
+          "auroc": 0.9945507322865813,
+          "recall_at_1pct_dev_far": 0.8461538461538461,
+          "false_alarms_per_10k": 94.33962264150944,
+          "top20_precision": 0.55,
+          "base_rate": 0.01102629346904156
+        },
+        "Violin_Mode": {
+          "ap": 0.40297635891129413,
+          "auroc": 0.9166563901345292,
+          "recall_at_1pct_dev_far": 0.209375,
+          "false_alarms_per_10k": 132.7354260089686,
+          "top20_precision": 0.56,
+          "base_rate": 0.0542832909245123
+        },
+        "Wandering_Line": {
+          "ap": 0.19105670226955213,
+          "auroc": 0.8381277425646025,
+          "recall_at_1pct_dev_far": 0.19999999999999996,
+          "false_alarms_per_10k": 87.0307167235495,
+          "top20_precision": 0.07999999999999999,
+          "base_rate": 0.005937234944868533
+        },
+        "Whistle": {
+          "ap": 0.3885932776428987,
+          "auroc": 0.9223672349598276,
+          "recall_at_1pct_dev_far": 0.20444444444444443,
+          "false_alarms_per_10k": 74.07407407407408,
+          "top20_precision": 0.4600000000000001,
+          "base_rate": 0.03816793893129771
+        }
+      },
+      "mean_ap": 0.5121276519436367,
+      "rare_mean_ap": 0.3520791937038247,
+      "mean_auroc": 0.8885000738456507,
+      "mean_recall_at_1pct_dev_far": 0.4327056900738199,
+      "rare_mean_recall_at_1pct_dev_far": 0.40511111111111103,
+      "mean_false_alarms_per_10k": 92.94926067542455,
+      "mean_top20_precision": 0.5855000000000001,
+      "one_shot_accuracy_mean": 0.5293809938971229,
+      "one_shot_accuracy_draws": [
+        0.5231037489102005,
+        0.5710549258936356,
+        0.48561464690496947,
+        0.5091543156059285,
+        0.5579773321708805
+      ],
+      "one_shot_ways": 20
+    },
+    "random_fine_pyramid": {
+      "per_class": {
+        "1080Lines": {
+          "ap": 0.486916770102552,
+          "auroc": 0.9419769707705935,
+          "recall_at_1pct_dev_far": 0.316,
+          "false_alarms_per_10k": 97.4313551815766,
+          "top20_precision": 0.6100000000000001,
+          "base_rate": 0.04240882103477523
+        },
+        "1400Ripples": {
+          "ap": 0.40158980713941883,
+          "auroc": 0.9822792022792024,
+          "recall_at_1pct_dev_far": 0.48888888888888893,
+          "false_alarms_per_10k": 90.5982905982906,
+          "top20_precision": 0.24999999999999994,
+          "base_rate": 0.007633587786259542
+        },
+        "Air_Compressor": {
+          "ap": 0.4761618377529956,
+          "auroc": 0.9567141500474834,
+          "recall_at_1pct_dev_far": 0.5777777777777777,
+          "false_alarms_per_10k": 92.3076923076923,
+          "top20_precision": 0.29000000000000004,
+          "base_rate": 0.007633587786259542
+        },
+        "Blip": {
+          "ap": 0.7602868590351852,
+          "auroc": 0.8601360334652053,
+          "recall_at_1pct_dev_far": 0.4889705882352941,
+          "false_alarms_per_10k": 85.99779492833518,
+          "top20_precision": 0.99,
+          "base_rate": 0.23070398642917728
+        },
+        "Chirp": {
+          "ap": 0.28522879507738946,
+          "auroc": 0.8557741659538067,
+          "recall_at_1pct_dev_far": 0.3,
+          "false_alarms_per_10k": 85.54319931565439,
+          "top20_precision": 0.19,
+          "base_rate": 0.008481764206955046
+        },
+        "Extremely_Loud": {
+          "ap": 0.40620282901169924,
+          "auroc": 0.6411897421524664,
+          "recall_at_1pct_dev_far": 0.340625,
+          "false_alarms_per_10k": 96.8609865470852,
+          "top20_precision": 0.71,
+          "base_rate": 0.0542832909245123
+        },
+        "Helix": {
+          "ap": 0.41569445847975145,
+          "auroc": 0.8571763621895547,
+          "recall_at_1pct_dev_far": 0.2761904761904762,
+          "false_alarms_per_10k": 82.67370272647318,
+          "top20_precision": 0.51,
+          "base_rate": 0.035623409669211195
+        },
+        "Koi_Fish": {
+          "ap": 0.8359130406529747,
+          "auroc": 0.9838567553298013,
+          "recall_at_1pct_dev_far": 0.5470588235294118,
+          "false_alarms_per_10k": 87.27948003714019,
+          "top20_precision": 0.9,
+          "base_rate": 0.08651399491094147
+        },
+        "Light_Modulation": {
+          "ap": 0.37158753425421703,
+          "auroc": 0.8060760613894129,
+          "recall_at_1pct_dev_far": 0.24615384615384617,
+          "false_alarms_per_10k": 147.13896457765668,
+          "top20_precision": 0.5599999999999999,
+          "base_rate": 0.06615776081424936
+        },
+        "Low_Frequency_Burst": {
+          "ap": 0.5999467363934919,
+          "auroc": 0.8128170594837261,
+          "recall_at_1pct_dev_far": 0.4288888888888889,
+          "false_alarms_per_10k": 66.11570247933884,
+          "top20_precision": 0.8800000000000001,
+          "base_rate": 0.07633587786259542
+        },
+        "Low_Frequency_Lines": {
+          "ap": 0.5552698844390072,
+          "auroc": 0.8627460589724741,
+          "recall_at_1pct_dev_far": 0.3787878787878788,
+          "false_alarms_per_10k": 80.86253369272237,
+          "top20_precision": 0.82,
+          "base_rate": 0.05597964376590331
+        },
+        "Paired_Doves": {
+          "ap": 0.12786056093108697,
+          "auroc": 0.8985957446808511,
+          "recall_at_1pct_dev_far": 0.1,
+          "false_alarms_per_10k": 40.851063829787236,
+          "top20_precision": 0.06000000000000001,
+          "base_rate": 0.0033927056827820186
+        },
+        "Power_Line": {
+          "ap": 0.5393688094723293,
+          "auroc": 0.7716021602160217,
+          "recall_at_1pct_dev_far": 0.4382352941176471,
+          "false_alarms_per_10k": 97.2097209720972,
+          "top20_precision": 0.95,
+          "base_rate": 0.05767599660729432
+        },
+        "Repeating_Blips": {
+          "ap": 0.2037652134037041,
+          "auroc": 0.7491314431769773,
+          "recall_at_1pct_dev_far": 0.16216216216216214,
+          "false_alarms_per_10k": 119.08931698774079,
+          "top20_precision": 0.31,
+          "base_rate": 0.031382527565733676
+        },
+        "Scattered_Light": {
+          "ap": 0.6068566491173806,
+          "auroc": 0.932489530763449,
+          "recall_at_1pct_dev_far": 0.4029850746268656,
+          "false_alarms_per_10k": 100.71942446043165,
+          "top20_precision": 0.7699999999999999,
+          "base_rate": 0.056827820186598814
+        },
+        "Scratchy": {
+          "ap": 0.6627869055833927,
+          "auroc": 0.9413427812223206,
+          "recall_at_1pct_dev_far": 0.52,
+          "false_alarms_per_10k": 69.08768821966342,
+          "top20_precision": 0.8699999999999999,
+          "base_rate": 0.04240882103477523
+        },
+        "Tomte": {
+          "ap": 0.7858171796238123,
+          "auroc": 0.9965694682675814,
+          "recall_at_1pct_dev_far": 0.9076923076923077,
+          "false_alarms_per_10k": 96.0548885077187,
+          "top20_precision": 0.56,
+          "base_rate": 0.01102629346904156
+        },
+        "Violin_Mode": {
+          "ap": 0.40799415448915466,
+          "auroc": 0.9167292600896861,
+          "recall_at_1pct_dev_far": 0.246875,
+          "false_alarms_per_10k": 120.1793721973094,
+          "top20_precision": 0.56,
+          "base_rate": 0.0542832909245123
+        },
+        "Wandering_Line": {
+          "ap": 0.20918169479940643,
+          "auroc": 0.871282301316431,
+          "recall_at_1pct_dev_far": 0.1714285714285714,
+          "false_alarms_per_10k": 58.020477815699664,
+          "top20_precision": 0.10999999999999999,
+          "base_rate": 0.005937234944868533
+        },
+        "Whistle": {
+          "ap": 0.4598426748673491,
+          "auroc": 0.942904174015285,
+          "recall_at_1pct_dev_far": 0.2711111111111111,
+          "false_alarms_per_10k": 70.54673721340387,
+          "top20_precision": 0.53,
+          "base_rate": 0.03816793893129771
+        }
+      },
+      "mean_ap": 0.47991361973131497,
+      "rare_mean_ap": 0.3000045391400595,
+      "mean_auroc": 0.8790694712891167,
+      "mean_recall_at_1pct_dev_far": 0.3804915844795564,
+      "rare_mean_recall_at_1pct_dev_far": 0.32761904761904764,
+      "mean_false_alarms_per_10k": 89.22841962979088,
+      "mean_top20_precision": 0.5715,
+      "one_shot_accuracy_mean": 0.4960767218831735,
+      "one_shot_accuracy_draws": [
+        0.4742807323452485,
+        0.5265911072362686,
+        0.46207497820401044,
+        0.4934612031386225,
+        0.5239755884917175
+      ],
+      "one_shot_ways": 20
+    },
+    "random_middle_grid6": {
+      "per_class": {
+        "1080Lines": {
+          "ap": 0.5078790793486574,
+          "auroc": 0.9510434012400355,
+          "recall_at_1pct_dev_far": 0.32,
+          "false_alarms_per_10k": 56.687333923826394,
+          "top20_precision": 0.55,
+          "base_rate": 0.04240882103477523
+        },
+        "1400Ripples": {
+          "ap": 0.16002234636135462,
+          "auroc": 0.974757834757835,
+          "recall_at_1pct_dev_far": 0.02222222222222222,
+          "false_alarms_per_10k": 5.128205128205129,
+          "top20_precision": 0.01,
+          "base_rate": 0.007633587786259542
+        },
+        "Air_Compressor": {
+          "ap": 0.8662266581482072,
+          "auroc": 0.9974548907882241,
+          "recall_at_1pct_dev_far": 0.9555555555555555,
+          "false_alarms_per_10k": 109.4017094017094,
+          "top20_precision": 0.42000000000000004,
+          "base_rate": 0.007633587786259542
+        },
+        "Blip": {
+          "ap": 0.872909334089201,
+          "auroc": 0.9459992541669369,
+          "recall_at_1pct_dev_far": 0.5345588235294118,
+          "false_alarms_per_10k": 70.56229327453141,
+          "top20_precision": 0.95,
+          "base_rate": 0.23070398642917728
+        },
+        "Chirp": {
+          "ap": 0.6803864784690701,
+          "auroc": 0.9759965782720273,
+          "recall_at_1pct_dev_far": 0.6599999999999999,
+          "false_alarms_per_10k": 80.41060735671515,
+          "top20_precision": 0.34,
+          "base_rate": 0.008481764206955046
+        },
+        "Extremely_Loud": {
+          "ap": 0.3701270011577272,
+          "auroc": 0.6242138452914798,
+          "recall_at_1pct_dev_far": 0.325,
+          "false_alarms_per_10k": 132.7354260089686,
+          "top20_precision": 0.7100000000000001,
+          "base_rate": 0.0542832909245123
+        },
+        "Helix": {
+          "ap": 0.27033907572026006,
+          "auroc": 0.8580265527495079,
+          "recall_at_1pct_dev_far": 0.11428571428571428,
+          "false_alarms_per_10k": 47.4934036939314,
+          "top20_precision": 0.25999999999999995,
+          "base_rate": 0.035623409669211195
+        },
+        "Koi_Fish": {
+          "ap": 0.8357665743926382,
+          "auroc": 0.9821818049411035,
+          "recall_at_1pct_dev_far": 0.5666666666666667,
+          "false_alarms_per_10k": 107.70659238625812,
+          "top20_precision": 0.9400000000000001,
+          "base_rate": 0.08651399491094147
+        },
+        "Light_Modulation": {
+          "ap": 0.3618019696147209,
+          "auroc": 0.8200773189874008,
+          "recall_at_1pct_dev_far": 0.2512820512820513,
+          "false_alarms_per_10k": 121.70753860127158,
+          "top20_precision": 0.5700000000000001,
+          "base_rate": 0.06615776081424936
+        },
+        "Low_Frequency_Burst": {
+          "ap": 0.6949487771716429,
+          "auroc": 0.873121110090807,
+          "recall_at_1pct_dev_far": 0.5688888888888889,
+          "false_alarms_per_10k": 67.95224977043158,
+          "top20_precision": 0.8300000000000001,
+          "base_rate": 0.07633587786259542
+        },
+        "Low_Frequency_Lines": {
+          "ap": 0.6658661915422233,
+          "auroc": 0.9241716354923902,
+          "recall_at_1pct_dev_far": 0.49393939393939396,
+          "false_alarms_per_10k": 86.2533692722372,
+          "top20_precision": 0.8899999999999999,
+          "base_rate": 0.05597964376590331
+        },
+        "Paired_Doves": {
+          "ap": 0.18774370433197202,
+          "auroc": 0.9004255319148937,
+          "recall_at_1pct_dev_far": 0.15,
+          "false_alarms_per_10k": 44.25531914893617,
+          "top20_precision": 0.09,
+          "base_rate": 0.0033927056827820186
+        },
+        "Power_Line": {
+          "ap": 0.6872645654519689,
+          "auroc": 0.9212447715359773,
+          "recall_at_1pct_dev_far": 0.6,
+          "false_alarms_per_10k": 93.60936093609361,
+          "top20_precision": 0.8600000000000001,
+          "base_rate": 0.05767599660729432
+        },
+        "Repeating_Blips": {
+          "ap": 0.1880839381981987,
+          "auroc": 0.7736261655701234,
+          "recall_at_1pct_dev_far": 0.17297297297297298,
+          "false_alarms_per_10k": 106.83012259194395,
+          "top20_precision": 0.31999999999999995,
+          "base_rate": 0.031382527565733676
+        },
+        "Scattered_Light": {
+          "ap": 0.7020838836026778,
+          "auroc": 0.9292064855578224,
+          "recall_at_1pct_dev_far": 0.5671641791044776,
+          "false_alarms_per_10k": 97.12230215827337,
+          "top20_precision": 0.86,
+          "base_rate": 0.056827820186598814
+        },
+        "Scratchy": {
+          "ap": 0.7579950647117464,
+          "auroc": 0.9635287865367582,
+          "recall_at_1pct_dev_far": 0.632,
+          "false_alarms_per_10k": 58.45881310894597,
+          "top20_precision": 0.9400000000000001,
+          "base_rate": 0.04240882103477523
+        },
+        "Tomte": {
+          "ap": 0.8581656833926052,
+          "auroc": 0.9960680828605358,
+          "recall_at_1pct_dev_far": 0.9076923076923077,
+          "false_alarms_per_10k": 90.90909090909092,
+          "top20_precision": 0.59,
+          "base_rate": 0.01102629346904156
+        },
+        "Violin_Mode": {
+          "ap": 0.4674805041708357,
+          "auroc": 0.9249551569506727,
+          "recall_at_1pct_dev_far": 0.275,
+          "false_alarms_per_10k": 118.38565022421524,
+          "top20_precision": 0.5599999999999999,
+          "base_rate": 0.0542832909245123
+        },
+        "Wandering_Line": {
+          "ap": 0.1480486383110308,
+          "auroc": 0.8410043881033642,
+          "recall_at_1pct_dev_far": 0.1714285714285714,
+          "false_alarms_per_10k": 87.03071672354949,
+          "top20_precision": 0.06,
+          "base_rate": 0.005937234944868533
+        },
+        "Whistle": {
+          "ap": 0.3806730713667307,
+          "auroc": 0.9209915735841662,
+          "recall_at_1pct_dev_far": 0.2311111111111111,
+          "false_alarms_per_10k": 74.07407407407408,
+          "top20_precision": 0.45999999999999996,
+          "base_rate": 0.03816793893129771
+        }
+      },
+      "mean_ap": 0.5331906269776735,
+      "rare_mean_ap": 0.40848556512432693,
+      "mean_auroc": 0.9049047584696032,
+      "mean_recall_at_1pct_dev_far": 0.4259884229339672,
+      "rare_mean_recall_at_1pct_dev_far": 0.39184126984126977,
+      "mean_false_alarms_per_10k": 82.83570893466045,
+      "mean_top20_precision": 0.5605,
+      "one_shot_accuracy_mean": 0.5492589363557105,
+      "one_shot_accuracy_draws": [
+        0.5396687009590235,
+        0.5841325196163906,
+        0.4847428073234525,
+        0.5318221447253705,
+        0.6059285091543156
+      ],
+      "one_shot_ways": 20
+    },
+    "random_middle_pyramid": {
+      "per_class": {
+        "1080Lines": {
+          "ap": 0.4237001782845364,
+          "auroc": 0.934784765279008,
+          "recall_at_1pct_dev_far": 0.22800000000000004,
+          "false_alarms_per_10k": 104.51727192205492,
+          "top20_precision": 0.51,
+          "base_rate": 0.04240882103477523
+        },
+        "1400Ripples": {
+          "ap": 0.2976416732186081,
+          "auroc": 0.9785565052231717,
+          "recall_at_1pct_dev_far": 0.33333333333333337,
+          "false_alarms_per_10k": 51.282051282051285,
+          "top20_precision": 0.16,
+          "base_rate": 0.007633587786259542
+        },
+        "Air_Compressor": {
+          "ap": 0.7222436916408661,
+          "auroc": 0.9870465337132005,
+          "recall_at_1pct_dev_far": 0.9333333333333332,
+          "false_alarms_per_10k": 111.11111111111111,
+          "top20_precision": 0.42000000000000004,
+          "base_rate": 0.007633587786259542
+        },
+        "Blip": {
+          "ap": 0.8562104816179488,
+          "auroc": 0.9299443867955122,
+          "recall_at_1pct_dev_far": 0.5838235294117646,
+          "false_alarms_per_10k": 90.40793825799338,
+          "top20_precision": 0.97,
+          "base_rate": 0.23070398642917728
+        },
+        "Chirp": {
+          "ap": 0.5160408282492305,
+          "auroc": 0.9525406330196748,
+          "recall_at_1pct_dev_far": 0.5199999999999999,
+          "false_alarms_per_10k": 83.83233532934132,
+          "top20_precision": 0.26999999999999996,
+          "base_rate": 0.008481764206955046
+        },
+        "Extremely_Loud": {
+          "ap": 0.39629673838602375,
+          "auroc": 0.6309823430493273,
+          "recall_at_1pct_dev_far": 0.3375,
+          "false_alarms_per_10k": 114.7982062780269,
+          "top20_precision": 0.7300000000000001,
+          "base_rate": 0.0542832909245123
+        },
+        "Helix": {
+          "ap": 0.30579975122351766,
+          "auroc": 0.8439921263140262,
+          "recall_at_1pct_dev_far": 0.21904761904761907,
+          "false_alarms_per_10k": 89.70976253298153,
+          "top20_precision": 0.36,
+          "base_rate": 0.035623409669211195
+        },
+        "Koi_Fish": {
+          "ap": 0.8050852092326896,
+          "auroc": 0.9803593860942706,
+          "recall_at_1pct_dev_far": 0.49607843137254903,
+          "false_alarms_per_10k": 102.1355617455896,
+          "top20_precision": 0.8800000000000001,
+          "base_rate": 0.08651399491094147
+        },
+        "Light_Modulation": {
+          "ap": 0.3469342088047588,
+          "auroc": 0.8278907287081674,
+          "recall_at_1pct_dev_far": 0.22564102564102564,
+          "false_alarms_per_10k": 127.15712988192551,
+          "top20_precision": 0.53,
+          "base_rate": 0.06615776081424936
+        },
+        "Low_Frequency_Burst": {
+          "ap": 0.6814552856066609,
+          "auroc": 0.8461054994388328,
+          "recall_at_1pct_dev_far": 0.5533333333333333,
+          "false_alarms_per_10k": 80.8080808080808,
+          "top20_precision": 0.86,
+          "base_rate": 0.07633587786259542
+        },
+        "Low_Frequency_Lines": {
+          "ap": 0.6247835728272914,
+          "auroc": 0.9065370688012198,
+          "recall_at_1pct_dev_far": 0.4818181818181818,
+          "false_alarms_per_10k": 73.67475292003593,
+          "top20_precision": 0.8699999999999999,
+          "base_rate": 0.05597964376590331
+        },
+        "Paired_Doves": {
+          "ap": 0.134254341584673,
+          "auroc": 0.8663829787234043,
+          "recall_at_1pct_dev_far": 0.1,
+          "false_alarms_per_10k": 42.5531914893617,
+          "top20_precision": 0.06999999999999999,
+          "base_rate": 0.0033927056827820186
+        },
+        "Power_Line": {
+          "ap": 0.6732760751492407,
+          "auroc": 0.8814104939905756,
+          "recall_at_1pct_dev_far": 0.5911764705882353,
+          "false_alarms_per_10k": 95.4095409540954,
+          "top20_precision": 1.0,
+          "base_rate": 0.05767599660729432
+        },
+        "Repeating_Blips": {
+          "ap": 0.17133312924521327,
+          "auroc": 0.7623325602309841,
+          "recall_at_1pct_dev_far": 0.1621621621621622,
+          "false_alarms_per_10k": 103.3274956217163,
+          "top20_precision": 0.29000000000000004,
+          "base_rate": 0.031382527565733676
+        },
+        "Scattered_Light": {
+          "ap": 0.5125255451483895,
+          "auroc": 0.9042118543970794,
+          "recall_at_1pct_dev_far": 0.3582089552238806,
+          "false_alarms_per_10k": 134.89208633093526,
+          "top20_precision": 0.76,
+          "base_rate": 0.056827820186598814
+        },
+        "Scratchy": {
+          "ap": 0.7123180787426808,
+          "auroc": 0.955617360496014,
+          "recall_at_1pct_dev_far": 0.58,
+          "false_alarms_per_10k": 74.40212577502214,
+          "top20_precision": 0.9,
+          "base_rate": 0.04240882103477523
+        },
+        "Tomte": {
+          "ap": 0.8631824654679076,
+          "auroc": 0.997611822140124,
+          "recall_at_1pct_dev_far": 0.9384615384615385,
+          "false_alarms_per_10k": 108.06174957118353,
+          "top20_precision": 0.59,
+          "base_rate": 0.01102629346904156
+        },
+        "Violin_Mode": {
+          "ap": 0.3954628111753756,
+          "auroc": 0.9138312780269058,
+          "recall_at_1pct_dev_far": 0.20625,
+          "false_alarms_per_10k": 86.09865470852017,
+          "top20_precision": 0.53,
+          "base_rate": 0.0542832909245123
+        },
+        "Wandering_Line": {
+          "ap": 0.13649410943465284,
+          "auroc": 0.875694783032667,
+          "recall_at_1pct_dev_far": 0.1714285714285714,
+          "false_alarms_per_10k": 93.8566552901024,
+          "top20_precision": 0.06999999999999999,
+          "base_rate": 0.005937234944868533
+        },
+        "Whistle": {
+          "ap": 0.4251433467974546,
+          "auroc": 0.9381069958847738,
+          "recall_at_1pct_dev_far": 0.2577777777777778,
+          "false_alarms_per_10k": 67.0194003527337,
+          "top20_precision": 0.53,
+          "base_rate": 0.03816793893129771
+        }
+      },
+      "mean_ap": 0.500009076091886,
+      "rare_mean_ap": 0.3613349288256061,
+      "mean_auroc": 0.8956970051679469,
+      "mean_recall_at_1pct_dev_far": 0.4138687131466653,
+      "rare_mean_recall_at_1pct_dev_far": 0.4116190476190476,
+      "mean_false_alarms_per_10k": 91.75275510814315,
+      "mean_top20_precision": 0.5650000000000001,
+      "one_shot_accuracy_mean": 0.5306015693112467,
+      "one_shot_accuracy_draws": [
+        0.5030514385353095,
+        0.5553618134263295,
+        0.48561464690496947,
+        0.5170008718395815,
+        0.5919790758500436
+      ],
+      "one_shot_ways": 20
+    },
+    "random_coarse_grid6": {
+      "per_class": {
+        "1080Lines": {
+          "ap": 0.3901414582891901,
+          "auroc": 0.9497502214348982,
+          "recall_at_1pct_dev_far": 0.144,
+          "false_alarms_per_10k": 42.515500442869794,
+          "top20_precision": 0.22999999999999998,
+          "base_rate": 0.04240882103477523
+        },
+        "1400Ripples": {
+          "ap": 0.21976707702526066,
+          "auroc": 0.9763912630579297,
+          "recall_at_1pct_dev_far": 0.11111111111111112,
+          "false_alarms_per_10k": 6.837606837606837,
+          "top20_precision": 0.05,
+          "base_rate": 0.007633587786259542
+        },
+        "Air_Compressor": {
+          "ap": 0.8088941958641968,
+          "auroc": 0.9960683760683761,
+          "recall_at_1pct_dev_far": 0.888888888888889,
+          "false_alarms_per_10k": 90.5982905982906,
+          "top20_precision": 0.4,
+          "base_rate": 0.007633587786259542
+        },
+        "Blip": {
+          "ap": 0.9020799050525998,
+          "auroc": 0.9615928400025942,
+          "recall_at_1pct_dev_far": 0.613235294117647,
+          "false_alarms_per_10k": 103.638368246968,
+          "top20_precision": 0.96,
+          "base_rate": 0.23070398642917728
+        },
+        "Chirp": {
+          "ap": 0.7555080436967698,
+          "auroc": 0.9786313088109496,
+          "recall_at_1pct_dev_far": 0.76,
+          "false_alarms_per_10k": 87.25406330196749,
+          "top20_precision": 0.4,
+          "base_rate": 0.008481764206955046
+        },
+        "Extremely_Loud": {
+          "ap": 0.40796710950842263,
+          "auroc": 0.6420081278026906,
+          "recall_at_1pct_dev_far": 0.415625,
+          "false_alarms_per_10k": 148.87892376681614,
+          "top20_precision": 0.7300000000000001,
+          "base_rate": 0.0542832909245123
+        },
+        "Helix": {
+          "ap": 0.24748713187934368,
+          "auroc": 0.8655526238639695,
+          "recall_at_1pct_dev_far": 0.047619047619047616,
+          "false_alarms_per_10k": 59.806508355321036,
+          "top20_precision": 0.1,
+          "base_rate": 0.035623409669211195
+        },
+        "Koi_Fish": {
+          "ap": 0.7819955385820663,
+          "auroc": 0.9711398765634387,
+          "recall_at_1pct_dev_far": 0.5274509803921569,
+          "false_alarms_per_10k": 113.27762302692665,
+          "top20_precision": 0.89,
+          "base_rate": 0.08651399491094147
+        },
+        "Light_Modulation": {
+          "ap": 0.2588753855092446,
+          "auroc": 0.7723281864971238,
+          "recall_at_1pct_dev_far": 0.1512820512820513,
+          "false_alarms_per_10k": 139.87284287011806,
+          "top20_precision": 0.43,
+          "base_rate": 0.06615776081424936
+        },
+        "Low_Frequency_Burst": {
+          "ap": 0.7023333264433448,
+          "auroc": 0.9029078665442303,
+          "recall_at_1pct_dev_far": 0.5444444444444445,
+          "false_alarms_per_10k": 86.31772268135906,
+          "top20_precision": 0.8,
+          "base_rate": 0.07633587786259542
+        },
+        "Low_Frequency_Lines": {
+          "ap": 0.6546164317173895,
+          "auroc": 0.9319910697269188,
+          "recall_at_1pct_dev_far": 0.46060606060606063,
+          "false_alarms_per_10k": 64.6900269541779,
+          "top20_precision": 0.93,
+          "base_rate": 0.05597964376590331
+        },
+        "Paired_Doves": {
+          "ap": 0.08871347469336563,
+          "auroc": 0.8957872340425531,
+          "recall_at_1pct_dev_far": 0.0,
+          "false_alarms_per_10k": 10.212765957446809,
+          "top20_precision": 0.08,
+          "base_rate": 0.0033927056827820186
+        },
+        "Power_Line": {
+          "ap": 0.6885120976554123,
+          "auroc": 0.9273997988034097,
+          "recall_at_1pct_dev_far": 0.5852941176470587,
+          "false_alarms_per_10k": 77.4077407740774,
+          "top20_precision": 0.8099999999999999,
+          "base_rate": 0.05767599660729432
+        },
+        "Repeating_Blips": {
+          "ap": 0.20265427669211394,
+          "auroc": 0.7912528991338098,
+          "recall_at_1pct_dev_far": 0.14594594594594595,
+          "false_alarms_per_10k": 117.33800350262698,
+          "top20_precision": 0.25999999999999995,
+          "base_rate": 0.031382527565733676
+        },
+        "Scattered_Light": {
+          "ap": 0.6330475584476938,
+          "auroc": 0.9137442284977988,
+          "recall_at_1pct_dev_far": 0.5134328358208956,
+          "false_alarms_per_10k": 125.89928057553956,
+          "top20_precision": 0.82,
+          "base_rate": 0.056827820186598814
+        },
+        "Scratchy": {
+          "ap": 0.5324084322026801,
+          "auroc": 0.9059025686448183,
+          "recall_at_1pct_dev_far": 0.40800000000000003,
+          "false_alarms_per_10k": 60.23029229406554,
+          "top20_precision": 0.82,
+          "base_rate": 0.04240882103477523
+        },
+        "Tomte": {
+          "ap": 0.864609444529664,
+          "auroc": 0.9976250164929411,
+          "recall_at_1pct_dev_far": 0.9384615384615385,
+          "false_alarms_per_10k": 90.9090909090909,
+          "top20_precision": 0.59,
+          "base_rate": 0.01102629346904156
+        },
+        "Violin_Mode": {
+          "ap": 0.5720263365758734,
+          "auroc": 0.9354792600896861,
+          "recall_at_1pct_dev_far": 0.421875,
+          "false_alarms_per_10k": 105.82959641255604,
+          "top20_precision": 0.7,
+          "base_rate": 0.0542832909245123
+        },
+        "Wandering_Line": {
+          "ap": 0.15205004497174268,
+          "auroc": 0.8653827401267675,
+          "recall_at_1pct_dev_far": 0.19999999999999996,
+          "false_alarms_per_10k": 109.21501706484642,
+          "top20_precision": 0.06999999999999999,
+          "base_rate": 0.005937234944868533
+        },
+        "Whistle": {
+          "ap": 0.32573933251265064,
+          "auroc": 0.9093827160493827,
+          "recall_at_1pct_dev_far": 0.1911111111111111,
+          "false_alarms_per_10k": 91.71075837742504,
+          "top20_precision": 0.4,
+          "base_rate": 0.03816793893129771
+        }
+      },
+      "mean_ap": 0.5094713300924514,
+      "rare_mean_ap": 0.4049865672502671,
+      "mean_auroc": 0.9045159111127145,
+      "mean_recall_at_1pct_dev_far": 0.4034191713723979,
+      "rare_mean_recall_at_1pct_dev_far": 0.392,
+      "mean_false_alarms_per_10k": 86.6220011475048,
+      "mean_top20_precision": 0.5235000000000001,
+      "one_shot_accuracy_mean": 0.5567567567567567,
+      "one_shot_accuracy_draws": [
+        0.5379250217959896,
+        0.6059285091543156,
+        0.5213600697471665,
+        0.5047951176983435,
+        0.6137750653879687
+      ],
+      "one_shot_ways": 20
+    },
+    "random_coarse_pyramid": {
+      "per_class": {
+        "1080Lines": {
+          "ap": 0.3479163341022858,
+          "auroc": 0.9358263950398582,
+          "recall_at_1pct_dev_far": 0.152,
+          "false_alarms_per_10k": 60.23029229406554,
+          "top20_precision": 0.30000000000000004,
+          "base_rate": 0.04240882103477523
+        },
+        "1400Ripples": {
+          "ap": 0.252150646615124,
+          "auroc": 0.9698955365622034,
+          "recall_at_1pct_dev_far": 0.17777777777777778,
+          "false_alarms_per_10k": 5.128205128205129,
+          "top20_precision": 0.08,
+          "base_rate": 0.007633587786259542
+        },
+        "Air_Compressor": {
+          "ap": 0.7717627300216019,
+          "auroc": 0.9891547958214625,
+          "recall_at_1pct_dev_far": 0.8666666666666666,
+          "false_alarms_per_10k": 128.2051282051282,
+          "top20_precision": 0.38999999999999996,
+          "base_rate": 0.007633587786259542
+        },
+        "Blip": {
+          "ap": 0.8798327238062276,
+          "auroc": 0.9509249951358714,
+          "recall_at_1pct_dev_far": 0.5801470588235293,
+          "false_alarms_per_10k": 108.04851157662624,
+          "top20_precision": 0.95,
+          "base_rate": 0.23070398642917728
+        },
+        "Chirp": {
+          "ap": 0.6753286597386216,
+          "auroc": 0.962737382378101,
+          "recall_at_1pct_dev_far": 0.6599999999999999,
+          "false_alarms_per_10k": 75.27801539777587,
+          "top20_precision": 0.33999999999999997,
+          "base_rate": 0.008481764206955046
+        },
+        "Extremely_Loud": {
+          "ap": 0.4098303036756551,
+          "auroc": 0.638373038116592,
+          "recall_at_1pct_dev_far": 0.38125,
+          "false_alarms_per_10k": 141.70403587443946,
+          "top20_precision": 0.72,
+          "base_rate": 0.0542832909245123
+        },
+        "Helix": {
+          "ap": 0.22333879766212922,
+          "auroc": 0.8301294132428698,
+          "recall_at_1pct_dev_far": 0.06666666666666667,
+          "false_alarms_per_10k": 54.52946350043976,
+          "top20_precision": 0.15,
+          "base_rate": 0.035623409669211195
+        },
+        "Koi_Fish": {
+          "ap": 0.7634419502346187,
+          "auroc": 0.9699073315491471,
+          "recall_at_1pct_dev_far": 0.5058823529411764,
+          "false_alarms_per_10k": 98.42154131847727,
+          "top20_precision": 0.85,
+          "base_rate": 0.08651399491094147
+        },
+        "Light_Modulation": {
+          "ap": 0.24672915634533799,
+          "auroc": 0.7710170241505392,
+          "recall_at_1pct_dev_far": 0.13333333333333336,
+          "false_alarms_per_10k": 134.42325158946414,
+          "top20_precision": 0.44000000000000006,
+          "base_rate": 0.06615776081424936
+        },
+        "Low_Frequency_Burst": {
+          "ap": 0.6927541363480649,
+          "auroc": 0.8765003571064177,
+          "recall_at_1pct_dev_far": 0.5488888888888889,
+          "false_alarms_per_10k": 56.93296602387511,
+          "top20_precision": 0.78,
+          "base_rate": 0.07633587786259542
+        },
+        "Low_Frequency_Lines": {
+          "ap": 0.597441882671762,
+          "auroc": 0.9078575512537777,
+          "recall_at_1pct_dev_far": 0.45151515151515154,
+          "false_alarms_per_10k": 75.47169811320755,
+          "top20_precision": 0.89,
+          "base_rate": 0.05597964376590331
+        },
+        "Paired_Doves": {
+          "ap": 0.07029445176005737,
+          "auroc": 0.8538723404255318,
+          "recall_at_1pct_dev_far": 0.0,
+          "false_alarms_per_10k": 23.82978723404255,
+          "top20_precision": 0.08,
+          "base_rate": 0.0033927056827820186
+        },
+        "Power_Line": {
+          "ap": 0.6429437107398205,
+          "auroc": 0.8789087732302642,
+          "recall_at_1pct_dev_far": 0.5470588235294118,
+          "false_alarms_per_10k": 75.60756075607561,
+          "top20_precision": 0.8400000000000001,
+          "base_rate": 0.05767599660729432
+        },
+        "Repeating_Blips": {
+          "ap": 0.2079596249596453,
+          "auroc": 0.7821176693330809,
+          "recall_at_1pct_dev_far": 0.1837837837837838,
+          "false_alarms_per_10k": 119.08931698774082,
+          "top20_precision": 0.29000000000000004,
+          "base_rate": 0.031382527565733676
+        },
+        "Scattered_Light": {
+          "ap": 0.4608675033688902,
+          "auroc": 0.8518737249006765,
+          "recall_at_1pct_dev_far": 0.3402985074626866,
+          "false_alarms_per_10k": 106.11510791366906,
+          "top20_precision": 0.73,
+          "base_rate": 0.056827820186598814
+        },
+        "Scratchy": {
+          "ap": 0.3745033769739827,
+          "auroc": 0.8714295837023915,
+          "recall_at_1pct_dev_far": 0.268,
+          "false_alarms_per_10k": 63.77325066430469,
+          "top20_precision": 0.6,
+          "base_rate": 0.04240882103477523
+        },
+        "Tomte": {
+          "ap": 0.8704341651454577,
+          "auroc": 0.9973347407309671,
+          "recall_at_1pct_dev_far": 0.9384615384615385,
+          "false_alarms_per_10k": 94.33962264150944,
+          "top20_precision": 0.5999999999999999,
+          "base_rate": 0.01102629346904156
+        },
+        "Violin_Mode": {
+          "ap": 0.42766659454685296,
+          "auroc": 0.9199243273542601,
+          "recall_at_1pct_dev_far": 0.24375,
+          "false_alarms_per_10k": 111.21076233183855,
+          "top20_precision": 0.49000000000000005,
+          "base_rate": 0.0542832909245123
+        },
+        "Wandering_Line": {
+          "ap": 0.13300245335619187,
+          "auroc": 0.897342759629449,
+          "recall_at_1pct_dev_far": 0.17142857142857143,
+          "false_alarms_per_10k": 122.86689419795223,
+          "top20_precision": 0.1,
+          "base_rate": 0.005937234944868533
+        },
+        "Whistle": {
+          "ap": 0.40718638839872234,
+          "auroc": 0.9338036449147559,
+          "recall_at_1pct_dev_far": 0.24,
+          "false_alarms_per_10k": 61.728395061728406,
+          "top20_precision": 0.52,
+          "base_rate": 0.03816793893129771
+        }
+      },
+      "mean_ap": 0.4727692795235524,
+      "rare_mean_ap": 0.3805077882983194,
+      "mean_auroc": 0.8894465692289109,
+      "mean_recall_at_1pct_dev_far": 0.3728454560639592,
+      "rare_mean_recall_at_1pct_dev_far": 0.37517460317460316,
+      "mean_false_alarms_per_10k": 85.84669034052828,
+      "mean_top20_precision": 0.5069999999999999,
+      "one_shot_accuracy_mean": 0.5227550130775938,
+      "one_shot_accuracy_draws": [
+        0.4960767218831735,
+        0.5597210113339146,
+        0.4899738448125545,
+        0.4812554489973845,
+        0.5867480383609416
+      ],
+      "one_shot_ways": 20
+    },
+    "trained_early_concat": {
+      "per_class": {
+        "1080Lines": {
+          "ap": 0.4197986204427389,
+          "auroc": 0.9491833480956599,
+          "recall_at_1pct_dev_far": 0.272,
+          "false_alarms_per_10k": 131.08945969884854,
+          "top20_precision": 0.5,
+          "base_rate": 0.04240882103477523
+        },
+        "1400Ripples": {
+          "ap": 0.320296959542929,
+          "auroc": 0.976372269705603,
+          "recall_at_1pct_dev_far": 0.4444444444444445,
+          "false_alarms_per_10k": 107.6923076923077,
+          "top20_precision": 0.22999999999999998,
+          "base_rate": 0.007633587786259542
+        },
+        "Air_Compressor": {
+          "ap": 0.4176030740014367,
+          "auroc": 0.9677872744539412,
+          "recall_at_1pct_dev_far": 0.5333333333333333,
+          "false_alarms_per_10k": 112.82051282051282,
+          "top20_precision": 0.29000000000000004,
+          "base_rate": 0.007633587786259542
+        },
+        "Blip": {
+          "ap": 0.7733530304509695,
+          "auroc": 0.906390654387444,
+          "recall_at_1pct_dev_far": 0.2992647058823529,
+          "false_alarms_per_10k": 85.99779492833518,
+          "top20_precision": 0.9199999999999999,
+          "base_rate": 0.23070398642917728
+        },
+        "Chirp": {
+          "ap": 0.16760680928224733,
+          "auroc": 0.9081779298545767,
+          "recall_at_1pct_dev_far": 0.18,
+          "false_alarms_per_10k": 63.301967493584264,
+          "top20_precision": 0.12999999999999998,
+          "base_rate": 0.008481764206955046
+        },
+        "Extremely_Loud": {
+          "ap": 0.3673779581073589,
+          "auroc": 0.6741101457399103,
+          "recall_at_1pct_dev_far": 0.315625,
+          "false_alarms_per_10k": 125.56053811659191,
+          "top20_precision": 0.7,
+          "base_rate": 0.0542832909245123
+        },
+        "Helix": {
+          "ap": 0.5595186034447969,
+          "auroc": 0.7918205804749341,
+          "recall_at_1pct_dev_far": 0.5238095238095238,
+          "false_alarms_per_10k": 89.70976253298153,
+          "top20_precision": 0.6599999999999999,
+          "base_rate": 0.035623409669211195
+        },
+        "Koi_Fish": {
+          "ap": 0.7661202129130886,
+          "auroc": 0.9762867078121872,
+          "recall_at_1pct_dev_far": 0.42745098039215684,
+          "false_alarms_per_10k": 76.13741875580317,
+          "top20_precision": 0.8,
+          "base_rate": 0.08651399491094147
+        },
+        "Light_Modulation": {
+          "ap": 0.45905923487347744,
+          "auroc": 0.8371992827033699,
+          "recall_at_1pct_dev_far": 0.3,
+          "false_alarms_per_10k": 121.70753860127157,
+          "top20_precision": 0.74,
+          "base_rate": 0.06615776081424936
+        },
+        "Low_Frequency_Burst": {
+          "ap": 0.5320724969284519,
+          "auroc": 0.7720497908376697,
+          "recall_at_1pct_dev_far": 0.37999999999999995,
+          "false_alarms_per_10k": 97.33700642791551,
+          "top20_precision": 0.8300000000000001,
+          "base_rate": 0.07633587786259542
+        },
+        "Low_Frequency_Lines": {
+          "ap": 0.5574483440355823,
+          "auroc": 0.8806801165291732,
+          "recall_at_1pct_dev_far": 0.3242424242424242,
+          "false_alarms_per_10k": 55.705300988319856,
+          "top20_precision": 0.8699999999999999,
+          "base_rate": 0.05597964376590331
+        },
+        "Paired_Doves": {
+          "ap": 0.1742509363467106,
+          "auroc": 0.8880425531914893,
+          "recall_at_1pct_dev_far": 0.2,
+          "false_alarms_per_10k": 74.89361702127658,
+          "top20_precision": 0.08,
+          "base_rate": 0.0033927056827820186
+        },
+        "Power_Line": {
+          "ap": 0.7186199867958318,
+          "auroc": 0.9613834912903055,
+          "recall_at_1pct_dev_far": 0.5323529411764706,
+          "false_alarms_per_10k": 86.40864086408641,
+          "top20_precision": 0.8699999999999999,
+          "base_rate": 0.05767599660729432
+        },
+        "Repeating_Blips": {
+          "ap": 0.352959552720367,
+          "auroc": 0.8645382685662895,
+          "recall_at_1pct_dev_far": 0.2702702702702703,
+          "false_alarms_per_10k": 85.81436077057793,
+          "top20_precision": 0.4699999999999999,
+          "base_rate": 0.031382527565733676
+        },
+        "Scattered_Light": {
+          "ap": 0.9097313522536815,
+          "auroc": 0.9584773971867282,
+          "recall_at_1pct_dev_far": 0.8477611940298507,
+          "false_alarms_per_10k": 88.1294964028777,
+          "top20_precision": 0.99,
+          "base_rate": 0.056827820186598814
+        },
+        "Scratchy": {
+          "ap": 0.7417053952448426,
+          "auroc": 0.9585509300265722,
+          "recall_at_1pct_dev_far": 0.608,
+          "false_alarms_per_10k": 67.31620903454383,
+          "top20_precision": 0.9,
+          "base_rate": 0.04240882103477523
+        },
+        "Tomte": {
+          "ap": 0.2921433008003049,
+          "auroc": 0.9532524079693891,
+          "recall_at_1pct_dev_far": 0.26153846153846155,
+          "false_alarms_per_10k": 85.76329331046311,
+          "top20_precision": 0.25,
+          "base_rate": 0.01102629346904156
+        },
+        "Violin_Mode": {
+          "ap": 0.46489863821533994,
+          "auroc": 0.9214798206278025,
+          "recall_at_1pct_dev_far": 0.253125,
+          "false_alarms_per_10k": 84.304932735426,
+          "top20_precision": 0.6900000000000001,
+          "base_rate": 0.0542832909245123
+        },
+        "Wandering_Line": {
+          "ap": 0.19496797304626376,
+          "auroc": 0.7667966845441248,
+          "recall_at_1pct_dev_far": 0.19999999999999996,
+          "false_alarms_per_10k": 98.97610921501708,
+          "top20_precision": 0.06999999999999999,
+          "base_rate": 0.005937234944868533
+        },
+        "Whistle": {
+          "ap": 0.211558601758562,
+          "auroc": 0.9059102488732119,
+          "recall_at_1pct_dev_far": 0.0711111111111111,
+          "false_alarms_per_10k": 109.347442680776,
+          "top20_precision": 0.19,
+          "base_rate": 0.03816793893129771
+        }
+      },
+      "mean_ap": 0.4700545540602491,
+      "rare_mean_ap": 0.25494515044391747,
+      "mean_auroc": 0.8909244951435193,
+      "mean_recall_at_1pct_dev_far": 0.36221646951152,
+      "rare_mean_recall_at_1pct_dev_far": 0.31155555555555553,
+      "mean_false_alarms_per_10k": 92.40068550457583,
+      "mean_top20_precision": 0.5589999999999999,
+      "one_shot_accuracy_mean": 0.47462946817785534,
+      "one_shot_accuracy_draws": [
+        0.4455100261551874,
+        0.4899738448125545,
+        0.44289450741063646,
+        0.45771578029642546,
+        0.5370531822144725
+      ],
+      "one_shot_ways": 20
+    },
+    "random_early_concat": {
+      "per_class": {
+        "1080Lines": {
+          "ap": 0.6850748827904956,
+          "auroc": 0.9604074402125775,
+          "recall_at_1pct_dev_far": 0.5959999999999999,
+          "false_alarms_per_10k": 111.60318866253321,
+          "top20_precision": 0.85,
+          "base_rate": 0.04240882103477523
+        },
+        "1400Ripples": {
+          "ap": 0.6091483110102971,
+          "auroc": 0.9887939221272555,
+          "recall_at_1pct_dev_far": 0.6888888888888889,
+          "false_alarms_per_10k": 100.85470085470085,
+          "top20_precision": 0.34,
+          "base_rate": 0.007633587786259542
+        },
+        "Air_Compressor": {
+          "ap": 0.8238283550445196,
+          "auroc": 0.9894396961063627,
+          "recall_at_1pct_dev_far": 0.888888888888889,
+          "false_alarms_per_10k": 95.72649572649573,
+          "top20_precision": 0.4,
+          "base_rate": 0.007633587786259542
+        },
+        "Blip": {
+          "ap": 0.810007643908796,
+          "auroc": 0.9066752059147805,
+          "recall_at_1pct_dev_far": 0.5242647058823529,
+          "false_alarms_per_10k": 97.02315325248071,
+          "top20_precision": 0.97,
+          "base_rate": 0.23070398642917728
+        },
+        "Chirp": {
+          "ap": 0.5083393297948317,
+          "auroc": 0.926398631308811,
+          "recall_at_1pct_dev_far": 0.58,
+          "false_alarms_per_10k": 104.36270316509835,
+          "top20_precision": 0.29,
+          "base_rate": 0.008481764206955046
+        },
+        "Extremely_Loud": {
+          "ap": 0.39074165833499447,
+          "auroc": 0.6260187780269059,
+          "recall_at_1pct_dev_far": 0.334375,
+          "false_alarms_per_10k": 138.11659192825113,
+          "top20_precision": 0.7,
+          "base_rate": 0.0542832909245123
+        },
+        "Helix": {
+          "ap": 0.3244198986888355,
+          "auroc": 0.8228085605394313,
+          "recall_at_1pct_dev_far": 0.18095238095238092,
+          "false_alarms_per_10k": 61.5655233069481,
+          "top20_precision": 0.39,
+          "base_rate": 0.035623409669211195
+        },
+        "Koi_Fish": {
+          "ap": 0.8369864524902179,
+          "auroc": 0.98388406430353,
+          "recall_at_1pct_dev_far": 0.5431372549019607,
+          "false_alarms_per_10k": 92.85051067780873,
+          "top20_precision": 0.9199999999999999,
+          "base_rate": 0.08651399491094147
+        },
+        "Light_Modulation": {
+          "ap": 0.38792091060847894,
+          "auroc": 0.7698036749807867,
+          "recall_at_1pct_dev_far": 0.2692307692307692,
+          "false_alarms_per_10k": 136.23978201634878,
+          "top20_precision": 0.58,
+          "base_rate": 0.06615776081424936
+        },
+        "Low_Frequency_Burst": {
+          "ap": 0.6613238090063882,
+          "auroc": 0.8526925823895521,
+          "recall_at_1pct_dev_far": 0.5266666666666666,
+          "false_alarms_per_10k": 106.51974288337927,
+          "top20_precision": 0.89,
+          "base_rate": 0.07633587786259542
+        },
+        "Low_Frequency_Lines": {
+          "ap": 0.6893573688435376,
+          "auroc": 0.9219744615971031,
+          "recall_at_1pct_dev_far": 0.5454545454545455,
+          "false_alarms_per_10k": 93.44115004492363,
+          "top20_precision": 0.9,
+          "base_rate": 0.05597964376590331
+        },
+        "Paired_Doves": {
+          "ap": 0.167312829502017,
+          "auroc": 0.9293617021276596,
+          "recall_at_1pct_dev_far": 0.15,
+          "false_alarms_per_10k": 47.65957446808511,
+          "top20_precision": 0.06999999999999999,
+          "base_rate": 0.0033927056827820186
+        },
+        "Power_Line": {
+          "ap": 0.6901173980861338,
+          "auroc": 0.9292185100863029,
+          "recall_at_1pct_dev_far": 0.5852941176470587,
+          "false_alarms_per_10k": 100.81008100810081,
+          "top20_precision": 0.9099999999999999,
+          "base_rate": 0.05767599660729432
+        },
+        "Repeating_Blips": {
+          "ap": 0.20924034511720455,
+          "auroc": 0.7489515785487765,
+          "recall_at_1pct_dev_far": 0.1891891891891892,
+          "false_alarms_per_10k": 89.3169877408056,
+          "top20_precision": 0.35,
+          "base_rate": 0.031382527565733676
+        },
+        "Scattered_Light": {
+          "ap": 0.867906066845166,
+          "auroc": 0.9546547836357779,
+          "recall_at_1pct_dev_far": 0.8029850746268657,
+          "false_alarms_per_10k": 75.53956834532373,
+          "top20_precision": 0.95,
+          "base_rate": 0.056827820186598814
+        },
+        "Scratchy": {
+          "ap": 0.6792161153892164,
+          "auroc": 0.9308343666961914,
+          "recall_at_1pct_dev_far": 0.6,
+          "false_alarms_per_10k": 97.43135518157662,
+          "top20_precision": 0.9099999999999999,
+          "base_rate": 0.04240882103477523
+        },
+        "Tomte": {
+          "ap": 0.7873973916942496,
+          "auroc": 0.995447948278137,
+          "recall_at_1pct_dev_far": 0.8615384615384615,
+          "false_alarms_per_10k": 97.77015437392797,
+          "top20_precision": 0.55,
+          "base_rate": 0.01102629346904156
+        },
+        "Violin_Mode": {
+          "ap": 0.46180903806637447,
+          "auroc": 0.9193413677130045,
+          "recall_at_1pct_dev_far": 0.271875,
+          "false_alarms_per_10k": 98.65470852017937,
+          "top20_precision": 0.66,
+          "base_rate": 0.0542832909245123
+        },
+        "Wandering_Line": {
+          "ap": 0.201866169173486,
+          "auroc": 0.8207703559239394,
+          "recall_at_1pct_dev_far": 0.19999999999999996,
+          "false_alarms_per_10k": 68.25938566552901,
+          "top20_precision": 0.09,
+          "base_rate": 0.005937234944868533
+        },
+        "Whistle": {
+          "ap": 0.3876312086844803,
+          "auroc": 0.9230374289633548,
+          "recall_at_1pct_dev_far": 0.21333333333333332,
+          "false_alarms_per_10k": 56.4373897707231,
+          "top20_precision": 0.44000000000000006,
+          "base_rate": 0.03816793893129771
+        }
+      },
+      "mean_ap": 0.558982259153986,
+      "rare_mean_ap": 0.46209899890503026,
+      "mean_auroc": 0.8950257529740121,
+      "mean_recall_at_1pct_dev_far": 0.47760371386006806,
+      "rare_mean_recall_at_1pct_dev_far": 0.5015555555555556,
+      "mean_false_alarms_per_10k": 93.50913737966098,
+      "mean_top20_precision": 0.608,
+      "one_shot_accuracy_mean": 0.5679163034001744,
+      "one_shot_accuracy_draws": [
+        0.5553618134263295,
+        0.5902353966870096,
+        0.5265911072362686,
+        0.5396687009590235,
+        0.6277244986922407
+      ],
+      "one_shot_ways": 20
+    },
+    "raw_pixels_standardized": {
+      "per_class": {
+        "1080Lines": {
+          "ap": 0.2808949148218267,
+          "auroc": 0.7519787422497786,
+          "recall_at_1pct_dev_far": 0.21200000000000002,
+          "false_alarms_per_10k": 60.23029229406554,
+          "top20_precision": 0.5199999999999999,
+          "base_rate": 0.04240882103477523
+        },
+        "1400Ripples": {
+          "ap": 0.0180629064475514,
+          "auroc": 0.6270845204178538,
+          "recall_at_1pct_dev_far": 0.0,
+          "false_alarms_per_10k": 30.769230769230766,
+          "top20_precision": 0.0,
+          "base_rate": 0.007633587786259542
+        },
+        "Air_Compressor": {
+          "ap": 0.36211435434888006,
+          "auroc": 0.8647293447293448,
+          "recall_at_1pct_dev_far": 0.4,
+          "false_alarms_per_10k": 88.88888888888889,
+          "top20_precision": 0.2,
+          "base_rate": 0.007633587786259542
+        },
+        "Blip": {
+          "ap": 0.40908080990216095,
+          "auroc": 0.726107399961087,
+          "recall_at_1pct_dev_far": 0.04632352941176471,
+          "false_alarms_per_10k": 50.71664829106946,
+          "top20_precision": 0.44000000000000006,
+          "base_rate": 0.23070398642917728
+        },
+        "Chirp": {
+          "ap": 0.5083053967555786,
+          "auroc": 0.8948502994011976,
+          "recall_at_1pct_dev_far": 0.52,
+          "false_alarms_per_10k": 85.5431993156544,
+          "top20_precision": 0.25,
+          "base_rate": 0.008481764206955046
+        },
+        "Extremely_Loud": {
+          "ap": 0.4589906937877249,
+          "auroc": 0.616352298206278,
+          "recall_at_1pct_dev_far": 0.371875,
+          "false_alarms_per_10k": 107.62331838565021,
+          "top20_precision": 0.8099999999999999,
+          "base_rate": 0.0542832909245123
+        },
+        "Helix": {
+          "ap": 0.1780026207657312,
+          "auroc": 0.6362817774427274,
+          "recall_at_1pct_dev_far": 0.1380952380952381,
+          "false_alarms_per_10k": 87.95074758135443,
+          "top20_precision": 0.3,
+          "base_rate": 0.035623409669211195
+        },
+        "Koi_Fish": {
+          "ap": 0.7984714879509992,
+          "auroc": 0.9819760773390136,
+          "recall_at_1pct_dev_far": 0.43725490196078437,
+          "false_alarms_per_10k": 90.99350046425255,
+          "top20_precision": 0.9099999999999999,
+          "base_rate": 0.08651399491094147
+        },
+        "Light_Modulation": {
+          "ap": 0.4636747553987933,
+          "auroc": 0.8557977596124735,
+          "recall_at_1pct_dev_far": 0.30256410256410254,
+          "false_alarms_per_10k": 134.42325158946414,
+          "top20_precision": 0.76,
+          "base_rate": 0.06615776081424936
+        },
+        "Low_Frequency_Burst": {
+          "ap": 0.6825110372636592,
+          "auroc": 0.8823589429650035,
+          "recall_at_1pct_dev_far": 0.5088888888888888,
+          "false_alarms_per_10k": 101.010101010101,
+          "top20_precision": 0.93,
+          "base_rate": 0.07633587786259542
+        },
+        "Low_Frequency_Lines": {
+          "ap": 0.5362247523575847,
+          "auroc": 0.8593019140188952,
+          "recall_at_1pct_dev_far": 0.34545454545454546,
+          "false_alarms_per_10k": 43.126684636118604,
+          "top20_precision": 0.8,
+          "base_rate": 0.05597964376590331
+        },
+        "Paired_Doves": {
+          "ap": 0.1150065844179468,
+          "auroc": 0.8819574468085106,
+          "recall_at_1pct_dev_far": 0.15,
+          "false_alarms_per_10k": 71.48936170212765,
+          "top20_precision": 0.07,
+          "base_rate": 0.0033927056827820186
+        },
+        "Power_Line": {
+          "ap": 0.564846485706741,
+          "auroc": 0.8782972414888548,
+          "recall_at_1pct_dev_far": 0.4176470588235294,
+          "false_alarms_per_10k": 57.605760576057605,
+          "top20_precision": 0.85,
+          "base_rate": 0.05767599660729432
+        },
+        "Repeating_Blips": {
+          "ap": 0.10710638027565425,
+          "auroc": 0.6644578028115682,
+          "recall_at_1pct_dev_far": 0.0972972972972973,
+          "false_alarms_per_10k": 96.32224168126095,
+          "top20_precision": 0.21000000000000002,
+          "base_rate": 0.031382527565733676
+        },
+        "Scattered_Light": {
+          "ap": 0.5906001260757967,
+          "auroc": 0.8513556319123806,
+          "recall_at_1pct_dev_far": 0.4746268656716418,
+          "false_alarms_per_10k": 82.73381294964028,
+          "top20_precision": 0.8200000000000001,
+          "base_rate": 0.056827820186598814
+        },
+        "Scratchy": {
+          "ap": 0.6339310518724727,
+          "auroc": 0.9158830823737819,
+          "recall_at_1pct_dev_far": 0.5599999999999999,
+          "false_alarms_per_10k": 111.60318866253321,
+          "top20_precision": 0.8,
+          "base_rate": 0.04240882103477523
+        },
+        "Tomte": {
+          "ap": 0.5254788979997308,
+          "auroc": 0.9641245546905924,
+          "recall_at_1pct_dev_far": 0.5538461538461539,
+          "false_alarms_per_10k": 101.20068610634648,
+          "top20_precision": 0.35,
+          "base_rate": 0.01102629346904156
+        },
+        "Violin_Mode": {
+          "ap": 0.13821434422063253,
+          "auroc": 0.6565526905829596,
+          "recall_at_1pct_dev_far": 0.0375,
+          "false_alarms_per_10k": 66.3677130044843,
+          "top20_precision": 0.16999999999999998,
+          "base_rate": 0.0542832909245123
+        },
+        "Wandering_Line": {
+          "ap": 0.025211516496937147,
+          "auroc": 0.5903949293027791,
+          "recall_at_1pct_dev_far": 0.02857142857142857,
+          "false_alarms_per_10k": 88.7372013651877,
+          "top20_precision": 0.01,
+          "base_rate": 0.005937234944868533
+        },
+        "Whistle": {
+          "ap": 0.17419440929558308,
+          "auroc": 0.7729531648050166,
+          "recall_at_1pct_dev_far": 0.07999999999999999,
+          "false_alarms_per_10k": 84.65608465608464,
+          "top20_precision": 0.24,
+          "base_rate": 0.03816793893129771
+        }
+      },
+      "mean_ap": 0.37854617630809934,
+      "rare_mean_ap": 0.20574015169337878,
+      "mean_auroc": 0.7936397810560047,
+      "mean_recall_at_1pct_dev_far": 0.28409725052926876,
+      "rare_mean_recall_at_1pct_dev_far": 0.2197142857142857,
+      "mean_false_alarms_per_10k": 82.09959569647864,
+      "mean_top20_precision": 0.472,
+      "one_shot_accuracy_mean": 0.38430688753269393,
+      "one_shot_accuracy_draws": [
+        0.4106364428945074,
+        0.43417611159546643,
+        0.33129904097646035,
+        0.3792502179598954,
+        0.36617262423714037
+      ],
+      "one_shot_ways": 20
+    }
+  },
+  "v01_baselines_mean_ap": {
+    "v01_hypernet_v14": 0.2188485810623094,
+    "v01_random_v14": 0.3881848675328343,
+    "v01_raw_pixels": 0.4851062516783438,
+    "raw_pixels_standardized": 0.37854617630809934
+  },
+  "contrasts": {
+    "best_cnn_readout_minus_v01_hypernet_v14_mean_ap": {
+      "difference": 0.3401336780916766,
+      "class_bootstrap_95ci": [
+        0.2514704729248441,
+        0.4363330585556483
+      ]
+    },
+    "best_cnn_readout_minus_v01_random_v14_mean_ap": {
+      "difference": 0.1707973916211517,
+      "class_bootstrap_95ci": [
+        0.09355357064172584,
+        0.2522211548737432
+      ]
+    },
+    "best_cnn_readout_minus_v01_raw_pixels_mean_ap": {
+      "difference": 0.07387600747564228,
+      "class_bootstrap_95ci": [
+        -0.006587281610254276,
+        0.15652204844428694
+      ]
+    },
+    "best_cnn_readout_minus_raw_pixels_standardized_mean_ap": {
+      "difference": 0.18043608284588675,
+      "class_bootstrap_95ci": [
+        0.10354044451596527,
+        0.2602509954718219
+      ]
+    },
+    "best_trained_readout_minus_v01_hypernet_v14_mean_ap": {
+      "difference": 0.28920196890694805,
+      "class_bootstrap_95ci": [
+        0.2215111510560029,
+        0.3656372466225077
+      ]
+    },
+    "best_trained_readout_minus_v01_random_v14_mean_ap": {
+      "difference": 0.11986568243642308,
+      "class_bootstrap_95ci": [
+        0.03050524726144243,
+        0.2078881153958256
+      ]
+    },
+    "best_trained_readout_minus_v01_raw_pixels_mean_ap": {
+      "difference": 0.02294429829091364,
+      "class_bootstrap_95ci": [
+        -0.07274698825482429,
+        0.11385779772514566
+      ]
+    },
+    "best_trained_readout_minus_raw_pixels_standardized_mean_ap": {
+      "difference": 0.12950437366115813,
+      "class_bootstrap_95ci": [
+        0.0558932936761197,
+        0.20155647198560744
+      ]
+    }
+  },
+  "note": "Non-selected candidates are reported for completeness; only the two selected rules are primary.",
+  "runtime_seconds": 146.9
+}

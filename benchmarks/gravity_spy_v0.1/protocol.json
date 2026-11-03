@@ -1,0 +1,241 @@
+{
+  "format": "hypernet.gravity_spy_oneshot.v0.1",
+  "task": "One-reference retrieval: rank whole spectrograms by similarity to one labeled reference.",
+  "dataset": {
+    "source": "https://zenodo.org/records/1486046",
+    "license": "CC BY 4.0",
+    "md5": {
+      "trainingsetv1d1.h5": "a6665b4ebee7b4ea57164ee743c2bd11",
+      "trainingset_v1d1_metadata.csv": "c16d135f5ad3f029a3ef32114e280e79"
+    }
+  },
+  "duration_seconds": "1.0",
+  "references_per_class": 5,
+  "reference_seed": 20261102,
+  "reference_split": "train",
+  "dev_split": "validation",
+  "test_split": "test",
+  "non_target_classes_kept_as_distractors": [
+    "None_of_the_Above",
+    "No_Glitch"
+  ],
+  "rare_class_rule": "fewer than 100 labeled examples in total",
+  "false_alarm_rate_on_dev": 0.01,
+  "primary_method": "hypernet_v14",
+  "primary_metric": "TEST mean average precision, averaged over references then over target classes",
+  "methods": {
+    "hypernet_v14": "Frozen v0.14 synthetic-trained CNN, its selected whitened_global channel",
+    "random_v14": "Same architecture with the published random-weight control checkpoint, same channel",
+    "analytic_shape": "Untrained 9-orientation gradient histogram at 2/4/8 grids (HyperNet shape control)",
+    "raw_pixels": "Z-scored 48x48 grayscale of the same 96px crop, cosine similarity"
+  },
+  "diagnostic_channels": [
+    "hypernet_v14_global",
+    "hypernet_v14_parts",
+    "hypernet_v14_centered_parts"
+  ],
+  "reference_views": "crop and its horizontal reflection for every method (HyperNet enrollment rule)",
+  "weight_updates": 0,
+  "spectrogram_images_used_in_weight_training": 0,
+  "input_conversion": "HDF5 float spectrogram x255 to uint8 gray, copied to 3 channels",
+  "target_classes": [
+    "1080Lines",
+    "1400Ripples",
+    "Air_Compressor",
+    "Blip",
+    "Chirp",
+    "Extremely_Loud",
+    "Helix",
+    "Koi_Fish",
+    "Light_Modulation",
+    "Low_Frequency_Burst",
+    "Low_Frequency_Lines",
+    "Paired_Doves",
+    "Power_Line",
+    "Repeating_Blips",
+    "Scattered_Light",
+    "Scratchy",
+    "Tomte",
+    "Violin_Mode",
+    "Wandering_Line",
+    "Whistle"
+  ],
+  "rare_classes": [
+    "1400Ripples",
+    "Air_Compressor",
+    "Chirp",
+    "Paired_Doves",
+    "Wandering_Line"
+  ],
+  "class_counts": {
+    "1080Lines": 328,
+    "1400Ripples": 81,
+    "Air_Compressor": 58,
+    "Blip": 1821,
+    "Chirp": 60,
+    "Extremely_Loud": 447,
+    "Helix": 279,
+    "Koi_Fish": 706,
+    "Light_Modulation": 512,
+    "Low_Frequency_Burst": 621,
+    "Low_Frequency_Lines": 447,
+    "No_Glitch": 150,
+    "None_of_the_Above": 81,
+    "Paired_Doves": 27,
+    "Power_Line": 449,
+    "Repeating_Blips": 263,
+    "Scattered_Light": 443,
+    "Scratchy": 337,
+    "Tomte": 103,
+    "Violin_Mode": 412,
+    "Wandering_Line": 42,
+    "Whistle": 299
+  },
+  "reference_gravityspy_ids": {
+    "1080Lines": [
+      "LJjw3p3EI0",
+      "E6e3TQp765",
+      "9BoTjVbUhu",
+      "xjjkUWWx3l",
+      "RbcMIPBTfp"
+    ],
+    "1400Ripples": [
+      "GLLQFp2CwK",
+      "uiofjZyKyh",
+      "J9hdr0Gz6H",
+      "RWYExXLh6F",
+      "cZ4vfsw2YN"
+    ],
+    "Air_Compressor": [
+      "u6R2vUnzl0",
+      "Vns4mS6sb3",
+      "8IrFjuinyr",
+      "8imbjhAi00",
+      "pruBtY7y0L"
+    ],
+    "Blip": [
+      "KZ9ymUPcMB",
+      "37PFuzqg40",
+      "lH4OC7YOLg",
+      "j5EW44OZPh",
+      "nBwqmAFQXl"
+    ],
+    "Chirp": [
+      "NJwYbLbB2b",
+      "IPMQdphytD",
+      "nJqG8hsd2C",
+      "g0UHF8d6Ok",
+      "vHNn2VQNx8"
+    ],
+    "Extremely_Loud": [
+      "TEbrworflu",
+      "TOmRx6N4RN",
+      "RfkXcUbDDI",
+      "0q4vXdyhJS",
+      "euqgFnzrw8"
+    ],
+    "Helix": [
+      "5lL68EymOk",
+      "PWYWma9EAW",
+      "7tU5SUbTrD",
+      "sF47jOlPED",
+      "4CpKbCVwK1"
+    ],
+    "Koi_Fish": [
+      "U5H8HLakt0",
+      "WmI7xd6Ngb",
+      "1fgJRveZ7B",
+      "A4HrBr9OT7",
+      "6b6itmFPc5"
+    ],
+    "Light_Modulation": [
+      "zxALwutVBF",
+      "gjYZFjgdE7",
+      "HqnYWf1JYo",
+      "LUO5zAmWib",
+      "abywCmnnPa"
+    ],
+    "Low_Frequency_Burst": [
+      "aRU9ZmRE10",
+      "4OLiPZyCuJ",
+      "7nXluXM3KG",
+      "xMLBWxLtBe",
+      "JFprgMqyJb"
+    ],
+    "Low_Frequency_Lines": [
+      "vSpzzRcP72",
+      "UYE5QKZCPc",
+      "tdINX2QXdS",
+      "BapDBNvcDZ",
+      "rrhhM1R1dn"
+    ],
+    "Paired_Doves": [
+      "Jmu8lzu6lb",
+      "QGKPYKyJH4",
+      "czWnUnW5Gu",
+      "7nLzZvkp9b",
+      "bDNd4nwivK"
+    ],
+    "Power_Line": [
+      "6VIZedttB7",
+      "9nTvyKQd1j",
+      "BUde7EGqzr",
+      "U5LJ3jkksw",
+      "DtCK3GTYEY"
+    ],
+    "Repeating_Blips": [
+      "9xp9BW4npl",
+      "W7oI3wLRz6",
+      "T4wKdT4pOT",
+      "DbkpLDrs28",
+      "QRML6snHU8"
+    ],
+    "Scattered_Light": [
+      "NtPVD5U6uv",
+      "Ll9rJWVqMb",
+      "Gtn5pYKTrV",
+      "4X4vKuXQYj",
+      "tkPyosNNv8"
+    ],
+    "Scratchy": [
+      "x1c9ty2wOo",
+      "5z1mc0gtWt",
+      "5dvt52HGTA",
+      "EjxP2bkBtz",
+      "3IxUVYMUUt"
+    ],
+    "Tomte": [
+      "QI5EcCnucU",
+      "FKPXh16Ufs",
+      "vz1a6wIDM9",
+      "Cr3BFskpBf",
+      "KpBPLFLlBe"
+    ],
+    "Violin_Mode": [
+      "iqAd2kcmA3",
+      "M8M3Ox6JlJ",
+      "ErmyqSd7XG",
+      "ulhjj9wojp",
+      "D3sClY1TPI"
+    ],
+    "Wandering_Line": [
+      "Sd8CaYSOab",
+      "RyWp0dcwW0",
+      "1eOIJvG4v1",
+      "mgh0AVpXkV",
+      "rJxqGGeNLz"
+    ],
+    "Whistle": [
+      "vWBx2seVcM",
+      "X6Di6E4Pnk",
+      "dj6h708Tv5",
+      "yfXN8OitPI",
+      "mcdaOBnef5"
+    ]
+  },
+  "checkpoint_sha256": {
+    "parts_trained_v14.pt": "a64618f1d748acbb239c690abd2e5c2d26c1328162de5ac2b62a14394706013e",
+    "parts_random_v14.pt": "fc78ae5c4833fc533d12564d6ee1c9dd57e3ee7b27fa5eea21f1ccc515016231"
+  },
+  "created_utc": "2026-11-02T23:46:52Z"
+}

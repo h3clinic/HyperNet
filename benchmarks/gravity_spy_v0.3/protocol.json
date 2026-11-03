@@ -1,0 +1,74 @@
+{
+  "format": "hypernet.gravity_spy_oneshot.v0.3",
+  "created_utc": "2026-11-03T01:37:32Z",
+  "test_scores_computed_before_freeze": false,
+  "question": "Do trained layers on top of locked random early layers beat the v0.2 random early mix?",
+  "selection_rule": "Highest DEV mean AP among readouts that use at least one trained block",
+  "selected": {
+    "best_locked_readout": "objects_lock3_full_concat"
+  },
+  "primary_contrast": "best_locked_readout minus random_early_concat (v0.2 winner), TEST mean AP, class bootstrap",
+  "secondary_contrasts": "each locked model full_concat minus random_full_concat (same blocks, coarse trained vs random)",
+  "dev_mean_ap": {
+    "random_early_concat": 0.565598933132635,
+    "random_full_concat": 0.5823414423876752,
+    "math_lock3_coarse_grid6": 0.5206960087740288,
+    "math_lock3_coarse_pyramid": 0.5028323064774222,
+    "math_lock3_global": 0.4431107344132247,
+    "math_lock3_full_concat": 0.573049158080533,
+    "math_lock2_coarse_grid6": 0.5015904790171841,
+    "math_lock2_coarse_pyramid": 0.49134346990859595,
+    "math_lock2_global": 0.41591760512089426,
+    "math_lock2_full_concat": 0.5637070984673158,
+    "math_lock2_middle_grid6": 0.5212101654847464,
+    "math_lock2_early_concat": 0.5584452484418436,
+    "objects_lock3_coarse_grid6": 0.5165765101962185,
+    "objects_lock3_coarse_pyramid": 0.5250637332543662,
+    "objects_lock3_global": 0.3090401066672425,
+    "objects_lock3_full_concat": 0.5753716645653186,
+    "objects_lock2_coarse_grid6": 0.4215865599607341,
+    "objects_lock2_coarse_pyramid": 0.427190011025541,
+    "objects_lock2_global": 0.24506418491690485,
+    "objects_lock2_full_concat": 0.568091953906988,
+    "objects_lock2_middle_grid6": 0.5447454279593886,
+    "objects_lock2_early_concat": 0.5652862811267803
+  },
+  "models": {
+    "random": "fc78ae5c4833fc533d12564d6ee1c9dd57e3ee7b27fa5eea21f1ccc515016231",
+    "math_lock3": {
+      "epoch_12_sha256": "5e019e43483dab82dd65bd2f0f1e835d799204e6287573ed0d9500ad8f1e4361",
+      "locked": [
+        "stem",
+        "fine",
+        "middle"
+      ]
+    },
+    "math_lock2": {
+      "epoch_12_sha256": "0f031d673e3cb8bd5e54848784e959b7a9eed79033209bd12131f750612be505",
+      "locked": [
+        "stem",
+        "fine"
+      ]
+    },
+    "objects_lock3": {
+      "epoch_12_sha256": "807c1ab5d1d6ba5d0071ebb4b8ee4499378ae5ab8a15cb7d4125669102ce8d7d",
+      "locked": [
+        "stem",
+        "fine",
+        "middle"
+      ]
+    },
+    "objects_lock2": {
+      "epoch_12_sha256": "481f890a74a0556227dbdd71c7b81bf85c156c0afa94a7c4c5e97f7598d47416",
+      "locked": [
+        "stem",
+        "fine"
+      ]
+    }
+  },
+  "v01_protocol_sha256": "816be8b4ff7c77477d9c56146558031b602782d874706d43d202de0d3b3a604a",
+  "v02_protocol_sha256": "79d2ac66404a876972135147c4f809aac5d8d9bd3d0d7840c40e5d24b7d2c85d",
+  "test_reuse_note": "TEST was scored once each for v0.1 and v0.2; this is its third use.",
+  "unlabeled_standardization_images": 600,
+  "weight_updates_on_spectrograms": 0
+}
