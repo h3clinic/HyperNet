@@ -1,0 +1,17 @@
+{
+  "scope": "Synthetic graph grammar only; no natural-image or general semantic inference",
+  "replicates": 5000,
+  "seed": 16022026,
+  "cluster": "One structural type, its reference, and both query/negative instances",
+  "interval": "Two-sided95% percentile, NumPy linear quantiles",
+  "metrics": [
+    "top1_accuracy",
+    "nuisance_matched_pair_accuracy"
+  ],
+  "comparisons": [
+    "primary_final_4096 minus random",
+    "primary_final_4096 minus no_relation_aux_final_4096",
+    "primary_final_4096 minus raw_gray_cosine"
+  ],
+  "checkpoint_selection": false
+}

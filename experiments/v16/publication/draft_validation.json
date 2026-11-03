@@ -1,0 +1,33 @@
+{
+  "format": "hypernet.v16.public_draft_validation.v1",
+  "valid": true,
+  "created_utc": "2026-11-03T03:00:47.399953+00:00",
+  "source_manifest_sha256": "be63d7cba4bb71a89935943aedd59863589d0cc160c350f90f51977181718370",
+  "exact_source_copies": 50,
+  "checked_public_files": 86,
+  "source_bytes_unchanged": true,
+  "explicit_allowlist_passed": true,
+  "private_fresh_reference_identifier_scan_passed": true,
+  "private_absolute_path_scan_passed": true,
+  "synthetic_test_result": {
+    "passed": 47,
+    "seconds": 13.22,
+    "device": "cpu",
+    "command": "python -m pytest -q tests"
+  },
+  "generic_cli_help_passed": true,
+  "fixed_synthetic_preview_visually_checked": true,
+  "generic_cli_synthetic_identity_smoke": {
+    "recipe": "native",
+    "score": 1.0,
+    "weight_updates": 0,
+    "scope": "Plumbing only; not heldout performance."
+  },
+  "real_images_exported": 0,
+  "event_rosters_exported": 0,
+  "row_level_human_annotations_exported": 0,
+  "own_checkpoints_exported": 3,
+  "new_project_license_added": false,
+  "git_actions": 0,
+  "scope": "Publication integrity/privacy checks, distinct from model-performance audits. No Git actions."
+}

@@ -1,0 +1,19 @@
+{
+  "completed_utc": "2026-11-03T02:47:14.542189+00:00",
+  "command": "python -m pytest -q outputs/hypernet_v16/tests outputs/hypernet_v16/tests/data_gravity_v16.py",
+  "passed": 43,
+  "failed": 0,
+  "seconds": 11.47,
+  "test_source_sha256": {
+    "tests/data_gravity_v16.py": "0048d095b420132bc2fa03cc43ff2de207a80d773117de1712597f697fa0dcc5",
+    "tests/test_comparison_analysis.py": "72651cde5712ef95f9d0b1d224157828521fc368deda8fd4b78a869ba292b7e3",
+    "tests/test_evaluation_admission.py": "42ebb946b1b645643ca75d40ea0691457269273b61e78ae9cb7335745ad56c63",
+    "tests/test_evaluation_metrics.py": "69019d3361dba6875a5d6f535d476eb941d051b25a6c672d1b45aebee7341f11",
+    "tests/test_freeze_independent_review.py": "d1e5667d753c8e58a037a51955f98f24040a28b449d04ea7d9ac2fd2ed65a7c3",
+    "tests/test_fresh_inference_replay.py": "2586cd489818fa87242627c5851808d6cfce37b4b27cc28a1fae8bf9692502e0",
+    "tests/test_relational_independent_review.py": "d723858d269cc07bc429048fb9258a53f9ef5a145eb2b58559bb0fa4367c7ff2",
+    "tests/test_relational_matcher.py": "6edbf95687f4b8c8feb941210a9a98401e04db5940d5e0791263d9b724ea9ce3",
+    "tests/test_relational_training.py": "e3d8508ddfbbf5ba5ed5026d4f19754cf4c70070dfffc62d51c96658c8d1eb3c",
+    "tests/test_synthetic_diagnosis.py": "c7b6413d853ffc4df5485b19bec7bd182a6892a74971dd231afe6d3bede201d7"
+  }
+}

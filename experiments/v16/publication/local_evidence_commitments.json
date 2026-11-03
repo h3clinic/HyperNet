@@ -1,0 +1,13 @@
+{
+  "format": "hypernet.v16.local_evidence_commitments.v1",
+  "scope": "Integrity commitments to local-only metadata artifacts. No event-level annotation rows or images are included. These are not executable admission files for a new machine.",
+  "artifacts": {
+    "data/gravity_fresh_v16/plan.json": "6d56649b2e743aebba3bba18772902e614d1727146da9ce979858861084f8ca1",
+    "data/gravity_fresh_v16/roster_freeze.json": "64a2cb5eff70a68eca199ddf02ab7faeef6d0f508ff5a80dfa4fac4ce95f59f6",
+    "data/gravity_fresh_v16/freshness_consensus_independent_audit.json": "9cb934e35243c67010ec3154e6aee4836f3f47c466a2a588ce1c82346a291aa1",
+    "data/gravity_fresh_v16/format_probe_audit.json": "510121a434ace340ff001048f7da30896cea963dd80c420aa48652f371e27bd3",
+    "data/gravity_fresh_v16/format_probe_visual_review.json": "f80d0d35dfdae4f456ea3de7a08effc886cdf1ab3658900a580d5195f6cb55af"
+  },
+  "test_pixels_acquired_at_metadata_audit": 0,
+  "model_calls_in_metadata_audit": 0
+}

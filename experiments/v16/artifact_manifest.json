@@ -1,0 +1,164 @@
+{
+  "format": "hypernet.v16.completed_artifact_export.v1",
+  "created_utc": "2026-11-03T02:58:38.492043+00:00",
+  "status": "completed_audited_results_aggregate_only_for_human_derived_data",
+  "files": {
+    "training/primary_4096/final.pt": {
+      "original_logical_path": "training/primary_4096/final.pt",
+      "original_sha256": "e2fccc80ecc94ebc4b13e3c96d57fca159c2d6c19008160222ee4da7dcd7bc97",
+      "public_sha256": "e2fccc80ecc94ebc4b13e3c96d57fca159c2d6c19008160222ee4da7dcd7bc97",
+      "bytes": 396324,
+      "transformation": "none",
+      "state_sha256": "24cfa632574c96c083624e3b338fae5329f4ba941804718976545b0e019cfc9f"
+    },
+    "training/primary_4096/random.pt": {
+      "original_logical_path": "training/primary_4096/random.pt",
+      "original_sha256": "0057ad0ce1ac80b56e26a55efb7c8cd04c65a31476ec9bfc2ebbba649d115ee5",
+      "public_sha256": "0057ad0ce1ac80b56e26a55efb7c8cd04c65a31476ec9bfc2ebbba649d115ee5",
+      "bytes": 396417,
+      "transformation": "none",
+      "state_sha256": "9674f440a83033fa225efba2b89db071c171e4b387bd49f12d5737c7825a1bdb"
+    },
+    "training/no_relation_aux_4096/final.pt": {
+      "original_logical_path": "training/no_relation_aux_4096/final.pt",
+      "original_sha256": "e59580ba4ab129522fbb003a900b0d2a67950d50eacf08d015b2d390b27635f7",
+      "public_sha256": "e59580ba4ab129522fbb003a900b0d2a67950d50eacf08d015b2d390b27635f7",
+      "bytes": 396324,
+      "transformation": "none",
+      "state_sha256": "da02417370f5ef987efb5d5f19bb3f804d6b4a523cfd95c29726bf64f5f10ea1"
+    },
+    "benchmarks/synthetic/training_independent_audit.json": {
+      "original_logical_path": "experiments/training_independent_audit.json",
+      "original_sha256": "d372b606d22aac84445f9749591aefb8c023afcf60577f19a295bba4705ad602",
+      "public_sha256": "d29681afe01ca62047ba86484d94396e41453aeb34b1a3f8561e708af22817c0",
+      "bytes": 92504,
+      "transformation": "Replace local absolute workspace prefixes with logical hypernet_v16/hypernet_v15 paths; no metric changes."
+    },
+    "benchmarks/synthetic/training_sample_render_replay.json": {
+      "original_logical_path": "experiments/training_sample_render_replay.json",
+      "original_sha256": "380a14d571a9c7d4ff992643c189ce73f5ddeb76c90193fa50f1492a9a13ac94",
+      "public_sha256": "3055b260249db9f072a2b5d7475878c787292a2ae10978a5757f01c4c781c113",
+      "bytes": 39971,
+      "transformation": "Replace local absolute workspace prefixes with logical hypernet_v16/hypernet_v15 paths; no metric changes."
+    },
+    "benchmarks/synthetic/synthetic_raster_overlap_audit.json": {
+      "original_logical_path": "experiments/synthetic_raster_overlap_audit.json",
+      "original_sha256": "8ed293d1fdddfada46d6f7fca2d233f059cd93961355f44addf800f7eaaeda43",
+      "public_sha256": "055ec474c9e9c082ccfe8bd84310c6e61fb6a26d29c17060c5c9f3cf2fb78158",
+      "bytes": 10974,
+      "transformation": "Replace local absolute workspace prefixes with logical hypernet_v16/hypernet_v15 paths; no metric changes."
+    },
+    "benchmarks/synthetic/nonincident_raster_contact_audit.json": {
+      "original_logical_path": "experiments/nonincident_raster_contact_audit.json",
+      "original_sha256": "79a7bec5e7110179e2aef90c9c9aaed111ab4ee279205ec8f7ab670539a1debe",
+      "public_sha256": "af14ee91f95383ee7ccfd85f14c05a5f12bfc51d0d934027a92bdd90b793137b",
+      "bytes": 525,
+      "transformation": "Replace local absolute workspace prefixes with logical hypernet_v16/hypernet_v15 paths; no metric changes."
+    },
+    "benchmarks/synthetic/synthetic_diagnostic_input_audit.json": {
+      "original_logical_path": "experiments/synthetic_diagnostic_input_audit.json",
+      "original_sha256": "94cb8421456665cb3084cb9d09b6e45626b83ede5ee04503e4d4403db613c279",
+      "public_sha256": "9869456e51da0d3852e9f36228d599a3055721dc5c9ac530ad53027aaa8d07fa",
+      "bytes": 919,
+      "transformation": "Replace local absolute workspace prefixes with logical hypernet_v16/hypernet_v15 paths; no metric changes."
+    },
+    "benchmarks/synthetic/unit_validation_final.json": {
+      "original_logical_path": "experiments/unit_validation_final.json",
+      "original_sha256": "b647fb7db9a2fe2f71d200bd60a32a007c31c70a9647f0cef6e5918ec4d595b3",
+      "public_sha256": "d143b33d9cb9bd8c8bcfd8f94c79a98ae70c5548bfe906f595d8e7dd3593e8fd",
+      "bytes": 1368,
+      "transformation": "Replace local absolute workspace prefixes with logical hypernet_v16/hypernet_v15 paths; no metric changes."
+    },
+    "benchmarks/synthetic/aggregate_results.json": {
+      "original_logical_path": "experiments/synthetic_final_diagnosis/results.json",
+      "original_sha256": "dde2dadcd7abb954a56fb5982abdb68f2a1c3023726076021d99dfd195975e02",
+      "public_sha256": "947dcaea15bdf91ad0f907c6ae33faffafbb252f9827fb5f6bc9a2c08b9c71fd",
+      "bytes": 4439,
+      "transformation": "Select aggregate plan, source hashes, arm metrics/checkpoint/score hashes, and negative-kind counts; omit per-instance pixel/mask arrays."
+    },
+    "benchmarks/synthetic/paired_type_bootstrap.json": {
+      "original_logical_path": "experiments/synthetic_final_diagnosis/paired_type_bootstrap.json",
+      "original_sha256": "b6c058b392ecfd86d7d85d268f69c71cb467ba6711b781a1ff46e69e0be59829",
+      "public_sha256": "0059efaae01b9c5af4f9aa2d8c7d67b4634971a8a46568059a4e4ad5de3132e8",
+      "bytes": 3696,
+      "transformation": "JSON reserialization and logical path normalization only."
+    },
+    "benchmarks/synthetic/first_six_illustration.json": {
+      "original_logical_path": "experiments/synthetic_final_diagnosis/first_six_illustration.json",
+      "original_sha256": "e8bdc009acb0e1f120dab36974b7a40fcc743f5b0845f1f4d4e687921d8ea9b6",
+      "public_sha256": "4ca6d088ec51b4d18baa0a02d7790b0034944a7b3efe79f885c13cc1ad985023",
+      "bytes": 5562,
+      "transformation": "JSON reserialization and logical path normalization only."
+    },
+    "assets/synthetic_retrieval_first_six.png": {
+      "original_logical_path": "assets/synthetic_retrieval_first_six.png",
+      "original_sha256": "564182cca9eddda38d0d578ffc9759ba349b9e45028fa18d00ebb1eb659f0e17",
+      "public_sha256": "564182cca9eddda38d0d578ffc9759ba349b9e45028fa18d00ebb1eb659f0e17",
+      "bytes": 204088,
+      "transformation": "none"
+    },
+    "benchmarks/fresh_cohort_aggregate.json": {
+      "original_logical_path": "data/gravity_fresh_v16/blind_quality_audit.json",
+      "original_sha256": "dbba700efeeba2cb60e1da431059817272091322317e340c4632213c3e535e7a",
+      "public_sha256": "5bb0685dcd149de2add34aade145f45bdd8c45e9825699b65aaa25a2bd123f6c",
+      "bytes": 1616,
+      "transformation": "Explicit aggregate-only projection. No per-event labels, identifiers, votes, scores, pixels, paths or sidecar inventory."
+    },
+    "benchmarks/fresh_aggregate_results.json": {
+      "original_logical_path": "experiments/fresh_test/results.json",
+      "original_sha256": "33da8dd57675da02113e3941d7f8a004d9160dce6880cbfaa4772196aac5d9f8",
+      "public_sha256": "33da8dd57675da02113e3941d7f8a004d9160dce6880cbfaa4772196aac5d9f8",
+      "bytes": 140308,
+      "transformation": "JSON reserialization of aggregate-only metrics; local paths normalized. No event score arrays or roster."
+    },
+    "benchmarks/calibration_aggregate_results.json": {
+      "original_logical_path": "experiments/calibration/results.json",
+      "original_sha256": "237493285a3a6845d016cd34d5562aebb44f172d21a85a4457d93f0506fcdea6",
+      "public_sha256": "b25ccab807e8af06fb99f0df73311f1551e4fefd475b86ae972d319eb7231610",
+      "bytes": 256592,
+      "transformation": "Explicit aggregate/candidate-metric projection only; omit input paths, source image bindings and reference identifiers."
+    },
+    "benchmarks/fresh_protocol_summary.json": {
+      "original_logical_path": "experiments/frozen_protocol.json",
+      "original_sha256": "4bc970a942ce256ea0cc0eaf8cf0f1c4abd3ca729767a693189fa90bffe3e929",
+      "public_sha256": "4a4b471ec5aacdf6d5a77673451ed1e91b884c90ec3e7e96a96c10f66e32293c",
+      "bytes": 2824,
+      "transformation": "Aggregate method/cutoff projection; omit row-level and reference bindings and all local absolute paths. Not executable admission."
+    },
+    "benchmarks/calibration_independent_score_audit.json": {
+      "original_logical_path": "experiments/calibration_independent_score_audit.json",
+      "original_sha256": "27d3259cf761433ce017baf43b314c0ffffed98ea929ec69de16f6a45576723d",
+      "public_sha256": "350245ed8539c99749ffb970fea7bdb22babb7f037ca192741be5f5b6a497f45",
+      "bytes": 1465,
+      "transformation": "Aggregate independent audit; logical path normalization, no per-event labels or scores."
+    },
+    "benchmarks/paired_analysis_independent_review.json": {
+      "original_logical_path": "experiments/paired_analysis_independent_review.json",
+      "original_sha256": "01517a4926c31db2d0b2e1d51b5c37f3456e64e9ff761e0e8aabe640460c16f5",
+      "public_sha256": "f066ff70cd74dd871f0bf350b48353c073d25153d7b0f259568d781c33c3e080",
+      "bytes": 1382,
+      "transformation": "Aggregate independent audit; logical path normalization, no per-event labels or scores."
+    },
+    "benchmarks/fresh_paired_analysis.json": {
+      "original_logical_path": "experiments/fresh_comparison_analysis.json",
+      "original_sha256": "777cbe9705ac2e0be4fefd6f36a26d5ee1442b10e1fef0e1f9d4ad634e35acec",
+      "public_sha256": "00786a9ccb4ac78d5fef3af769e2470ce9500421c35cd3bc06e25db811d2297f",
+      "bytes": 301001,
+      "transformation": "Aggregate bootstrap and metrics only; logical path normalization."
+    },
+    "benchmarks/fresh_independent_score_audit.json": {
+      "original_logical_path": "experiments/test_independent_score_audit.json",
+      "original_sha256": "ed7d72b5b2f90c09dfc15c106ffc6cf7a4a3879d3ec16960ffcd2c26f4dc89ba",
+      "public_sha256": "ba7c0f7354191c50f3cc36bd5cb11426f582e263a5bc5d8e6dae7b2178defd83",
+      "bytes": 1703,
+      "transformation": "Aggregate independent audit; logical path normalization."
+    },
+    "benchmarks/fresh_inference_replay_summary.json": {
+      "original_logical_path": "experiments/fresh_inference_replay.json",
+      "original_sha256": "4c1bcc03b359c74f9a137df09368e05345aaa215e405a524c243538dc583cdc3",
+      "public_sha256": "8c15e62b3d44906c7cf9fa9bd0a417049979a1cbc5e3c71d499a5c42d293593a",
+      "bytes": 1338,
+      "transformation": "Explicit aggregate replay projection; omit event IDs, pixel hashes, actual/expected per-event scores and sidecar bindings."
+    }
+  }
+}

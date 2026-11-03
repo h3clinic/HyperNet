@@ -1,0 +1,28 @@
+{
+  "scope": "Post-training synthetic diagnosis only. No real images, checkpoint or recipe selection.",
+  "definition": "512 heldout axis-relative graph signatures; all are hash-partition disjoint from training.",
+  "references_per_type": 1,
+  "query_instances_per_type": 2,
+  "image_side": 96,
+  "reference_seed_base": 900000000,
+  "query_seed_offsets": [
+    1099511627776,
+    2199023255552
+  ],
+  "arms": [
+    "random",
+    "primary_final_4096",
+    "no_relation_aux_final_4096",
+    "raw_gray_cosine"
+  ],
+  "main_metric": "Type top1 accuracy among all512 references; tie resolves lowest sorted reference index",
+  "secondary_metrics": [
+    "mean reciprocal rank",
+    "positive-vs-nuisance-matched-negative pair accuracy",
+    "adjacency accuracy",
+    "node-degree accuracy"
+  ],
+  "negative_scope": "hard_negative() preserves graph counts where declared; these negative signatures may have been seen during training. Positive heldout signatures have not.",
+  "raw_baseline": "Native96x96 grayscale, subtract spatial mean, L2 normalize, cosine similarity.",
+  "no_claim": "This controlled graph grammar is not semantic category recognition or a fresh real-data result."
+}

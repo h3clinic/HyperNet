@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-11-03T02:34:01.593954+00:00",
+  "declared_before_test_pixels_and_scores": true,
+  "selection": "First two blind-QC-valid events in frozen plan order; resolve IDs after blind QC and before scoring.",
+  "methods": [
+    "v16",
+    "v16_no_relations",
+    "random",
+    "v15",
+    "raw48"
+  ],
+  "targets": "All fixed fourteen targets",
+  "new_cnn_batch_size": 4,
+  "query_count": 2,
+  "batch_context_policy": "first_original_batch",
+  "context_queries_scored": false,
+  "pre_test_clarification": "Reproduce the first original batch of up to four eligible images; compare scores only for its first two. Any remaining images supply identical batch context. This clarification preceded TEST acquisition and scoring.",
+  "replay_tolerance": 0,
+  "weights_updated": false,
+  "scope": "Two-query deterministic inference replay; not a replay of every evaluation or training step."
+}

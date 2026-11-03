@@ -1,0 +1,46 @@
+{
+  "format": "hypernet.v16.exact_two_query_replay",
+  "created_utc": "2026-11-03T02:55:44.374253+00:00",
+  "passed": true,
+  "numeric_values_compared": 140,
+  "exact_values": 140,
+  "maximum_absolute_error": 0.0,
+  "methods": [
+    "v16",
+    "v16_no_relations",
+    "random",
+    "v15",
+    "raw48"
+  ],
+  "target_labels": [
+    "1080Lines",
+    "1400Ripples",
+    "Air_Compressor",
+    "Blip",
+    "Koi_Fish",
+    "Light_Modulation",
+    "Low_Frequency_Burst",
+    "Low_Frequency_Lines",
+    "Power_Line",
+    "Repeating_Blips",
+    "Scattered_Light",
+    "Scratchy",
+    "Tomte",
+    "Whistle"
+  ],
+  "selected_recipe": "native",
+  "reference_count": 19,
+  "scored_target_count": 14,
+  "weights_unchanged": true,
+  "gradients_or_optimization": false,
+  "new_query_scores": 140,
+  "implementation_reuse": "Reuses evaluate_v16 configure, image loading, FrozenRelations, score_vectors, FrozenDetails and PatternMatcher. Not an independent model implementation.",
+  "scope": "Two scored queries only, with original fixed-batch context; not a full inference/training replay",
+  "resolution_sha256": "0b5873f4e1d5d051571eb09c5308e12026b366d2b0a9b54651b3f9d5ac174df5",
+  "runtime": {
+    "device": "cuda",
+    "torch": "2.14.1+cu130",
+    "numpy": "2.5.3"
+  },
+  "seconds": 6.1387312000006204
+}

@@ -1,0 +1,43 @@
+{
+  "format": "hypernet.v16.independent_saved_score_audit.v1",
+  "passed": true,
+  "stage": "calibration",
+  "events": 1579,
+  "methods": [
+    "v16",
+    "v16_no_relations",
+    "random",
+    "v15",
+    "raw48"
+  ],
+  "targets": [
+    "1080Lines",
+    "1400Ripples",
+    "Air_Compressor",
+    "Blip",
+    "Koi_Fish",
+    "Light_Modulation",
+    "Low_Frequency_Burst",
+    "Low_Frequency_Lines",
+    "Power_Line",
+    "Repeating_Blips",
+    "Scattered_Light",
+    "Scratchy",
+    "Tomte",
+    "Whistle"
+  ],
+  "numeric_values_checked": 3296,
+  "all_target_score_values": 110530,
+  "sources": {
+    "hypernet_v16/scripts/audit_comparison_scores_v16.py": "28942bdcc194ac60322085495f84e05c4c9772ed0f6bc01adbdd245245a03c5f"
+  },
+  "bound_files": {
+    "hypernet_v16/experiments/calibration/results.json": "237493285a3a6845d016cd34d5562aebb44f172d21a85a4457d93f0506fcdea6",
+    "hypernet_v16/experiments/calibration/scores.npz": "146b807f161bf5726d89984d3f57a4c03b9033309102ec348ca368c1449d2459",
+    "hypernet_v16/experiments/calibration/candidate_scores.npz": "78000a2a50fedbf2005b827ce156c0f8fae9ce8863d913df2da30d04d69fd12a"
+  },
+  "ranking_reference": "sklearn roc_auc_score and average_precision_score",
+  "cutoff_reference": "independent partition order statistic plus nextafter; CALIB only",
+  "group_reference": "independently accumulated per-target group counts and event unions",
+  "no_model_or_image_calls": true
+}

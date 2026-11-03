@@ -1,0 +1,36 @@
+{
+  "format": "hypernet.v16.training_audit_replay_plan.v1",
+  "created_utc": "2026-11-03T02:02:37.964991+00:00",
+  "declared_before_replay": true,
+  "arms": [
+    "training/primary_4096",
+    "training/no_relation_aux_4096"
+  ],
+  "zero_based_steps": [
+    0,
+    127,
+    1023,
+    2047,
+    3071,
+    4095
+  ],
+  "type_positions": [
+    0,
+    31,
+    32,
+    63
+  ],
+  "instances": [
+    "a",
+    "b"
+  ],
+  "sample_count_per_arm": 48,
+  "selection": "Fixed evenly spread and boundary training steps, first/last base and hard-negative positions; no loss, image or score inspection used for selection.",
+  "ledger_audit": "All64shards perarm, source snapshots/admission/history/checkpoint-state digests, counts and sequential step-wise stream reconstruction.",
+  "replay": "Render only the48 selected consumed RGB/mask instances perarm using frozen generator, exact recorded codes/seeds and original CUDA/runtime; compare every RGB and mask SHA256. Wait for both training arms and model-owner GPU diagnostics to finish.",
+  "scope": "Independent data-consumption/source/checkpoint audit plus sampled render replay. Not an optimizer-trajectory replay or a proof of correctness for all images.",
+  "training_completion_present_at_declaration": {
+    "training/primary_4096": false,
+    "training/no_relation_aux_4096": false
+  }
+}

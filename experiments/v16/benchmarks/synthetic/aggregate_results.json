@@ -1,0 +1,105 @@
+{
+  "plan": {
+    "scope": "Post-training synthetic diagnosis only. No real images, checkpoint or recipe selection.",
+    "definition": "512 heldout axis-relative graph signatures; all are hash-partition disjoint from training.",
+    "references_per_type": 1,
+    "query_instances_per_type": 2,
+    "image_side": 96,
+    "reference_seed_base": 900000000,
+    "query_seed_offsets": [
+      1099511627776,
+      2199023255552
+    ],
+    "arms": [
+      "random",
+      "primary_final_4096",
+      "no_relation_aux_final_4096",
+      "raw_gray_cosine"
+    ],
+    "main_metric": "Type top1 accuracy among all512 references; tie resolves lowest sorted reference index",
+    "secondary_metrics": [
+      "mean reciprocal rank",
+      "positive-vs-nuisance-matched-negative pair accuracy",
+      "adjacency accuracy",
+      "node-degree accuracy"
+    ],
+    "negative_scope": "hard_negative() preserves graph counts where declared; these negative signatures may have been seen during training. Positive heldout signatures have not.",
+    "raw_baseline": "Native96x96 grayscale, subtract spatial mean, L2 normalize, cosine similarity.",
+    "no_claim": "This controlled graph grammar is not semantic category recognition or a fresh real-data result."
+  },
+  "plan_sha256": "11977c0d3c024cbd8fa3c3e35abe5343a83746354bb03328e8234f874786fb4d",
+  "sources": {
+    "hypernet/relational_encoder.py": "0bbe1147f83a4e208c62618abd572141a699ac5d4becc23f87890f077e71c095",
+    "hypernet/variation_curriculum.py": "e5277e242e4149dee01f7a52d2db5a22ba0d2f884e66d5fa28926e86a2e0be90",
+    "scripts/diagnose_relations.py": "4d4573a8e42230998e3ae4b5a0097baf0ddbb904012043321a57b91ad9096300"
+  },
+  "arms": {
+    "random": {
+      "checkpoint_sha256": "0057ad0ce1ac80b56e26a55efb7c8cd04c65a31476ec9bfc2ebbba649d115ee5",
+      "state_sha256": "9674f440a83033fa225efba2b89db071c171e4b387bd49f12d5737c7825a1bdb",
+      "optimizer_steps": 0,
+      "metrics": {
+        "queries": 1024,
+        "correct": 14,
+        "top1_accuracy": 0.013671875,
+        "mean_reciprocal_rank": 0.04423738535273982,
+        "chance_top1": 0.001953125,
+        "nuisance_matched_pair_accuracy": 0.6220703125,
+        "nuisance_matched_ties": 0,
+        "node_degree_accuracy": 0.1263427734375,
+        "edge_accuracy": 0.455322265625
+      },
+      "scores_sha256": "9679df2e5af89ba982cdab935f6769be51dc514563449bdfb2918a12218e4b9b"
+    },
+    "raw_gray_cosine": {
+      "metrics": {
+        "queries": 1024,
+        "correct": 48,
+        "top1_accuracy": 0.046875,
+        "mean_reciprocal_rank": 0.09196307259916525,
+        "chance_top1": 0.001953125,
+        "nuisance_matched_pair_accuracy": 0.66015625,
+        "nuisance_matched_ties": 0
+      },
+      "scores_sha256": "2fc55d3f2db94482173940620ebb0f69d3202cbd8075e94b546f4acc8dfde16f"
+    },
+    "primary_final_4096": {
+      "checkpoint_sha256": "e2fccc80ecc94ebc4b13e3c96d57fca159c2d6c19008160222ee4da7dcd7bc97",
+      "state_sha256": "24cfa632574c96c083624e3b338fae5329f4ba941804718976545b0e019cfc9f",
+      "optimizer_steps": 4096,
+      "metrics": {
+        "queries": 1024,
+        "correct": 1024,
+        "top1_accuracy": 1.0,
+        "mean_reciprocal_rank": 1.0,
+        "chance_top1": 0.001953125,
+        "nuisance_matched_pair_accuracy": 1.0,
+        "nuisance_matched_ties": 0,
+        "node_degree_accuracy": 0.9989013671875,
+        "edge_accuracy": 0.9995524088541666
+      },
+      "scores_sha256": "f2040593b057bf3ad8905d03c10f7fa15b205c27fb9be9d5e3c4c274fad72e74"
+    },
+    "no_relation_aux_final_4096": {
+      "checkpoint_sha256": "e59580ba4ab129522fbb003a900b0d2a67950d50eacf08d015b2d390b27635f7",
+      "state_sha256": "da02417370f5ef987efb5d5f19bb3f804d6b4a523cfd95c29726bf64f5f10ea1",
+      "optimizer_steps": 4096,
+      "metrics": {
+        "queries": 1024,
+        "correct": 1024,
+        "top1_accuracy": 1.0,
+        "mean_reciprocal_rank": 1.0,
+        "chance_top1": 0.001953125,
+        "nuisance_matched_pair_accuracy": 0.9990234375,
+        "nuisance_matched_ties": 0,
+        "node_degree_accuracy": 0.07586669921875,
+        "edge_accuracy": 0.4392496744791667
+      },
+      "scores_sha256": "75cce9428f327fd1d6f8f6aa6d911a7292689cd5b14ec3837a20d101a40b5ca0"
+    }
+  },
+  "negative_kind_counts": {
+    "axis_order_matched_statistics": 4,
+    "rewire_matched_statistics": 1020
+  }
+}

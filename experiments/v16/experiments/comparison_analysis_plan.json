@@ -1,0 +1,54 @@
+{
+  "format": "hypernet.v16.paired_comparison_plan.v1",
+  "created_utc": "2026-11-03T01:47:17.578287+00:00",
+  "declared_before_v16_test_evaluation": true,
+  "methods": [
+    "v16",
+    "v16_no_relations",
+    "random",
+    "v15",
+    "raw48"
+  ],
+  "primary": "v16",
+  "contrasts": [
+    "raw48",
+    "v15",
+    "random",
+    "v16_no_relations"
+  ],
+  "budget_false_alarms_per10000": 10,
+  "valid_bootstrap_draws": 5000,
+  "bootstrap_seed": 1616,
+  "bootstrap_batch_size": 128,
+  "group_order": "lexicographic group_id",
+  "resampling": "Draw G time groups with replacement from the G observed effective TEST groups using numpy.default_rng(seed).multinomial(G, equal probabilities). All events, targets and methods within each selected group travel together.",
+  "acceptance": "Keep the first5000 draws with at least one positive and one negative for every fixed target. Redraw rejected replicates; report attempted/rejected/unused-generated counts. Do not change the macro target set.",
+  "quantiles": {
+    "probabilities": [
+      0.025,
+      0.975
+    ],
+    "method": "linear"
+  },
+  "metrics": [
+    "macro_recall",
+    "macro_false_alarms_per10000_negatives"
+  ],
+  "thresholds": "Each method has its own cutoffs from the same labeled CALIB cohort. Reuse all cutoffs verbatim on TEST and in bootstrap; no test calibration.",
+  "new_architecture_recipe": "Choose exactly one recipe using v16primary CALIB macrorecall at10FP/10k, tie macroAUROC, then declared mean/native/context128 order. Apply that same recipe to v16_no_relations and random. Preserve all3 CALIB candidate traces.",
+  "legacy_controls": "v15 fixed translation006 matcher; raw48 fixed centered grayscale48x48 template. No TEST-based switching.",
+  "target_set": "Metadata-eligible intersection of old19 target types with at least10 fresh groups; exact ordered targets and class counts are bound before pixel access by the cohort roster, and before TEST by the CALIB supplement.",
+  "supplements_required": [
+    "Exact CALIB NPZ hash, ordered target/method roster and cutoff digest.",
+    "Frozen protocol file hash, linked to this plan and the CALIB binding, before the TEST score artifact exists."
+  ],
+  "limitations": [
+    "Additional labeled calibration events are supervision beyond the one enrolled image, even without natural-image gradient training.",
+    "Results are conditional on chosen references, trained checkpoints, CALIB recipe/cutoffs and the observed cohort.",
+    "Event-time grouping handles known dependence but does not prove independent physical events.",
+    "Positive-presence rejection conditions the bootstrap; sparse target classes still give unstable intervals.",
+    "Intervals are pointwise percentile intervals, not familywise multiplicity-adjusted.",
+    "FP per10,000 is normalized from observed negative counts, not a claim of10,000 independent negatives.",
+    "No trained arm or ablation will be promoted after viewing TEST."
+  ]
+}

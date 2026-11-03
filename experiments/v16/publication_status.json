@@ -1,0 +1,17 @@
+{
+  "format": "hypernet.v16.publication_status.v1",
+  "status": "completed_audited_package_ready_for_root_publication",
+  "final_weights_included": true,
+  "completed_results_included": "synthetic_and_aggregate_real_results",
+  "final_release_authorized": true,
+  "completed_gates": [
+    "Both declared fixed-budget training arms complete and independent consumption/source/state audits pass.",
+    "Declared synthetic diagnostic completes without selecting models using fresh TEST.",
+    "Real CALIB recipe and per-method thresholds are bound before fresh TEST acquisition/scoring.",
+    "All predeclared fresh images are acquired or failures disclosed; blind QC and actual sidecar bytes are bound.",
+    "Fresh evaluation, independent arithmetic and predeclared exact replay audits complete.",
+    "Root authorizes final reviewed aggregate/weight export; row-level human-derived evidence stays local."
+  ],
+  "public_evidence_policy": "Aggregate statistics, source/checkpoint hashes and reconstruction instructions only for restricted-label real data. No volunteer rows, identifiers, event-level consensus, real images or real-image figures.",
+  "project_license": "Preserve existing repository licensing state; no new copyright license grant."
+}

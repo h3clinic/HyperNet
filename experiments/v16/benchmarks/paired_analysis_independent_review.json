@@ -1,0 +1,29 @@
+{
+  "format": "hypernet.v16.independent_paired_analysis_review.v1",
+  "passed": true,
+  "numeric_estimates_and_interval_endpoints_checked": 54,
+  "valid_draws": 5000,
+  "attempted_draws": 5000,
+  "rejected_draws": 0,
+  "generated_but_unused_draws": 120,
+  "time_groups": 2413,
+  "events": 2413,
+  "fixed_target_count": 14,
+  "methods": [
+    "v16",
+    "v16_no_relations",
+    "random",
+    "v15",
+    "raw48"
+  ],
+  "reference": "Independent event-loop group sufficient statistics; shared seeded group multinomial draws; manually sorted linear percentile interpolation.",
+  "source_sha256": "169bc90bbfada80a5bd1189a86b7a6283975d33a384d4fd6702ac7aa4f3389ac",
+  "input_sha256": {
+    "hypernet_v16/experiments/fresh_test/scores.npz": "16a1591ca01d0a6afc6a390768cc7685bea22915567d907bf3c451b441caadc4",
+    "hypernet_v16/experiments/fresh_comparison_analysis.json": "777cbe9705ac2e0be4fefd6f36a26d5ee1442b10e1fef0e1f9d4ad634e35acec",
+    "hypernet_v16/experiments/comparison_analysis_plan.json": "5e4cc9d69ca27278ddc7fbd109bdab0af6a900ff33e845c161df37e6b504bb81"
+  },
+  "no_model_or_image_calls": true,
+  "no_threshold_refitting": true,
+  "limits": "Conditional on fixed references, trained checkpoints, calibration and chosen target set. Pointwise intervals, not simultaneous superiority statements; observed false-alarm rates differ across methods."
+}

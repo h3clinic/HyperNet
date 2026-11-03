@@ -1,0 +1,39 @@
+{
+  "reference_images": 1,
+  "reference_rgb_sha256": "e264cff2ff4b47ecbc146738c12c4a50f36b176b38e9a47a0554bbd3ce2fd5d9",
+  "query_rgb_sha256": "e264cff2ff4b47ecbc146738c12c4a50f36b176b38e9a47a0554bbd3ce2fd5d9",
+  "scores": {
+    "mean": 1.0,
+    "native": 1.0,
+    "context128": 1.0
+  },
+  "selected_recipe": "native",
+  "score": 1.0,
+  "alarm": null,
+  "threshold": null,
+  "score_is_probability": false,
+  "weight_updates": 0,
+  "provenance": {
+    "checkpoint_sha256": "e2fccc80ecc94ebc4b13e3c96d57fca159c2d6c19008160222ee4da7dcd7bc97",
+    "state_sha256": "24cfa632574c96c083624e3b338fae5329f4ba941804718976545b0e019cfc9f",
+    "optimizer_steps": 4096,
+    "consumed_instances": 524288,
+    "training_views": 524288,
+    "natural_weight_training_images": 0,
+    "borrowed_pretrained_weights": false,
+    "reference_images_per_target": 1,
+    "enrollment_weight_updates": 0,
+    "query_weight_updates": 0,
+    "preprocessing": "Native RGB plus independently encoded 128x128 INTER_AREA context; model-internal reflect padding and crop before pooling; RGB/255.",
+    "recipes": [
+      "mean",
+      "native",
+      "context128"
+    ],
+    "mean_recipe": "Equal mean of native and context embedding cosines; no raw-pixel fusion.",
+    "inference_batch_size": 4,
+    "tail_batch": "Repeat the last input to fill the fixed batch; discard padded outputs. No normalization or matching across queries.",
+    "axis_policy": "No rotations, reflections, translation search or per-query alignment."
+  },
+  "scope": "Whole-image structural similarity. No localization claim. A decision threshold needs independent domain calibration; absent one, no alarm decision is made."
+}

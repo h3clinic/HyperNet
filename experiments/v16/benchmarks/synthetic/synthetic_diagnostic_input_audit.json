@@ -1,0 +1,30 @@
+{
+  "scope": "Exact prespecified synthetic diagnostic inputs; CPU rendering; no model or real images",
+  "plan_sha256": "11977c0d3c024cbd8fa3c3e35abe5343a83746354bb03328e8234f874786fb4d",
+  "source_sha256": "e5277e242e4149dee01f7a52d2db5a22ba0d2f884e66d5fa28926e86a2e0be90",
+  "groups": {
+    "reference": {
+      "instances": 512,
+      "component_failures": [],
+      "unique_masks": 512,
+      "foreground_pixels_min": 380,
+      "foreground_pixels_max": 1180
+    },
+    "query": {
+      "instances": 1024,
+      "component_failures": [],
+      "unique_masks": 1024,
+      "foreground_pixels_min": 336,
+      "foreground_pixels_max": 1217
+    },
+    "negative": {
+      "instances": 1024,
+      "component_failures": [],
+      "unique_masks": 1024,
+      "foreground_pixels_min": 331,
+      "foreground_pixels_max": 1212
+    }
+  },
+  "heldout_partition_valid": true,
+  "passed": true
+}

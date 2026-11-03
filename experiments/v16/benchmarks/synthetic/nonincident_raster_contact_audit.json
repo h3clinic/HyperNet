@@ -1,0 +1,12 @@
+{
+  "scope": "Post-launch CPU-only generator audit; no source/model changes or natural images",
+  "method": "Reconstruct each present edge with its endpoint junction caps; test 8-connected pixel adjacency for every nonincident edge pair",
+  "instances": 4096,
+  "image_side": 96,
+  "nonincident_contact_instances": 0,
+  "contact_fraction": 0.0,
+  "findings": [],
+  "full_mask_reconstruction_mismatches": 0,
+  "source_sha256": "e5277e242e4149dee01f7a52d2db5a22ba0d2f884e66d5fa28926e86a2e0be90",
+  "passed": true
+}
