@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "scope": "Independent audit arithmetic optimization only; no model/evaluator/threshold changes",
+  "randomized_group_cases": 1000,
+  "seed": 1515,
+  "audit_source_sha256": "7f46ecbdb576ef5f1c39e8f89eac097c39d3934f1466286d75c056c4ce741a52",
+  "previous_executed_source_preserved": true
+}

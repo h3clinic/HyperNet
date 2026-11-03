@@ -1,0 +1,27 @@
+{
+  "format": "hypernet.mvtec_grid.acquisition.v15",
+  "created_utc": "2026-11-02T23:53:55.707353+00:00",
+  "dataset": "MVTec AD",
+  "category": "grid",
+  "official_download_page": "https://www.mvtec.com/research-teaching/datasets/mvtec-ad/downloads",
+  "official_dataset_page": "https://www.mvtec.com/research-teaching/datasets/mvtec-ad",
+  "url": "https://www.mydrive.ch/shares/163644/8c7fc7cba43ef5275c87ca750a6d0004/download/420937487-1629959044/grid.tar.xz",
+  "expected_bytes": 160763852,
+  "official_checksum_available": false,
+  "license": {
+    "name": "CC BY-NC-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+  },
+  "selection": {
+    "normal_filename_sha256_salt": "HyperNet-v15-MVTec-Grid-one-reference-normal-calibration-v1:",
+    "reference_count": 1,
+    "normal_calibration_count": 64,
+    "remaining_train_normals": "unused",
+    "test": "every official test image, unchanged labels and split"
+  },
+  "no_images_previously_downloaded_for_this_pilot": true,
+  "no_model_scores_consulted": true,
+  "test_policy": "No model/UI inspection before frozen method and checkpoint admission. Mechanical pixel/hash audit only.",
+  "real_weight_training_images": 0,
+  "threshold_calibration_images_are_extra_data": true
+}

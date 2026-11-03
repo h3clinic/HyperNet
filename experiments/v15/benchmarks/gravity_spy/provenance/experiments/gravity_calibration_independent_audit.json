@@ -1,0 +1,554 @@
+{
+  "format": "hypernet.gravity_calibration_independent_audit.v15",
+  "valid": true,
+  "created_utc": "2026-11-03T00:42:14.036429+00:00",
+  "protocol_sha256": "4a24995ae9981caa52ba5fb52afd70d407d425ef84253040daa9522202f7414f",
+  "audit_source_sha256": "5b6ebf157b9ee19d8ee24b19f47f806825c9f9a3b2e846c4847886e6e754cf93",
+  "models": {
+    "random": {
+      "events": 1579,
+      "selected_method": "learned:translation_012",
+      "methods": {
+        "learned:bag": {
+          "macro_recall": 0.010435535671603253,
+          "macro_auroc": 0.8077739008842055,
+          "targets": 19,
+          "unions": {
+            "budget_10_per10000": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 16,
+              "target_recovered_events": 11,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 7,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 16
+            },
+            "zero_calibration_false_alarms": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 0,
+              "target_recovered_events": 7,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 0
+            }
+          }
+        },
+        "learned:translation_006": {
+          "macro_recall": 0.01254867642391857,
+          "macro_auroc": 0.821924899745572,
+          "targets": 19,
+          "unions": {
+            "budget_10_per10000": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 19,
+              "target_recovered_events": 21,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 19
+            },
+            "zero_calibration_false_alarms": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 0,
+              "target_recovered_events": 17,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 0
+            }
+          }
+        },
+        "learned:translation_012": {
+          "macro_recall": 0.014407460041777252,
+          "macro_auroc": 0.8196479256597843,
+          "targets": 19,
+          "unions": {
+            "budget_10_per10000": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 19,
+              "target_recovered_events": 25,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 1,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 19
+            },
+            "zero_calibration_false_alarms": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 0,
+              "target_recovered_events": 13,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 0
+            }
+          }
+        },
+        "raw_pixels48": {
+          "macro_recall": 0.2803085436953382,
+          "macro_auroc": 0.8096909194976899,
+          "targets": 19,
+          "unions": {
+            "budget_10_per10000": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 17,
+              "target_recovered_events": 246,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 2,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 17
+            },
+            "zero_calibration_false_alarms": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 0,
+              "target_recovered_events": 194,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 0
+            }
+          }
+        }
+      }
+    },
+    "065536": {
+      "events": 1579,
+      "selected_method": "learned:translation_012",
+      "methods": {
+        "learned:bag": {
+          "macro_recall": 0.01487847407565567,
+          "macro_auroc": 0.7895640094449826,
+          "targets": 19,
+          "unions": {
+            "budget_10_per10000": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 15,
+              "target_recovered_events": 11,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 9,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 15
+            },
+            "zero_calibration_false_alarms": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 0,
+              "target_recovered_events": 10,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 0
+            }
+          }
+        },
+        "learned:translation_006": {
+          "macro_recall": 0.028708027199302807,
+          "macro_auroc": 0.786949529891899,
+          "targets": 19,
+          "unions": {
+            "budget_10_per10000": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 19,
+              "target_recovered_events": 39,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 19
+            },
+            "zero_calibration_false_alarms": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 0,
+              "target_recovered_events": 25,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 0
+            }
+          }
+        },
+        "learned:translation_012": {
+          "macro_recall": 0.03187997357374358,
+          "macro_auroc": 0.7849888559182118,
+          "targets": 19,
+          "unions": {
+            "budget_10_per10000": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 17,
+              "target_recovered_events": 52,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 2,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 17
+            },
+            "zero_calibration_false_alarms": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 0,
+              "target_recovered_events": 40,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 0
+            }
+          }
+        },
+        "raw_pixels48": {
+          "macro_recall": 0.2803085436953382,
+          "macro_auroc": 0.8096909194976899,
+          "targets": 19,
+          "unions": {
+            "budget_10_per10000": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 17,
+              "target_recovered_events": 246,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 2,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 17
+            },
+            "zero_calibration_false_alarms": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 0,
+              "target_recovered_events": 194,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 0
+            }
+          }
+        }
+      }
+    },
+    "262144": {
+      "events": 1579,
+      "selected_method": "learned:translation_006",
+      "methods": {
+        "learned:bag": {
+          "macro_recall": 0.008771929824561403,
+          "macro_auroc": 0.7872127597556442,
+          "targets": 19,
+          "unions": {
+            "budget_10_per10000": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 12,
+              "target_recovered_events": 1,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 9,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 12
+            },
+            "zero_calibration_false_alarms": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 0,
+              "target_recovered_events": 1,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 0
+            }
+          }
+        },
+        "learned:translation_006": {
+          "macro_recall": 0.03403757186041175,
+          "macro_auroc": 0.7930691708195213,
+          "targets": 19,
+          "unions": {
+            "budget_10_per10000": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 18,
+              "target_recovered_events": 41,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 2,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 18
+            },
+            "zero_calibration_false_alarms": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 0,
+              "target_recovered_events": 17,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 0
+            }
+          }
+        },
+        "learned:translation_012": {
+          "macro_recall": 0.02538317819536954,
+          "macro_auroc": 0.8039335919964405,
+          "targets": 19,
+          "unions": {
+            "budget_10_per10000": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 19,
+              "target_recovered_events": 42,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 19
+            },
+            "zero_calibration_false_alarms": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 0,
+              "target_recovered_events": 29,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 0
+            }
+          }
+        },
+        "raw_pixels48": {
+          "macro_recall": 0.2803085436953382,
+          "macro_auroc": 0.8096909194976899,
+          "targets": 19,
+          "unions": {
+            "budget_10_per10000": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 17,
+              "target_recovered_events": 246,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 2,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 17
+            },
+            "zero_calibration_false_alarms": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 0,
+              "target_recovered_events": 194,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 0
+            }
+          }
+        }
+      }
+    },
+    "final": {
+      "events": 1579,
+      "selected_method": "learned:translation_006",
+      "methods": {
+        "learned:bag": {
+          "macro_recall": 0.011583657129400682,
+          "macro_auroc": 0.7646660504891676,
+          "targets": 19,
+          "unions": {
+            "budget_10_per10000": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 14,
+              "target_recovered_events": 4,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 11,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 14
+            },
+            "zero_calibration_false_alarms": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 0,
+              "target_recovered_events": 1,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 0
+            }
+          }
+        },
+        "learned:translation_006": {
+          "macro_recall": 0.037106217026672786,
+          "macro_auroc": 0.7680285217052932,
+          "targets": 19,
+          "unions": {
+            "budget_10_per10000": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 19,
+              "target_recovered_events": 47,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 1,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 19
+            },
+            "zero_calibration_false_alarms": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 0,
+              "target_recovered_events": 23,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 0
+            }
+          }
+        },
+        "learned:translation_012": {
+          "macro_recall": 0.012399836905304565,
+          "macro_auroc": 0.7773641761528375,
+          "targets": 19,
+          "unions": {
+            "budget_10_per10000": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 19,
+              "target_recovered_events": 18,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 1,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 19
+            },
+            "zero_calibration_false_alarms": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 0,
+              "target_recovered_events": 8,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 0
+            }
+          }
+        },
+        "analytic:bag": {
+          "macro_recall": 0.010321713434909103,
+          "macro_auroc": 0.7129357108240533,
+          "targets": 19,
+          "unions": {
+            "budget_10_per10000": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 19,
+              "target_recovered_events": 5,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 2,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 19
+            },
+            "zero_calibration_false_alarms": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 0,
+              "target_recovered_events": 4,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 0
+            }
+          }
+        },
+        "analytic:translation_006": {
+          "macro_recall": 0.005993285934686354,
+          "macro_auroc": 0.6873065936259128,
+          "targets": 19,
+          "unions": {
+            "budget_10_per10000": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 19,
+              "target_recovered_events": 7,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 19
+            },
+            "zero_calibration_false_alarms": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 0,
+              "target_recovered_events": 2,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 0
+            }
+          }
+        },
+        "analytic:translation_012": {
+          "macro_recall": 0.011257045573880376,
+          "macro_auroc": 0.6965936859494948,
+          "targets": 19,
+          "unions": {
+            "budget_10_per10000": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 19,
+              "target_recovered_events": 10,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 19
+            },
+            "zero_calibration_false_alarms": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 0,
+              "target_recovered_events": 7,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 0
+            }
+          }
+        },
+        "raw_pixels48": {
+          "macro_recall": 0.2803085436953382,
+          "macro_auroc": 0.8096909194976899,
+          "targets": 19,
+          "unions": {
+            "budget_10_per10000": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 17,
+              "target_recovered_events": 246,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 2,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 17
+            },
+            "zero_calibration_false_alarms": {
+              "screened_events": 1579,
+              "wrong_target_alarm_events": 0,
+              "target_recovered_events": 194,
+              "events_containing_an_enrolled_target": 1465,
+              "background_events": 114,
+              "background_events_with_any_alarm": 0,
+              "screened_time_groups": 1433,
+              "time_groups_with_any_wrong_alarm": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  "analytic_selected_method": "analytic:translation_012",
+  "reported_arms": 6,
+  "targets_per_arm": 19,
+  "all_calibration_score_rosters_identical": true,
+  "test_pixels_read": 0,
+  "model_inference_calls": 0,
+  "new_threshold_or_recipe_selection": false,
+  "scope": "Independent saved-score calculation of CALIB thresholds, TP/FP, sklearn AUROC/AP, global recipe selection and event/group wrong-target union counts. No image reading or model calls."
+}

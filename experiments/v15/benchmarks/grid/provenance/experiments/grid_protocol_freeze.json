@@ -1,0 +1,82 @@
+{
+  "format": "hypernet.grid_anomaly.protocol.v15",
+  "created_utc": "2026-11-03T00:34:10.839672+00:00",
+  "model_selection_complete": true,
+  "test_scores_computed_before_freeze": false,
+  "grid_manifest_sha256": "14d18a61b0579fabe254f64553141a10de6d02ad482e06ddd528bc3d9232595d",
+  "grid_roster_freeze_sha256": "1b200202f0c88670502f921b6c0a4a7ad0a5307e1f3204e7e4bf7d5004e14f8b",
+  "grid_data_audit_sha256": "6403646812bdb82677738acf51dfd9d5f6d55bd9eedcfc777a7ccfa7e73f957a",
+  "behavior_files": {
+    "hypernet/detail_encoder.py": "e1e4cd86843b441c92d72292e97b267dbf105e68ceb8b0650f0002ff39867d43",
+    "hypernet/detail_features.py": "faff01363202ccbfe38ad487829cfd166c50416c78b325af23bf2d4ae1f72b8d",
+    "hypernet/grid_anomaly.py": "70b12b11046ab5422168b4f9b85a30c4186595db97dc6e911065ff8da262ce42",
+    "hypernet/mvtec_grid.py": "d1d46475fc66c54f483455b9ea3d0149bd7f4dd0b5b1f59c92e4f1278dfb2019",
+    "hypernet/rare_event_metrics.py": "d53397d708c2c20a0b67da7e2352bcce98df4cec02c81846c835137fc47fad09",
+    "scripts/evaluate_grid_v15.py": "e1ad8bf245cb3a51fa1be7682d265c7d814ee257b926e1774e52df8c5f3bef98",
+    "scripts/prepare_mvtec_grid.py": "f19e19ae593d0d2d7e144e907e67fc982c0c9c375b0faf5de38be50b7f9de6b0",
+    "data/mvtec_grid_v15/roster_freeze.json": "1b200202f0c88670502f921b6c0a4a7ad0a5307e1f3204e7e4bf7d5004e14f8b",
+    "experiments/mvtec_grid_data_audit.json": "6403646812bdb82677738acf51dfd9d5f6d55bd9eedcfc777a7ccfa7e73f957a",
+    "experiments/grid_method_plan.json": "f923a8a47b36c5cc03d115295e72b2f4ae3e05f3ea38de9206afc465d01ef0cc",
+    "${V15_ROOT}\\results\\grid_final_dev\\grid_results.json": "7cce1ea706f0546da0b1d3d3286fabef3c0cff7ca65c56aca941b1d7862c3250",
+    "${V15_ROOT}\\results\\grid_final_dev\\learned_final_scores.jsonl": "cd0fdb6895659910ef29119edfd5ca328e80461238d1163fe812429312e88b58",
+    "${V15_ROOT}\\results\\grid_final_dev\\random_scores.jsonl": "570c0386522392e5d37fbaf9fc4bd7a34b1703e4457029530564443e5bc3d90b",
+    "${V15_ROOT}\\results\\grid_final_dev\\analytic_detail_scores.jsonl": "a794f43a99d553c43b1925a60777140d0fe9b748aa5fdcf293f968017ffb6897"
+  },
+  "checkpoint_files": {
+    "${V15_ROOT}\\checkpoints\\details_run01\\families_1048576.pt": "3e42c4410527c0b9f293bcf525fa55ea01ec705a0559d11ee2c9c896f7028403",
+    "${V15_ROOT}\\checkpoints\\details_run01\\random_initial.pt": "da3d477d7104ca222bfe1f35117795d27dec17537a55d83cd9730abeece624bb"
+  },
+  "checkpoints": {
+    "learned_final": "${V15_ROOT}\\checkpoints\\details_run01\\families_1048576.pt",
+    "random": "${V15_ROOT}\\checkpoints\\details_run01\\random_initial.pt"
+  },
+  "method_aliases": [
+    "learned_final",
+    "random",
+    "analytic_detail"
+  ],
+  "primary_method": "learned_final",
+  "device": "cuda",
+  "batch_size": 32,
+  "thresholds": {
+    "learned_final": 0.3606614762821969,
+    "random": 0.16653152056816972,
+    "analytic_detail": 0.10884329751645401
+  },
+  "calibration": {
+    "learned_final": {
+      "threshold": 0.3606614762821969,
+      "normal_calibration_images": 64,
+      "observed_calibration_false_positives": 0,
+      "rule": "Strict maximum normal DEV score plus nextafter toward +infinity",
+      "calibration_zero_alarm_one_sided95_upper_per_10000": 457.29702330762444,
+      "claim": "Zero empirical calibration alarms; no guaranteed future false-positive rate."
+    },
+    "random": {
+      "threshold": 0.16653152056816972,
+      "normal_calibration_images": 64,
+      "observed_calibration_false_positives": 0,
+      "rule": "Strict maximum normal DEV score plus nextafter toward +infinity",
+      "calibration_zero_alarm_one_sided95_upper_per_10000": 457.29702330762444,
+      "claim": "Zero empirical calibration alarms; no guaranteed future false-positive rate."
+    },
+    "analytic_detail": {
+      "threshold": 0.10884329751645401,
+      "normal_calibration_images": 64,
+      "observed_calibration_false_positives": 0,
+      "rule": "Strict maximum normal DEV score plus nextafter toward +infinity",
+      "calibration_zero_alarm_one_sided95_upper_per_10000": 457.29702330762444,
+      "claim": "Zero empirical calibration alarms; no guaranteed future false-positive rate."
+    }
+  },
+  "dev_results_path": "${V15_ROOT}\\results\\grid_final_dev\\grid_results.json",
+  "dev_results_sha256": "7cce1ea706f0546da0b1d3d3286fabef3c0cff7ca65c56aca941b1d7862c3250",
+  "reference_id": "mvtec_grid/train/good/002",
+  "method_plan_sha256": "f923a8a47b36c5cc03d115295e72b2f4ae3e05f3ea38de9206afc465d01ef0cc",
+  "real_data_budget": {
+    "normal_reference_images": 1,
+    "extra_threshold_calibration_normals": 64,
+    "natural_weight_training_images": 0
+  },
+  "test_policy": "All78official Grid TEST images once, afterfreeze; no threshold/model/reference/map tuning from TEST outcomes."
+}

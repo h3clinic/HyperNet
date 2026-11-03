@@ -1,0 +1,20 @@
+{
+  "format": "hypernet.gravity_spy.test_replay_plan.v15",
+  "created_utc": "2026-11-03T00:45:55.478369+00:00",
+  "declared_before_any_test_scores": true,
+  "protocol_sha256": "4a24995ae9981caa52ba5fb52afd70d407d425ef84253040daa9522202f7414f",
+  "selection_rule": "First2 effective QC-valid fresh TEST events in frozen roster order; exact IDs will be written after blind QC and before inference.",
+  "models": [
+    "final",
+    "random",
+    "065536",
+    "262144"
+  ],
+  "methods": "Every frozen method in each model calibration result, including raw48 and analytic methods for final",
+  "device": "cuda",
+  "batch_size": 64,
+  "sampling_stride": 4,
+  "threads": 4,
+  "tolerance": 0,
+  "execution": "Independent audit code invokes exact frozen features/matcher without updating weights; compare all19 scores and compact evidence fields."
+}

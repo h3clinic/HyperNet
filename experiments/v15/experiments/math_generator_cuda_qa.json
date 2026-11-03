@@ -1,0 +1,163 @@
+{
+  "valid": true,
+  "scope": "Fixed preview/QA families only; zero samples counted as training consumption.",
+  "source_sha256": {
+    "hypernet/math_curriculum.py": "8ee214d707183479e4d2e006eb0cc91cfc265899d419e45ebeb2424899dbe7a2",
+    "hypernet/math_curriculum_torch.py": "1ff058c6baaff4f1b92aa6acafa26bed185fdb59d3d73f397d027e681e4d4969",
+    "experiments/audit_math_generator.py": "202fd1d4e997fbf91fda0c7b4e7126b049c08bf496e2bfadb5f824558e21f6c4"
+  },
+  "device": "cuda",
+  "torch_version": "2.14.1+cu130",
+  "numpy_version": "2.5.3",
+  "gpu_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "native_size": 64,
+  "advertised_training_parameter_ids": 1048576,
+  "renderer_parameter_namespace": 2147483648,
+  "parity_ids": 96,
+  "parity": {
+    "view_a": {
+      "max_abs": 1.0,
+      "mean_abs": 5.933973524305556e-06,
+      "different": 7,
+      "elements": 1179648,
+      "fraction_error_over_one": 0.0
+    },
+    "view_b": {
+      "max_abs": 1.0,
+      "mean_abs": 4.238552517361111e-06,
+      "different": 5,
+      "elements": 1179648,
+      "fraction_error_over_one": 0.0
+    },
+    "mask_a": {
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "different": 0,
+      "elements": 393216,
+      "fraction_error_over_one": 0.0
+    },
+    "mask_b": {
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "different": 0,
+      "elements": 393216,
+      "fraction_error_over_one": 0.0
+    },
+    "canonical_raster": {
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "different": 0,
+      "elements": 393216,
+      "fraction_error_over_one": 0.0
+    },
+    "canonical_mask": {
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "different": 0,
+      "elements": 393216,
+      "fraction_error_over_one": 0.0
+    },
+    "detail_a": {
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "different": 0,
+      "elements": 393216,
+      "fraction_error_over_one": 0.0
+    },
+    "detail_b": {
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "different": 0,
+      "elements": 393216,
+      "fraction_error_over_one": 0.0
+    },
+    "grid_a_to_b": {
+      "max_abs": 2.384185791015625e-07,
+      "mean_abs": 9.219576213581604e-10,
+      "different": 14171,
+      "elements": 786432,
+      "fraction_error_over_one": 0.0
+    },
+    "grid_b_to_a": {
+      "max_abs": 2.384185791015625e-07,
+      "mean_abs": 1.544004627855126e-09,
+      "different": 16625,
+      "elements": 786432,
+      "fraction_error_over_one": 0.0
+    }
+  },
+  "audited_parameter_ids": 4096,
+  "distinct_parameter_signatures": 4096,
+  "distinct_canonical_mask_material_rasters": 4096,
+  "distinct_canonical_masks": 3972,
+  "distinct_firstview_rgb": 4096,
+  "geometry_modes": {
+    "filled_fourier_domain": 512,
+    "open_junction_graph": 512,
+    "implicit_component_union": 512,
+    "nested_contour_loops": 512,
+    "intersecting_elliptic_contours": 512,
+    "oscillatory_level_sets": 512,
+    "anisotropic_ridge_network": 512,
+    "contour_graph_component_union": 512
+  },
+  "target_foreground_pixels": {
+    "min": 9.0,
+    "median": 197.0,
+    "mean": 269.3818359375,
+    "max": 1325.0
+  },
+  "valid_detail_anchor_pixels": {
+    "min": 9.0,
+    "median": 187.0,
+    "mean": 232.371826171875,
+    "max": 1269.0
+  },
+  "census_seconds": 3.4137315999978455,
+  "timings": [
+    {
+      "native_size": 64,
+      "batch_families": 32,
+      "seconds_per_batch": 0.04858215999993263,
+      "pairs_per_second": 658.6780003203722,
+      "rendered_views_per_second": 1317.3560006407445,
+      "estimated_million_pair_renderer_seconds": 1591.9402188777924,
+      "peak_allocated_bytes": 25076736
+    },
+    {
+      "native_size": 64,
+      "batch_families": 64,
+      "seconds_per_batch": 0.043287360000249464,
+      "pairs_per_second": 1478.4916428174683,
+      "rendered_views_per_second": 2956.9832856349367,
+      "estimated_million_pair_renderer_seconds": 709.2201062440872,
+      "peak_allocated_bytes": 42254848
+    },
+    {
+      "native_size": 64,
+      "batch_families": 128,
+      "seconds_per_batch": 0.07631640000035986,
+      "pairs_per_second": 1677.2279614787442,
+      "rendered_views_per_second": 3354.4559229574884,
+      "estimated_million_pair_renderer_seconds": 625.183948802948,
+      "peak_allocated_bytes": 86596608
+    },
+    {
+      "native_size": 96,
+      "batch_families": 64,
+      "seconds_per_batch": 0.09665414000046439,
+      "pairs_per_second": 662.1547716392955,
+      "rendered_views_per_second": 1324.309543278591,
+      "estimated_million_pair_renderer_seconds": 1583.5814297676086,
+      "peak_allocated_bytes": 97108480
+    }
+  ],
+  "limitations": [
+    "A million parameter IDs is not a claim that a million finite-resolution masks or materials are unique.",
+    "The full training stream must separately count actually consumed pair IDs, raw rendered views and canonical raster hashes.",
+    "Continuous affine correspondence is exact; raster sampling can erase subpixel structures and boundary interpolation is not exact.",
+    "Foreground correspondence masks exclude targetout-of-frame points; training should also check sampled targetforeground.",
+    "NumPy/Torch/CUDA arithmetic may differ at rare threshold boundaries; measured parity is reported rather than assumed bit identity.",
+    "These mathematical programs have no naturalcategory names or imported assets."
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "completed": true,
+  "scope": "Native1-3px mathematical probes and exactly one changed RGB pixel; no real images or gradient updates",
+  "interpretation": "A nonzero local feature response demonstrates retained sensitivity. Larger sensitivity is not necessarily better recognition or anomaly detection, and noise robustness is a separate tradeoff.",
+  "source_sha256": "224b8ed6ac43a570909761bf108fd481e73db5c25a8c4925dfea6a8bf394de4f",
+  "encoder_sha256": "e1e4cd86843b441c92d72292e97b267dbf105e68ceb8b0650f0002ff39867d43",
+  "input_sha256": "82b41087ce6dedcd67037a217c8004395e15ce34a0271558d8bf28fbf3b6a85f",
+  "device": "cuda",
+  "results": [
+    {
+      "checkpoint_name": "random_initial.pt",
+      "checkpoint_sha256": "da3d477d7104ca222bfe1f35117795d27dec17537a55d83cd9730abeece624bb",
+      "state_sha256": "3ed019ce715311d0383c34b54b6332dd8f74e590658a3486a1242d0655cb9275",
+      "state_unchanged": true,
+      "metrics": [
+        {
+          "probe": "one_pixel_vertical_ridges",
+          "changed_input_pixels": 1,
+          "detail_reconstruction_mae": 0.3674088716506958,
+          "descriptor_change_at_changed_pixel": 0.5921851396560669,
+          "mean_local_descriptor_change": 0.472675621509552,
+          "mean_far_descriptor_change": 5.277029049466364e-05,
+          "maximum_stride1_feature_change": 3.7679903507232666
+        },
+        {
+          "probe": "one_pixel_checkerboard",
+          "changed_input_pixels": 1,
+          "detail_reconstruction_mae": 0.43044304847717285,
+          "descriptor_change_at_changed_pixel": 0.1349879503250122,
+          "mean_local_descriptor_change": 0.11092360317707062,
+          "mean_far_descriptor_change": 7.822264706192072e-06,
+          "maximum_stride1_feature_change": 2.2028274536132812
+        },
+        {
+          "probe": "two_pixel_diagonal_ridges",
+          "changed_input_pixels": 1,
+          "detail_reconstruction_mae": 0.4357609748840332,
+          "descriptor_change_at_changed_pixel": 0.41556596755981445,
+          "mean_local_descriptor_change": 0.21687480807304382,
+          "mean_far_descriptor_change": 5.462983244797215e-05,
+          "maximum_stride1_feature_change": 4.37080717086792
+        },
+        {
+          "probe": "three_pixel_cross",
+          "changed_input_pixels": 1,
+          "detail_reconstruction_mae": 0.329977810382843,
+          "descriptor_change_at_changed_pixel": 0.4585660696029663,
+          "mean_local_descriptor_change": 0.32128626108169556,
+          "mean_far_descriptor_change": 4.546723357634619e-05,
+          "maximum_stride1_feature_change": 4.770876407623291
+        }
+      ]
+    },
+    {
+      "checkpoint_name": "families_0065536.pt",
+      "checkpoint_sha256": "26ddb628ef3fd3e8272ced5cd3f5d3e8459f7f45289ab2bc400586d0ba5269c9",
+      "state_sha256": "8a988f0e84397f59bf92dd9733dfe898ffae4fae0fdb518b809ba3e02ad82560",
+      "state_unchanged": true,
+      "metrics": [
+        {
+          "probe": "one_pixel_vertical_ridges",
+          "changed_input_pixels": 1,
+          "detail_reconstruction_mae": 0.14597269892692566,
+          "descriptor_change_at_changed_pixel": 0.9003148078918457,
+          "mean_local_descriptor_change": 0.17519870400428772,
+          "mean_far_descriptor_change": 1.892027398753271e-06,
+          "maximum_stride1_feature_change": 4.94622802734375
+        },
+        {
+          "probe": "one_pixel_checkerboard",
+          "changed_input_pixels": 1,
+          "detail_reconstruction_mae": 0.2676900327205658,
+          "descriptor_change_at_changed_pixel": 0.9882200956344604,
+          "mean_local_descriptor_change": 0.18271425366401672,
+          "mean_far_descriptor_change": 7.674364496779162e-06,
+          "maximum_stride1_feature_change": 3.746650457382202
+        },
+        {
+          "probe": "two_pixel_diagonal_ridges",
+          "changed_input_pixels": 1,
+          "detail_reconstruction_mae": 0.184449702501297,
+          "descriptor_change_at_changed_pixel": 0.7759543657302856,
+          "mean_local_descriptor_change": 0.17247842252254486,
+          "mean_far_descriptor_change": 8.591090590925887e-06,
+          "maximum_stride1_feature_change": 4.2246904373168945
+        },
+        {
+          "probe": "three_pixel_cross",
+          "changed_input_pixels": 1,
+          "detail_reconstruction_mae": 0.09105171263217926,
+          "descriptor_change_at_changed_pixel": 0.6354041695594788,
+          "mean_local_descriptor_change": 0.206682026386261,
+          "mean_far_descriptor_change": 2.208918522228487e-05,
+          "maximum_stride1_feature_change": 6.16261100769043
+        }
+      ]
+    },
+    {
+      "checkpoint_name": "families_0262144.pt",
+      "checkpoint_sha256": "484736ec67c9dc9c0fbdb97fee14cd1c923f9d4ae1954cfcdc5aee1e110de592",
+      "state_sha256": "00a83c7092bd90bacb698b0fafb41c1463e2cfe2362240d66cf14004c02af204",
+      "state_unchanged": true,
+      "metrics": [
+        {
+          "probe": "one_pixel_vertical_ridges",
+          "changed_input_pixels": 1,
+          "detail_reconstruction_mae": 0.12894713878631592,
+          "descriptor_change_at_changed_pixel": 1.1708836555480957,
+          "mean_local_descriptor_change": 0.21740242838859558,
+          "mean_far_descriptor_change": 1.0511755135667045e-05,
+          "maximum_stride1_feature_change": 4.38448429107666
+        },
+        {
+          "probe": "one_pixel_checkerboard",
+          "changed_input_pixels": 1,
+          "detail_reconstruction_mae": 0.20538291335105896,
+          "descriptor_change_at_changed_pixel": 1.293757677078247,
+          "mean_local_descriptor_change": 0.2162783443927765,
+          "mean_far_descriptor_change": 4.4759817683370784e-05,
+          "maximum_stride1_feature_change": 6.92927360534668
+        },
+        {
+          "probe": "two_pixel_diagonal_ridges",
+          "changed_input_pixels": 1,
+          "detail_reconstruction_mae": 0.1502532958984375,
+          "descriptor_change_at_changed_pixel": 0.9409699440002441,
+          "mean_local_descriptor_change": 0.2162986546754837,
+          "mean_far_descriptor_change": 1.6678151951055042e-05,
+          "maximum_stride1_feature_change": 7.053328514099121
+        },
+        {
+          "probe": "three_pixel_cross",
+          "changed_input_pixels": 1,
+          "detail_reconstruction_mae": 0.07225194573402405,
+          "descriptor_change_at_changed_pixel": 1.196516752243042,
+          "mean_local_descriptor_change": 0.1996893584728241,
+          "mean_far_descriptor_change": 5.5886517657199875e-05,
+          "maximum_stride1_feature_change": 8.851515769958496
+        }
+      ]
+    },
+    {
+      "checkpoint_name": "families_1048576.pt",
+      "checkpoint_sha256": "3e42c4410527c0b9f293bcf525fa55ea01ec705a0559d11ee2c9c896f7028403",
+      "state_sha256": "63948dced778ce56805f036f1d1322071f817f5ddd5be1ac38d8db898c125d29",
+      "state_unchanged": true,
+      "metrics": [
+        {
+          "probe": "one_pixel_vertical_ridges",
+          "changed_input_pixels": 1,
+          "detail_reconstruction_mae": 0.14085322618484497,
+          "descriptor_change_at_changed_pixel": 1.238132119178772,
+          "mean_local_descriptor_change": 0.2160109132528305,
+          "mean_far_descriptor_change": 7.857044693082571e-06,
+          "maximum_stride1_feature_change": 4.4477949142456055
+        },
+        {
+          "probe": "one_pixel_checkerboard",
+          "changed_input_pixels": 1,
+          "detail_reconstruction_mae": 0.22684213519096375,
+          "descriptor_change_at_changed_pixel": 1.327849268913269,
+          "mean_local_descriptor_change": 0.1784953474998474,
+          "mean_far_descriptor_change": 0.00030223611975088716,
+          "maximum_stride1_feature_change": 7.899456977844238
+        },
+        {
+          "probe": "two_pixel_diagonal_ridges",
+          "changed_input_pixels": 1,
+          "detail_reconstruction_mae": 0.1625126749277115,
+          "descriptor_change_at_changed_pixel": 1.5932774543762207,
+          "mean_local_descriptor_change": 0.281080961227417,
+          "mean_far_descriptor_change": 0.00024052246590144932,
+          "maximum_stride1_feature_change": 9.290956497192383
+        },
+        {
+          "probe": "three_pixel_cross",
+          "changed_input_pixels": 1,
+          "detail_reconstruction_mae": 0.08207108080387115,
+          "descriptor_change_at_changed_pixel": 0.9487547278404236,
+          "mean_local_descriptor_change": 0.18592065572738647,
+          "mean_far_descriptor_change": 4.188567618257366e-05,
+          "maximum_stride1_feature_change": 8.79513931274414
+        }
+      ]
+    }
+  ]
+}

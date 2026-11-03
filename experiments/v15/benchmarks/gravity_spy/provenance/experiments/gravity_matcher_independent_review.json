@@ -1,0 +1,28 @@
+{
+  "format": "hypernet.gravity_matcher_independent_review.v15",
+  "reviewed_utc": "2026-11-03T00:38:13.343144+00:00",
+  "reviewer": "v15_detail_model independent agent",
+  "source_sha256": {
+    "hypernet/pattern_matcher.py": "ba01b18fdd586b76629552687aa5a05c24b526208c5451867df7d6dcb009ced5",
+    "scripts/evaluate_gravity_spy_v15.py": "05460fdb87e2e1b840c7d848b2bfa48c7c0d0801c491f2ee0ab03e7cc4f7c3c0",
+    "hypernet/rare_event_metrics.py": "d53397d708c2c20a0b67da7e2352bcce98df4cec02c81846c835137fc47fad09"
+  },
+  "mode": "read-only source review",
+  "test_pixels_read": 0,
+  "new_model_inference_calls": 0,
+  "remaining_blocking_findings": 0,
+  "confirmed": [
+    "Scorer receives RGB-derived reference/query features; labels enter metrics and calibration after scoring.",
+    "All reference anchors remain in the weighted denominator; unmatched anchors contribute zero.",
+    "Spatial search uses translations, with no rotations or flips of time/frequency axes.",
+    "CALIB chooses one global recipe per checkpoint using declared recall/AUROC/order tie breaks.",
+    "Each target threshold is fixed from its CALIB negative scores with strict nextafter tie handling.",
+    "Union wrong-target alarm counts each event once even when several wrong targets or a correct target also alarm."
+  ],
+  "caveats": [
+    "All frozen recipes are scored on TEST; report the CALIB-selected primary without posthoc switching.",
+    "Calibration budget is empirical, not a guaranteed future false-alarm bound.",
+    "Labels are physically present in evaluator event metadata but no code path sends them to the scorer.",
+    "This is a source review, not a second empirical TEST replay; final gates and source freeze are reviewed separately by root."
+  ]
+}

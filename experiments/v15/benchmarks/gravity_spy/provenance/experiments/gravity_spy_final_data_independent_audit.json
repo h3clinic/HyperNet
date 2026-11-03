@@ -1,0 +1,239 @@
+{
+  "format": "hypernet.gravity_spy.final_data_independent_audit.v15",
+  "valid": true,
+  "created_utc": "2026-11-03T00:48:34.682221+00:00",
+  "script_sha256": "466309204565c39af232b866afd8dfa276e248f92e6bc5cec5b96379816c931d",
+  "elapsed_seconds": 51.53552199999831,
+  "bound_artifacts": {
+    "${V15_ROOT}\\data\\gravity_spy_v15_final\\plan.json": "60f5e7ebd53b3c0789058231f85896c07063132da725fc14534787c9bd73647d",
+    "${V15_ROOT}\\data\\gravity_spy_v15_final\\roster_freeze.json": "2a9806c1ed1ee6ca7cabbcfcb7d51b9c5741cbf50cf3127956f2ae5c9935330b",
+    "${V15_ROOT}\\data\\gravity_spy_v15_final\\prior_exposure_admission.json": "620492f4ea6e3b0c9aa58cdbff4b2cf413af808e7935d8910ce98b9a849732e4",
+    "${V15_ROOT}\\data\\gravity_spy_v15_final\\quality_admission.json": "4497103f4c68bc2f644ac851459c51590dd56cda5b480e2db3530332d841e498",
+    "${V15_ROOT}\\data\\gravity_spy_v15_final\\quality_test_audit.json": "bd587ae371082466eb8c2e81cb36fa46983cf1daa23c41ee8e1b9585bd8cfc90",
+    "${V15_ROOT}\\data\\gravity_spy_v15_final\\acquisition_reference_20.json": "1b074d619ecf6318e4bb8ef65b3be2ba624a2dfcaf362a01c14aa07829115688",
+    "${V15_ROOT}\\data\\gravity_spy_v15_final\\acquisition_calibration_1608.json": "d6d731776f32b2e530338de69643ee817fe83c7b1e383320fba70544ed803645",
+    "${V15_ROOT}\\data\\gravity_spy_v15_final\\acquisition_test_4119.json": "66ef038cc3f7b49bb3d6a5ebdbc0edc0071470f70b8b6496df3f4a8c6be7e7a5",
+    "${V15_ROOT}\\experiments\\gravity_spy_test_admission.json": "8e1a3b91b996909658b182a2d676722f54bfe9694f6ba69d88f02117c7b88c0c",
+    "${V15_ROOT}\\experiments\\gravity_spy_protocol_freeze.json": "4a24995ae9981caa52ba5fb52afd70d407d425ef84253040daa9522202f7414f",
+    "${V15_ROOT}\\hypernet\\detail_encoder.py": "e1e4cd86843b441c92d72292e97b267dbf105e68ceb8b0650f0002ff39867d43",
+    "${V15_ROOT}\\hypernet\\detail_features.py": "faff01363202ccbfe38ad487829cfd166c50416c78b325af23bf2d4ae1f72b8d",
+    "${V15_ROOT}\\hypernet\\pattern_matcher.py": "ba01b18fdd586b76629552687aa5a05c24b526208c5451867df7d6dcb009ced5",
+    "${V15_ROOT}\\hypernet\\gravity_spy.py": "6ca37397180f1637a864a908daf384f371005564c011b32dbf1417cca32be389",
+    "${V15_ROOT}\\hypernet\\gravity_spy_images.py": "0f248e7de30f38d0dfa6f1ba5a9fc682d7aafb664c4b1f8ff586f9ea85a981d9",
+    "${V15_ROOT}\\hypernet\\gravity_spy_quality.py": "f6aa93b5972502344b72c1eb5b9bf219fc1ac215718b9756a2d81b64dfd08465",
+    "${V15_ROOT}\\hypernet\\rare_event_metrics.py": "d53397d708c2c20a0b67da7e2352bcce98df4cec02c81846c835137fc47fad09",
+    "${V15_ROOT}\\hypernet\\gravity_spy_admission.py": "b7994ac7de9eb79db4a14a46346bd2b81fdbdf92c5184e72975aa0e494fd4942",
+    "${V15_ROOT}\\scripts\\evaluate_gravity_spy_v15.py": "05460fdb87e2e1b840c7d848b2bfa48c7c0d0801c491f2ee0ab03e7cc4f7c3c0",
+    "${V15_ROOT}\\experiments\\gravity_calibration_random\\results.json": "94f3e13be96015d43afac439a40df0d5b91830ad5fe097af7a22ca38e7766964",
+    "${V15_ROOT}\\experiments\\gravity_calibration_random\\event_scores.jsonl": "0dfc12be9dacc6a5129c549314a005dad9bb1b3a3e16256385fc68aadc0a4a83",
+    "${V15_ROOT}\\experiments\\gravity_calibration_065536\\results.json": "0c09c87cba555d5bc8aa732068ee3fa3e61c530093c1ca20378d9ef8112648d2",
+    "${V15_ROOT}\\experiments\\gravity_calibration_065536\\event_scores.jsonl": "946d00d1e88a1d21d7f789afb4c6a3911e6bd9d0a7aa973df72b4328b952917e",
+    "${V15_ROOT}\\experiments\\gravity_calibration_262144\\results.json": "7b30b81ef5d65b0317205722cabb02e5db018732e829d2e444cc99df14e1062b",
+    "${V15_ROOT}\\experiments\\gravity_calibration_262144\\event_scores.jsonl": "cba0b6edf397e56830517d40000c7ea32183f8f8ececb6997ef461e422087dfe",
+    "${V15_ROOT}\\experiments\\gravity_calibration_final\\results.json": "1aaf5e718c3f94f95f53efd19ea217a8218f162ed0442733a86080439922a057",
+    "${V15_ROOT}\\experiments\\gravity_calibration_final\\event_scores.jsonl": "58d3ccc97072292931b37119d8d358ba84f563e12b296d45561ef0abd32ea9c2",
+    "${V15_ROOT}\\scripts\\prepare_gravity_spy.py": "8755f39b36798aa78572b745bf153b36cc9b4f0547b898f2a6ee9c3a0baaa3ad",
+    "${V15_ROOT}\\scripts\\audit_gravity_spy_quality.py": "2d1a49c5629721944100bbc35a9567f65d8852c0dc2017083abb4f0ba8e95b40",
+    "${V15_ROOT}\\scripts\\freeze_gravity_spy_v15.py": "3c901b5e2a8ea7da9c0b727151a8221452cb050ae274745d8be04e9f19fef733",
+    "${V15_ROOT}\\checkpoints\\details_run01\\admission.json": "c3b9189d4f0f56317ac10a41b77ea9c71f0210cf751ae773dcd8a4e162767433",
+    "${V15_ROOT}\\checkpoints\\details_run01\\completed.json": "2d7ded0ad074aff34df8366277827a4a4d74e26bf40f222d63a4f58d1f74f2f1",
+    "${V15_ROOT}\\checkpoints\\details_run01\\random_initial.pt": "da3d477d7104ca222bfe1f35117795d27dec17537a55d83cd9730abeece624bb",
+    "${V15_ROOT}\\checkpoints\\details_run01\\families_0065536.pt": "26ddb628ef3fd3e8272ced5cd3f5d3e8459f7f45289ab2bc400586d0ba5269c9",
+    "${V15_ROOT}\\checkpoints\\details_run01\\families_0262144.pt": "484736ec67c9dc9c0fbdb97fee14cd1c923f9d4ae1954cfcdc5aee1e110de592",
+    "${V15_ROOT}\\checkpoints\\details_run01\\families_1048576.pt": "3e42c4410527c0b9f293bcf525fa55ea01ec705a0559d11ee2c9c896f7028403",
+    "${PUBLIC_REPO}\\benchmarks\\gravity_spy_v0.1\\protocol.json": "816be8b4ff7c77477d9c56146558031b602782d874706d43d202de0d3b3a604a",
+    "${PUBLIC_REPO}\\benchmarks\\gravity_spy_v0.1\\scores.npz": "3409e6ce0beff6aecc2c44c5f8551581a58586d60cfe6a8e51e2bd9ffc5ed02c",
+    "${PUBLIC_REPO}\\benchmarks\\gravity_spy_v0.1\\per_reference.jsonl": "d5211440dfa3855920e793e693aadad845666c8876bc89f7e1a4c7eba0b6fb40",
+    "${PUBLIC_REPO}\\benchmarks\\gravity_spy_v0.1\\results.json": "ffdd228b0fac2c9566341978d143b8c58d685cd0b453b81726dea13c1bada125"
+  },
+  "checks": {
+    "all_raw_and_crop_hashes": true,
+    "raw_crop_exact_pixel_equivalence": true,
+    "no_unapproved_test_pixels": true,
+    "fresh_whole_time_groups": true,
+    "exact_constant_rule_independently_recomputed": true,
+    "all_unavailable_ids_preserved_no_replacement": true,
+    "reference_calibration_test_group_disjoint": true,
+    "source_model_protocol_hashes_unchanged": true
+  },
+  "counts": {
+    "acquired_records": 5747,
+    "fresh_test_before_quality": 4119,
+    "quality_excluded_test": 75,
+    "eligible_fresh_test": 4044,
+    "eligible_fresh_time_groups": 3954,
+    "eligible_calibration_events": 1579,
+    "eligible_reference_images": 19,
+    "previously_exposed_test_excluded_and_not_cached": 2212
+  },
+  "per_target": {
+    "1080Lines": {
+      "positive_events": 178,
+      "negative_events": 3866,
+      "positive_time_groups": 174,
+      "wholly_negative_time_groups": 3780,
+      "mixed_label_groups": 0
+    },
+    "1400Ripples": {
+      "positive_events": 39,
+      "negative_events": 4005,
+      "positive_time_groups": 37,
+      "wholly_negative_time_groups": 3917,
+      "mixed_label_groups": 0
+    },
+    "Air_Compressor": {
+      "positive_events": 31,
+      "negative_events": 4013,
+      "positive_time_groups": 31,
+      "wholly_negative_time_groups": 3923,
+      "mixed_label_groups": 0
+    },
+    "Blip": {
+      "positive_events": 1020,
+      "negative_events": 3024,
+      "positive_time_groups": 1018,
+      "wholly_negative_time_groups": 2936,
+      "mixed_label_groups": 4
+    },
+    "Chirp": {
+      "positive_events": 31,
+      "negative_events": 4013,
+      "positive_time_groups": 31,
+      "wholly_negative_time_groups": 3923,
+      "mixed_label_groups": 0
+    },
+    "Helix": {
+      "positive_events": 23,
+      "negative_events": 4021,
+      "positive_time_groups": 10,
+      "wholly_negative_time_groups": 3944,
+      "mixed_label_groups": 0
+    },
+    "Koi_Fish": {
+      "positive_events": 383,
+      "negative_events": 3661,
+      "positive_time_groups": 383,
+      "wholly_negative_time_groups": 3571,
+      "mixed_label_groups": 2
+    },
+    "Light_Modulation": {
+      "positive_events": 272,
+      "negative_events": 3772,
+      "positive_time_groups": 266,
+      "wholly_negative_time_groups": 3688,
+      "mixed_label_groups": 1
+    },
+    "Low_Frequency_Burst": {
+      "positive_events": 343,
+      "negative_events": 3701,
+      "positive_time_groups": 342,
+      "wholly_negative_time_groups": 3612,
+      "mixed_label_groups": 0
+    },
+    "Low_Frequency_Lines": {
+      "positive_events": 232,
+      "negative_events": 3812,
+      "positive_time_groups": 228,
+      "wholly_negative_time_groups": 3726,
+      "mixed_label_groups": 1
+    },
+    "Paired_Doves": {
+      "positive_events": 4,
+      "negative_events": 4040,
+      "positive_time_groups": 4,
+      "wholly_negative_time_groups": 3950,
+      "mixed_label_groups": 0
+    },
+    "Power_Line": {
+      "positive_events": 256,
+      "negative_events": 3788,
+      "positive_time_groups": 256,
+      "wholly_negative_time_groups": 3698,
+      "mixed_label_groups": 0
+    },
+    "Repeating_Blips": {
+      "positive_events": 104,
+      "negative_events": 3940,
+      "positive_time_groups": 90,
+      "wholly_negative_time_groups": 3864,
+      "mixed_label_groups": 0
+    },
+    "Scattered_Light": {
+      "positive_events": 238,
+      "negative_events": 3806,
+      "positive_time_groups": 230,
+      "wholly_negative_time_groups": 3724,
+      "mixed_label_groups": 1
+    },
+    "Scratchy": {
+      "positive_events": 175,
+      "negative_events": 3869,
+      "positive_time_groups": 163,
+      "wholly_negative_time_groups": 3791,
+      "mixed_label_groups": 0
+    },
+    "Tomte": {
+      "positive_events": 46,
+      "negative_events": 3998,
+      "positive_time_groups": 46,
+      "wholly_negative_time_groups": 3908,
+      "mixed_label_groups": 0
+    },
+    "Violin_Mode": {
+      "positive_events": 190,
+      "negative_events": 3854,
+      "positive_time_groups": 180,
+      "wholly_negative_time_groups": 3774,
+      "mixed_label_groups": 0
+    },
+    "Wandering_Line": {
+      "positive_events": 13,
+      "negative_events": 4031,
+      "positive_time_groups": 13,
+      "wholly_negative_time_groups": 3941,
+      "mixed_label_groups": 0
+    },
+    "Whistle": {
+      "positive_events": 158,
+      "negative_events": 3886,
+      "positive_time_groups": 152,
+      "wholly_negative_time_groups": 3802,
+      "mixed_label_groups": 1
+    }
+  },
+  "fresh_test_labels": {
+    "1080Lines": 178,
+    "1400Ripples": 39,
+    "Air_Compressor": 31,
+    "Blip": 1020,
+    "Chirp": 31,
+    "Extremely_Loud": 190,
+    "Helix": 23,
+    "Koi_Fish": 383,
+    "Light_Modulation": 272,
+    "Low_Frequency_Burst": 343,
+    "Low_Frequency_Lines": 232,
+    "No_Glitch": 78,
+    "None_of_the_Above": 40,
+    "Paired_Doves": 4,
+    "Power_Line": 256,
+    "Repeating_Blips": 104,
+    "Scattered_Light": 238,
+    "Scratchy": 175,
+    "Tomte": 46,
+    "Violin_Mode": 190,
+    "Wandering_Line": 13,
+    "Whistle": 158
+  },
+  "nonconstant_identical_pixel_groups": {},
+  "nonconstant_identical_pixels_across_splits": [],
+  "retained_development_exposure": {
+    "calibration_events_in_prior_groups": 567,
+    "reference_events_in_prior_groups": [
+      "QGKPYKyJH4",
+      "Xh4ZIlyv0S",
+      "vHNn2VQNx8"
+    ]
+  },
+  "scope": "Mechanical identity/pixel/QC audit, no model calls, prediction scores, UI inspection, or new exclusion rules. Nonconstant exact duplicate groups, if any, are disclosed without posthoc removal."
+}

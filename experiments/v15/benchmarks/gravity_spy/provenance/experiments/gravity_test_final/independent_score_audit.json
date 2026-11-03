@@ -1,0 +1,63 @@
+{
+  "valid": true,
+  "created_utc": "2026-11-03T01:04:26.982991+00:00",
+  "mode": "test",
+  "events": 4044,
+  "targets": 19,
+  "methods": {
+    "learned:bag": {
+      "target_operating_points_checked": 38,
+      "macro_recall": 0.01399612725411197,
+      "macro_false_alarms_per10000": 10.158869809907369,
+      "macro_auroc": 0.7486819754886604
+    },
+    "learned:translation_006": {
+      "target_operating_points_checked": 38,
+      "macro_recall": 0.036445716740109504,
+      "macro_false_alarms_per10000": 18.89019368231497,
+      "macro_auroc": 0.7895680542234744
+    },
+    "learned:translation_012": {
+      "target_operating_points_checked": 38,
+      "macro_recall": 0.027681383146739513,
+      "macro_false_alarms_per10000": 14.83478811594621,
+      "macro_auroc": 0.7896100297367523
+    },
+    "analytic:bag": {
+      "target_operating_points_checked": 38,
+      "macro_recall": 0.0016646255908081607,
+      "macro_false_alarms_per10000": 11.63751865005902,
+      "macro_auroc": 0.7051849639911246
+    },
+    "analytic:translation_006": {
+      "target_operating_points_checked": 38,
+      "macro_recall": 0.006130521934288165,
+      "macro_false_alarms_per10000": 16.14624234329952,
+      "macro_auroc": 0.6939476189868317
+    },
+    "analytic:translation_012": {
+      "target_operating_points_checked": 38,
+      "macro_recall": 0.003013924619903704,
+      "macro_false_alarms_per10000": 12.922507984881975,
+      "macro_auroc": 0.7105959599640633
+    },
+    "raw_pixels48": {
+      "target_operating_points_checked": 38,
+      "macro_recall": 0.19699971824577223,
+      "macro_false_alarms_per10000": 11.367335331639321,
+      "macro_auroc": 0.7974664353128644
+    }
+  },
+  "result_sha256": "95da220658410013fe0f647c2d02083d50a9551bac8c7c97cf87a1e40d2b2b28",
+  "score_log_sha256": "99dd9f1e319997abf34f0e4211d8815923381d2f61d90d5b3e1928ee593059d3",
+  "audit_source_sha256": "fd7336e56ef9d82462211a8bafd165133d186f7b5ffa152a4d1d334ce1d07383",
+  "checks": [
+    "Exact admitted event roster, labels and time groups",
+    "All target counts at both operating points",
+    "AUROC/AP recomputed with sklearn, tolerance1e-12",
+    "Global CALIB recipe rule",
+    "Multi-target event union and negative-group counts"
+  ],
+  "image_inference_calls": 0,
+  "scope": "Independent saved-score arithmetic/provenance audit; does not establish annotation correctness or physical independence."
+}

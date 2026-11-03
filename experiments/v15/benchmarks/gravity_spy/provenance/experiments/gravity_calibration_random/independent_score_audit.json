@@ -1,0 +1,45 @@
+{
+  "valid": true,
+  "created_utc": "2026-11-03T00:40:40.859382+00:00",
+  "mode": "calibration",
+  "events": 1579,
+  "targets": 19,
+  "methods": {
+    "learned:bag": {
+      "target_operating_points_checked": 38,
+      "macro_recall": 0.010435535671603253,
+      "macro_false_alarms_per10000": 6.677396157535661,
+      "macro_auroc": 0.8077739008842055
+    },
+    "learned:translation_006": {
+      "target_operating_points_checked": 38,
+      "macro_recall": 0.01254867642391857,
+      "macro_false_alarms_per10000": 6.677396157535661,
+      "macro_auroc": 0.821924899745572
+    },
+    "learned:translation_012": {
+      "target_operating_points_checked": 38,
+      "macro_recall": 0.014407460041777252,
+      "macro_false_alarms_per10000": 6.677396157535661,
+      "macro_auroc": 0.8196479256597843
+    },
+    "raw_pixels48": {
+      "target_operating_points_checked": 38,
+      "macro_recall": 0.2803085436953382,
+      "macro_false_alarms_per10000": 6.677396157535661,
+      "macro_auroc": 0.8096909194976899
+    }
+  },
+  "result_sha256": "94f3e13be96015d43afac439a40df0d5b91830ad5fe097af7a22ca38e7766964",
+  "score_log_sha256": "0dfc12be9dacc6a5129c549314a005dad9bb1b3a3e16256385fc68aadc0a4a83",
+  "audit_source_sha256": "12fa55f677fc89f9d21ee0addc1426b07b3414397484eddfd910d02f051f1550",
+  "checks": [
+    "Exact admitted event roster, labels and time groups",
+    "All target counts at both operating points",
+    "AUROC/AP recomputed with sklearn, tolerance1e-12",
+    "Global CALIB recipe rule",
+    "Multi-target event union and negative-group counts"
+  ],
+  "image_inference_calls": 0,
+  "scope": "Independent saved-score arithmetic/provenance audit; does not establish annotation correctness or physical independence."
+}

@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-11-03T00:35:20.164548+00:00",
+  "protocol_path": "${V15_ROOT}\\experiments\\grid_protocol_freeze.json",
+  "protocol_sha256": "250bd960bb6fe12c8cbd84308c6391c7984f9c02127565a72b077dbbade746ba",
+  "manifest_sha256": "14d18a61b0579fabe254f64553141a10de6d02ad482e06ddd528bc3d9232595d",
+  "data_audit_sha256": "6403646812bdb82677738acf51dfd9d5f6d55bd9eedcfc777a7ccfa7e73f957a",
+  "test_pixels_authorized_for_frozen_inference": true,
+  "test_mask_access_evaluator_only": true
+}

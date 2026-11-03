@@ -1,0 +1,16 @@
+{
+  "format": "hypernet.gravity_spy.roster_freeze.v15",
+  "roster_sha256": "60f5e7ebd53b3c0789058231f85896c07063132da725fc14534787c9bd73647d",
+  "metadata_sha256": "c53b673b3723175900f2e91f3a4fe9eb526e5249b85d0353f91cac701a5be96b",
+  "adapter_sha256": "6ca37397180f1637a864a908daf384f371005564c011b32dbf1417cca32be389",
+  "acquisition_script_sha256": "6b901d5b614b529123f2feb3b76734fca95ef3b521a13e96c1167d257430a871",
+  "created_utc": "2026-11-02T23:49:44.737868+00:00",
+  "model_selection_started": false,
+  "test_pixels_downloaded": false,
+  "crop_fixed_before_test": [
+    105,
+    66,
+    671,
+    532
+  ]
+}

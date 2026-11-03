@@ -1,0 +1,693 @@
+{
+  "format": "hypernet.mathematical_details.v15.1",
+  "completed": true,
+  "mode": "train",
+  "created_utc": "2026-11-03T00:31:21.772759+00:00",
+  "admission_sha256": "c3b9189d4f0f56317ac10a41b77ea9c71f0210cf751ae773dcd8a4e162767433",
+  "source_sha256": {
+    "hypernet/detail_encoder.py": "e1e4cd86843b441c92d72292e97b267dbf105e68ceb8b0650f0002ff39867d43",
+    "hypernet/math_curriculum.py": "8ee214d707183479e4d2e006eb0cc91cfc265899d419e45ebeb2424899dbe7a2",
+    "scripts/train_details.py": "f5092aea2c53fab9521a6bdacd9d5baf25ed045d4f28aa3c42b2725ca4476824",
+    "hypernet/math_curriculum_torch.py": "1ff058c6baaff4f1b92aa6acafa26bed185fdb59d3d73f397d027e681e4d4969"
+  },
+  "initial_state_sha256": "3ed019ce715311d0383c34b54b6332dd8f74e590658a3486a1242d0655cb9275",
+  "final_state_sha256": "63948dced778ce56805f036f1d1322071f817f5ddd5be1ac38d8db898c125d29",
+  "optimizer_steps": 4096,
+  "training_seconds": 2395.7119432000036,
+  "training_views_per_second": 875.3773616033275,
+  "full_2097152_view_time_projection_seconds": 2395.7119432000036,
+  "counts": {
+    "family_visits": 1048576,
+    "unique_family_ids": 1048576,
+    "rendered_training_views": 2097152,
+    "unique_training_rgb_sha256": 2097152,
+    "unique_canonical_mask_sha256": 949628,
+    "unique_canonical_raster_sha256": 1048576,
+    "digest_columns": [
+      "canonical_mask",
+      "canonical_material_raster",
+      "view_a_rgb",
+      "view_b_rgb"
+    ],
+    "shards": [
+      {
+        "path": "shard_00000.npz",
+        "families": 8192,
+        "sha256": "b110a554de4d2f39d455469c97963c72042e95a3973ef4aecf3f2182dcffda34"
+      },
+      {
+        "path": "shard_00001.npz",
+        "families": 8192,
+        "sha256": "0e5b9ef7aa34733db9dab4b388235eb03c9849db1ce2bf77e8fbc80db82bd248"
+      },
+      {
+        "path": "shard_00002.npz",
+        "families": 8192,
+        "sha256": "1bc31dd9b339e56e02c3e264adc0dc42bbb6688a01ade8fd56099cfbd1beb1f3"
+      },
+      {
+        "path": "shard_00003.npz",
+        "families": 8192,
+        "sha256": "3510a0214111235a77957ea53aa891fca6f103caa01b43cd00249a35b95f1be4"
+      },
+      {
+        "path": "shard_00004.npz",
+        "families": 8192,
+        "sha256": "8b000201558412c743a44abf00a0c6ade0823276df6dd874fe805f9ea6ba5555"
+      },
+      {
+        "path": "shard_00005.npz",
+        "families": 8192,
+        "sha256": "d53177d70cf50bac30b05d87f8d1a28496421248cef38595022cf48cca519ba1"
+      },
+      {
+        "path": "shard_00006.npz",
+        "families": 8192,
+        "sha256": "cdf00aabca0f19e9425dc79cfa30a387422c579cbec934909431c192a686b434"
+      },
+      {
+        "path": "shard_00007.npz",
+        "families": 8192,
+        "sha256": "735f078d1541276f30a677f17de46704bb38f2ece72984b71feb565e783c4e9d"
+      },
+      {
+        "path": "shard_00008.npz",
+        "families": 8192,
+        "sha256": "76ba0a3fc52b3810c19977354b954377536eb542fb74d816978ebf3f3ec3acef"
+      },
+      {
+        "path": "shard_00009.npz",
+        "families": 8192,
+        "sha256": "a8cdc8acab1eabb839e11bdf738f5b4938241b04b00419ab7a292dd34d3f3073"
+      },
+      {
+        "path": "shard_00010.npz",
+        "families": 8192,
+        "sha256": "43969c5cd0b7d6b0126fecc528a1d55e11b1bcfcd3560718f9d4ca9882496712"
+      },
+      {
+        "path": "shard_00011.npz",
+        "families": 8192,
+        "sha256": "66d36863a27d162e6da88915e781f2c43840083a412ee482b61eb6c538efa42c"
+      },
+      {
+        "path": "shard_00012.npz",
+        "families": 8192,
+        "sha256": "88c87ae85a17ce5ed13ac74fd6dd9cb7f20cea4185a0f2ee77385c24f1d1f322"
+      },
+      {
+        "path": "shard_00013.npz",
+        "families": 8192,
+        "sha256": "0c2ea63e74d6a45e379399bf76e983386e218363a8479f28be08b5bee8fc858e"
+      },
+      {
+        "path": "shard_00014.npz",
+        "families": 8192,
+        "sha256": "034ebe50f63d882fc0432c813b52d169439f97bb85a084f2d9daa97ea1f82311"
+      },
+      {
+        "path": "shard_00015.npz",
+        "families": 8192,
+        "sha256": "668ab66b92fce4ae8a692d1139db612a84deddedc8df5c95b4237bffc1685b4b"
+      },
+      {
+        "path": "shard_00016.npz",
+        "families": 8192,
+        "sha256": "16877cda1c0b752ee0ae1ba8362e91fea589623813d68716e33f82e4982add0d"
+      },
+      {
+        "path": "shard_00017.npz",
+        "families": 8192,
+        "sha256": "2b0c05583e5943fbfa6652019869306641ebbb415449d95f06a59527ea722308"
+      },
+      {
+        "path": "shard_00018.npz",
+        "families": 8192,
+        "sha256": "ab1ff8fe5d2a79a20fcf8402007f912ce8d93e94b98072304fb983a57384d303"
+      },
+      {
+        "path": "shard_00019.npz",
+        "families": 8192,
+        "sha256": "091d14f5d89692f82d0c7e4ff67872856186e88499a48d168fd2416ee06c6687"
+      },
+      {
+        "path": "shard_00020.npz",
+        "families": 8192,
+        "sha256": "f4daf95c4b9939dddd4b548a7754a346cc43968c26cde51ce8e6033ee7eccb10"
+      },
+      {
+        "path": "shard_00021.npz",
+        "families": 8192,
+        "sha256": "daf9f91f156dfc503f5559c6956171c565947b4b58c4389d37f19bf68da03da6"
+      },
+      {
+        "path": "shard_00022.npz",
+        "families": 8192,
+        "sha256": "ce8cdf79da31480bb5fa4459d1e47ff987b1d65aae6625469df32684a81cb195"
+      },
+      {
+        "path": "shard_00023.npz",
+        "families": 8192,
+        "sha256": "d12adc0f4f5793d5a53559306fcc70e62acfb4309a95ead9f63ab615d8d90cd6"
+      },
+      {
+        "path": "shard_00024.npz",
+        "families": 8192,
+        "sha256": "5efe9003f90b34d220bc529f302323090c9ea7685a0ccce87c67ad812c3f8054"
+      },
+      {
+        "path": "shard_00025.npz",
+        "families": 8192,
+        "sha256": "13809eb408848fcbd4b618c704cdf7e1bb85fd99aaea744d42a42242e576eca3"
+      },
+      {
+        "path": "shard_00026.npz",
+        "families": 8192,
+        "sha256": "956149e0a7e3cb9df5c7f3f546d546180915d151cfa90c9b6ccd6bc2b1f25d6a"
+      },
+      {
+        "path": "shard_00027.npz",
+        "families": 8192,
+        "sha256": "19253e34f82942af4a03663a56fd6375acda933fa6719963282f2e203aae6e59"
+      },
+      {
+        "path": "shard_00028.npz",
+        "families": 8192,
+        "sha256": "404b43d2616c5a66d1f4c0c5a86982cd473636f6309c2c4ae93254615133622d"
+      },
+      {
+        "path": "shard_00029.npz",
+        "families": 8192,
+        "sha256": "0bdd08d79e2cc06b8def104dfce0e834c3712e009227c2d5ee83348afd29ef86"
+      },
+      {
+        "path": "shard_00030.npz",
+        "families": 8192,
+        "sha256": "e921a9ea32dfc3da2b9353091fb1b9bd77db2579f5d447fd7e42e4e734693734"
+      },
+      {
+        "path": "shard_00031.npz",
+        "families": 8192,
+        "sha256": "95910501cb76a0cab30b53a7c13c2816dfefa540a3a7be6883df8d3fde8161d0"
+      },
+      {
+        "path": "shard_00032.npz",
+        "families": 8192,
+        "sha256": "a9b482f2dea0557b05b7a21d42a4b8a960dbc056a694d02a993e88ca546c41c0"
+      },
+      {
+        "path": "shard_00033.npz",
+        "families": 8192,
+        "sha256": "0ab1d3348c3617d8f3b82ad4609483bc6c7edd7ce240852576fe7dde3d7527f9"
+      },
+      {
+        "path": "shard_00034.npz",
+        "families": 8192,
+        "sha256": "ccd4908146c8c0e587a56c18ce98cd5ff2b7cf909973e37b2d0cc3146d495bca"
+      },
+      {
+        "path": "shard_00035.npz",
+        "families": 8192,
+        "sha256": "da8b9f2dc6e504d2a6f476a0d144ccc3cf9ff6c597f371b7bb59786080dc4eb7"
+      },
+      {
+        "path": "shard_00036.npz",
+        "families": 8192,
+        "sha256": "5dc4159814d35093ed7437f01e56fe0c6792177ff321b12066903149c4ca2e51"
+      },
+      {
+        "path": "shard_00037.npz",
+        "families": 8192,
+        "sha256": "b42787527b252e5f973bebdf0de34d87127df613fa6ec53af50888d5ebd3f7c6"
+      },
+      {
+        "path": "shard_00038.npz",
+        "families": 8192,
+        "sha256": "80814140aa7c68a3565546857b4850d3bb08aea5e03ba00e32971a938ee1c82f"
+      },
+      {
+        "path": "shard_00039.npz",
+        "families": 8192,
+        "sha256": "ccb0ccb5b12adfc85cbb4f7aeeb7272f97669165929987adba63abf1392d6dbc"
+      },
+      {
+        "path": "shard_00040.npz",
+        "families": 8192,
+        "sha256": "db6803d794235419f1ff2bf49e512ab286c31e60dc22f3e45e278ab110010c3e"
+      },
+      {
+        "path": "shard_00041.npz",
+        "families": 8192,
+        "sha256": "214fdc27dbeb032833fffe7dace397524db19acdc173362d7ea779356c8b8631"
+      },
+      {
+        "path": "shard_00042.npz",
+        "families": 8192,
+        "sha256": "331ec167beb40d38dc3f7344f7f6f2d249aad22e98a4eab96d43734b3720e0f6"
+      },
+      {
+        "path": "shard_00043.npz",
+        "families": 8192,
+        "sha256": "2c81d4350d27890de46a6d5241b610ba1a334d8842ab7703833158a3a7a131b9"
+      },
+      {
+        "path": "shard_00044.npz",
+        "families": 8192,
+        "sha256": "8e6541545eb746a3c41aa2d2ad84c0684135b30e10dd3d73ab9805ec5e779724"
+      },
+      {
+        "path": "shard_00045.npz",
+        "families": 8192,
+        "sha256": "7aaf00944b37ce24c56d5167f1b598856c3bc936ef7a80c4806fcc788871d5e7"
+      },
+      {
+        "path": "shard_00046.npz",
+        "families": 8192,
+        "sha256": "cad71ae3a783e276f2487e63d852dd2fb99a3190b41861f27ee2168edd3857fe"
+      },
+      {
+        "path": "shard_00047.npz",
+        "families": 8192,
+        "sha256": "6e054b77ccf89f973bfb31091bb9b8477c22e71e7e45c65ddb20fb75d8f3cde1"
+      },
+      {
+        "path": "shard_00048.npz",
+        "families": 8192,
+        "sha256": "8493e8ece9c338df3689fe6d1577c1c3e779c0a8d0ee3e9b651be7cfc7321413"
+      },
+      {
+        "path": "shard_00049.npz",
+        "families": 8192,
+        "sha256": "f4096329434a2cf7400aede58af18205eafc5a5859175f2dba9c450f4dc2cef4"
+      },
+      {
+        "path": "shard_00050.npz",
+        "families": 8192,
+        "sha256": "5b9661f05d1aedb971a9567eed178d7392c9184ef0c23ac86f3443b3a3fd4c0f"
+      },
+      {
+        "path": "shard_00051.npz",
+        "families": 8192,
+        "sha256": "aa6a133df1c3f26a3ea20cd49b07fa16789ecbd59c2ade9773902a1909bf4f4a"
+      },
+      {
+        "path": "shard_00052.npz",
+        "families": 8192,
+        "sha256": "d1721a66164ddae128f03a0367e662bf927a298b3b2a86c22dbeb4e9babebbbb"
+      },
+      {
+        "path": "shard_00053.npz",
+        "families": 8192,
+        "sha256": "f70aebc3890d1d287ec9a42a48a930999ab15f71a0d6ff24c39f8734fe0cbb31"
+      },
+      {
+        "path": "shard_00054.npz",
+        "families": 8192,
+        "sha256": "2ed7794fe5f981698274ca41a58c047708ae0437ed5864c5fa8a78d2938ef9dd"
+      },
+      {
+        "path": "shard_00055.npz",
+        "families": 8192,
+        "sha256": "f99954a2baae9e1ac38498b7f90f903dadbd5bea18cc25145c729469e68eba6f"
+      },
+      {
+        "path": "shard_00056.npz",
+        "families": 8192,
+        "sha256": "3b13db0a2eba9329e2ef1a5af9966ba5af9d2c16d496b968fe16e038294b79d9"
+      },
+      {
+        "path": "shard_00057.npz",
+        "families": 8192,
+        "sha256": "1db5f3d7ffc17321141317465c3b64d196290835fbc97908f369431da8b94bc1"
+      },
+      {
+        "path": "shard_00058.npz",
+        "families": 8192,
+        "sha256": "7d4000f4ce2ad78f7057267d157f887004a513d993028e1fa9e918eeeca5dad0"
+      },
+      {
+        "path": "shard_00059.npz",
+        "families": 8192,
+        "sha256": "c6b4d2db548d0ef0abc999ab9ecd4892084db299facb5e0ad4ecc77ff252bb45"
+      },
+      {
+        "path": "shard_00060.npz",
+        "families": 8192,
+        "sha256": "2fdd265e1e191e831f76a6bb5f95a3062f12cea69d18cd2256cc680afb4482da"
+      },
+      {
+        "path": "shard_00061.npz",
+        "families": 8192,
+        "sha256": "a33092df5f95b41bb7469449f6386f7bfe440cd2692def6fe6a5ffb079c7d270"
+      },
+      {
+        "path": "shard_00062.npz",
+        "families": 8192,
+        "sha256": "8d39f8287ac1ae05b54be557e15d6dba2a6da10660b955cf098353370c66505a"
+      },
+      {
+        "path": "shard_00063.npz",
+        "families": 8192,
+        "sha256": "b388e43f815211a1f9cf3d301ca642e38be96c256ba6debb9ad458178699fa34"
+      },
+      {
+        "path": "shard_00064.npz",
+        "families": 8192,
+        "sha256": "7f183194d49b8237de4b580a40bc7063b819eeec33718948868e679eb8b770d8"
+      },
+      {
+        "path": "shard_00065.npz",
+        "families": 8192,
+        "sha256": "2c05a03f3da7b4631966312d408e92d2d0b35d7ae96959d73c7ddf4a2fae4f86"
+      },
+      {
+        "path": "shard_00066.npz",
+        "families": 8192,
+        "sha256": "52dcce439e209d1ed6081a7cb39ebeb631dd3e9b9bd60a21e722e9fdef6702ae"
+      },
+      {
+        "path": "shard_00067.npz",
+        "families": 8192,
+        "sha256": "25ceadac475188384feefac9ac8410d7b54fd96f41b70c4b8deac6d191692e3a"
+      },
+      {
+        "path": "shard_00068.npz",
+        "families": 8192,
+        "sha256": "750437c500cfe9dc166f9986e7a7f0efe4df1fdea5b49d5e279367da5c8198ed"
+      },
+      {
+        "path": "shard_00069.npz",
+        "families": 8192,
+        "sha256": "b067598ebab01362d5d33c14e64ba6757f67a77b4b64d905e8b71ecbcfe2b58f"
+      },
+      {
+        "path": "shard_00070.npz",
+        "families": 8192,
+        "sha256": "33939cc25db3975c0dd1f4b37a0077d44430884615c231d8cd6d3d8357865069"
+      },
+      {
+        "path": "shard_00071.npz",
+        "families": 8192,
+        "sha256": "42376e23c54a673a2bc6fa472c4b68f7b6f6243795e6a188b6dfa81a7d5a8a6d"
+      },
+      {
+        "path": "shard_00072.npz",
+        "families": 8192,
+        "sha256": "5508e421c3105e2e3acca09494b79fd10788ffd4ab2b19dfc5e09d2bce29c6d8"
+      },
+      {
+        "path": "shard_00073.npz",
+        "families": 8192,
+        "sha256": "82255062b5961bbfcdff892d6132f285c1c33c2e5caea2f029cfe3409304cf26"
+      },
+      {
+        "path": "shard_00074.npz",
+        "families": 8192,
+        "sha256": "eb0de5c349c0b97e312e0f999e49bb9afb9425eec2ee08568a22475832844bfd"
+      },
+      {
+        "path": "shard_00075.npz",
+        "families": 8192,
+        "sha256": "89439205c901b12e3fc93b0c5fd05f9885c8908420e92bfc816a29cfd6aea5be"
+      },
+      {
+        "path": "shard_00076.npz",
+        "families": 8192,
+        "sha256": "e43139c2dadaf86473265647f3734d625b5457b9ece7237f72d18fdcbcd17764"
+      },
+      {
+        "path": "shard_00077.npz",
+        "families": 8192,
+        "sha256": "75b34373dabeb28f8200c163ba1ef0fd6746cadd0399ba019cc5fa750b966b4d"
+      },
+      {
+        "path": "shard_00078.npz",
+        "families": 8192,
+        "sha256": "aa9d9914381ff37e3be30c53a75504fa3446128c29330598f317c6f5c4b6407c"
+      },
+      {
+        "path": "shard_00079.npz",
+        "families": 8192,
+        "sha256": "43891a8fb39005cf60aff43b904cf56aa2d8bac084d26ce8321c614ca8b5989a"
+      },
+      {
+        "path": "shard_00080.npz",
+        "families": 8192,
+        "sha256": "758deba0da3f7a714f5b35fa35a8d0e17eac6095a1c8791d44aba311bfc8190e"
+      },
+      {
+        "path": "shard_00081.npz",
+        "families": 8192,
+        "sha256": "e949eb5421915b2f6908149a065a5606158d3347e56dcdec9c343542257f8e0e"
+      },
+      {
+        "path": "shard_00082.npz",
+        "families": 8192,
+        "sha256": "820b96286f9f399b3ccbab4306ed4f7c5b2fa8678ceb87d7b1031efaf30ab33d"
+      },
+      {
+        "path": "shard_00083.npz",
+        "families": 8192,
+        "sha256": "ec5d068582cfcffcb61378e29b4b75a745123ef849bd82e643fecd6f27de37d5"
+      },
+      {
+        "path": "shard_00084.npz",
+        "families": 8192,
+        "sha256": "51f2867a3fe45d36ddd7d9c17afecf85d5683c1fea9e6d644a02a982135831ce"
+      },
+      {
+        "path": "shard_00085.npz",
+        "families": 8192,
+        "sha256": "61339e53041019b05e566638fe58f714ebd9b77e4f87f843cc529bdcb4311809"
+      },
+      {
+        "path": "shard_00086.npz",
+        "families": 8192,
+        "sha256": "a8213060a57c8553d4b25c9c19261f9691cbf9e131ff810d127dca36103d6823"
+      },
+      {
+        "path": "shard_00087.npz",
+        "families": 8192,
+        "sha256": "28dff164e7551237decb93d30dc0a84798fab9b69fb3d5707bcc5e5ebf9cecbe"
+      },
+      {
+        "path": "shard_00088.npz",
+        "families": 8192,
+        "sha256": "7f3c2ea6dd6548a5c473b8d85ecd19b06d8d7f07e7e56822c803fee309de39f7"
+      },
+      {
+        "path": "shard_00089.npz",
+        "families": 8192,
+        "sha256": "35ea6f115427adfe349aa71a2d0d73445cd14fe745b5885f5bb770131e660f30"
+      },
+      {
+        "path": "shard_00090.npz",
+        "families": 8192,
+        "sha256": "a60fbe2bd2db62a23b46548d282bf740b16d8d81374d234d4d960958d3e2a292"
+      },
+      {
+        "path": "shard_00091.npz",
+        "families": 8192,
+        "sha256": "8c9994b90e05b04c29f072dcb4aebc7f6e25f491c2a8a0268599a0f9e650f2aa"
+      },
+      {
+        "path": "shard_00092.npz",
+        "families": 8192,
+        "sha256": "2f89cc182b764607b9f6284593eeaff8e829e66e4313fc592fb6eb76e71c28dc"
+      },
+      {
+        "path": "shard_00093.npz",
+        "families": 8192,
+        "sha256": "f03805c53fbc27078c13c65dbace299ed930e3c5359bdf2b337422d05dda7155"
+      },
+      {
+        "path": "shard_00094.npz",
+        "families": 8192,
+        "sha256": "e67e06381c0b47d0e45826666aaca1c86d9c7ba5c96ecf077fbd6e4d5851f533"
+      },
+      {
+        "path": "shard_00095.npz",
+        "families": 8192,
+        "sha256": "c8abbec2f8376659355a2e7d617b47a39ed58e0153f0b35c8404eac76ac70fe8"
+      },
+      {
+        "path": "shard_00096.npz",
+        "families": 8192,
+        "sha256": "3657e1ac09e60bc551ee87c12b186c6abd7ddf61c73ee16d5d394c2463cd90dc"
+      },
+      {
+        "path": "shard_00097.npz",
+        "families": 8192,
+        "sha256": "93ddbfbf0f24d9746043e3b56a02f9dd8a7f0793c4d65136c9f882f3b65b9371"
+      },
+      {
+        "path": "shard_00098.npz",
+        "families": 8192,
+        "sha256": "03a2c1a9d3767756f6a1f47bec9536337a1701f74d11e91f4c782bf7ff222d4b"
+      },
+      {
+        "path": "shard_00099.npz",
+        "families": 8192,
+        "sha256": "2e82f44bb23017e6d124f7812cd7fe8ebb5cabaa6d2c94a77aee15434aa3d60b"
+      },
+      {
+        "path": "shard_00100.npz",
+        "families": 8192,
+        "sha256": "d54e8d482c139d65a4c0b44584ab7b6b2ba755a6090e50d4f73fa8b0d61ddfdd"
+      },
+      {
+        "path": "shard_00101.npz",
+        "families": 8192,
+        "sha256": "2d845c874097b047884cd7769bf5b59968ecf40927267e3f2240e0d9ceda93ca"
+      },
+      {
+        "path": "shard_00102.npz",
+        "families": 8192,
+        "sha256": "a82aeb5e9503987bf838d369f52380029fcb326a82fe8863b579ad6037a93603"
+      },
+      {
+        "path": "shard_00103.npz",
+        "families": 8192,
+        "sha256": "27771a41e76994a647282a2ea25fa48ec5eafdff29f49c1fd7124ca32a497be0"
+      },
+      {
+        "path": "shard_00104.npz",
+        "families": 8192,
+        "sha256": "21cc75f1f7502ea55559e15e58bcc416f78974fb423f84a9f02624259da5f4b2"
+      },
+      {
+        "path": "shard_00105.npz",
+        "families": 8192,
+        "sha256": "cd73f2eb2ebea537b3d7ddc34c79fdaf4ba26c23a35cd890b2f62c65320166b6"
+      },
+      {
+        "path": "shard_00106.npz",
+        "families": 8192,
+        "sha256": "425987d8d5f04212e09162720b7eee8c7fb3b198df0ac6c941e2e40e8ce30074"
+      },
+      {
+        "path": "shard_00107.npz",
+        "families": 8192,
+        "sha256": "6dbde35ce8fa2856e8d0b8383a77cf5ecf622209b8cfd39a6fffb26dd036df45"
+      },
+      {
+        "path": "shard_00108.npz",
+        "families": 8192,
+        "sha256": "46892b8c86e436f3f15e7f367d926b3e88257d63c09f81cd72b213711d47feaa"
+      },
+      {
+        "path": "shard_00109.npz",
+        "families": 8192,
+        "sha256": "c7f2b31590bc163477a3b1580823d87bf29e5f1e5356e0b5e212e528dc907421"
+      },
+      {
+        "path": "shard_00110.npz",
+        "families": 8192,
+        "sha256": "4d1f9083e1cfd4aa79e80bfd25271e23bdac56c79b578466699d67164696f327"
+      },
+      {
+        "path": "shard_00111.npz",
+        "families": 8192,
+        "sha256": "470af0e0438b830e671ce42bfa83602bc9b259c4f43e6000069815d28d66c6e1"
+      },
+      {
+        "path": "shard_00112.npz",
+        "families": 8192,
+        "sha256": "a9e2152a30f6c0782b3b3d70e7328cdd63e125bed4aab4ba0c2638faa36c6b90"
+      },
+      {
+        "path": "shard_00113.npz",
+        "families": 8192,
+        "sha256": "7c69d3efd5f571753c5886cb9ed06184d2fa0ef9ff9cb72a454b252d97c17a34"
+      },
+      {
+        "path": "shard_00114.npz",
+        "families": 8192,
+        "sha256": "5146a090352650abd4a7febc7a4589afd0912b9b32dff278023b0d66f41b4683"
+      },
+      {
+        "path": "shard_00115.npz",
+        "families": 8192,
+        "sha256": "3d286a3a22b91c92cfe6edd4feecbad458593d70d5f9c7f508a4ce69a4193948"
+      },
+      {
+        "path": "shard_00116.npz",
+        "families": 8192,
+        "sha256": "8a731e7041726e1bd9d926c88c0be8238119bb28402f0a114b709700da145a78"
+      },
+      {
+        "path": "shard_00117.npz",
+        "families": 8192,
+        "sha256": "c0639af706c02a5a5e505ad4a724c2c64c242679bc312c69cf55a2c8bf538700"
+      },
+      {
+        "path": "shard_00118.npz",
+        "families": 8192,
+        "sha256": "4029d0073ca9ff25fb6c80a3df1f710bbb8440695f1182ec45ae6ceae6b74a21"
+      },
+      {
+        "path": "shard_00119.npz",
+        "families": 8192,
+        "sha256": "5d2991fe374f2594475b405c4e59cebf8fa47fc235506e8637a7372faa82af87"
+      },
+      {
+        "path": "shard_00120.npz",
+        "families": 8192,
+        "sha256": "d26a6001f7fa3c0162ec17b3cc85683184bb33dc7f842c3466bf6c4dbaa3c7cd"
+      },
+      {
+        "path": "shard_00121.npz",
+        "families": 8192,
+        "sha256": "b0f0d38a759ba7730ed4be203f2773ed96d8ddfb19512c13dc7f453ecfaec89a"
+      },
+      {
+        "path": "shard_00122.npz",
+        "families": 8192,
+        "sha256": "2e4177114f417a36a57afa1b0e8191e11a71879d40d29a976552b5e92aa1338e"
+      },
+      {
+        "path": "shard_00123.npz",
+        "families": 8192,
+        "sha256": "dfe750b0d820f0e8aac0d0c2ee69f84f27e2b8facab18e7cb4ec10fcb9de2e08"
+      },
+      {
+        "path": "shard_00124.npz",
+        "families": 8192,
+        "sha256": "beef9c9c52cf939e386fe099bdf66d9bf1ca6e74fd524ab7f15e3c32969aec50"
+      },
+      {
+        "path": "shard_00125.npz",
+        "families": 8192,
+        "sha256": "c083d10a7bc2861a43c4a4620dbb878eb41875416e03934eb4b6835f93f3f20a"
+      },
+      {
+        "path": "shard_00126.npz",
+        "families": 8192,
+        "sha256": "35e5d91f1059ad63ae5ac2e42ba5ef3c756e92ddf29878d2fd1864911181216d"
+      },
+      {
+        "path": "shard_00127.npz",
+        "families": 8192,
+        "sha256": "cc7e01b07c0a8039646b8bfcc77bec845f460ba2e1919d45ab366162bd876616"
+      }
+    ],
+    "definition": "Canonical raster excludes independently varied color and background; RGB hash covers original generated pixels consumed by the optimizer."
+  },
+  "validation": {
+    "loss": 1.1104463338851929,
+    "correspondence_loss": 1.0933177471160889,
+    "detail_reconstruction": 0.008299065753817558,
+    "foreground_loss": 0.059416331350803375,
+    "variance_loss": 0.00042975693941116333,
+    "covariance_loss": 0.07273601740598679,
+    "correspondence_accuracy": 0.7097154259681702,
+    "positive_cosine": 0.6279124617576599,
+    "informative_anchor_fraction": 0.9507161974906921,
+    "negative_count": 23.140756607055664,
+    "correspondence_support_retained": 0.5506656765937805,
+    "pairs_with_valid_correspondence": 0.9375
+  },
+  "natural_training_images": 0,
+  "borrowed_pretrained_weights": false,
+  "validation_updates": 0
+}

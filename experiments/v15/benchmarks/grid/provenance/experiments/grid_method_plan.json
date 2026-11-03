@@ -1,0 +1,22 @@
+{
+  "format": "hypernet.grid_anomaly.method_plan.v15",
+  "declared_before_first_Grid_model_inference": true,
+  "dataset": "Official MVTec AD Grid only",
+  "manifest_sha256": "14d18a61b0579fabe254f64553141a10de6d02ad482e06ddd528bc3d9232595d",
+  "roster_freeze_sha256": "1b200202f0c88670502f921b6c0a4a7ad0a5307e1f3204e7e4bf7d5004e14f8b",
+  "primary_method": "learned_final",
+  "method_aliases": ["learned_final", "random", "analytic_detail"],
+  "primary_model": "Final own mathematical-detail CNN after exactly1048576 generated families,2097152 generated views; no natural-image gradients or borrowed weights",
+  "random_control": "Same architecture and original initialization checkpoint, zero optimization steps",
+  "analytic_control": "Fixed local contrast,gx,gy,Laplacian from identical native input preprocessing; no learned mask",
+  "features": {"native_tile_side": 64, "native_tile_core": 48, "reflect_halo": 8, "sampling_stride": 2, "native_pixels_resized": false, "reference_images": 1},
+  "reference_bank": {"maximum_tokens": 4096, "selection": "Uniform without replacement, NumPy default_rng1515, sorted indices; same policy across all methods", "descriptor_normalization": "Per-token L2 only", "extra_images_fit_bank": 0},
+  "patch_score": "1 minus maximum cosine similarity to reference bank. Exactly zero features match zero reference features at residual0.",
+  "image_score": "Mean of largest ceil(0.005*N) patch residuals",
+  "pixel_score": "Bilinear interpolation at original sampled pixel centers; original target masks never resized",
+  "threshold": "Maximum of64 separate normal DEV image scores plus nextafter toward+infinity; fixed before TEST; no guaranteed rare-event false-alarm claim",
+  "prototype_validation": "Random plus analytic reference/DEV only, for implementation checks. No TEST images and no outcome-based scorer changes.",
+  "final_test": "All78 officialTEST images:21normal and57anomalous. No test-driven checkpoint/reference/threshold/method selection.",
+  "metrics": ["Image AUROC", "Image average precision", "Exact all-original-pixel AUROC", "Exact all-original-pixel average precision", "Thresholded image recall", "False alarms per10000normalimages with exact binomial reference intervals and actualN21"],
+  "limitations": ["Single Grid category and one chosen normal reference; not fullMVTec", "64extra real calibration images are additional data", "Only21normalTEST images cannot establish a low deployment false-alarm rate", "Binomial intervals assume independent test images", "No classification accuracy or98percent-success claim"]
+}

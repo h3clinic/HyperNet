@@ -1,0 +1,178 @@
+{
+  "format": "hypernet.gravity_spy.prior_exposure.v15",
+  "created_utc": "2026-11-03T00:22:00.577672+00:00",
+  "roster_sha256": "60f5e7ebd53b3c0789058231f85896c07063132da725fc14534787c9bd73647d",
+  "quality_admission_sha256": "4497103f4c68bc2f644ac851459c51590dd56cda5b480e2db3530332d841e498",
+  "prior_source_artifacts": {
+    "${PUBLIC_REPO}\\benchmarks\\gravity_spy_v0.1\\protocol.json": "816be8b4ff7c77477d9c56146558031b602782d874706d43d202de0d3b3a604a",
+    "${PUBLIC_REPO}\\benchmarks\\gravity_spy_v0.1\\scores.npz": "3409e6ce0beff6aecc2c44c5f8551581a58586d60cfe6a8e51e2bd9ffc5ed02c",
+    "${PUBLIC_REPO}\\benchmarks\\gravity_spy_v0.1\\per_reference.jsonl": "d5211440dfa3855920e793e693aadad845666c8876bc89f7e1a4c7eba0b6fb40",
+    "${PUBLIC_REPO}\\benchmarks\\gravity_spy_v0.1\\results.json": "ffdd228b0fac2c9566341978d143b8c58d685cd0b453b81726dea13c1bada125"
+  },
+  "audit_script_sha256": "4208d2f23fdc648834dc199789e35e6d6e67673310a0d56d553447684c2ba0bd",
+  "independent_group_review_sha256": "be47629617391cd71517912b0fd6d8beae2d0695ed4093709523e0cb365dd7f9",
+  "no_replacement_sampling": true,
+  "original_roster_and_quality_amendment_unchanged": true,
+  "test_ids_excluded_before_any_v15_test_inference": true,
+  "v15_test_image_records_present": 0,
+  "scoring_policy": "fresh_only",
+  "secondary_reused_test_download_or_scoring_authorized": false,
+  "counts": {
+    "prior_queries": 2379,
+    "prior_references": 100,
+    "prior_unique_events": 2479,
+    "prior_time_groups": 2371,
+    "all_v15_group_exposed_events": 2802,
+    "raw_v15_test_events": 6331,
+    "primary_fresh_test_events_before_quality": 4119,
+    "excluded_exposed_test_events": 2212,
+    "primary_fresh_test_time_groups": 4028,
+    "raw_calibration_group_exposed_events": 580,
+    "quality_valid_calibration_group_exposed_events": 567
+  },
+  "per_target_primary_test_before_quality": {
+    "1080Lines": {
+      "positive_events_before_test_quality": 178,
+      "negative_events_before_test_quality": 3941,
+      "positive_time_groups": 174,
+      "negative_time_groups": 3854
+    },
+    "1400Ripples": {
+      "positive_events_before_test_quality": 39,
+      "negative_events_before_test_quality": 4080,
+      "positive_time_groups": 37,
+      "negative_time_groups": 3991
+    },
+    "Air_Compressor": {
+      "positive_events_before_test_quality": 31,
+      "negative_events_before_test_quality": 4088,
+      "positive_time_groups": 31,
+      "negative_time_groups": 3997
+    },
+    "Blip": {
+      "positive_events_before_test_quality": 1022,
+      "negative_events_before_test_quality": 3097,
+      "positive_time_groups": 1020,
+      "negative_time_groups": 3013
+    },
+    "Chirp": {
+      "positive_events_before_test_quality": 31,
+      "negative_events_before_test_quality": 4088,
+      "positive_time_groups": 31,
+      "negative_time_groups": 3997
+    },
+    "Helix": {
+      "positive_events_before_test_quality": 23,
+      "negative_events_before_test_quality": 4096,
+      "positive_time_groups": 10,
+      "negative_time_groups": 4018
+    },
+    "Koi_Fish": {
+      "positive_events_before_test_quality": 385,
+      "negative_events_before_test_quality": 3734,
+      "positive_time_groups": 385,
+      "negative_time_groups": 3645
+    },
+    "Light_Modulation": {
+      "positive_events_before_test_quality": 272,
+      "negative_events_before_test_quality": 3847,
+      "positive_time_groups": 266,
+      "negative_time_groups": 3763
+    },
+    "Low_Frequency_Burst": {
+      "positive_events_before_test_quality": 344,
+      "negative_events_before_test_quality": 3775,
+      "positive_time_groups": 343,
+      "negative_time_groups": 3685
+    },
+    "Low_Frequency_Lines": {
+      "positive_events_before_test_quality": 232,
+      "negative_events_before_test_quality": 3887,
+      "positive_time_groups": 228,
+      "negative_time_groups": 3801
+    },
+    "Paired_Doves": {
+      "positive_events_before_test_quality": 4,
+      "negative_events_before_test_quality": 4115,
+      "positive_time_groups": 4,
+      "negative_time_groups": 4024
+    },
+    "Power_Line": {
+      "positive_events_before_test_quality": 256,
+      "negative_events_before_test_quality": 3863,
+      "positive_time_groups": 256,
+      "negative_time_groups": 3772
+    },
+    "Repeating_Blips": {
+      "positive_events_before_test_quality": 104,
+      "negative_events_before_test_quality": 4015,
+      "positive_time_groups": 90,
+      "negative_time_groups": 3938
+    },
+    "Scattered_Light": {
+      "positive_events_before_test_quality": 238,
+      "negative_events_before_test_quality": 3881,
+      "positive_time_groups": 230,
+      "negative_time_groups": 3800
+    },
+    "Scratchy": {
+      "positive_events_before_test_quality": 175,
+      "negative_events_before_test_quality": 3944,
+      "positive_time_groups": 163,
+      "negative_time_groups": 3865
+    },
+    "Tomte": {
+      "positive_events_before_test_quality": 46,
+      "negative_events_before_test_quality": 4073,
+      "positive_time_groups": 46,
+      "negative_time_groups": 3982
+    },
+    "Violin_Mode": {
+      "positive_events_before_test_quality": 190,
+      "negative_events_before_test_quality": 3929,
+      "positive_time_groups": 180,
+      "negative_time_groups": 3848
+    },
+    "Wandering_Line": {
+      "positive_events_before_test_quality": 13,
+      "negative_events_before_test_quality": 4106,
+      "positive_time_groups": 13,
+      "negative_time_groups": 4015
+    },
+    "Whistle": {
+      "positive_events_before_test_quality": 159,
+      "negative_events_before_test_quality": 3960,
+      "positive_time_groups": 153,
+      "negative_time_groups": 3876
+    }
+  },
+  "retained_prior_exposed_references": {
+    "Chirp": {
+      "event_id": "vHNn2VQNx8",
+      "exact_prior_event": true,
+      "time_group": "L1_cf642042e8758f70a5ee"
+    },
+    "Helix": {
+      "event_id": "Xh4ZIlyv0S",
+      "exact_prior_event": false,
+      "time_group": "L1_22ec77dac5768a8594bf"
+    },
+    "Paired_Doves": {
+      "event_id": "QGKPYKyJH4",
+      "exact_prior_event": true,
+      "time_group": "H1_bc4a0ef72c253eaa1a62"
+    }
+  },
+  "calibration_policy": "Keep all1579 quality-valid calibration events as development, including prior-exposed events; no claim of fresh calibration.",
+  "reference_policy": "Keep the fixed one reference per19eligibletarget. Three references have previous event/group exposure; no replacement or freshness claim for references.",
+  "test_quality_policy": "Apply only the already frozen exact-constant RGB exclusion to these4119freshTEST events after acquisition. Do not replace excluded events.",
+  "reason": "Old public v0.1 scored1secondviews of the same GravitySpy events. New2secondviews are not independent fresh events; expand exclusion to entire same-detector overlapping4second groups.",
+  "limitations": [
+    "Freshness is relative to the identified prior projectbenchmark and disclosed probe, not proof against all external pretraining exposure.",
+    "H1/L1 groups are separate; cross-detector physical dependence may remain.",
+    "Prior outcome arrays were not used to choose event exclusions; only complete identity inventories were used."
+  ],
+  "valid": true,
+  "admission_sha256": "620492f4ea6e3b0c9aa58cdbff4b2cf413af808e7935d8910ce98b9a849732e4",
+  "raw_roster_preserved": true
+}

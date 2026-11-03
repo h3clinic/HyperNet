@@ -1,0 +1,551 @@
+{
+  "format": "hypernet.gravity_spy.paired_time_group_bootstrap.v15",
+  "created_utc": "2026-11-03T00:45:55.478369+00:00",
+  "declared_before_any_test_scores": true,
+  "protocol_sha256": "4a24995ae9981caa52ba5fb52afd70d407d425ef84253040daa9522202f7414f",
+  "selected_arms": {
+    "primary_final": {
+      "model": "final",
+      "method": "learned:translation_006",
+      "thresholds": {
+        "1080Lines": {
+          "budget_10_per10000": 0.4645368158817292,
+          "zero_calibration_false_alarms": 0.4763743877410889
+        },
+        "1400Ripples": {
+          "budget_10_per10000": 0.47780820727348333,
+          "zero_calibration_false_alarms": 0.49657604098320013
+        },
+        "Air_Compressor": {
+          "budget_10_per10000": 0.4511679410934449,
+          "zero_calibration_false_alarms": 0.5124369263648988
+        },
+        "Blip": {
+          "budget_10_per10000": 0.5586194396018983,
+          "zero_calibration_false_alarms": 0.6008141636848451
+        },
+        "Chirp": {
+          "budget_10_per10000": 0.5661010742187501,
+          "zero_calibration_false_alarms": 0.6096360683441163
+        },
+        "Helix": {
+          "budget_10_per10000": 0.5475244522094728,
+          "zero_calibration_false_alarms": 0.5581051111221315
+        },
+        "Koi_Fish": {
+          "budget_10_per10000": 0.580124318599701,
+          "zero_calibration_false_alarms": 0.5898296833038331
+        },
+        "Light_Modulation": {
+          "budget_10_per10000": 0.6242986917495729,
+          "zero_calibration_false_alarms": 0.6987836360931398
+        },
+        "Low_Frequency_Burst": {
+          "budget_10_per10000": 0.4739621281623841,
+          "zero_calibration_false_alarms": 0.49029666185379034
+        },
+        "Low_Frequency_Lines": {
+          "budget_10_per10000": 0.4715983867645264,
+          "zero_calibration_false_alarms": 0.5075799822807313
+        },
+        "Paired_Doves": {
+          "budget_10_per10000": 0.5063388943672181,
+          "zero_calibration_false_alarms": 0.5083704590797425
+        },
+        "Power_Line": {
+          "budget_10_per10000": 0.4180727601051331,
+          "zero_calibration_false_alarms": 0.4776198267936707
+        },
+        "Repeating_Blips": {
+          "budget_10_per10000": 0.45795142650604254,
+          "zero_calibration_false_alarms": 0.4654089510440827
+        },
+        "Scattered_Light": {
+          "budget_10_per10000": 0.4358645081520081,
+          "zero_calibration_false_alarms": 0.44496032595634466
+        },
+        "Scratchy": {
+          "budget_10_per10000": 0.45159769058227545,
+          "zero_calibration_false_alarms": 0.4600150585174561
+        },
+        "Tomte": {
+          "budget_10_per10000": 0.5641833543777467,
+          "zero_calibration_false_alarms": 0.6004504561424256
+        },
+        "Violin_Mode": {
+          "budget_10_per10000": 0.40504261851310736,
+          "zero_calibration_false_alarms": 0.4160966873168946
+        },
+        "Wandering_Line": {
+          "budget_10_per10000": 0.3688513040542603,
+          "zero_calibration_false_alarms": 0.37700566649436956
+        },
+        "Whistle": {
+          "budget_10_per10000": 0.42720904946327215,
+          "zero_calibration_false_alarms": 0.4630683064460755
+        }
+      }
+    },
+    "random": {
+      "model": "random",
+      "method": "learned:translation_012",
+      "thresholds": {
+        "1080Lines": {
+          "budget_10_per10000": 0.689546823501587,
+          "zero_calibration_false_alarms": 0.7085591554641725
+        },
+        "1400Ripples": {
+          "budget_10_per10000": 0.781431019306183,
+          "zero_calibration_false_alarms": 0.784792184829712
+        },
+        "Air_Compressor": {
+          "budget_10_per10000": 0.6973141431808473,
+          "zero_calibration_false_alarms": 0.7394222617149354
+        },
+        "Blip": {
+          "budget_10_per10000": 0.8212631940841676,
+          "zero_calibration_false_alarms": 0.8329961895942689
+        },
+        "Chirp": {
+          "budget_10_per10000": 0.77891743183136,
+          "zero_calibration_false_alarms": 0.7857686877250672
+        },
+        "Helix": {
+          "budget_10_per10000": 0.8052908778190614,
+          "zero_calibration_false_alarms": 0.8180260658264161
+        },
+        "Koi_Fish": {
+          "budget_10_per10000": 0.7628276348114015,
+          "zero_calibration_false_alarms": 0.7686606645584108
+        },
+        "Light_Modulation": {
+          "budget_10_per10000": 0.7984237074851991,
+          "zero_calibration_false_alarms": 0.8108667135238649
+        },
+        "Low_Frequency_Burst": {
+          "budget_10_per10000": 0.7416391372680665,
+          "zero_calibration_false_alarms": 0.7518337965011598
+        },
+        "Low_Frequency_Lines": {
+          "budget_10_per10000": 0.7014855146408082,
+          "zero_calibration_false_alarms": 0.7076334953308107
+        },
+        "Paired_Doves": {
+          "budget_10_per10000": 0.7372554540634156,
+          "zero_calibration_false_alarms": 0.7617825269699098
+        },
+        "Power_Line": {
+          "budget_10_per10000": 0.5937334895133973,
+          "zero_calibration_false_alarms": 0.6037154197692872
+        },
+        "Repeating_Blips": {
+          "budget_10_per10000": 0.7545837163925172,
+          "zero_calibration_false_alarms": 0.756755292415619
+        },
+        "Scattered_Light": {
+          "budget_10_per10000": 0.6762660741806031,
+          "zero_calibration_false_alarms": 0.6778537034988404
+        },
+        "Scratchy": {
+          "budget_10_per10000": 0.7358708381652833,
+          "zero_calibration_false_alarms": 0.8041397333145143
+        },
+        "Tomte": {
+          "budget_10_per10000": 0.7807019948959352,
+          "zero_calibration_false_alarms": 0.8162740468978883
+        },
+        "Violin_Mode": {
+          "budget_10_per10000": 0.6112301945686341,
+          "zero_calibration_false_alarms": 0.6180069446563722
+        },
+        "Wandering_Line": {
+          "budget_10_per10000": 0.6521824598312379,
+          "zero_calibration_false_alarms": 0.6564726233482362
+        },
+        "Whistle": {
+          "budget_10_per10000": 0.6880177855491639,
+          "zero_calibration_false_alarms": 0.6944905519485475
+        }
+      }
+    },
+    "scale_065536": {
+      "model": "065536",
+      "method": "learned:translation_012",
+      "thresholds": {
+        "1080Lines": {
+          "budget_10_per10000": 0.6796388030052186,
+          "zero_calibration_false_alarms": 0.6864205598831178
+        },
+        "1400Ripples": {
+          "budget_10_per10000": 0.7762666940689088,
+          "zero_calibration_false_alarms": 0.7841899394989015
+        },
+        "Air_Compressor": {
+          "budget_10_per10000": 0.6961589455604554,
+          "zero_calibration_false_alarms": 0.6981837749481202
+        },
+        "Blip": {
+          "budget_10_per10000": 0.8705104589462281,
+          "zero_calibration_false_alarms": 0.8746814727783204
+        },
+        "Chirp": {
+          "budget_10_per10000": 0.8009840846061708,
+          "zero_calibration_false_alarms": 0.8131905794143678
+        },
+        "Helix": {
+          "budget_10_per10000": 0.8627188205718995,
+          "zero_calibration_false_alarms": 0.8756823539733888
+        },
+        "Koi_Fish": {
+          "budget_10_per10000": 0.84198796749115,
+          "zero_calibration_false_alarms": 0.858985722064972
+        },
+        "Light_Modulation": {
+          "budget_10_per10000": 0.8947013616561891,
+          "zero_calibration_false_alarms": 0.9107973575592042
+        },
+        "Low_Frequency_Burst": {
+          "budget_10_per10000": 0.8159546852111818,
+          "zero_calibration_false_alarms": 0.8568029403686525
+        },
+        "Low_Frequency_Lines": {
+          "budget_10_per10000": 0.7811228036880494,
+          "zero_calibration_false_alarms": 0.7846274375915528
+        },
+        "Paired_Doves": {
+          "budget_10_per10000": 0.8221018314361573,
+          "zero_calibration_false_alarms": 0.91918283700943
+        },
+        "Power_Line": {
+          "budget_10_per10000": 0.6535743474960328,
+          "zero_calibration_false_alarms": 0.6631238460540773
+        },
+        "Repeating_Blips": {
+          "budget_10_per10000": 0.790687918663025,
+          "zero_calibration_false_alarms": 0.818019986152649
+        },
+        "Scattered_Light": {
+          "budget_10_per10000": 0.6243305206298829,
+          "zero_calibration_false_alarms": 0.6426733732223512
+        },
+        "Scratchy": {
+          "budget_10_per10000": 0.7984580993652345,
+          "zero_calibration_false_alarms": 0.8454930782318116
+        },
+        "Tomte": {
+          "budget_10_per10000": 0.8315017819404603,
+          "zero_calibration_false_alarms": 0.8517736196517945
+        },
+        "Violin_Mode": {
+          "budget_10_per10000": 0.6143934130668641,
+          "zero_calibration_false_alarms": 0.6154421567916871
+        },
+        "Wandering_Line": {
+          "budget_10_per10000": 0.6465061902999879,
+          "zero_calibration_false_alarms": 0.688073754310608
+        },
+        "Whistle": {
+          "budget_10_per10000": 0.7374092936515809,
+          "zero_calibration_false_alarms": 0.7637672424316407
+        }
+      }
+    },
+    "scale_262144": {
+      "model": "262144",
+      "method": "learned:translation_006",
+      "thresholds": {
+        "1080Lines": {
+          "budget_10_per10000": 0.4102234840393067,
+          "zero_calibration_false_alarms": 0.43663680553436285
+        },
+        "1400Ripples": {
+          "budget_10_per10000": 0.445702075958252,
+          "zero_calibration_false_alarms": 0.4784805774688721
+        },
+        "Air_Compressor": {
+          "budget_10_per10000": 0.42335367202758795,
+          "zero_calibration_false_alarms": 0.43407866358757025
+        },
+        "Blip": {
+          "budget_10_per10000": 0.5453005433082582,
+          "zero_calibration_false_alarms": 0.5815982818603517
+        },
+        "Chirp": {
+          "budget_10_per10000": 0.5247132778167726,
+          "zero_calibration_false_alarms": 0.5427523255348207
+        },
+        "Helix": {
+          "budget_10_per10000": 0.5267142057418824,
+          "zero_calibration_false_alarms": 0.5478076934814454
+        },
+        "Koi_Fish": {
+          "budget_10_per10000": 0.5626597404479982,
+          "zero_calibration_false_alarms": 0.5919170975685121
+        },
+        "Light_Modulation": {
+          "budget_10_per10000": 0.6559469103813172,
+          "zero_calibration_false_alarms": 0.6652991771697999
+        },
+        "Low_Frequency_Burst": {
+          "budget_10_per10000": 0.5134692192077638,
+          "zero_calibration_false_alarms": 0.5355971455574037
+        },
+        "Low_Frequency_Lines": {
+          "budget_10_per10000": 0.4568339288234711,
+          "zero_calibration_false_alarms": 0.46586900949478155
+        },
+        "Paired_Doves": {
+          "budget_10_per10000": 0.5411524176597596,
+          "zero_calibration_false_alarms": 0.556889295578003
+        },
+        "Power_Line": {
+          "budget_10_per10000": 0.45724299550056463,
+          "zero_calibration_false_alarms": 0.4637234807014466
+        },
+        "Repeating_Blips": {
+          "budget_10_per10000": 0.5114706754684449,
+          "zero_calibration_false_alarms": 0.5203629732131959
+        },
+        "Scattered_Light": {
+          "budget_10_per10000": 0.3714876770973206,
+          "zero_calibration_false_alarms": 0.40152966976165777
+        },
+        "Scratchy": {
+          "budget_10_per10000": 0.4898180961608887,
+          "zero_calibration_false_alarms": 0.5061604976654054
+        },
+        "Tomte": {
+          "budget_10_per10000": 0.5872690081596376,
+          "zero_calibration_false_alarms": 0.5971645116806031
+        },
+        "Violin_Mode": {
+          "budget_10_per10000": 0.37597995996475225,
+          "zero_calibration_false_alarms": 0.4221153855323792
+        },
+        "Wandering_Line": {
+          "budget_10_per10000": 0.3413740992546082,
+          "zero_calibration_false_alarms": 0.3928958177566529
+        },
+        "Whistle": {
+          "budget_10_per10000": 0.3910216391086579,
+          "zero_calibration_false_alarms": 0.41398915648460394
+        }
+      }
+    },
+    "analytic": {
+      "model": "final",
+      "method": "analytic:translation_012",
+      "thresholds": {
+        "1080Lines": {
+          "budget_10_per10000": 0.8712699413299562,
+          "zero_calibration_false_alarms": 0.8891150951385499
+        },
+        "1400Ripples": {
+          "budget_10_per10000": 0.9392338395118714,
+          "zero_calibration_false_alarms": 0.9412628412246705
+        },
+        "Air_Compressor": {
+          "budget_10_per10000": 0.9094306826591493,
+          "zero_calibration_false_alarms": 0.9253632426261903
+        },
+        "Blip": {
+          "budget_10_per10000": 0.7914438843727113,
+          "zero_calibration_false_alarms": 0.7945243120193483
+        },
+        "Chirp": {
+          "budget_10_per10000": 0.8206867575645448,
+          "zero_calibration_false_alarms": 0.834441900253296
+        },
+        "Helix": {
+          "budget_10_per10000": 0.8689011931419374,
+          "zero_calibration_false_alarms": 0.8931483626365663
+        },
+        "Koi_Fish": {
+          "budget_10_per10000": 0.8363137245178224,
+          "zero_calibration_false_alarms": 0.8781278729438783
+        },
+        "Light_Modulation": {
+          "budget_10_per10000": 0.8367320299148561,
+          "zero_calibration_false_alarms": 0.8817462921142579
+        },
+        "Low_Frequency_Burst": {
+          "budget_10_per10000": 0.8537960052490235,
+          "zero_calibration_false_alarms": 0.8692533969879152
+        },
+        "Low_Frequency_Lines": {
+          "budget_10_per10000": 0.8956173658370973,
+          "zero_calibration_false_alarms": 0.9070022106170655
+        },
+        "Paired_Doves": {
+          "budget_10_per10000": 0.8274538516998292,
+          "zero_calibration_false_alarms": 0.8439415097236634
+        },
+        "Power_Line": {
+          "budget_10_per10000": 0.9149242639541627,
+          "zero_calibration_false_alarms": 0.9315527677536012
+        },
+        "Repeating_Blips": {
+          "budget_10_per10000": 0.7950050234794618,
+          "zero_calibration_false_alarms": 0.8040966391563417
+        },
+        "Scattered_Light": {
+          "budget_10_per10000": 0.9262494444847108,
+          "zero_calibration_false_alarms": 0.9272017478942872
+        },
+        "Scratchy": {
+          "budget_10_per10000": 0.8427619934082032,
+          "zero_calibration_false_alarms": 0.8479760885238649
+        },
+        "Tomte": {
+          "budget_10_per10000": 0.7863365411758424,
+          "zero_calibration_false_alarms": 0.8083376288414003
+        },
+        "Violin_Mode": {
+          "budget_10_per10000": 0.8242651224136354,
+          "zero_calibration_false_alarms": 0.8768321275711061
+        },
+        "Wandering_Line": {
+          "budget_10_per10000": 0.5845546126365663,
+          "zero_calibration_false_alarms": 0.59588360786438
+        },
+        "Whistle": {
+          "budget_10_per10000": 0.8827962875366212,
+          "zero_calibration_false_alarms": 0.9119741916656495
+        }
+      }
+    },
+    "raw_pixels48": {
+      "model": "final",
+      "method": "raw_pixels48",
+      "thresholds": {
+        "1080Lines": {
+          "budget_10_per10000": 0.21789303421974185,
+          "zero_calibration_false_alarms": 0.2652156352996827
+        },
+        "1400Ripples": {
+          "budget_10_per10000": 0.2702625989913941,
+          "zero_calibration_false_alarms": 0.30113372206687933
+        },
+        "Air_Compressor": {
+          "budget_10_per10000": 0.21965917944908145,
+          "zero_calibration_false_alarms": 0.25291734933853155
+        },
+        "Blip": {
+          "budget_10_per10000": 0.5420687794685365,
+          "zero_calibration_false_alarms": 0.5612006187438966
+        },
+        "Chirp": {
+          "budget_10_per10000": 0.488814651966095,
+          "zero_calibration_false_alarms": 0.5049679875373841
+        },
+        "Helix": {
+          "budget_10_per10000": 0.4578556418418885,
+          "zero_calibration_false_alarms": 0.49853199720382696
+        },
+        "Koi_Fish": {
+          "budget_10_per10000": 0.6956920623779298,
+          "zero_calibration_false_alarms": 0.7178954482078553
+        },
+        "Light_Modulation": {
+          "budget_10_per10000": 0.7198340296745301,
+          "zero_calibration_false_alarms": 0.746919870376587
+        },
+        "Low_Frequency_Burst": {
+          "budget_10_per10000": 0.5215337276458741,
+          "zero_calibration_false_alarms": 0.5228282213211061
+        },
+        "Low_Frequency_Lines": {
+          "budget_10_per10000": 0.4654377698898316,
+          "zero_calibration_false_alarms": 0.49873790144920355
+        },
+        "Paired_Doves": {
+          "budget_10_per10000": 0.4963426887989045,
+          "zero_calibration_false_alarms": 0.5151300430297853
+        },
+        "Power_Line": {
+          "budget_10_per10000": 0.25013715028762823,
+          "zero_calibration_false_alarms": 0.29441833496093756
+        },
+        "Repeating_Blips": {
+          "budget_10_per10000": 0.4364768862724305,
+          "zero_calibration_false_alarms": 0.4586737155914307
+        },
+        "Scattered_Light": {
+          "budget_10_per10000": 0.25009927153587347,
+          "zero_calibration_false_alarms": 0.2589579522609711
+        },
+        "Scratchy": {
+          "budget_10_per10000": 0.17911514639854434,
+          "zero_calibration_false_alarms": 0.18764959275722506
+        },
+        "Tomte": {
+          "budget_10_per10000": 0.7704996466636659,
+          "zero_calibration_false_alarms": 0.77898508310318
+        },
+        "Violin_Mode": {
+          "budget_10_per10000": 0.2677388787269593,
+          "zero_calibration_false_alarms": 0.2743247747421265
+        },
+        "Wandering_Line": {
+          "budget_10_per10000": 0.15519396960735324,
+          "zero_calibration_false_alarms": 0.17256978154182437
+        },
+        "Whistle": {
+          "budget_10_per10000": 0.20334988832473758,
+          "zero_calibration_false_alarms": 0.2377370893955231
+        }
+      }
+    }
+  },
+  "target_labels": [
+    "1080Lines",
+    "1400Ripples",
+    "Air_Compressor",
+    "Blip",
+    "Chirp",
+    "Helix",
+    "Koi_Fish",
+    "Light_Modulation",
+    "Low_Frequency_Burst",
+    "Low_Frequency_Lines",
+    "Paired_Doves",
+    "Power_Line",
+    "Repeating_Blips",
+    "Scattered_Light",
+    "Scratchy",
+    "Tomte",
+    "Violin_Mode",
+    "Wandering_Line",
+    "Whistle"
+  ],
+  "points": [
+    "budget_10_per10000",
+    "zero_calibration_false_alarms"
+  ],
+  "metrics": [
+    "macro_recall",
+    "macro_false_alarms_per10000_negatives"
+  ],
+  "contrasts": "primary_final minus each of the five frozen controls, paired within every resampled time-group draw",
+  "seed": 1515,
+  "valid_draws": 5000,
+  "generator": "numpy.random.default_rng(1515).multinomial(G, equal probabilities of the G observed effective TEST time groups), batches of128",
+  "group_order": "lexicographic group_id; each group retains every event, target, method and operating point",
+  "acceptance_rule": "Reject and redraw any replicate with zero positive events for any of the fixed19 targets or zero negatives for any target; retain first5000 valid draws in generated order. Record attempted and rejected counts, including any unused draws generated in final batch separately.",
+  "quantiles": {
+    "method": "numpy.quantile linear",
+    "probabilities": [
+      0.025,
+      0.975
+    ]
+  },
+  "fixed_thresholds": "All cutoffs from protocol.reported_arms; never recalibrate on TEST or bootstrap sample",
+  "effective_cohort": "The4119 primary fresh event IDs, minus only the previously frozen exact-constant source-quality rule, without replacement",
+  "limitations": [
+    "Conditional on this reference choice, trained checkpoints, selected recipes, CALIB cutoffs, target set and observed groups.",
+    "Distinct event-time groups do not establish physical independence.",
+    "Rejecting absent-positive draws conditions uncertainty on positive presence. The smallest target has only4 pre-QC positives, so intervals are unstable.",
+    "Shared query events are resampled once as groups, never treated as19 independent images.",
+    "Percentile intervals describe this benchmark; no architecture, threshold or checkpoint selection will use TEST."
+  ]
+}

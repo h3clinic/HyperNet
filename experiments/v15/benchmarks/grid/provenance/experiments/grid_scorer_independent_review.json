@@ -1,0 +1,52 @@
+{
+  "format": "hypernet.grid_scorer_independent_review.v15",
+  "reviewed_utc": "2026-11-03T00:29:01.188125+00:00",
+  "reviewer": "v15_detail_model independent agent",
+  "mode": "read-only source review",
+  "source_sha256": {
+    "hypernet/grid_anomaly.py": "70b12b11046ab5422168b4f9b85a30c4186595db97dc6e911065ff8da262ce42",
+    "hypernet/mvtec_grid.py": "d1d46475fc66c54f483455b9ea3d0149bd7f4dd0b5b1f59c92e4f1278dfb2019",
+    "scripts/evaluate_grid_v15.py": "e1ad8bf245cb3a51fa1be7682d265c7d814ee257b926e1774e52df8c5f3bef98",
+    "hypernet/detail_features.py": "faff01363202ccbfe38ad487829cfd166c50416c78b325af23bf2d4ae1f72b8d",
+    "hypernet/rare_event_metrics.py": "d53397d708c2c20a0b67da7e2352bcce98df4cec02c81846c835137fc47fad09"
+  },
+  "test_pixels_read": 0,
+  "grid_model_inference_calls": 0,
+  "test_labels_inspected": 0,
+  "reviewer_test_runs": 0,
+  "owner_reported_tests": {
+    "passed": 23,
+    "independently_rerun": false
+  },
+  "blocking_findings_remaining": 0,
+  "checks": [
+    "One reference image supplies the fixed 4096-descriptor bank; no query fitting.",
+    "64 separate normal DEV images calibrate the strict-maximum operating threshold.",
+    "Native tile coordinates and stride-2 feature centers are preserved for interpolation; TEST masks are not resized.",
+    "RGB predictions occur before per-image labels, with pixel target loading reserved for scoring after prediction.",
+    "Exact pixel AUROC/AP and image rank metrics handle ties; false positives per 10000 are scaled from actual normal TEST count with uncertainty.",
+    "No borrowed pretrained weights or real-image gradient updates are introduced by the scorer."
+  ],
+  "corrected_findings": [
+    {
+      "issue": "Malformed DEV results could omit an expected method or checkpoint map entry.",
+      "resolution": "validate_final_dev_rosters now requires exact method keys for score_files/calibration/thresholds and exact learned_final/random keys for checkpoints/provenance, with primary learned_final.",
+      "status": "confirmed in source"
+    },
+    {
+      "issue": "CLI protocol identity needed an early equality check against the TEST admission.",
+      "resolution": "verify_test_admission_matches compares the protocol SHA before dataset/engine access.",
+      "status": "confirmed in source"
+    }
+  ],
+  "other_confirmed": [
+    "CUBLAS_WORKSPACE_CONFIG is set before importing torch-dependent modules.",
+    "Evaluation records own-process peak CUDA allocated and reserved bytes."
+  ],
+  "limitations": [
+    "This is a source review, not a second independent implementation or empirical TEST replication.",
+    "One-reference bank fitting still uses 64 additional normal DEV calibration images.",
+    "Stride-2 descriptor sampling and interpolation may limit finest-pixel localization.",
+    "FP per 10000 extrapolates from a small normal TEST set and is not a 10000-negative empirical test."
+  ]
+}

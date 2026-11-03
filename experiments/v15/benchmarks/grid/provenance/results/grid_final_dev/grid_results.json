@@ -1,0 +1,192 @@
+{
+  "format": "hypernet.grid_anomaly.results.v15",
+  "completed": true,
+  "stage": "dev",
+  "prototype": false,
+  "created_utc": "2026-11-03T00:33:44.050321+00:00",
+  "method_aliases": [
+    "learned_final",
+    "random",
+    "analytic_detail"
+  ],
+  "primary_method": "learned_final",
+  "reference_id": "mvtec_grid/train/good/002",
+  "query_images": 64,
+  "checkpoints": {
+    "learned_final": "${V15_ROOT}\\checkpoints\\details_run01\\families_1048576.pt",
+    "random": "${V15_ROOT}\\checkpoints\\details_run01\\random_initial.pt"
+  },
+  "checkpoint_provenance": {
+    "learned_final": {
+      "sha256": "3e42c4410527c0b9f293bcf525fa55ea01ec705a0559d11ee2c9c896f7028403",
+      "state_sha256": "63948dced778ce56805f036f1d1322071f817f5ddd5be1ac38d8db898c125d29",
+      "families": 1048576,
+      "optimizer_steps": 4096
+    },
+    "random": {
+      "sha256": "da3d477d7104ca222bfe1f35117795d27dec17537a55d83cd9730abeece624bb",
+      "state_sha256": "3ed019ce715311d0383c34b54b6332dd8f74e590658a3486a1242d0655cb9275",
+      "families": 0,
+      "optimizer_steps": 0
+    }
+  },
+  "device": "cuda",
+  "batch_size": 32,
+  "source_sha256": {
+    "hypernet/detail_encoder.py": "e1e4cd86843b441c92d72292e97b267dbf105e68ceb8b0650f0002ff39867d43",
+    "hypernet/detail_features.py": "faff01363202ccbfe38ad487829cfd166c50416c78b325af23bf2d4ae1f72b8d",
+    "hypernet/grid_anomaly.py": "70b12b11046ab5422168b4f9b85a30c4186595db97dc6e911065ff8da262ce42",
+    "hypernet/mvtec_grid.py": "d1d46475fc66c54f483455b9ea3d0149bd7f4dd0b5b1f59c92e4f1278dfb2019",
+    "hypernet/rare_event_metrics.py": "d53397d708c2c20a0b67da7e2352bcce98df4cec02c81846c835137fc47fad09",
+    "scripts/evaluate_grid_v15.py": "e1ad8bf245cb3a51fa1be7682d265c7d814ee257b926e1774e52df8c5f3bef98",
+    "scripts/prepare_mvtec_grid.py": "f19e19ae593d0d2d7e144e907e67fc982c0c9c375b0faf5de38be50b7f9de6b0"
+  },
+  "provenance": {
+    "models": {
+      "learned_final": {
+        "format": "hypernet.mathematical_details.v15.1",
+        "state_sha256": "63948dced778ce56805f036f1d1322071f817f5ddd5be1ac38d8db898c125d29",
+        "checkpoint_sha256": "3e42c4410527c0b9f293bcf525fa55ea01ec705a0559d11ee2c9c896f7028403",
+        "optimizer_steps": 4096,
+        "consumed_synthetic_families": 1048576,
+        "borrowed_pretrained_weights": false,
+        "natural_weight_training_images": 0,
+        "reference_images_per_target": 1,
+        "enrollment_weight_updates": 0,
+        "tile_side": 64,
+        "tile_core": 48,
+        "overlap_margin": 8,
+        "preprocessing": "Native pixels, reflect-padding, no image resize. Same tiling for reference and query."
+      },
+      "random": {
+        "format": "hypernet.mathematical_details.v15.1",
+        "state_sha256": "3ed019ce715311d0383c34b54b6332dd8f74e590658a3486a1242d0655cb9275",
+        "checkpoint_sha256": "da3d477d7104ca222bfe1f35117795d27dec17537a55d83cd9730abeece624bb",
+        "optimizer_steps": 0,
+        "consumed_synthetic_families": 0,
+        "borrowed_pretrained_weights": false,
+        "natural_weight_training_images": 0,
+        "reference_images_per_target": 1,
+        "enrollment_weight_updates": 0,
+        "tile_side": 64,
+        "tile_core": 48,
+        "overlap_margin": 8,
+        "preprocessing": "Native pixels, reflect-padding, no image resize. Same tiling for reference and query."
+      }
+    },
+    "banks": {
+      "learned_final": {
+        "feature_key": "descriptors",
+        "reference_grid": [
+          512,
+          512
+        ],
+        "bank_tokens": 4096,
+        "bank_sha256": "405be77c80ee74912e9ac66d06903b3fc1146489b3a7cc56381eb0e62f1ff0e5",
+        "bank_indices_sha256": "b5cc2fcbda8f30793614bfd5094c5d91d483b09ff1f4477ed33fcb323a6642d0",
+        "selection": "Uniform without replacement, NumPy seed1515, sorted indices, max4096; no query fitting",
+        "normal_reference_images": 1,
+        "query_adaptation": false
+      },
+      "analytic_detail": {
+        "feature_key": "detail",
+        "reference_grid": [
+          512,
+          512
+        ],
+        "bank_tokens": 4096,
+        "bank_sha256": "61494a1eb260c2bbf82181ff6365a7c6945282ef7c2797616fec0a5381417324",
+        "bank_indices_sha256": "b5cc2fcbda8f30793614bfd5094c5d91d483b09ff1f4477ed33fcb323a6642d0",
+        "selection": "Uniform without replacement, NumPy seed1515, sorted indices, max4096; no query fitting",
+        "normal_reference_images": 1,
+        "query_adaptation": false
+      },
+      "random": {
+        "feature_key": "descriptors",
+        "reference_grid": [
+          512,
+          512
+        ],
+        "bank_tokens": 4096,
+        "bank_sha256": "436beed172723bb1877d733fd500e3dac9e8a61d18c66d33104fe4fdb34c2cfe",
+        "bank_indices_sha256": "b5cc2fcbda8f30793614bfd5094c5d91d483b09ff1f4477ed33fcb323a6642d0",
+        "selection": "Uniform without replacement, NumPy seed1515, sorted indices, max4096; no query fitting",
+        "normal_reference_images": 1,
+        "query_adaptation": false
+      }
+    },
+    "sampling_stride": 2,
+    "top_fraction": 0.005,
+    "max_bank_tokens": 4096,
+    "feature_normalization": "Per-token L2; no DEV/query mean/covariance fitting",
+    "analytic_control": "Fixed local contrast, gx, gy and Laplacian from native encoder preprocessing; no learned mask"
+  },
+  "state_unchanged": true,
+  "banks_unchanged": true,
+  "development_manifest_sha256": "b4fa5edc9d273175487944286c8b78bc28512365505140898bca1cd7e40ac6a3",
+  "manifest_sha256": "14d18a61b0579fabe254f64553141a10de6d02ad482e06ddd528bc3d9232595d",
+  "protocol_sha256": null,
+  "score_files": {
+    "learned_final": {
+      "path": "learned_final_scores.jsonl",
+      "sha256": "cd0fdb6895659910ef29119edfd5ca328e80461238d1163fe812429312e88b58"
+    },
+    "random": {
+      "path": "random_scores.jsonl",
+      "sha256": "570c0386522392e5d37fbaf9fc4bd7a34b1703e4457029530564443e5bc3d90b"
+    },
+    "analytic_detail": {
+      "path": "analytic_detail_scores.jsonl",
+      "sha256": "a794f43a99d553c43b1925a60777140d0fe9b748aa5fdcf293f968017ffb6897"
+    }
+  },
+  "calibration": {
+    "learned_final": {
+      "threshold": 0.3606614762821969,
+      "normal_calibration_images": 64,
+      "observed_calibration_false_positives": 0,
+      "rule": "Strict maximum normal DEV score plus nextafter toward +infinity",
+      "calibration_zero_alarm_one_sided95_upper_per_10000": 457.29702330762444,
+      "claim": "Zero empirical calibration alarms; no guaranteed future false-positive rate."
+    },
+    "random": {
+      "threshold": 0.16653152056816972,
+      "normal_calibration_images": 64,
+      "observed_calibration_false_positives": 0,
+      "rule": "Strict maximum normal DEV score plus nextafter toward +infinity",
+      "calibration_zero_alarm_one_sided95_upper_per_10000": 457.29702330762444,
+      "claim": "Zero empirical calibration alarms; no guaranteed future false-positive rate."
+    },
+    "analytic_detail": {
+      "threshold": 0.10884329751645401,
+      "normal_calibration_images": 64,
+      "observed_calibration_false_positives": 0,
+      "rule": "Strict maximum normal DEV score plus nextafter toward +infinity",
+      "calibration_zero_alarm_one_sided95_upper_per_10000": 457.29702330762444,
+      "claim": "Zero empirical calibration alarms; no guaranteed future false-positive rate."
+    }
+  },
+  "thresholds": {
+    "learned_final": 0.3606614762821969,
+    "random": 0.16653152056816972,
+    "analytic_detail": 0.10884329751645401
+  },
+  "methods": null,
+  "elapsed_seconds": 102.01287389999925,
+  "runtime": {
+    "python": "3.12.10",
+    "numpy": "2.5.3",
+    "torch": "2.14.1+cu130",
+    "threads": 4,
+    "tf32": false,
+    "own_process_peak_cuda_allocated_bytes": 198094848,
+    "own_process_peak_cuda_reserved_bytes": 257949696
+  },
+  "data_budget": {
+    "normal_reference_images": 1,
+    "additional_normals_for_bank_fitting": 0,
+    "extra_normal_calibration_images": 64,
+    "natural_weight_training_images": 0
+  },
+  "scope": "Grid-only one-reference anomaly pilot, not fullMVTec or classificationaccuracy.64extra realnormal images set thresholds; all79reference+TEST images are disjoint from calibration. FP/10000 is scaled from21normalTEST images with binomial uncertainty."
+}

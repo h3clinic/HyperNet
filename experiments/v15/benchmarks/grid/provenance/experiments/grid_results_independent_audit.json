@@ -1,0 +1,125 @@
+{
+  "format": "hypernet.grid_results_independent_audit.v15",
+  "valid": true,
+  "created_utc": "2026-11-03T00:42:59.746144+00:00",
+  "source_sha256": "ba34c7a4897bf7510bd712195d9f4ac288033e9641aa9a5b31c7a309596e2458",
+  "test_results_sha256": "48ba60804f2972ca0bfb5c7519c44462a87dabfb5d699fadfbb65bf085354550",
+  "protocol_sha256": "250bd960bb6fe12c8cbd84308c6391c7984f9c02127565a72b077dbbade746ba",
+  "dev_results_sha256": "7cce1ea706f0546da0b1d3d3286fabef3c0cff7ca65c56aca941b1d7862c3250",
+  "methods": {
+    "learned_final": {
+      "image_maps_reaggregated": 78,
+      "calibration_scores_checked": 64,
+      "metrics": {
+        "positive_events": 57,
+        "negative_events": 21,
+        "true_positive": 0,
+        "false_positive": 4,
+        "recall": 0.0,
+        "false_positive_rate": 0.19047619047619047,
+        "false_alarms_per_10000_negatives": 1904.7619047619046,
+        "auroc": 0.18796992481203012,
+        "average_precision": 0.5692850309647363,
+        "threshold": 0.3606614762821969
+      },
+      "all_map_scores_exact": true,
+      "auroc_ap_independent_library": "sklearn.metrics",
+      "saved_score_sha256": "1b8028f5b7afe40bf8b6a03cbf04f50c0b01b21ea057c411108344dfe056234e"
+    },
+    "random": {
+      "image_maps_reaggregated": 78,
+      "calibration_scores_checked": 64,
+      "metrics": {
+        "positive_events": 57,
+        "negative_events": 21,
+        "true_positive": 2,
+        "false_positive": 2,
+        "recall": 0.03508771929824561,
+        "false_positive_rate": 0.09523809523809523,
+        "false_alarms_per_10000_negatives": 952.3809523809523,
+        "auroc": 0.43024227234753554,
+        "average_precision": 0.6743992427491623,
+        "threshold": 0.16653152056816972
+      },
+      "all_map_scores_exact": true,
+      "auroc_ap_independent_library": "sklearn.metrics",
+      "saved_score_sha256": "e6c8a253d168721e3b21ba00ec972c050a358a1b4e7f3c8362014bf8ab767169"
+    },
+    "analytic_detail": {
+      "image_maps_reaggregated": 78,
+      "calibration_scores_checked": 64,
+      "metrics": {
+        "positive_events": 57,
+        "negative_events": 21,
+        "true_positive": 1,
+        "false_positive": 5,
+        "recall": 0.017543859649122806,
+        "false_positive_rate": 0.23809523809523808,
+        "false_alarms_per_10000_negatives": 2380.9523809523807,
+        "auroc": 0.30994152046783624,
+        "average_precision": 0.6143483830790059,
+        "threshold": 0.10884329751645401
+      },
+      "all_map_scores_exact": true,
+      "auroc_ap_independent_library": "sklearn.metrics",
+      "saved_score_sha256": "378aa3aeb99e7a86c332a00e9ce12af5e2ea19e7b9b0d2ae152abbe1c20188ec"
+    }
+  },
+  "replays": [
+    {
+      "image_id": "mvtec_grid/test/good/000",
+      "method": "learned_final",
+      "score": 0.26383588270409974,
+      "patch_map_bit_exact": true,
+      "coordinates_bit_exact": true,
+      "saved_map_sha256": "cb703a49353c9676053fdda0bd5ff52e62dcd92bbe3f0e7c93ad682972f5a92f"
+    },
+    {
+      "image_id": "mvtec_grid/test/good/000",
+      "method": "random",
+      "score": 0.07173497953276703,
+      "patch_map_bit_exact": true,
+      "coordinates_bit_exact": true,
+      "saved_map_sha256": "abce8916606099ade0304a4bd56d6d5ef5aaeed26df2c9aa99fd59b38635aa0b"
+    },
+    {
+      "image_id": "mvtec_grid/test/good/000",
+      "method": "analytic_detail",
+      "score": 0.0629456945724109,
+      "patch_map_bit_exact": true,
+      "coordinates_bit_exact": true,
+      "saved_map_sha256": "c8ce754c18c5114b2ce9756bc512950af629a6901e4d64bd8fb800dc12b7e49c"
+    },
+    {
+      "image_id": "mvtec_grid/test/bent/000",
+      "method": "learned_final",
+      "score": 0.3382990617137388,
+      "patch_map_bit_exact": true,
+      "coordinates_bit_exact": true,
+      "saved_map_sha256": "01b77908bcb903d349630dfd2815c604282641751fdf66545ab0bd23e16147b6"
+    },
+    {
+      "image_id": "mvtec_grid/test/bent/000",
+      "method": "random",
+      "score": 0.13844426509353788,
+      "patch_map_bit_exact": true,
+      "coordinates_bit_exact": true,
+      "saved_map_sha256": "eb832744030f9507f2237a799259f611aa32607e1c006dc03e26647c6502a3fc"
+    },
+    {
+      "image_id": "mvtec_grid/test/bent/000",
+      "method": "analytic_detail",
+      "score": 0.10517352492094585,
+      "patch_map_bit_exact": true,
+      "coordinates_bit_exact": true,
+      "saved_map_sha256": "d7ebfc46bd58bf7913a0d42dc34550c0ebe9020f6437e294e0a635f412fc0368"
+    }
+  ],
+  "test_images_replayed": 2,
+  "reference_images_reloaded": 1,
+  "replay_selection": "First lexicographically sorted normal and first defect ID; fixed before this audit.",
+  "real_weight_updates": 0,
+  "threshold_or_model_selection": false,
+  "state_and_banks_unchanged": true,
+  "scope": "All 234 saved image scores independently reaggregated, 192 DEV score rows checked, image metrics recomputed with sklearn, and six method maps/scores replayed exactly. Pixel AUROC/AP are outside this independent audit scope."
+}

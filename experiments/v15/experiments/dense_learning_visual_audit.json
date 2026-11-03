@@ -1,0 +1,30 @@
+{
+  "selection": "Post-results descriptive illustration: first eight usable family IDs, first stored anchor; no score/error selection.",
+  "family_ids": [
+    1048576,
+    1048577,
+    1048578,
+    1048579,
+    1048580,
+    1048581,
+    1048582,
+    1048583
+  ],
+  "results_sha256": {
+    "dense_fullscene_random": "db515fbd910ef7830b94bcf05c15a23a77156228681daab16bddf2f09747c725",
+    "dense_fullscene_065536": "5761cf8696fd46fdff8fe78a03337bdabd3fad711c77596464eba64736a6fdb6"
+  },
+  "input_stream_sha256_reproduced": "60bdf8b1cd2136eaa9a07578d9e0ecad5003839bb4fbbed42d710003f7ca22c4",
+  "renderer_replay_families": 256,
+  "neural_inference_runs": 0,
+  "optimizer_updates": 0,
+  "figure_sha256": "e29b551f7c5bfc0c5347ed2b6d02bdba7238bacf68b8fe95ec8d673d7dad6027",
+  "source_sha256": {
+    "hypernet/detail_encoder.py": "e1e4cd86843b441c92d72292e97b267dbf105e68ceb8b0650f0002ff39867d43",
+    "hypernet/math_curriculum.py": "8ee214d707183479e4d2e006eb0cc91cfc265899d419e45ebeb2424899dbe7a2",
+    "hypernet/math_curriculum_torch.py": "1ff058c6baaff4f1b92aa6acafa26bed185fdb59d3d73f397d027e681e4d4969",
+    "scripts/train_details.py": "f5092aea2c53fab9521a6bdacd9d5baf25ed045d4f28aa3c42b2725ca4476824",
+    "scripts/evaluate_detail_correspondence.py": "33044884a293f87e7aad153741b9c4b73cc03b269a97a7a57419e10835ff7e51"
+  },
+  "scope": "Mathematical held-out correspondence; neither rare-event nor natural-photo recognition."
+}

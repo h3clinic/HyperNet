@@ -1,0 +1,32 @@
+{
+  "roster_sha256": "60f5e7ebd53b3c0789058231f85896c07063132da725fc14534787c9bd73647d",
+  "split": "reference",
+  "requested": 20,
+  "downloaded_and_verified": 20,
+  "failures": [],
+  "no_replacement_sampling": true,
+  "event_ids": [
+    "4VtiuIWLP1",
+    "4uxt0puYXI",
+    "IE7Kj1RBXU",
+    "JN4LS9p2SU",
+    "M48BaPNZ5a",
+    "PXu6dxsGfg",
+    "Q4wI1di2PU",
+    "QGKPYKyJH4",
+    "U3lYE0RlvY",
+    "Uy1G9PcCe7",
+    "VOEV696STA",
+    "VmGQ846opi",
+    "WYpOK1Dqnm",
+    "Xh4ZIlyv0S",
+    "cCUgScYq4r",
+    "juzZjTGkQR",
+    "kVRj71nyVQ",
+    "nbnHwW384W",
+    "oK34WZvSrs",
+    "vHNn2VQNx8"
+  ],
+  "raw_bytes": 3913385,
+  "test_admission_sha256": null
+}

@@ -1,0 +1,54 @@
+{
+  "format": "hypernet.v15.gravity_score_logs_release",
+  "files": [
+    {
+      "path": "experiments/gravity_calibration_065536/event_scores.jsonl",
+      "sha256": "946d00d1e88a1d21d7f789afb4c6a3911e6bd9d0a7aa973df72b4328b952917e",
+      "bytes": 24388772
+    },
+    {
+      "path": "experiments/gravity_calibration_262144/event_scores.jsonl",
+      "sha256": "cba0b6edf397e56830517d40000c7ea32183f8f8ececb6997ef461e422087dfe",
+      "bytes": 24395854
+    },
+    {
+      "path": "experiments/gravity_calibration_final/event_scores.jsonl",
+      "sha256": "58d3ccc97072292931b37119d8d358ba84f563e12b296d45561ef0abd32ea9c2",
+      "bytes": 45261444
+    },
+    {
+      "path": "experiments/gravity_calibration_random/event_scores.jsonl",
+      "sha256": "0dfc12be9dacc6a5129c549314a005dad9bb1b3a3e16256385fc68aadc0a4a83",
+      "bytes": 24391011
+    },
+    {
+      "path": "experiments/gravity_test_065536/event_scores.jsonl",
+      "sha256": "287a8f4fa482d21021315f89c410ebf66587257239de7efba6158f143901d712",
+      "bytes": 62428398
+    },
+    {
+      "path": "experiments/gravity_test_262144/event_scores.jsonl",
+      "sha256": "ddb2eb641feeb744f2606dbd7584ebeba6c180ca790fb07e29f9ed9e62bebc01",
+      "bytes": 62454319
+    },
+    {
+      "path": "experiments/gravity_test_final/event_scores.jsonl",
+      "sha256": "99dd9f1e319997abf34f0e4211d8815923381d2f61d90d5b3e1928ee593059d3",
+      "bytes": 115888357
+    },
+    {
+      "path": "experiments/gravity_test_random/event_scores.jsonl",
+      "sha256": "e8aee1e3fa2741c798e9916e918d6322755167be2bf5c8f4c7f96d4f1e56a47e",
+      "bytes": 62430935
+    }
+  ],
+  "images_or_feature_vectors_included": false,
+  "absolute_paths_in_manifest": false,
+  "scope": "Eight exact CALIB/TEST score logs, all frozen diagnostic recipes and targets; no images.",
+  "archive_name": "hypernet_v15_gravity_score_logs.zip",
+  "archive_sha256": "ef8913b83482ef5c8bbac89be243cb1e26be784be1ebe1fe5d57824edf0fbd6f",
+  "archive_bytes": 69530192,
+  "uploaded": false,
+  "uploaded_field_scope": "Historical state at archive preparation only; later publication is outside this exporter.",
+  "archive_entries_verified_against_originals": true
+}

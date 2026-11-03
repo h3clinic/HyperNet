@@ -1,0 +1,279 @@
+{
+  "format": "hypernet.grid_anomaly.results.v15",
+  "completed": true,
+  "stage": "test",
+  "prototype": false,
+  "created_utc": "2026-11-03T00:42:21.970470+00:00",
+  "method_aliases": [
+    "learned_final",
+    "random",
+    "analytic_detail"
+  ],
+  "primary_method": "learned_final",
+  "reference_id": "mvtec_grid/train/good/002",
+  "query_images": 78,
+  "checkpoints": {
+    "learned_final": "${V15_ROOT}\\checkpoints\\details_run01\\families_1048576.pt",
+    "random": "${V15_ROOT}\\checkpoints\\details_run01\\random_initial.pt"
+  },
+  "checkpoint_provenance": {
+    "learned_final": {
+      "sha256": "3e42c4410527c0b9f293bcf525fa55ea01ec705a0559d11ee2c9c896f7028403",
+      "state_sha256": "63948dced778ce56805f036f1d1322071f817f5ddd5be1ac38d8db898c125d29",
+      "families": 1048576,
+      "optimizer_steps": 4096
+    },
+    "random": {
+      "sha256": "da3d477d7104ca222bfe1f35117795d27dec17537a55d83cd9730abeece624bb",
+      "state_sha256": "3ed019ce715311d0383c34b54b6332dd8f74e590658a3486a1242d0655cb9275",
+      "families": 0,
+      "optimizer_steps": 0
+    }
+  },
+  "device": "cuda",
+  "batch_size": 32,
+  "source_sha256": {
+    "hypernet/detail_encoder.py": "e1e4cd86843b441c92d72292e97b267dbf105e68ceb8b0650f0002ff39867d43",
+    "hypernet/detail_features.py": "faff01363202ccbfe38ad487829cfd166c50416c78b325af23bf2d4ae1f72b8d",
+    "hypernet/grid_anomaly.py": "70b12b11046ab5422168b4f9b85a30c4186595db97dc6e911065ff8da262ce42",
+    "hypernet/mvtec_grid.py": "d1d46475fc66c54f483455b9ea3d0149bd7f4dd0b5b1f59c92e4f1278dfb2019",
+    "hypernet/rare_event_metrics.py": "d53397d708c2c20a0b67da7e2352bcce98df4cec02c81846c835137fc47fad09",
+    "scripts/evaluate_grid_v15.py": "e1ad8bf245cb3a51fa1be7682d265c7d814ee257b926e1774e52df8c5f3bef98",
+    "scripts/prepare_mvtec_grid.py": "f19e19ae593d0d2d7e144e907e67fc982c0c9c375b0faf5de38be50b7f9de6b0"
+  },
+  "provenance": {
+    "models": {
+      "learned_final": {
+        "format": "hypernet.mathematical_details.v15.1",
+        "state_sha256": "63948dced778ce56805f036f1d1322071f817f5ddd5be1ac38d8db898c125d29",
+        "checkpoint_sha256": "3e42c4410527c0b9f293bcf525fa55ea01ec705a0559d11ee2c9c896f7028403",
+        "optimizer_steps": 4096,
+        "consumed_synthetic_families": 1048576,
+        "borrowed_pretrained_weights": false,
+        "natural_weight_training_images": 0,
+        "reference_images_per_target": 1,
+        "enrollment_weight_updates": 0,
+        "tile_side": 64,
+        "tile_core": 48,
+        "overlap_margin": 8,
+        "preprocessing": "Native pixels, reflect-padding, no image resize. Same tiling for reference and query."
+      },
+      "random": {
+        "format": "hypernet.mathematical_details.v15.1",
+        "state_sha256": "3ed019ce715311d0383c34b54b6332dd8f74e590658a3486a1242d0655cb9275",
+        "checkpoint_sha256": "da3d477d7104ca222bfe1f35117795d27dec17537a55d83cd9730abeece624bb",
+        "optimizer_steps": 0,
+        "consumed_synthetic_families": 0,
+        "borrowed_pretrained_weights": false,
+        "natural_weight_training_images": 0,
+        "reference_images_per_target": 1,
+        "enrollment_weight_updates": 0,
+        "tile_side": 64,
+        "tile_core": 48,
+        "overlap_margin": 8,
+        "preprocessing": "Native pixels, reflect-padding, no image resize. Same tiling for reference and query."
+      }
+    },
+    "banks": {
+      "learned_final": {
+        "feature_key": "descriptors",
+        "reference_grid": [
+          512,
+          512
+        ],
+        "bank_tokens": 4096,
+        "bank_sha256": "405be77c80ee74912e9ac66d06903b3fc1146489b3a7cc56381eb0e62f1ff0e5",
+        "bank_indices_sha256": "b5cc2fcbda8f30793614bfd5094c5d91d483b09ff1f4477ed33fcb323a6642d0",
+        "selection": "Uniform without replacement, NumPy seed1515, sorted indices, max4096; no query fitting",
+        "normal_reference_images": 1,
+        "query_adaptation": false
+      },
+      "analytic_detail": {
+        "feature_key": "detail",
+        "reference_grid": [
+          512,
+          512
+        ],
+        "bank_tokens": 4096,
+        "bank_sha256": "61494a1eb260c2bbf82181ff6365a7c6945282ef7c2797616fec0a5381417324",
+        "bank_indices_sha256": "b5cc2fcbda8f30793614bfd5094c5d91d483b09ff1f4477ed33fcb323a6642d0",
+        "selection": "Uniform without replacement, NumPy seed1515, sorted indices, max4096; no query fitting",
+        "normal_reference_images": 1,
+        "query_adaptation": false
+      },
+      "random": {
+        "feature_key": "descriptors",
+        "reference_grid": [
+          512,
+          512
+        ],
+        "bank_tokens": 4096,
+        "bank_sha256": "436beed172723bb1877d733fd500e3dac9e8a61d18c66d33104fe4fdb34c2cfe",
+        "bank_indices_sha256": "b5cc2fcbda8f30793614bfd5094c5d91d483b09ff1f4477ed33fcb323a6642d0",
+        "selection": "Uniform without replacement, NumPy seed1515, sorted indices, max4096; no query fitting",
+        "normal_reference_images": 1,
+        "query_adaptation": false
+      }
+    },
+    "sampling_stride": 2,
+    "top_fraction": 0.005,
+    "max_bank_tokens": 4096,
+    "feature_normalization": "Per-token L2; no DEV/query mean/covariance fitting",
+    "analytic_control": "Fixed local contrast, gx, gy and Laplacian from native encoder preprocessing; no learned mask"
+  },
+  "state_unchanged": true,
+  "banks_unchanged": true,
+  "development_manifest_sha256": "b4fa5edc9d273175487944286c8b78bc28512365505140898bca1cd7e40ac6a3",
+  "manifest_sha256": "14d18a61b0579fabe254f64553141a10de6d02ad482e06ddd528bc3d9232595d",
+  "protocol_sha256": "250bd960bb6fe12c8cbd84308c6391c7984f9c02127565a72b077dbbade746ba",
+  "score_files": {
+    "learned_final": {
+      "path": "learned_final_scores.jsonl",
+      "sha256": "1b8028f5b7afe40bf8b6a03cbf04f50c0b01b21ea057c411108344dfe056234e"
+    },
+    "random": {
+      "path": "random_scores.jsonl",
+      "sha256": "e6c8a253d168721e3b21ba00ec972c050a358a1b4e7f3c8362014bf8ab767169"
+    },
+    "analytic_detail": {
+      "path": "analytic_detail_scores.jsonl",
+      "sha256": "378aa3aeb99e7a86c332a00e9ce12af5e2ea19e7b9b0d2ae152abbe1c20188ec"
+    }
+  },
+  "calibration": null,
+  "thresholds": {
+    "learned_final": 0.3606614762821969,
+    "random": 0.16653152056816972,
+    "analytic_detail": 0.10884329751645401
+  },
+  "methods": {
+    "learned_final": {
+      "image": {
+        "positive_events": 57,
+        "negative_events": 21,
+        "true_positive": 0,
+        "false_positive": 4,
+        "recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.3606614762821969,
+        "false_positive_rate": 0.19047619047619047,
+        "false_alarms_per_10000_negatives": 1904.7619047619048,
+        "auroc": 0.18796992481203006,
+        "average_precision": 0.5692850309647363,
+        "independent_event_binomial_reference": {
+          "recall_ci95": [
+            0.0,
+            0.06266748091448493
+          ],
+          "false_alarms_per_10000_ci95": [
+            544.6356817840682,
+            4190.66041183528
+          ],
+          "false_alarms_per_10000_upper95": 3844.081076276583,
+          "assumption": "Independent Bernoulli events; not a dependence-adjusted guarantee."
+        },
+        "rate_scope": "Normalized per10,000 negatives; denominator is the actual negative_events count above."
+      },
+      "pixel": {
+        "auroc": 0.6810024424163799,
+        "average_precision": 0.011674090754576504,
+        "positive_pixels": 564944,
+        "negative_pixels": 81223984,
+        "total_pixels": 81788928,
+        "scope": "All original1024x1024 pixels across all78officialTEST images; normal masks are zero. Score maps are interpolated at native sampled centers; GT masks never resized.",
+        "approximate_histogram": false
+      }
+    },
+    "random": {
+      "image": {
+        "positive_events": 57,
+        "negative_events": 21,
+        "true_positive": 2,
+        "false_positive": 2,
+        "recall": 0.03508771929824561,
+        "precision": 0.5,
+        "threshold": 0.16653152056816972,
+        "false_positive_rate": 0.09523809523809523,
+        "false_alarms_per_10000_negatives": 952.3809523809524,
+        "auroc": 0.4302422723475355,
+        "average_precision": 0.6743992427491623,
+        "independent_event_binomial_reference": {
+          "recall_ci95": [
+            0.004277894940531773,
+            0.12107066319620115
+          ],
+          "false_alarms_per_10000_ci95": [
+            117.49317884445809,
+            3037.744069139242
+          ],
+          "false_alarms_per_10000_upper95": 2705.516993045313,
+          "assumption": "Independent Bernoulli events; not a dependence-adjusted guarantee."
+        },
+        "rate_scope": "Normalized per10,000 negatives; denominator is the actual negative_events count above."
+      },
+      "pixel": {
+        "auroc": 0.6952526338899839,
+        "average_precision": 0.013411090877278039,
+        "positive_pixels": 564944,
+        "negative_pixels": 81223984,
+        "total_pixels": 81788928,
+        "scope": "All original1024x1024 pixels across all78officialTEST images; normal masks are zero. Score maps are interpolated at native sampled centers; GT masks never resized.",
+        "approximate_histogram": false
+      }
+    },
+    "analytic_detail": {
+      "image": {
+        "positive_events": 57,
+        "negative_events": 21,
+        "true_positive": 1,
+        "false_positive": 5,
+        "recall": 0.017543859649122806,
+        "precision": 0.16666666666666666,
+        "threshold": 0.10884329751645401,
+        "false_positive_rate": 0.23809523809523808,
+        "false_alarms_per_10000_negatives": 2380.9523809523807,
+        "auroc": 0.30994152046783624,
+        "average_precision": 0.6143483830790063,
+        "independent_event_binomial_reference": {
+          "recall_ci95": [
+            0.00044407344008939273,
+            0.09391684189191078
+          ],
+          "false_alarms_per_10000_ci95": [
+            821.7587559302259,
+            4716.598276546214
+          ],
+          "false_alarms_per_10000_upper95": 4369.763160312658,
+          "assumption": "Independent Bernoulli events; not a dependence-adjusted guarantee."
+        },
+        "rate_scope": "Normalized per10,000 negatives; denominator is the actual negative_events count above."
+      },
+      "pixel": {
+        "auroc": 0.46570020851063537,
+        "average_precision": 0.006105727636038215,
+        "positive_pixels": 564944,
+        "negative_pixels": 81223984,
+        "total_pixels": 81788928,
+        "scope": "All original1024x1024 pixels across all78officialTEST images; normal masks are zero. Score maps are interpolated at native sampled centers; GT masks never resized.",
+        "approximate_histogram": false
+      }
+    }
+  },
+  "elapsed_seconds": 410.9776920000004,
+  "runtime": {
+    "python": "3.12.10",
+    "numpy": "2.5.3",
+    "torch": "2.14.1+cu130",
+    "threads": 4,
+    "tf32": false,
+    "own_process_peak_cuda_allocated_bytes": 198094848,
+    "own_process_peak_cuda_reserved_bytes": 257949696
+  },
+  "data_budget": {
+    "normal_reference_images": 1,
+    "additional_normals_for_bank_fitting": 0,
+    "extra_normal_calibration_images": 64,
+    "natural_weight_training_images": 0
+  },
+  "scope": "Grid-only one-reference anomaly pilot, not fullMVTec or classificationaccuracy.64extra realnormal images set thresholds; all79reference+TEST images are disjoint from calibration. FP/10000 is scaled from21normalTEST images with binomial uncertainty."
+}

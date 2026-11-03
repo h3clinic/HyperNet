@@ -1,0 +1,10 @@
+{
+  "reason": "A single official PNG was inspected before the first draft roster to verify plot dimensions/cropping. The hash split subsequently assigned it to draft TEST. No model inference or weight fitting occurred. Final roster explicitly excludes its full time group; draft and source snapshots are preserved.",
+  "event_id": "UBivGGazpn",
+  "group_id": "L1_92ed50b3b46191a50079",
+  "initial_roster_sha256": "4b8c5d9a62c32f318eb5a573cd9cf0b3635e5d895ea5320919567b577c0dae40",
+  "final_roster_sha256": "60f5e7ebd53b3c0789058231f85896c07063132da725fc14534787c9bd73647d",
+  "probe_png_sha256": "d726f8bcbe36240e8bd7073477adaeb4b9022ab147f8d6bd0936272a74b07b32",
+  "final_split": "excluded_pre_exposed_group",
+  "model_test_inference": false
+}

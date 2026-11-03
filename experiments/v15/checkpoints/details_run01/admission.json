@@ -1,0 +1,73 @@
+{
+  "format": "hypernet.mathematical_details.v15.1",
+  "created_utc": "2026-11-02T23:51:22.591244+00:00",
+  "mode": "train",
+  "source_sha256": {
+    "hypernet/detail_encoder.py": "e1e4cd86843b441c92d72292e97b267dbf105e68ceb8b0650f0002ff39867d43",
+    "hypernet/math_curriculum.py": "8ee214d707183479e4d2e006eb0cc91cfc265899d419e45ebeb2424899dbe7a2",
+    "scripts/train_details.py": "f5092aea2c53fab9521a6bdacd9d5baf25ed045d4f28aa3c42b2725ca4476824",
+    "hypernet/math_curriculum_torch.py": "1ff058c6baaff4f1b92aa6acafa26bed185fdb59d3d73f397d027e681e4d4969"
+  },
+  "seed": 1515,
+  "renderer_seed": 15150,
+  "side": 64,
+  "batch_size": 256,
+  "threads": 4,
+  "device": "cuda",
+  "renderer_backend": "torch",
+  "precision": "float32; no AMP or TF32",
+  "deterministic_algorithms": true,
+  "cuda_device": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "runtime": {
+    "torch": "2.14.1+cu130",
+    "numpy": "2.5.3",
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]"
+  },
+  "prefetch_workers": 1,
+  "anchors_per_direction": 32,
+  "target_families": 1048576,
+  "target_training_views": 2097152,
+  "parameter_count": 9281,
+  "training_family_interval": [
+    0,
+    1048576
+  ],
+  "validation_family_interval": [
+    1048576,
+    1048832
+  ],
+  "optimizer": {
+    "name": "AdamW",
+    "initial_lr": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip_norm": 5
+  },
+  "scheduler": {
+    "name": "cosine",
+    "steps": 4096,
+    "minimum_lr": 3e-05
+  },
+  "checkpoint_every_families": 65536,
+  "primary_model_rule": "Final1,048,576-family checkpoint; no TEST-based checkpoint selection",
+  "declared_scaling_control_families": [
+    65536,
+    262144,
+    1048576
+  ],
+  "other_milestones_role": "Preserved recovery evidence, not additional TEST candidates",
+  "natural_training_images": 0,
+  "borrowed_pretrained_weights": false,
+  "semantic_class_labels": false,
+  "initialization": "Fresh random seed, no checkpoint loaded",
+  "initial_state_sha256": "3ed019ce715311d0383c34b54b6332dd8f74e590658a3486a1242d0655cb9275",
+  "correspondence": "Exact known canonical affine maps; conservative four-neighbor foreground target support; repeated local motifs excluded from negatives.",
+  "fine_structure": "Stride-one learned path, pixel-unshuffle context branches, analytic high-frequency skip, learned stride-one reconstruction auxiliary.",
+  "loss_weights": {
+    "dense_correspondence": 1,
+    "detail_reconstruction": 0.5,
+    "foreground": 0.15,
+    "variance": 1,
+    "covariance": 0.05
+  },
+  "canonical_hash_scope": "Raster geometry plus mathematical material pattern. IDs alone do not establish unique drawings."
+}

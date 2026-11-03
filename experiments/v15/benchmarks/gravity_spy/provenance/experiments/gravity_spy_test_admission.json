@@ -1,0 +1,32 @@
+{
+  "protocol_path": "experiments/gravity_spy_protocol_freeze.json",
+  "protocol_sha256": "4a24995ae9981caa52ba5fb52afd70d407d425ef84253040daa9522202f7414f",
+  "calibration_complete": true,
+  "roster_sha256": "60f5e7ebd53b3c0789058231f85896c07063132da725fc14534787c9bd73647d",
+  "quality_admission_sha256": "4497103f4c68bc2f644ac851459c51590dd56cda5b480e2db3530332d841e498",
+  "prior_exposure_admission_sha256": "620492f4ea6e3b0c9aa58cdbff4b2cf413af808e7935d8910ce98b9a849732e4",
+  "thresholds": {
+    "1080Lines": 0.4645368158817292,
+    "1400Ripples": 0.47780820727348333,
+    "Air_Compressor": 0.4511679410934449,
+    "Blip": 0.5586194396018983,
+    "Chirp": 0.5661010742187501,
+    "Helix": 0.5475244522094728,
+    "Koi_Fish": 0.580124318599701,
+    "Light_Modulation": 0.6242986917495729,
+    "Low_Frequency_Burst": 0.4739621281623841,
+    "Low_Frequency_Lines": 0.4715983867645264,
+    "Paired_Doves": 0.5063388943672181,
+    "Power_Line": 0.4180727601051331,
+    "Repeating_Blips": 0.45795142650604254,
+    "Scattered_Light": 0.4358645081520081,
+    "Scratchy": 0.45159769058227545,
+    "Tomte": 0.5641833543777467,
+    "Violin_Mode": 0.40504261851310736,
+    "Wandering_Line": 0.3688513040542603,
+    "Whistle": 0.42720904946327215
+  },
+  "model_checkpoint_sha256": "3e42c4410527c0b9f293bcf525fa55ea01ec705a0559d11ee2c9c896f7028403",
+  "inference_source_sha256": "ffbf37357b2d0f0527d8c35581c8c49b8fa2165ba66370e9d5f010fa9f10aa09",
+  "calibration_scores_sha256": "58d3ccc97072292931b37119d8d358ba84f563e12b296d45561ef0abd32ea9c2"
+}

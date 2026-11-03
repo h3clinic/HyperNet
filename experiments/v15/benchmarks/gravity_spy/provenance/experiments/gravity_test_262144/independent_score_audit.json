@@ -1,0 +1,45 @@
+{
+  "valid": true,
+  "created_utc": "2026-11-03T01:24:22.772403+00:00",
+  "mode": "test",
+  "events": 4044,
+  "targets": 19,
+  "methods": {
+    "learned:bag": {
+      "target_operating_points_checked": 38,
+      "macro_recall": 0.026792661920905746,
+      "macro_false_alarms_per10000": 10.677872943708868,
+      "macro_auroc": 0.7771156375603498
+    },
+    "learned:translation_006": {
+      "target_operating_points_checked": 38,
+      "macro_recall": 0.04504173708159467,
+      "macro_false_alarms_per10000": 11.63144979047833,
+      "macro_auroc": 0.8005703944861486
+    },
+    "learned:translation_012": {
+      "target_operating_points_checked": 38,
+      "macro_recall": 0.04550319909725292,
+      "macro_false_alarms_per10000": 17.971503354898534,
+      "macro_auroc": 0.7985259264205363
+    },
+    "raw_pixels48": {
+      "target_operating_points_checked": 38,
+      "macro_recall": 0.19699971824577223,
+      "macro_false_alarms_per10000": 11.367335331639321,
+      "macro_auroc": 0.7974664353128644
+    }
+  },
+  "result_sha256": "e714a4d5ff444f3df37ba5a19d8a85f5024bfa2d3b37a4dd5e958eb59b7fce77",
+  "score_log_sha256": "ddb2eb641feeb744f2606dbd7584ebeba6c180ca790fb07e29f9ed9e62bebc01",
+  "audit_source_sha256": "7f46ecbdb576ef5f1c39e8f89eac097c39d3934f1466286d75c056c4ce741a52",
+  "checks": [
+    "Exact admitted event roster, labels and time groups",
+    "All target counts at both operating points",
+    "AUROC/AP recomputed with sklearn, tolerance1e-12",
+    "Global CALIB recipe rule",
+    "Multi-target event union and negative-group counts"
+  ],
+  "image_inference_calls": 0,
+  "scope": "Independent saved-score arithmetic/provenance audit; does not establish annotation correctness or physical independence."
+}

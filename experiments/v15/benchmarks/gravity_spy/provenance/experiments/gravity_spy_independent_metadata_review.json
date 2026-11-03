@@ -1,0 +1,27 @@
+{
+  "metadata_valid": true,
+  "review_scope": "Independent officialCSV/group/reference/hash-split/per-target-count recomputation; no pixel decoding or model calls",
+  "plan_sha256": "60f5e7ebd53b3c0789058231f85896c07063132da725fc14534787c9bd73647d",
+  "quality_admission_sha256": "4497103f4c68bc2f644ac851459c51590dd56cda5b480e2db3530332d841e498",
+  "source_metadata_events": 7966,
+  "time_groups": 7416,
+  "split_events": {
+    "test": 6331,
+    "calibration": 1608,
+    "excluded_reference_neighbor": 6,
+    "reference": 20,
+    "excluded_pre_exposed_group": 1
+  },
+  "raw_targets": 20,
+  "eligible_targets": 19,
+  "constant_plot_exclusions": 30,
+  "excluded_reference_labels": [
+    "Extremely_Loud"
+  ],
+  "eligible_calibration_events": 1579,
+  "test_image_sidecars_present": 0,
+  "exposure_groups_fully_excluded": true,
+  "release_gate_review": "Current loader/downloader validate hash syntax, not actual checkpoint/source/calibration paths. Strong outer protocol artifact verification is required beforeTEST acquisition, or strengthen this gate.",
+  "quality_review_limit": "This metadata-only review checks the predeclared exact-constant rule and exclusion bookkeeping, not the actual RGB values of30excluded crops.",
+  "cross_detector_caveat": "Grouping separates H1/L1; physically coincident cross-detector events may remain dependent, as disclosed."
+}

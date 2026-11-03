@@ -1,0 +1,190 @@
+{
+  "format": "hypernet.v15.benchmark_source_snapshots",
+  "files": [
+    {
+      "source": "experiments/audit_gravity_final_data.py",
+      "snapshot": "benchmarks/source_snapshot/experiments/audit_gravity_final_data.py",
+      "sha256": "466309204565c39af232b866afd8dfa276e248f92e6bc5cec5b96379816c931d",
+      "role": "Byte-identical source; historical audits may cite earlier versions."
+    },
+    {
+      "source": "experiments/audit_gravity_spy_prior_exposure.py",
+      "snapshot": "benchmarks/source_snapshot/experiments/audit_gravity_spy_prior_exposure.py",
+      "sha256": "4208d2f23fdc648834dc199789e35e6d6e67673310a0d56d553447684c2ba0bd",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "experiments/audit_source_snapshots/fd7336e56ef9d82462211a8bafd165133d186f7b5ffa152a4d1d334ce1d07383.py",
+      "snapshot": "benchmarks/source_snapshot/experiments/audit_source_snapshots/fd7336e56ef9d82462211a8bafd165133d186f7b5ffa152a4d1d334ce1d07383.py",
+      "sha256": "fd7336e56ef9d82462211a8bafd165133d186f7b5ffa152a4d1d334ce1d07383",
+      "role": "Byte-identical source; historical audits may cite earlier versions."
+    },
+    {
+      "source": "experiments/replay_gravity_final.py",
+      "snapshot": "benchmarks/source_snapshot/experiments/replay_gravity_final.py",
+      "sha256": "e90caa6eb70464b7ed4c40c352bd293660df5f50962412cd072eed61a0ed6d24",
+      "role": "Byte-identical source; historical audits may cite earlier versions."
+    },
+    {
+      "source": "experiments/review_gravity_spy_metadata.py",
+      "snapshot": "benchmarks/source_snapshot/experiments/review_gravity_spy_metadata.py",
+      "sha256": "3adb047d7c9bcca7d4fda8808a3ae9ed6f73f35906f95237e971b2a3119077ad",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "hypernet/detail_encoder.py",
+      "snapshot": "benchmarks/source_snapshot/hypernet/detail_encoder.py",
+      "sha256": "e1e4cd86843b441c92d72292e97b267dbf105e68ceb8b0650f0002ff39867d43",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "hypernet/detail_features.py",
+      "snapshot": "benchmarks/source_snapshot/hypernet/detail_features.py",
+      "sha256": "faff01363202ccbfe38ad487829cfd166c50416c78b325af23bf2d4ae1f72b8d",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "hypernet/gravity_spy.py",
+      "snapshot": "benchmarks/source_snapshot/hypernet/gravity_spy.py",
+      "sha256": "6ca37397180f1637a864a908daf384f371005564c011b32dbf1417cca32be389",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "hypernet/gravity_spy_admission.py",
+      "snapshot": "benchmarks/source_snapshot/hypernet/gravity_spy_admission.py",
+      "sha256": "b7994ac7de9eb79db4a14a46346bd2b81fdbdf92c5184e72975aa0e494fd4942",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "hypernet/gravity_spy_images.py",
+      "snapshot": "benchmarks/source_snapshot/hypernet/gravity_spy_images.py",
+      "sha256": "0f248e7de30f38d0dfa6f1ba5a9fc682d7aafb664c4b1f8ff586f9ea85a981d9",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "hypernet/gravity_spy_quality.py",
+      "snapshot": "benchmarks/source_snapshot/hypernet/gravity_spy_quality.py",
+      "sha256": "f6aa93b5972502344b72c1eb5b9bf219fc1ac215718b9756a2d81b64dfd08465",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "hypernet/grid_anomaly.py",
+      "snapshot": "benchmarks/source_snapshot/hypernet/grid_anomaly.py",
+      "sha256": "70b12b11046ab5422168b4f9b85a30c4186595db97dc6e911065ff8da262ce42",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "hypernet/mvtec_grid.py",
+      "snapshot": "benchmarks/source_snapshot/hypernet/mvtec_grid.py",
+      "sha256": "d1d46475fc66c54f483455b9ea3d0149bd7f4dd0b5b1f59c92e4f1278dfb2019",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "hypernet/pattern_matcher.py",
+      "snapshot": "benchmarks/source_snapshot/hypernet/pattern_matcher.py",
+      "sha256": "ba01b18fdd586b76629552687aa5a05c24b526208c5451867df7d6dcb009ced5",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "hypernet/rare_event_metrics.py",
+      "snapshot": "benchmarks/source_snapshot/hypernet/rare_event_metrics.py",
+      "sha256": "d53397d708c2c20a0b67da7e2352bcce98df4cec02c81846c835137fc47fad09",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "scripts/analyze_gravity_spy_v15.py",
+      "snapshot": "benchmarks/source_snapshot/scripts/analyze_gravity_spy_v15.py",
+      "sha256": "d153ab36e1eadf78825a24d08b62ce8daceaa4533b956a01bc34027f0d8cc627",
+      "role": "Byte-identical source; historical audits may cite earlier versions."
+    },
+    {
+      "source": "scripts/audit_gravity_calibration_independent.py",
+      "snapshot": "benchmarks/source_snapshot/scripts/audit_gravity_calibration_independent.py",
+      "sha256": "5b6ebf157b9ee19d8ee24b19f47f806825c9f9a3b2e846c4847886e6e754cf93",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "scripts/audit_gravity_scores.py",
+      "snapshot": "benchmarks/source_snapshot/scripts/audit_gravity_scores.py",
+      "sha256": "7f46ecbdb576ef5f1c39e8f89eac097c39d3934f1466286d75c056c4ce741a52",
+      "role": "Byte-identical source; historical audits may cite earlier versions."
+    },
+    {
+      "source": "scripts/audit_gravity_spy_quality.py",
+      "snapshot": "benchmarks/source_snapshot/scripts/audit_gravity_spy_quality.py",
+      "sha256": "2d1a49c5629721944100bbc35a9567f65d8852c0dc2017083abb4f0ba8e95b40",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "scripts/audit_grid_results_independent.py",
+      "snapshot": "benchmarks/source_snapshot/scripts/audit_grid_results_independent.py",
+      "sha256": "ba34c7a4897bf7510bd712195d9f4ac288033e9641aa9a5b31c7a309596e2458",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "scripts/evaluate_gravity_spy_v15.py",
+      "snapshot": "benchmarks/source_snapshot/scripts/evaluate_gravity_spy_v15.py",
+      "sha256": "05460fdb87e2e1b840c7d848b2bfa48c7c0d0801c491f2ee0ab03e7cc4f7c3c0",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "scripts/evaluate_grid_v15.py",
+      "snapshot": "benchmarks/source_snapshot/scripts/evaluate_grid_v15.py",
+      "sha256": "e1ad8bf245cb3a51fa1be7682d265c7d814ee257b926e1774e52df8c5f3bef98",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "scripts/freeze_gravity_spy_v15.py",
+      "snapshot": "benchmarks/source_snapshot/scripts/freeze_gravity_spy_v15.py",
+      "sha256": "3c901b5e2a8ea7da9c0b727151a8221452cb050ae274745d8be04e9f19fef733",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "scripts/one_reference_patterns.py",
+      "snapshot": "benchmarks/source_snapshot/scripts/one_reference_patterns.py",
+      "sha256": "38c055fa4afeb20b2ead9e39b9f68818ac639eef7d8039c46fa04aae46350236",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "scripts/prepare_gravity_spy.py",
+      "snapshot": "benchmarks/source_snapshot/scripts/prepare_gravity_spy.py",
+      "sha256": "8755f39b36798aa78572b745bf153b36cc9b4f0547b898f2a6ee9c3a0baaa3ad",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "scripts/prepare_mvtec_grid.py",
+      "snapshot": "benchmarks/source_snapshot/scripts/prepare_mvtec_grid.py",
+      "sha256": "f19e19ae593d0d2d7e144e907e67fc982c0c9c375b0faf5de38be50b7f9de6b0",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "scripts/profile_pattern_matcher.py",
+      "snapshot": "benchmarks/source_snapshot/scripts/profile_pattern_matcher.py",
+      "sha256": "9d0a0107d5e2de1900c759f20d6f0d2b0f0883edd7534471b94170bfb5ac2057",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "scripts/recompute_public_gravity_metrics.py",
+      "snapshot": "benchmarks/source_snapshot/scripts/recompute_public_gravity_metrics.py",
+      "sha256": "b9402cb2be24223dc78c6ec81b0995ef82c780baace912681472806ba61ae125",
+      "role": "Byte-identical source; historical audits may cite earlier versions."
+    },
+    {
+      "source": "scripts/recompute_public_grid_metrics.py",
+      "snapshot": "benchmarks/source_snapshot/scripts/recompute_public_grid_metrics.py",
+      "sha256": "a5e5e089a6cdfe53a7823165086132aa373731cfbe353a48eaadc0c39c81d732",
+      "role": "byte-identical source snapshot; original relative imports/paths retained"
+    },
+    {
+      "source": "tests/test_gravity_bootstrap.py",
+      "snapshot": "benchmarks/source_snapshot/tests/test_gravity_bootstrap.py",
+      "sha256": "ec1b72d36765e48b66aa178c76d2b1e63245b00fd4d141652c29a8527b8da2c8",
+      "role": "Byte-identical source; historical audits may cite earlier versions."
+    }
+  ],
+  "grid_original_protocol_sha256": "250bd960bb6fe12c8cbd84308c6391c7984f9c02127565a72b077dbbade746ba",
+  "gravity_original_protocol_sha256": "4a24995ae9981caa52ba5fb52afd70d407d425ef84253040daa9522202f7414f",
+  "sources_byte_identical": true,
+  "test_image_data_included": false,
+  "historical_audit_source_note": "Primary/random TEST audits used an archived exact audit source; later TEST audits use the equivalent group-count optimization, whose validation record is included. Earlier CALIB audits may cite older source hashes not represented by the current version. Original hashes are retained."
+}

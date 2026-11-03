@@ -1,0 +1,1056 @@
+{
+  "format": "hypernet.v15.sanitized_benchmark_metadata",
+  "created_utc": "2026-11-03T00:50:47.353028+00:00",
+  "artifacts": [
+    {
+      "original_artifact": "experiments/grid_protocol_freeze.json",
+      "original_sha256": "250bd960bb6fe12c8cbd84308c6391c7984f9c02127565a72b077dbbade746ba",
+      "public_artifact": "benchmarks/grid/provenance/experiments/grid_protocol_freeze.json",
+      "public_sha256": "fe37b1b90cd8545619b9a7e63338550bc081747249a914c24cb6a33f6ad62a76",
+      "byte_identical": false,
+      "transformation": "recursive local-root path/key sanitization; embedded original hashes remain original",
+      "path_rewrites": [
+        {
+          "original_string_sha256": "81e8fef5d760ca73cde6cc3be618b8f294f05db00565c905a0ccafa073dcb867",
+          "public_string": "${V15_ROOT}\\results\\grid_final_dev\\grid_results.json"
+        },
+        {
+          "original_string_sha256": "c42f9e4d9a2035d30a20b54deef546327b67b2bc4b258b66f236e2c4b934c3aa",
+          "public_string": "${V15_ROOT}\\results\\grid_final_dev\\learned_final_scores.jsonl"
+        },
+        {
+          "original_string_sha256": "2d5a1b9336c10c18947b901ff7693c0daef4558741f6f49cd71b3ac21e2375b8",
+          "public_string": "${V15_ROOT}\\results\\grid_final_dev\\random_scores.jsonl"
+        },
+        {
+          "original_string_sha256": "b49fa5e6616a172ac098c30f382bbd550c414ac5318056ce65f0649b00d680f2",
+          "public_string": "${V15_ROOT}\\results\\grid_final_dev\\analytic_detail_scores.jsonl"
+        },
+        {
+          "original_string_sha256": "fad04818162c35a030c8d4e9095e98a9618371748fda65d2fe3201b7351dbee2",
+          "public_string": "${V15_ROOT}\\checkpoints\\details_run01\\families_1048576.pt"
+        },
+        {
+          "original_string_sha256": "8e28e0d4ae4820797a230d27a14464caef64b405cdc100f71839c851794e965a",
+          "public_string": "${V15_ROOT}\\checkpoints\\details_run01\\random_initial.pt"
+        },
+        {
+          "original_string_sha256": "fad04818162c35a030c8d4e9095e98a9618371748fda65d2fe3201b7351dbee2",
+          "public_string": "${V15_ROOT}\\checkpoints\\details_run01\\families_1048576.pt"
+        },
+        {
+          "original_string_sha256": "8e28e0d4ae4820797a230d27a14464caef64b405cdc100f71839c851794e965a",
+          "public_string": "${V15_ROOT}\\checkpoints\\details_run01\\random_initial.pt"
+        },
+        {
+          "original_string_sha256": "81e8fef5d760ca73cde6cc3be618b8f294f05db00565c905a0ccafa073dcb867",
+          "public_string": "${V15_ROOT}\\results\\grid_final_dev\\grid_results.json"
+        }
+      ]
+    },
+    {
+      "original_artifact": "experiments/grid_method_plan.json",
+      "original_sha256": "f923a8a47b36c5cc03d115295e72b2f4ae3e05f3ea38de9206afc465d01ef0cc",
+      "public_artifact": "benchmarks/grid/provenance/experiments/grid_method_plan.json",
+      "public_sha256": "f923a8a47b36c5cc03d115295e72b2f4ae3e05f3ea38de9206afc465d01ef0cc",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/grid_scorer_independent_review.json",
+      "original_sha256": "f35b0afbf1b20758651bbab46748268b052c333dc0d5ee3e4c8434d21062747d",
+      "public_artifact": "benchmarks/grid/provenance/experiments/grid_scorer_independent_review.json",
+      "public_sha256": "f35b0afbf1b20758651bbab46748268b052c333dc0d5ee3e4c8434d21062747d",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/grid_results_independent_audit.json",
+      "original_sha256": "8eea014d503f292a424b4b1ebdc661dcfd8ac39f9ffe0f9660f6fc78c1175109",
+      "public_artifact": "benchmarks/grid/provenance/experiments/grid_results_independent_audit.json",
+      "public_sha256": "8eea014d503f292a424b4b1ebdc661dcfd8ac39f9ffe0f9660f6fc78c1175109",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/mvtec_grid_data_audit.json",
+      "original_sha256": "6403646812bdb82677738acf51dfd9d5f6d55bd9eedcfc777a7ccfa7e73f957a",
+      "public_artifact": "benchmarks/grid/provenance/experiments/mvtec_grid_data_audit.json",
+      "public_sha256": "6403646812bdb82677738acf51dfd9d5f6d55bd9eedcfc777a7ccfa7e73f957a",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/grid_evidence_bundle.json",
+      "original_sha256": "d4d96f10226d00913ddbc6895f28a4e0c161797a7e8467173252deadb533f61f",
+      "public_artifact": "benchmarks/grid/provenance/experiments/grid_evidence_bundle.json",
+      "public_sha256": "d4d96f10226d00913ddbc6895f28a4e0c161797a7e8467173252deadb533f61f",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "data/mvtec_grid_v15/acquisition_plan.json",
+      "original_sha256": "5b816b589debe4185b6c4e303014df19dc50eb86b4d79fc4094d35c26080d7e1",
+      "public_artifact": "benchmarks/grid/provenance/data/mvtec_grid_v15/acquisition_plan.json",
+      "public_sha256": "5b816b589debe4185b6c4e303014df19dc50eb86b4d79fc4094d35c26080d7e1",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "data/mvtec_grid_v15/archive_inventory.json",
+      "original_sha256": "4f048b31dae45923976ffa5b414f571bf3e3624c4c4b1ebf45f8e51067a54e19",
+      "public_artifact": "benchmarks/grid/provenance/data/mvtec_grid_v15/archive_inventory.json",
+      "public_sha256": "4f048b31dae45923976ffa5b414f571bf3e3624c4c4b1ebf45f8e51067a54e19",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "data/mvtec_grid_v15/roster_freeze.json",
+      "original_sha256": "1b200202f0c88670502f921b6c0a4a7ad0a5307e1f3204e7e4bf7d5004e14f8b",
+      "public_artifact": "benchmarks/grid/provenance/data/mvtec_grid_v15/roster_freeze.json",
+      "public_sha256": "1b200202f0c88670502f921b6c0a4a7ad0a5307e1f3204e7e4bf7d5004e14f8b",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "data/mvtec_grid_v15/manifest.json",
+      "original_sha256": "14d18a61b0579fabe254f64553141a10de6d02ad482e06ddd528bc3d9232595d",
+      "public_artifact": "benchmarks/grid/provenance/data/mvtec_grid_v15/manifest.json",
+      "public_sha256": "14d18a61b0579fabe254f64553141a10de6d02ad482e06ddd528bc3d9232595d",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "data/mvtec_grid_v15/development_manifest.json",
+      "original_sha256": "b4fa5edc9d273175487944286c8b78bc28512365505140898bca1cd7e40ac6a3",
+      "public_artifact": "benchmarks/grid/provenance/data/mvtec_grid_v15/development_manifest.json",
+      "public_sha256": "b4fa5edc9d273175487944286c8b78bc28512365505140898bca1cd7e40ac6a3",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "data/mvtec_grid_v15/test_admission.json",
+      "original_sha256": "84cb799eaed99331b32d50b12c9bc0c7e99c93282fc6f5bd171f96a2504d661e",
+      "public_artifact": "benchmarks/grid/provenance/data/mvtec_grid_v15/test_admission.json",
+      "public_sha256": "3569d92db61c53ce9204d9a4d10d3bc38b0f03f157fc7bbbf66ae66c2e9d1999",
+      "byte_identical": false,
+      "transformation": "recursive local-root path/key sanitization; embedded original hashes remain original",
+      "path_rewrites": [
+        {
+          "original_string_sha256": "d948a15e7e6d1c774bd19709c32a82791957f32e84c7de14dfbfee57f55c3d59",
+          "public_string": "${V15_ROOT}\\experiments\\grid_protocol_freeze.json"
+        }
+      ]
+    },
+    {
+      "original_artifact": "results/grid_final_dev/grid_results.json",
+      "original_sha256": "7cce1ea706f0546da0b1d3d3286fabef3c0cff7ca65c56aca941b1d7862c3250",
+      "public_artifact": "benchmarks/grid/provenance/results/grid_final_dev/grid_results.json",
+      "public_sha256": "9b57aad59f7c785a020f6730daa74dde1eb522a8414b0f516c10373d8d1c5a64",
+      "byte_identical": false,
+      "transformation": "recursive local-root path/key sanitization; embedded original hashes remain original",
+      "path_rewrites": [
+        {
+          "original_string_sha256": "fad04818162c35a030c8d4e9095e98a9618371748fda65d2fe3201b7351dbee2",
+          "public_string": "${V15_ROOT}\\checkpoints\\details_run01\\families_1048576.pt"
+        },
+        {
+          "original_string_sha256": "8e28e0d4ae4820797a230d27a14464caef64b405cdc100f71839c851794e965a",
+          "public_string": "${V15_ROOT}\\checkpoints\\details_run01\\random_initial.pt"
+        }
+      ]
+    },
+    {
+      "original_artifact": "results/grid_final_test/grid_results.json",
+      "original_sha256": "48ba60804f2972ca0bfb5c7519c44462a87dabfb5d699fadfbb65bf085354550",
+      "public_artifact": "benchmarks/grid/provenance/results/grid_final_test/grid_results.json",
+      "public_sha256": "238c597c666861560ac8c023cad1e5a711cd36553604bd7e6e71046659cd48ce",
+      "byte_identical": false,
+      "transformation": "recursive local-root path/key sanitization; embedded original hashes remain original",
+      "path_rewrites": [
+        {
+          "original_string_sha256": "fad04818162c35a030c8d4e9095e98a9618371748fda65d2fe3201b7351dbee2",
+          "public_string": "${V15_ROOT}\\checkpoints\\details_run01\\families_1048576.pt"
+        },
+        {
+          "original_string_sha256": "8e28e0d4ae4820797a230d27a14464caef64b405cdc100f71839c851794e965a",
+          "public_string": "${V15_ROOT}\\checkpoints\\details_run01\\random_initial.pt"
+        }
+      ]
+    },
+    {
+      "original_artifact": "results/grid_final_dev/learned_final_scores.jsonl",
+      "original_sha256": "cd0fdb6895659910ef29119edfd5ca328e80461238d1163fe812429312e88b58",
+      "public_artifact": "benchmarks/grid/provenance/results/grid_final_dev/learned_final_scores.jsonl",
+      "public_sha256": "cd0fdb6895659910ef29119edfd5ca328e80461238d1163fe812429312e88b58",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "results/grid_final_dev/random_scores.jsonl",
+      "original_sha256": "570c0386522392e5d37fbaf9fc4bd7a34b1703e4457029530564443e5bc3d90b",
+      "public_artifact": "benchmarks/grid/provenance/results/grid_final_dev/random_scores.jsonl",
+      "public_sha256": "570c0386522392e5d37fbaf9fc4bd7a34b1703e4457029530564443e5bc3d90b",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "results/grid_final_dev/analytic_detail_scores.jsonl",
+      "original_sha256": "a794f43a99d553c43b1925a60777140d0fe9b748aa5fdcf293f968017ffb6897",
+      "public_artifact": "benchmarks/grid/provenance/results/grid_final_dev/analytic_detail_scores.jsonl",
+      "public_sha256": "a794f43a99d553c43b1925a60777140d0fe9b748aa5fdcf293f968017ffb6897",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "results/grid_final_test/learned_final_scores.jsonl",
+      "original_sha256": "1b8028f5b7afe40bf8b6a03cbf04f50c0b01b21ea057c411108344dfe056234e",
+      "public_artifact": "benchmarks/grid/provenance/results/grid_final_test/learned_final_scores.jsonl",
+      "public_sha256": "1b8028f5b7afe40bf8b6a03cbf04f50c0b01b21ea057c411108344dfe056234e",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "results/grid_final_test/random_scores.jsonl",
+      "original_sha256": "e6c8a253d168721e3b21ba00ec972c050a358a1b4e7f3c8362014bf8ab767169",
+      "public_artifact": "benchmarks/grid/provenance/results/grid_final_test/random_scores.jsonl",
+      "public_sha256": "e6c8a253d168721e3b21ba00ec972c050a358a1b4e7f3c8362014bf8ab767169",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "results/grid_final_test/analytic_detail_scores.jsonl",
+      "original_sha256": "378aa3aeb99e7a86c332a00e9ce12af5e2ea19e7b9b0d2ae152abbe1c20188ec",
+      "public_artifact": "benchmarks/grid/provenance/results/grid_final_test/analytic_detail_scores.jsonl",
+      "public_sha256": "378aa3aeb99e7a86c332a00e9ce12af5e2ea19e7b9b0d2ae152abbe1c20188ec",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "data/gravity_spy_v15_final/acquisition_calibration_1608.json",
+      "original_sha256": "d6d731776f32b2e530338de69643ee817fe83c7b1e383320fba70544ed803645",
+      "public_artifact": "benchmarks/gravity_spy/provenance/data/gravity_spy_v15_final/acquisition_calibration_1608.json",
+      "public_sha256": "d6d731776f32b2e530338de69643ee817fe83c7b1e383320fba70544ed803645",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "data/gravity_spy_v15_final/acquisition_reference_20.json",
+      "original_sha256": "1b074d619ecf6318e4bb8ef65b3be2ba624a2dfcaf362a01c14aa07829115688",
+      "public_artifact": "benchmarks/gravity_spy/provenance/data/gravity_spy_v15_final/acquisition_reference_20.json",
+      "public_sha256": "1b074d619ecf6318e4bb8ef65b3be2ba624a2dfcaf362a01c14aa07829115688",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "data/gravity_spy_v15_final/acquisition_test_4119.json",
+      "original_sha256": "66ef038cc3f7b49bb3d6a5ebdbc0edc0071470f70b8b6496df3f4a8c6be7e7a5",
+      "public_artifact": "benchmarks/gravity_spy/provenance/data/gravity_spy_v15_final/acquisition_test_4119.json",
+      "public_sha256": "66ef038cc3f7b49bb3d6a5ebdbc0edc0071470f70b8b6496df3f4a8c6be7e7a5",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "data/gravity_spy_v15_final/prior_exposure_admission.json",
+      "original_sha256": "620492f4ea6e3b0c9aa58cdbff4b2cf413af808e7935d8910ce98b9a849732e4",
+      "public_artifact": "benchmarks/gravity_spy/provenance/data/gravity_spy_v15_final/prior_exposure_admission.json",
+      "public_sha256": "1fa24ad5b2a772fe53a81d95f396eeb2f91d5baa15ed31cecb5670d4f44f254b",
+      "byte_identical": false,
+      "transformation": "Recursive local-path/key sanitization; original embedded hashes retained",
+      "path_rewrites": [
+        {
+          "original_string_sha256": "3e99875f886ecc9b3d6f71634c6e685d6ca56481fc4a90944b9ff29408389ec4",
+          "public_string": "${PUBLIC_REPO}\\benchmarks\\gravity_spy_v0.1\\protocol.json"
+        },
+        {
+          "original_string_sha256": "789f96974e77a513708536ad34f5d6c32097f12f1200794ee055970efe17fe74",
+          "public_string": "${PUBLIC_REPO}\\benchmarks\\gravity_spy_v0.1\\scores.npz"
+        },
+        {
+          "original_string_sha256": "919ab344d68704a32fe683c4a0e07c3df9a650d435ae71726de3f89b1abb721e",
+          "public_string": "${PUBLIC_REPO}\\benchmarks\\gravity_spy_v0.1\\per_reference.jsonl"
+        },
+        {
+          "original_string_sha256": "0ef4f522b3d2859f24065ffe9647c7001906f51c682be6d5ddfeb4104767139d",
+          "public_string": "${PUBLIC_REPO}\\benchmarks\\gravity_spy_v0.1\\results.json"
+        }
+      ]
+    },
+    {
+      "original_artifact": "data/gravity_spy_v15_final/quality_admission.json",
+      "original_sha256": "4497103f4c68bc2f644ac851459c51590dd56cda5b480e2db3530332d841e498",
+      "public_artifact": "benchmarks/gravity_spy/provenance/data/gravity_spy_v15_final/quality_admission.json",
+      "public_sha256": "4497103f4c68bc2f644ac851459c51590dd56cda5b480e2db3530332d841e498",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "data/gravity_spy_v15_final/quality_test_audit.json",
+      "original_sha256": "bd587ae371082466eb8c2e81cb36fa46983cf1daa23c41ee8e1b9585bd8cfc90",
+      "public_artifact": "benchmarks/gravity_spy/provenance/data/gravity_spy_v15_final/quality_test_audit.json",
+      "public_sha256": "bd587ae371082466eb8c2e81cb36fa46983cf1daa23c41ee8e1b9585bd8cfc90",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "data/gravity_spy_v15_final/roster_freeze.json",
+      "original_sha256": "2a9806c1ed1ee6ca7cabbcfcb7d51b9c5741cbf50cf3127956f2ae5c9935330b",
+      "public_artifact": "benchmarks/gravity_spy/provenance/data/gravity_spy_v15_final/roster_freeze.json",
+      "public_sha256": "2a9806c1ed1ee6ca7cabbcfcb7d51b9c5741cbf50cf3127956f2ae5c9935330b",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_audit_group_optimization.json",
+      "original_sha256": "a42fbfd65db33b4e928154eaa9d34694172c976b19835b3a78327dcfacdbbc36",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_audit_group_optimization.json",
+      "public_sha256": "a42fbfd65db33b4e928154eaa9d34694172c976b19835b3a78327dcfacdbbc36",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_calibration_065536/independent_score_audit.json",
+      "original_sha256": "e81e8f9ca69d5eceed12d90a961a9f6e891444878b78af9e51f1da361c271e0b",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_calibration_065536/independent_score_audit.json",
+      "public_sha256": "e81e8f9ca69d5eceed12d90a961a9f6e891444878b78af9e51f1da361c271e0b",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_calibration_065536/results.json",
+      "original_sha256": "0c09c87cba555d5bc8aa732068ee3fa3e61c530093c1ca20378d9ef8112648d2",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_calibration_065536/results.json",
+      "public_sha256": "0c09c87cba555d5bc8aa732068ee3fa3e61c530093c1ca20378d9ef8112648d2",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_calibration_262144/independent_score_audit.json",
+      "original_sha256": "a4dcb2f5e9055351a90eafc80d5bfe1467b5df5fc96483d26af95cfdedd88f31",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_calibration_262144/independent_score_audit.json",
+      "public_sha256": "a4dcb2f5e9055351a90eafc80d5bfe1467b5df5fc96483d26af95cfdedd88f31",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_calibration_262144/results.json",
+      "original_sha256": "7b30b81ef5d65b0317205722cabb02e5db018732e829d2e444cc99df14e1062b",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_calibration_262144/results.json",
+      "public_sha256": "7b30b81ef5d65b0317205722cabb02e5db018732e829d2e444cc99df14e1062b",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_calibration_final/independent_score_audit.json",
+      "original_sha256": "6c567aea6e93759516a04034223306a3614ff51d706c584afbeb2e83429afcda",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_calibration_final/independent_score_audit.json",
+      "public_sha256": "6c567aea6e93759516a04034223306a3614ff51d706c584afbeb2e83429afcda",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_calibration_final/results.json",
+      "original_sha256": "1aaf5e718c3f94f95f53efd19ea217a8218f162ed0442733a86080439922a057",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_calibration_final/results.json",
+      "public_sha256": "1aaf5e718c3f94f95f53efd19ea217a8218f162ed0442733a86080439922a057",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_calibration_independent_audit.json",
+      "original_sha256": "307a3c3229019c126d20043b87c5bec8acfca76120b1f08d719cc48748352057",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_calibration_independent_audit.json",
+      "public_sha256": "307a3c3229019c126d20043b87c5bec8acfca76120b1f08d719cc48748352057",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_calibration_random/independent_score_audit.json",
+      "original_sha256": "e3d28eb5ac82d51559438684449a5c94e561c61ac39a2573381790c9baa78c53",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_calibration_random/independent_score_audit.json",
+      "public_sha256": "e3d28eb5ac82d51559438684449a5c94e561c61ac39a2573381790c9baa78c53",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_calibration_random/results.json",
+      "original_sha256": "94f3e13be96015d43afac439a40df0d5b91830ad5fe097af7a22ca38e7766964",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_calibration_random/results.json",
+      "public_sha256": "94f3e13be96015d43afac439a40df0d5b91830ad5fe097af7a22ca38e7766964",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_matcher_independent_review.json",
+      "original_sha256": "1409ed8c52a595de0c043c7ec17f8a9a04e39f5e32b00495a0ad4c55dc2205f3",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_matcher_independent_review.json",
+      "public_sha256": "1409ed8c52a595de0c043c7ec17f8a9a04e39f5e32b00495a0ad4c55dc2205f3",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_spy_bootstrap_plan.json",
+      "original_sha256": "d6fe4c1c80dca21eec2b27ee18d198ae81d82ee40d626d3e88b3e440f3f4c6ff",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_spy_bootstrap_plan.json",
+      "public_sha256": "d6fe4c1c80dca21eec2b27ee18d198ae81d82ee40d626d3e88b3e440f3f4c6ff",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_spy_development_data_audit.json",
+      "original_sha256": "a45bf8d71992c450420045054ca7d7c650ab6bf747de44c9d6fc03143d57a847",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_spy_development_data_audit.json",
+      "public_sha256": "a45bf8d71992c450420045054ca7d7c650ab6bf747de44c9d6fc03143d57a847",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_spy_exact_replay_roster.json",
+      "original_sha256": "c2816f1d7fa39135431af28b59e6314f0911d14892c6f91901a16802b768ee94",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_spy_exact_replay_roster.json",
+      "public_sha256": "c2816f1d7fa39135431af28b59e6314f0911d14892c6f91901a16802b768ee94",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_spy_final_data_independent_audit.json",
+      "original_sha256": "976365c8a578f5ae0b62d805253b3782e9f04a43e35cc7c4af4b6e9a1a6efb43",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_spy_final_data_independent_audit.json",
+      "public_sha256": "492d8c4edd9389cded0e619325a4bd8eed841ae3c0157fa3a45516085fd53dcb",
+      "byte_identical": false,
+      "transformation": "Recursive local-path/key sanitization; original embedded hashes retained",
+      "path_rewrites": [
+        {
+          "original_string_sha256": "d7af4b936dd1edcab4903aa3b458e574297bb35ade3e6f5b90571bee125585df",
+          "public_string": "${V15_ROOT}\\data\\gravity_spy_v15_final\\plan.json"
+        },
+        {
+          "original_string_sha256": "f1796cb20f1b715a65f09474b0bbc8de0386823ba48e8eb02a7644c6f954b388",
+          "public_string": "${V15_ROOT}\\data\\gravity_spy_v15_final\\roster_freeze.json"
+        },
+        {
+          "original_string_sha256": "d6134fd0d5a69d486af0ebd48f0744060b07b95ebe10b465cacffc2f22b9fc18",
+          "public_string": "${V15_ROOT}\\data\\gravity_spy_v15_final\\prior_exposure_admission.json"
+        },
+        {
+          "original_string_sha256": "4d756ad1dfc6a2f569f1cbfdd120ddbda2c6c74318810795aa5cd28748b4a697",
+          "public_string": "${V15_ROOT}\\data\\gravity_spy_v15_final\\quality_admission.json"
+        },
+        {
+          "original_string_sha256": "27bf42de222322ad69b9e4d2f2b73a8b8cd466f51ef2eb6896cc6065337ee6b5",
+          "public_string": "${V15_ROOT}\\data\\gravity_spy_v15_final\\quality_test_audit.json"
+        },
+        {
+          "original_string_sha256": "7fa04b16a38e51bc36bf16d1ddce930ed795157566906c1063e7cfd5c49b7e1e",
+          "public_string": "${V15_ROOT}\\data\\gravity_spy_v15_final\\acquisition_reference_20.json"
+        },
+        {
+          "original_string_sha256": "8cfd3a7b8a4789ea756824226552d0c615bb67b198bbc85b567dd56f5ee413f3",
+          "public_string": "${V15_ROOT}\\data\\gravity_spy_v15_final\\acquisition_calibration_1608.json"
+        },
+        {
+          "original_string_sha256": "6c4329ab494763ca501fa7174ca2c4553dc7d6f812855f59dcbc7e93b4cde2b8",
+          "public_string": "${V15_ROOT}\\data\\gravity_spy_v15_final\\acquisition_test_4119.json"
+        },
+        {
+          "original_string_sha256": "d3bf26c16734fef47a01cd07363b6f713b2567d1eabbc98aff353645acb84d8d",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_spy_test_admission.json"
+        },
+        {
+          "original_string_sha256": "39bf78f2ed5c07198e637580ea59db9d0105ada747ccdf01b93c9b49d7a29ab1",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_spy_protocol_freeze.json"
+        },
+        {
+          "original_string_sha256": "359a26cea24a35dc4b491209e3aeaa95c263400fe2442d447f8bbd0cfadb6287",
+          "public_string": "${V15_ROOT}\\hypernet\\detail_encoder.py"
+        },
+        {
+          "original_string_sha256": "db9b55947906282fe1ad77246e017cbc9aaf28a42cc21cca2b23c9367d62504b",
+          "public_string": "${V15_ROOT}\\hypernet\\detail_features.py"
+        },
+        {
+          "original_string_sha256": "14694aa86dd6ff296765e8b8ad932dbbc290fe2ae53068c9a23aa6cefb0f9cf8",
+          "public_string": "${V15_ROOT}\\hypernet\\pattern_matcher.py"
+        },
+        {
+          "original_string_sha256": "fa3485a26f1e0fad419027cb8974aab1fb544011718b526d1da5b86d4c67f63d",
+          "public_string": "${V15_ROOT}\\hypernet\\gravity_spy.py"
+        },
+        {
+          "original_string_sha256": "c6d1ff857bf141db2e77ec9e590a2c3a22870979bda9a5627957b4fea3d3bd07",
+          "public_string": "${V15_ROOT}\\hypernet\\gravity_spy_images.py"
+        },
+        {
+          "original_string_sha256": "26e4b07b9f64d80be80caabddd5e4079f951b2d100aab45d875b01e7da809dca",
+          "public_string": "${V15_ROOT}\\hypernet\\gravity_spy_quality.py"
+        },
+        {
+          "original_string_sha256": "5992f799ff056c406e7a82cbc80db4c240288f64b69b05a0be6363f21c3c0641",
+          "public_string": "${V15_ROOT}\\hypernet\\rare_event_metrics.py"
+        },
+        {
+          "original_string_sha256": "2b5258cc1c1daf073efd5021ed4b740afbeec56fab05d53a6c79de39ea8be363",
+          "public_string": "${V15_ROOT}\\hypernet\\gravity_spy_admission.py"
+        },
+        {
+          "original_string_sha256": "128f35db070c2b3941b9d17c4d0031bafb70f67ab85d5537921e0bf71f1114f2",
+          "public_string": "${V15_ROOT}\\scripts\\evaluate_gravity_spy_v15.py"
+        },
+        {
+          "original_string_sha256": "454968b01a83360b295152c1670eeb46568a6c0cb0bdcb9bbf293757651cc4c4",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_calibration_random\\results.json"
+        },
+        {
+          "original_string_sha256": "027d15eb113168d20c661731a442013827c506635874399c81660b2cf252d15d",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_calibration_random\\event_scores.jsonl"
+        },
+        {
+          "original_string_sha256": "a21fffcd86ec52dcc7b1056901a47b78e02c3b738121d6cd18fdbc274cb4cb30",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_calibration_065536\\results.json"
+        },
+        {
+          "original_string_sha256": "91118e663217c1f484b507c5d02f1edba4d4bb10ae0beae813bbf29da5342a05",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_calibration_065536\\event_scores.jsonl"
+        },
+        {
+          "original_string_sha256": "cdbbd78d7ccbfa7b31703947a5b43587cb886d47b67f4ef47227fe816c191eed",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_calibration_262144\\results.json"
+        },
+        {
+          "original_string_sha256": "109e334ef9f36873f5263ff6b3910b79366667fc82db19de632c8122d5bc934b",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_calibration_262144\\event_scores.jsonl"
+        },
+        {
+          "original_string_sha256": "ab577798232f6edd6efd27670e6bace4f4e6fe1fe631b321af33bd1638cc2c4e",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_calibration_final\\results.json"
+        },
+        {
+          "original_string_sha256": "c7f7e3a2ec9fdbef3ff2d84e12effce24c8e4a4aa34261bbe7cd826d3860f2ec",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_calibration_final\\event_scores.jsonl"
+        },
+        {
+          "original_string_sha256": "094efa737f54095f41c1715ff49fa869794641260f291d376206f4adaea20b13",
+          "public_string": "${V15_ROOT}\\scripts\\prepare_gravity_spy.py"
+        },
+        {
+          "original_string_sha256": "f6b371843cb5a826482ad7c6b2600d080f107f9182665a71fec596ac3bf010a1",
+          "public_string": "${V15_ROOT}\\scripts\\audit_gravity_spy_quality.py"
+        },
+        {
+          "original_string_sha256": "4af78e83efbffaac3a945783e54716ba8f2bdf53a7602e76cb4b6b3db8ee72bf",
+          "public_string": "${V15_ROOT}\\scripts\\freeze_gravity_spy_v15.py"
+        },
+        {
+          "original_string_sha256": "27e7057d72d4bdbbd70da06d65a66e0e269056fbe9711b2f2b600b6d08459e67",
+          "public_string": "${V15_ROOT}\\checkpoints\\details_run01\\admission.json"
+        },
+        {
+          "original_string_sha256": "a9d4ebb2f99214d0a1f0f85487960cb75755dd3708dc3ef032d8e456faa91d31",
+          "public_string": "${V15_ROOT}\\checkpoints\\details_run01\\completed.json"
+        },
+        {
+          "original_string_sha256": "8e28e0d4ae4820797a230d27a14464caef64b405cdc100f71839c851794e965a",
+          "public_string": "${V15_ROOT}\\checkpoints\\details_run01\\random_initial.pt"
+        },
+        {
+          "original_string_sha256": "1fe97e47cc1d3907099b2843e6d7d932775bc4d0459539801987926841408a41",
+          "public_string": "${V15_ROOT}\\checkpoints\\details_run01\\families_0065536.pt"
+        },
+        {
+          "original_string_sha256": "91b9e20e263f3cb1786ebca2c3d2ffe781908a1df539ae1695c28fb29a3896c0",
+          "public_string": "${V15_ROOT}\\checkpoints\\details_run01\\families_0262144.pt"
+        },
+        {
+          "original_string_sha256": "fad04818162c35a030c8d4e9095e98a9618371748fda65d2fe3201b7351dbee2",
+          "public_string": "${V15_ROOT}\\checkpoints\\details_run01\\families_1048576.pt"
+        },
+        {
+          "original_string_sha256": "3e99875f886ecc9b3d6f71634c6e685d6ca56481fc4a90944b9ff29408389ec4",
+          "public_string": "${PUBLIC_REPO}\\benchmarks\\gravity_spy_v0.1\\protocol.json"
+        },
+        {
+          "original_string_sha256": "789f96974e77a513708536ad34f5d6c32097f12f1200794ee055970efe17fe74",
+          "public_string": "${PUBLIC_REPO}\\benchmarks\\gravity_spy_v0.1\\scores.npz"
+        },
+        {
+          "original_string_sha256": "919ab344d68704a32fe683c4a0e07c3df9a650d435ae71726de3f89b1abb721e",
+          "public_string": "${PUBLIC_REPO}\\benchmarks\\gravity_spy_v0.1\\per_reference.jsonl"
+        },
+        {
+          "original_string_sha256": "0ef4f522b3d2859f24065ffe9647c7001906f51c682be6d5ddfeb4104767139d",
+          "public_string": "${PUBLIC_REPO}\\benchmarks\\gravity_spy_v0.1\\results.json"
+        }
+      ]
+    },
+    {
+      "original_artifact": "experiments/gravity_spy_independent_metadata_review.json",
+      "original_sha256": "be47629617391cd71517912b0fd6d8beae2d0695ed4093709523e0cb365dd7f9",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_spy_independent_metadata_review.json",
+      "public_sha256": "be47629617391cd71517912b0fd6d8beae2d0695ed4093709523e0cb365dd7f9",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_spy_inference_replay.json",
+      "original_sha256": "d2535df4a1f40e3336fe4f274100ed1d6fd0e180a0ee1f9db6b9351c38f34c25",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_spy_inference_replay.json",
+      "public_sha256": "3825afd147acb078a9b7d5feeaad0f4a582d5f26dac90609ad03e0d3a9d6d9bc",
+      "byte_identical": false,
+      "transformation": "Recursive local-path/key sanitization; original embedded hashes retained",
+      "path_rewrites": [
+        {
+          "original_string_sha256": "818f6e089b7132c9389da9620faa8162b5dc8613da4348ad28cfe4e265de1490",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_spy_replay_plan.json"
+        },
+        {
+          "original_string_sha256": "62a49fa640630280dc2a6c1ad0009472f30357c19d9d8cf39333e8c026816c39",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_spy_exact_replay_roster.json"
+        },
+        {
+          "original_string_sha256": "39bf78f2ed5c07198e637580ea59db9d0105ada747ccdf01b93c9b49d7a29ab1",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_spy_protocol_freeze.json"
+        },
+        {
+          "original_string_sha256": "27bf42de222322ad69b9e4d2f2b73a8b8cd466f51ef2eb6896cc6065337ee6b5",
+          "public_string": "${V15_ROOT}\\data\\gravity_spy_v15_final\\quality_test_audit.json"
+        },
+        {
+          "original_string_sha256": "d7af4b936dd1edcab4903aa3b458e574297bb35ade3e6f5b90571bee125585df",
+          "public_string": "${V15_ROOT}\\data\\gravity_spy_v15_final\\plan.json"
+        },
+        {
+          "original_string_sha256": "d6134fd0d5a69d486af0ebd48f0744060b07b95ebe10b465cacffc2f22b9fc18",
+          "public_string": "${V15_ROOT}\\data\\gravity_spy_v15_final\\prior_exposure_admission.json"
+        },
+        {
+          "original_string_sha256": "a0748278bd13c91b7d7ec351cb59b081021be75034b3c8b17579fcd9d2a6d8fe",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_spy_final_data_independent_audit.json"
+        },
+        {
+          "original_string_sha256": "55001734df18c78147e85a21da3fa88fe0c49a56de8abc229ecfedbd357db1f4",
+          "public_string": "${V15_ROOT}\\experiments\\replay_gravity_final.py"
+        },
+        {
+          "original_string_sha256": "d3bf26c16734fef47a01cd07363b6f713b2567d1eabbc98aff353645acb84d8d",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_spy_test_admission.json"
+        },
+        {
+          "original_string_sha256": "359a26cea24a35dc4b491209e3aeaa95c263400fe2442d447f8bbd0cfadb6287",
+          "public_string": "${V15_ROOT}\\hypernet\\detail_encoder.py"
+        },
+        {
+          "original_string_sha256": "db9b55947906282fe1ad77246e017cbc9aaf28a42cc21cca2b23c9367d62504b",
+          "public_string": "${V15_ROOT}\\hypernet\\detail_features.py"
+        },
+        {
+          "original_string_sha256": "14694aa86dd6ff296765e8b8ad932dbbc290fe2ae53068c9a23aa6cefb0f9cf8",
+          "public_string": "${V15_ROOT}\\hypernet\\pattern_matcher.py"
+        },
+        {
+          "original_string_sha256": "fa3485a26f1e0fad419027cb8974aab1fb544011718b526d1da5b86d4c67f63d",
+          "public_string": "${V15_ROOT}\\hypernet\\gravity_spy.py"
+        },
+        {
+          "original_string_sha256": "c6d1ff857bf141db2e77ec9e590a2c3a22870979bda9a5627957b4fea3d3bd07",
+          "public_string": "${V15_ROOT}\\hypernet\\gravity_spy_images.py"
+        },
+        {
+          "original_string_sha256": "26e4b07b9f64d80be80caabddd5e4079f951b2d100aab45d875b01e7da809dca",
+          "public_string": "${V15_ROOT}\\hypernet\\gravity_spy_quality.py"
+        },
+        {
+          "original_string_sha256": "5992f799ff056c406e7a82cbc80db4c240288f64b69b05a0be6363f21c3c0641",
+          "public_string": "${V15_ROOT}\\hypernet\\rare_event_metrics.py"
+        },
+        {
+          "original_string_sha256": "2b5258cc1c1daf073efd5021ed4b740afbeec56fab05d53a6c79de39ea8be363",
+          "public_string": "${V15_ROOT}\\hypernet\\gravity_spy_admission.py"
+        },
+        {
+          "original_string_sha256": "128f35db070c2b3941b9d17c4d0031bafb70f67ab85d5537921e0bf71f1114f2",
+          "public_string": "${V15_ROOT}\\scripts\\evaluate_gravity_spy_v15.py"
+        },
+        {
+          "original_string_sha256": "454968b01a83360b295152c1670eeb46568a6c0cb0bdcb9bbf293757651cc4c4",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_calibration_random\\results.json"
+        },
+        {
+          "original_string_sha256": "027d15eb113168d20c661731a442013827c506635874399c81660b2cf252d15d",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_calibration_random\\event_scores.jsonl"
+        },
+        {
+          "original_string_sha256": "a21fffcd86ec52dcc7b1056901a47b78e02c3b738121d6cd18fdbc274cb4cb30",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_calibration_065536\\results.json"
+        },
+        {
+          "original_string_sha256": "91118e663217c1f484b507c5d02f1edba4d4bb10ae0beae813bbf29da5342a05",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_calibration_065536\\event_scores.jsonl"
+        },
+        {
+          "original_string_sha256": "cdbbd78d7ccbfa7b31703947a5b43587cb886d47b67f4ef47227fe816c191eed",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_calibration_262144\\results.json"
+        },
+        {
+          "original_string_sha256": "109e334ef9f36873f5263ff6b3910b79366667fc82db19de632c8122d5bc934b",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_calibration_262144\\event_scores.jsonl"
+        },
+        {
+          "original_string_sha256": "ab577798232f6edd6efd27670e6bace4f4e6fe1fe631b321af33bd1638cc2c4e",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_calibration_final\\results.json"
+        },
+        {
+          "original_string_sha256": "c7f7e3a2ec9fdbef3ff2d84e12effce24c8e4a4aa34261bbe7cd826d3860f2ec",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_calibration_final\\event_scores.jsonl"
+        },
+        {
+          "original_string_sha256": "f1796cb20f1b715a65f09474b0bbc8de0386823ba48e8eb02a7644c6f954b388",
+          "public_string": "${V15_ROOT}\\data\\gravity_spy_v15_final\\roster_freeze.json"
+        },
+        {
+          "original_string_sha256": "4d756ad1dfc6a2f569f1cbfdd120ddbda2c6c74318810795aa5cd28748b4a697",
+          "public_string": "${V15_ROOT}\\data\\gravity_spy_v15_final\\quality_admission.json"
+        },
+        {
+          "original_string_sha256": "094efa737f54095f41c1715ff49fa869794641260f291d376206f4adaea20b13",
+          "public_string": "${V15_ROOT}\\scripts\\prepare_gravity_spy.py"
+        },
+        {
+          "original_string_sha256": "f6b371843cb5a826482ad7c6b2600d080f107f9182665a71fec596ac3bf010a1",
+          "public_string": "${V15_ROOT}\\scripts\\audit_gravity_spy_quality.py"
+        },
+        {
+          "original_string_sha256": "4af78e83efbffaac3a945783e54716ba8f2bdf53a7602e76cb4b6b3db8ee72bf",
+          "public_string": "${V15_ROOT}\\scripts\\freeze_gravity_spy_v15.py"
+        },
+        {
+          "original_string_sha256": "27e7057d72d4bdbbd70da06d65a66e0e269056fbe9711b2f2b600b6d08459e67",
+          "public_string": "${V15_ROOT}\\checkpoints\\details_run01\\admission.json"
+        },
+        {
+          "original_string_sha256": "a9d4ebb2f99214d0a1f0f85487960cb75755dd3708dc3ef032d8e456faa91d31",
+          "public_string": "${V15_ROOT}\\checkpoints\\details_run01\\completed.json"
+        },
+        {
+          "original_string_sha256": "8e28e0d4ae4820797a230d27a14464caef64b405cdc100f71839c851794e965a",
+          "public_string": "${V15_ROOT}\\checkpoints\\details_run01\\random_initial.pt"
+        },
+        {
+          "original_string_sha256": "1fe97e47cc1d3907099b2843e6d7d932775bc4d0459539801987926841408a41",
+          "public_string": "${V15_ROOT}\\checkpoints\\details_run01\\families_0065536.pt"
+        },
+        {
+          "original_string_sha256": "91b9e20e263f3cb1786ebca2c3d2ffe781908a1df539ae1695c28fb29a3896c0",
+          "public_string": "${V15_ROOT}\\checkpoints\\details_run01\\families_0262144.pt"
+        },
+        {
+          "original_string_sha256": "fad04818162c35a030c8d4e9095e98a9618371748fda65d2fe3201b7351dbee2",
+          "public_string": "${V15_ROOT}\\checkpoints\\details_run01\\families_1048576.pt"
+        },
+        {
+          "original_string_sha256": "2ff4b83bd46032d75a5896b9c89d1e3a4302f29de2e1831bb7bb51c77fd0d439",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_test_final\\results.json"
+        },
+        {
+          "original_string_sha256": "5a921441a27617c925c311629b6b7687019d9b191f30e6262de894dd7256b416",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_test_final\\event_scores.jsonl"
+        },
+        {
+          "original_string_sha256": "3d412c2fc978854b83b3555f381a31ef8d6cef6377565ae9f4313f3fde62f4ae",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_test_random\\results.json"
+        },
+        {
+          "original_string_sha256": "c2f4bd0ac7556ba8fb2add78ca30ab2d04126a9ff2c8c84de803514cf1c48b00",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_test_random\\event_scores.jsonl"
+        },
+        {
+          "original_string_sha256": "6296ea66b746633b6d9cfa43a0ce84164723523687188224acec88b86ec0118d",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_test_065536\\results.json"
+        },
+        {
+          "original_string_sha256": "32688e34855d3354e667d79b54ef6ea2c308528b0a476dee43445d7648b0d03f",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_test_065536\\event_scores.jsonl"
+        },
+        {
+          "original_string_sha256": "6915bf22912c03287484bf34419bc7101422355d6169b28262627eb3f7cb3796",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_test_262144\\results.json"
+        },
+        {
+          "original_string_sha256": "7a0ccda91558d968b9105744b2b79d7864ebaf7825779251aebfc83f542ecf16",
+          "public_string": "${V15_ROOT}\\experiments\\gravity_test_262144\\event_scores.jsonl"
+        }
+      ]
+    },
+    {
+      "original_artifact": "experiments/gravity_spy_paired_analysis.json",
+      "original_sha256": "f8df1f8e1c84d235ae4f3ba948a5e4fb1a6dbbe7fd045a143b7d5f3c8988c1ed",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_spy_paired_analysis.json",
+      "public_sha256": "f8df1f8e1c84d235ae4f3ba948a5e4fb1a6dbbe7fd045a143b7d5f3c8988c1ed",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_spy_prior_exposure_audit.json",
+      "original_sha256": "1291d91e7c2631bc52e4fa4191ac4a12bdec3609be7665d8ecfd997a3a63015b",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_spy_prior_exposure_audit.json",
+      "public_sha256": "21642d030a7ab019e3038d1a0ca3f96e84330b12f2bad8277b5ea79071b82736",
+      "byte_identical": false,
+      "transformation": "Recursive local-path/key sanitization; original embedded hashes retained",
+      "path_rewrites": [
+        {
+          "original_string_sha256": "3e99875f886ecc9b3d6f71634c6e685d6ca56481fc4a90944b9ff29408389ec4",
+          "public_string": "${PUBLIC_REPO}\\benchmarks\\gravity_spy_v0.1\\protocol.json"
+        },
+        {
+          "original_string_sha256": "789f96974e77a513708536ad34f5d6c32097f12f1200794ee055970efe17fe74",
+          "public_string": "${PUBLIC_REPO}\\benchmarks\\gravity_spy_v0.1\\scores.npz"
+        },
+        {
+          "original_string_sha256": "919ab344d68704a32fe683c4a0e07c3df9a650d435ae71726de3f89b1abb721e",
+          "public_string": "${PUBLIC_REPO}\\benchmarks\\gravity_spy_v0.1\\per_reference.jsonl"
+        },
+        {
+          "original_string_sha256": "0ef4f522b3d2859f24065ffe9647c7001906f51c682be6d5ddfeb4104767139d",
+          "public_string": "${PUBLIC_REPO}\\benchmarks\\gravity_spy_v0.1\\results.json"
+        }
+      ]
+    },
+    {
+      "original_artifact": "experiments/gravity_spy_probe_exclusion.json",
+      "original_sha256": "10313788c2c549f62f92f354e7a7c6ab4ab49721ef91cd0c2a1446783f3e52e5",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_spy_probe_exclusion.json",
+      "public_sha256": "10313788c2c549f62f92f354e7a7c6ab4ab49721ef91cd0c2a1446783f3e52e5",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_spy_protocol_freeze.json",
+      "original_sha256": "4a24995ae9981caa52ba5fb52afd70d407d425ef84253040daa9522202f7414f",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_spy_protocol_freeze.json",
+      "public_sha256": "4a24995ae9981caa52ba5fb52afd70d407d425ef84253040daa9522202f7414f",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_spy_replay_plan.json",
+      "original_sha256": "0c3b20073c56293237852f9e7d635faa61798a85581f453acc2eb47f4f7d4f3b",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_spy_replay_plan.json",
+      "public_sha256": "0c3b20073c56293237852f9e7d635faa61798a85581f453acc2eb47f4f7d4f3b",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_spy_test_admission.json",
+      "original_sha256": "8e1a3b91b996909658b182a2d676722f54bfe9694f6ba69d88f02117c7b88c0c",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_spy_test_admission.json",
+      "public_sha256": "8e1a3b91b996909658b182a2d676722f54bfe9694f6ba69d88f02117c7b88c0c",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_test_065536/independent_score_audit.json",
+      "original_sha256": "b91a89e51e0327d98274e1151b466a7fbb348fbd75f34a092afe60e55259d0f5",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_test_065536/independent_score_audit.json",
+      "public_sha256": "b91a89e51e0327d98274e1151b466a7fbb348fbd75f34a092afe60e55259d0f5",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_test_065536/results.json",
+      "original_sha256": "4496fe7680b14b38b62830c93b18662a5346bd5250e6bd24a21d30beea82a082",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_test_065536/results.json",
+      "public_sha256": "4496fe7680b14b38b62830c93b18662a5346bd5250e6bd24a21d30beea82a082",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_test_262144/independent_score_audit.json",
+      "original_sha256": "ce5d8f09e7421582c1d76c99555ca0c484b7efafba901aae69fcc21501ee7d7d",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_test_262144/independent_score_audit.json",
+      "public_sha256": "ce5d8f09e7421582c1d76c99555ca0c484b7efafba901aae69fcc21501ee7d7d",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_test_262144/results.json",
+      "original_sha256": "e714a4d5ff444f3df37ba5a19d8a85f5024bfa2d3b37a4dd5e958eb59b7fce77",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_test_262144/results.json",
+      "public_sha256": "e714a4d5ff444f3df37ba5a19d8a85f5024bfa2d3b37a4dd5e958eb59b7fce77",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_test_final/independent_score_audit.json",
+      "original_sha256": "d11977955f0f8cd3fc1356a829de65dd529bc0752543322ac0d3fa7617acc511",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_test_final/independent_score_audit.json",
+      "public_sha256": "d11977955f0f8cd3fc1356a829de65dd529bc0752543322ac0d3fa7617acc511",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_test_final/results.json",
+      "original_sha256": "95da220658410013fe0f647c2d02083d50a9551bac8c7c97cf87a1e40d2b2b28",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_test_final/results.json",
+      "public_sha256": "95da220658410013fe0f647c2d02083d50a9551bac8c7c97cf87a1e40d2b2b28",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_test_random/independent_score_audit.json",
+      "original_sha256": "5ededb783847ffccdb4e7fefbdb35ff9fcd44065bafac3fff848de806b3b5505",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_test_random/independent_score_audit.json",
+      "public_sha256": "5ededb783847ffccdb4e7fefbdb35ff9fcd44065bafac3fff848de806b3b5505",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/gravity_test_random/results.json",
+      "original_sha256": "207ef2f03324c765684ca7e06433e6bad3fa071bf22dc86af6363fff5a96b00b",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/gravity_test_random/results.json",
+      "public_sha256": "207ef2f03324c765684ca7e06433e6bad3fa071bf22dc86af6363fff5a96b00b",
+      "byte_identical": true,
+      "transformation": "verbatim",
+      "path_rewrites": []
+    },
+    {
+      "original_artifact": "experiments/v15_objective_scope_review.json",
+      "original_sha256": "af7fe95c636261af27bcecfd8b0e4d309c4f36e61e742a4f0cd9fdcbebef1d52",
+      "public_artifact": "benchmarks/gravity_spy/provenance/experiments/v15_objective_scope_review.json",
+      "public_sha256": "c6729facc59eca2fae1d22bef826d65ceaeefce3002c1e20d147c157d3367e03",
+      "byte_identical": false,
+      "transformation": "Recursive local-path/key sanitization; original embedded hashes retained",
+      "path_rewrites": [
+        {
+          "original_string_sha256": "245a75591c1bbff6814d477ea2e13a89b097ec55776bc7bb92301f84bd77a213",
+          "public_string": "${V15_ROOT}\\hypernet\\math_curriculum.py"
+        },
+        {
+          "original_string_sha256": "6592892af0c9e994c19606db148c0c2e2cb67ab3ae31d30a12a116bea8707437",
+          "public_string": "${V15_ROOT}\\hypernet\\math_curriculum_torch.py"
+        },
+        {
+          "original_string_sha256": "6592892af0c9e994c19606db148c0c2e2cb67ab3ae31d30a12a116bea8707437",
+          "public_string": "${V15_ROOT}\\hypernet\\math_curriculum_torch.py"
+        },
+        {
+          "original_string_sha256": "6592892af0c9e994c19606db148c0c2e2cb67ab3ae31d30a12a116bea8707437",
+          "public_string": "${V15_ROOT}\\hypernet\\math_curriculum_torch.py"
+        },
+        {
+          "original_string_sha256": "359a26cea24a35dc4b491209e3aeaa95c263400fe2442d447f8bbd0cfadb6287",
+          "public_string": "${V15_ROOT}\\hypernet\\detail_encoder.py"
+        },
+        {
+          "original_string_sha256": "359a26cea24a35dc4b491209e3aeaa95c263400fe2442d447f8bbd0cfadb6287",
+          "public_string": "${V15_ROOT}\\hypernet\\detail_encoder.py"
+        },
+        {
+          "original_string_sha256": "1925b7f43c8bde5b7adac7aee77bcfd99200d2ae106c3156dfc9911ca7c7b8ce",
+          "public_string": "${V15_ROOT}\\scripts\\train_details.py"
+        },
+        {
+          "original_string_sha256": "1925b7f43c8bde5b7adac7aee77bcfd99200d2ae106c3156dfc9911ca7c7b8ce",
+          "public_string": "${V15_ROOT}\\scripts\\train_details.py"
+        },
+        {
+          "original_string_sha256": "1925b7f43c8bde5b7adac7aee77bcfd99200d2ae106c3156dfc9911ca7c7b8ce",
+          "public_string": "${V15_ROOT}\\scripts\\train_details.py"
+        },
+        {
+          "original_string_sha256": "69863b0f4267683cccd1876565ec479a96ee0053b0af6579930a5fe947c01049",
+          "public_string": "${V15_ROOT}\\hypernet\\grid_anomaly.py"
+        },
+        {
+          "original_string_sha256": "69863b0f4267683cccd1876565ec479a96ee0053b0af6579930a5fe947c01049",
+          "public_string": "${V15_ROOT}\\hypernet\\grid_anomaly.py"
+        },
+        {
+          "original_string_sha256": "69863b0f4267683cccd1876565ec479a96ee0053b0af6579930a5fe947c01049",
+          "public_string": "${V15_ROOT}\\hypernet\\grid_anomaly.py"
+        },
+        {
+          "original_string_sha256": "359a26cea24a35dc4b491209e3aeaa95c263400fe2442d447f8bbd0cfadb6287",
+          "public_string": "${V15_ROOT}\\hypernet\\detail_encoder.py"
+        },
+        {
+          "original_string_sha256": "db9b55947906282fe1ad77246e017cbc9aaf28a42cc21cca2b23c9367d62504b",
+          "public_string": "${V15_ROOT}\\hypernet\\detail_features.py"
+        },
+        {
+          "original_string_sha256": "69863b0f4267683cccd1876565ec479a96ee0053b0af6579930a5fe947c01049",
+          "public_string": "${V15_ROOT}\\hypernet\\grid_anomaly.py"
+        },
+        {
+          "original_string_sha256": "14694aa86dd6ff296765e8b8ad932dbbc290fe2ae53068c9a23aa6cefb0f9cf8",
+          "public_string": "${V15_ROOT}\\hypernet\\pattern_matcher.py"
+        },
+        {
+          "original_string_sha256": "14694aa86dd6ff296765e8b8ad932dbbc290fe2ae53068c9a23aa6cefb0f9cf8",
+          "public_string": "${V15_ROOT}\\hypernet\\pattern_matcher.py"
+        }
+      ]
+    }
+  ],
+  "original_files_modified": false,
+  "prefix_meaning": "${V15_ROOT} denotes the original experiment root; it is not an executable path binding.",
+  "hash_semantics": "Hashes inside transformed metadata remain references to original bytes. Use original/public SHA mappings here; cleaned protocols are not original gate admissions.",
+  "compact_scores_sha256": "0b1d78a264c2590787ca4f17e7bee1d47706370e5b160b68f1780581592ab4e4",
+  "real_rgb_or_masks_or_maps_bundled": false,
+  "grid_test_results_original_sha256": "48ba60804f2972ca0bfb5c7519c44462a87dabfb5d699fadfbb65bf085354550",
+  "gravity_test_results_included": true,
+  "symbolic_path_prefixes": [
+    "${V15_ROOT}",
+    "${PUBLIC_REPO}",
+    "${WORKSPACE_ROOT}"
+  ],
+  "gravity_compact_scores_sha256": "2c82329a55bac90d1fe42a095e25fe7902b936b9de758280a8f1199bc02e16ef",
+  "original_hashes_inside_sanitized_files_are_not_rewritten": true
+}

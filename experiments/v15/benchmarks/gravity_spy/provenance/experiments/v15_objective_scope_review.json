@@ -1,0 +1,275 @@
+{
+  "format": "hypernet.v15.objective_scope_review",
+  "created_utc": "2026-11-03T00:56:58.426920+00:00",
+  "valid": true,
+  "scope": "Read-only code-level interpretation after frozen Grid results; no new model inference, training, data generation, score recomputation, tests, recipe selection, or TEST tuning.",
+  "source_sha256": {
+    "hypernet/math_curriculum.py": "8ee214d707183479e4d2e006eb0cc91cfc265899d419e45ebeb2424899dbe7a2",
+    "hypernet/math_curriculum_torch.py": "1ff058c6baaff4f1b92aa6acafa26bed185fdb59d3d73f397d027e681e4d4969",
+    "hypernet/detail_encoder.py": "e1e4cd86843b441c92d72292e97b267dbf105e68ceb8b0650f0002ff39867d43",
+    "hypernet/detail_features.py": "faff01363202ccbfe38ad487829cfd166c50416c78b325af23bf2d4ae1f72b8d",
+    "hypernet/grid_anomaly.py": "70b12b11046ab5422168b4f9b85a30c4186595db97dc6e911065ff8da262ce42",
+    "hypernet/pattern_matcher.py": "ba01b18fdd586b76629552687aa5a05c24b526208c5451867df7d6dcb009ced5",
+    "scripts/train_details.py": "f5092aea2c53fab9521a6bdacd9d5baf25ed045d4f28aa3c42b2725ca4476824"
+  },
+  "evidence": {
+    "training_admission_sha256": "c3b9189d4f0f56317ac10a41b77ea9c71f0210cf751ae773dcd8a4e162767433",
+    "training_completed_sha256": "2d7ded0ad074aff34df8366277827a4a4d74e26bf40f222d63a4f58d1f74f2f1",
+    "grid_result_sha256": "48ba60804f2972ca0bfb5c7519c44462a87dabfb5d699fadfbb65bf085354550",
+    "grid_independent_audit_sha256": "8eea014d503f292a424b4b1ebdc661dcfd8ac39f9ffe0f9660f6fc78c1175109"
+  },
+  "actual_training_configuration": {
+    "renderer_backend": "torch",
+    "side": 64,
+    "renderer_seed": 15150,
+    "target_families": 1048576,
+    "anchors_per_direction": 32,
+    "semantic_class_labels": false
+  },
+  "findings": [
+    {
+      "id": "same_canonical_pair",
+      "status": "verified_from_code_and_frozen_training_admission",
+      "finding": "One family ID fixes one complete canonical geometry and material program. Both training views evaluate the same parameters at independently affine-transformed coordinates; appearance/background/clutter changes independently. Gaussian parameter offsets are fixed by family ID, not resampled as within-family shape changes across the positive pair.",
+      "sources": [
+        {
+          "path": "hypernet/math_curriculum.py",
+          "absolute_path": "${V15_ROOT}\\hypernet\\math_curriculum.py",
+          "start_line": 46,
+          "end_line": 73,
+          "sha256": "8ee214d707183479e4d2e006eb0cc91cfc265899d419e45ebeb2424899dbe7a2"
+        },
+        {
+          "path": "hypernet/math_curriculum_torch.py",
+          "absolute_path": "${V15_ROOT}\\hypernet\\math_curriculum_torch.py",
+          "start_line": 81,
+          "end_line": 92,
+          "sha256": "1ff058c6baaff4f1b92aa6acafa26bed185fdb59d3d73f397d027e681e4d4969"
+        },
+        {
+          "path": "hypernet/math_curriculum_torch.py",
+          "absolute_path": "${V15_ROOT}\\hypernet\\math_curriculum_torch.py",
+          "start_line": 107,
+          "end_line": 129,
+          "sha256": "1ff058c6baaff4f1b92aa6acafa26bed185fdb59d3d73f397d027e681e4d4969"
+        },
+        {
+          "path": "hypernet/math_curriculum_torch.py",
+          "absolute_path": "${V15_ROOT}\\hypernet\\math_curriculum_torch.py",
+          "start_line": 140,
+          "end_line": 164,
+          "sha256": "1ff058c6baaff4f1b92aa6acafa26bed185fdb59d3d73f397d027e681e4d4969"
+        }
+      ],
+      "limits": "The word family here names a procedural program instance; it is not a supervised morphology class containing independently generated members."
+    },
+    {
+      "id": "actual_correspondence_objective",
+      "status": "verified_from_code",
+      "finding": "The main loss matches 32 sampled foreground anchors in each direction to their exact affine correspondences. Within-image noncorresponding anchors are negatives; nearby or visually repeated motifs are masked out. Batched matrix multiplication never introduces cross-family negatives. Reconstruction, foreground BCE, variance and covariance terms supplement correspondence; there is no morphology-class loss or normal-versus-defect loss.",
+      "sources": [
+        {
+          "path": "hypernet/detail_encoder.py",
+          "absolute_path": "${V15_ROOT}\\hypernet\\detail_encoder.py",
+          "start_line": 110,
+          "end_line": 140,
+          "sha256": "e1e4cd86843b441c92d72292e97b267dbf105e68ceb8b0650f0002ff39867d43"
+        },
+        {
+          "path": "hypernet/detail_encoder.py",
+          "absolute_path": "${V15_ROOT}\\hypernet\\detail_encoder.py",
+          "start_line": 143,
+          "end_line": 175,
+          "sha256": "e1e4cd86843b441c92d72292e97b267dbf105e68ceb8b0650f0002ff39867d43"
+        },
+        {
+          "path": "scripts/train_details.py",
+          "absolute_path": "${V15_ROOT}\\scripts\\train_details.py",
+          "start_line": 135,
+          "end_line": 139,
+          "sha256": "f5092aea2c53fab9521a6bdacd9d5baf25ed045d4f28aa3c42b2725ca4476824"
+        }
+      ],
+      "loss": "L = L_correspondence + 0.5 L_detail + 0.15 L_foreground + L_variance + 0.05 L_covariance",
+      "limits": "Foreground means generated object versus generated background, not anomalous versus normal material. Excluding ambiguous repeated motifs avoids false contrastive negatives but does not teach whether their spacing or connectivity is defective."
+    },
+    {
+      "id": "one_pair_per_program",
+      "status": "verified_from_code_and_completed_training_record",
+      "finding": "The final run visits IDs0..1048575 once and generates two64px views per ID using one fixed renderer seed. This increases the number of distinct local patterns but does not create independently deformed same-class positive instances.",
+      "sources": [
+        {
+          "path": "scripts/train_details.py",
+          "absolute_path": "${V15_ROOT}\\scripts\\train_details.py",
+          "start_line": 150,
+          "end_line": 153,
+          "sha256": "f5092aea2c53fab9521a6bdacd9d5baf25ed045d4f28aa3c42b2725ca4476824"
+        },
+        {
+          "path": "scripts/train_details.py",
+          "absolute_path": "${V15_ROOT}\\scripts\\train_details.py",
+          "start_line": 172,
+          "end_line": 185,
+          "sha256": "f5092aea2c53fab9521a6bdacd9d5baf25ed045d4f28aa3c42b2725ca4476824"
+        }
+      ],
+      "observed_counts": {
+        "unique_family_ids": 1048576,
+        "rendered_training_views": 2097152,
+        "unique_training_rgb_sha256": 2097152,
+        "unique_canonical_mask_sha256": 949628,
+        "unique_canonical_raster_sha256": 1048576
+      },
+      "limits": "1,048,576 program IDs and material rasters are not 1,048,576 semantic classes; binary mask uniqueness is949,628."
+    },
+    {
+      "id": "grid_is_unordered_bank_matching",
+      "status": "verified_from_code",
+      "finding": "Grid flattens reference descriptors and samples4096 tokens. Each query token independently takes maximum cosine similarity to any bank token; positions are not part of this distance. No joint alignment, neighbor agreement, repeat pitch/phase, occupancy or connectivity constraint is imposed by the scorer. Coordinates are used to validate the sampling grid and display/interpolate maps.",
+      "sources": [
+        {
+          "path": "hypernet/grid_anomaly.py",
+          "absolute_path": "${V15_ROOT}\\hypernet\\grid_anomaly.py",
+          "start_line": 18,
+          "end_line": 21,
+          "sha256": "70b12b11046ab5422168b4f9b85a30c4186595db97dc6e911065ff8da262ce42"
+        },
+        {
+          "path": "hypernet/grid_anomaly.py",
+          "absolute_path": "${V15_ROOT}\\hypernet\\grid_anomaly.py",
+          "start_line": 69,
+          "end_line": 99,
+          "sha256": "70b12b11046ab5422168b4f9b85a30c4186595db97dc6e911065ff8da262ce42"
+        },
+        {
+          "path": "hypernet/grid_anomaly.py",
+          "absolute_path": "${V15_ROOT}\\hypernet\\grid_anomaly.py",
+          "start_line": 47,
+          "end_line": 51,
+          "sha256": "70b12b11046ab5422168b4f9b85a30c4186595db97dc6e911065ff8da262ce42"
+        }
+      ],
+      "limits": "Descriptors can encode local context; the statement is about absence of an explicit whole-image periodicity constraint, not absence of all context. Native64px tiling is not a model of global lattice organization."
+    },
+    {
+      "id": "spatial_context_and_aggregation",
+      "status": "verified_from_code",
+      "finding": "The CNN preserves native detail and context branches, but inference encodes independent64px tiles with48px cores. Grid image score is the mean of the largest0.5% token residuals. This is a fixed anomaly heuristic, not an objective trained to separate whole normal and defective images.",
+      "sources": [
+        {
+          "path": "hypernet/detail_encoder.py",
+          "absolute_path": "${V15_ROOT}\\hypernet\\detail_encoder.py",
+          "start_line": 34,
+          "end_line": 66,
+          "sha256": "e1e4cd86843b441c92d72292e97b267dbf105e68ceb8b0650f0002ff39867d43"
+        },
+        {
+          "path": "hypernet/detail_features.py",
+          "absolute_path": "${V15_ROOT}\\hypernet\\detail_features.py",
+          "start_line": 40,
+          "end_line": 61,
+          "sha256": "faff01363202ccbfe38ad487829cfd166c50416c78b325af23bf2d4ae1f72b8d"
+        },
+        {
+          "path": "hypernet/grid_anomaly.py",
+          "absolute_path": "${V15_ROOT}\\hypernet\\grid_anomaly.py",
+          "start_line": 47,
+          "end_line": 51,
+          "sha256": "70b12b11046ab5422168b4f9b85a30c4186595db97dc6e911065ff8da262ce42"
+        }
+      ],
+      "limits": "The code alone does not prove tile seams or high-residual outliers caused the failure."
+    },
+    {
+      "id": "gravity_spy_has_a_different_matcher",
+      "status": "verified_from_code",
+      "finding": "Gravity Spy selects distributed reference anchors and can require their matches to share a bounded translation. This adds spatial consistency absent from the Grid nearest-token scorer, but uses the same correspondence-trained descriptors. Its one-reference morphology task requires recognizing other events of a type, with variable internal structure and time-frequency appearance, rather than recovering exact point correspondences from the same canonical drawing.",
+      "sources": [
+        {
+          "path": "hypernet/pattern_matcher.py",
+          "absolute_path": "${V15_ROOT}\\hypernet\\pattern_matcher.py",
+          "start_line": 35,
+          "end_line": 55,
+          "sha256": "ba01b18fdd586b76629552687aa5a05c24b526208c5451867df7d6dcb009ced5"
+        },
+        {
+          "path": "hypernet/pattern_matcher.py",
+          "absolute_path": "${V15_ROOT}\\hypernet\\pattern_matcher.py",
+          "start_line": 138,
+          "end_line": 170,
+          "sha256": "ba01b18fdd586b76629552687aa5a05c24b526208c5451867df7d6dcb009ced5"
+        }
+      ],
+      "limits": "This review uses no Gravity Spy TEST scores and draws no conclusion about its eventual result. Translation matching is not proof of semantic class generalization."
+    }
+  ],
+  "measured_grid_methods": {
+    "learned_final": {
+      "image_auroc": 0.18796992481203006,
+      "pixel_auroc": 0.6810024424163799,
+      "pixel_average_precision": 0.011674090754576504,
+      "true_positive": 0,
+      "positive_images": 57,
+      "false_positive": 4,
+      "normal_images": 21
+    },
+    "random": {
+      "image_auroc": 0.4302422723475355,
+      "pixel_auroc": 0.6952526338899839,
+      "pixel_average_precision": 0.013411090877278039,
+      "true_positive": 2,
+      "positive_images": 57,
+      "false_positive": 2,
+      "normal_images": 21
+    },
+    "analytic_detail": {
+      "image_auroc": 0.30994152046783624,
+      "pixel_auroc": 0.46570020851063537,
+      "pixel_average_precision": 0.006105727636038215,
+      "true_positive": 1,
+      "positive_images": 57,
+      "false_positive": 5,
+      "normal_images": 21
+    }
+  },
+  "task_distinction": {
+    "training": "Dense correspondence between two renderings of one exact canonical procedural program; no semantic classes or normal/defect targets.",
+    "morphology_retrieval": "One example should match independently occurring events of the same morphology, despite nonidentical internal geometry; wrong target events should be rejected.",
+    "normal_anomaly_detection": "One normal example should tolerate allowed normal variability but assign high residual to defects and localize them; exact identity matching and category retrieval are insufficient by themselves."
+  },
+  "future_hypotheses": [
+    {
+      "id": "H1_task_aligned_positive_and_defect_training",
+      "status": "unverified_future_hypothesis",
+      "motivation": "Learned Grid image AUROC0.18797 and pixelAUROC0.68100 are below random0.43024/0.69525. More correspondence training therefore did not improve this pilot. This observation does not identify the cause.",
+      "hypothesis": "The representation may retain identity/appearance distinctions while failing to separate permissible pattern variability from structural defects because the positive pairs share one exact canonical material.",
+      "concrete_future_change": "For a new experiment, define procedural pattern classes with independently sampled normal members (pitch, phase, mild thickness and illumination changes), then generate localized break/bridge/bend defects with synthetic masks. Train within-class cross-instance positives and a defect-sensitive auxiliary separately from exact correspondence. For morphology retrieval, use independent same-type instances, not copies under a warp.",
+      "falsifiable_check": "Predeclare equal-compute correspondence-only versus class-variation/defect objectives; keep the downstream scorer fixed and compare on entirely new heldout pattern categories/images. Report normal invariance and defect separation separately.",
+      "limits": "No claim that this fixes transfer; procedural normal/defect labels may themselves impose the wrong prior."
+    },
+    {
+      "id": "H2_preserve_periodic_neighborhood_relations",
+      "status": "unverified_future_hypothesis",
+      "motivation": "Primary found0/57defects at its fixed cutoff, while pixelAUROC0.681 shows some spatial signal without useful image decisions. Unordered max-cosine allows each token to match unrelated positions independently.",
+      "hypothesis": "A displaced or broken repetition can be composed of individually ordinary local edges, so an unordered token bank may assign it a small residual even when the arrangement is defective.",
+      "concrete_future_change": "In a new frozen protocol, estimate dominant repeat orientation/pitch from the single normal reference and compare multiscale neighborhoods or a lattice-neighbor graph with shared alignment. Retain local descriptor evidence and explicitly score departures in adjacency, spacing or connectivity rather than demanding exact absolute pixel position.",
+      "falsifiable_check": "Hold descriptors and reference budget constant; compare unordered tokens with neighborhood-consistent scoring on synthetic rearrangements and fresh untouched real patterns, including benign global phase/orientation shifts.",
+      "limits": "Rotation/period estimates can fail on nonperiodic textures; this is specifically a periodic-pattern hypothesis, not a universal or novel solution claim."
+    },
+    {
+      "id": "H3_model_normal_nuisance_and_outlier_support",
+      "status": "unverified_future_hypothesis",
+      "motivation": "Strict max64DEV-normal calibration still yields4/21normalTEST alarms and0/57detections. The primary imageAUROC0.188 is threshold-independent; simply changing the cutoff cannot repair the ranking.",
+      "hypothesis": "The single-reference bank and top0.5% statistic may overreact to ordinary illumination/orientation/contrast differences or isolated high-residual edges relative to true small defects. The current results do not prove which nuisance dominates.",
+      "concrete_future_change": "For a separate experiment, predeclare nuisance transformations derived only from the one reference, preserve an explicit augmentation budget, and compare reference-conditioned nuisance normalization plus spatially supported anomaly aggregation against the existing fixed top-tail rule. No query-conditioned bank fitting or extra normal bank images.",
+      "falsifiable_check": "Use generated normal nuisance sequences and synthetic localized defects for development, then freeze transformation/aggregation choices and evaluate a new real TEST set. Compare full ranking metrics and false alarms at the same calibration budget; do not optimize on these78Grid images.",
+      "limits": "Reference augmentation can also normalize away genuine defects; larger threshold calibration alone would estimate a rate better but would not solve low AUROC."
+    }
+  ],
+  "interpretation_limits": [
+    "Mechanistic compatibility is not a causal demonstration.",
+    "Existing Grid TEST now informs these hypotheses and must be treated as development for any follow-up choices; a future independent claim requires new untouched evaluation data.",
+    "No posthoc score inversion, threshold tuning, checkpoint promotion or exclusion of failed cases was performed.",
+    "Preserving high-frequency information does not by itself specify the invariances and decision rule required by a downstream task."
+  ]
+}

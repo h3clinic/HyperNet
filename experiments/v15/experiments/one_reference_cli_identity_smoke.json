@@ -1,0 +1,45 @@
+{
+  "mode": "pattern",
+  "scope": "Whole-image pattern similarity; no bounding-box or semantic-category accuracy claim.",
+  "score": 1.0,
+  "prediction": {
+    "score": 1.0,
+    "evidence": {
+      "anchor_count": 20,
+      "contributing_anchors": 20,
+      "reference_cells": 12,
+      "covered_reference_cells": 12,
+      "reference_cell_coverage": 1.0,
+      "translation_xy": [
+        0.0,
+        0.0
+      ],
+      "position_tolerance": 0.06,
+      "aggregation": "weighted mean across every selected anchor; unmatched anchors contribute zero",
+      "feature_kind": "learned",
+      "query_pixels_searched": 256
+    }
+  },
+  "threshold": null,
+  "alarm": null,
+  "score_is_probability": false,
+  "reference_images": 1,
+  "real_weight_updates": 0,
+  "provenance": {
+    "format": "hypernet.mathematical_details.v15.1",
+    "state_sha256": "00a83c7092bd90bacb698b0fafb41c1463e2cfe2362240d66cf14004c02af204",
+    "checkpoint_sha256": "484736ec67c9dc9c0fbdb97fee14cd1c923f9d4ae1954cfcdc5aee1e110de592",
+    "optimizer_steps": 1024,
+    "consumed_synthetic_families": 262144,
+    "borrowed_pretrained_weights": false,
+    "natural_weight_training_images": 0,
+    "reference_images_per_target": 1,
+    "enrollment_weight_updates": 0,
+    "tile_side": 64,
+    "tile_core": 48,
+    "overlap_margin": 8,
+    "preprocessing": "Native pixels, reflect-padding, no image resize. Same tiling for reference and query."
+  },
+  "model_state_unchanged": true,
+  "threshold_note": "No alarm decision without a supplied domain-calibrated threshold."
+}

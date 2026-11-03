@@ -1,0 +1,2104 @@
+{
+  "created_utc": "2026-11-02T23:54:12.900097+00:00",
+  "archive_sha256": "d94a9a651cbfaee22c94d06cf8fa8204a590c872362de0489eb34f1645328de8",
+  "image_pixels_decoded": false,
+  "members": [
+    {
+      "name": "grid",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "grid/ground_truth",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "grid/ground_truth/glue",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "grid/ground_truth/glue/000_mask.png",
+      "type": "file",
+      "bytes": 2716
+    },
+    {
+      "name": "grid/ground_truth/glue/001_mask.png",
+      "type": "file",
+      "bytes": 2739
+    },
+    {
+      "name": "grid/ground_truth/glue/002_mask.png",
+      "type": "file",
+      "bytes": 2809
+    },
+    {
+      "name": "grid/ground_truth/glue/003_mask.png",
+      "type": "file",
+      "bytes": 2886
+    },
+    {
+      "name": "grid/ground_truth/glue/004_mask.png",
+      "type": "file",
+      "bytes": 2839
+    },
+    {
+      "name": "grid/ground_truth/glue/005_mask.png",
+      "type": "file",
+      "bytes": 2912
+    },
+    {
+      "name": "grid/ground_truth/glue/006_mask.png",
+      "type": "file",
+      "bytes": 2774
+    },
+    {
+      "name": "grid/ground_truth/glue/007_mask.png",
+      "type": "file",
+      "bytes": 2814
+    },
+    {
+      "name": "grid/ground_truth/glue/008_mask.png",
+      "type": "file",
+      "bytes": 2655
+    },
+    {
+      "name": "grid/ground_truth/glue/009_mask.png",
+      "type": "file",
+      "bytes": 2746
+    },
+    {
+      "name": "grid/ground_truth/glue/010_mask.png",
+      "type": "file",
+      "bytes": 2860
+    },
+    {
+      "name": "grid/ground_truth/metal_contamination",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "grid/ground_truth/metal_contamination/000_mask.png",
+      "type": "file",
+      "bytes": 2742
+    },
+    {
+      "name": "grid/ground_truth/metal_contamination/001_mask.png",
+      "type": "file",
+      "bytes": 3044
+    },
+    {
+      "name": "grid/ground_truth/metal_contamination/002_mask.png",
+      "type": "file",
+      "bytes": 2896
+    },
+    {
+      "name": "grid/ground_truth/metal_contamination/003_mask.png",
+      "type": "file",
+      "bytes": 3382
+    },
+    {
+      "name": "grid/ground_truth/metal_contamination/004_mask.png",
+      "type": "file",
+      "bytes": 2745
+    },
+    {
+      "name": "grid/ground_truth/metal_contamination/005_mask.png",
+      "type": "file",
+      "bytes": 2851
+    },
+    {
+      "name": "grid/ground_truth/metal_contamination/006_mask.png",
+      "type": "file",
+      "bytes": 2953
+    },
+    {
+      "name": "grid/ground_truth/metal_contamination/007_mask.png",
+      "type": "file",
+      "bytes": 2856
+    },
+    {
+      "name": "grid/ground_truth/metal_contamination/008_mask.png",
+      "type": "file",
+      "bytes": 3125
+    },
+    {
+      "name": "grid/ground_truth/metal_contamination/009_mask.png",
+      "type": "file",
+      "bytes": 3106
+    },
+    {
+      "name": "grid/ground_truth/metal_contamination/010_mask.png",
+      "type": "file",
+      "bytes": 3278
+    },
+    {
+      "name": "grid/ground_truth/thread",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "grid/ground_truth/thread/000_mask.png",
+      "type": "file",
+      "bytes": 3070
+    },
+    {
+      "name": "grid/ground_truth/thread/001_mask.png",
+      "type": "file",
+      "bytes": 3051
+    },
+    {
+      "name": "grid/ground_truth/thread/002_mask.png",
+      "type": "file",
+      "bytes": 5507
+    },
+    {
+      "name": "grid/ground_truth/thread/003_mask.png",
+      "type": "file",
+      "bytes": 5457
+    },
+    {
+      "name": "grid/ground_truth/thread/004_mask.png",
+      "type": "file",
+      "bytes": 4061
+    },
+    {
+      "name": "grid/ground_truth/thread/005_mask.png",
+      "type": "file",
+      "bytes": 3924
+    },
+    {
+      "name": "grid/ground_truth/thread/006_mask.png",
+      "type": "file",
+      "bytes": 4855
+    },
+    {
+      "name": "grid/ground_truth/thread/007_mask.png",
+      "type": "file",
+      "bytes": 5282
+    },
+    {
+      "name": "grid/ground_truth/thread/008_mask.png",
+      "type": "file",
+      "bytes": 6219
+    },
+    {
+      "name": "grid/ground_truth/thread/009_mask.png",
+      "type": "file",
+      "bytes": 5515
+    },
+    {
+      "name": "grid/ground_truth/thread/010_mask.png",
+      "type": "file",
+      "bytes": 5175
+    },
+    {
+      "name": "grid/ground_truth/bent",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "grid/ground_truth/bent/000_mask.png",
+      "type": "file",
+      "bytes": 3194
+    },
+    {
+      "name": "grid/ground_truth/bent/001_mask.png",
+      "type": "file",
+      "bytes": 3027
+    },
+    {
+      "name": "grid/ground_truth/bent/002_mask.png",
+      "type": "file",
+      "bytes": 3161
+    },
+    {
+      "name": "grid/ground_truth/bent/003_mask.png",
+      "type": "file",
+      "bytes": 3718
+    },
+    {
+      "name": "grid/ground_truth/bent/004_mask.png",
+      "type": "file",
+      "bytes": 3455
+    },
+    {
+      "name": "grid/ground_truth/bent/005_mask.png",
+      "type": "file",
+      "bytes": 3594
+    },
+    {
+      "name": "grid/ground_truth/bent/006_mask.png",
+      "type": "file",
+      "bytes": 3993
+    },
+    {
+      "name": "grid/ground_truth/bent/007_mask.png",
+      "type": "file",
+      "bytes": 3474
+    },
+    {
+      "name": "grid/ground_truth/bent/008_mask.png",
+      "type": "file",
+      "bytes": 3241
+    },
+    {
+      "name": "grid/ground_truth/bent/009_mask.png",
+      "type": "file",
+      "bytes": 4305
+    },
+    {
+      "name": "grid/ground_truth/bent/010_mask.png",
+      "type": "file",
+      "bytes": 3951
+    },
+    {
+      "name": "grid/ground_truth/bent/011_mask.png",
+      "type": "file",
+      "bytes": 3603
+    },
+    {
+      "name": "grid/ground_truth/broken",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "grid/ground_truth/broken/000_mask.png",
+      "type": "file",
+      "bytes": 3291
+    },
+    {
+      "name": "grid/ground_truth/broken/001_mask.png",
+      "type": "file",
+      "bytes": 3994
+    },
+    {
+      "name": "grid/ground_truth/broken/002_mask.png",
+      "type": "file",
+      "bytes": 2906
+    },
+    {
+      "name": "grid/ground_truth/broken/003_mask.png",
+      "type": "file",
+      "bytes": 3736
+    },
+    {
+      "name": "grid/ground_truth/broken/004_mask.png",
+      "type": "file",
+      "bytes": 3353
+    },
+    {
+      "name": "grid/ground_truth/broken/005_mask.png",
+      "type": "file",
+      "bytes": 3434
+    },
+    {
+      "name": "grid/ground_truth/broken/006_mask.png",
+      "type": "file",
+      "bytes": 3203
+    },
+    {
+      "name": "grid/ground_truth/broken/007_mask.png",
+      "type": "file",
+      "bytes": 3273
+    },
+    {
+      "name": "grid/ground_truth/broken/008_mask.png",
+      "type": "file",
+      "bytes": 3119
+    },
+    {
+      "name": "grid/ground_truth/broken/009_mask.png",
+      "type": "file",
+      "bytes": 3254
+    },
+    {
+      "name": "grid/ground_truth/broken/010_mask.png",
+      "type": "file",
+      "bytes": 3211
+    },
+    {
+      "name": "grid/ground_truth/broken/011_mask.png",
+      "type": "file",
+      "bytes": 3120
+    },
+    {
+      "name": "grid/test",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "grid/test/bent",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "grid/test/bent/000.png",
+      "type": "file",
+      "bytes": 505732
+    },
+    {
+      "name": "grid/test/bent/001.png",
+      "type": "file",
+      "bytes": 464326
+    },
+    {
+      "name": "grid/test/bent/002.png",
+      "type": "file",
+      "bytes": 472471
+    },
+    {
+      "name": "grid/test/bent/003.png",
+      "type": "file",
+      "bytes": 490765
+    },
+    {
+      "name": "grid/test/bent/004.png",
+      "type": "file",
+      "bytes": 483591
+    },
+    {
+      "name": "grid/test/bent/005.png",
+      "type": "file",
+      "bytes": 464851
+    },
+    {
+      "name": "grid/test/bent/006.png",
+      "type": "file",
+      "bytes": 469401
+    },
+    {
+      "name": "grid/test/bent/007.png",
+      "type": "file",
+      "bytes": 490016
+    },
+    {
+      "name": "grid/test/bent/008.png",
+      "type": "file",
+      "bytes": 468245
+    },
+    {
+      "name": "grid/test/bent/009.png",
+      "type": "file",
+      "bytes": 464648
+    },
+    {
+      "name": "grid/test/bent/010.png",
+      "type": "file",
+      "bytes": 463692
+    },
+    {
+      "name": "grid/test/bent/011.png",
+      "type": "file",
+      "bytes": 477234
+    },
+    {
+      "name": "grid/test/broken",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "grid/test/broken/000.png",
+      "type": "file",
+      "bytes": 501835
+    },
+    {
+      "name": "grid/test/broken/001.png",
+      "type": "file",
+      "bytes": 485372
+    },
+    {
+      "name": "grid/test/broken/002.png",
+      "type": "file",
+      "bytes": 484637
+    },
+    {
+      "name": "grid/test/broken/003.png",
+      "type": "file",
+      "bytes": 465865
+    },
+    {
+      "name": "grid/test/broken/004.png",
+      "type": "file",
+      "bytes": 461224
+    },
+    {
+      "name": "grid/test/broken/005.png",
+      "type": "file",
+      "bytes": 465303
+    },
+    {
+      "name": "grid/test/broken/006.png",
+      "type": "file",
+      "bytes": 484387
+    },
+    {
+      "name": "grid/test/broken/007.png",
+      "type": "file",
+      "bytes": 478186
+    },
+    {
+      "name": "grid/test/broken/008.png",
+      "type": "file",
+      "bytes": 454024
+    },
+    {
+      "name": "grid/test/broken/009.png",
+      "type": "file",
+      "bytes": 476257
+    },
+    {
+      "name": "grid/test/broken/010.png",
+      "type": "file",
+      "bytes": 484701
+    },
+    {
+      "name": "grid/test/broken/011.png",
+      "type": "file",
+      "bytes": 471399
+    },
+    {
+      "name": "grid/test/glue",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "grid/test/glue/000.png",
+      "type": "file",
+      "bytes": 492123
+    },
+    {
+      "name": "grid/test/glue/001.png",
+      "type": "file",
+      "bytes": 492565
+    },
+    {
+      "name": "grid/test/glue/002.png",
+      "type": "file",
+      "bytes": 491460
+    },
+    {
+      "name": "grid/test/glue/003.png",
+      "type": "file",
+      "bytes": 488325
+    },
+    {
+      "name": "grid/test/glue/004.png",
+      "type": "file",
+      "bytes": 507112
+    },
+    {
+      "name": "grid/test/glue/005.png",
+      "type": "file",
+      "bytes": 496160
+    },
+    {
+      "name": "grid/test/glue/006.png",
+      "type": "file",
+      "bytes": 468762
+    },
+    {
+      "name": "grid/test/glue/007.png",
+      "type": "file",
+      "bytes": 470238
+    },
+    {
+      "name": "grid/test/glue/008.png",
+      "type": "file",
+      "bytes": 455836
+    },
+    {
+      "name": "grid/test/glue/009.png",
+      "type": "file",
+      "bytes": 503144
+    },
+    {
+      "name": "grid/test/glue/010.png",
+      "type": "file",
+      "bytes": 494103
+    },
+    {
+      "name": "grid/test/good",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "grid/test/good/000.png",
+      "type": "file",
+      "bytes": 470397
+    },
+    {
+      "name": "grid/test/good/001.png",
+      "type": "file",
+      "bytes": 454784
+    },
+    {
+      "name": "grid/test/good/002.png",
+      "type": "file",
+      "bytes": 439449
+    },
+    {
+      "name": "grid/test/good/003.png",
+      "type": "file",
+      "bytes": 448536
+    },
+    {
+      "name": "grid/test/good/004.png",
+      "type": "file",
+      "bytes": 493600
+    },
+    {
+      "name": "grid/test/good/005.png",
+      "type": "file",
+      "bytes": 493825
+    },
+    {
+      "name": "grid/test/good/006.png",
+      "type": "file",
+      "bytes": 494649
+    },
+    {
+      "name": "grid/test/good/007.png",
+      "type": "file",
+      "bytes": 465422
+    },
+    {
+      "name": "grid/test/good/008.png",
+      "type": "file",
+      "bytes": 442034
+    },
+    {
+      "name": "grid/test/good/009.png",
+      "type": "file",
+      "bytes": 467426
+    },
+    {
+      "name": "grid/test/good/010.png",
+      "type": "file",
+      "bytes": 470065
+    },
+    {
+      "name": "grid/test/good/011.png",
+      "type": "file",
+      "bytes": 476228
+    },
+    {
+      "name": "grid/test/good/012.png",
+      "type": "file",
+      "bytes": 478919
+    },
+    {
+      "name": "grid/test/good/013.png",
+      "type": "file",
+      "bytes": 443742
+    },
+    {
+      "name": "grid/test/good/014.png",
+      "type": "file",
+      "bytes": 466479
+    },
+    {
+      "name": "grid/test/good/015.png",
+      "type": "file",
+      "bytes": 464413
+    },
+    {
+      "name": "grid/test/good/016.png",
+      "type": "file",
+      "bytes": 458590
+    },
+    {
+      "name": "grid/test/good/017.png",
+      "type": "file",
+      "bytes": 501036
+    },
+    {
+      "name": "grid/test/good/018.png",
+      "type": "file",
+      "bytes": 471487
+    },
+    {
+      "name": "grid/test/good/019.png",
+      "type": "file",
+      "bytes": 509303
+    },
+    {
+      "name": "grid/test/good/020.png",
+      "type": "file",
+      "bytes": 503561
+    },
+    {
+      "name": "grid/test/metal_contamination",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "grid/test/metal_contamination/000.png",
+      "type": "file",
+      "bytes": 459026
+    },
+    {
+      "name": "grid/test/metal_contamination/001.png",
+      "type": "file",
+      "bytes": 452621
+    },
+    {
+      "name": "grid/test/metal_contamination/002.png",
+      "type": "file",
+      "bytes": 460078
+    },
+    {
+      "name": "grid/test/metal_contamination/003.png",
+      "type": "file",
+      "bytes": 464883
+    },
+    {
+      "name": "grid/test/metal_contamination/004.png",
+      "type": "file",
+      "bytes": 494350
+    },
+    {
+      "name": "grid/test/metal_contamination/005.png",
+      "type": "file",
+      "bytes": 482633
+    },
+    {
+      "name": "grid/test/metal_contamination/006.png",
+      "type": "file",
+      "bytes": 473884
+    },
+    {
+      "name": "grid/test/metal_contamination/007.png",
+      "type": "file",
+      "bytes": 467806
+    },
+    {
+      "name": "grid/test/metal_contamination/008.png",
+      "type": "file",
+      "bytes": 475490
+    },
+    {
+      "name": "grid/test/metal_contamination/009.png",
+      "type": "file",
+      "bytes": 491719
+    },
+    {
+      "name": "grid/test/metal_contamination/010.png",
+      "type": "file",
+      "bytes": 477344
+    },
+    {
+      "name": "grid/test/thread",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "grid/test/thread/000.png",
+      "type": "file",
+      "bytes": 469383
+    },
+    {
+      "name": "grid/test/thread/001.png",
+      "type": "file",
+      "bytes": 464902
+    },
+    {
+      "name": "grid/test/thread/002.png",
+      "type": "file",
+      "bytes": 456836
+    },
+    {
+      "name": "grid/test/thread/003.png",
+      "type": "file",
+      "bytes": 449133
+    },
+    {
+      "name": "grid/test/thread/004.png",
+      "type": "file",
+      "bytes": 464688
+    },
+    {
+      "name": "grid/test/thread/005.png",
+      "type": "file",
+      "bytes": 449528
+    },
+    {
+      "name": "grid/test/thread/006.png",
+      "type": "file",
+      "bytes": 454107
+    },
+    {
+      "name": "grid/test/thread/007.png",
+      "type": "file",
+      "bytes": 454685
+    },
+    {
+      "name": "grid/test/thread/008.png",
+      "type": "file",
+      "bytes": 456780
+    },
+    {
+      "name": "grid/test/thread/009.png",
+      "type": "file",
+      "bytes": 474549
+    },
+    {
+      "name": "grid/test/thread/010.png",
+      "type": "file",
+      "bytes": 476445
+    },
+    {
+      "name": "grid/train",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "grid/train/good",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "grid/train/good/007.png",
+      "type": "file",
+      "bytes": 477655
+    },
+    {
+      "name": "grid/train/good/008.png",
+      "type": "file",
+      "bytes": 477178
+    },
+    {
+      "name": "grid/train/good/009.png",
+      "type": "file",
+      "bytes": 481691
+    },
+    {
+      "name": "grid/train/good/010.png",
+      "type": "file",
+      "bytes": 475992
+    },
+    {
+      "name": "grid/train/good/011.png",
+      "type": "file",
+      "bytes": 473366
+    },
+    {
+      "name": "grid/train/good/012.png",
+      "type": "file",
+      "bytes": 494449
+    },
+    {
+      "name": "grid/train/good/013.png",
+      "type": "file",
+      "bytes": 476510
+    },
+    {
+      "name": "grid/train/good/014.png",
+      "type": "file",
+      "bytes": 469869
+    },
+    {
+      "name": "grid/train/good/015.png",
+      "type": "file",
+      "bytes": 467223
+    },
+    {
+      "name": "grid/train/good/016.png",
+      "type": "file",
+      "bytes": 475346
+    },
+    {
+      "name": "grid/train/good/000.png",
+      "type": "file",
+      "bytes": 450140
+    },
+    {
+      "name": "grid/train/good/001.png",
+      "type": "file",
+      "bytes": 492725
+    },
+    {
+      "name": "grid/train/good/002.png",
+      "type": "file",
+      "bytes": 473980
+    },
+    {
+      "name": "grid/train/good/003.png",
+      "type": "file",
+      "bytes": 483307
+    },
+    {
+      "name": "grid/train/good/004.png",
+      "type": "file",
+      "bytes": 460628
+    },
+    {
+      "name": "grid/train/good/005.png",
+      "type": "file",
+      "bytes": 461447
+    },
+    {
+      "name": "grid/train/good/006.png",
+      "type": "file",
+      "bytes": 468481
+    },
+    {
+      "name": "grid/train/good/017.png",
+      "type": "file",
+      "bytes": 470740
+    },
+    {
+      "name": "grid/train/good/022.png",
+      "type": "file",
+      "bytes": 469422
+    },
+    {
+      "name": "grid/train/good/023.png",
+      "type": "file",
+      "bytes": 485950
+    },
+    {
+      "name": "grid/train/good/024.png",
+      "type": "file",
+      "bytes": 464477
+    },
+    {
+      "name": "grid/train/good/025.png",
+      "type": "file",
+      "bytes": 465005
+    },
+    {
+      "name": "grid/train/good/026.png",
+      "type": "file",
+      "bytes": 467006
+    },
+    {
+      "name": "grid/train/good/027.png",
+      "type": "file",
+      "bytes": 470958
+    },
+    {
+      "name": "grid/train/good/028.png",
+      "type": "file",
+      "bytes": 497916
+    },
+    {
+      "name": "grid/train/good/029.png",
+      "type": "file",
+      "bytes": 483887
+    },
+    {
+      "name": "grid/train/good/030.png",
+      "type": "file",
+      "bytes": 492162
+    },
+    {
+      "name": "grid/train/good/031.png",
+      "type": "file",
+      "bytes": 487453
+    },
+    {
+      "name": "grid/train/good/032.png",
+      "type": "file",
+      "bytes": 508869
+    },
+    {
+      "name": "grid/train/good/033.png",
+      "type": "file",
+      "bytes": 485076
+    },
+    {
+      "name": "grid/train/good/034.png",
+      "type": "file",
+      "bytes": 501109
+    },
+    {
+      "name": "grid/train/good/035.png",
+      "type": "file",
+      "bytes": 470144
+    },
+    {
+      "name": "grid/train/good/036.png",
+      "type": "file",
+      "bytes": 495142
+    },
+    {
+      "name": "grid/train/good/037.png",
+      "type": "file",
+      "bytes": 473890
+    },
+    {
+      "name": "grid/train/good/038.png",
+      "type": "file",
+      "bytes": 475050
+    },
+    {
+      "name": "grid/train/good/039.png",
+      "type": "file",
+      "bytes": 485066
+    },
+    {
+      "name": "grid/train/good/040.png",
+      "type": "file",
+      "bytes": 482958
+    },
+    {
+      "name": "grid/train/good/041.png",
+      "type": "file",
+      "bytes": 490527
+    },
+    {
+      "name": "grid/train/good/042.png",
+      "type": "file",
+      "bytes": 488852
+    },
+    {
+      "name": "grid/train/good/043.png",
+      "type": "file",
+      "bytes": 513104
+    },
+    {
+      "name": "grid/train/good/044.png",
+      "type": "file",
+      "bytes": 470464
+    },
+    {
+      "name": "grid/train/good/045.png",
+      "type": "file",
+      "bytes": 492790
+    },
+    {
+      "name": "grid/train/good/046.png",
+      "type": "file",
+      "bytes": 502951
+    },
+    {
+      "name": "grid/train/good/047.png",
+      "type": "file",
+      "bytes": 469292
+    },
+    {
+      "name": "grid/train/good/048.png",
+      "type": "file",
+      "bytes": 467641
+    },
+    {
+      "name": "grid/train/good/049.png",
+      "type": "file",
+      "bytes": 483176
+    },
+    {
+      "name": "grid/train/good/050.png",
+      "type": "file",
+      "bytes": 485767
+    },
+    {
+      "name": "grid/train/good/051.png",
+      "type": "file",
+      "bytes": 482434
+    },
+    {
+      "name": "grid/train/good/052.png",
+      "type": "file",
+      "bytes": 482298
+    },
+    {
+      "name": "grid/train/good/053.png",
+      "type": "file",
+      "bytes": 488658
+    },
+    {
+      "name": "grid/train/good/054.png",
+      "type": "file",
+      "bytes": 485000
+    },
+    {
+      "name": "grid/train/good/055.png",
+      "type": "file",
+      "bytes": 477310
+    },
+    {
+      "name": "grid/train/good/056.png",
+      "type": "file",
+      "bytes": 490121
+    },
+    {
+      "name": "grid/train/good/057.png",
+      "type": "file",
+      "bytes": 487254
+    },
+    {
+      "name": "grid/train/good/058.png",
+      "type": "file",
+      "bytes": 462905
+    },
+    {
+      "name": "grid/train/good/059.png",
+      "type": "file",
+      "bytes": 467867
+    },
+    {
+      "name": "grid/train/good/060.png",
+      "type": "file",
+      "bytes": 488781
+    },
+    {
+      "name": "grid/train/good/061.png",
+      "type": "file",
+      "bytes": 494972
+    },
+    {
+      "name": "grid/train/good/062.png",
+      "type": "file",
+      "bytes": 478826
+    },
+    {
+      "name": "grid/train/good/063.png",
+      "type": "file",
+      "bytes": 500527
+    },
+    {
+      "name": "grid/train/good/064.png",
+      "type": "file",
+      "bytes": 483665
+    },
+    {
+      "name": "grid/train/good/065.png",
+      "type": "file",
+      "bytes": 508630
+    },
+    {
+      "name": "grid/train/good/066.png",
+      "type": "file",
+      "bytes": 471495
+    },
+    {
+      "name": "grid/train/good/067.png",
+      "type": "file",
+      "bytes": 481052
+    },
+    {
+      "name": "grid/train/good/068.png",
+      "type": "file",
+      "bytes": 471268
+    },
+    {
+      "name": "grid/train/good/069.png",
+      "type": "file",
+      "bytes": 507131
+    },
+    {
+      "name": "grid/train/good/070.png",
+      "type": "file",
+      "bytes": 481589
+    },
+    {
+      "name": "grid/train/good/071.png",
+      "type": "file",
+      "bytes": 468888
+    },
+    {
+      "name": "grid/train/good/072.png",
+      "type": "file",
+      "bytes": 495932
+    },
+    {
+      "name": "grid/train/good/073.png",
+      "type": "file",
+      "bytes": 480558
+    },
+    {
+      "name": "grid/train/good/074.png",
+      "type": "file",
+      "bytes": 491607
+    },
+    {
+      "name": "grid/train/good/075.png",
+      "type": "file",
+      "bytes": 463997
+    },
+    {
+      "name": "grid/train/good/076.png",
+      "type": "file",
+      "bytes": 469812
+    },
+    {
+      "name": "grid/train/good/077.png",
+      "type": "file",
+      "bytes": 457437
+    },
+    {
+      "name": "grid/train/good/078.png",
+      "type": "file",
+      "bytes": 480191
+    },
+    {
+      "name": "grid/train/good/079.png",
+      "type": "file",
+      "bytes": 458842
+    },
+    {
+      "name": "grid/train/good/080.png",
+      "type": "file",
+      "bytes": 474795
+    },
+    {
+      "name": "grid/train/good/081.png",
+      "type": "file",
+      "bytes": 484582
+    },
+    {
+      "name": "grid/train/good/082.png",
+      "type": "file",
+      "bytes": 467874
+    },
+    {
+      "name": "grid/train/good/083.png",
+      "type": "file",
+      "bytes": 479749
+    },
+    {
+      "name": "grid/train/good/084.png",
+      "type": "file",
+      "bytes": 458404
+    },
+    {
+      "name": "grid/train/good/085.png",
+      "type": "file",
+      "bytes": 458385
+    },
+    {
+      "name": "grid/train/good/086.png",
+      "type": "file",
+      "bytes": 469517
+    },
+    {
+      "name": "grid/train/good/087.png",
+      "type": "file",
+      "bytes": 449905
+    },
+    {
+      "name": "grid/train/good/088.png",
+      "type": "file",
+      "bytes": 462895
+    },
+    {
+      "name": "grid/train/good/089.png",
+      "type": "file",
+      "bytes": 437649
+    },
+    {
+      "name": "grid/train/good/090.png",
+      "type": "file",
+      "bytes": 453312
+    },
+    {
+      "name": "grid/train/good/091.png",
+      "type": "file",
+      "bytes": 440362
+    },
+    {
+      "name": "grid/train/good/092.png",
+      "type": "file",
+      "bytes": 461073
+    },
+    {
+      "name": "grid/train/good/093.png",
+      "type": "file",
+      "bytes": 448219
+    },
+    {
+      "name": "grid/train/good/094.png",
+      "type": "file",
+      "bytes": 464083
+    },
+    {
+      "name": "grid/train/good/095.png",
+      "type": "file",
+      "bytes": 457785
+    },
+    {
+      "name": "grid/train/good/096.png",
+      "type": "file",
+      "bytes": 444972
+    },
+    {
+      "name": "grid/train/good/097.png",
+      "type": "file",
+      "bytes": 450564
+    },
+    {
+      "name": "grid/train/good/098.png",
+      "type": "file",
+      "bytes": 436467
+    },
+    {
+      "name": "grid/train/good/099.png",
+      "type": "file",
+      "bytes": 467075
+    },
+    {
+      "name": "grid/train/good/100.png",
+      "type": "file",
+      "bytes": 435009
+    },
+    {
+      "name": "grid/train/good/101.png",
+      "type": "file",
+      "bytes": 467391
+    },
+    {
+      "name": "grid/train/good/102.png",
+      "type": "file",
+      "bytes": 443462
+    },
+    {
+      "name": "grid/train/good/103.png",
+      "type": "file",
+      "bytes": 461210
+    },
+    {
+      "name": "grid/train/good/104.png",
+      "type": "file",
+      "bytes": 452557
+    },
+    {
+      "name": "grid/train/good/105.png",
+      "type": "file",
+      "bytes": 456754
+    },
+    {
+      "name": "grid/train/good/106.png",
+      "type": "file",
+      "bytes": 439471
+    },
+    {
+      "name": "grid/train/good/107.png",
+      "type": "file",
+      "bytes": 454247
+    },
+    {
+      "name": "grid/train/good/108.png",
+      "type": "file",
+      "bytes": 457428
+    },
+    {
+      "name": "grid/train/good/109.png",
+      "type": "file",
+      "bytes": 451440
+    },
+    {
+      "name": "grid/train/good/110.png",
+      "type": "file",
+      "bytes": 460415
+    },
+    {
+      "name": "grid/train/good/111.png",
+      "type": "file",
+      "bytes": 449598
+    },
+    {
+      "name": "grid/train/good/112.png",
+      "type": "file",
+      "bytes": 469027
+    },
+    {
+      "name": "grid/train/good/113.png",
+      "type": "file",
+      "bytes": 455036
+    },
+    {
+      "name": "grid/train/good/114.png",
+      "type": "file",
+      "bytes": 448901
+    },
+    {
+      "name": "grid/train/good/115.png",
+      "type": "file",
+      "bytes": 460905
+    },
+    {
+      "name": "grid/train/good/116.png",
+      "type": "file",
+      "bytes": 474391
+    },
+    {
+      "name": "grid/train/good/117.png",
+      "type": "file",
+      "bytes": 457583
+    },
+    {
+      "name": "grid/train/good/118.png",
+      "type": "file",
+      "bytes": 461512
+    },
+    {
+      "name": "grid/train/good/119.png",
+      "type": "file",
+      "bytes": 442745
+    },
+    {
+      "name": "grid/train/good/120.png",
+      "type": "file",
+      "bytes": 455610
+    },
+    {
+      "name": "grid/train/good/121.png",
+      "type": "file",
+      "bytes": 474039
+    },
+    {
+      "name": "grid/train/good/122.png",
+      "type": "file",
+      "bytes": 459632
+    },
+    {
+      "name": "grid/train/good/123.png",
+      "type": "file",
+      "bytes": 444733
+    },
+    {
+      "name": "grid/train/good/124.png",
+      "type": "file",
+      "bytes": 456463
+    },
+    {
+      "name": "grid/train/good/125.png",
+      "type": "file",
+      "bytes": 440810
+    },
+    {
+      "name": "grid/train/good/126.png",
+      "type": "file",
+      "bytes": 453397
+    },
+    {
+      "name": "grid/train/good/127.png",
+      "type": "file",
+      "bytes": 444380
+    },
+    {
+      "name": "grid/train/good/128.png",
+      "type": "file",
+      "bytes": 481180
+    },
+    {
+      "name": "grid/train/good/129.png",
+      "type": "file",
+      "bytes": 460190
+    },
+    {
+      "name": "grid/train/good/130.png",
+      "type": "file",
+      "bytes": 457175
+    },
+    {
+      "name": "grid/train/good/131.png",
+      "type": "file",
+      "bytes": 457273
+    },
+    {
+      "name": "grid/train/good/132.png",
+      "type": "file",
+      "bytes": 490576
+    },
+    {
+      "name": "grid/train/good/133.png",
+      "type": "file",
+      "bytes": 446596
+    },
+    {
+      "name": "grid/train/good/134.png",
+      "type": "file",
+      "bytes": 472644
+    },
+    {
+      "name": "grid/train/good/135.png",
+      "type": "file",
+      "bytes": 459214
+    },
+    {
+      "name": "grid/train/good/136.png",
+      "type": "file",
+      "bytes": 466471
+    },
+    {
+      "name": "grid/train/good/137.png",
+      "type": "file",
+      "bytes": 459292
+    },
+    {
+      "name": "grid/train/good/138.png",
+      "type": "file",
+      "bytes": 459537
+    },
+    {
+      "name": "grid/train/good/139.png",
+      "type": "file",
+      "bytes": 461728
+    },
+    {
+      "name": "grid/train/good/140.png",
+      "type": "file",
+      "bytes": 477189
+    },
+    {
+      "name": "grid/train/good/141.png",
+      "type": "file",
+      "bytes": 458392
+    },
+    {
+      "name": "grid/train/good/142.png",
+      "type": "file",
+      "bytes": 452397
+    },
+    {
+      "name": "grid/train/good/143.png",
+      "type": "file",
+      "bytes": 463659
+    },
+    {
+      "name": "grid/train/good/144.png",
+      "type": "file",
+      "bytes": 465353
+    },
+    {
+      "name": "grid/train/good/145.png",
+      "type": "file",
+      "bytes": 454291
+    },
+    {
+      "name": "grid/train/good/146.png",
+      "type": "file",
+      "bytes": 453536
+    },
+    {
+      "name": "grid/train/good/147.png",
+      "type": "file",
+      "bytes": 448399
+    },
+    {
+      "name": "grid/train/good/148.png",
+      "type": "file",
+      "bytes": 479107
+    },
+    {
+      "name": "grid/train/good/149.png",
+      "type": "file",
+      "bytes": 445785
+    },
+    {
+      "name": "grid/train/good/150.png",
+      "type": "file",
+      "bytes": 451837
+    },
+    {
+      "name": "grid/train/good/151.png",
+      "type": "file",
+      "bytes": 464738
+    },
+    {
+      "name": "grid/train/good/152.png",
+      "type": "file",
+      "bytes": 463998
+    },
+    {
+      "name": "grid/train/good/153.png",
+      "type": "file",
+      "bytes": 467941
+    },
+    {
+      "name": "grid/train/good/154.png",
+      "type": "file",
+      "bytes": 450434
+    },
+    {
+      "name": "grid/train/good/155.png",
+      "type": "file",
+      "bytes": 445032
+    },
+    {
+      "name": "grid/train/good/156.png",
+      "type": "file",
+      "bytes": 460224
+    },
+    {
+      "name": "grid/train/good/157.png",
+      "type": "file",
+      "bytes": 451299
+    },
+    {
+      "name": "grid/train/good/158.png",
+      "type": "file",
+      "bytes": 448489
+    },
+    {
+      "name": "grid/train/good/159.png",
+      "type": "file",
+      "bytes": 458927
+    },
+    {
+      "name": "grid/train/good/160.png",
+      "type": "file",
+      "bytes": 448848
+    },
+    {
+      "name": "grid/train/good/161.png",
+      "type": "file",
+      "bytes": 461621
+    },
+    {
+      "name": "grid/train/good/162.png",
+      "type": "file",
+      "bytes": 473509
+    },
+    {
+      "name": "grid/train/good/163.png",
+      "type": "file",
+      "bytes": 471325
+    },
+    {
+      "name": "grid/train/good/164.png",
+      "type": "file",
+      "bytes": 458579
+    },
+    {
+      "name": "grid/train/good/165.png",
+      "type": "file",
+      "bytes": 453571
+    },
+    {
+      "name": "grid/train/good/166.png",
+      "type": "file",
+      "bytes": 459086
+    },
+    {
+      "name": "grid/train/good/167.png",
+      "type": "file",
+      "bytes": 461639
+    },
+    {
+      "name": "grid/train/good/168.png",
+      "type": "file",
+      "bytes": 451870
+    },
+    {
+      "name": "grid/train/good/169.png",
+      "type": "file",
+      "bytes": 445082
+    },
+    {
+      "name": "grid/train/good/170.png",
+      "type": "file",
+      "bytes": 455787
+    },
+    {
+      "name": "grid/train/good/171.png",
+      "type": "file",
+      "bytes": 468556
+    },
+    {
+      "name": "grid/train/good/172.png",
+      "type": "file",
+      "bytes": 463911
+    },
+    {
+      "name": "grid/train/good/173.png",
+      "type": "file",
+      "bytes": 443617
+    },
+    {
+      "name": "grid/train/good/174.png",
+      "type": "file",
+      "bytes": 478740
+    },
+    {
+      "name": "grid/train/good/175.png",
+      "type": "file",
+      "bytes": 465232
+    },
+    {
+      "name": "grid/train/good/176.png",
+      "type": "file",
+      "bytes": 477264
+    },
+    {
+      "name": "grid/train/good/177.png",
+      "type": "file",
+      "bytes": 462105
+    },
+    {
+      "name": "grid/train/good/178.png",
+      "type": "file",
+      "bytes": 462110
+    },
+    {
+      "name": "grid/train/good/179.png",
+      "type": "file",
+      "bytes": 461306
+    },
+    {
+      "name": "grid/train/good/180.png",
+      "type": "file",
+      "bytes": 447563
+    },
+    {
+      "name": "grid/train/good/181.png",
+      "type": "file",
+      "bytes": 462719
+    },
+    {
+      "name": "grid/train/good/182.png",
+      "type": "file",
+      "bytes": 442882
+    },
+    {
+      "name": "grid/train/good/183.png",
+      "type": "file",
+      "bytes": 476708
+    },
+    {
+      "name": "grid/train/good/184.png",
+      "type": "file",
+      "bytes": 468227
+    },
+    {
+      "name": "grid/train/good/185.png",
+      "type": "file",
+      "bytes": 496907
+    },
+    {
+      "name": "grid/train/good/186.png",
+      "type": "file",
+      "bytes": 488139
+    },
+    {
+      "name": "grid/train/good/187.png",
+      "type": "file",
+      "bytes": 483561
+    },
+    {
+      "name": "grid/train/good/188.png",
+      "type": "file",
+      "bytes": 496684
+    },
+    {
+      "name": "grid/train/good/189.png",
+      "type": "file",
+      "bytes": 507713
+    },
+    {
+      "name": "grid/train/good/190.png",
+      "type": "file",
+      "bytes": 489149
+    },
+    {
+      "name": "grid/train/good/191.png",
+      "type": "file",
+      "bytes": 466293
+    },
+    {
+      "name": "grid/train/good/192.png",
+      "type": "file",
+      "bytes": 463994
+    },
+    {
+      "name": "grid/train/good/193.png",
+      "type": "file",
+      "bytes": 473734
+    },
+    {
+      "name": "grid/train/good/194.png",
+      "type": "file",
+      "bytes": 457946
+    },
+    {
+      "name": "grid/train/good/195.png",
+      "type": "file",
+      "bytes": 484125
+    },
+    {
+      "name": "grid/train/good/196.png",
+      "type": "file",
+      "bytes": 457057
+    },
+    {
+      "name": "grid/train/good/197.png",
+      "type": "file",
+      "bytes": 486458
+    },
+    {
+      "name": "grid/train/good/198.png",
+      "type": "file",
+      "bytes": 478035
+    },
+    {
+      "name": "grid/train/good/199.png",
+      "type": "file",
+      "bytes": 453288
+    },
+    {
+      "name": "grid/train/good/200.png",
+      "type": "file",
+      "bytes": 485151
+    },
+    {
+      "name": "grid/train/good/201.png",
+      "type": "file",
+      "bytes": 463159
+    },
+    {
+      "name": "grid/train/good/202.png",
+      "type": "file",
+      "bytes": 488173
+    },
+    {
+      "name": "grid/train/good/203.png",
+      "type": "file",
+      "bytes": 440171
+    },
+    {
+      "name": "grid/train/good/204.png",
+      "type": "file",
+      "bytes": 502007
+    },
+    {
+      "name": "grid/train/good/205.png",
+      "type": "file",
+      "bytes": 471957
+    },
+    {
+      "name": "grid/train/good/206.png",
+      "type": "file",
+      "bytes": 473514
+    },
+    {
+      "name": "grid/train/good/207.png",
+      "type": "file",
+      "bytes": 455874
+    },
+    {
+      "name": "grid/train/good/208.png",
+      "type": "file",
+      "bytes": 476573
+    },
+    {
+      "name": "grid/train/good/209.png",
+      "type": "file",
+      "bytes": 458192
+    },
+    {
+      "name": "grid/train/good/210.png",
+      "type": "file",
+      "bytes": 490280
+    },
+    {
+      "name": "grid/train/good/211.png",
+      "type": "file",
+      "bytes": 478305
+    },
+    {
+      "name": "grid/train/good/212.png",
+      "type": "file",
+      "bytes": 479649
+    },
+    {
+      "name": "grid/train/good/213.png",
+      "type": "file",
+      "bytes": 472232
+    },
+    {
+      "name": "grid/train/good/214.png",
+      "type": "file",
+      "bytes": 484816
+    },
+    {
+      "name": "grid/train/good/215.png",
+      "type": "file",
+      "bytes": 474689
+    },
+    {
+      "name": "grid/train/good/216.png",
+      "type": "file",
+      "bytes": 493234
+    },
+    {
+      "name": "grid/train/good/217.png",
+      "type": "file",
+      "bytes": 476425
+    },
+    {
+      "name": "grid/train/good/218.png",
+      "type": "file",
+      "bytes": 465906
+    },
+    {
+      "name": "grid/train/good/219.png",
+      "type": "file",
+      "bytes": 500168
+    },
+    {
+      "name": "grid/train/good/220.png",
+      "type": "file",
+      "bytes": 473061
+    },
+    {
+      "name": "grid/train/good/221.png",
+      "type": "file",
+      "bytes": 485913
+    },
+    {
+      "name": "grid/train/good/222.png",
+      "type": "file",
+      "bytes": 459282
+    },
+    {
+      "name": "grid/train/good/223.png",
+      "type": "file",
+      "bytes": 462473
+    },
+    {
+      "name": "grid/train/good/224.png",
+      "type": "file",
+      "bytes": 465868
+    },
+    {
+      "name": "grid/train/good/225.png",
+      "type": "file",
+      "bytes": 468363
+    },
+    {
+      "name": "grid/train/good/226.png",
+      "type": "file",
+      "bytes": 485067
+    },
+    {
+      "name": "grid/train/good/227.png",
+      "type": "file",
+      "bytes": 472266
+    },
+    {
+      "name": "grid/train/good/228.png",
+      "type": "file",
+      "bytes": 470389
+    },
+    {
+      "name": "grid/train/good/229.png",
+      "type": "file",
+      "bytes": 500059
+    },
+    {
+      "name": "grid/train/good/230.png",
+      "type": "file",
+      "bytes": 471928
+    },
+    {
+      "name": "grid/train/good/231.png",
+      "type": "file",
+      "bytes": 476859
+    },
+    {
+      "name": "grid/train/good/232.png",
+      "type": "file",
+      "bytes": 473664
+    },
+    {
+      "name": "grid/train/good/233.png",
+      "type": "file",
+      "bytes": 456373
+    },
+    {
+      "name": "grid/train/good/234.png",
+      "type": "file",
+      "bytes": 476479
+    },
+    {
+      "name": "grid/train/good/235.png",
+      "type": "file",
+      "bytes": 469920
+    },
+    {
+      "name": "grid/train/good/236.png",
+      "type": "file",
+      "bytes": 482491
+    },
+    {
+      "name": "grid/train/good/237.png",
+      "type": "file",
+      "bytes": 477180
+    },
+    {
+      "name": "grid/train/good/238.png",
+      "type": "file",
+      "bytes": 474727
+    },
+    {
+      "name": "grid/train/good/239.png",
+      "type": "file",
+      "bytes": 474193
+    },
+    {
+      "name": "grid/train/good/240.png",
+      "type": "file",
+      "bytes": 485074
+    },
+    {
+      "name": "grid/train/good/241.png",
+      "type": "file",
+      "bytes": 478665
+    },
+    {
+      "name": "grid/train/good/242.png",
+      "type": "file",
+      "bytes": 455656
+    },
+    {
+      "name": "grid/train/good/243.png",
+      "type": "file",
+      "bytes": 472744
+    },
+    {
+      "name": "grid/train/good/244.png",
+      "type": "file",
+      "bytes": 469684
+    },
+    {
+      "name": "grid/train/good/245.png",
+      "type": "file",
+      "bytes": 469414
+    },
+    {
+      "name": "grid/train/good/246.png",
+      "type": "file",
+      "bytes": 487871
+    },
+    {
+      "name": "grid/train/good/247.png",
+      "type": "file",
+      "bytes": 469020
+    },
+    {
+      "name": "grid/train/good/248.png",
+      "type": "file",
+      "bytes": 475863
+    },
+    {
+      "name": "grid/train/good/249.png",
+      "type": "file",
+      "bytes": 470556
+    },
+    {
+      "name": "grid/train/good/250.png",
+      "type": "file",
+      "bytes": 513984
+    },
+    {
+      "name": "grid/train/good/251.png",
+      "type": "file",
+      "bytes": 482850
+    },
+    {
+      "name": "grid/train/good/252.png",
+      "type": "file",
+      "bytes": 484379
+    },
+    {
+      "name": "grid/train/good/253.png",
+      "type": "file",
+      "bytes": 424160
+    },
+    {
+      "name": "grid/train/good/254.png",
+      "type": "file",
+      "bytes": 457130
+    },
+    {
+      "name": "grid/train/good/255.png",
+      "type": "file",
+      "bytes": 469925
+    },
+    {
+      "name": "grid/train/good/256.png",
+      "type": "file",
+      "bytes": 479875
+    },
+    {
+      "name": "grid/train/good/257.png",
+      "type": "file",
+      "bytes": 498827
+    },
+    {
+      "name": "grid/train/good/258.png",
+      "type": "file",
+      "bytes": 474367
+    },
+    {
+      "name": "grid/train/good/259.png",
+      "type": "file",
+      "bytes": 505773
+    },
+    {
+      "name": "grid/train/good/260.png",
+      "type": "file",
+      "bytes": 490341
+    },
+    {
+      "name": "grid/train/good/261.png",
+      "type": "file",
+      "bytes": 488219
+    },
+    {
+      "name": "grid/train/good/262.png",
+      "type": "file",
+      "bytes": 462313
+    },
+    {
+      "name": "grid/train/good/263.png",
+      "type": "file",
+      "bytes": 466123
+    },
+    {
+      "name": "grid/train/good/018.png",
+      "type": "file",
+      "bytes": 468726
+    },
+    {
+      "name": "grid/train/good/019.png",
+      "type": "file",
+      "bytes": 480951
+    },
+    {
+      "name": "grid/train/good/020.png",
+      "type": "file",
+      "bytes": 489675
+    },
+    {
+      "name": "grid/train/good/021.png",
+      "type": "file",
+      "bytes": 477021
+    },
+    {
+      "name": "grid/readme.txt",
+      "type": "file",
+      "bytes": 881
+    },
+    {
+      "name": "grid/license.txt",
+      "type": "file",
+      "bytes": 20845
+    }
+  ],
+  "image_counts": {
+    "train_good": 264,
+    "test": 78
+  },
+  "published_test_types": {
+    "bent": 12,
+    "broken": 12,
+    "glue": 11,
+    "good": 21,
+    "metal_contamination": 11,
+    "thread": 11
+  }
+}
