@@ -1,0 +1,32 @@
+{
+ "split": "test",
+ "roster_events": 2369,
+ "complete_events": 2369,
+ "dropped": [],
+ "blank_on_1s_kept_in_npz": [],
+ "kept_counts": {
+  "Air_Compressor": 150,
+  "Blip": 150,
+  "Low_Frequency_Lines": 150,
+  "Koi_Fish": 150,
+  "Extremely_Loud": 150,
+  "other": 150,
+  "Whistle": 150,
+  "Violin_Mode": 150,
+  "Low_Frequency_Burst": 150,
+  "Power_Line": 150,
+  "Tomte": 150,
+  "Scattered_Light": 150,
+  "Repeating_Blips": 150,
+  "1080Lines": 122,
+  "Scratchy": 119,
+  "Light_Modulation": 75,
+  "Paired_Doves": 44,
+  "1400Ripples": 43,
+  "Helix": 8,
+  "Chirp": 5,
+  "Wandering_Line": 3
+ },
+ "resample": "linear",
+ "npz_sha256": "0954f362c9dd6f982ab2129b7e13cdc92566b76611a8b875a83e28a3aebd60e8"
+}

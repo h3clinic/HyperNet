@@ -73,3 +73,39 @@ def test_dev_mean_ap_ignores_test_items():
 def test_to_uint8_rgb():
     rgb = gs.to_uint8_rgb(np.full((1, 4, 5), .5))
     assert rgb.shape == (4, 5, 3) and rgb.dtype == np.uint8 and rgb[0, 0, 0] == 128
+
+
+def test_o3_png_conversion_matches_training_arrays():
+    """PNG -> array must reproduce the v1.1 HDF5 arrays; uses locally cached official PNGs if present."""
+    import os
+    from pathlib import Path
+    from hypernet import gravity_spy_o3 as o3
+    raw = Path('C:/Users/brita/Documents/Codex/2026-11-01/wan/outputs/hypernet_v15/data/gravity_spy_v15_final/raw')
+    data = Path('C:/Users/brita/Documents/Codex/2026-11-01/wan/gravity_spy_data')
+    if not raw.exists() or not (data / 'trainingsetv1d1.h5').exists():
+        pytest.skip('local Gravity Spy files not present')
+    import h5py, pandas as pd
+    meta = pd.read_csv(data / 'trainingset_v1d1_metadata.csv').set_index('gravityspy_id')
+    checked = 0
+    with h5py.File(data / 'trainingsetv1d1.h5', 'r') as f:
+        for name in sorted(os.listdir(raw))[:60]:
+            gid, dur = name.split('_')[0], name.split('_')[-1][:-4]
+            if gid not in meta.index:
+                continue
+            a = f[meta.loc[gid, 'label']][meta.loc[gid, 'sample_type']][gid][f'{dur}.png'][()][0]
+            if a.max() - a.min() < 1e-6:
+                continue
+            b = o3.png_to_array(raw / name)
+            assert b.shape == (140, 170) and np.abs(b - a).max() < 2e-3
+            checked += 1
+            if checked == 5:
+                break
+    assert checked == 5
+
+
+def test_o3_time_groups_chain_same_detector_only():
+    import pandas as pd
+    from hypernet import gravity_spy_o3 as o3
+    t = pd.DataFrame({'ifo': ['H1', 'H1', 'H1', 'L1', 'H1'], 'event_time': [100.0, 103.0, 106.5, 103.0, 200.0]})
+    g = o3.time_groups(t, seconds=4.0)
+    assert g[0] == g[1] == g[2] and g[3] != g[0] and g[4] != g[0]

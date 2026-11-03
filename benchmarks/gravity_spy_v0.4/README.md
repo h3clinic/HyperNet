@@ -1,5 +1,7 @@
 # Gravity Spy one-reference glitch retrieval (v0.4)
 
+> **Update (v0.5):** this contrast did not hold on 2,369 unseen O3b events (trained 0.477 vs random 0.495, [−0.066, +0.029]); the objective effect did. See [v0.5](../gravity_spy_v0.5/README.md).
+
 **For the first time, HyperNet's synthetic training helps on real data.** A CNN trained only on a synthetic time-frequency curriculum, where each type is a distribution and positives are independent members, reaches **0.688 TEST mean AP**. The same architecture at random weights reaches 0.586–0.620 across five seeds. The trained model beats four of the five random seeds with class-bootstrap intervals that exclude zero, and the fifth (the best seed, 0.620) by +0.068 [−0.000, +0.132], just short.
 
 The objective is what matters. On the identical synthetic data, the old v0.14 loss (two augmented views of one picture) reaches only 0.531, below random. Family objective minus old objective: **+0.157 [+0.070, +0.253]**.
@@ -21,11 +23,11 @@ Rule: within each arm, the readout × scoring × epoch (or seed) with the highes
 | Arm | Selected | DEV mean AP |
 |---|---|---|
 | Trained, family objective | epoch 8, coarse 6×6 grid, fused4 | 0.692 |
-| Trained, old objective (control) | epoch 12, four-layer mix, fused4 | 0.556 |
+| Trained, old objective (control) | epoch 12, four-layer mix, fused4 | 0.542 |
 | Random (best of 5 seeds) | seed 2026, four-layer mix, fused4 | 0.611 (seeds: 0.589–0.611) |
 | Scattering | per-feature, fused4 | 0.599 |
 | Hybrid pixels + random1403 | fused4 | 0.606 |
-| Raw pixels | 1.0 s | 0.493 |
+| Raw pixels | 1.0 s | 0.505 |
 
 ## Results (TEST, 1,159 items, 20 types, chance 0.049)
 
@@ -71,7 +73,7 @@ By type, training helps most on extended and structured patterns: Helix 0.86 vs 
 python scripts/train_spectro.py --objective family   --output <runs>/spectro_family
 python scripts/train_spectro.py --objective instance --output <runs>/spectro_instance
 python scripts/gravity_spy_v04.py --stage select --data <Zenodo files> --benchmark benchmarks/gravity_spy_v0.1 \
-    --runs <hypernet_v14/checkpoints> --trained <runs> --output benchmarks/gravity_spy_v0.5
+    --runs <hypernet_v14/checkpoints> --trained <runs> --output <new folder>
 python scripts/gravity_spy_v04.py --stage test ...same arguments...
 ```
 
