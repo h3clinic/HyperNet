@@ -1,0 +1,311 @@
+{
+  "status": "complete",
+  "created_utc": "2026-11-03T04:18:26.594521+00:00",
+  "config": {
+    "steps": 2048,
+    "batch_size": 16,
+    "support_size": 96,
+    "query_size": 192,
+    "seed": 1717,
+    "stream_seed": 1701,
+    "threads": 4,
+    "workers": 4,
+    "device": "cuda",
+    "variant": "primary",
+    "geometry": true,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "final_lr": 3e-05,
+    "gradient_clip": 5.0,
+    "dtype": "float32",
+    "amp": false,
+    "deterministic_algorithms": true,
+    "curriculum_format": "hypernet.compositional_2d_curriculum.v17.1",
+    "curriculum_config": {
+      "format": "hypernet.compositional_2d_curriculum.v17.1",
+      "families": [
+        "branch",
+        "contour",
+        "repetition",
+        "ridge",
+        "texture",
+        "composite"
+      ],
+      "support_size": 96,
+      "query_size": 192,
+      "supersampling": 2,
+      "target_probability": 0.5,
+      "visibility_floor": 0.65,
+      "minimum_line_width_final_pixels": 1,
+      "matched_negative_selection": "Program-hash seeded random ordering of admissible single-attribute edits, independently for scene distractor and absent replacement",
+      "material_rendering": "Modulate foreground contrast against the local background, preserving texture in either polarity",
+      "ambiguity_rejection": "At most 16 deterministic nuisance draws of the same program; reject only explicit unresolved edit geometry or final presence counterfactuals with fewer than 8 RGB-distinguishing pixels; retry counts and reasons recorded",
+      "family_sampling": "Round-robin by episode index, with program hashing within each family",
+      "support_framing": "Known synthetic mask crop with margins 0,.05,.15,.35,.6 then aspect-preserving letterbox; padding is crop border median RGB",
+      "train_composite_pairs": [
+        [
+          "branch",
+          "contour"
+        ],
+        [
+          "repetition",
+          "texture"
+        ],
+        [
+          "contour",
+          "ridge"
+        ],
+        [
+          "branch",
+          "repetition"
+        ]
+      ],
+      "construction_holdout_pairs": [
+        [
+          "branch",
+          "ridge"
+        ],
+        [
+          "contour",
+          "texture"
+        ],
+        [
+          "ridge",
+          "repetition"
+        ],
+        [
+          "branch",
+          "texture"
+        ]
+      ],
+      "split": "SHA256 of the complete canonical structural program modulo10: 0=test,1=development,2..9=train",
+      "subprogram_overlap": "Hash disjointness applies to whole programs; primitive subprograms can recur inside composites across splits. The separate compositional split reserves constituent-pair constructions, not unseen primitive categories.",
+      "nuisance_split_codes": {
+        "train": 0,
+        "development": 1,
+        "test": 2,
+        "compositional": 3
+      },
+      "natural_images_used": 0,
+      "borrowed_weights_used": false,
+      "mask_convention": "Binary occupancy and part labels sampled at final pixel centres; RGB antialiased separately",
+      "occlusion_identity_floor": "At least 8 geometric/material edit pixels for each negative and 8 counterfactual RGB pixels with channel difference >=3 remain untouched by any occluder alpha",
+      "bbox_convention": "Tight visible centre-sampled target mask, pixelxyxy half-open; absent is fourzeros",
+      "positive_correspondence": "Part identity only across independently rendered instances; not pixel correspondence"
+    },
+    "model_format": "hypernet.local_relations.v17.2",
+    "natural_training_images": 0,
+    "borrowed_pretrained_weights": false,
+    "smoke": false,
+    "source_sha256": {
+      "hypernet/scene_curriculum.py": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+      "hypernet/local_relation_model.py": "b8dd441576334cfd436dfb12b2ab48f3a859311178f0b78ef0ce15a3f5ffdde9",
+      "scripts/train_local.py": "0e86d9678c9da2fd7dc5da37ff327d1fc4636b2619a599e093deca4f26a137fe"
+    }
+  },
+  "optimizer_steps": 2048,
+  "training_episodes": 32768,
+  "training_views": 65536,
+  "positive_episodes": 16355,
+  "negative_episodes": 16413,
+  "unique_structural_programs": 10512,
+  "unique_support_rgb": 32768,
+  "unique_query_rgb": 32768,
+  "unique_rgb_across_input_roles": 65536,
+  "family_episode_counts": {
+    "ridge": 5462,
+    "texture": 5462,
+    "composite": 5461,
+    "branch": 5461,
+    "contour": 5461,
+    "repetition": 5461
+  },
+  "input_stream_sha256": "4767e049b6bc301c12c3f0772977fced134c87d624b21a695ab001af6a2da66d",
+  "source_sha256": {
+    "hypernet/scene_curriculum.py": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+    "hypernet/local_relation_model.py": "b8dd441576334cfd436dfb12b2ab48f3a859311178f0b78ef0ce15a3f5ffdde9",
+    "scripts/train_local.py": "0e86d9678c9da2fd7dc5da37ff327d1fc4636b2619a599e093deca4f26a137fe"
+  },
+  "checkpoints": [
+    {
+      "path": "runs/primary_2048/random.pt",
+      "sha256": "e9cb0fc755fbbbd5bcf6876652f6e56728ec547acb458d904053ce2e146684f1",
+      "state_sha256": "aaf001ae7db5e5e7341ca12dcb6de5fb20f1c358743d1f9ba2b9fdc25cb0b9dc",
+      "optimizer_steps": 0
+    },
+    {
+      "path": "runs/primary_2048/final.pt",
+      "sha256": "e7f0c787ee963ce615c73fea355fc65a9a6ec39bee37561a931657967a756892",
+      "state_sha256": "db030621a2de347ec7a530b72ee4cdf4b1f147dab3082334285e056b55400016",
+      "optimizer_steps": 2048
+    }
+  ],
+  "ledger_shards": [
+    {
+      "path": "runs/primary_2048/ledger/000001_000064.npz",
+      "sha256": "03aab1f677ec1a4ac73c3b624040d3070d1e8d331f5841d049d46bdce2f3e9eb",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/000065_000128.npz",
+      "sha256": "db4a48f1b99ce9670567d3321660944e08c357e59f3a20cbfe3a6631d2d7ef71",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/000129_000192.npz",
+      "sha256": "f5492c774885b89812cef4cb7dec54dd8feb92e265b26a5473b6cc372cc296d2",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/000193_000256.npz",
+      "sha256": "680274d79f5ac6c95b345dfae1f6480254a2974874a4d6f4c8dc88feccc5dd11",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/000257_000320.npz",
+      "sha256": "513ba84ebc70b54eb016cc36ff9db724382a868cd79364f5c429ecb50ab79359",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/000321_000384.npz",
+      "sha256": "3109409535883d33469c376f2edf90387a6abe731af4a4a8a852a53bf97a291b",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/000385_000448.npz",
+      "sha256": "0b91055897126165dc9cf3fd6bc4f88ee5f06ea4ecef512352247a14df0e350b",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/000449_000512.npz",
+      "sha256": "770da6f4033bbb715108ed648c6c0af269965737c9c413abef5ab9c5167fc71f",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/000513_000576.npz",
+      "sha256": "4ae807f59d68cab48aeb39614d1c85f45459f65ca99810f20d17b1772c1548f0",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/000577_000640.npz",
+      "sha256": "39c06dc94fe8a1ba6c03bf38763def187b6f19fb3257996a0e3040c3f55d9a6f",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/000641_000704.npz",
+      "sha256": "32582659984c95431c4d84e36b571826a9f6c93c44434b93eb9665ea465201da",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/000705_000768.npz",
+      "sha256": "6c1647689274e9d45f5a4c2475be0081e0fcfeab3c1d89f32abbf97954cc4d23",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/000769_000832.npz",
+      "sha256": "30202d2967a781fcc1beb41b7a58ca69db9e6a8099edb2b37deca3e5077dd78d",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/000833_000896.npz",
+      "sha256": "b2c903d2b5a8cfdf65a27656f55a77ec9dcaba24cda212dd4c8d8b128c2280d5",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/000897_000960.npz",
+      "sha256": "14ad2a34730d3fd8d7637c87a42cb82bbf83bdaef27d43d73e4b7bed106d8af4",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/000961_001024.npz",
+      "sha256": "2499bbcd03e0cfbd5618d84f4d59be44b1051d6f2bd31202d179276c6aa0a2b7",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/001025_001088.npz",
+      "sha256": "8956defd94633941f85d38b411e68f066bf1a6c8a5bc984955b415a6f65ee059",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/001089_001152.npz",
+      "sha256": "3642f0a4c8a0ed404dd05f7c81c2dd96ca831e8e8f0513d8b087a6e20fc17687",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/001153_001216.npz",
+      "sha256": "9e3d6d9466390bc86e496ac5df9511b50aa22e7ef1a53c279ec540ddd80aae0a",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/001217_001280.npz",
+      "sha256": "1c590104f0e60d47e5ccc4db1c338f5b41bf4411eba3648266a5c95d071f0fd6",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/001281_001344.npz",
+      "sha256": "8ddef21fdac025dcaa90d8df1f9e0ca1b72a1b8595690b106d93cafb4e0431fc",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/001345_001408.npz",
+      "sha256": "863fa4c9c1037f77cee0d855867541418054cea08126c35186070b412be1679f",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/001409_001472.npz",
+      "sha256": "fba7e4213d27472501ac726532f30ada500dbee19ab7e6c053de76b50fc4a8e1",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/001473_001536.npz",
+      "sha256": "670732d6f5abc67125f56761abe581691d88d1687c8dc69c8bad07bc6fb9373f",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/001537_001600.npz",
+      "sha256": "516e44351686c6eec5f9c1b72ab5e99e455732b25d7af0c4f5c9864e663d3bb3",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/001601_001664.npz",
+      "sha256": "7b6c6bbec2b897f617d9263c35dd158c83b35d366ff3654858421f41ac4c06c4",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/001665_001728.npz",
+      "sha256": "607d41d509ff4dca1d593fcffd332d2f19a0e4dce32959c0331537b049c39ccd",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/001729_001792.npz",
+      "sha256": "ce61928a66c855af1cfef3bedb14272fbd739c6f62956e8836dfe348cc9d2838",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/001793_001856.npz",
+      "sha256": "8d3d3db7fba1c82f170969342f957a67d7802e29c6a2207415622cceba34b518",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/001857_001920.npz",
+      "sha256": "c27a219f2369e77acae71c7564c462731f58f8b6efd37dc2eb06d0185b702213",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/001921_001984.npz",
+      "sha256": "d280405a6994e8f2936abc1768cf6eff076e8b0427aa7d46977369223e68d1d1",
+      "steps": 64
+    },
+    {
+      "path": "runs/primary_2048/ledger/001985_002048.npz",
+      "sha256": "1e2a04cd53f151645f6a62e1c1c07a91d7d1736625a822e9469bea6d3dfccce8",
+      "steps": 64
+    }
+  ],
+  "history_sha256": "bc117df0935e31b47f47d941f02b3faccf11df99c66a9e7d097a9d5ca5367cb9",
+  "state_sha256": "db030621a2de347ec7a530b72ee4cdf4b1f147dab3082334285e056b55400016",
+  "seconds": 1530.9327019000048,
+  "peak_cuda_bytes": 4939285504,
+  "natural_training_images": 0,
+  "borrowed_pretrained_weights": false
+}

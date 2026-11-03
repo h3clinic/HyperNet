@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "same_inputs_all_four_methods": true,
+  "split_hashes": {
+    "development": "b01adc2507d872a2812f9bc13b522ad3bfb0a7116605acc07f5f506a6ccbb07a",
+    "test": "afca3497d99e02e8146bb0ace14f556253a5413ca839f8c4eec4b4665bbe7a45",
+    "compositional": "95e6e025de001253ac6d2a909489ec9103ff94c1c5b623cdcb18ce0255c589b6"
+  },
+  "methods": {
+    "synthetic_raw_template": {
+      "development": {
+        "localized_recall": 0.01652892561983471,
+        "false_positive_rate": 0.044444444444444446,
+        "unthresholded_localized_recall": 0.0743801652892562,
+        "presence_roc_auc": 0.5205387205387205
+      },
+      "test": {
+        "localized_recall": 0.003861003861003861,
+        "false_positive_rate": 0.08695652173913043,
+        "unthresholded_localized_recall": 0.0694980694980695,
+        "presence_roc_auc": 0.5241198284676545
+      },
+      "compositional": {
+        "localized_recall": 0.011111111111111112,
+        "false_positive_rate": 0.03305785123966942,
+        "unthresholded_localized_recall": 0.02962962962962963,
+        "presence_roc_auc": 0.5387664524028161
+      }
+    },
+    "synthetic_primary": {
+      "development": {
+        "localized_recall": 0.049586776859504134,
+        "false_positive_rate": 0.044444444444444446,
+        "unthresholded_localized_recall": 0.3305785123966942,
+        "presence_roc_auc": 0.5630853994490358
+      },
+      "test": {
+        "localized_recall": 0.03861003861003861,
+        "false_positive_rate": 0.10276679841897234,
+        "unthresholded_localized_recall": 0.3204633204633205,
+        "presence_roc_auc": 0.498359454881194
+      },
+      "compositional": {
+        "localized_recall": 0.018518518518518517,
+        "false_positive_rate": 0.028925619834710745,
+        "unthresholded_localized_recall": 0.24074074074074073,
+        "presence_roc_auc": 0.5584481175390267
+      }
+    },
+    "synthetic_bag": {
+      "development": {
+        "localized_recall": 0.024793388429752067,
+        "false_positive_rate": 0.044444444444444446,
+        "unthresholded_localized_recall": 0.09917355371900827,
+        "presence_roc_auc": 0.528374655647383
+      },
+      "test": {
+        "localized_recall": 0.011583011583011582,
+        "false_positive_rate": 0.04743083003952569,
+        "unthresholded_localized_recall": 0.10424710424710425,
+        "presence_roc_auc": 0.4949410166801471
+      },
+      "compositional": {
+        "localized_recall": 0.0,
+        "false_positive_rate": 0.012396694214876033,
+        "unthresholded_localized_recall": 0.07037037037037037,
+        "presence_roc_auc": 0.5200948882767065
+      }
+    },
+    "synthetic_random": {
+      "development": {
+        "localized_recall": 0.0,
+        "false_positive_rate": 0.044444444444444446,
+        "unthresholded_localized_recall": 0.0,
+        "presence_roc_auc": 0.494092439546985
+      },
+      "test": {
+        "localized_recall": 0.0,
+        "false_positive_rate": 0.039525691699604744,
+        "unthresholded_localized_recall": 0.0,
+        "presence_roc_auc": 0.470584644497688
+      },
+      "compositional": {
+        "localized_recall": 0.0,
+        "false_positive_rate": 0.06611570247933884,
+        "unthresholded_localized_recall": 0.0,
+        "presence_roc_auc": 0.5212274257728803
+      }
+    }
+  }
+}

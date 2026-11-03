@@ -1,0 +1,1558 @@
+{
+  "status": "complete",
+  "split": "dev",
+  "summary": "HyperNet has not beaten OWL-ViT on the predeclared recall and false-alarm comparison. These are development results, not a fresh test.",
+  "data_plan_sha256": "153af565f11beaa0fb51b8058afdc2c7f3ea28c4c16bfbf0dda773591d795b21",
+  "paired_comparison_sha256": "be0d40aa1b3727f2c9f788d1ea70a6fe6a4a481d3e14c78117a6d36dbb6c8eaf",
+  "photos": 288,
+  "target_photo_pairs": 3456,
+  "positive_pairs": 255,
+  "negative_pairs": 3197,
+  "observed_win_gate": false,
+  "rows": [
+    {
+      "name": "HyperNet v17 / spatial matching",
+      "localized_recall": "0.36%",
+      "false_alarms": "495.2 / 10,000 negative pairs",
+      "balanced_accuracy": "49.46%"
+    },
+    {
+      "name": "HyperNet / bag-of-parts control",
+      "localized_recall": "0.00%",
+      "false_alarms": "495.5 / 10,000 negative pairs",
+      "balanced_accuracy": "50.19%"
+    },
+    {
+      "name": "Untrained HyperNet",
+      "localized_recall": "0.00%",
+      "false_alarms": "495.1 / 10,000 negative pairs",
+      "balanced_accuracy": "49.97%"
+    },
+    {
+      "name": "Raw pixel template matching",
+      "localized_recall": "0.00%",
+      "false_alarms": "495.0 / 10,000 negative pairs",
+      "balanced_accuracy": "48.87%"
+    },
+    {
+      "name": "Official OWL-ViT B/32",
+      "localized_recall": "49.05%",
+      "false_alarms": "497.1 / 10,000 negative pairs",
+      "balanced_accuracy": "80.30%"
+    }
+  ],
+  "metrics": {
+    "v17": {
+      "cutoff": -1.7516698837280271,
+      "photos": 288,
+      "nominal_pairs": 3456,
+      "valid_pairs": 3452,
+      "positive_pairs": 255,
+      "negative_pairs": 3197,
+      "ignored_pairs": 4,
+      "localized_hits": 1,
+      "false_presence": 159,
+      "macro_localized_recall": 0.0036231884057971015,
+      "macro_presence_recall": 0.038725341155008676,
+      "macro_false_positive_rate": 0.04952403870603605,
+      "macro_presence_balanced_accuracy": 0.49460065122448627,
+      "macro_presence_auroc": 0.5051029438149283,
+      "micro_false_positive_rate": 0.04973412574288395,
+      "micro_false_alarms_per_10000": 497.3412574288395,
+      "per_target": [
+        {
+          "category_id": 3,
+          "name": "car",
+          "positive_pairs": 33,
+          "negative_pairs": 255,
+          "ignored_pairs": 0,
+          "true_presence": 0,
+          "false_presence": 3,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.011764705882352941,
+          "false_alarms_per_10000": 117.6470588235294,
+          "presence_balanced_accuracy": 0.49411764705882355,
+          "presence_auroc": 0.5493761140819965
+        },
+        {
+          "category_id": 6,
+          "name": "bus",
+          "positive_pairs": 17,
+          "negative_pairs": 271,
+          "ignored_pairs": 0,
+          "true_presence": 3,
+          "false_presence": 29,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.17647058823529413,
+          "false_positive_rate": 0.1070110701107011,
+          "false_alarms_per_10000": 1070.110701107011,
+          "presence_balanced_accuracy": 0.5347297590622966,
+          "presence_auroc": 0.5363577165183416
+        },
+        {
+          "category_id": 7,
+          "name": "train",
+          "positive_pairs": 21,
+          "negative_pairs": 267,
+          "ignored_pairs": 0,
+          "true_presence": 0,
+          "false_presence": 0,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.0,
+          "false_alarms_per_10000": 0.0,
+          "presence_balanced_accuracy": 0.5,
+          "presence_auroc": 0.5664348136258247
+        },
+        {
+          "category_id": 16,
+          "name": "bird",
+          "positive_pairs": 13,
+          "negative_pairs": 273,
+          "ignored_pairs": 2,
+          "true_presence": 2,
+          "false_presence": 17,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.15384615384615385,
+          "false_positive_rate": 0.06227106227106227,
+          "false_alarms_per_10000": 622.7106227106227,
+          "presence_balanced_accuracy": 0.5457875457875457,
+          "presence_auroc": 0.5570583262890955
+        },
+        {
+          "category_id": 17,
+          "name": "cat",
+          "positive_pairs": 21,
+          "negative_pairs": 267,
+          "ignored_pairs": 0,
+          "true_presence": 0,
+          "false_presence": 4,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.0149812734082397,
+          "false_alarms_per_10000": 149.81273408239701,
+          "presence_balanced_accuracy": 0.49250936329588013,
+          "presence_auroc": 0.4952737649366863
+        },
+        {
+          "category_id": 18,
+          "name": "dog",
+          "positive_pairs": 23,
+          "negative_pairs": 265,
+          "ignored_pairs": 0,
+          "true_presence": 1,
+          "false_presence": 27,
+          "localized_hits": 1,
+          "localized_recall": 0.043478260869565216,
+          "presence_recall": 0.043478260869565216,
+          "false_positive_rate": 0.1018867924528302,
+          "false_alarms_per_10000": 1018.867924528302,
+          "presence_balanced_accuracy": 0.4707957342083675,
+          "presence_auroc": 0.43347005742411815
+        },
+        {
+          "category_id": 19,
+          "name": "horse",
+          "positive_pairs": 14,
+          "negative_pairs": 274,
+          "ignored_pairs": 0,
+          "true_presence": 0,
+          "false_presence": 9,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.032846715328467155,
+          "false_alarms_per_10000": 328.46715328467155,
+          "presence_balanced_accuracy": 0.4835766423357664,
+          "presence_auroc": 0.5714285714285714
+        },
+        {
+          "category_id": 31,
+          "name": "handbag",
+          "positive_pairs": 27,
+          "negative_pairs": 261,
+          "ignored_pairs": 0,
+          "true_presence": 0,
+          "false_presence": 3,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.011494252873563218,
+          "false_alarms_per_10000": 114.94252873563218,
+          "presence_balanced_accuracy": 0.4942528735632184,
+          "presence_auroc": 0.5629345820916701
+        },
+        {
+          "category_id": 47,
+          "name": "cup",
+          "positive_pairs": 26,
+          "negative_pairs": 261,
+          "ignored_pairs": 1,
+          "true_presence": 0,
+          "false_presence": 13,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.04980842911877394,
+          "false_alarms_per_10000": 498.08429118773944,
+          "presence_balanced_accuracy": 0.47509578544061304,
+          "presence_auroc": 0.45652814618331866
+        },
+        {
+          "category_id": 51,
+          "name": "bowl",
+          "positive_pairs": 19,
+          "negative_pairs": 268,
+          "ignored_pairs": 1,
+          "true_presence": 0,
+          "false_presence": 7,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.026119402985074626,
+          "false_alarms_per_10000": 261.19402985074623,
+          "presence_balanced_accuracy": 0.4869402985074627,
+          "presence_auroc": 0.5644147682639433
+        },
+        {
+          "category_id": 61,
+          "name": "cake",
+          "positive_pairs": 19,
+          "negative_pairs": 269,
+          "ignored_pairs": 0,
+          "true_presence": 0,
+          "false_presence": 14,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.05204460966542751,
+          "false_alarms_per_10000": 520.4460966542752,
+          "presence_balanced_accuracy": 0.4739776951672863,
+          "presence_auroc": 0.39013891606339274
+        },
+        {
+          "category_id": 70,
+          "name": "toilet",
+          "positive_pairs": 22,
+          "negative_pairs": 266,
+          "ignored_pairs": 0,
+          "true_presence": 2,
+          "false_presence": 33,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.09090909090909091,
+          "false_positive_rate": 0.12406015037593984,
+          "false_alarms_per_10000": 1240.6015037593984,
+          "presence_balanced_accuracy": 0.4834244702665755,
+          "presence_auroc": 0.3778195488721805
+        }
+      ]
+    },
+    "v17_no_geometry": {
+      "cutoff": -2.1469697952270503,
+      "photos": 288,
+      "nominal_pairs": 3456,
+      "valid_pairs": 3452,
+      "positive_pairs": 255,
+      "negative_pairs": 3197,
+      "ignored_pairs": 4,
+      "localized_hits": 0,
+      "false_presence": 159,
+      "macro_localized_recall": 0.0,
+      "macro_presence_recall": 0.053397698190626806,
+      "macro_false_positive_rate": 0.04954536599685625,
+      "macro_presence_balanced_accuracy": 0.5019261660968853,
+      "macro_presence_auroc": 0.49123726131340684,
+      "micro_false_positive_rate": 0.04973412574288395,
+      "micro_false_alarms_per_10000": 497.3412574288395,
+      "per_target": [
+        {
+          "category_id": 3,
+          "name": "car",
+          "positive_pairs": 33,
+          "negative_pairs": 255,
+          "ignored_pairs": 0,
+          "true_presence": 0,
+          "false_presence": 9,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.03529411764705882,
+          "false_alarms_per_10000": 352.94117647058823,
+          "presence_balanced_accuracy": 0.4823529411764706,
+          "presence_auroc": 0.5795603089720737
+        },
+        {
+          "category_id": 6,
+          "name": "bus",
+          "positive_pairs": 17,
+          "negative_pairs": 271,
+          "ignored_pairs": 0,
+          "true_presence": 2,
+          "false_presence": 32,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.11764705882352941,
+          "false_positive_rate": 0.11808118081180811,
+          "false_alarms_per_10000": 1180.8118081180812,
+          "presence_balanced_accuracy": 0.4997829390058607,
+          "presence_auroc": 0.5146516171044063
+        },
+        {
+          "category_id": 7,
+          "name": "train",
+          "positive_pairs": 21,
+          "negative_pairs": 267,
+          "ignored_pairs": 0,
+          "true_presence": 0,
+          "false_presence": 6,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.02247191011235955,
+          "false_alarms_per_10000": 224.7191011235955,
+          "presence_balanced_accuracy": 0.4887640449438202,
+          "presence_auroc": 0.386302835741038
+        },
+        {
+          "category_id": 16,
+          "name": "bird",
+          "positive_pairs": 13,
+          "negative_pairs": 273,
+          "ignored_pairs": 2,
+          "true_presence": 0,
+          "false_presence": 19,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.0695970695970696,
+          "false_alarms_per_10000": 695.9706959706959,
+          "presence_balanced_accuracy": 0.4652014652014652,
+          "presence_auroc": 0.44547759932375325
+        },
+        {
+          "category_id": 17,
+          "name": "cat",
+          "positive_pairs": 21,
+          "negative_pairs": 267,
+          "ignored_pairs": 0,
+          "true_presence": 0,
+          "false_presence": 0,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.0,
+          "false_alarms_per_10000": 0.0,
+          "presence_balanced_accuracy": 0.5,
+          "presence_auroc": 0.5106117353308364
+        },
+        {
+          "category_id": 18,
+          "name": "dog",
+          "positive_pairs": 23,
+          "negative_pairs": 265,
+          "ignored_pairs": 0,
+          "true_presence": 1,
+          "false_presence": 15,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.043478260869565216,
+          "false_positive_rate": 0.05660377358490566,
+          "false_alarms_per_10000": 566.0377358490566,
+          "presence_balanced_accuracy": 0.49343724364232977,
+          "presence_auroc": 0.40525020508613613
+        },
+        {
+          "category_id": 19,
+          "name": "horse",
+          "positive_pairs": 14,
+          "negative_pairs": 274,
+          "ignored_pairs": 0,
+          "true_presence": 1,
+          "false_presence": 16,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.07142857142857142,
+          "false_positive_rate": 0.058394160583941604,
+          "false_alarms_per_10000": 583.9416058394161,
+          "presence_balanced_accuracy": 0.5065172054223149,
+          "presence_auroc": 0.4530761209593326
+        },
+        {
+          "category_id": 31,
+          "name": "handbag",
+          "positive_pairs": 27,
+          "negative_pairs": 261,
+          "ignored_pairs": 0,
+          "true_presence": 1,
+          "false_presence": 10,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.037037037037037035,
+          "false_positive_rate": 0.038314176245210725,
+          "false_alarms_per_10000": 383.14176245210723,
+          "presence_balanced_accuracy": 0.49936143039591313,
+          "presence_auroc": 0.4576415495955726
+        },
+        {
+          "category_id": 47,
+          "name": "cup",
+          "positive_pairs": 26,
+          "negative_pairs": 261,
+          "ignored_pairs": 1,
+          "true_presence": 2,
+          "false_presence": 16,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.07692307692307693,
+          "false_positive_rate": 0.06130268199233716,
+          "false_alarms_per_10000": 613.0268199233716,
+          "presence_balanced_accuracy": 0.5078101974653698,
+          "presence_auroc": 0.48231653404067204
+        },
+        {
+          "category_id": 51,
+          "name": "bowl",
+          "positive_pairs": 19,
+          "negative_pairs": 268,
+          "ignored_pairs": 1,
+          "true_presence": 1,
+          "false_presence": 5,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.05263157894736842,
+          "false_positive_rate": 0.018656716417910446,
+          "false_alarms_per_10000": 186.56716417910445,
+          "presence_balanced_accuracy": 0.5169874312647289,
+          "presence_auroc": 0.49862529457973287
+        },
+        {
+          "category_id": 61,
+          "name": "cake",
+          "positive_pairs": 19,
+          "negative_pairs": 269,
+          "ignored_pairs": 0,
+          "true_presence": 2,
+          "false_presence": 17,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.10526315789473684,
+          "false_positive_rate": 0.06319702602230483,
+          "false_alarms_per_10000": 631.9702602230483,
+          "presence_balanced_accuracy": 0.5210330659362159,
+          "presence_auroc": 0.550772842887889
+        },
+        {
+          "category_id": 70,
+          "name": "toilet",
+          "positive_pairs": 22,
+          "negative_pairs": 266,
+          "ignored_pairs": 0,
+          "true_presence": 3,
+          "false_presence": 14,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.13636363636363635,
+          "false_positive_rate": 0.05263157894736842,
+          "false_alarms_per_10000": 526.3157894736842,
+          "presence_balanced_accuracy": 0.5418660287081339,
+          "presence_auroc": 0.6105604921394394
+        }
+      ]
+    },
+    "random": {
+      "cutoff": -4.608693599700927,
+      "photos": 288,
+      "nominal_pairs": 3456,
+      "valid_pairs": 3452,
+      "positive_pairs": 255,
+      "negative_pairs": 3197,
+      "ignored_pairs": 4,
+      "localized_hits": 0,
+      "false_presence": 159,
+      "macro_localized_recall": 0.0,
+      "macro_presence_recall": 0.0489441758791604,
+      "macro_false_positive_rate": 0.04950830426051977,
+      "macro_presence_balanced_accuracy": 0.4997179358093203,
+      "macro_presence_auroc": 0.4900350357454912,
+      "micro_false_positive_rate": 0.04973412574288395,
+      "micro_false_alarms_per_10000": 497.3412574288395,
+      "per_target": [
+        {
+          "category_id": 3,
+          "name": "car",
+          "positive_pairs": 33,
+          "negative_pairs": 255,
+          "ignored_pairs": 0,
+          "true_presence": 2,
+          "false_presence": 17,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.06060606060606061,
+          "false_positive_rate": 0.06666666666666667,
+          "false_alarms_per_10000": 666.6666666666666,
+          "presence_balanced_accuracy": 0.49696969696969695,
+          "presence_auroc": 0.5039809863339274
+        },
+        {
+          "category_id": 6,
+          "name": "bus",
+          "positive_pairs": 17,
+          "negative_pairs": 271,
+          "ignored_pairs": 0,
+          "true_presence": 1,
+          "false_presence": 2,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.058823529411764705,
+          "false_positive_rate": 0.007380073800738007,
+          "false_alarms_per_10000": 73.80073800738008,
+          "presence_balanced_accuracy": 0.5257217278055134,
+          "presence_auroc": 0.5982200998480574
+        },
+        {
+          "category_id": 7,
+          "name": "train",
+          "positive_pairs": 21,
+          "negative_pairs": 267,
+          "ignored_pairs": 0,
+          "true_presence": 1,
+          "false_presence": 15,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.047619047619047616,
+          "false_positive_rate": 0.056179775280898875,
+          "false_alarms_per_10000": 561.7977528089888,
+          "presence_balanced_accuracy": 0.4957196361690744,
+          "presence_auroc": 0.6103085428928127
+        },
+        {
+          "category_id": 16,
+          "name": "bird",
+          "positive_pairs": 13,
+          "negative_pairs": 273,
+          "ignored_pairs": 2,
+          "true_presence": 1,
+          "false_presence": 9,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.07692307692307693,
+          "false_positive_rate": 0.03296703296703297,
+          "false_alarms_per_10000": 329.6703296703297,
+          "presence_balanced_accuracy": 0.5219780219780219,
+          "presence_auroc": 0.5914342068188222
+        },
+        {
+          "category_id": 17,
+          "name": "cat",
+          "positive_pairs": 21,
+          "negative_pairs": 267,
+          "ignored_pairs": 0,
+          "true_presence": 2,
+          "false_presence": 30,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.09523809523809523,
+          "false_positive_rate": 0.11235955056179775,
+          "false_alarms_per_10000": 1123.5955056179776,
+          "presence_balanced_accuracy": 0.49143927233814877,
+          "presence_auroc": 0.45371856607811656
+        },
+        {
+          "category_id": 18,
+          "name": "dog",
+          "positive_pairs": 23,
+          "negative_pairs": 265,
+          "ignored_pairs": 0,
+          "true_presence": 0,
+          "false_presence": 8,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.03018867924528302,
+          "false_alarms_per_10000": 301.8867924528302,
+          "presence_balanced_accuracy": 0.4849056603773585,
+          "presence_auroc": 0.5026251025430681
+        },
+        {
+          "category_id": 19,
+          "name": "horse",
+          "positive_pairs": 14,
+          "negative_pairs": 274,
+          "ignored_pairs": 0,
+          "true_presence": 2,
+          "false_presence": 41,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.14285714285714285,
+          "false_positive_rate": 0.14963503649635038,
+          "false_alarms_per_10000": 1496.3503649635038,
+          "presence_balanced_accuracy": 0.4966110531803962,
+          "presence_auroc": 0.5237226277372262
+        },
+        {
+          "category_id": 31,
+          "name": "handbag",
+          "positive_pairs": 27,
+          "negative_pairs": 261,
+          "ignored_pairs": 0,
+          "true_presence": 0,
+          "false_presence": 3,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.011494252873563218,
+          "false_alarms_per_10000": 114.94252873563218,
+          "presence_balanced_accuracy": 0.4942528735632184,
+          "presence_auroc": 0.4069107421597843
+        },
+        {
+          "category_id": 47,
+          "name": "cup",
+          "positive_pairs": 26,
+          "negative_pairs": 261,
+          "ignored_pairs": 1,
+          "true_presence": 0,
+          "false_presence": 5,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.019157088122605363,
+          "false_alarms_per_10000": 191.57088122605361,
+          "presence_balanced_accuracy": 0.4904214559386973,
+          "presence_auroc": 0.4113616268788683
+        },
+        {
+          "category_id": 51,
+          "name": "bowl",
+          "positive_pairs": 19,
+          "negative_pairs": 268,
+          "ignored_pairs": 1,
+          "true_presence": 2,
+          "false_presence": 7,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.10526315789473684,
+          "false_positive_rate": 0.026119402985074626,
+          "false_alarms_per_10000": 261.19402985074623,
+          "presence_balanced_accuracy": 0.539571877454831,
+          "presence_auroc": 0.4768263943440691
+        },
+        {
+          "category_id": 61,
+          "name": "cake",
+          "positive_pairs": 19,
+          "negative_pairs": 269,
+          "ignored_pairs": 0,
+          "true_presence": 0,
+          "false_presence": 18,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.06691449814126393,
+          "false_alarms_per_10000": 669.1449814126394,
+          "presence_balanced_accuracy": 0.46654275092936803,
+          "presence_auroc": 0.47270592838974773
+        },
+        {
+          "category_id": 70,
+          "name": "toilet",
+          "positive_pairs": 22,
+          "negative_pairs": 266,
+          "ignored_pairs": 0,
+          "true_presence": 0,
+          "false_presence": 4,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.015037593984962405,
+          "false_alarms_per_10000": 150.37593984962405,
+          "presence_balanced_accuracy": 0.4924812030075188,
+          "presence_auroc": 0.3286056049213944
+        }
+      ]
+    },
+    "raw_template": {
+      "cutoff": 0.640392303466797,
+      "photos": 288,
+      "nominal_pairs": 3456,
+      "valid_pairs": 3452,
+      "positive_pairs": 255,
+      "negative_pairs": 3197,
+      "ignored_pairs": 4,
+      "localized_hits": 0,
+      "false_presence": 159,
+      "macro_localized_recall": 0.0,
+      "macro_presence_recall": 0.026866408445355813,
+      "macro_false_positive_rate": 0.04950238671781313,
+      "macro_presence_balanced_accuracy": 0.48868201086377133,
+      "macro_presence_auroc": 0.4800536606554611,
+      "micro_false_positive_rate": 0.04973412574288395,
+      "micro_false_alarms_per_10000": 497.3412574288395,
+      "per_target": [
+        {
+          "category_id": 3,
+          "name": "car",
+          "positive_pairs": 33,
+          "negative_pairs": 255,
+          "ignored_pairs": 0,
+          "true_presence": 0,
+          "false_presence": 2,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.00784313725490196,
+          "false_alarms_per_10000": 78.43137254901961,
+          "presence_balanced_accuracy": 0.49607843137254903,
+          "presence_auroc": 0.5605466428995841
+        },
+        {
+          "category_id": 6,
+          "name": "bus",
+          "positive_pairs": 17,
+          "negative_pairs": 271,
+          "ignored_pairs": 0,
+          "true_presence": 0,
+          "false_presence": 28,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.1033210332103321,
+          "false_alarms_per_10000": 1033.210332103321,
+          "presence_balanced_accuracy": 0.4483394833948339,
+          "presence_auroc": 0.44562622096809207
+        },
+        {
+          "category_id": 7,
+          "name": "train",
+          "positive_pairs": 21,
+          "negative_pairs": 267,
+          "ignored_pairs": 0,
+          "true_presence": 0,
+          "false_presence": 0,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.0,
+          "false_alarms_per_10000": 0.0,
+          "presence_balanced_accuracy": 0.5,
+          "presence_auroc": 0.484394506866417
+        },
+        {
+          "category_id": 16,
+          "name": "bird",
+          "positive_pairs": 13,
+          "negative_pairs": 273,
+          "ignored_pairs": 2,
+          "true_presence": 0,
+          "false_presence": 5,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.018315018315018316,
+          "false_alarms_per_10000": 183.15018315018315,
+          "presence_balanced_accuracy": 0.4908424908424908,
+          "presence_auroc": 0.4530853761622992
+        },
+        {
+          "category_id": 17,
+          "name": "cat",
+          "positive_pairs": 21,
+          "negative_pairs": 267,
+          "ignored_pairs": 0,
+          "true_presence": 1,
+          "false_presence": 0,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.047619047619047616,
+          "false_positive_rate": 0.0,
+          "false_alarms_per_10000": 0.0,
+          "presence_balanced_accuracy": 0.5238095238095238,
+          "presence_auroc": 0.5296950240770466
+        },
+        {
+          "category_id": 18,
+          "name": "dog",
+          "positive_pairs": 23,
+          "negative_pairs": 265,
+          "ignored_pairs": 0,
+          "true_presence": 0,
+          "false_presence": 1,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.0037735849056603774,
+          "false_alarms_per_10000": 37.735849056603776,
+          "presence_balanced_accuracy": 0.4981132075471698,
+          "presence_auroc": 0.39474979491386386
+        },
+        {
+          "category_id": 19,
+          "name": "horse",
+          "positive_pairs": 14,
+          "negative_pairs": 274,
+          "ignored_pairs": 0,
+          "true_presence": 1,
+          "false_presence": 29,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.07142857142857142,
+          "false_positive_rate": 0.10583941605839416,
+          "false_alarms_per_10000": 1058.3941605839416,
+          "presence_balanced_accuracy": 0.4827945776850886,
+          "presence_auroc": 0.3248175182481751
+        },
+        {
+          "category_id": 31,
+          "name": "handbag",
+          "positive_pairs": 27,
+          "negative_pairs": 261,
+          "ignored_pairs": 0,
+          "true_presence": 0,
+          "false_presence": 40,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.1532567049808429,
+          "false_alarms_per_10000": 1532.567049808429,
+          "presence_balanced_accuracy": 0.42337164750957856,
+          "presence_auroc": 0.3547608911593586
+        },
+        {
+          "category_id": 47,
+          "name": "cup",
+          "positive_pairs": 26,
+          "negative_pairs": 261,
+          "ignored_pairs": 1,
+          "true_presence": 0,
+          "false_presence": 0,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.0,
+          "false_positive_rate": 0.0,
+          "false_alarms_per_10000": 0.0,
+          "presence_balanced_accuracy": 0.5,
+          "presence_auroc": 0.5576186265841437
+        },
+        {
+          "category_id": 51,
+          "name": "bowl",
+          "positive_pairs": 19,
+          "negative_pairs": 268,
+          "ignored_pairs": 1,
+          "true_presence": 2,
+          "false_presence": 1,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.10526315789473684,
+          "false_positive_rate": 0.0037313432835820895,
+          "false_alarms_per_10000": 37.3134328358209,
+          "presence_balanced_accuracy": 0.5507659073055773,
+          "presence_auroc": 0.6592694422623723
+        },
+        {
+          "category_id": 61,
+          "name": "cake",
+          "positive_pairs": 19,
+          "negative_pairs": 269,
+          "ignored_pairs": 0,
+          "true_presence": 1,
+          "false_presence": 31,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.05263157894736842,
+          "false_positive_rate": 0.11524163568773234,
+          "false_alarms_per_10000": 1152.4163568773233,
+          "presence_balanced_accuracy": 0.468694971629818,
+          "presence_auroc": 0.5317941694384661
+        },
+        {
+          "category_id": 70,
+          "name": "toilet",
+          "positive_pairs": 22,
+          "negative_pairs": 266,
+          "ignored_pairs": 0,
+          "true_presence": 1,
+          "false_presence": 22,
+          "localized_hits": 0,
+          "localized_recall": 0.0,
+          "presence_recall": 0.045454545454545456,
+          "false_positive_rate": 0.08270676691729323,
+          "false_alarms_per_10000": 827.0676691729323,
+          "presence_balanced_accuracy": 0.4813738892686261,
+          "presence_auroc": 0.46428571428571436
+        }
+      ]
+    },
+    "owlvit_base_patch32": {
+      "cutoff": 0.4336062967777253,
+      "photos": 288,
+      "nominal_pairs": 3456,
+      "valid_pairs": 3452,
+      "positive_pairs": 255,
+      "negative_pairs": 3197,
+      "ignored_pairs": 4,
+      "localized_hits": 116,
+      "false_presence": 159,
+      "macro_localized_recall": 0.49049250725676435,
+      "macro_presence_recall": 0.6556255863475319,
+      "macro_false_positive_rate": 0.04971224065726564,
+      "macro_presence_balanced_accuracy": 0.8029566728451331,
+      "macro_presence_auroc": 0.9060030922656949,
+      "micro_false_positive_rate": 0.04973412574288395,
+      "micro_false_alarms_per_10000": 497.3412574288395,
+      "per_target": [
+        {
+          "category_id": 3,
+          "name": "car",
+          "positive_pairs": 33,
+          "negative_pairs": 255,
+          "ignored_pairs": 0,
+          "true_presence": 9,
+          "false_presence": 15,
+          "localized_hits": 6,
+          "localized_recall": 0.18181818181818182,
+          "presence_recall": 0.2727272727272727,
+          "false_positive_rate": 0.058823529411764705,
+          "false_alarms_per_10000": 588.2352941176471,
+          "presence_balanced_accuracy": 0.606951871657754,
+          "presence_auroc": 0.8034462269756388
+        },
+        {
+          "category_id": 6,
+          "name": "bus",
+          "positive_pairs": 17,
+          "negative_pairs": 271,
+          "ignored_pairs": 0,
+          "true_presence": 15,
+          "false_presence": 29,
+          "localized_hits": 13,
+          "localized_recall": 0.7647058823529411,
+          "presence_recall": 0.8823529411764706,
+          "false_positive_rate": 0.1070110701107011,
+          "false_alarms_per_10000": 1070.110701107011,
+          "presence_balanced_accuracy": 0.8876709355328847,
+          "presence_auroc": 0.938571738658563
+        },
+        {
+          "category_id": 7,
+          "name": "train",
+          "positive_pairs": 21,
+          "negative_pairs": 267,
+          "ignored_pairs": 0,
+          "true_presence": 16,
+          "false_presence": 26,
+          "localized_hits": 15,
+          "localized_recall": 0.7142857142857143,
+          "presence_recall": 0.7619047619047619,
+          "false_positive_rate": 0.09737827715355805,
+          "false_alarms_per_10000": 973.7827715355805,
+          "presence_balanced_accuracy": 0.8322632423756019,
+          "presence_auroc": 0.9040485107900839
+        },
+        {
+          "category_id": 16,
+          "name": "bird",
+          "positive_pairs": 13,
+          "negative_pairs": 273,
+          "ignored_pairs": 2,
+          "true_presence": 8,
+          "false_presence": 0,
+          "localized_hits": 8,
+          "localized_recall": 0.6153846153846154,
+          "presence_recall": 0.6153846153846154,
+          "false_positive_rate": 0.0,
+          "false_alarms_per_10000": 0.0,
+          "presence_balanced_accuracy": 0.8076923076923077,
+          "presence_auroc": 0.990138067061144
+        },
+        {
+          "category_id": 17,
+          "name": "cat",
+          "positive_pairs": 21,
+          "negative_pairs": 267,
+          "ignored_pairs": 0,
+          "true_presence": 17,
+          "false_presence": 1,
+          "localized_hits": 16,
+          "localized_recall": 0.7619047619047619,
+          "presence_recall": 0.8095238095238095,
+          "false_positive_rate": 0.003745318352059925,
+          "false_alarms_per_10000": 37.453183520599254,
+          "presence_balanced_accuracy": 0.9028892455858748,
+          "presence_auroc": 0.9917959693240593
+        },
+        {
+          "category_id": 18,
+          "name": "dog",
+          "positive_pairs": 23,
+          "negative_pairs": 265,
+          "ignored_pairs": 0,
+          "true_presence": 16,
+          "false_presence": 0,
+          "localized_hits": 16,
+          "localized_recall": 0.6956521739130435,
+          "presence_recall": 0.6956521739130435,
+          "false_positive_rate": 0.0,
+          "false_alarms_per_10000": 0.0,
+          "presence_balanced_accuracy": 0.8478260869565217,
+          "presence_auroc": 0.98785890073831
+        },
+        {
+          "category_id": 19,
+          "name": "horse",
+          "positive_pairs": 14,
+          "negative_pairs": 274,
+          "ignored_pairs": 0,
+          "true_presence": 12,
+          "false_presence": 2,
+          "localized_hits": 11,
+          "localized_recall": 0.7857142857142857,
+          "presence_recall": 0.8571428571428571,
+          "false_positive_rate": 0.0072992700729927005,
+          "false_alarms_per_10000": 72.99270072992701,
+          "presence_balanced_accuracy": 0.9249217935349322,
+          "presence_auroc": 0.9027632950990616
+        },
+        {
+          "category_id": 31,
+          "name": "handbag",
+          "positive_pairs": 27,
+          "negative_pairs": 261,
+          "ignored_pairs": 0,
+          "true_presence": 5,
+          "false_presence": 6,
+          "localized_hits": 1,
+          "localized_recall": 0.037037037037037035,
+          "presence_recall": 0.18518518518518517,
+          "false_positive_rate": 0.022988505747126436,
+          "false_alarms_per_10000": 229.88505747126436,
+          "presence_balanced_accuracy": 0.5810983397190294,
+          "presence_auroc": 0.6740456932027813
+        },
+        {
+          "category_id": 47,
+          "name": "cup",
+          "positive_pairs": 26,
+          "negative_pairs": 261,
+          "ignored_pairs": 1,
+          "true_presence": 16,
+          "false_presence": 9,
+          "localized_hits": 9,
+          "localized_recall": 0.34615384615384615,
+          "presence_recall": 0.6153846153846154,
+          "false_positive_rate": 0.034482758620689655,
+          "false_alarms_per_10000": 344.82758620689657,
+          "presence_balanced_accuracy": 0.7904509283819628,
+          "presence_auroc": 0.9428234600648394
+        },
+        {
+          "category_id": 51,
+          "name": "bowl",
+          "positive_pairs": 19,
+          "negative_pairs": 268,
+          "ignored_pairs": 1,
+          "true_presence": 13,
+          "false_presence": 27,
+          "localized_hits": 3,
+          "localized_recall": 0.15789473684210525,
+          "presence_recall": 0.6842105263157895,
+          "false_positive_rate": 0.10074626865671642,
+          "false_alarms_per_10000": 1007.4626865671642,
+          "presence_balanced_accuracy": 0.7917321288295365,
+          "presence_auroc": 0.8851139041633935
+        },
+        {
+          "category_id": 61,
+          "name": "cake",
+          "positive_pairs": 19,
+          "negative_pairs": 269,
+          "ignored_pairs": 0,
+          "true_presence": 11,
+          "false_presence": 32,
+          "localized_hits": 1,
+          "localized_recall": 0.05263157894736842,
+          "presence_recall": 0.5789473684210527,
+          "false_positive_rate": 0.11895910780669144,
+          "false_alarms_per_10000": 1189.5910780669144,
+          "presence_balanced_accuracy": 0.7299941303071806,
+          "presence_auroc": 0.8820191743298768
+        },
+        {
+          "category_id": 70,
+          "name": "toilet",
+          "positive_pairs": 22,
+          "negative_pairs": 266,
+          "ignored_pairs": 0,
+          "true_presence": 20,
+          "false_presence": 12,
+          "localized_hits": 17,
+          "localized_recall": 0.7727272727272727,
+          "presence_recall": 0.9090909090909091,
+          "false_positive_rate": 0.045112781954887216,
+          "false_alarms_per_10000": 451.12781954887214,
+          "presence_balanced_accuracy": 0.931989063568011,
+          "presence_auroc": 0.9694121667805877
+        }
+      ]
+    }
+  },
+  "paired_intervals": {
+    "primary_5pct": {
+      "methods": {
+        "v17": {
+          "macro_localized_recall": {
+            "estimate": 0.0036231884057971015,
+            "ci95": [
+              0.0,
+              0.011904761904761904
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.04952403870603605,
+            "ci95": [
+              0.04076410956223373,
+              0.058886003037399194
+            ]
+          }
+        },
+        "v17_no_geometry": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.04954536599685625,
+            "ci95": [
+              0.03157578255595048,
+              0.0697957513533355
+            ]
+          }
+        },
+        "random": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.04950830426051977,
+            "ci95": [
+              0.03598919608547322,
+              0.06497201178624724
+            ]
+          }
+        },
+        "owlvit_base_patch32": {
+          "macro_localized_recall": {
+            "estimate": 0.49049250725676435,
+            "ci95": [
+              0.43468373927521564,
+              0.5480464134826123
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.04971224065726564,
+            "ci95": [
+              0.041882824549357385,
+              0.05804263226728566
+            ]
+          }
+        },
+        "raw_template": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.04950238671781313,
+            "ci95": [
+              0.040397479327829576,
+              0.059457727050469485
+            ]
+          }
+        }
+      },
+      "paired_differences": {
+        "v17_minus_owlvit": {
+          "macro_localized_recall": {
+            "estimate": -0.48686931885096724,
+            "ci95": [
+              -0.5448150465330951,
+              -0.42982977859324845
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": -0.00018820195122959404,
+            "ci95": [
+              -0.013078305769119166,
+              0.012484522147726398
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "v17_no_geometry_minus_owlvit": {
+          "macro_localized_recall": {
+            "estimate": -0.49049250725676435,
+            "ci95": [
+              -0.5480464134826123,
+              -0.43468373927521564
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": -0.00016687466040939125,
+            "ci95": [
+              -0.020335527749313197,
+              0.021403001111316936
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "random_minus_owlvit": {
+          "macro_localized_recall": {
+            "estimate": -0.49049250725676435,
+            "ci95": [
+              -0.5480464134826123,
+              -0.43468373927521564
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": -0.00020393639674587405,
+            "ci95": [
+              -0.01568401714861691,
+              0.01616292700334119
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "raw_template_minus_owlvit": {
+          "macro_localized_recall": {
+            "estimate": -0.49049250725676435,
+            "ci95": [
+              -0.5480464134826123,
+              -0.43468373927521564
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": -0.00020985393945251174,
+            "ci95": [
+              -0.012651566280131955,
+              0.012113928145425732
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "v17_minus_v17_no_geometry": {
+          "macro_localized_recall": {
+            "estimate": 0.0036231884057971015,
+            "ci95": [
+              0.0,
+              0.011904761904761904
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": -2.1327290820202793e-05,
+            "ci95": [
+              -0.02215764853315401,
+              0.020869742919664456
+            ]
+          },
+          "observed_win_gate": true,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "v17_minus_random": {
+          "macro_localized_recall": {
+            "estimate": 0.0036231884057971015,
+            "ci95": [
+              0.0,
+              0.011904761904761904
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 1.5734445516280005e-05,
+            "ci95": [
+              -0.018408166527786284,
+              0.01637504574781817
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "v17_minus_raw_template": {
+          "macro_localized_recall": {
+            "estimate": 0.0036231884057971015,
+            "ci95": [
+              0.0,
+              0.011904761904761904
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 2.1651988222917695e-05,
+            "ci95": [
+              -0.012494278765931656,
+              0.012412438365430146
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        }
+      },
+      "bootstrap": {
+        "unit": "query photo, all12 targets carried together",
+        "replicates": 5000,
+        "seed": 170031,
+        "interval": "95% percentile",
+        "fixed": "Single support per category and DEV-calibrated cutoffs; no support/calibration uncertainty resampling"
+      }
+    },
+    "secondary_10_per_10000": {
+      "methods": {
+        "v17": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.0009272187890860869,
+            "ci95": [
+              0.0,
+              0.00215252711723464
+            ]
+          }
+        },
+        "v17_no_geometry": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.0009238519670966991,
+            "ci95": [
+              0.0,
+              0.0024842064053307556
+            ]
+          }
+        },
+        "random": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.0009351824139383029,
+            "ci95": [
+              0.0,
+              0.002841098449830316
+            ]
+          }
+        },
+        "owlvit_base_patch32": {
+          "macro_localized_recall": {
+            "estimate": 0.1247744511811008,
+            "ci95": [
+              0.08412204576187841,
+              0.168731843615795
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.0009328358208955224,
+            "ci95": [
+              0.0,
+              0.0021766169154228856
+            ]
+          }
+        },
+        "raw_template": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.000923714939534547,
+            "ci95": [
+              0.0,
+              0.00245806386836945
+            ]
+          }
+        }
+      },
+      "paired_differences": {
+        "v17_minus_owlvit": {
+          "macro_localized_recall": {
+            "estimate": -0.1247744511811008,
+            "ci95": [
+              -0.16873184361579505,
+              -0.08412204576187846
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": -5.617031809435481e-06,
+            "ci95": [
+              -0.0015489467162329614,
+              0.001534421677432842
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "v17_no_geometry_minus_owlvit": {
+          "macro_localized_recall": {
+            "estimate": -0.1247744511811008,
+            "ci95": [
+              -0.16873184361579505,
+              -0.08412204576187846
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": -8.98385379882326e-06,
+            "ci95": [
+              -0.0016012992183224097,
+              0.0018527721688043014
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "random_minus_owlvit": {
+          "macro_localized_recall": {
+            "estimate": -0.1247744511811008,
+            "ci95": [
+              -0.16873184361579505,
+              -0.08412204576187846
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 2.3465930427805405e-06,
+            "ci95": [
+              -0.0018450184501845018,
+              0.002489104341914818
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "raw_template_minus_owlvit": {
+          "macro_localized_recall": {
+            "estimate": -0.1247744511811008,
+            "ci95": [
+              -0.16873184361579505,
+              -0.08412204576187846
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": -9.120881360975353e-06,
+            "ci95": [
+              -0.0017833276707234105,
+              0.0018261028328621822
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "v17_minus_v17_no_geometry": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 3.366821989387778e-06,
+            "ci95": [
+              -0.00185943180855383,
+              0.0015563616811202859
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "v17_minus_random": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": -7.963624852216022e-06,
+            "ci95": [
+              -0.002495895297207969,
+              0.001841036749548524
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "v17_minus_raw_template": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 3.5038495515398718e-06,
+            "ci95": [
+              -0.0018289571386890943,
+              0.0015559449910169144
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        }
+      },
+      "bootstrap": {
+        "unit": "query photo, all12 targets carried together",
+        "replicates": 5000,
+        "seed": 170031,
+        "interval": "95% percentile",
+        "fixed": "Single support per category and DEV-calibrated cutoffs; no support/calibration uncertainty resampling"
+      }
+    }
+  },
+  "limitations": [
+    "Fresh means absent from prior HyperNet photo iterations, not unseen by the pretrained OWL checkpoint.",
+    "COCO is named in OWL training; no absence of pretraining overlap or novel category status is established.",
+    "One boxed support per category is additional annotation; 288 labeled DEV photos are supervision beyond the support.",
+    "COCO absence means no supplied annotation; missing labels and physical-instance duplicates may remain.",
+    "Selected source strata are not natural prevalence. False alarms per10000 are normalized rates, not certification of rare-event operation.",
+    "Top1 localized recall is a custom metric, not the published COCO AP metric.",
+    "Rates are macro averages over 12 fixed categories; the reference choice is not varied.",
+    "The matched control changes the aggregation operator as well as removing relative part positions.",
+    "Own synthetic pretraining and one real reference do not mean one total training image: labeled DEV images calibrate thresholds.",
+    "No new algorithmic novelty or universal OWL-family superiority is established by this experiment."
+  ]
+}

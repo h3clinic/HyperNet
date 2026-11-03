@@ -1,0 +1,56 @@
+{
+  "format": "hypernet.v17.experiment_design.1",
+  "status": "Design declaration; final source/checkpoint/threshold freeze is a separate artifact",
+  "objective": "Test whether synthetic-only structural episode training and spatially consistent local matching improve one-reference category localization toward the official image-guided OWL-ViT baseline.",
+  "success_is_not_assumed": true,
+  "hypernet_constraints": {
+    "borrowed_pretrained_weights": false,
+    "natural_image_weight_updates": 0,
+    "reference_images_per_category": 1,
+    "reference_annotation": "One existing boxed reference crop; no query ground-truth boxes or masks supplied to inference",
+    "synthetic_pretraining": "Own procedurally rendered 2D images; report actual consumed episodes and views",
+    "development_data": "Real labeled DEV images may be used for engineering decisions and scalar threshold calibration; therefore this is not a no-natural-development-data claim"
+  },
+  "hypothesis": "Matched structural hard negatives plus independently varied same-family instances teach useful local relations. Checking the arrangement of local evidence at inference may help beyond a bag-of-parts matcher.",
+  "arms": [
+    "HyperNet v17 local spatial matcher, trained from the shared random initialization",
+    "Matched no-geometry control: same data, initialization, train budget and heads, but regional bag-of-parts aggregation replaces spatial alignment",
+    "Untrained initialization of the spatial matcher",
+    "Raw grayscale normalized cross-correlation with a fixed scale/aspect search",
+    "Official google/owlvit-base-patch32 image-guided detector, pinned revision cbc355fb364588351c5d51c7f74465e8e7ec6f72"
+  ],
+  "ablation_scope": "The control changes the local aggregation operator as well as removing relative position checks. It is evidence about this implementation, not a pure isolated theorem about geometry.",
+  "training_pilot": {
+    "updates_per_trained_arm": 2048,
+    "batch_size": 16,
+    "episodes_per_arm": 32768,
+    "rgb_views_per_arm": 65536,
+    "reason": "Measured roughly 0.5 seconds per B16 GPU update. Establish learning and transfer before multiplying data volume.",
+    "selection": "Use final fixed-budget checkpoints. Any pre-TEST development change must be recorded with failed runs preserved. No checkpoint selection using fresh TEST results."
+  },
+  "data": {
+    "targets": 12,
+    "dev_unique_query_photos": 288,
+    "dev_nominal_target_photo_pairs": 3456,
+    "planned_fresh_test_unique_query_photos": 576,
+    "planned_fresh_test_target_photo_pairs": 6912,
+    "planned_test_positive_pairs": 572,
+    "test_selection": "Metadata-only selection before fetching pixels; exclude all prior HyperNet COCO source IDs and target-category crowd annotations",
+    "freshness_limit": "Fresh to HyperNet development, not proven unseen by OWL: COCO is among its training datasets",
+    "independence": "Pairs sharing a query photo are correlated; do not call 6912 pairs independent images"
+  },
+  "primary_endpoint": {
+    "name": "Macro top-one localized recall at IoU >= 0.5",
+    "calibration": "Each method gets one global score threshold fitted to at most 5% of valid negative DEV pairs. Ties are handled conservatively.",
+    "report_together": "Actual fresh TEST false-positive rate, false alarms per 10000 negative pairs, paired photo-cluster confidence intervals, and category counts",
+    "interpretation": "A larger recall at a larger observed false-positive rate is a tradeoff, not an unconditional win.",
+    "not_standard_coco_ap": true
+  },
+  "secondary_endpoints": [
+    "Presence balanced accuracy and AUROC",
+    "Localized recall and realized false alarms using a stricter DEV cutoff of 10 false alarms per 10000 negative pairs",
+    "Held-out synthetic whole-program and reserved-composition localization; no claim these alone establish natural-image transfer"
+  ],
+  "uncertainty": "Paired bootstrap resamples whole query photos, preserving all 12 targets per photo. Reference choices and calibrated thresholds remain fixed; their variability is not included.",
+  "novelty": "Formula-generated pretraining, episodic matching, local correlations, geometric voting and exemplar-conditioned box regression already exist. This experiment does not by itself establish algorithmic novelty. See novelty_scope.json."
+}

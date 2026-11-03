@@ -1,0 +1,315 @@
+{
+  "format": "hypernet.synthetic_test_posthoc_illustrations.v17.1",
+  "created_utc": "2026-11-03T12:00:40.810691+00:00",
+  "scope": "Four deterministic post-hoc illustrations, not estimates of model accuracy. No inference or tuning.",
+  "plan": {
+    "format": "hypernet.synthetic_diagnosis.v17.1",
+    "seed": 1777,
+    "support_size": 96,
+    "query_size": 192,
+    "splits": {
+      "development": 256,
+      "test": 512,
+      "compositional": 512
+    },
+    "nominal_dev_absent_fpr": 0.05,
+    "iou_threshold": 0.5,
+    "mask_threshold": 0.5,
+    "checkpoint_selection": false,
+    "scope": "Frozen-model synthetic diagnosis; no real performance claim"
+  },
+  "source_sha256": {
+    "experiments/synthetic_primary/results.json": "1aa93297885e1889c4fc7520c862aefa670dd1e08add5514cb7c06caa771a450",
+    "experiments/synthetic_bag/results.json": "c712e2c9ab3922cc9b823b2622262d6fe8d233bd66ab2253895acee04e97d1bd",
+    "experiments/synthetic_raw_template/results.json": "71450db42566bf59ce81145550b3071da9fd2a91f5d28e8661b9e47829e488d4",
+    "hypernet/scene_curriculum.py": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c"
+  },
+  "script_sha256": "914f22d5646dc87b90b6a31119cf425e4be076d8bffaec3858ff1f51030db73b",
+  "source_files_unchanged": true,
+  "canonical_episodes_rerendered": 4,
+  "new_episode_indices_generated": 0,
+  "gpu_used": false,
+  "primary_cutoff": -1.4518079757690427,
+  "bag_cutoff": -2.2468001842498775,
+  "input_stream_sha256": "afca3497d99e02e8146bb0ace14f556253a5413ca839f8c4eec4b4665bbe7a45",
+  "selections": [
+    {
+      "case": "accepted_localized_hit",
+      "title": "Accepted and correctly localized",
+      "selection_rule": "Lowest TEST episode index satisfying: present and primary score >= cutoff and primary IoU >= 0.5",
+      "matching_cases_in_saved_test": 10,
+      "index": 57,
+      "family": "texture",
+      "program_id": "39f76b78227941228619d173fe0041e253cd3a97c9923b28488c57a5780ddc00",
+      "present": true,
+      "primary": {
+        "index": 57,
+        "split": "test",
+        "program_id": "39f76b78227941228619d173fe0041e253cd3a97c9923b28488c57a5780ddc00",
+        "family": "texture",
+        "present": true,
+        "score": -1.2258591651916504,
+        "box": [
+          31.407276153564453,
+          37.304710388183594,
+          86.42691040039062,
+          88.6417007446289
+        ],
+        "truth_box": [
+          25.0,
+          40.0,
+          89.0,
+          86.0
+        ],
+        "iou": 0.7817124724388123,
+        "mask_iou": 0.253276526927948,
+        "reference_change": 0.5602648854255676
+      },
+      "bag": {
+        "index": 57,
+        "split": "test",
+        "program_id": "39f76b78227941228619d173fe0041e253cd3a97c9923b28488c57a5780ddc00",
+        "family": "texture",
+        "present": true,
+        "score": -2.394449234008789,
+        "box": [
+          34.7384147644043,
+          36.43311309814453,
+          87.16844177246094,
+          85.42481231689453
+        ],
+        "truth_box": [
+          25.0,
+          40.0,
+          89.0,
+          86.0
+        ],
+        "iou": 0.7606562376022339,
+        "mask_iou": 0.3317519426345825,
+        "reference_change": 0.5165416598320007
+      },
+      "input_sha256": {
+        "support": "cd539b13c02e52dc2365f71d6f36c46741e5af5d5e6bd0a7ce35321e57f53473",
+        "query": "568ef9b3c402dc18f2178f0190766cfa171777289ef5f8a44a8fd9879f8a1c9c",
+        "support_mask": "805224c83c8f6dbe98307421409b446e8d9d3698d1d2cb045f2e0b87c94bd36e",
+        "target_mask": "5ae8ca7484e37da5362aa6aafe2a7b03b2519bcdba5df5515d202e84aa229b1c",
+        "query_foreground_mask": "5321f082b7e748f629997725ea51c80e4341f562efe3757d237e4701d6ebde57"
+      },
+      "hash_verification": "Five exact generated input arrays match raw NPZ; raw/primary/bag share the same TEST input-stream hash.",
+      "images": {
+        "reference": "assets/synthetic_case_057_reference.png",
+        "query": "assets/synthetic_case_057_query.png",
+        "annotated": "assets/synthetic_case_057_annotated.png"
+      }
+    },
+    {
+      "case": "good_box_rejected",
+      "title": "Correct location rejected by cutoff",
+      "selection_rule": "Lowest TEST episode index satisfying: present and primary score < cutoff and primary IoU >= 0.5",
+      "matching_cases_in_saved_test": 73,
+      "index": 1,
+      "family": "repetition",
+      "program_id": "acc5817d2be3151a4963b4e99af6ddab2fe3d27eb312ac71bc414b38b528431d",
+      "present": true,
+      "primary": {
+        "index": 1,
+        "split": "test",
+        "program_id": "acc5817d2be3151a4963b4e99af6ddab2fe3d27eb312ac71bc414b38b528431d",
+        "family": "repetition",
+        "present": true,
+        "score": -2.020219087600708,
+        "box": [
+          42.47563934326172,
+          50.98442840576172,
+          87.35518646240234,
+          66.93399810791016
+        ],
+        "truth_box": [
+          43.0,
+          55.0,
+          86.0,
+          64.0
+        ],
+        "iou": 0.5406466722488403,
+        "mask_iou": 0.06674082577228546,
+        "reference_change": 0.5830590128898621
+      },
+      "bag": {
+        "index": 1,
+        "split": "test",
+        "program_id": "acc5817d2be3151a4963b4e99af6ddab2fe3d27eb312ac71bc414b38b528431d",
+        "family": "repetition",
+        "present": true,
+        "score": -2.394625425338745,
+        "box": [
+          16.871240615844727,
+          44.3449592590332,
+          61.11058807373047,
+          61.56061935424805
+        ],
+        "truth_box": [
+          43.0,
+          55.0,
+          86.0,
+          64.0
+        ],
+        "iou": 0.11537918448448181,
+        "mask_iou": 0.1335187703371048,
+        "reference_change": 0.372010737657547
+      },
+      "input_sha256": {
+        "support": "c182074b8175e6740fab8dd3370fc46e65bd816b81bea35ee92286ffb1dd54f3",
+        "query": "bcde760b552b53f9af5958c1c65b652d2d6d7b94e37b53b32ea014f9c8555f66",
+        "support_mask": "6943d551fcfce788576ffa1e1c20764a430cdb1b9ab8ca635103c14e3d456e38",
+        "target_mask": "c25f8e6e158965861ac93abf8ea3220e46d7808122e5380cd89e64587941f0cd",
+        "query_foreground_mask": "b5f867d62c136803839e15b06a49abad66eab43ac0a3e932e5a0b3bd7bd6ec46"
+      },
+      "hash_verification": "Five exact generated input arrays match raw NPZ; raw/primary/bag share the same TEST input-stream hash.",
+      "images": {
+        "reference": "assets/synthetic_case_001_reference.png",
+        "query": "assets/synthetic_case_001_query.png",
+        "annotated": "assets/synthetic_case_001_annotated.png"
+      }
+    },
+    {
+      "case": "absent_false_alarm",
+      "title": "False alarm on an absent scene",
+      "selection_rule": "Lowest TEST episode index satisfying: absent and primary score >= cutoff",
+      "matching_cases_in_saved_test": 26,
+      "index": 8,
+      "family": "ridge",
+      "program_id": "0f897a7125d819c88fa2cc7f9ef7372ee369a6734f2cac9466e06a1dd7cca686",
+      "present": false,
+      "primary": {
+        "index": 8,
+        "split": "test",
+        "program_id": "0f897a7125d819c88fa2cc7f9ef7372ee369a6734f2cac9466e06a1dd7cca686",
+        "family": "ridge",
+        "present": false,
+        "score": -1.2434561252593994,
+        "box": [
+          57.17998504638672,
+          44.673858642578125,
+          112.6734390258789,
+          101.29489135742188
+        ],
+        "truth_box": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "iou": 0.0,
+        "mask_iou": 0.0,
+        "reference_change": 0.5214740633964539
+      },
+      "bag": {
+        "index": 8,
+        "split": "test",
+        "program_id": "0f897a7125d819c88fa2cc7f9ef7372ee369a6734f2cac9466e06a1dd7cca686",
+        "family": "ridge",
+        "present": false,
+        "score": -2.4525938034057617,
+        "box": [
+          70.1737289428711,
+          13.862735748291016,
+          99.76874542236328,
+          40.05091094970703
+        ],
+        "truth_box": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "iou": 0.0,
+        "mask_iou": 0.0,
+        "reference_change": 0.697924792766571
+      },
+      "input_sha256": {
+        "support": "0b8770fd962ed11bae4679054d557a71ce86c69d70012df666804f30865c2b72",
+        "query": "a4d200627f69865c54f1c218e34b227697dc56062c3b961aac0d14c0e159e9f7",
+        "support_mask": "9b0f9c9df998cb7f3cb991fd506ca41ad4f5591a6fea53667d14dbab5aeadac8",
+        "target_mask": "1c0273095382988333e2f2b5ae487cea460737ed9be65cbad9c5de537f95bf75",
+        "query_foreground_mask": "fbe1c650a4f7940d6ac08caa8060d694b963abe2eb356ed76419a65f53087d40"
+      },
+      "hash_verification": "Five exact generated input arrays match raw NPZ; raw/primary/bag share the same TEST input-stream hash.",
+      "images": {
+        "reference": "assets/synthetic_case_008_reference.png",
+        "query": "assets/synthetic_case_008_query.png",
+        "annotated": "assets/synthetic_case_008_annotated.png"
+      }
+    },
+    {
+      "case": "positive_bad_top_box",
+      "title": "Target present, incorrect top box",
+      "selection_rule": "Lowest TEST episode index satisfying: present and primary IoU < 0.5",
+      "matching_cases_in_saved_test": 176,
+      "index": 0,
+      "family": "contour",
+      "program_id": "e0a52384e3df8e8478632f7d029629d897b7bdacf932188517f56f7a7f2998e2",
+      "present": true,
+      "primary": {
+        "index": 0,
+        "split": "test",
+        "program_id": "e0a52384e3df8e8478632f7d029629d897b7bdacf932188517f56f7a7f2998e2",
+        "family": "contour",
+        "present": true,
+        "score": -1.8891425132751465,
+        "box": [
+          32.101097106933594,
+          42.051658630371094,
+          85.77417755126953,
+          91.8973617553711
+        ],
+        "truth_box": [
+          49.0,
+          80.0,
+          106.0,
+          138.0
+        ],
+        "iou": 0.07891901582479477,
+        "mask_iou": 0.35083281993865967,
+        "reference_change": 0.8892625570297241
+      },
+      "bag": {
+        "index": 0,
+        "split": "test",
+        "program_id": "e0a52384e3df8e8478632f7d029629d897b7bdacf932188517f56f7a7f2998e2",
+        "family": "contour",
+        "present": true,
+        "score": -2.582843065261841,
+        "box": [
+          45.34077835083008,
+          42.450050354003906,
+          124.54171752929688,
+          127.30815887451172
+        ],
+        "truth_box": [
+          49.0,
+          80.0,
+          106.0,
+          138.0
+        ],
+        "iou": 0.36786672472953796,
+        "mask_iou": 0.3482802212238312,
+        "reference_change": 0.7284733653068542
+      },
+      "input_sha256": {
+        "support": "0677b45f36f799ab77f898518758de9d2a53532a8df218ca5589ec64955fcdcc",
+        "query": "be7d4a29f844155886808296f062af32d976513414842752de073c5c331967a4",
+        "support_mask": "0c89b6b73b51491b9812d7d6e6e09609aaa51e27ece2aa423e54628fcdfa9501",
+        "target_mask": "3978d94142cc210a6c3b3105925cca2fa39247b20c8043e668dea90d631e70cb",
+        "query_foreground_mask": "8bdcddcb86e5a59e46bb3cc931a9636630fd87a534bcb2c87c12960ec7bcc8f1"
+      },
+      "hash_verification": "Five exact generated input arrays match raw NPZ; raw/primary/bag share the same TEST input-stream hash.",
+      "images": {
+        "reference": "assets/synthetic_case_000_reference.png",
+        "query": "assets/synthetic_case_000_query.png",
+        "annotated": "assets/synthetic_case_000_annotated.png"
+      }
+    }
+  ],
+  "montage_sha256": "314152213cdda5b16db509b20e6524991097c77e0584457bc9c98a978f80dc2e",
+  "seconds": 0.543015800009016
+}

@@ -1,0 +1,21 @@
+{
+  "scope": "Independent read-only CPU recomputation after the frozen five-model fresh TEST; no inference, photos, downloads or edits",
+  "protocol_sha256": "753fd4b259bd87e1c6d575b35fc80e3625f7ac1bef547625f9bad43d471fc482",
+  "verified_behavior_files": 27,
+  "verified_checkpoint_files": 6,
+  "verified_comparison_input_bindings": 10,
+  "recomputed_box_ious": 34560,
+  "box_iou_max_absolute_error": 0.0,
+  "recomputed_metric_values": 730,
+  "metric_max_absolute_error": 1.11e-16,
+  "bootstrap_ci_endpoints": 72,
+  "bootstrap_replicates": 5000,
+  "bootstrap_seed": 170031,
+  "bootstrap_max_absolute_error": 0.0,
+  "photos": 576,
+  "positive_pairs": 472,
+  "negative_pairs": 6440,
+  "conclusion": "No win over OWL or demonstrated geometry benefit",
+  "uncertainty_limit": "Zero-hit percentile bootstrap intervals may be degenerate; they do not prove population equivalence or exact zero recall",
+  "verification_reported_by": "Separate independent audit agent; original arrays and labels recomputed without project metric helpers"
+}

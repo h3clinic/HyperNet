@@ -1,0 +1,461 @@
+{
+  "data_plan_sha256": "153af565f11beaa0fb51b8058afdc2c7f3ea28c4c16bfbf0dda773591d795b21",
+  "split": "test",
+  "input_bindings": {
+    "experiments/v17_test_v2/arrays.npz": "3bd57171068ee378949e226906750962c0c78d3320671806fb88cd774bc5b6ee",
+    "experiments/v17_dev_v2/calibration.json": "c6ab6f20b42d44190cebc00cb1f4ebb70b8e1432b56f6bca173213cc61e15e72",
+    "experiments/v17_no_geometry_test_v2/arrays.npz": "d0cfa16703edd031fbf8a71368b1c8e132b38dc128e205aba677ce922fac1782",
+    "experiments/v17_no_geometry_dev_v2/calibration.json": "df213a732dcd35218f5121c1f8bf589d07ee3173a12a7be2e5363e72cc303045",
+    "experiments/random_test_v2/arrays.npz": "571a58e077642a2d72cae8237b174ce930c8d0f00d7bf7540fed2452a849691d",
+    "experiments/random_dev_v2/calibration.json": "74c5ba0153645df8450e8bc4df88f21bf7e2657166d1245f3231e28539e6ee23",
+    "experiments/owlvit_base_patch32_test_v2/arrays.npz": "68bcd0cd7002aec3ed39bc8a03f7fd4565c34232a5b516b799a55867dda6f4af",
+    "experiments/owlvit_base_patch32_dev_v2/calibration.json": "c4314f95bc915adae1532c11637eb2248cb7e11a75dc6b5b7aab74fb61c69c5b",
+    "experiments/raw_template_test_v2/arrays.npz": "d838b4a909c0224609fec47fde5c0948a4cdcdf5976fb92c82f84144b5dc7be7",
+    "experiments/raw_template_dev_v2/calibration.json": "ca7f175e8b8d7c1c1d3b3eb2bf83a6e60e97d19752dca4ad6a3331221783301c"
+  },
+  "photos": 576,
+  "nominal_target_photo_pairs": 6912,
+  "valid_target_photo_pairs": 6912,
+  "script_sha256": "30b055a2edeaca29ce3d5bd295198ecfd4abdc9746b27594c996aa72ca74b6f7",
+  "standard_coco_AP": false,
+  "operating_points": {
+    "primary_5pct": {
+      "methods": {
+        "v17": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.05031213297942639,
+            "ci95": [
+              0.04299483027420133,
+              0.05794057174710475
+            ]
+          }
+        },
+        "v17_no_geometry": {
+          "macro_localized_recall": {
+            "estimate": 0.0028651903651903655,
+            "ci95": [
+              0.0,
+              0.009942801924261982
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.0487219877490154,
+            "ci95": [
+              0.03698913173193651,
+              0.06202231080937039
+            ]
+          }
+        },
+        "random": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.053977059786083574,
+            "ci95": [
+              0.0434175901975768,
+              0.06611956947288446
+            ]
+          }
+        },
+        "owlvit_base_patch32": {
+          "macro_localized_recall": {
+            "estimate": 0.48859148120239704,
+            "ci95": [
+              0.4485489660620051,
+              0.5278637617549917
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.04597307173634002,
+            "ci95": [
+              0.040456913639689555,
+              0.05192780663219569
+            ]
+          }
+        },
+        "raw_template": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.03660379947730733,
+            "ci95": [
+              0.031319615107465636,
+              0.041996543439379676
+            ]
+          }
+        }
+      },
+      "paired_differences": {
+        "v17_minus_owlvit": {
+          "macro_localized_recall": {
+            "estimate": -0.48859148120239704,
+            "ci95": [
+              -0.5278637617549917,
+              -0.4485489660620051
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.004339061243086369,
+            "ci95": [
+              -0.005270006301782019,
+              0.014209070352449124
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "v17_no_geometry_minus_owlvit": {
+          "macro_localized_recall": {
+            "estimate": -0.4857262908372067,
+            "ci95": [
+              -0.5252968835836741,
+              -0.44489539195835764
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.0027489160126753787,
+            "ci95": [
+              -0.010616268466719772,
+              0.01733446015964694
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "random_minus_owlvit": {
+          "macro_localized_recall": {
+            "estimate": -0.48859148120239704,
+            "ci95": [
+              -0.5278637617549917,
+              -0.4485489660620051
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.008003988049743553,
+            "ci95": [
+              -0.004474850020981095,
+              0.02199160663284708
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "raw_template_minus_owlvit": {
+          "macro_localized_recall": {
+            "estimate": -0.48859148120239704,
+            "ci95": [
+              -0.5278637617549917,
+              -0.4485489660620051
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": -0.009369272259032689,
+            "ci95": [
+              -0.017292765395471817,
+              -0.0013875278946976163
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "v17_minus_v17_no_geometry": {
+          "macro_localized_recall": {
+            "estimate": -0.0028651903651903655,
+            "ci95": [
+              -0.009942801924261986,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.00159014523041099,
+            "ci95": [
+              -0.013386931852609611,
+              0.015343603619395596
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "v17_minus_random": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": -0.0036649268066571844,
+            "ci95": [
+              -0.017085847676385314,
+              0.009385417201378879
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "v17_minus_raw_template": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.013708333502119058,
+            "ci95": [
+              0.004668652105629581,
+              0.02318818347335795
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        }
+      },
+      "bootstrap": {
+        "unit": "query photo, all12 targets carried together",
+        "replicates": 5000,
+        "seed": 170031,
+        "interval": "95% percentile",
+        "fixed": "Single support per category and DEV-calibrated cutoffs; no support/calibration uncertainty resampling"
+      }
+    },
+    "secondary_10_per_10000": {
+      "methods": {
+        "v17": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.00047721856492296074,
+            "ci95": [
+              0.0,
+              0.0011073328996323048
+            ]
+          }
+        },
+        "v17_no_geometry": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.0012361910368396355,
+            "ci95": [
+              0.0,
+              0.003394753983827925
+            ]
+          }
+        },
+        "random": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.00015290519877675843,
+            "ci95": [
+              0.0,
+              0.0004655493482309125
+            ]
+          }
+        },
+        "owlvit_base_patch32": {
+          "macro_localized_recall": {
+            "estimate": 0.12275202876333763,
+            "ci95": [
+              0.09335442758806481,
+              0.15472373778550227
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.0001590330788804071,
+            "ci95": [
+              0.0,
+              0.00048543689320388353
+            ]
+          }
+        },
+        "raw_template": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.00015318627450980392,
+            "ci95": [
+              0.0,
+              0.0004664179104477612
+            ]
+          }
+        }
+      },
+      "paired_differences": {
+        "v17_minus_owlvit": {
+          "macro_localized_recall": {
+            "estimate": -0.12275202876333763,
+            "ci95": [
+              -0.15472373778550233,
+              -0.09335442758806482
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.00031818548604255366,
+            "ci95": [
+              -0.00031746031746031746,
+              0.0009679726228162323
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "v17_no_geometry_minus_owlvit": {
+          "macro_localized_recall": {
+            "estimate": -0.12275202876333763,
+            "ci95": [
+              -0.15472373778550233,
+              -0.09335442758806482
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.0010771579579592285,
+            "ci95": [
+              -0.00017498942076958884,
+              0.003250211405352358
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "random_minus_owlvit": {
+          "macro_localized_recall": {
+            "estimate": -0.12275202876333763,
+            "ci95": [
+              -0.15472373778550233,
+              -0.09335442758806482
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": -6.127880103648682e-06,
+            "ci95": [
+              -0.0004761904761904762,
+              0.0004570383912248629
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "raw_template_minus_owlvit": {
+          "macro_localized_recall": {
+            "estimate": -0.12275202876333763,
+            "ci95": [
+              -0.15472373778550233,
+              -0.09335442758806482
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": -5.84680437060319e-06,
+            "ci95": [
+              -0.00047709923664122136,
+              0.00045537519983032096
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "v17_minus_v17_no_geometry": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": -0.0007589724719166747,
+            "ci95": [
+              -0.003051337270161303,
+              0.0006564091765895909
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "v17_minus_random": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.00032431336614620234,
+            "ci95": [
+              0.0,
+              0.0008070747311762545
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        },
+        "v17_minus_raw_template": {
+          "macro_localized_recall": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_false_positive_rate": {
+            "estimate": 0.0003240322904131568,
+            "ci95": [
+              -0.0002939674238610338,
+              0.0009706706858176222
+            ]
+          },
+          "observed_win_gate": false,
+          "gate_definition": "Higher localized recall and no higher observed macro false-positive rate; descriptive, not a universal superiority claim."
+        }
+      },
+      "bootstrap": {
+        "unit": "query photo, all12 targets carried together",
+        "replicates": 5000,
+        "seed": 170031,
+        "interval": "95% percentile",
+        "fixed": "Single support per category and DEV-calibrated cutoffs; no support/calibration uncertainty resampling"
+      }
+    }
+  }
+}

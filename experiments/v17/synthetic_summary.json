@@ -1,0 +1,34 @@
+{
+  "scope": "Held-out procedural scenes, not natural-photo accuracy",
+  "summary": "The CNN learned useful regions but target-presence discrimination remains weak. These results do not show a recognition breakthrough.",
+  "rows": [
+    {
+      "name": "Spatial matcher",
+      "localized_recall": "3.86%",
+      "false_positive_rate": "10.28%",
+      "auroc": "0.498",
+      "unthresholded_localized_recall": "32.05%"
+    },
+    {
+      "name": "Bag-of-parts control",
+      "localized_recall": "1.16%",
+      "false_positive_rate": "4.74%",
+      "auroc": "0.495",
+      "unthresholded_localized_recall": "10.42%"
+    },
+    {
+      "name": "Random initialization",
+      "localized_recall": "0.00%",
+      "false_positive_rate": "3.95%",
+      "auroc": "0.471",
+      "unthresholded_localized_recall": "0.00%"
+    },
+    {
+      "name": "Raw pixels",
+      "localized_recall": "0.39%",
+      "false_positive_rate": "8.70%",
+      "auroc": "0.524",
+      "unthresholded_localized_recall": "6.95%"
+    }
+  ]
+}

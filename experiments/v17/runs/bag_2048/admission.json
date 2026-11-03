@@ -1,0 +1,118 @@
+{
+  "created_utc": "2026-11-03T04:18:51.260083+00:00",
+  "config": {
+    "steps": 2048,
+    "batch_size": 16,
+    "support_size": 96,
+    "query_size": 192,
+    "seed": 1717,
+    "stream_seed": 1701,
+    "threads": 4,
+    "workers": 4,
+    "device": "cuda",
+    "variant": "bag",
+    "geometry": false,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "final_lr": 3e-05,
+    "gradient_clip": 5.0,
+    "dtype": "float32",
+    "amp": false,
+    "deterministic_algorithms": true,
+    "curriculum_format": "hypernet.compositional_2d_curriculum.v17.1",
+    "curriculum_config": {
+      "format": "hypernet.compositional_2d_curriculum.v17.1",
+      "families": [
+        "branch",
+        "contour",
+        "repetition",
+        "ridge",
+        "texture",
+        "composite"
+      ],
+      "support_size": 96,
+      "query_size": 192,
+      "supersampling": 2,
+      "target_probability": 0.5,
+      "visibility_floor": 0.65,
+      "minimum_line_width_final_pixels": 1,
+      "matched_negative_selection": "Program-hash seeded random ordering of admissible single-attribute edits, independently for scene distractor and absent replacement",
+      "material_rendering": "Modulate foreground contrast against the local background, preserving texture in either polarity",
+      "ambiguity_rejection": "At most 16 deterministic nuisance draws of the same program; reject only explicit unresolved edit geometry or final presence counterfactuals with fewer than 8 RGB-distinguishing pixels; retry counts and reasons recorded",
+      "family_sampling": "Round-robin by episode index, with program hashing within each family",
+      "support_framing": "Known synthetic mask crop with margins 0,.05,.15,.35,.6 then aspect-preserving letterbox; padding is crop border median RGB",
+      "train_composite_pairs": [
+        [
+          "branch",
+          "contour"
+        ],
+        [
+          "repetition",
+          "texture"
+        ],
+        [
+          "contour",
+          "ridge"
+        ],
+        [
+          "branch",
+          "repetition"
+        ]
+      ],
+      "construction_holdout_pairs": [
+        [
+          "branch",
+          "ridge"
+        ],
+        [
+          "contour",
+          "texture"
+        ],
+        [
+          "ridge",
+          "repetition"
+        ],
+        [
+          "branch",
+          "texture"
+        ]
+      ],
+      "split": "SHA256 of the complete canonical structural program modulo10: 0=test,1=development,2..9=train",
+      "subprogram_overlap": "Hash disjointness applies to whole programs; primitive subprograms can recur inside composites across splits. The separate compositional split reserves constituent-pair constructions, not unseen primitive categories.",
+      "nuisance_split_codes": {
+        "train": 0,
+        "development": 1,
+        "test": 2,
+        "compositional": 3
+      },
+      "natural_images_used": 0,
+      "borrowed_weights_used": false,
+      "mask_convention": "Binary occupancy and part labels sampled at final pixel centres; RGB antialiased separately",
+      "occlusion_identity_floor": "At least 8 geometric/material edit pixels for each negative and 8 counterfactual RGB pixels with channel difference >=3 remain untouched by any occluder alpha",
+      "bbox_convention": "Tight visible centre-sampled target mask, pixelxyxy half-open; absent is fourzeros",
+      "positive_correspondence": "Part identity only across independently rendered instances; not pixel correspondence"
+    },
+    "model_format": "hypernet.local_relations.v17.2",
+    "natural_training_images": 0,
+    "borrowed_pretrained_weights": false,
+    "smoke": false,
+    "source_sha256": {
+      "hypernet/scene_curriculum.py": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+      "hypernet/local_relation_model.py": "b8dd441576334cfd436dfb12b2ab48f3a859311178f0b78ef0ce15a3f5ffdde9",
+      "scripts/train_local.py": "0e86d9678c9da2fd7dc5da37ff327d1fc4636b2619a599e093deca4f26a137fe"
+    }
+  },
+  "source_sha256": {
+    "hypernet/scene_curriculum.py": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+    "hypernet/local_relation_model.py": "b8dd441576334cfd436dfb12b2ab48f3a859311178f0b78ef0ce15a3f5ffdde9",
+    "scripts/train_local.py": "0e86d9678c9da2fd7dc5da37ff327d1fc4636b2619a599e093deca4f26a137fe"
+  },
+  "checkpoint_rule": "Final planned step only; no real TEST or synthetic diagnosis checkpoint selection",
+  "ablation": "Identical initialization/episodes/architecture/budget; replaces geometry-aligned tolerant matches with regional log-mean-exp bag aggregation. Different matching operators, not only an auxiliary-loss toggle.",
+  "views_planned": 65536,
+  "episodes_planned": 32768,
+  "data_scope": "Procedural 2D structural programs, not natural semantic classes or unlimited visual coverage",
+  "torch_version": "2.14.1+cu130",
+  "numpy_version": "2.5.3",
+  "cuda_device": "NVIDIA GeForce RTX 5070 Laptop GPU"
+}

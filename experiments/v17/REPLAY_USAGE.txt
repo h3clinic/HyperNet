@@ -1,0 +1,60 @@
+Portable replay of the completed HyperNet v17 benchmark
+
+This helper belongs in the published experiment bundle, beside hypernet/, scripts/,
+the own HyperNet checkpoints, metadata, score arrays, summaries and a completed
+published_benchmark.json. It does not use any original workstation path. Downloaded
+COCO photos and Google's OWL weights are supplied separately and are not packaged.
+
+Install an appropriate PyTorch build, then requirements_replay.txt in an isolated
+Python environment. The original runtime used Python3.12.10, torch2.14.1+cu130,
+numpy2.5.3, Pillow12.3.0, OpenCV5.0.0.93 and Transformers4.57.1. Runtime or JPEG
+decoder changes can affect exact reproduction. The script reports differences
+instead of silently changing thresholds or overwriting the original results.
+
+Check the helper without a GPU, photos, weights or network:
+  python scripts/replay_published.py --self-test
+
+Print the manifest schema (its completed flag is deliberately false):
+  python scripts/replay_published.py --print-manifest-template
+
+Replay own HyperNet on the published eligible TEST roster:
+  python scripts/replay_published.py --manifest published_benchmark.json --method v17 --split test --data-root /path/to/coco-cache --checkpoint /path/to/own-checkpoint.pt --device cuda --output /path/to/new-replay
+
+Replace v17 with v17_no_geometry or random and supply that method's exact published
+checkpoint. CPU execution is supported with --device cpu, but it can be slower.
+Raw-pixel replay uses --method raw_template and needs no checkpoint. OWL replay uses
+--method owlvit_base_patch32 --owl-checkpoint /path/to/owlvit-base-patch32; that folder
+must contain the official config, processor config, model.safetensors and acquisition
+record whose hashes appear in the published manifest. The measured OWL revision is
+cbc355fb364588351c5d51c7f74465e8e7ec6f72 in google/owlvit-base-patch32.
+
+Use --split dev for the old, explicitly disclosed calibration photos. The replay
+always reuses the published global DEV cutoffs; it does not refit on either split.
+Use --download-only to fetch and verify photos without loading a model or writing
+inference outputs. A completed public manifest and measured hashes/results are
+required even in download-only mode. An unfinished development plan cannot fetch TEST.
+
+Only official COCO image objects are downloaded over HTTPS. Every cached/downloaded
+photo must match both the published original-file SHA256 and decoded-RGB SHA256.
+Missing, modified or unavailable images stop replay; there is no replacement sampling.
+Reference crops use the published bounding box with floor/ceil clipping. Every target
+is evaluated on every selected photo. All methods receive the same one reference
+per target and common bounding-box clipping before half-open IoU evaluation.
+
+The output folder must be new. It receives predictions.jsonl, arrays.npz and
+replay_result.json. Verification compares scores, boxes, IoUs and threshold decisions
+against the published arrays. Numeric tolerances are disclosed in the output.
+Exit0 means verification passed; exit2 means an actual completed replay differs.
+Threshold decisions must match even when tiny score differences are within tolerance.
+Input, download or model errors raise an exception and leave original results intact.
+
+Publication contract: the relative-path manifest binds code, plan, completed
+acquisition metadata, each model/checkpoint, the DEV calibration, and original
+DEV/TEST result+array files by SHA256. Sanitized plan/acquisition copies may remove
+old absolute provenance paths; give those sanitized files their own correct hashes.
+The helper ignores the old plan's input_bindings/workspace_path fields entirely.
+Public result copies may also remove private filesystem provenance paths; bind each
+sanitized result's own hash while preserving its measured summaries and score-file
+hash. Preserve the original measured array bytes. Set completed=true only after
+the actual benchmark and all referenced records exist. Do not ship local private paths,
+downloaded photos or Google model weights in the public bundle.

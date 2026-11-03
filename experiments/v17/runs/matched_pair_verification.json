@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "scope": "Full saved-consumption ledger integrity and matched-arm equality; not full image regeneration",
+  "steps_per_arm": 2048,
+  "episodes_per_arm": 32768,
+  "rgb_views_per_arm": 65536,
+  "input_stream_sha256": "4767e049b6bc301c12c3f0772977fced134c87d624b21a695ab001af6a2da66d",
+  "initial_state_sha256": "aaf001ae7db5e5e7341ca12dcb6de5fb20f1c358743d1f9ba2b9fdc25cb0b9dc",
+  "same_initial_tensors": true,
+  "same_optimizer_input_ledger": true,
+  "same_source_snapshots": true,
+  "geometry_roles_verified": true,
+  "source_sha256": {
+    "hypernet/scene_curriculum.py": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+    "hypernet/local_relation_model.py": "b8dd441576334cfd436dfb12b2ab48f3a859311178f0b78ef0ce15a3f5ffdde9",
+    "scripts/train_local.py": "0e86d9678c9da2fd7dc5da37ff327d1fc4636b2619a599e093deca4f26a137fe"
+  },
+  "primary_completion_sha256": "efff520c6cdb6969d5385127e1988dab1eb01513a0326ada03ea6199a887dd9f",
+  "bag_completion_sha256": "13fd760acd1a4a34a87975e3b9f39a68d36837dbcfd88508f7fc131510a6422b",
+  "verification_source_sha256": "6486465c8e200b77cb1ea8278c30107511193a72c721a0ef5d5e17e4c4154f59"
+}

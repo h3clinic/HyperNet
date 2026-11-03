@@ -1,0 +1,203 @@
+{
+  "format": "hypernet.v17.published_benchmark.v1",
+  "completed": true,
+  "created_utc": "2026-11-03T12:42:11.742286+00:00",
+  "data_plan": {
+    "path": "data/coco_v17/plan.json",
+    "sha256": "5d72db4f8ab2903e8b37f2809990209554a34d02dcda0f9b6148e95cdb81d08b"
+  },
+  "test_acquisition": {
+    "path": "data/coco_v17/acquisition_public.json",
+    "sha256": "bc65879e867c5d276c1111e417f4bc6c27d5a13f75e073b913f2877cd4497f93"
+  },
+  "historical_pretest_protocol": {
+    "path": "data/coco_v17/protocol_public.json",
+    "sha256": "186b73e61c0afbe45d449a922ea3317ab0bede5c0bf2ef6803d65a20934085b6"
+  },
+  "code_files": {
+    "hypernet/__init__.py": "642e062e996e09ef601530678133ea6e96e0bd0eada16f71a60c6e5d4a55a0d4",
+    "hypernet/scene_curriculum.py": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+    "hypernet/local_relation_model.py": "b8dd441576334cfd436dfb12b2ab48f3a859311178f0b78ef0ce15a3f5ffdde9",
+    "hypernet/local_matcher.py": "28a79e622bd48738a67dff126ed2bd4be83fa42a4c9c515c98974d29b57022f8",
+    "hypernet/detection_metrics.py": "e975987e33335e412155d865962005d71a32e6adb9479964511f9b15c7cdc719",
+    "hypernet/raw_template.py": "63fe4143ea3f8764cf13f0792976b037c17c9d3d36f2f6ee368660fe4001fb69",
+    "hypernet/owl_baseline.py": "5850403174a6f2fc073ccf769c38582c085f645dfafea984e47df46551ac29d1"
+  },
+  "methods": {
+    "v17": {
+      "calibration": {
+        "path": "experiments/v17_dev_v2/calibration.json",
+        "sha256": "a70efc618b7dafd85b953d7aa02f959e3548ed249494bc8122485d1ca50ac591"
+      },
+      "expected": {
+        "dev": {
+          "arrays": {
+            "path": "experiments/v17_dev_v2/arrays.npz",
+            "sha256": "32e5a53b09c77fe452b9a6b6fabfd36f05792449aa833e5e21fbb50d824b8885"
+          },
+          "result": {
+            "path": "experiments/v17_dev_v2/result.json",
+            "sha256": "fc6b75b0af12557fb9a6e9a70d513272386dd9a4a0323a0b54b8cb93ec3869de"
+          }
+        },
+        "test": {
+          "arrays": {
+            "path": "experiments/v17_test_v2/arrays.npz",
+            "sha256": "3bd57171068ee378949e226906750962c0c78d3320671806fb88cd774bc5b6ee"
+          },
+          "result": {
+            "path": "experiments/v17_test_v2/result.json",
+            "sha256": "7a404d43c9bf618396b7243a80e1a42909888759749ab7fefe62a04c398c2b30"
+          }
+        }
+      },
+      "checkpoint_sha256": "e7f0c787ee963ce615c73fea355fc65a9a6ec39bee37561a931657967a756892",
+      "checkpoint_path": "runs/primary_2048/final.pt",
+      "inference": {
+        "max_side": 384,
+        "proposal_limit": 100,
+        "nms_iou": 0.4,
+        "pre_nms": 1000
+      }
+    },
+    "v17_no_geometry": {
+      "calibration": {
+        "path": "experiments/v17_no_geometry_dev_v2/calibration.json",
+        "sha256": "109c0b2d214dc94f17ecdfa95456a00c882402d80700bd816ea4fa85cf2ca562"
+      },
+      "expected": {
+        "dev": {
+          "arrays": {
+            "path": "experiments/v17_no_geometry_dev_v2/arrays.npz",
+            "sha256": "e4e219cbef05859fb6c2c03f6e816a8bf1bf7b19aefea194934f54e525fef021"
+          },
+          "result": {
+            "path": "experiments/v17_no_geometry_dev_v2/result.json",
+            "sha256": "53b1fa4698d6b515c6b21994590d9970e2b889c396919ad36a32574050a108a4"
+          }
+        },
+        "test": {
+          "arrays": {
+            "path": "experiments/v17_no_geometry_test_v2/arrays.npz",
+            "sha256": "d0cfa16703edd031fbf8a71368b1c8e132b38dc128e205aba677ce922fac1782"
+          },
+          "result": {
+            "path": "experiments/v17_no_geometry_test_v2/result.json",
+            "sha256": "15475d39724e284b6981df12cea0f4ae909f12bb24f485e84a3e3670ccbc6d06"
+          }
+        }
+      },
+      "checkpoint_sha256": "da3b439d1b1beeec1b81e468b3059cd3bb23244c1f266a3f031cfa1b150479b1",
+      "checkpoint_path": "runs/bag_2048/final.pt",
+      "inference": {
+        "max_side": 384,
+        "proposal_limit": 100,
+        "nms_iou": 0.4,
+        "pre_nms": 1000
+      }
+    },
+    "random": {
+      "calibration": {
+        "path": "experiments/random_dev_v2/calibration.json",
+        "sha256": "df773f4098c8147fd0d751c3aa9d1f82f20639afcda4b62b95367e8bb5aa2746"
+      },
+      "expected": {
+        "dev": {
+          "arrays": {
+            "path": "experiments/random_dev_v2/arrays.npz",
+            "sha256": "74bef81bbbe5dadd621a6fa74a5b8b2631f2fb7b4607fbe0ce5912d1baa83a3e"
+          },
+          "result": {
+            "path": "experiments/random_dev_v2/result.json",
+            "sha256": "c1e7fb9c57e89af45cbc93471c5adf864ca7493a2dd5ff6c938c79e39acaa3eb"
+          }
+        },
+        "test": {
+          "arrays": {
+            "path": "experiments/random_test_v2/arrays.npz",
+            "sha256": "571a58e077642a2d72cae8237b174ce930c8d0f00d7bf7540fed2452a849691d"
+          },
+          "result": {
+            "path": "experiments/random_test_v2/result.json",
+            "sha256": "a92e8cc36ebd29b1a2ecbb24bc9555da3001322f70c8171fbac178ad671953e2"
+          }
+        }
+      },
+      "checkpoint_sha256": "e9cb0fc755fbbbd5bcf6876652f6e56728ec547acb458d904053ce2e146684f1",
+      "checkpoint_path": "runs/primary_2048/random.pt",
+      "inference": {
+        "max_side": 384,
+        "proposal_limit": 100,
+        "nms_iou": 0.4,
+        "pre_nms": 1000
+      }
+    },
+    "owlvit_base_patch32": {
+      "calibration": {
+        "path": "experiments/owlvit_base_patch32_dev_v2/calibration.json",
+        "sha256": "b7aeb9f47d28e6a8c58060347cfba184ead194d17a363c77bcb77b4be6128abe"
+      },
+      "expected": {
+        "dev": {
+          "arrays": {
+            "path": "experiments/owlvit_base_patch32_dev_v2/arrays.npz",
+            "sha256": "6900260bd59acd746f6a80e5bf98867ca55a53b6d09780621e5e14fcf29f4a77"
+          },
+          "result": {
+            "path": "experiments/owlvit_base_patch32_dev_v2/result.json",
+            "sha256": "cf8c9dca2560a641edad8d6e91ddb976b5571c55e01cfff827c9e679ca424b8d"
+          }
+        },
+        "test": {
+          "arrays": {
+            "path": "experiments/owlvit_base_patch32_test_v2/arrays.npz",
+            "sha256": "68bcd0cd7002aec3ed39bc8a03f7fd4565c34232a5b516b799a55867dda6f4af"
+          },
+          "result": {
+            "path": "experiments/owlvit_base_patch32_test_v2/result.json",
+            "sha256": "04dd8a5838d78f594617bda18e1c73ccbd47ff3c95a194eefdeb1ceb82a2d262"
+          }
+        }
+      },
+      "owl_checkpoint_files": {
+        "config.json": "b5934e0d2933194b8a85f93674e577feaa1a1ba2dc1d143b2d5e5305ff7a9d7c",
+        "preprocessor_config.json": "2010d320cd2c68a8bb1de69aaa8f89daf173ef17cc22a30e4baf44b2f0e9bb6e",
+        "model.safetensors": "4dbe0399f0b7d7c8dddf1535a98769cc30743bebc877aea681998c8d984ce52b",
+        "acquisition.json": "ea212960a441cff34685750dc1d4a33d77f6a9e6a963f8f9434d186c7217b3dd"
+      },
+      "checkpoint_id": "google/owlvit-base-patch32",
+      "revision": "cbc355fb364588351c5d51c7f74465e8e7ec6f72"
+    },
+    "raw_template": {
+      "calibration": {
+        "path": "experiments/raw_template_dev_v2/calibration.json",
+        "sha256": "e75c0ce550a51ba12e99a17375a0402dfce0f170c20eaa0a4e239d9a64632e0d"
+      },
+      "expected": {
+        "dev": {
+          "arrays": {
+            "path": "experiments/raw_template_dev_v2/arrays.npz",
+            "sha256": "81912f42e9b0f64095d9b631878343b0a81c62a55d59e108100ad8878ab81ca0"
+          },
+          "result": {
+            "path": "experiments/raw_template_dev_v2/result.json",
+            "sha256": "23340bf9c5a7fcfb5ee95aec5d1dbc8585343c1b79bb0e872fe2985f22e0bfdf"
+          }
+        },
+        "test": {
+          "arrays": {
+            "path": "experiments/raw_template_test_v2/arrays.npz",
+            "sha256": "d838b4a909c0224609fec47fde5c0948a4cdcdf5976fb92c82f84144b5dc7be7"
+          },
+          "result": {
+            "path": "experiments/raw_template_test_v2/result.json",
+            "sha256": "9b09a1060e567b8ef8845f3bc4e30845a45a2f80529d9d5e3ad3fdf6c3a16133"
+          }
+        }
+      }
+    }
+  },
+  "development_data_disclosure": "One boxed support per target plus 288 labeled natural DEV query photos; no natural-image HyperNet weight updates.",
+  "photo_redistribution": false,
+  "google_weight_redistribution": false
+}

@@ -1,0 +1,1886 @@
+{
+  "format": "hypernet.v17.actual_episode_preflight",
+  "status": "passed",
+  "created_utc": "2026-11-03T03:52:08.563484+00:00",
+  "source_sha256": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+  "config_sha256": "ae78216ca480091fd526b4ba340e95f5aa39c7f5758be5acf8b1d677f94ba0ac",
+  "cpu_workers": 4,
+  "gpu_used": false,
+  "training_has_run": false,
+  "optimizer_consumed_images": 0,
+  "planned_primary_episodes": 34048,
+  "primary_episodes_rendered": 34048,
+  "additional_paired_complements_rendered": 133,
+  "total_actual_episodes_rendered": 34181,
+  "rejected_ambiguous_nuisance_draws_primary": 36,
+  "maximum_retry_count": 2,
+  "retry_histogram": {
+    "0": 34013,
+    "1": 34,
+    "2": 1
+  },
+  "retry_reasons": {
+    "Matched presence counterfactual is not visibly distinct in final RGB": 35,
+    "Declared hard-negative edit is not visually resolvable": 1
+  },
+  "elapsed_seconds": 186.94896460000018,
+  "plans": [
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 0,
+      "index_end_exclusive": 32768
+    },
+    {
+      "split": "development",
+      "seed": 1777,
+      "index_start": 0,
+      "index_end_exclusive": 256
+    },
+    {
+      "split": "test",
+      "seed": 1777,
+      "index_start": 0,
+      "index_end_exclusive": 512
+    },
+    {
+      "split": "compositional",
+      "seed": 1777,
+      "index_start": 0,
+      "index_end_exclusive": 512
+    }
+  ],
+  "failures": [],
+  "minimum_visible_detail_pixels": 8,
+  "minimum_measured_pair_rgb_difference_pixels": 11,
+  "minimum_target_visibility": 0.6504854368932039,
+  "chunks": [
+    {
+      "split": "compositional",
+      "seed": 1777,
+      "index_start": 0,
+      "index_end_exclusive": 512,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 8,
+      "maximum_retry_count": 2,
+      "retry_histogram": {
+        "0": 505,
+        "1": 6,
+        "2": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 7,
+        "Declared hard-negative edit is not visually resolvable": 1
+      },
+      "family_counts": {
+        "composite": 512
+      },
+      "raster_stream_sha256": "5826418bbaf18405401284be54536b59788c8ddaa3e340cc15c974551f4b8eb7",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 30,
+      "minimum_target_visibility": 0.725
+    },
+    {
+      "split": "development",
+      "seed": 1777,
+      "index_start": 0,
+      "index_end_exclusive": 256,
+      "primary_rendered": 256,
+      "paired_complements_rendered": 1,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 256
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "contour": 43,
+        "repetition": 43,
+        "ridge": 43,
+        "texture": 43,
+        "composite": 42,
+        "branch": 42
+      },
+      "raster_stream_sha256": "a029ec36d233ca07eda4117c06665d76facf457d6d8e02aca2574c6b053cc7cf",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 1135,
+      "minimum_target_visibility": 0.6970802919708029
+    },
+    {
+      "split": "test",
+      "seed": 1777,
+      "index_start": 0,
+      "index_end_exclusive": 512,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "ec102a9d953e72ab4de784886724df41a9fa39961f0dc4bfcd26c8438ffa662e",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 663,
+      "minimum_target_visibility": 0.6737235367372354
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 0,
+      "index_end_exclusive": 512,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "62dd59bdc2e1e748de9d522ba4805fc476f09f087a3b9cebec050e38071e28b0",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 241,
+      "minimum_target_visibility": 0.6528
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 512,
+      "index_end_exclusive": 1024,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "46ca1fcd7512e9a1958c7b72b839878a5141229a9824d1009e23202ae73ae5c7",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 172,
+      "minimum_target_visibility": 0.6542176432710882
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 1024,
+      "index_end_exclusive": 1536,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "15009f117233dc5166ddb9293acf7a3eb8ef0e2e00539d582aecc7784018fffd",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 256,
+      "minimum_target_visibility": 0.6826210826210827
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 1536,
+      "index_end_exclusive": 2048,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "62cfbd46f323c00aea2ef524420dc7025006a73a367bf65ae25858231e45f919",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 1200,
+      "minimum_target_visibility": 0.6504854368932039
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 2048,
+      "index_end_exclusive": 2560,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "afb3f1a6febc41434b6ada782885d0d421f8e895cd849e253cd50f66eb1b50fd",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 166,
+      "minimum_target_visibility": 0.6693711967545639
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 2560,
+      "index_end_exclusive": 3072,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "45ad757563d50e360f08908be42fd109a68d0081a706107192a42b7bbcd32ddf",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 520,
+      "minimum_target_visibility": 0.6747572815533981
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 3072,
+      "index_end_exclusive": 3584,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 2,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 510,
+        "1": 2
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 2
+      },
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "8de8d393a8ded17e756a81c8a2e562006af99c73cd811bb86d94f086592d4236",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 475,
+      "minimum_target_visibility": 0.6583333333333333
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 3584,
+      "index_end_exclusive": 4096,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "25fa8b38816bbd59d959aeca81814d6165a5d19b41680310aecab400fbfe0d24",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 27,
+      "minimum_target_visibility": 0.7546910755148741
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 4096,
+      "index_end_exclusive": 4608,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "8ce8f44e30e9e6d15ee108ee5cf74ff720d0e714f6d52e9b6b4c98af38202708",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 88,
+      "minimum_target_visibility": 0.6904458598726114
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 4608,
+      "index_end_exclusive": 5120,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "749976c8e5cc2a7e3422217c5b0b343568d18719117cf17a701e51b870d95833",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 259,
+      "minimum_target_visibility": 0.6652276295133438
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 5120,
+      "index_end_exclusive": 5632,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "5644e766ea5f59bb674a88e9b8ad982552431466d968f8c9d4a40d1f4d5a8464",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 49,
+      "minimum_target_visibility": 0.6962719298245614
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 5632,
+      "index_end_exclusive": 6144,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "49c7058a47c6f33d2a5cc31295a992ad8097eeb16d08b6de6f48e6fcf62fddec",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 107,
+      "minimum_target_visibility": 0.7009345794392523
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 6144,
+      "index_end_exclusive": 6656,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "46fb43109d8b9d1a546675b44ea71474ea647f9ceea79b3e478c00642733dbd6",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 169,
+      "minimum_target_visibility": 0.6784922394678492
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 6656,
+      "index_end_exclusive": 7168,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "a391531a7ce8629ab52718d15f37796c1b371877c8337dc58bca5422ddd465a0",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 185,
+      "minimum_target_visibility": 0.7142857142857143
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 7168,
+      "index_end_exclusive": 7680,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "2e53e4ccad96b126f144d002245a72d82682a0630ef242a4aaf5e2e8ad0c8a60",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 82,
+      "minimum_target_visibility": 0.6738836265223275
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 7680,
+      "index_end_exclusive": 8192,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "7915d0e21fc4b064f4fabf12ec5dcf5d20f7bc707eb25eabe393f58d47f9da97",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 43,
+      "minimum_target_visibility": 0.7132107023411371
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 8192,
+      "index_end_exclusive": 8704,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "e4e83a6fc3d6713713b918481514299ed3595a0497f2a8bc03e3f0865159cf8f",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 110,
+      "minimum_target_visibility": 0.7580645161290323
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 8704,
+      "index_end_exclusive": 9216,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "94c0f06cffe24f98c501d8f9c706c7c09afa1020904c4568c45f134c103a5388",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 183,
+      "minimum_target_visibility": 0.6573248407643312
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 9216,
+      "index_end_exclusive": 9728,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "64a4a8280b5278ee0cbb727016125fe8e051b117250a20a0a269d3aab7b372eb",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 608,
+      "minimum_target_visibility": 0.6941015089163237
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 9728,
+      "index_end_exclusive": 10240,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "42ba70f357e959a2a9ef4186eb20b07f11ce68a97b61649cd15d7d361eeda7e9",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 54,
+      "minimum_target_visibility": 0.6555808656036447
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 10240,
+      "index_end_exclusive": 10752,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "b1d153994ec5f9d08751c280de2d8c43d779059d3dddd80cf489d91e6c8052b8",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 60,
+      "minimum_target_visibility": 0.6555621653777514
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 10752,
+      "index_end_exclusive": 11264,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "8e0a867fe0d21e5d6e3b350426085d8ea42ce953b18c8a0514f771478a64363f",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 1221,
+      "minimum_target_visibility": 0.6527159394479074
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 11264,
+      "index_end_exclusive": 11776,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "37752224c59cf96576732ee73d8a7651d3328cd404ead520b292aa8c0122a9fd",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 166,
+      "minimum_target_visibility": 0.664257318395374
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 11776,
+      "index_end_exclusive": 12288,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "513da14c7d71bb1086e80c67b994ca15cb41cb9b7eef5de0d605bd3e88cc3b60",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 484,
+      "minimum_target_visibility": 0.6524822695035462
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 12288,
+      "index_end_exclusive": 12800,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "dc6b02e6237fd06944a6ab69c8ee5f6cd914311f2b5111221c1a8c1c466d6f3e",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 70,
+      "minimum_target_visibility": 0.6564245810055865
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 12800,
+      "index_end_exclusive": 13312,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "6068ea7885183e0b470ce684ed27a80c3adef48b883ff68b77248287274c4694",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 36,
+      "minimum_target_visibility": 0.6617336152219874
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 13312,
+      "index_end_exclusive": 13824,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "bdbda6de340e5ea2a9ca020f213bf6293804a05b2742bf72d27c597754595424",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 109,
+      "minimum_target_visibility": 0.6542583192329385
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 13824,
+      "index_end_exclusive": 14336,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "675db5c1dc943b1f992e11790d698008826619aedae747899428c68210a5a262",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 293,
+      "minimum_target_visibility": 0.662925416364953
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 14336,
+      "index_end_exclusive": 14848,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "5fb3efa9c5f35c404c88807a6af9d998163ba6ccf062b9f7d5f0ed2ae6547c17",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 135,
+      "minimum_target_visibility": 0.6657655443597935
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 14848,
+      "index_end_exclusive": 15360,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "a3fd7d0284eecc60e40eacabf5b3248d21d7a83c2860c182a48b30b553d27672",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 128,
+      "minimum_target_visibility": 0.6612127045235804
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 15360,
+      "index_end_exclusive": 15872,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "fda9aa97163805e0825c73ebd8a700ec7981db031cf7503b481b4fd66710b32a",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 26,
+      "minimum_target_visibility": 0.6668611435239207
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 15872,
+      "index_end_exclusive": 16384,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "760715a0837fb7b4cc0b62426a363d9b3da800744751ccaa6a294f1b31fdf659",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 191,
+      "minimum_target_visibility": 0.7477552724994779
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 16384,
+      "index_end_exclusive": 16896,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "7a39922a5f095aeb96a02e743845f5e511916b4f3e2f6b8f00d6f59d47c23632",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 438,
+      "minimum_target_visibility": 0.6952752492414391
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 16896,
+      "index_end_exclusive": 17408,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "7c8b3fcad7f77c400432115e74484c3890db77f2f7473dbc493d5682f21e479a",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 522,
+      "minimum_target_visibility": 0.6772563176895307
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 17408,
+      "index_end_exclusive": 17920,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "e1e083ea0e87803a0a4eafb97d51b3447028406795b1ceec07611d071a76c67b",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 43,
+      "minimum_target_visibility": 0.6593250444049733
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 17920,
+      "index_end_exclusive": 18432,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "4c40a8df87c43a9e635a7e12cb38001656589d4001c5010327099afeb3eafe38",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 67,
+      "minimum_target_visibility": 0.6616008105369807
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 18432,
+      "index_end_exclusive": 18944,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "e7d971b5dde1f369e33fc7859580f7c0b8a27d4af148b62bcfd2c2d35724b658",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 294,
+      "minimum_target_visibility": 0.6686390532544378
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 18944,
+      "index_end_exclusive": 19456,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "7c0bce5abe0238705ac0d223b491967caaebb5130e0534919b7023bfd350d731",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 256,
+      "minimum_target_visibility": 0.6804123711340206
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 19456,
+      "index_end_exclusive": 19968,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "bfc41ce52b8ca1d4a6be7395d779778c9edf54fe941f5d0377fcfa2d416551fb",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 75,
+      "minimum_target_visibility": 0.6546296296296297
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 19968,
+      "index_end_exclusive": 20480,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "3f2bdb9d6488900a27dae458a0d384c3b4c988a4f2e7b4933b0aa2690208fbe4",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 167,
+      "minimum_target_visibility": 0.6944444444444444
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 20480,
+      "index_end_exclusive": 20992,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "d869192939348da65f01cb60a93f349fed64559934c6ebd359a1271cd639f6f9",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 173,
+      "minimum_target_visibility": 0.6653094462540716
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 20992,
+      "index_end_exclusive": 21504,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "ef703de7816b97b4a47533fd1be14a39f8169b567913ce967747b5fb6716b8f1",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 11,
+      "minimum_target_visibility": 0.6872246696035242
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 21504,
+      "index_end_exclusive": 22016,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "b3532854cf7cf4671e6fc94bb040f682710771e4851942773c6ad6b07949328f",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 134,
+      "minimum_target_visibility": 0.6701225259189444
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 22016,
+      "index_end_exclusive": 22528,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "ef1148316d33d1fe6470d6e928d90cf0496b50cc7cf8507c49cb86aceb51dfa9",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 36,
+      "minimum_target_visibility": 0.7139240506329114
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 22528,
+      "index_end_exclusive": 23040,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "c9167459578ce21b62e8237e0d2fbe4c7fb134fb735555c7891c63375e4b6005",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 592,
+      "minimum_target_visibility": 0.6600710299340437
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 23040,
+      "index_end_exclusive": 23552,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "02dad5645c28ee3e7713a042be21bf9ce9f0f8d8a262887f3994c7d4d9095abc",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 341,
+      "minimum_target_visibility": 0.6660117878192534
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 23552,
+      "index_end_exclusive": 24064,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "5eef455ae9c12cf1912882da73e99606daade41057e553775b0c5c63fc5d9de8",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 38,
+      "minimum_target_visibility": 0.6531365313653137
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 24064,
+      "index_end_exclusive": 24576,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "a7c53ecd0772b79bebae86614e544558d4dafa794a588ee6148bef0d5f748d00",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 98,
+      "minimum_target_visibility": 0.6775106082036775
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 24576,
+      "index_end_exclusive": 25088,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "600ac21433c209808ca8702b2bdcef76abc0811e9f2d54d2af93e2d3e2c12471",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 566,
+      "minimum_target_visibility": 0.6645663454410674
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 25088,
+      "index_end_exclusive": 25600,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "2bfc1b15f6c50b6c31d378419c414eaabacc591f02270f03f232d74b4b57100e",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 26,
+      "minimum_target_visibility": 0.6666666666666666
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 25600,
+      "index_end_exclusive": 26112,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "281934bb125fe92da8c0aad9b44acd00713cdf6daef77e43fac3979f87c4088f",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 101,
+      "minimum_target_visibility": 0.6615384615384615
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 26112,
+      "index_end_exclusive": 26624,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "10b412ec03c553b8518080fa3968a43eb2d28dc757570839d8bfd23cb6c6d530",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 287,
+      "minimum_target_visibility": 0.6850035038542397
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 26624,
+      "index_end_exclusive": 27136,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "b43f8e7b0999fe78077156662ddc8729f92f28b8da0c58efd4bb8f586f2aedfe",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 477,
+      "minimum_target_visibility": 0.6905132192846034
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 27136,
+      "index_end_exclusive": 27648,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 2,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 510,
+        "1": 2
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 2
+      },
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "b9535916408fd3d4ae37be343237c87042467e82a02e0482953b0fc5fa508356",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 338,
+      "minimum_target_visibility": 0.6946308724832215
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 27648,
+      "index_end_exclusive": 28160,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "343263a2d6ea4e38e565fa791eeea54f3b2bd7e52733851ee2b8db9baa982849",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 94,
+      "minimum_target_visibility": 0.6890951276102089
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 28160,
+      "index_end_exclusive": 28672,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "8f2e9fcf00bb90c8e38dddd840a0a7e02446692f46b70ba9f77d5266ea83364b",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 11,
+      "minimum_target_visibility": 0.7122093023255814
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 28672,
+      "index_end_exclusive": 29184,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "5a644c3b34a0783d9ba94a3bd757328469674687efa8db00c489c879d20582d4",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 23,
+      "minimum_target_visibility": 0.6518691588785047
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 29184,
+      "index_end_exclusive": 29696,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "6c8f9c8daa271b5ac709225fa0de13a4195ec4c59ae92006fb76401d8edbd7ab",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 505,
+      "minimum_target_visibility": 0.6526690391459075
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 29696,
+      "index_end_exclusive": 30208,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "a4ffed81add436858d9c34c72486ebb3585c942f8ac0c95457963a7de491303e",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 194,
+      "minimum_target_visibility": 0.7058823529411765
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 30208,
+      "index_end_exclusive": 30720,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "18a29918aaf8ce7368aeb031392268aff79d2a141779fb673d8cbc113cc61fcf",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 174,
+      "minimum_target_visibility": 0.680073126142596
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 30720,
+      "index_end_exclusive": 31232,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "f8aebbd85dd05cc523643e8bd0136e43efdba6d02fcc3e9e1ea7ffc27e5ef79a",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 263,
+      "minimum_target_visibility": 0.6606948968512486
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 31232,
+      "index_end_exclusive": 31744,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "composite": 86,
+        "branch": 86,
+        "contour": 85,
+        "repetition": 85,
+        "ridge": 85,
+        "texture": 85
+      },
+      "raster_stream_sha256": "def656d3fcc9c23e3a5a0c29ae09914d7b60d122e88cbb11b0a3cc46365b3c98",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 540,
+      "minimum_target_visibility": 0.66
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 31744,
+      "index_end_exclusive": 32256,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 0,
+      "maximum_retry_count": 0,
+      "retry_histogram": {
+        "0": 512
+      },
+      "retry_reasons": {},
+      "family_counts": {
+        "contour": 86,
+        "repetition": 86,
+        "ridge": 85,
+        "texture": 85,
+        "composite": 85,
+        "branch": 85
+      },
+      "raster_stream_sha256": "432ebd6718616030b09205a59b00b74d5f204ccf3fd2cd92fcbffdd7935356b5",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 103,
+      "minimum_target_visibility": 0.6985091109884042
+    },
+    {
+      "split": "train",
+      "seed": 1701,
+      "index_start": 32256,
+      "index_end_exclusive": 32768,
+      "primary_rendered": 512,
+      "paired_complements_rendered": 2,
+      "rejected_ambiguous_nuisance_draws_primary": 1,
+      "maximum_retry_count": 1,
+      "retry_histogram": {
+        "0": 511,
+        "1": 1
+      },
+      "retry_reasons": {
+        "Matched presence counterfactual is not visibly distinct in final RGB": 1
+      },
+      "family_counts": {
+        "ridge": 86,
+        "texture": 86,
+        "composite": 85,
+        "branch": 85,
+        "contour": 85,
+        "repetition": 85
+      },
+      "raster_stream_sha256": "e056a45d9708c8b2b6f8e3757939671d71974773a37f9ab94211fd3ac0bb9ef4",
+      "minimum_visible_detail_pixels": 8,
+      "minimum_measured_pair_rgb_difference_pixels": 197,
+      "minimum_target_visibility": 0.6756245268735807
+    }
+  ],
+  "distinct_whole_programs": {
+    "train": 10512,
+    "development": 161,
+    "test": 269,
+    "compositional": 512
+  },
+  "episodes_per_second": 182.83599523075384
+}

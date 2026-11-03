@@ -1,0 +1,11 @@
+# Python 3.12.10 was used for the original benchmark.
+# Install an appropriate PyTorch build first. Original: torch==2.14.1+cu130.
+# The CUDA build/index is platform-specific; CPU replay is also supported.
+numpy==2.5.3
+Pillow==12.3.0
+opencv-python==5.0.0.93
+# Required only for the separately supplied OWL baseline:
+transformers==4.57.1
+huggingface-hub==0.36.0
+safetensors==0.8.0
+tokenizers==0.22.2

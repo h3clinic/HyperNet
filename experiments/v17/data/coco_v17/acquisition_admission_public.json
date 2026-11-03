@@ -1,0 +1,7 @@
+{
+  "protocol_path": "experiments/fresh_test_protocol.json",
+  "protocol_sha256": "753fd4b259bd87e1c6d575b35fc80e3625f7ac1bef547625f9bad43d471fc482",
+  "data_plan_sha256": "153af565f11beaa0fb51b8058afdc2c7f3ea28c4c16bfbf0dda773591d795b21",
+  "created_utc": "2026-11-03T12:08:37.296195+00:00",
+  "before_first_test_image_write": true
+}

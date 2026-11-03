@@ -1,0 +1,440 @@
+{
+  "format": "hypernet.v17.generator_preview_and_bounded_qa",
+  "created_utc": "2026-11-03T03:51:05.196241+00:00",
+  "status": "passed",
+  "training_has_run": false,
+  "optimizer_consumed_images": 0,
+  "natural_images_used": 0,
+  "config": {
+    "format": "hypernet.compositional_2d_curriculum.v17.1",
+    "families": [
+      "branch",
+      "contour",
+      "repetition",
+      "ridge",
+      "texture",
+      "composite"
+    ],
+    "support_size": 96,
+    "query_size": 192,
+    "supersampling": 2,
+    "target_probability": 0.5,
+    "visibility_floor": 0.65,
+    "minimum_line_width_final_pixels": 1,
+    "matched_negative_selection": "Program-hash seeded random ordering of admissible single-attribute edits, independently for scene distractor and absent replacement",
+    "material_rendering": "Modulate foreground contrast against the local background, preserving texture in either polarity",
+    "ambiguity_rejection": "At most 16 deterministic nuisance draws of the same program; reject only explicit unresolved edit geometry or final presence counterfactuals with fewer than 8 RGB-distinguishing pixels; retry counts and reasons recorded",
+    "family_sampling": "Round-robin by episode index, with program hashing within each family",
+    "support_framing": "Known synthetic mask crop with margins 0,.05,.15,.35,.6 then aspect-preserving letterbox; padding is crop border median RGB",
+    "train_composite_pairs": [
+      [
+        "branch",
+        "contour"
+      ],
+      [
+        "repetition",
+        "texture"
+      ],
+      [
+        "contour",
+        "ridge"
+      ],
+      [
+        "branch",
+        "repetition"
+      ]
+    ],
+    "construction_holdout_pairs": [
+      [
+        "branch",
+        "ridge"
+      ],
+      [
+        "contour",
+        "texture"
+      ],
+      [
+        "ridge",
+        "repetition"
+      ],
+      [
+        "branch",
+        "texture"
+      ]
+    ],
+    "split": "SHA256 of the complete canonical structural program modulo10: 0=test,1=development,2..9=train",
+    "subprogram_overlap": "Hash disjointness applies to whole programs; primitive subprograms can recur inside composites across splits. The separate compositional split reserves constituent-pair constructions, not unseen primitive categories.",
+    "nuisance_split_codes": {
+      "train": 0,
+      "development": 1,
+      "test": 2,
+      "compositional": 3
+    },
+    "natural_images_used": 0,
+    "borrowed_weights_used": false,
+    "mask_convention": "Binary occupancy and part labels sampled at final pixel centres; RGB antialiased separately",
+    "occlusion_identity_floor": "At least 8 geometric/material edit pixels for each negative and 8 counterfactual RGB pixels with channel difference >=3 remain untouched by any occluder alpha",
+    "bbox_convention": "Tight visible centre-sampled target mask, pixelxyxy half-open; absent is fourzeros",
+    "positive_correspondence": "Part identity only across independently rendered instances; not pixel correspondence"
+  },
+  "config_sha256": "ae78216ca480091fd526b4ba340e95f5aa39c7f5758be5acf8b1d677f94ba0ac",
+  "source_sha256": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+  "qa_episodes": 408,
+  "qa_primary_episodes": 384,
+  "qa_additional_counterfactual_episodes": 24,
+  "qa_final_rgb_pairs_checked": 24,
+  "qa_seconds": 9.763645800005179,
+  "qa_episodes_per_second": 41.78766911021942,
+  "counts_scope": "Family, split, framing and polarity counts below describe primary episodes; unique raster hashes include paired complements.",
+  "counts": {
+    "train": 96,
+    "train_present": 46,
+    "development": 96,
+    "development_present": 54,
+    "test": 96,
+    "test_present": 52,
+    "compositional": 96,
+    "compositional_present": 41
+  },
+  "family_counts": {
+    "train:ridge": 16,
+    "train:texture": 16,
+    "train:composite": 16,
+    "train:branch": 16,
+    "train:contour": 16,
+    "train:repetition": 16,
+    "development:ridge": 16,
+    "development:texture": 16,
+    "development:composite": 16,
+    "development:branch": 16,
+    "development:contour": 16,
+    "development:repetition": 16,
+    "test:ridge": 16,
+    "test:texture": 16,
+    "test:composite": 16,
+    "test:branch": 16,
+    "test:contour": 16,
+    "test:repetition": 16,
+    "compositional:composite": 96
+  },
+  "distinct_whole_programs_by_split": {
+    "train": 93,
+    "development": 76,
+    "test": 74,
+    "compositional": 96
+  },
+  "unique_support_rgb_in_qa": 384,
+  "unique_query_rgb_in_qa": 408,
+  "qa_generated_pixels": 18800640,
+  "minimum_visible_target_fraction": 0.6528,
+  "minimum_counterfactual_changed_pixels": 8,
+  "minimum_surviving_counterfactual_rgb_difference_pixels_lower_bound": 8,
+  "minimum_measured_final_pair_rgb_difference_pixels": 31,
+  "support_margin_counts": {
+    "0.6": 70,
+    "0.05": 77,
+    "0.15": 69,
+    "0.0": 79,
+    "0.35": 89
+  },
+  "observed_support_contrast_polarity": {
+    "brighter": 197,
+    "darker": 187
+  },
+  "preview_actual_positive_and_absent_episodes": 12,
+  "preview_programs": [
+    {
+      "family": "branch",
+      "episode_index": 3,
+      "program_id": "6fcfc37819440d23b03575d46f091a8dde96a8c482866e5df510277d57cd4810",
+      "images": {
+        "reference": "assets/program_00_reference.png",
+        "positive": "assets/program_00_positive.png",
+        "absent": "assets/program_00_absent.png"
+      },
+      "support_rgb_sha256": "64f6252f4b7a632c535a43bec71f12cd97e299b50ee06a52e2a6ff7518e53713",
+      "positive_rgb_sha256": "a410078bf2b6191482a0125d604b32b24a698351af2c05efe00119f090c1aefd",
+      "negative_rgb_sha256": "c7336ca0d0748508316e72842070c04b0106728bb24e66bb727bdc7f6180fc23",
+      "bbox": [
+        118.0,
+        31.0,
+        162.0,
+        86.0
+      ],
+      "positive_visibility": 0.8216374269005848,
+      "support_frame": {
+        "crop_xyxy": [
+          13,
+          11,
+          74,
+          81
+        ],
+        "margin_fraction": 0.0,
+        "scale": 1.3714285714285714,
+        "letterbox_xywh": [
+          6,
+          0,
+          84,
+          96
+        ],
+        "pad_rgb": [
+          87,
+          177,
+          87
+        ],
+        "synthetic_ground_truth_used_for_training_crop": true
+      }
+    },
+    {
+      "family": "contour",
+      "episode_index": 4,
+      "program_id": "a5169dd463e47e3da957f7154bcd4df6d07580bc82b3befe922c82f58c43df60",
+      "images": {
+        "reference": "assets/program_01_reference.png",
+        "positive": "assets/program_01_positive.png",
+        "absent": "assets/program_01_absent.png"
+      },
+      "support_rgb_sha256": "dba1db250a8d0a937d4c7f2a8bcd4ef430cf995d5fba3874681461d008120bb0",
+      "positive_rgb_sha256": "77d31af681f80cf2f5a35ed5a6df86e76d15b4e65565cfce09d72f8422d4bcfa",
+      "negative_rgb_sha256": "80c3ffe6919b347ba962d7396d3a4bc245c4d4026ee535168145d7efc33d138e",
+      "bbox": [
+        62.0,
+        32.0,
+        86.0,
+        57.0
+      ],
+      "positive_visibility": 1.0,
+      "support_frame": {
+        "crop_xyxy": [
+          0,
+          0,
+          96,
+          96
+        ],
+        "margin_fraction": 0.35,
+        "scale": 1.0,
+        "letterbox_xywh": [
+          0,
+          0,
+          96,
+          96
+        ],
+        "pad_rgb": [
+          142,
+          55,
+          156
+        ],
+        "synthetic_ground_truth_used_for_training_crop": true
+      }
+    },
+    {
+      "family": "repetition",
+      "episode_index": 5,
+      "program_id": "9d23ca83944ff49d27a6711ae0cfdab6b407edd1dc227a39c5ee558ba2a82027",
+      "images": {
+        "reference": "assets/program_02_reference.png",
+        "positive": "assets/program_02_positive.png",
+        "absent": "assets/program_02_absent.png"
+      },
+      "support_rgb_sha256": "0141eed0793662fe50baa7ce7f7b331c8cb1bc9511ca8808e69ef27cf80c24a6",
+      "positive_rgb_sha256": "430f10554f7ea99d608cd2a3f54c296dd5b1f8d94bdaac47f5a5c6f20b801acb",
+      "negative_rgb_sha256": "9985fcfa65dd39d1bb848831c9c223e709509418b8e5afa09307639f737f2495",
+      "bbox": [
+        115.0,
+        125.0,
+        169.0,
+        137.0
+      ],
+      "positive_visibility": 1.0,
+      "support_frame": {
+        "crop_xyxy": [
+          0,
+          29,
+          96,
+          66
+        ],
+        "margin_fraction": 0.6,
+        "scale": 1.0,
+        "letterbox_xywh": [
+          0,
+          29,
+          96,
+          37
+        ],
+        "pad_rgb": [
+          111,
+          115,
+          61
+        ],
+        "synthetic_ground_truth_used_for_training_crop": true
+      }
+    },
+    {
+      "family": "ridge",
+      "episode_index": 0,
+      "program_id": "37577a40d6b5a92c5c3fdfad562352486f900b23c9c598ee2af40e99303d97ea",
+      "images": {
+        "reference": "assets/program_03_reference.png",
+        "positive": "assets/program_03_positive.png",
+        "absent": "assets/program_03_absent.png"
+      },
+      "support_rgb_sha256": "231a29d740659a4d55db674ba66297f9a20c1c0971884b3b6fe8b647cffdf4be",
+      "positive_rgb_sha256": "a38ddbef8dbd42ad1bf7770ee47c09a4cb0c58e86d578b802043d623651c73bc",
+      "negative_rgb_sha256": "0176e7a89070fe89e55d047f6197028680320c1940f0ea450c3d91ced60a96dd",
+      "bbox": [
+        73.0,
+        22.0,
+        124.0,
+        91.0
+      ],
+      "positive_visibility": 1.0,
+      "support_frame": {
+        "crop_xyxy": [
+          0,
+          0,
+          96,
+          96
+        ],
+        "margin_fraction": 0.6,
+        "scale": 1.0,
+        "letterbox_xywh": [
+          0,
+          0,
+          96,
+          96
+        ],
+        "pad_rgb": [
+          154,
+          197,
+          137
+        ],
+        "synthetic_ground_truth_used_for_training_crop": true
+      }
+    },
+    {
+      "family": "texture",
+      "episode_index": 1,
+      "program_id": "abb3d64f55c6c29ea43141d7f5cab43385775adf51bf1217f000a333bbaa8f7c",
+      "images": {
+        "reference": "assets/program_04_reference.png",
+        "positive": "assets/program_04_positive.png",
+        "absent": "assets/program_04_absent.png"
+      },
+      "support_rgb_sha256": "062689d68cb8c3a3b8dba754e7bd7b747220dba876a2bcf872e6daa0c037887f",
+      "positive_rgb_sha256": "f45ebab69f9e39b1a7bbb6abd1d6fe771fe13f595d8792c570f5b2146e5451eb",
+      "negative_rgb_sha256": "d1b53cb12e26bf8ea8f4276693e357b02596e38c54513c97c42980095dd29bd3",
+      "bbox": [
+        114.0,
+        148.0,
+        149.0,
+        178.0
+      ],
+      "positive_visibility": 1.0,
+      "support_frame": {
+        "crop_xyxy": [
+          11,
+          22,
+          81,
+          75
+        ],
+        "margin_fraction": 0.05,
+        "scale": 1.3714285714285714,
+        "letterbox_xywh": [
+          0,
+          11,
+          96,
+          73
+        ],
+        "pad_rgb": [
+          160,
+          193,
+          103
+        ],
+        "synthetic_ground_truth_used_for_training_crop": true
+      }
+    },
+    {
+      "family": "composite",
+      "episode_index": 2,
+      "program_id": "d5d06ef2103af42f8123607d64d1d9a2ac0de44a41693ed5cb3a4f258f3ab747",
+      "images": {
+        "reference": "assets/program_05_reference.png",
+        "positive": "assets/program_05_positive.png",
+        "absent": "assets/program_05_absent.png"
+      },
+      "support_rgb_sha256": "bc933a6bbc86f68791de0d3b63b559bcc1e99f09e0ceff4b2fa08faf7be96ac9",
+      "positive_rgb_sha256": "3a9fedb35639765d447992adeb1d0e08ab806ccb374587e6321d7d39b6107d3a",
+      "negative_rgb_sha256": "ee5b4e9cfbd5f28b6323f6a1b24caa3e5cc29bc33ea6daa232276d664ae1ba4c",
+      "bbox": [
+        82.0,
+        116.0,
+        108.0,
+        153.0
+      ],
+      "positive_visibility": 1.0,
+      "support_frame": {
+        "crop_xyxy": [
+          19,
+          12,
+          79,
+          93
+        ],
+        "margin_fraction": 0.15,
+        "scale": 1.1851851851851851,
+        "letterbox_xywh": [
+          12,
+          0,
+          71,
+          96
+        ],
+        "pad_rgb": [
+          139,
+          59,
+          94
+        ],
+        "synthetic_ground_truth_used_for_training_crop": true
+      }
+    }
+  ],
+  "checks": [
+    "binary occupancy agrees with visible part map",
+    "visible masks contained in amodal target masks",
+    "tight half-open visible boxes reproduce",
+    "absent target labels empty",
+    "target visibility floor",
+    "hard-negative detail survives final sampling and occlusion",
+    "at least 8 RGB-distinguishing pixels survive occlusion",
+    "measured final RGB presence counterfactuals differ inside the slot and match exactly outside it",
+    "query foreground masks retain all scene objects even when target absent",
+    "whole-program hashes disjoint across all four splits"
+  ],
+  "limits": [
+    "Finite bounded grammar; not unlimited real semantics.",
+    "Primitive subprograms may recur across whole-program hash splits.",
+    "Part correspondence across instances is not pixel correspondence.",
+    "This bounded QA is not an audit of future optimizer consumption.",
+    "Display positive-box outlines are annotations, not input pixels."
+  ],
+  "full_preflight_artifact": "assets/generator_preflight.json",
+  "full_preflight_source_matches": true,
+  "full_preflight_status": "passed",
+  "full_preflight_actual_episodes": 34181,
+  "full_preflight_failure_count": 0,
+  "full_preflight_rejected_nuisance_draws": 36,
+  "full_preflight_maximum_retry_count": 2,
+  "superseded_qa_artifacts": [
+    "assets/qa_superseded_57a5d733.json",
+    "assets/preflight_failed_50a8d3c0.json",
+    "assets/preflight_failed_66b8a01d.json",
+    "assets/preflight_aborted_partial_material_revision.json"
+  ],
+  "full_preflight_retry_histogram": {
+    "0": 34013,
+    "1": 34,
+    "2": 1
+  },
+  "full_preflight_retry_reasons": {
+    "Matched presence counterfactual is not visibly distinct in final RGB": 35,
+    "Declared hard-negative edit is not visually resolvable": 1
+  }
+}

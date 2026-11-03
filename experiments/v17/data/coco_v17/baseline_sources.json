@@ -1,0 +1,43 @@
+{
+  "primary_baseline": {
+    "model": "google/owlvit-base-patch32",
+    "revision": "cbc355fb364588351c5d51c7f74465e8e7ec6f72",
+    "variant": "ViT-B/32, official Google checkpoint converted in Transformers",
+    "query_mode": "One support image crop, image-guided detection, no text query",
+    "processor": "Native pinned OwlViTImageProcessor, 768 by 768 pixels",
+    "score": "Maximum sigmoid of raw image-guided detector logits; not per-image normalized display scores",
+    "localization": "Highest-score box, common image-bound clipping, IoU>=0.5 against any noncrowd target box",
+    "training_difference": "OWL uses borrowed large-scale pretrained weights. HyperNet uses only its own synthetic training. Both receive the same one boxed natural support per target and the same query pixels.",
+    "exposure_limit": "The official checkpoint card names COCO/OpenImages fine-tuning. New COCO photos are fresh to HyperNet iterations, not established unseen by OWL.",
+    "metric_limit": "Macro top-one localized recall at a fixed DEV false-positive budget is not standard published COCO AP, and these results do not compare every Google OWL model."
+  },
+  "sources": [
+    {
+      "url": "https://huggingface.co/google/owlvit-base-patch32",
+      "supports": "Model identity, CLIP pretraining and detection fine-tuning, COCO/OpenImages training exposure"
+    },
+    {
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/tasks/zero_shot_object_detection.md",
+      "supports": "Image-guided object detection with one exemplar, distinct from text-prompt detection"
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/model_doc/owlvit",
+      "supports": "Official image_guided_detection API and detector outputs"
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/model_doc/owlv2",
+      "supports": "OWLv2 also supports image-guided detection; a separate model family, not the current primary checkpoint"
+    },
+    {
+      "url": "https://arxiv.org/abs/2306.09683",
+      "supports": "OWLv2/OWL-ST research, scaling open-vocabulary detection; background rather than a measured comparator here"
+    }
+  ],
+  "not_measured_in_this_round": [
+    "OWLv2",
+    "OWL-ST",
+    "R50+H/32 paper variant",
+    "Text-guided OWL"
+  ],
+  "reference_annotation_disclosure": "One supplied bounding-box crop per category is used by every method. The 288 old DEV photos and labels additionally calibrate global thresholds; they are not counted as natural-image weight training, but they are real supervision."
+}

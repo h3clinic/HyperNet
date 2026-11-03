@@ -1,0 +1,17 @@
+{
+  "threshold": 0.7255085706710817,
+  "comparison": "score >= threshold",
+  "threshold_source": "Only the fixed development absent episodes, before holdout evaluation",
+  "negative_count": 135,
+  "allowed_false_alarms": 6,
+  "actual_false_alarms": 6,
+  "nominal_development_fpr": 0.05,
+  "source_sha256": {
+    "scripts\\diagnose_raw_synthetic.py": "a5afde156ecb9643b0ce54d2e98009c145ef3f401c8880f09875fb9825ecb9c7",
+    "scripts\\diagnose_synthetic.py": "7bc18e1a7d73b10059e6cb5754447cdf8b2213a9850ef6efa4033557dbb024e4",
+    "hypernet\\scene_curriculum.py": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+    "hypernet\\raw_template.py": "63fe4143ea3f8764cf13f0792976b037c17c9d3d36f2f6ee368660fe4001fb69",
+    "hypernet\\detection_metrics.py": "e975987e33335e412155d865962005d71a32e6adb9479964511f9b15c7cdc719",
+    "scripts\\train_local.py": "0e86d9678c9da2fd7dc5da37ff327d1fc4636b2619a599e093deca4f26a137fe"
+  }
+}

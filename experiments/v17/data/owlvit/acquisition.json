@@ -1,0 +1,41 @@
+{
+  "repo_id": "google/owlvit-base-patch32",
+  "revision": "cbc355fb364588351c5d51c7f74465e8e7ec6f72",
+  "files": {
+    "config.json": {
+      "url": "https://huggingface.co/google/owlvit-base-patch32/resolve/cbc355fb364588351c5d51c7f74465e8e7ec6f72/config.json",
+      "sha256": "b5934e0d2933194b8a85f93674e577feaa1a1ba2dc1d143b2d5e5305ff7a9d7c",
+      "bytes": 4418,
+      "upstream": {
+        "rfilename": "config.json",
+        "blobId": "6dc59fde669284079dfde3d22f7c63f067479455",
+        "size": 4418
+      }
+    },
+    "preprocessor_config.json": {
+      "url": "https://huggingface.co/google/owlvit-base-patch32/resolve/cbc355fb364588351c5d51c7f74465e8e7ec6f72/preprocessor_config.json",
+      "sha256": "2010d320cd2c68a8bb1de69aaa8f89daf173ef17cc22a30e4baf44b2f0e9bb6e",
+      "bytes": 392,
+      "upstream": {
+        "rfilename": "preprocessor_config.json",
+        "blobId": "296097b0c4aadb7efadabd6bb7db67175c46d39f",
+        "size": 392
+      }
+    },
+    "model.safetensors": {
+      "url": "https://huggingface.co/google/owlvit-base-patch32/resolve/cbc355fb364588351c5d51c7f74465e8e7ec6f72/model.safetensors",
+      "sha256": "4dbe0399f0b7d7c8dddf1535a98769cc30743bebc877aea681998c8d984ce52b",
+      "bytes": 612983940,
+      "upstream": {
+        "rfilename": "model.safetensors",
+        "blobId": "3c78b8538277305fb7f35ee95d930229462a3e75",
+        "size": 612983940,
+        "lfs": {
+          "sha256": "4dbe0399f0b7d7c8dddf1535a98769cc30743bebc877aea681998c8d984ce52b",
+          "size": 612983940,
+          "pointerSize": 134
+        }
+      }
+    }
+  }
+}

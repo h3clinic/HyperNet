@@ -1,0 +1,309 @@
+{
+  "format": "hypernet.v17.fresh_test_admission.v1",
+  "created_utc": "2026-11-03T12:08:17.030580+00:00",
+  "model_selection_complete": true,
+  "test_scores_computed_before_freeze": false,
+  "data_plan_sha256": "153af565f11beaa0fb51b8058afdc2c7f3ea28c4c16bfbf0dda773591d795b21",
+  "behavior_files": {
+    "hypernet/__init__.py": "642e062e996e09ef601530678133ea6e96e0bd0eada16f71a60c6e5d4a55a0d4",
+    "hypernet/detection_metrics.py": "e975987e33335e412155d865962005d71a32e6adb9479964511f9b15c7cdc719",
+    "hypernet/local_matcher.py": "28a79e622bd48738a67dff126ed2bd4be83fa42a4c9c515c98974d29b57022f8",
+    "hypernet/local_relation_model.py": "b8dd441576334cfd436dfb12b2ab48f3a859311178f0b78ef0ce15a3f5ffdde9",
+    "hypernet/owl_baseline.py": "5850403174a6f2fc073ccf769c38582c085f645dfafea984e47df46551ac29d1",
+    "hypernet/raw_template.py": "63fe4143ea3f8764cf13f0792976b037c17c9d3d36f2f6ee368660fe4001fb69",
+    "hypernet/scene_curriculum.py": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+    "scripts/prepare_coco_v17.py": "9ae56c1654139becc0d23915949378b5d440b95598979e8db21cd5792654a976",
+    "scripts/evaluate_coco_v17.py": "f10dc3e7932e38464396e3252f130a241b769af0b75c6b636250ee09ab6f3854",
+    "scripts/evaluate_comparison_v17.py": "30b055a2edeaca29ce3d5bd295198ecfd4abdc9746b27594c996aa72ca74b6f7",
+    "scripts/train_local.py": "0e86d9678c9da2fd7dc5da37ff327d1fc4636b2619a599e093deca4f26a137fe",
+    "scripts/freeze_comparison.py": "7fb1aadf4baba48f4679a56ced6ec47a3307488f8d80335923b21524ef50c7ff",
+    "experiments/v17_dev_v2/result.json": "d8287f19c64ae31a2ab3e1c6e39c1916369b5aca1d71ba300677bf0f46e1210c",
+    "experiments/v17_dev_v2/calibration.json": "c6ab6f20b42d44190cebc00cb1f4ebb70b8e1432b56f6bca173213cc61e15e72",
+    "experiments/v17_dev_v2/arrays.npz": "32e5a53b09c77fe452b9a6b6fabfd36f05792449aa833e5e21fbb50d824b8885",
+    "experiments/v17_no_geometry_dev_v2/result.json": "7fa377153c8220d3f63a06141bbaa679247faa73526f60f9353b39b4cd07dba5",
+    "experiments/v17_no_geometry_dev_v2/calibration.json": "df213a732dcd35218f5121c1f8bf589d07ee3173a12a7be2e5363e72cc303045",
+    "experiments/v17_no_geometry_dev_v2/arrays.npz": "e4e219cbef05859fb6c2c03f6e816a8bf1bf7b19aefea194934f54e525fef021",
+    "experiments/random_dev_v2/result.json": "5724720e1db43c6dec7a78c1bbf9cc73e1e260a391a9b0be121de1160ed3737b",
+    "experiments/random_dev_v2/calibration.json": "74c5ba0153645df8450e8bc4df88f21bf7e2657166d1245f3231e28539e6ee23",
+    "experiments/random_dev_v2/arrays.npz": "74bef81bbbe5dadd621a6fa74a5b8b2631f2fb7b4607fbe0ce5912d1baa83a3e",
+    "experiments/owlvit_base_patch32_dev_v2/result.json": "75e80d79677cbd7cc65049178a8671c5046a3e445ce71d37a00f02cd9f67e08d",
+    "experiments/owlvit_base_patch32_dev_v2/calibration.json": "c4314f95bc915adae1532c11637eb2248cb7e11a75dc6b5b7aab74fb61c69c5b",
+    "experiments/owlvit_base_patch32_dev_v2/arrays.npz": "6900260bd59acd746f6a80e5bf98867ca55a53b6d09780621e5e14fcf29f4a77",
+    "experiments/raw_template_dev_v2/result.json": "ff61a0c05da39cb2624027e866fd2d5c425169bedc555b6632ae963788a8692c",
+    "experiments/raw_template_dev_v2/calibration.json": "ca7f175e8b8d7c1c1d3b3eb2bf83a6e60e97d19752dca4ad6a3331221783301c",
+    "experiments/raw_template_dev_v2/arrays.npz": "81912f42e9b0f64095d9b631878343b0a81c62a55d59e108100ad8878ab81ca0"
+  },
+  "checkpoint_files": {
+    "runs/primary_2048/final.pt": "e7f0c787ee963ce615c73fea355fc65a9a6ec39bee37561a931657967a756892",
+    "runs/bag_2048/final.pt": "da3b439d1b1beeec1b81e468b3059cd3bb23244c1f266a3f031cfa1b150479b1",
+    "runs/primary_2048/random.pt": "e9cb0fc755fbbbd5bcf6876652f6e56728ec547acb458d904053ce2e146684f1",
+    "omitted_external_source/4a776c8f90e895e9/config.json": "b5934e0d2933194b8a85f93674e577feaa1a1ba2dc1d143b2d5e5305ff7a9d7c",
+    "omitted_external_source/6da0f6a0ca8b9700/preprocessor_config.json": "2010d320cd2c68a8bb1de69aaa8f89daf173ef17cc22a30e4baf44b2f0e9bb6e",
+    "omitted_external_source/36f24f53eb6cd233/model.safetensors": "4dbe0399f0b7d7c8dddf1535a98769cc30743bebc877aea681998c8d984ce52b"
+  },
+  "method_records": {
+    "v17": {
+      "dev_result_sha256": "d8287f19c64ae31a2ab3e1c6e39c1916369b5aca1d71ba300677bf0f46e1210c",
+      "dev_calibration_sha256": "c6ab6f20b42d44190cebc00cb1f4ebb70b8e1432b56f6bca173213cc61e15e72",
+      "cutoffs": {
+        "primary_5pct": -1.7516698837280271,
+        "secondary_10_per_10000": -1.382855176925659
+      },
+      "provenance": {
+        "format": "hypernet.local_matcher.v17.1",
+        "model_format": "hypernet.local_relations.v17.2",
+        "checkpoint_sha256": "e7f0c787ee963ce615c73fea355fc65a9a6ec39bee37561a931657967a756892",
+        "state_sha256": "db030621a2de347ec7a530b72ee4cdf4b1f147dab3082334285e056b55400016",
+        "optimizer_steps": 2048,
+        "training_episodes": 32768,
+        "training_views": 65536,
+        "parameters": 57683,
+        "geometry": true,
+        "training_source_sha256": {
+          "hypernet/scene_curriculum.py": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+          "hypernet/local_relation_model.py": "b8dd441576334cfd436dfb12b2ab48f3a859311178f0b78ef0ce15a3f5ffdde9",
+          "scripts/train_local.py": "0e86d9678c9da2fd7dc5da37ff327d1fc4636b2619a599e093deca4f26a137fe"
+        },
+        "training_stream_seed": 1701,
+        "training_initialization_seed": 1717,
+        "device": "cuda",
+        "torch_version": "2.14.1+cu130",
+        "numpy_version": "2.5.3",
+        "opencv_version": "5.0.0",
+        "support_size": 96,
+        "max_query_side": 384,
+        "proposal_limit": 100,
+        "pre_nms_candidates": 1000,
+        "nms_iou": 0.4,
+        "score": "Uncalibrated learned center logit; no confidence prefilter",
+        "boxes": "Original-image absolute xyxy pixels, half-open; clipped to image bounds",
+        "preprocessing": "Aspect-preserving resize, median-border RGB padding; query never upscaled",
+        "anchor_scales": [
+          0.16,
+          0.28,
+          0.44,
+          0.66,
+          0.9
+        ],
+        "anchor_aspects": [
+          0.5,
+          1.0,
+          2.0
+        ],
+        "descriptor_stride": 2,
+        "support_coordinates": "Predicted foreground logit>0 extent; detached integer crop; minimum4 descriptor cells per axis; empty mask falls back to full reference",
+        "natural_training_images": 0,
+        "borrowed_pretrained_weights": false,
+        "real_weight_updates": 0,
+        "input_supervision": "One supplied reference RGB and query RGB only; no masks, boxes, text or labels"
+      }
+    },
+    "v17_no_geometry": {
+      "dev_result_sha256": "7fa377153c8220d3f63a06141bbaa679247faa73526f60f9353b39b4cd07dba5",
+      "dev_calibration_sha256": "df213a732dcd35218f5121c1f8bf589d07ee3173a12a7be2e5363e72cc303045",
+      "cutoffs": {
+        "primary_5pct": -2.1469697952270503,
+        "secondary_10_per_10000": -2.042913198471069
+      },
+      "provenance": {
+        "format": "hypernet.local_matcher.v17.1",
+        "model_format": "hypernet.local_relations.v17.2",
+        "checkpoint_sha256": "da3b439d1b1beeec1b81e468b3059cd3bb23244c1f266a3f031cfa1b150479b1",
+        "state_sha256": "d7a45a1fb6d28a13241e11bfa0c887f491b71376ac1d699858e79b4480e8b5a9",
+        "optimizer_steps": 2048,
+        "training_episodes": 32768,
+        "training_views": 65536,
+        "parameters": 57683,
+        "geometry": false,
+        "training_source_sha256": {
+          "hypernet/scene_curriculum.py": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+          "hypernet/local_relation_model.py": "b8dd441576334cfd436dfb12b2ab48f3a859311178f0b78ef0ce15a3f5ffdde9",
+          "scripts/train_local.py": "0e86d9678c9da2fd7dc5da37ff327d1fc4636b2619a599e093deca4f26a137fe"
+        },
+        "training_stream_seed": 1701,
+        "training_initialization_seed": 1717,
+        "device": "cuda",
+        "torch_version": "2.14.1+cu130",
+        "numpy_version": "2.5.3",
+        "opencv_version": "5.0.0",
+        "support_size": 96,
+        "max_query_side": 384,
+        "proposal_limit": 100,
+        "pre_nms_candidates": 1000,
+        "nms_iou": 0.4,
+        "score": "Uncalibrated learned center logit; no confidence prefilter",
+        "boxes": "Original-image absolute xyxy pixels, half-open; clipped to image bounds",
+        "preprocessing": "Aspect-preserving resize, median-border RGB padding; query never upscaled",
+        "anchor_scales": [
+          0.16,
+          0.28,
+          0.44,
+          0.66,
+          0.9
+        ],
+        "anchor_aspects": [
+          0.5,
+          1.0,
+          2.0
+        ],
+        "descriptor_stride": 2,
+        "support_coordinates": "Predicted foreground logit>0 extent; detached integer crop; minimum4 descriptor cells per axis; empty mask falls back to full reference",
+        "natural_training_images": 0,
+        "borrowed_pretrained_weights": false,
+        "real_weight_updates": 0,
+        "input_supervision": "One supplied reference RGB and query RGB only; no masks, boxes, text or labels"
+      }
+    },
+    "random": {
+      "dev_result_sha256": "5724720e1db43c6dec7a78c1bbf9cc73e1e260a391a9b0be121de1160ed3737b",
+      "dev_calibration_sha256": "74c5ba0153645df8450e8bc4df88f21bf7e2657166d1245f3231e28539e6ee23",
+      "cutoffs": {
+        "primary_5pct": -4.608693599700927,
+        "secondary_10_per_10000": -4.605412960052489
+      },
+      "provenance": {
+        "format": "hypernet.local_matcher.v17.1",
+        "model_format": "hypernet.local_relations.v17.2",
+        "checkpoint_sha256": "e9cb0fc755fbbbd5bcf6876652f6e56728ec547acb458d904053ce2e146684f1",
+        "state_sha256": "aaf001ae7db5e5e7341ca12dcb6de5fb20f1c358743d1f9ba2b9fdc25cb0b9dc",
+        "optimizer_steps": 0,
+        "training_episodes": 0,
+        "training_views": 0,
+        "parameters": 57683,
+        "geometry": true,
+        "training_source_sha256": {
+          "hypernet/scene_curriculum.py": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+          "hypernet/local_relation_model.py": "b8dd441576334cfd436dfb12b2ab48f3a859311178f0b78ef0ce15a3f5ffdde9",
+          "scripts/train_local.py": "0e86d9678c9da2fd7dc5da37ff327d1fc4636b2619a599e093deca4f26a137fe"
+        },
+        "training_stream_seed": 1701,
+        "training_initialization_seed": 1717,
+        "device": "cuda",
+        "torch_version": "2.14.1+cu130",
+        "numpy_version": "2.5.3",
+        "opencv_version": "5.0.0",
+        "support_size": 96,
+        "max_query_side": 384,
+        "proposal_limit": 100,
+        "pre_nms_candidates": 1000,
+        "nms_iou": 0.4,
+        "score": "Uncalibrated learned center logit; no confidence prefilter",
+        "boxes": "Original-image absolute xyxy pixels, half-open; clipped to image bounds",
+        "preprocessing": "Aspect-preserving resize, median-border RGB padding; query never upscaled",
+        "anchor_scales": [
+          0.16,
+          0.28,
+          0.44,
+          0.66,
+          0.9
+        ],
+        "anchor_aspects": [
+          0.5,
+          1.0,
+          2.0
+        ],
+        "descriptor_stride": 2,
+        "support_coordinates": "Predicted foreground logit>0 extent; detached integer crop; minimum4 descriptor cells per axis; empty mask falls back to full reference",
+        "natural_training_images": 0,
+        "borrowed_pretrained_weights": false,
+        "real_weight_updates": 0,
+        "input_supervision": "One supplied reference RGB and query RGB only; no masks, boxes, text or labels"
+      }
+    },
+    "owlvit_base_patch32": {
+      "dev_result_sha256": "75e80d79677cbd7cc65049178a8671c5046a3e445ce71d37a00f02cd9f67e08d",
+      "dev_calibration_sha256": "c4314f95bc915adae1532c11637eb2248cb7e11a75dc6b5b7aab74fb61c69c5b",
+      "cutoffs": {
+        "primary_5pct": 0.4336062967777253,
+        "secondary_10_per_10000": 0.9651265740394593
+      },
+      "provenance": {
+        "name": "owlvit_base_patch32",
+        "checkpoint_id": "google/owlvit-base-patch32",
+        "revision": "cbc355fb364588351c5d51c7f74465e8e7ec6f72",
+        "checkpoint_files": {
+          "omitted_external_source/4a776c8f90e895e9/config.json": "b5934e0d2933194b8a85f93674e577feaa1a1ba2dc1d143b2d5e5305ff7a9d7c",
+          "omitted_external_source/6da0f6a0ca8b9700/preprocessor_config.json": "2010d320cd2c68a8bb1de69aaa8f89daf173ef17cc22a30e4baf44b2f0e9bb6e",
+          "omitted_external_source/36f24f53eb6cd233/model.safetensors": "4dbe0399f0b7d7c8dddf1535a98769cc30743bebc877aea681998c8d984ce52b"
+        },
+        "borrowed_pretrained_weights": true,
+        "image_guided": true,
+        "support_images_per_target": 1,
+        "text_prompts": false,
+        "weight_updates": 0,
+        "score": "sigmoid(max raw image-guided logit), no display normalization",
+        "input_size": {
+          "height": 768,
+          "width": 768
+        },
+        "device": "cuda",
+        "dtype": "float32",
+        "torch": "2.14.1+cu130",
+        "transformers": "4.57.1",
+        "cache": "Independent image feature extraction; no fitting or test adaptation",
+        "pretraining_overlap": "COCO and OpenImages are named in the official model card; fresh to HyperNet does not mean unseen by OWL."
+      }
+    },
+    "raw_template": {
+      "dev_result_sha256": "ff61a0c05da39cb2624027e866fd2d5c425169bedc555b6632ae963788a8692c",
+      "dev_calibration_sha256": "ca7f175e8b8d7c1c1d3b3eb2bf83a6e60e97d19752dca4ad6a3331221783301c",
+      "cutoffs": {
+        "primary_5pct": 0.640392303466797,
+        "secondary_10_per_10000": 0.7622308731079103
+      },
+      "provenance": {
+        "name": "raw_template",
+        "borrowed_pretrained_weights": false,
+        "trainable_parameters": 0,
+        "support_images_per_target": 1,
+        "descriptor": "Raw grayscale pixels",
+        "score": "Zero-mean normalized cross correlation, maximum across fixed sizes/aspects",
+        "max_side": 384,
+        "scales": [
+          0.1,
+          0.16,
+          0.25,
+          0.4,
+          0.63,
+          1.0
+        ],
+        "aspect_factors": [
+          0.75,
+          1.0,
+          1.3333333333333333
+        ],
+        "opencv": "5.0.0",
+        "device": "cpu",
+        "weight_updates": 0
+      }
+    }
+  },
+  "matched_training": {
+    "updates_per_arm": 2048,
+    "episodes_per_arm": 32768,
+    "image_views_per_arm": 65536,
+    "input_stream_sha256": "4767e049b6bc301c12c3f0772977fced134c87d624b21a695ab001af6a2da66d",
+    "initial_state_sha256": "aaf001ae7db5e5e7341ca12dcb6de5fb20f1c358743d1f9ba2b9fdc25cb0b9dc",
+    "source_sha256": {
+      "hypernet/scene_curriculum.py": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+      "hypernet/local_relation_model.py": "b8dd441576334cfd436dfb12b2ab48f3a859311178f0b78ef0ce15a3f5ffdde9",
+      "scripts/train_local.py": "0e86d9678c9da2fd7dc5da37ff327d1fc4636b2619a599e093deca4f26a137fe"
+    },
+    "completion_files": {
+      "runs/primary_2048/completion.json": "efff520c6cdb6969d5385127e1988dab1eb01513a0326ada03ea6199a887dd9f",
+      "runs/bag_2048/completion.json": "13fd760acd1a4a34a87975e3b9f39a68d36837dbcfd88508f7fc131510a6422b"
+    }
+  },
+  "primary": "Macro localized recall: accepted highest-score box overlaps any target GT box at IoU>=0.5.",
+  "threshold_rule": "One global cutoff per method from all valid DEV target-absent pairs; no TEST tuning.",
+  "decision_rule": "Higher macro localized recall without higher observed macro negative false-positive rate; show paired confidence intervals.",
+  "limitations": [
+    "Fresh means absent from prior HyperNet photo iterations, not unseen by the pretrained OWL checkpoint.",
+    "COCO is named in OWL training; no absence of pretraining overlap or novel category status is established.",
+    "One boxed support per category is additional annotation; 288 labeled DEV photos are supervision beyond the support.",
+    "COCO absence means no supplied annotation; missing labels and physical-instance duplicates may remain.",
+    "Selected source strata are not natural prevalence. False alarms per10000 are normalized rates, not certification of rare-event operation.",
+    "Top1 localized recall is a custom metric, not the published COCO AP metric."
+  ],
+  "claim": "An experiment freeze. Neither successful transfer nor algorithmic novelty is assumed."
+}

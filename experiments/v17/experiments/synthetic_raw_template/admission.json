@@ -1,0 +1,65 @@
+{
+  "format": "hypernet.raw_synthetic_diagnosis.v17.1",
+  "created_utc": "2026-11-03T03:55:48.317038+00:00",
+  "plan": {
+    "format": "hypernet.synthetic_diagnosis.v17.1",
+    "seed": 1777,
+    "support_size": 96,
+    "query_size": 192,
+    "splits": {
+      "development": 256,
+      "test": 512,
+      "compositional": 512
+    },
+    "nominal_dev_absent_fpr": 0.05,
+    "iou_threshold": 0.5,
+    "mask_threshold": 0.5,
+    "checkpoint_selection": false,
+    "scope": "Frozen-model synthetic diagnosis; no real performance claim"
+  },
+  "source_sha256": {
+    "scripts\\diagnose_raw_synthetic.py": "a5afde156ecb9643b0ce54d2e98009c145ef3f401c8880f09875fb9825ecb9c7",
+    "scripts\\diagnose_synthetic.py": "7bc18e1a7d73b10059e6cb5754447cdf8b2213a9850ef6efa4033557dbb024e4",
+    "hypernet\\scene_curriculum.py": "dedea89ccd079f9864923d933626a55fa855390ed5fe2e3030b4d7bb8fde4b6c",
+    "hypernet\\raw_template.py": "63fe4143ea3f8764cf13f0792976b037c17c9d3d36f2f6ee368660fe4001fb69",
+    "hypernet\\detection_metrics.py": "e975987e33335e412155d865962005d71a32e6adb9479964511f9b15c7cdc719",
+    "scripts\\train_local.py": "0e86d9678c9da2fd7dc5da37ff327d1fc4636b2619a599e093deca4f26a137fe"
+  },
+  "provenance": {
+    "name": "raw_template",
+    "borrowed_pretrained_weights": false,
+    "trainable_parameters": 0,
+    "support_images_per_target": 1,
+    "descriptor": "Raw grayscale pixels",
+    "score": "Zero-mean normalized cross correlation, maximum across fixed sizes/aspects",
+    "max_side": 384,
+    "scales": [
+      0.1,
+      0.16,
+      0.25,
+      0.4,
+      0.63,
+      1.0
+    ],
+    "aspect_factors": [
+      0.75,
+      1.0,
+      1.3333333333333333
+    ],
+    "opencv": "5.0.0",
+    "device": "cpu",
+    "weight_updates": 0
+  },
+  "opencv_threads": 1,
+  "input_digest_batch_size": 16,
+  "common_box_rule": "Select highest-scoring proposal first, clip xyxy to the original image bounds for every method, then compute half-open IoU; raw box retained.",
+  "input_policy": "Exact generated support/query RGB; masks/boxes are scoring labels only, never matcher inputs.",
+  "training_images_used": 0,
+  "weight_updates": 0,
+  "gpu_used": false,
+  "parameter_search": false,
+  "unsupported_neural_metrics": [
+    "target-mask IoU: no mask output",
+    "reference logit change: correlation scores are not logits"
+  ]
+}

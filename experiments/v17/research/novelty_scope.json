@@ -1,0 +1,64 @@
+{
+  "status": "prospective engineering hypothesis; no novelty or superiority established",
+  "objective": "Improve one-reference image-guided category detection using synthetic-only 2D training and no borrowed pretrained weights; compare directly to the existing official OWL-ViT ViT-B/32 baseline.",
+  "candidate_contribution": "Train a dense local matcher on independently rendered same-program-family instances, with counterfactual relationship edits and matched nuisance appearance, then retain partial spatial consistency during inference.",
+  "not_new_by_itself": [
+    "Formula-driven synthetic pretraining",
+    "Episodic one-reference training",
+    "Dense support-query feature correlations",
+    "Geometric voting or matching",
+    "Template-conditioned bounding-box regression"
+  ],
+  "sources": [
+    {
+      "title": "OS2D: One-Stage One-Shot Object Detection by Matching Anchor Features",
+      "year": 2020,
+      "url": "https://www.ecva.net/papers/eccv_2020/papers_ECCV/html/2424_ECCV_2020_paper.php",
+      "overlap": "Dense correlation, learned geometric alignment, aligned feature scoring and localization already exist."
+    },
+    {
+      "title": "Convolutional Hough Matching Networks",
+      "year": 2021,
+      "url": "https://openaccess.thecvf.com/content/CVPR2021/html/Min_Convolutional_Hough_Matching_Networks_CVPR_2021_paper.html",
+      "overlap": "Trainable geometric consensus over translation and scaling already exists."
+    },
+    {
+      "title": "Hypercorrelation Squeeze for Few-Shot Segmentation",
+      "year": 2021,
+      "url": "https://openaccess.thecvf.com/content/ICCV2021/html/Min_Hypercorrelation_Squeeze_for_Few-Shot_Segmentation_ICCV_2021_paper.html",
+      "overlap": "Multi-level support-query correlation and dense few-shot segmentation already exist."
+    },
+    {
+      "title": "Few-Shot Pattern Detection via Template Matching and Regression",
+      "year": 2025,
+      "url": "https://chipmunk-g4.github.io/TMR/",
+      "overlap": "Preserving exemplar layout and template-conditioned box regression on a frozen pretrained backbone; broad pattern benchmark RPINE. A directly relevant comparator for future work."
+    },
+    {
+      "title": "Visual Atoms: Pre-training Vision Transformers with Sinusoidal Waves",
+      "year": 2023,
+      "url": "https://arxiv.org/html/2303.01112",
+      "overlap": "Mathematical contour pretraining. Natural-image headline scores use downstream natural-image training."
+    },
+    {
+      "title": "SegRCDB: Semantic Segmentation via Formula-Driven Supervised Learning",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2309.17083",
+      "overlap": "Multiple procedural 2D objects with exact masks and occlusion; not proof of synthetic-only semantic transfer."
+    },
+    {
+      "title": "Simple Open-Vocabulary Object Detection with Vision Transformers",
+      "year": 2022,
+      "url": "https://arxiv.org/abs/2205.06230",
+      "baseline_scope": "Official image-guided OWL-ViT B/32 checkpoint. Not the entire OWL family and not the different paper configuration's published AP50 score."
+    }
+  ],
+  "required_evidence": [
+    "Same-input and same-budget ablation of spatial consistency",
+    "Held-out synthetic construction/composition tests",
+    "Fresh natural-photo comparison with frozen thresholds and localization",
+    "Report false alarms and uncertainty alongside recall",
+    "Disclose one support crop annotation and extra real development supervision",
+    "Keep a failed or negative result if the hypothesis does not transfer"
+  ]
+}

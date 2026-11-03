@@ -1,0 +1,9 @@
+{
+  "scope": "Documentation arithmetic correction; the frozen roster, labels, thresholds and model outputs are unchanged",
+  "incorrect_early_expected_positive_pairs": 572,
+  "correct_metadata_positive_pairs": 472,
+  "negative_pairs": 6440,
+  "original_design_sha256": "2e4d89ea255328142e0ea71560fce7c3589ffb298a04b8c7f00af502fd7cc03e",
+  "data_plan_sha256": "153af565f11beaa0fb51b8058afdc2c7f3ea28c4c16bfbf0dda773591d795b21",
+  "cause": "Earlier narrative arithmetic, copied into the design note; the metadata plan and evaluation arrays were already correct."
+}
