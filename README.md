@@ -7,6 +7,8 @@ One-reference retrieval of rare visual and acoustic patterns. The repository ret
 - **Gravity Spy:** a 42,480-parameter CNN trained on project-generated mathematical 2D spectrogram patterns, with no borrowed pretrained weights. A frozen encoder combines full- and low-frequency views from four durations of one event. Each target is enrolled from one positive reference event; negative fitting and calibration data are additional, separate budgets.
 - **Bering Sea:** a separate 1,566,756-parameter acoustic model, pretrained within the project on 77,000 unlabeled real acoustic windows. It searches for a reference pattern in recordings. Its retrieved candidates remain unconfirmed; this experiment is not synthetic-only pretraining.
 
+The [merged whale implementation](whale/README.md) contains the separate acoustic search code, controls and candidate reports. Its archive searches are distinct from the Gravity Spy benchmark below.
+
 [Current code, weights and reproduction tools](oncenet/current/) include the frozen implementations and their source manifests. Historical photo and synthetic-shape experiments remain available below.
 
 ## Latest controlled comparison

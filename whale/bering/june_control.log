@@ -1,0 +1,25 @@
+69 files, 69 to do
+cached 5 69 492s
+retry 0 mbarc_bering/audio/mbarc_lmr_bering03-m2/audio/BERING03_M2___050623_065345.x.flac TimeoutError('The read operation timed out')
+retry 1 mbarc_bering/audio/mbarc_lmr_bering03-m2/audio/BERING03_M2___050623_065345.x.flac TimeoutError('The read operation timed out')
+retry 2 mbarc_bering/audio/mbarc_lmr_bering03-m2/audio/BERING03_M2___050623_065345.x.flac TimeoutError('The read operation timed out')
+retry 3 mbarc_bering/audio/mbarc_lmr_bering03-m2/audio/BERING03_M2___050623_065345.x.flac TimeoutError('The read operation timed out')
+retry 4 mbarc_bering/audio/mbarc_lmr_bering03-m2/audio/BERING03_M2___050623_065345.x.flac ContentTooShortError('retrieval incomplete: got only 794752 out of 213711858 bytes')
+cached 10 69 2717s
+cached 15 69 3117s
+cached 20 69 3462s
+retry 0 mbarc_bering/audio/mbarc_lmr_bering03-m2/audio/BERING03_M2___050625_023845.x.flac ContentTooShortError('retrieval incomplete: got only 32570128 out of 230114152 bytes')
+cached 25 69 3798s
+cached 30 69 3889s
+cached 35 69 3980s
+cached 40 69 4072s
+cached 45 69 4151s
+cached 50 69 4215s
+cached 55 69 4299s
+cached 60 69 4388s
+cached 65 69 4478s
+cache done
+sei mbarc_lmr_bering03-m2 10 69 121s
+sei mbarc_lmr_bering03-m2 20 69 258s
+sei mbarc_lmr_bering03-m2 30 69 397s
+sei mbarc_lmr_bering03-m2 done 37 481s

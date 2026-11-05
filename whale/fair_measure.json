@@ -1,0 +1,141 @@
+{
+ "october": [
+  {
+   "file": "Bering_2_stM2_041025_074456",
+   "s": 3366,
+   "start": 56.7,
+   "end": 28.4,
+   "dur": 0.95,
+   "width": 28.3,
+   "edge": false
+  },
+  {
+   "file": "Bering_2_stM2_041025_034841",
+   "s": 7710,
+   "start": 59.9,
+   "end": 28.4,
+   "dur": 0.95,
+   "width": 31.4,
+   "edge": false
+  },
+  {
+   "file": "Bering_2_stM2_041025_074456",
+   "s": 3980,
+   "start": 56.7,
+   "end": 28.4,
+   "dur": 1.12,
+   "width": 28.3,
+   "edge": false
+  },
+  {
+   "file": "Bering_2_stM2_041025_034841",
+   "s": 6092,
+   "start": 34.7,
+   "end": 19.0,
+   "dur": 1.23,
+   "width": 15.7,
+   "edge": false
+  },
+  {
+   "file": "Bering_2_stM2_041025_034841",
+   "s": 7552,
+   "start": 56.7,
+   "end": 25.3,
+   "dur": 0.92,
+   "width": 31.4,
+   "edge": false
+  },
+  {
+   "file": "Bering_2_stM2_041121_012045",
+   "s": 5624,
+   "start": 56.7,
+   "end": 34.7,
+   "dur": 1.0,
+   "width": 22.0,
+   "edge": false
+  },
+  {
+   "file": "Bering_2_stM2_041025_192804",
+   "s": 8460,
+   "start": 56.7,
+   "end": 31.6,
+   "dur": 0.88,
+   "width": 25.2,
+   "edge": false
+  }
+ ],
+ "june": [
+  {
+   "file": "BERING03_M2___050626_191615",
+   "s": 1772.0,
+   "start": 56.7,
+   "end": 47.3,
+   "dur": 0.52,
+   "width": 9.4,
+   "edge": false
+  },
+  {
+   "file": "BERING03_M2___050626_191615",
+   "s": 3242.0,
+   "start": 59.9,
+   "end": 47.3,
+   "dur": 0.7,
+   "width": 12.6,
+   "edge": false
+  },
+  {
+   "file": "BERING03_M2___050630_073845",
+   "s": 1892.0,
+   "start": 59.9,
+   "end": 44.2,
+   "dur": 0.42,
+   "width": 15.7,
+   "edge": false
+  },
+  {
+   "file": "BERING03_M2___050629_033115",
+   "s": 7362.0,
+   "start": 56.7,
+   "end": 50.4,
+   "dur": 0.35,
+   "width": 6.3,
+   "edge": false
+  },
+  {
+   "file": "BERING03_M2___050629_125345",
+   "s": 6378.0,
+   "start": 56.7,
+   "end": 44.2,
+   "dur": 0.3,
+   "width": 12.6,
+   "edge": false
+  },
+  {
+   "file": "BERING03_M2___050627_201615",
+   "s": 1252.0,
+   "start": 59.9,
+   "end": 47.3,
+   "dur": 0.45,
+   "width": 12.6,
+   "edge": false
+  },
+  {
+   "file": "BERING03_M2___050629_190845",
+   "s": 5786.0,
+   "start": 56.7,
+   "end": 44.2,
+   "dur": 0.38,
+   "width": 12.6,
+   "edge": false
+  },
+  {
+   "file": "BERING03_M2___050627_201615",
+   "s": 10398.0,
+   "start": 56.7,
+   "end": 44.2,
+   "dur": 0.7,
+   "width": 12.6,
+   "edge": false
+  }
+ ]
+}
