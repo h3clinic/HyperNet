@@ -1,0 +1,57 @@
+{
+  "format": "hypernet.gravity_spy_discovery_pool.v0.1",
+  "created_utc": "2026-11-03T20:48:01Z",
+  "source": "https://zenodo.org/records/5649212",
+  "table_md5": {
+    "H1_O3b.csv": "590290fe3c7ddf8cd9fa85c3a09cd5e4",
+    "L1_O3b.csv": "90d0bc16448bca72818ed9abf267979c"
+  },
+  "table_rows": 292261,
+  "rule": "ml_confidence < 0.7 OR (ml_label != r AND P(r) >= 0.3) for r in rare types",
+  "rare_types": [
+    "Paired_Doves",
+    "1400Ripples",
+    "Chirp",
+    "Helix",
+    "Wandering_Line"
+  ],
+  "duration": "0.5",
+  "events": 38471,
+  "why_counts": {
+    "low_confidence": 32506,
+    "rare_probability": 3827,
+    "both": 2138
+  },
+  "ml_label_counts": {
+    "Fast_Scattering": 11556,
+    "Scattered_Light": 5129,
+    "Low_Frequency_Lines": 5044,
+    "Tomte": 2556,
+    "Paired_Doves": 2552,
+    "Blip_Low_Frequency": 1984,
+    "Koi_Fish": 1395,
+    "Low_Frequency_Burst": 1359,
+    "Extremely_Loud": 1298,
+    "No_Glitch": 1184,
+    "Whistle": 751,
+    "Air_Compressor": 700,
+    "Blip": 659,
+    "1080Lines": 520,
+    "Repeating_Blips": 502,
+    "Violin_Mode": 468,
+    "Power_Line": 229,
+    "Light_Modulation": 182,
+    "1400Ripples": 180,
+    "Helix": 91,
+    "Scratchy": 84,
+    "Chirp": 26,
+    "Wandering_Line": 22
+  },
+  "ifo_counts": {
+    "L1": 31106,
+    "H1": 7365
+  },
+  "time_groups_4s": 32375,
+  "roster_sha256": "66be29ff94f2bf0ea5b52d3a2b71338c1a5153fa9e9060ad26efc2038a727568",
+  "images_fetched": false
+}

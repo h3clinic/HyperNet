@@ -1,0 +1,210 @@
+{
+  "format": "hypernet.gravity_spy_discovery.v0.2",
+  "created_utc": "2026-11-03T22:19:29Z",
+  "question": "Does a one-reference search over the uncertain part of O3b concentrate volunteer-supported rare glitches that neither Gravity Spy CNN labeled as that type?",
+  "rare_types": [
+    "Paired_Doves",
+    "1400Ripples",
+    "Chirp",
+    "Helix",
+    "Wandering_Line"
+  ],
+  "references_per_type": 5,
+  "reference_gravityspy_ids": {
+    "Paired_Doves": [
+      "Jmu8lzu6lb",
+      "QGKPYKyJH4",
+      "HGtGOLIe9N",
+      "7nLzZvkp9b",
+      "bDNd4nwivK"
+    ],
+    "1400Ripples": [
+      "GLLQFp2CwK",
+      "uiofjZyKyh",
+      "J9hdr0Gz6H",
+      "RWYExXLh6F",
+      "cZ4vfsw2YN"
+    ],
+    "Chirp": [
+      "NJwYbLbB2b",
+      "IPMQdphytD",
+      "nJqG8hsd2C",
+      "g0UHF8d6Ok",
+      "vHNn2VQNx8"
+    ],
+    "Helix": [
+      "5lL68EymOk",
+      "PWYWma9EAW",
+      "7tU5SUbTrD",
+      "sF47jOlPED",
+      "4CpKbCVwK1"
+    ],
+    "Wandering_Line": [
+      "Sd8CaYSOab",
+      "RyWp0dcwW0",
+      "1eOIJvG4v1",
+      "mgh0AVpXkV",
+      "rJxqGGeNLz"
+    ]
+  },
+  "arms": {
+    "hybrid": "0.5 s single view: mean of per-reference z of raw pixels (per-image z) and random1403 four-layer mix (v0.4 per-feature rule)",
+    "random": "0.5 s single view: random2026 four-layer mix",
+    "trained": "0.5 s single view: spectro_family_e8 coarse 6x6 grid"
+  },
+  "single_view_mean_ap_on_v05_test": {
+    "hybrid": 0.5990863212725024,
+    "random": 0.5812571618080377,
+    "trained": 0.5471777738031528
+  },
+  "v05_fused4_mean_ap_for_contrast": {
+    "hybrid": 0.4999528111648527,
+    "random": 0.4950491261762557,
+    "trained": 0.4768867417409966
+  },
+  "primary": {
+    "arm": "hybrid",
+    "k": 200,
+    "truth": "new_majority",
+    "subset": "pool events whose O3b ml_label != type",
+    "types": [
+      "Paired_Doves",
+      "1400Ripples",
+      "Helix"
+    ],
+    "descriptive_only": [
+      "Chirp",
+      "Wandering_Line"
+    ],
+    "alpha": 0.016666666666666666,
+    "rule": "POSITIVE only if, in at least 2 of the 3 primary types, the hypergeometric tail probability of the hybrid top-200 new_majority count (within the evaluated subset, on that ranking's own covered events) is below 0.05/3 AND the hybrid new_majority@200 counted per 4 s group exceeds the CNN P(type) comparator's on the same subset and K. Otherwise \"not confirmed\". Chirp is descriptive until an injection cross-match exists; Wandering_Line has too few volunteer-majority events (4 pool-wide)."
+  },
+  "top_k": 200,
+  "duration": "0.5",
+  "score": "v0.4 Bank vectors; per-reference z against 600 unlabeled v1.1 train images; mean over the five references of a type; descending stable sort, ties by roster order",
+  "pool": {
+    "rule": "ml_confidence < 0.7 OR (ml_label != r AND P(r) >= 0.3) for r in rare types",
+    "events": 38471,
+    "why_counts": {
+      "low_confidence": 32506,
+      "rare_probability": 3827,
+      "both": 2138
+    },
+    "time_groups_4s": 32375,
+    "roster_sha256": "66be29ff94f2bf0ea5b52d3a2b71338c1a5153fa9e9060ad26efc2038a727568"
+  },
+  "arrays": {
+    "events": 38471,
+    "dropped_count": 0,
+    "blank_rule": "arrays with max minus min <= 1e-6 are dropped (reason \"blank\")",
+    "blank_count": 0
+  },
+  "verification": {
+    "volunteer_zenodo": "5911227",
+    "volunteer_md5": "0f120a57897c7d00c7a5d6813c2a0f17",
+    "classes": [
+      "1080Lines",
+      "1400Ripples",
+      "Air_Compressor",
+      "Blip",
+      "Chirp",
+      "Extremely_Loud",
+      "Helix",
+      "Koi_Fish",
+      "Light_Modulation",
+      "Low_Frequency_Burst",
+      "Low_Frequency_Lines",
+      "No_Glitch",
+      "None_of_the_Above",
+      "Paired_Doves",
+      "Power_Line",
+      "Repeating_Blips",
+      "Scattered_Light",
+      "Scratchy",
+      "Tomte",
+      "Violin_Mode",
+      "Wandering_Line",
+      "Whistle"
+    ],
+    "ks": [
+      20,
+      50,
+      200
+    ],
+    "truth_tiers": {
+      "majority": "p >= 2 and p > n/2 (primary)",
+      "confirmed": "p >= 2",
+      "supported": "p >= 1 and p >= ceil(n/2); single volunteer when n <= 2"
+    },
+    "new_rule": "tier holds AND O3b-table ml_label != type AND volunteer-file ml_label != type; vocabulary-gap share (O3b label in Fast_Scattering/Blip_Low_Frequency) reported",
+    "covered": "event has at least one volunteer row; prior-only rows are uncovered",
+    "evaluated_subset": "per type, pool events with O3b ml_label != type; full pool secondary",
+    "null": "hypergeometric on each ranking: N = covered eligible pool events, M = pool-wide new_<tier> count, n = covered events in the top-K, x = observed",
+    "tie_rule": "descending score, stable sort, ties by roster order; CNN comparator sorted the same way on P(type)",
+    "groups": "counts also given per 4 s time group (pool_roster.csv group column)",
+    "uncovered": "top-K events without volunteer data are exported as candidates and count as zero finds"
+  },
+  "pre_freeze_disclosure": {
+    "file": "pre_freeze_pool_volunteer_picks.csv",
+    "sha256": "91736ef630b2f004abda30a27bcb5386bf8d79b1a565d45b966965021c5afdee",
+    "rows": 18276,
+    "note": "Per-event volunteer picks for the five rare types over the whole pool were extracted and seen before this protocol was written; the type list, K and truth tiers were chosen with these ceilings known. The search itself reads no labels.",
+    "pool_ceilings_under_frozen_rules": {
+      "Paired_Doves": {
+        "new_majority": 11,
+        "new_confirmed": 14,
+        "new_supported": 147,
+        "covered_with_volunteers": 18043
+      },
+      "1400Ripples": {
+        "new_majority": 11,
+        "new_confirmed": 17,
+        "new_supported": 83,
+        "covered_with_volunteers": 18043
+      },
+      "Chirp": {
+        "new_majority": 14,
+        "new_confirmed": 26,
+        "new_supported": 92,
+        "covered_with_volunteers": 18043
+      },
+      "Helix": {
+        "new_majority": 16,
+        "new_confirmed": 21,
+        "new_supported": 257,
+        "covered_with_volunteers": 18043
+      },
+      "Wandering_Line": {
+        "new_majority": 3,
+        "new_confirmed": 4,
+        "new_supported": 24,
+        "covered_with_volunteers": 18043
+      }
+    }
+  },
+  "inputs": {
+    "pool.json": "af3946d22646f9a936bbc80694eb2f622738c2163abc85a72c0437e6ce19c551",
+    "pool_roster.csv": "66be29ff94f2bf0ea5b52d3a2b71338c1a5153fa9e9060ad26efc2038a727568",
+    "arrays.json": "e0fb4a344c6cdcf0631a9f754950a6e14fe6adfd5a93e06cb90e451c8c571335",
+    "chunks": {
+      "arrays_000.npz": "95c92d3728de7f18b27af9b9a6220b7e94d57ced30f2ded67de7415fee8a3450",
+      "arrays_001.npz": "a57b7c445459907bd4d48cbbd7f6e51882f6335a26dd0f17a99592fa125a6478",
+      "arrays_002.npz": "bda9002563130a2be0567b6f85b1eea8894058b74b7889d2adc45dd23bff8f88",
+      "arrays_003.npz": "1c01c9de92e663679201f867eec517f69033b1c04b79be848138e510f8120d0e",
+      "arrays_004.npz": "9c1215b1cd9ccc8596ddf486eb0ec0c8eda778d5bb453104f2af225c1e3e7a88",
+      "arrays_005.npz": "81b1ed237ffca751961779eaa880956dac5ec2327c73ede53d704cceff3148cd",
+      "arrays_006.npz": "c131aec1a8672052f4bdbbe687508b65eb3b16f517e03193139a64e41d50c264",
+      "arrays_007.npz": "a20f55dd782b4764babf2ca240c2e989e02bd988151e1f2508fdcafe6ab6099f",
+      "arrays_008.npz": "85ca9f98efdc74dd295f4969f85b65dacbb27548a1ab145c37b82d5aca9adf0f",
+      "arrays_009.npz": "e0b8ffb244a083e0a1676cd5ddfd815c9ec3937fea45b9c032eaa77c3f452a8e"
+    },
+    "search_script_sha256": "ccc30daa8988c6ae3a0fdbda6c7c707e65ddf98f58036dae572046ca4204b4f3",
+    "verify_script_sha256": "fe00b8c414e629b85854a177aa8a140b9a38cb27ff716d4767ba758ea4d4718e",
+    "prepare_script_sha256": "5cfd4730682763b3f184f8a9b26f1390a280a7ec783c4d5a266a4799e490e6e8",
+    "v04_script_sha256": "d40283d03a6e1ae6a2fb836324e990a71166dfec4dd207de7ac78d26cd23fb5a",
+    "single_view_ap.json": "19e7633df5eff85083667129e7539147fa4d489b62d388ad52c4a8dda651b54a",
+    "torch": "2.14.1+cpu"
+  },
+  "standardization": "600 unlabeled v1.1 train images, seed 7",
+  "labels_read_during_search": false
+}

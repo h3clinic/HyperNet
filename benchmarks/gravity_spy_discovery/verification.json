@@ -1,0 +1,2559 @@
+{
+ "format": "hypernet.gravity_spy_discovery_verification.v0.2",
+ "protocol_sha256": "72e10ffb84006a9f21f84e9fe40a1a2268e386eaad7e79ec6e87343c6d0153c7",
+ "verify_script_sha256": "fe00b8c414e629b85854a177aa8a140b9a38cb27ff716d4767ba758ea4d4718e",
+ "rankings_sha256": "c345a6b5cf00f56070e74385f07e4f0ae8da0e3472cd0893dcc1ccbab41a0e1c",
+ "events_scored": 38471,
+ "events_with_volunteers": 18043,
+ "volunteers_per_covered_event": {
+  "1": 5799,
+  "2": 5880,
+  "3": 2433,
+  "4": 1509,
+  "5": 1088,
+  "6": 650,
+  "7": 344,
+  "8": 139,
+  "9": 80,
+  "10": 37,
+  "11": 17,
+  "12": 13,
+  "13": 12,
+  "14": 10,
+  "15": 6,
+  "16": 4,
+  "17": 5,
+  "18": 1,
+  "19": 4,
+  "20": 3,
+  "21": 1,
+  "23": 2,
+  "24": 1,
+  "26": 1,
+  "28": 1,
+  "30": 1,
+  "31": 1,
+  "32": 1
+ },
+ "per_type": {
+  "Paired_Doves": {
+   "eligible_events": 35919,
+   "covered_eligible": 17087,
+   "pool_new": {
+    "majority": 11,
+    "confirmed": 14,
+    "supported": 147
+   },
+   "pool_new_groups": {
+    "majority": 11,
+    "confirmed": 14,
+    "supported": 146
+   },
+   "arms": {
+    "hybrid": {
+     "20": {
+      "k": 20,
+      "covered": 10,
+      "covered_groups": 10,
+      "majority": 1,
+      "new_majority": 1,
+      "new_majority_groups": 1,
+      "vocab_gap_majority": 1,
+      "confirmed": 1,
+      "new_confirmed": 1,
+      "new_confirmed_groups": 1,
+      "vocab_gap_confirmed": 1,
+      "supported": 1,
+      "new_supported": 1,
+      "new_supported_groups": 1,
+      "vocab_gap_supported": 1,
+      "uncovered": 10,
+      "null": {
+       "majority": {
+        "expected": 0.006,
+        "p_ge_observed": 0.006420711404050137,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.008,
+        "p_ge_observed": 0.008165362964617976,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.086,
+        "p_ge_observed": 0.08279600680008249,
+        "q95": 1
+       }
+      }
+     },
+     "50": {
+      "k": 50,
+      "covered": 24,
+      "covered_groups": 24,
+      "majority": 1,
+      "new_majority": 1,
+      "new_majority_groups": 1,
+      "vocab_gap_majority": 1,
+      "confirmed": 1,
+      "new_confirmed": 1,
+      "new_confirmed_groups": 1,
+      "vocab_gap_confirmed": 1,
+      "supported": 1,
+      "new_supported": 1,
+      "new_supported_groups": 1,
+      "vocab_gap_supported": 1,
+      "uncovered": 26,
+      "null": {
+       "majority": {
+        "expected": 0.015,
+        "p_ge_observed": 0.015346752150496948,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.02,
+        "p_ge_observed": 0.019492897579987227,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.206,
+        "p_ge_observed": 0.18739189918979682,
+        "q95": 1
+       }
+      }
+     },
+     "200": {
+      "k": 200,
+      "covered": 107,
+      "covered_groups": 94,
+      "majority": 1,
+      "new_majority": 1,
+      "new_majority_groups": 1,
+      "vocab_gap_majority": 1,
+      "confirmed": 1,
+      "new_confirmed": 1,
+      "new_confirmed_groups": 1,
+      "vocab_gap_confirmed": 1,
+      "supported": 5,
+      "new_supported": 5,
+      "new_supported_groups": 5,
+      "vocab_gap_supported": 4,
+      "uncovered": 93,
+      "null": {
+       "majority": {
+        "expected": 0.069,
+        "p_ge_observed": 0.06678498321673539,
+        "q95": 1
+       },
+       "confirmed": {
+        "expected": 0.088,
+        "p_ge_observed": 0.08421917035297859,
+        "q95": 1
+       },
+       "supported": {
+        "expected": 0.921,
+        "p_ge_observed": 0.0023163093059771368,
+        "q95": 3
+       }
+      }
+     }
+    },
+    "random": {
+     "20": {
+      "k": 20,
+      "covered": 9,
+      "covered_groups": 7,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 11,
+      "null": {
+       "majority": {
+        "expected": 0.006,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.007,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.077,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       }
+      }
+     },
+     "50": {
+      "k": 50,
+      "covered": 25,
+      "covered_groups": 17,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 25,
+      "null": {
+       "majority": {
+        "expected": 0.016,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.02,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.215,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       }
+      }
+     },
+     "200": {
+      "k": 200,
+      "covered": 108,
+      "covered_groups": 96,
+      "majority": 1,
+      "new_majority": 1,
+      "new_majority_groups": 1,
+      "vocab_gap_majority": 1,
+      "confirmed": 2,
+      "new_confirmed": 2,
+      "new_confirmed_groups": 2,
+      "vocab_gap_confirmed": 2,
+      "supported": 7,
+      "new_supported": 6,
+      "new_supported_groups": 6,
+      "vocab_gap_supported": 5,
+      "uncovered": 92,
+      "null": {
+       "majority": {
+        "expected": 0.07,
+        "p_ge_observed": 0.06738953947024637,
+        "q95": 1
+       },
+       "confirmed": {
+        "expected": 0.088,
+        "p_ge_observed": 0.003427669598488711,
+        "q95": 1
+       },
+       "supported": {
+        "expected": 0.929,
+        "p_ge_observed": 0.00034070957475681047,
+        "q95": 3
+       }
+      }
+     }
+    },
+    "trained": {
+     "20": {
+      "k": 20,
+      "covered": 16,
+      "covered_groups": 16,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 4,
+      "null": {
+       "majority": {
+        "expected": 0.01,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.013,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.138,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       }
+      }
+     },
+     "50": {
+      "k": 50,
+      "covered": 32,
+      "covered_groups": 32,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 18,
+      "null": {
+       "majority": {
+        "expected": 0.021,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.026,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.275,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       }
+      }
+     },
+     "200": {
+      "k": 200,
+      "covered": 111,
+      "covered_groups": 102,
+      "majority": 1,
+      "new_majority": 1,
+      "new_majority_groups": 1,
+      "vocab_gap_majority": 1,
+      "confirmed": 1,
+      "new_confirmed": 1,
+      "new_confirmed_groups": 1,
+      "vocab_gap_confirmed": 1,
+      "supported": 1,
+      "new_supported": 1,
+      "new_supported_groups": 1,
+      "vocab_gap_supported": 1,
+      "uncovered": 89,
+      "null": {
+       "majority": {
+        "expected": 0.071,
+        "p_ge_observed": 0.069201072618684,
+        "q95": 1
+       },
+       "confirmed": {
+        "expected": 0.091,
+        "p_ge_observed": 0.08723594632476352,
+        "q95": 1
+       },
+       "supported": {
+        "expected": 0.955,
+        "p_ge_observed": 0.6179416073256769,
+        "q95": 3
+       }
+      }
+     }
+    }
+   },
+   "cnn_probability": {
+    "20": {
+     "k": 20,
+     "covered": 7,
+     "covered_groups": 7,
+     "majority": 0,
+     "new_majority": 0,
+     "new_majority_groups": 0,
+     "vocab_gap_majority": 0,
+     "confirmed": 0,
+     "new_confirmed": 0,
+     "new_confirmed_groups": 0,
+     "vocab_gap_confirmed": 0,
+     "supported": 2,
+     "new_supported": 0,
+     "new_supported_groups": 0,
+     "vocab_gap_supported": 0,
+     "uncovered": 13,
+     "null": {
+      "majority": {
+       "expected": 0.005,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "confirmed": {
+       "expected": 0.006,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "supported": {
+       "expected": 0.06,
+       "p_ge_observed": 1.0,
+       "q95": 1
+      }
+     }
+    },
+    "50": {
+     "k": 50,
+     "covered": 19,
+     "covered_groups": 19,
+     "majority": 0,
+     "new_majority": 0,
+     "new_majority_groups": 0,
+     "vocab_gap_majority": 0,
+     "confirmed": 0,
+     "new_confirmed": 0,
+     "new_confirmed_groups": 0,
+     "vocab_gap_confirmed": 0,
+     "supported": 2,
+     "new_supported": 0,
+     "new_supported_groups": 0,
+     "vocab_gap_supported": 0,
+     "uncovered": 31,
+     "null": {
+      "majority": {
+       "expected": 0.012,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "confirmed": {
+       "expected": 0.016,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "supported": {
+       "expected": 0.163,
+       "p_ge_observed": 1.0,
+       "q95": 1
+      }
+     }
+    },
+    "200": {
+     "k": 200,
+     "covered": 104,
+     "covered_groups": 97,
+     "majority": 0,
+     "new_majority": 0,
+     "new_majority_groups": 0,
+     "vocab_gap_majority": 0,
+     "confirmed": 0,
+     "new_confirmed": 0,
+     "new_confirmed_groups": 0,
+     "vocab_gap_confirmed": 0,
+     "supported": 6,
+     "new_supported": 0,
+     "new_supported_groups": 0,
+     "vocab_gap_supported": 0,
+     "uncovered": 96,
+     "null": {
+      "majority": {
+       "expected": 0.067,
+       "p_ge_observed": 1.0,
+       "q95": 1
+      },
+      "confirmed": {
+       "expected": 0.085,
+       "p_ge_observed": 1.0,
+       "q95": 1
+      },
+      "supported": {
+       "expected": 0.895,
+       "p_ge_observed": 1.0,
+       "q95": 3
+      }
+     }
+    }
+   },
+   "full_pool_secondary": {
+    "20": {
+     "hybrid": {
+      "majority": 1,
+      "confirmed": 1,
+      "supported": 1
+     },
+     "random": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     },
+     "trained": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     }
+    },
+    "50": {
+     "hybrid": {
+      "majority": 1,
+      "confirmed": 1,
+      "supported": 1
+     },
+     "random": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     },
+     "trained": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     }
+    },
+    "200": {
+     "hybrid": {
+      "majority": 1,
+      "confirmed": 1,
+      "supported": 5
+     },
+     "random": {
+      "majority": 1,
+      "confirmed": 2,
+      "supported": 6
+     },
+     "trained": {
+      "majority": 1,
+      "confirmed": 1,
+      "supported": 1
+     }
+    }
+   }
+  },
+  "1400Ripples": {
+   "eligible_events": 38291,
+   "covered_eligible": 17945,
+   "pool_new": {
+    "majority": 11,
+    "confirmed": 17,
+    "supported": 83
+   },
+   "pool_new_groups": {
+    "majority": 11,
+    "confirmed": 17,
+    "supported": 80
+   },
+   "arms": {
+    "hybrid": {
+     "20": {
+      "k": 20,
+      "covered": 8,
+      "covered_groups": 8,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 12,
+      "null": {
+       "majority": {
+        "expected": 0.005,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.008,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.037,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       }
+      }
+     },
+     "50": {
+      "k": 50,
+      "covered": 21,
+      "covered_groups": 17,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 29,
+      "null": {
+       "majority": {
+        "expected": 0.013,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.02,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.097,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       }
+      }
+     },
+     "200": {
+      "k": 200,
+      "covered": 92,
+      "covered_groups": 63,
+      "majority": 2,
+      "new_majority": 2,
+      "new_majority_groups": 2,
+      "vocab_gap_majority": 0,
+      "confirmed": 2,
+      "new_confirmed": 2,
+      "new_confirmed_groups": 2,
+      "vocab_gap_confirmed": 0,
+      "supported": 4,
+      "new_supported": 4,
+      "new_supported_groups": 4,
+      "vocab_gap_supported": 0,
+      "uncovered": 108,
+      "null": {
+       "majority": {
+        "expected": 0.056,
+        "p_ge_observed": 0.0013875764342345025,
+        "q95": 1
+       },
+       "confirmed": {
+        "expected": 0.087,
+        "p_ge_observed": 0.0033631265970593253,
+        "q95": 1
+       },
+       "supported": {
+        "expected": 0.426,
+        "p_ge_observed": 0.0008726493029592077,
+        "q95": 2
+       }
+      }
+     }
+    },
+    "random": {
+     "20": {
+      "k": 20,
+      "covered": 11,
+      "covered_groups": 8,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 9,
+      "null": {
+       "majority": {
+        "expected": 0.007,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.01,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.051,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       }
+      }
+     },
+     "50": {
+      "k": 50,
+      "covered": 27,
+      "covered_groups": 20,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 23,
+      "null": {
+       "majority": {
+        "expected": 0.017,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.026,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.125,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       }
+      }
+     },
+     "200": {
+      "k": 200,
+      "covered": 101,
+      "covered_groups": 71,
+      "majority": 1,
+      "new_majority": 1,
+      "new_majority_groups": 1,
+      "vocab_gap_majority": 0,
+      "confirmed": 1,
+      "new_confirmed": 1,
+      "new_confirmed_groups": 1,
+      "vocab_gap_confirmed": 0,
+      "supported": 2,
+      "new_supported": 2,
+      "new_supported_groups": 2,
+      "vocab_gap_supported": 0,
+      "uncovered": 99,
+      "null": {
+       "majority": {
+        "expected": 0.062,
+        "p_ge_observed": 0.06021451331693288,
+        "q95": 1
+       },
+       "confirmed": {
+        "expected": 0.096,
+        "p_ge_observed": 0.09153093997001868,
+        "q95": 1
+       },
+       "supported": {
+        "expected": 0.467,
+        "p_ge_observed": 0.07960215385627809,
+        "q95": 2
+       }
+      }
+     }
+    },
+    "trained": {
+     "20": {
+      "k": 20,
+      "covered": 8,
+      "covered_groups": 7,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 2,
+      "new_supported": 2,
+      "new_supported_groups": 2,
+      "vocab_gap_supported": 0,
+      "uncovered": 12,
+      "null": {
+       "majority": {
+        "expected": 0.005,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.008,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.037,
+        "p_ge_observed": 0.0005812191319071693,
+        "q95": 0
+       }
+      }
+     },
+     "50": {
+      "k": 50,
+      "covered": 24,
+      "covered_groups": 17,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 3,
+      "new_supported": 3,
+      "new_supported_groups": 3,
+      "vocab_gap_supported": 0,
+      "uncovered": 26,
+      "null": {
+       "majority": {
+        "expected": 0.015,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.023,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.111,
+        "p_ge_observed": 0.0001800258735961816,
+        "q95": 1
+       }
+      }
+     },
+     "200": {
+      "k": 200,
+      "covered": 111,
+      "covered_groups": 79,
+      "majority": 1,
+      "new_majority": 1,
+      "new_majority_groups": 1,
+      "vocab_gap_majority": 0,
+      "confirmed": 2,
+      "new_confirmed": 2,
+      "new_confirmed_groups": 2,
+      "vocab_gap_confirmed": 0,
+      "supported": 12,
+      "new_supported": 12,
+      "new_supported_groups": 12,
+      "vocab_gap_supported": 0,
+      "uncovered": 89,
+      "null": {
+       "majority": {
+        "expected": 0.068,
+        "p_ge_observed": 0.06599326465829392,
+        "q95": 1
+       },
+       "confirmed": {
+        "expected": 0.105,
+        "p_ge_observed": 0.0048533623549411615,
+        "q95": 1
+       },
+       "supported": {
+        "expected": 0.513,
+        "p_ge_observed": 1.1454329291032165e-13,
+        "q95": 2
+       }
+      }
+     }
+    }
+   },
+   "cnn_probability": {
+    "20": {
+     "k": 20,
+     "covered": 20,
+     "covered_groups": 20,
+     "majority": 0,
+     "new_majority": 0,
+     "new_majority_groups": 0,
+     "vocab_gap_majority": 0,
+     "confirmed": 0,
+     "new_confirmed": 0,
+     "new_confirmed_groups": 0,
+     "vocab_gap_confirmed": 0,
+     "supported": 0,
+     "new_supported": 0,
+     "new_supported_groups": 0,
+     "vocab_gap_supported": 0,
+     "uncovered": 0,
+     "null": {
+      "majority": {
+       "expected": 0.012,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "confirmed": {
+       "expected": 0.019,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "supported": {
+       "expected": 0.093,
+       "p_ge_observed": 1.0,
+       "q95": 1
+      }
+     }
+    },
+    "50": {
+     "k": 50,
+     "covered": 44,
+     "covered_groups": 44,
+     "majority": 0,
+     "new_majority": 0,
+     "new_majority_groups": 0,
+     "vocab_gap_majority": 0,
+     "confirmed": 0,
+     "new_confirmed": 0,
+     "new_confirmed_groups": 0,
+     "vocab_gap_confirmed": 0,
+     "supported": 0,
+     "new_supported": 0,
+     "new_supported_groups": 0,
+     "vocab_gap_supported": 0,
+     "uncovered": 6,
+     "null": {
+      "majority": {
+       "expected": 0.027,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "confirmed": {
+       "expected": 0.042,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "supported": {
+       "expected": 0.204,
+       "p_ge_observed": 1.0,
+       "q95": 1
+      }
+     }
+    },
+    "200": {
+     "k": 200,
+     "covered": 76,
+     "covered_groups": 72,
+     "majority": 0,
+     "new_majority": 0,
+     "new_majority_groups": 0,
+     "vocab_gap_majority": 0,
+     "confirmed": 0,
+     "new_confirmed": 0,
+     "new_confirmed_groups": 0,
+     "vocab_gap_confirmed": 0,
+     "supported": 1,
+     "new_supported": 1,
+     "new_supported_groups": 1,
+     "vocab_gap_supported": 0,
+     "uncovered": 124,
+     "null": {
+      "majority": {
+       "expected": 0.047,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "confirmed": {
+       "expected": 0.072,
+       "p_ge_observed": 1.0,
+       "q95": 1
+      },
+      "supported": {
+       "expected": 0.352,
+       "p_ge_observed": 0.29747482576627665,
+       "q95": 1
+      }
+     }
+    }
+   },
+   "full_pool_secondary": {
+    "20": {
+     "hybrid": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     },
+     "random": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     },
+     "trained": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 2
+     }
+    },
+    "50": {
+     "hybrid": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     },
+     "random": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     },
+     "trained": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 3
+     }
+    },
+    "200": {
+     "hybrid": {
+      "majority": 2,
+      "confirmed": 2,
+      "supported": 3
+     },
+     "random": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 1
+     },
+     "trained": {
+      "majority": 1,
+      "confirmed": 2,
+      "supported": 11
+     }
+    }
+   }
+  },
+  "Chirp": {
+   "eligible_events": 38445,
+   "covered_eligible": 18031,
+   "pool_new": {
+    "majority": 14,
+    "confirmed": 26,
+    "supported": 92
+   },
+   "pool_new_groups": {
+    "majority": 14,
+    "confirmed": 26,
+    "supported": 92
+   },
+   "arms": {
+    "hybrid": {
+     "20": {
+      "k": 20,
+      "covered": 13,
+      "covered_groups": 12,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 7,
+      "null": {
+       "majority": {
+        "expected": 0.01,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.019,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.066,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       }
+      }
+     },
+     "50": {
+      "k": 50,
+      "covered": 35,
+      "covered_groups": 29,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 15,
+      "null": {
+       "majority": {
+        "expected": 0.027,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.05,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.179,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       }
+      }
+     },
+     "200": {
+      "k": 200,
+      "covered": 144,
+      "covered_groups": 108,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 56,
+      "null": {
+       "majority": {
+        "expected": 0.112,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       },
+       "confirmed": {
+        "expected": 0.208,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       },
+       "supported": {
+        "expected": 0.735,
+        "p_ge_observed": 1.0,
+        "q95": 2
+       }
+      }
+     }
+    },
+    "random": {
+     "20": {
+      "k": 20,
+      "covered": 17,
+      "covered_groups": 14,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 3,
+      "null": {
+       "majority": {
+        "expected": 0.013,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.025,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.087,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       }
+      }
+     },
+     "50": {
+      "k": 50,
+      "covered": 43,
+      "covered_groups": 39,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 7,
+      "null": {
+       "majority": {
+        "expected": 0.033,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.062,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       },
+       "supported": {
+        "expected": 0.219,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       }
+      }
+     },
+     "200": {
+      "k": 200,
+      "covered": 154,
+      "covered_groups": 112,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 46,
+      "null": {
+       "majority": {
+        "expected": 0.12,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       },
+       "confirmed": {
+        "expected": 0.222,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       },
+       "supported": {
+        "expected": 0.786,
+        "p_ge_observed": 1.0,
+        "q95": 2
+       }
+      }
+     }
+    },
+    "trained": {
+     "20": {
+      "k": 20,
+      "covered": 11,
+      "covered_groups": 11,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 9,
+      "null": {
+       "majority": {
+        "expected": 0.009,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.016,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.056,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       }
+      }
+     },
+     "50": {
+      "k": 50,
+      "covered": 30,
+      "covered_groups": 28,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 20,
+      "null": {
+       "majority": {
+        "expected": 0.023,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.043,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.153,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       }
+      }
+     },
+     "200": {
+      "k": 200,
+      "covered": 113,
+      "covered_groups": 98,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 1,
+      "new_confirmed": 1,
+      "new_confirmed_groups": 1,
+      "vocab_gap_confirmed": 1,
+      "supported": 1,
+      "new_supported": 1,
+      "new_supported_groups": 1,
+      "vocab_gap_supported": 1,
+      "uncovered": 87,
+      "null": {
+       "majority": {
+        "expected": 0.088,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       },
+       "confirmed": {
+        "expected": 0.163,
+        "p_ge_observed": 0.15089132679384398,
+        "q95": 1
+       },
+       "supported": {
+        "expected": 0.577,
+        "p_ge_observed": 0.440015349001362,
+        "q95": 2
+       }
+      }
+     }
+    }
+   },
+   "cnn_probability": {
+    "20": {
+     "k": 20,
+     "covered": 20,
+     "covered_groups": 12,
+     "majority": 0,
+     "new_majority": 0,
+     "new_majority_groups": 0,
+     "vocab_gap_majority": 0,
+     "confirmed": 0,
+     "new_confirmed": 0,
+     "new_confirmed_groups": 0,
+     "vocab_gap_confirmed": 0,
+     "supported": 0,
+     "new_supported": 0,
+     "new_supported_groups": 0,
+     "vocab_gap_supported": 0,
+     "uncovered": 0,
+     "null": {
+      "majority": {
+       "expected": 0.016,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "confirmed": {
+       "expected": 0.029,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "supported": {
+       "expected": 0.102,
+       "p_ge_observed": 1.0,
+       "q95": 1
+      }
+     }
+    },
+    "50": {
+     "k": 50,
+     "covered": 29,
+     "covered_groups": 20,
+     "majority": 0,
+     "new_majority": 0,
+     "new_majority_groups": 0,
+     "vocab_gap_majority": 0,
+     "confirmed": 0,
+     "new_confirmed": 0,
+     "new_confirmed_groups": 0,
+     "vocab_gap_confirmed": 0,
+     "supported": 1,
+     "new_supported": 1,
+     "new_supported_groups": 1,
+     "vocab_gap_supported": 1,
+     "uncovered": 21,
+     "null": {
+      "majority": {
+       "expected": 0.023,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "confirmed": {
+       "expected": 0.042,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "supported": {
+       "expected": 0.148,
+       "p_ge_observed": 0.13796703489418916,
+       "q95": 1
+      }
+     }
+    },
+    "200": {
+     "k": 200,
+     "covered": 75,
+     "covered_groups": 55,
+     "majority": 1,
+     "new_majority": 1,
+     "new_majority_groups": 1,
+     "vocab_gap_majority": 0,
+     "confirmed": 2,
+     "new_confirmed": 2,
+     "new_confirmed_groups": 2,
+     "vocab_gap_confirmed": 0,
+     "supported": 2,
+     "new_supported": 2,
+     "new_supported_groups": 2,
+     "vocab_gap_supported": 1,
+     "uncovered": 125,
+     "null": {
+      "majority": {
+       "expected": 0.058,
+       "p_ge_observed": 0.05670440293232479,
+       "q95": 1
+      },
+      "confirmed": {
+       "expected": 0.108,
+       "p_ge_observed": 0.005200966744537978,
+       "q95": 1
+      },
+      "supported": {
+       "expected": 0.383,
+       "p_ge_observed": 0.05621554996182808,
+       "q95": 2
+      }
+     }
+    }
+   },
+   "full_pool_secondary": {
+    "20": {
+     "hybrid": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     },
+     "random": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     },
+     "trained": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     }
+    },
+    "50": {
+     "hybrid": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     },
+     "random": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     },
+     "trained": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     }
+    },
+    "200": {
+     "hybrid": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     },
+     "random": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     },
+     "trained": {
+      "majority": 0,
+      "confirmed": 1,
+      "supported": 1
+     }
+    }
+   }
+  },
+  "Helix": {
+   "eligible_events": 38380,
+   "covered_eligible": 17986,
+   "pool_new": {
+    "majority": 16,
+    "confirmed": 21,
+    "supported": 257
+   },
+   "pool_new_groups": {
+    "majority": 16,
+    "confirmed": 21,
+    "supported": 255
+   },
+   "arms": {
+    "hybrid": {
+     "20": {
+      "k": 20,
+      "covered": 14,
+      "covered_groups": 9,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 6,
+      "null": {
+       "majority": {
+        "expected": 0.012,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.016,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.2,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       }
+      }
+     },
+     "50": {
+      "k": 50,
+      "covered": 31,
+      "covered_groups": 26,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 1,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 19,
+      "null": {
+       "majority": {
+        "expected": 0.028,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.036,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.443,
+        "p_ge_observed": 1.0,
+        "q95": 2
+       }
+      }
+     },
+     "200": {
+      "k": 200,
+      "covered": 119,
+      "covered_groups": 112,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 3,
+      "new_supported": 1,
+      "new_supported_groups": 1,
+      "vocab_gap_supported": 0,
+      "uncovered": 81,
+      "null": {
+       "majority": {
+        "expected": 0.106,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       },
+       "confirmed": {
+        "expected": 0.139,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       },
+       "supported": {
+        "expected": 1.7,
+        "p_ge_observed": 0.8206340459585668,
+        "q95": 4
+       }
+      }
+     }
+    },
+    "random": {
+     "20": {
+      "k": 20,
+      "covered": 9,
+      "covered_groups": 8,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 11,
+      "null": {
+       "majority": {
+        "expected": 0.008,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.011,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.129,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       }
+      }
+     },
+     "50": {
+      "k": 50,
+      "covered": 22,
+      "covered_groups": 20,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 28,
+      "null": {
+       "majority": {
+        "expected": 0.02,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.026,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.314,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       }
+      }
+     },
+     "200": {
+      "k": 200,
+      "covered": 98,
+      "covered_groups": 82,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 3,
+      "new_supported": 2,
+      "new_supported_groups": 1,
+      "vocab_gap_supported": 2,
+      "uncovered": 102,
+      "null": {
+       "majority": {
+        "expected": 0.087,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       },
+       "confirmed": {
+        "expected": 0.114,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       },
+       "supported": {
+        "expected": 1.4,
+        "p_ge_observed": 0.409634670498359,
+        "q95": 4
+       }
+      }
+     }
+    },
+    "trained": {
+     "20": {
+      "k": 20,
+      "covered": 13,
+      "covered_groups": 11,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 7,
+      "null": {
+       "majority": {
+        "expected": 0.012,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.015,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.186,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       }
+      }
+     },
+     "50": {
+      "k": 50,
+      "covered": 28,
+      "covered_groups": 26,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 22,
+      "null": {
+       "majority": {
+        "expected": 0.025,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.033,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.4,
+        "p_ge_observed": 1.0,
+        "q95": 2
+       }
+      }
+     },
+     "200": {
+      "k": 200,
+      "covered": 105,
+      "covered_groups": 99,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 5,
+      "new_supported": 4,
+      "new_supported_groups": 4,
+      "vocab_gap_supported": 1,
+      "uncovered": 95,
+      "null": {
+       "majority": {
+        "expected": 0.093,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       },
+       "confirmed": {
+        "expected": 0.123,
+        "p_ge_observed": 1.0,
+        "q95": 1
+       },
+       "supported": {
+        "expected": 1.5,
+        "p_ge_observed": 0.06377509815594239,
+        "q95": 4
+       }
+      }
+     }
+    }
+   },
+   "cnn_probability": {
+    "20": {
+     "k": 20,
+     "covered": 14,
+     "covered_groups": 10,
+     "majority": 0,
+     "new_majority": 0,
+     "new_majority_groups": 0,
+     "vocab_gap_majority": 0,
+     "confirmed": 0,
+     "new_confirmed": 0,
+     "new_confirmed_groups": 0,
+     "vocab_gap_confirmed": 0,
+     "supported": 0,
+     "new_supported": 0,
+     "new_supported_groups": 0,
+     "vocab_gap_supported": 0,
+     "uncovered": 6,
+     "null": {
+      "majority": {
+       "expected": 0.012,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "confirmed": {
+       "expected": 0.016,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "supported": {
+       "expected": 0.2,
+       "p_ge_observed": 1.0,
+       "q95": 1
+      }
+     }
+    },
+    "50": {
+     "k": 50,
+     "covered": 40,
+     "covered_groups": 33,
+     "majority": 1,
+     "new_majority": 0,
+     "new_majority_groups": 0,
+     "vocab_gap_majority": 0,
+     "confirmed": 1,
+     "new_confirmed": 0,
+     "new_confirmed_groups": 0,
+     "vocab_gap_confirmed": 0,
+     "supported": 2,
+     "new_supported": 0,
+     "new_supported_groups": 0,
+     "vocab_gap_supported": 0,
+     "uncovered": 10,
+     "null": {
+      "majority": {
+       "expected": 0.036,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "confirmed": {
+       "expected": 0.047,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "supported": {
+       "expected": 0.572,
+       "p_ge_observed": 1.0,
+       "q95": 2
+      }
+     }
+    },
+    "200": {
+     "k": 200,
+     "covered": 151,
+     "covered_groups": 118,
+     "majority": 1,
+     "new_majority": 0,
+     "new_majority_groups": 0,
+     "vocab_gap_majority": 0,
+     "confirmed": 1,
+     "new_confirmed": 0,
+     "new_confirmed_groups": 0,
+     "vocab_gap_confirmed": 0,
+     "supported": 4,
+     "new_supported": 0,
+     "new_supported_groups": 0,
+     "vocab_gap_supported": 0,
+     "uncovered": 49,
+     "null": {
+      "majority": {
+       "expected": 0.134,
+       "p_ge_observed": 1.0,
+       "q95": 1
+      },
+      "confirmed": {
+       "expected": 0.176,
+       "p_ge_observed": 1.0,
+       "q95": 1
+      },
+      "supported": {
+       "expected": 2.158,
+       "p_ge_observed": 1.0,
+       "q95": 5
+      }
+     }
+    }
+   },
+   "full_pool_secondary": {
+    "20": {
+     "hybrid": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     },
+     "random": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     },
+     "trained": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     }
+    },
+    "50": {
+     "hybrid": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     },
+     "random": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     },
+     "trained": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     }
+    },
+    "200": {
+     "hybrid": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 1
+     },
+     "random": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 2
+     },
+     "trained": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 4
+     }
+    }
+   }
+  },
+  "Wandering_Line": {
+   "eligible_events": 38449,
+   "covered_eligible": 18031,
+   "pool_new": {
+    "majority": 3,
+    "confirmed": 4,
+    "supported": 24
+   },
+   "pool_new_groups": {
+    "majority": 2,
+    "confirmed": 3,
+    "supported": 21
+   },
+   "arms": {
+    "hybrid": {
+     "20": {
+      "k": 20,
+      "covered": 13,
+      "covered_groups": 12,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 7,
+      "null": {
+       "majority": {
+        "expected": 0.002,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.003,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.017,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       }
+      }
+     },
+     "50": {
+      "k": 50,
+      "covered": 36,
+      "covered_groups": 32,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 14,
+      "null": {
+       "majority": {
+        "expected": 0.006,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.008,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.048,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       }
+      }
+     },
+     "200": {
+      "k": 200,
+      "covered": 123,
+      "covered_groups": 113,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 1,
+      "new_supported": 1,
+      "new_supported_groups": 1,
+      "vocab_gap_supported": 0,
+      "uncovered": 77,
+      "null": {
+       "majority": {
+        "expected": 0.02,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.027,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.164,
+        "p_ge_observed": 0.1515840265370819,
+        "q95": 1
+       }
+      }
+     }
+    },
+    "random": {
+     "20": {
+      "k": 20,
+      "covered": 11,
+      "covered_groups": 10,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 9,
+      "null": {
+       "majority": {
+        "expected": 0.002,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.002,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.015,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       }
+      }
+     },
+     "50": {
+      "k": 50,
+      "covered": 33,
+      "covered_groups": 32,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 17,
+      "null": {
+       "majority": {
+        "expected": 0.005,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.007,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.044,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       }
+      }
+     },
+     "200": {
+      "k": 200,
+      "covered": 124,
+      "covered_groups": 111,
+      "majority": 2,
+      "new_majority": 2,
+      "new_majority_groups": 1,
+      "vocab_gap_majority": 0,
+      "confirmed": 2,
+      "new_confirmed": 2,
+      "new_confirmed_groups": 1,
+      "vocab_gap_confirmed": 0,
+      "supported": 3,
+      "new_supported": 3,
+      "new_supported_groups": 1,
+      "vocab_gap_supported": 0,
+      "uncovered": 76,
+      "null": {
+       "majority": {
+        "expected": 0.021,
+        "p_ge_observed": 0.0001401099143175375,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.028,
+        "p_ge_observed": 0.0002789563504394287,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.165,
+        "p_ge_observed": 0.0005781240075963689,
+        "q95": 1
+       }
+      }
+     }
+    },
+    "trained": {
+     "20": {
+      "k": 20,
+      "covered": 14,
+      "covered_groups": 6,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 6,
+      "null": {
+       "majority": {
+        "expected": 0.002,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.003,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.019,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       }
+      }
+     },
+     "50": {
+      "k": 50,
+      "covered": 35,
+      "covered_groups": 13,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 0,
+      "new_supported": 0,
+      "new_supported_groups": 0,
+      "vocab_gap_supported": 0,
+      "uncovered": 15,
+      "null": {
+       "majority": {
+        "expected": 0.006,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.008,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.047,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       }
+      }
+     },
+     "200": {
+      "k": 200,
+      "covered": 122,
+      "covered_groups": 63,
+      "majority": 0,
+      "new_majority": 0,
+      "new_majority_groups": 0,
+      "vocab_gap_majority": 0,
+      "confirmed": 0,
+      "new_confirmed": 0,
+      "new_confirmed_groups": 0,
+      "vocab_gap_confirmed": 0,
+      "supported": 3,
+      "new_supported": 3,
+      "new_supported_groups": 3,
+      "vocab_gap_supported": 0,
+      "uncovered": 78,
+      "null": {
+       "majority": {
+        "expected": 0.02,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "confirmed": {
+        "expected": 0.027,
+        "p_ge_observed": 1.0,
+        "q95": 0
+       },
+       "supported": {
+        "expected": 0.162,
+        "p_ge_observed": 0.0005513388765500235,
+        "q95": 1
+       }
+      }
+     }
+    }
+   },
+   "cnn_probability": {
+    "20": {
+     "k": 20,
+     "covered": 2,
+     "covered_groups": 2,
+     "majority": 0,
+     "new_majority": 0,
+     "new_majority_groups": 0,
+     "vocab_gap_majority": 0,
+     "confirmed": 0,
+     "new_confirmed": 0,
+     "new_confirmed_groups": 0,
+     "vocab_gap_confirmed": 0,
+     "supported": 0,
+     "new_supported": 0,
+     "new_supported_groups": 0,
+     "vocab_gap_supported": 0,
+     "uncovered": 18,
+     "null": {
+      "majority": {
+       "expected": 0.0,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "confirmed": {
+       "expected": 0.0,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "supported": {
+       "expected": 0.003,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      }
+     }
+    },
+    "50": {
+     "k": 50,
+     "covered": 8,
+     "covered_groups": 6,
+     "majority": 0,
+     "new_majority": 0,
+     "new_majority_groups": 0,
+     "vocab_gap_majority": 0,
+     "confirmed": 0,
+     "new_confirmed": 0,
+     "new_confirmed_groups": 0,
+     "vocab_gap_confirmed": 0,
+     "supported": 0,
+     "new_supported": 0,
+     "new_supported_groups": 0,
+     "vocab_gap_supported": 0,
+     "uncovered": 42,
+     "null": {
+      "majority": {
+       "expected": 0.001,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "confirmed": {
+       "expected": 0.002,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "supported": {
+       "expected": 0.011,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      }
+     }
+    },
+    "200": {
+     "k": 200,
+     "covered": 85,
+     "covered_groups": 55,
+     "majority": 0,
+     "new_majority": 0,
+     "new_majority_groups": 0,
+     "vocab_gap_majority": 0,
+     "confirmed": 0,
+     "new_confirmed": 0,
+     "new_confirmed_groups": 0,
+     "vocab_gap_confirmed": 0,
+     "supported": 1,
+     "new_supported": 1,
+     "new_supported_groups": 1,
+     "vocab_gap_supported": 0,
+     "uncovered": 115,
+     "null": {
+      "majority": {
+       "expected": 0.014,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "confirmed": {
+       "expected": 0.019,
+       "p_ge_observed": 1.0,
+       "q95": 0
+      },
+      "supported": {
+       "expected": 0.113,
+       "p_ge_observed": 0.1072766652938394,
+       "q95": 1
+      }
+     }
+    }
+   },
+   "full_pool_secondary": {
+    "20": {
+     "hybrid": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     },
+     "random": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     },
+     "trained": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     }
+    },
+    "50": {
+     "hybrid": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     },
+     "random": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     },
+     "trained": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 0
+     }
+    },
+    "200": {
+     "hybrid": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 1
+     },
+     "random": {
+      "majority": 2,
+      "confirmed": 2,
+      "supported": 3
+     },
+     "trained": {
+      "majority": 0,
+      "confirmed": 0,
+      "supported": 3
+     }
+    }
+   }
+  }
+ },
+ "primary_cells": {
+  "Paired_Doves": {
+   "hybrid_new_majority": 1,
+   "hybrid_new_majority_groups": 1,
+   "covered": 107,
+   "expected": 0.069,
+   "p": 0.06678498321673539,
+   "cnn_new_majority_groups": 0,
+   "cnn_new_majority": 0,
+   "passes": false
+  },
+  "1400Ripples": {
+   "hybrid_new_majority": 2,
+   "hybrid_new_majority_groups": 2,
+   "covered": 92,
+   "expected": 0.056,
+   "p": 0.0013875764342345025,
+   "cnn_new_majority_groups": 0,
+   "cnn_new_majority": 0,
+   "passes": true
+  },
+  "Helix": {
+   "hybrid_new_majority": 0,
+   "hybrid_new_majority_groups": 0,
+   "covered": 119,
+   "expected": 0.106,
+   "p": 1.0,
+   "cnn_new_majority_groups": 0,
+   "cnn_new_majority": 0,
+   "passes": false
+  }
+ },
+ "primary_verdict": "not confirmed",
+ "primary_types_passing": 1
+}

@@ -1,0 +1,69 @@
+{
+  "format": "hypernet.gravity_spy_oneshot.v0.2",
+  "created_utc": "2026-11-03T01:06:20Z",
+  "v01_protocol_sha256": "816be8b4ff7c77477d9c56146558031b602782d874706d43d202de0d3b3a604a",
+  "test_scores_computed_before_freeze": false,
+  "candidates": [
+    "trained_stem_grid6",
+    "trained_stem_pyramid",
+    "trained_fine_grid6",
+    "trained_fine_pyramid",
+    "trained_middle_grid6",
+    "trained_middle_pyramid",
+    "trained_coarse_grid6",
+    "trained_coarse_pyramid",
+    "random_stem_grid6",
+    "random_stem_pyramid",
+    "random_fine_grid6",
+    "random_fine_pyramid",
+    "random_middle_grid6",
+    "random_middle_pyramid",
+    "random_coarse_grid6",
+    "random_coarse_pyramid",
+    "trained_early_concat",
+    "random_early_concat"
+  ],
+  "baseline_also_scored": "raw_pixels_standardized",
+  "selection_rules": {
+    "best_cnn_readout": "Highest DEV mean AP among all candidates (trained or random weights)",
+    "best_trained_readout": "Highest DEV mean AP among trained-weight candidates only"
+  },
+  "selected": {
+    "best_cnn_readout": "random_early_concat",
+    "best_trained_readout": "trained_stem_grid6"
+  },
+  "dev_mean_ap": {
+    "trained_stem_grid6": 0.5140649195442724,
+    "trained_stem_pyramid": 0.46335483380879483,
+    "trained_fine_grid6": 0.40534579006044896,
+    "trained_fine_pyramid": 0.40199674652384776,
+    "trained_middle_grid6": 0.3404085887645967,
+    "trained_middle_pyramid": 0.3297474929783866,
+    "trained_coarse_grid6": 0.2570974708530411,
+    "trained_coarse_pyramid": 0.2828143620759042,
+    "random_stem_grid6": 0.5105339463374493,
+    "random_stem_pyramid": 0.4541763387740728,
+    "random_fine_grid6": 0.526410890736024,
+    "random_fine_pyramid": 0.48184051578963516,
+    "random_middle_grid6": 0.539394503049162,
+    "random_middle_pyramid": 0.49915075031434997,
+    "random_coarse_grid6": 0.5154804173043538,
+    "random_coarse_pyramid": 0.4823362556738052,
+    "trained_early_concat": 0.46755954465095106,
+    "random_early_concat": 0.565598933132635,
+    "raw_pixels_standardized": 0.3861221883577602
+  },
+  "checkpoint_sha256": {
+    "trained": "a64618f1d748acbb239c690abd2e5c2d26c1328162de5ac2b62a14394706013e",
+    "random": "fc78ae5c4833fc533d12564d6ee1c9dd57e3ee7b27fa5eea21f1ccc515016231"
+  },
+  "unlabeled_standardization_images": {
+    "count": 600,
+    "seed": 7,
+    "split": "train, excluding references"
+  },
+  "weight_updates": 0,
+  "spectrogram_images_used_in_weight_training": 0,
+  "reference_views": "crop and its horizontal reflection; score is the max over views",
+  "metrics": "Same as v0.1, from hypernet.gravity_spy.evaluate_method"
+}

@@ -1,0 +1,292 @@
+{
+  "format": "hypernet.gravity_spy_oneshot.v0.5",
+  "created_utc": "2026-11-03T20:05:36Z",
+  "question": "Does the v0.4 trained-minus-random contrast hold on O3b events never seen by any HyperNet version?",
+  "test_scores_computed_before_freeze": false,
+  "selection_in_this_version": "none; arms are the v0.4 DEV selections",
+  "what_is_fresh": "O3b haystack events and CALIB cutoffs; references, standardization background and the label model are v1.1-derived",
+  "arms": {
+    "best_trained": "spectro_family_e8|coarse_grid6|fused4",
+    "best_instance": "spectro_instance_e12|full_concat|fused4",
+    "best_random": "random2026|full_concat|fused4",
+    "best_scattering": "scattering_perfeature|fused4",
+    "best_raw_pixels": "raw_pixels|1.0s",
+    "best_hybrid": "hybrid_px_random|fused4"
+  },
+  "verdict_rule": "Confirmed on O3b if best_trained minus best_random in TEST mean AP over evaluated_classes is > 0 and its paired class-bootstrap 95% interval (10,000 draws, seed 0) excludes zero. Same sign with an interval that includes zero is reported as \"same direction, not confirmed\". A difference <= 0 is reported as \"not confirmed\". The item bootstrap is a robustness check; the other contrasts are descriptive.",
+  "expected_effect_v04": {
+    "difference": 0.067515133539819,
+    "class_bootstrap_95ci": [
+      -0.000425919184737239,
+      0.13191240231500168
+    ]
+  },
+  "evaluated_classes": [
+    "1080Lines",
+    "1400Ripples",
+    "Air_Compressor",
+    "Blip",
+    "Extremely_Loud",
+    "Koi_Fish",
+    "Light_Modulation",
+    "Low_Frequency_Burst",
+    "Low_Frequency_Lines",
+    "Paired_Doves",
+    "Power_Line",
+    "Repeating_Blips",
+    "Scattered_Light",
+    "Scratchy",
+    "Tomte",
+    "Violin_Mode",
+    "Whistle"
+  ],
+  "excluded_classes": {
+    "Chirp": {
+      "calib": 1,
+      "test": 5
+    },
+    "Helix": {
+      "calib": 2,
+      "test": 8
+    },
+    "Wandering_Line": {
+      "calib": 0,
+      "test": 3
+    }
+  },
+  "min_positives_rule": {
+    "calib": 5,
+    "test": 20
+  },
+  "rare_classes_o3": [],
+  "rare_rule_o3": "evaluated classes with fewer than 30 TEST positives",
+  "class_bootstrap": {
+    "draws": 10000,
+    "seed": 0
+  },
+  "item_bootstrap": {
+    "draws": 2000,
+    "seed": 1515,
+    "unit": "TEST event (every event is its own 4 s group)",
+    "rule": "mean over evaluated classes present in the draw"
+  },
+  "secondary_masked_analysis": {
+    "rule": "for each (reference class -> O3-only label) pair, items with that ml_label are removed from the haystack for that class only",
+    "pairs": {
+      "Scattered_Light": "Fast_Scattering",
+      "Blip": "Blip_Low_Frequency"
+    }
+  },
+  "inputs": {
+    "roster.json": "59e1cdb5d42138b16ab34537824cd35b27caeafa8df762776eda986ea62b84eb",
+    "calib_roster.csv": "fa43247f5c0a4cca78aa54e90b165bf0a10244b3dca3f245543de1e87ce31008",
+    "test_roster.csv": "24ed707d30cf3f71a792f4a91c1348224fc403359e1a0e378b522dba69569d81",
+    "calib_arrays.npz": "f2dc32d927773ae48483ff0af0622dbbeceb1cdab17bc0fc3aa3e87503999459",
+    "test_arrays.npz": "0954f362c9dd6f982ab2129b7e13cdc92566b76611a8b875a83e28a3aebd60e8",
+    "calib_arrays.json": "3ad51d463ce230307f7b7ef9735982a6633131ba63386aa894425d13a3e812da",
+    "test_arrays.json": "16ca71f386f43eb3cebfb45d14c47e8e695ee722ca4d494538cd615779f494d1",
+    "resample": "linear",
+    "script_sha256": "ad5d697f725428f025010b66852e5a64f7464c116c356757338d4e9886a09ee6",
+    "v04_script_sha256": "d40283d03a6e1ae6a2fb836324e990a71166dfec4dd207de7ac78d26cd23fb5a",
+    "torch": "2.14.1+cpu"
+  },
+  "calib_scores_sha256": "eea0f0270b82b465653a5c512f4eef0b311e958a0ff42bae4d1adabd027b93aa",
+  "far": 0.01,
+  "references_per_class": 5,
+  "calib": {
+    "in_npz": 785,
+    "blank_excluded": 0,
+    "blank_ids": [],
+    "scored": 785
+  },
+  "counts": {
+    "calib_scored": {
+      "Blip": 50,
+      "Air_Compressor": 50,
+      "Koi_Fish": 50,
+      "Extremely_Loud": 50,
+      "Whistle": 50,
+      "Violin_Mode": 50,
+      "Low_Frequency_Lines": 50,
+      "Low_Frequency_Burst": 50,
+      "Tomte": 50,
+      "Scattered_Light": 50,
+      "Repeating_Blips": 50,
+      "Power_Line": 50,
+      "other": 50,
+      "1080Lines": 40,
+      "Scratchy": 39,
+      "Light_Modulation": 25,
+      "1400Ripples": 14,
+      "Paired_Doves": 14,
+      "Helix": 2,
+      "Chirp": 1
+    },
+    "test_in_npz": {
+      "Air_Compressor": 150,
+      "Blip": 150,
+      "Low_Frequency_Lines": 150,
+      "Koi_Fish": 150,
+      "Extremely_Loud": 150,
+      "other": 150,
+      "Whistle": 150,
+      "Violin_Mode": 150,
+      "Low_Frequency_Burst": 150,
+      "Power_Line": 150,
+      "Tomte": 150,
+      "Scattered_Light": 150,
+      "Repeating_Blips": 150,
+      "1080Lines": 122,
+      "Scratchy": 119,
+      "Light_Modulation": 75,
+      "Paired_Doves": 44,
+      "1400Ripples": 43,
+      "Helix": 8,
+      "Chirp": 5,
+      "Wandering_Line": 3
+    }
+  },
+  "other_ml_label_counts": {
+    "calib": {
+      "Fast_Scattering": 36,
+      "Blip_Low_Frequency": 13,
+      "No_Glitch": 1
+    },
+    "test": {
+      "Fast_Scattering": 104,
+      "Blip_Low_Frequency": 40,
+      "No_Glitch": 6
+    }
+  },
+  "roster": {
+    "label_source": "Gravity Spy CNN ml_label with ml_confidence >= 0.95; not volunteer or expert labels",
+    "time_grouping_seconds": 4.0,
+    "one_event_per_group": true,
+    "per_class_caps": {
+      "test": 150,
+      "calib": 50
+    },
+    "seed": 20261103,
+    "test_events": 2369,
+    "calib_events": 785,
+    "test_counts": {
+      "Air_Compressor": 150,
+      "Blip": 150,
+      "Low_Frequency_Lines": 150,
+      "Koi_Fish": 150,
+      "Extremely_Loud": 150,
+      "other": 150,
+      "Whistle": 150,
+      "Violin_Mode": 150,
+      "Low_Frequency_Burst": 150,
+      "Power_Line": 150,
+      "Tomte": 150,
+      "Scattered_Light": 150,
+      "Repeating_Blips": 150,
+      "1080Lines": 122,
+      "Scratchy": 119,
+      "Light_Modulation": 75,
+      "Paired_Doves": 44,
+      "1400Ripples": 43,
+      "Helix": 8,
+      "Chirp": 5,
+      "Wandering_Line": 3
+    },
+    "calib_counts": {
+      "Blip": 50,
+      "Air_Compressor": 50,
+      "Koi_Fish": 50,
+      "Extremely_Loud": 50,
+      "Whistle": 50,
+      "Violin_Mode": 50,
+      "Low_Frequency_Lines": 50,
+      "Low_Frequency_Burst": 50,
+      "Tomte": 50,
+      "Scattered_Light": 50,
+      "Repeating_Blips": 50,
+      "Power_Line": 50,
+      "other": 50,
+      "1080Lines": 40,
+      "Scratchy": 39,
+      "Light_Modulation": 25,
+      "1400Ripples": 14,
+      "Paired_Doves": 14,
+      "Helix": 2,
+      "Chirp": 1
+    },
+    "label_counts_all": {
+      "Scattered_Light": 117903,
+      "Fast_Scattering": 54528,
+      "Tomte": 28334,
+      "Blip_Low_Frequency": 14790,
+      "Low_Frequency_Lines": 14640,
+      "Extremely_Loud": 11494,
+      "Koi_Fish": 9793,
+      "Whistle": 8035,
+      "Blip": 7444,
+      "Low_Frequency_Burst": 7243,
+      "No_Glitch": 5276,
+      "Paired_Doves": 3331,
+      "Air_Compressor": 2303,
+      "Repeating_Blips": 1778,
+      "1080Lines": 1697,
+      "Violin_Mode": 1385,
+      "Power_Line": 771,
+      "Light_Modulation": 465,
+      "Scratchy": 429,
+      "1400Ripples": 393,
+      "Helix": 150,
+      "Chirp": 43,
+      "Wandering_Line": 36
+    },
+    "label_counts_confident": {
+      "Scattered_Light": 96385,
+      "Fast_Scattering": 34732,
+      "Tomte": 22684,
+      "Blip_Low_Frequency": 9511,
+      "Extremely_Loud": 8528,
+      "Whistle": 6302,
+      "Koi_Fish": 5709,
+      "Blip": 5528,
+      "Low_Frequency_Burst": 4231,
+      "Low_Frequency_Lines": 2505,
+      "No_Glitch": 1835,
+      "Repeating_Blips": 724,
+      "Air_Compressor": 719,
+      "Violin_Mode": 453,
+      "1080Lines": 381,
+      "Scratchy": 260,
+      "Power_Line": 253,
+      "Light_Modulation": 104,
+      "Paired_Doves": 74,
+      "1400Ripples": 70,
+      "Helix": 10,
+      "Wandering_Line": 7,
+      "Chirp": 7
+    },
+    "v11_id_overlap_in_tables": 0
+  },
+  "v04_protocol_sha256": "a35b955bcf2ce7c0313e360e57846dcb58b8c76ad205c5ae5df9519b56db2a99",
+  "references": "v0.4 references, v1.1 train HDF5 arrays",
+  "standardization": "600 unlabeled v1.1 train images, seed 7, as in v0.4",
+  "cutoffs": "per reference, 1% false alarms on O3b CALIB negatives",
+  "models": {
+    "random1403": {
+      "torch_seed": 1403,
+      "state_sha256": "5aef739be2a8f5bd31c8769f20021aade42864c2cb65f987223687b866cd1352"
+    },
+    "random2026": {
+      "torch_seed": 2026,
+      "state_sha256": "d968b6d8f648b22bda1060ef5ee9ae2b23869262bac79c05582c6edfd725ae62"
+    },
+    "spectro_family_e8": {
+      "checkpoint_sha256": "a662b96698f9b0ed2ffd94514935d4caa3cc4c1dcce455f227285d48dcb7ce3f"
+    },
+    "spectro_instance_e12": {
+      "checkpoint_sha256": "a1c8904c21d0d326ecd490a9b27204a296e52f4f530e770fe3521030ee17d975"
+    }
+  },
+  "blank_rule": "arrays whose 1.0 s view has max minus min <= 1e-6 are excluded from CALIB and TEST; ids recorded",
+  "truth_caveat": "TEST and CALIB labels are predictions of the Gravity Spy CNN, which was trained on the same v1.1 set the references and standardization images come from. The >= 0.95 confidence filter keeps that model's most prototypical events, which raises absolute AP for every arm; confident label errors are not assumed random. The primary contrast compares two arms under the same labels.",
+  "cross_version_comparison": "Absolute mean AP, recall and one-shot accuracy are not comparable with v0.4: O3b TEST is cap-stratified, negatives are mostly other target classes at equal counts, and cutoffs come from O3b CALIB. Only the trained-minus-random contrast is juxtaposed with v0.4's."
+}

@@ -1,0 +1,1721 @@
+[
+ {
+  "thread": "gravity-spy-prior-work",
+  "claim": "Coughlin et al. 2019 is the only published Gravity Spy method evaluated as a one-reference similarity search: a single known glitch is the query and the metric is the fraction of the archive that can be discarded while retaining 50% (or 100%) of the known examples of that class.",
+  "url": "https://ar5iv.labs.arxiv.org/html/1903.04058",
+  "title": "Classifying the unknown: discovering novel gravitational-wave detector glitches using similarity learning (Coughlin et al., PRD 99, 082002)",
+  "year": "2019",
+  "confidence": "high",
+  "relevance": "This is the comparison HyperNet should cite. To compare, compute on TEST the same 'archive fraction rejected at 50% recall' per class; HyperNet's recall-at-1%-false-alarm (48.7%) is approximately the same operating point (99% rejection, ~50% retention) and so is directly comparable to DIRECT's ~99% rejection at 50% retention on Water Jet, and to raw pixels' ~30%."
+ },
+ {
+  "thread": "gravity-spy-prior-work",
+  "claim": "The DIRECT similarity model behind Gravity Spy's search is not label-free: it is ImageNet-pretrained VGG16 plus a 1024-unit and a 200-unit layer, trained with a pairwise contrastive (margin) loss on labeled same-class/different-class pairs from the Gravity Spy training set, and queried with cosine distance.",
+  "url": "https://ar5iv.labs.arxiv.org/html/1805.02296",
+  "title": "DIRECT: Deep Discriminative Embedding for Clustering of LIGO Data (Bahaadini et al., ICIP 2018)",
+  "year": "2018",
+  "confidence": "high",
+  "relevance": "HyperNet's no-real-labels, no-pretrained-weights constraint is strictly tighter than any published Gravity Spy similarity method. State this explicitly when comparing numbers; DIRECT uses both ImageNet weights and 16-22 labeled classes."
+ },
+ {
+  "thread": "gravity-spy-prior-work",
+  "claim": "On the easy novel class (Raven Peck) raw pixels and PCA match the learned DIRECT embedding; the learned embedding only wins on the class whose defining feature is subtle and absent from the training classes (Water Jet).",
+  "url": "https://cplberry.com/tag/gravity-spy/",
+  "title": "Christopher Berry blog summary of Classifying the unknown (Raven Pecks and Water Jets)",
+  "year": "2019",
+  "confidence": "high",
+  "relevance": "Independent confirmation that raw pixels are a strong baseline on fixed-axis Gravity Spy spectrograms (HyperNet's 0.485 mAP). A v0.4 evaluation should report per-class gains over raw pixels and look specifically at subtle-feature classes; a uniform small gain is less convincing than winning where pixels fail."
+ },
+ {
+  "thread": "gravity-spy-prior-work",
+  "claim": "DIRECT's held-out-class clustering score on Gravity Spy v1.0 is NMI 0.5978 / ARI 0.4550 with k-means on 5 unseen classes, versus raw features NMI 0.5131 / ARI 0.1986, PCA 0.5117 / 0.1938 and a deep autoencoder 0.5451 / 0.3243.",
+  "url": "https://ar5iv.labs.arxiv.org/html/1805.02296",
+  "title": "DIRECT: Deep Discriminative Embedding for Clustering of LIGO Data",
+  "year": "2018",
+  "confidence": "high",
+  "relevance": "Gives a secondary, label-free-at-test metric (NMI/ARI of k-means on HyperNet features over held-out classes) that HyperNet could add cheaply to v0.4 to compare against DIRECT, VAT and CTSAE; raw-feature NMI around 0.43-0.51 is the floor to beat."
+ },
+ {
+  "thread": "gravity-spy-prior-work",
+  "claim": "The 2022 VAT-based discriminative model improves held-out-class clustering NMI to 0.61 versus DIRECT 0.53 and raw features / PCA 0.43, training on the first 10 of 22 classes of Gravity Spy v1.2 (7,932 glitches) and clustering the remaining 10.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2205.13672",
+  "title": "Discriminative Dimensionality Reduction using Deep Neural Networks for Clustering of LIGO data (Bahaadini, Wu, Coughlin, Zevin, Katsaggelos)",
+  "year": "2022",
+  "confidence": "high",
+  "relevance": "Shows the semi-supervised route (unlabeled in-domain spectrograms via VAT smoothing) is what moved the field past DIRECT. Relevant to open problem (4): if HyperNet allows unlabeled in-domain pretraining, this is the published precedent and the number to compare against."
+ },
+ {
+  "thread": "gravity-spy-prior-work",
+  "claim": "CTSAE (2024) is the first fully unsupervised glitch clusterer on Gravity Spy O3 (41,745 glitches, 23 classes, 224x224 resized from 480x575, four durations) and reaches ARI 0.4091 / NMI 0.6362, beating DIRECT (0.2137 / 0.4281) and VAT with 1% labels (0.4054 / 0.5963) but not VAT with 5% labels (0.5938 / 0.7011); the authors avoid augmentation-based contrastive learning because 'Augmenting glitch spectrograms can significantly distort their physical semantics.'",
+  "url": "https://arxiv.org/html/2404.15552v1",
+  "title": "Cross-Temporal Spectrogram Autoencoder (CTSAE): Unsupervised Dimensionality Reduction for Clustering Gravitational Wave Glitches (Li, Wu, Katsaggelos)",
+  "year": "2024",
+  "confidence": "high",
+  "relevance": "Two design lessons: (1) DIRECT's score collapses on O3 data, so a label-trained embedding does not transfer across observing runs, which supports testing HyperNet on O3 as fresh data; (2) the domain's practitioners judge standard SimCLR-style augmentations to be physically unsafe on spectrograms, which bears on how HyperNet should design synthetic 'two views of the same type' pairs (vary instance, not geometry)."
+ },
+ {
+  "thread": "gravity-spy-prior-work",
+  "claim": "The original Gravity Spy CNN (Zevin et al. 2017) reached 97.1% test accuracy on 7,718 glitches in 20 classes using four merged Omega scans (0.5, 1, 2, 4 s), with Wandering Line (44 samples) and Paired Doves (30 samples) having the lowest precision and recall and None of the Above / No Glitch also weak.",
+  "url": "https://ar5iv.labs.arxiv.org/html/1611.04596",
+  "title": "Gravity Spy: Integrating Advanced LIGO Detector Characterization, Machine Learning, and Citizen Science (Zevin et al., CQG 34, 064003)",
+  "year": "2017",
+  "confidence": "high",
+  "relevance": "Supervised accuracy is not comparable to one-reference mAP, but the hard-class list (Wandering Line, Paired Doves, catch-all classes) matches HyperNet's rare set and should be reported per class in v0.4."
+ },
+ {
+  "thread": "gravity-spy-prior-work",
+  "claim": "Bahaadini et al.'s multi-view models on 7,730 glitches / 20 classes used tiny inputs (47x57 per duration; merged view 94x114) and reached 96.89% (merged) vs 92.85-95.34% for single durations, with the 1 s view best among single views; hardest classes were Wandering Line (57-71%), Repeating Blips (76-80%) and Light Modulation (83-87%).",
+  "url": "https://ar5iv.labs.arxiv.org/html/1705.00034",
+  "title": "Deep Multi-view Models for Glitch Classification (Bahaadini et al., ICASSP 2017)",
+  "year": "2017",
+  "confidence": "high",
+  "relevance": "Supports HyperNet's choice of the 1.0 s view and shows useful class information survives at 47x57 resolution, consistent with 48x48 raw pixels scoring 0.485. Also suggests a cheap v0.4 upgrade: concatenate features from two durations (1 s + 4 s), which gave +1.5-4 points in supervised accuracy."
+ },
+ {
+  "thread": "gravity-spy-prior-work",
+  "claim": "George, Shen & Huerta fine-tuned ImageNet CNNs on ~8,500 Gravity Spy O1 images (22 classes, 80/20 split, 224x224 or 299x299 crops from 481x575) and reached 98.84% top-1 (ResNet50, InceptionV3) vs 96.70% for a scratch CNN; the 'few labeled examples' claim rests only on Paired_Doves (about 21-24 training images, 100% recall for most models) and the clustering experiment reports no metrics.",
+  "url": "https://ar5iv.labs.arxiv.org/html/1706.07446",
+  "title": "Deep Transfer Learning: A new deep learning glitch classification method for advanced LIGO (George, Shen, Huerta; PRD 97, 101501)",
+  "year": "2018",
+  "confidence": "high",
+  "relevance": "Not one-reference and uses ImageNet weights, so not a fair comparator; but it is the canonical evidence that natural-image pretraining transfers to glitch spectrograms, which is the hypothesis HyperNet's synthetic curriculum is trying to replace. A frozen ImageNet-CNN feature baseline (no fine-tuning) would be a fair 'upper reference' row for v0.4."
+ },
+ {
+  "thread": "gravity-spy-prior-work",
+  "claim": "The current Gravity Spy O3/O4 classifier (Wu et al. 2024) uses four 448x448 views with attention fusion on 23 O3 classes (8,439 train / 1,687 val / 3,538 test, confidence > 0.9) and scores 0.941 accuracy / 0.931 F1 vs 0.906 / 0.904 for the previous classifier; hardest classes are Wandering Line (0.740, 25 train), Paired Doves (0.882), Fast Scattering (0.890), Helix (0.891), with confusions Extremely Loud vs Koi Fish, Blip vs Repeating Blips, Scattered Light vs Low-frequency Lines.",
+  "url": "https://arxiv.org/html/2401.12913v2",
+  "title": "Advancing Glitch Classification in Gravity Spy: Multi-view Fusion with Attention-based Machine Learning for Advanced LIGO's Fourth Observing Run (Wu, Zevin, Berry et al., CQG)",
+  "year": "2024",
+  "confidence": "high",
+  "relevance": "Defines the modern class list and confusion pairs; the O3 data behind it (Zenodo 5649212) is a fresh held-out source for v0.4. Flag: v2 revised Aug 2025, may be newer than training data."
+ },
+ {
+  "thread": "gravity-spy-prior-work",
+  "claim": "Gravity Spy's O1-O3 machine-learning classifications are public on Zenodo with 22 classes for O1/O2 and 23 for O3 (adds Fast_Scattering and Blip_Low_Frequency, drops None_of_the_Above), covering 233,981 Hanford and 379,805 Livingston glitches with per-class confidences and four Omega-scan durations; the O3 training set was 9,631 samples (8,427 train / 1,203 val) with 99.9% train / 98.8% validation accuracy and no test accuracy reported.",
+  "url": "https://zenodo.org/record/5649212",
+  "title": "Gravity Spy Machine Learning Classifications of LIGO Glitches from Observing Runs O1, O2, O3a, and O3b (Glanzer et al., CQG 40, 065004)",
+  "year": "2023",
+  "confidence": "high",
+  "relevance": "Answers open problem (2): O3a/O3b glitches with confidence >= 0.9 give a large, never-touched test archive at realistic class imbalance; labels are machine labels, so confirm with the volunteer-classification release (Zenodo 5911227) for the reference and target sets."
+ },
+ {
+  "thread": "gravity-spy-prior-work",
+  "claim": "GSpyNetTree (2023) is a signal-vs-glitch tree of three 5-class CNNs (GW, Blip, Low-frequency Blip, No Glitch, plus Scratchy / Koi Fish / Tomte) trained on about 1,000 examples per class with four time-offset augmentations; InceptionV3 variants exceed 96% per class, but accuracy falls to about 76% under a background shift and unseen glitch classes are badly misassigned (Scattering 42% No Glitch, Thunder 85% No Glitch, Repeating Blips only 46-56% as Blip).",
+  "url": "https://ar5iv.labs.arxiv.org/html/2304.09977",
+  "title": "GSpyNetTree: A signal-vs-glitch classifier for gravitational-wave event candidates (Alvarez-Lopez et al., CQG)",
+  "year": "2023",
+  "confidence": "high",
+  "relevance": "Not a retrieval method; relevant mainly as evidence that supervised glitch CNNs do not generalize to unseen classes or shifted backgrounds, which is the argument for a one-reference recognizer. Also note the 2026 follow-ups GSpyNetTree-O4 (arXiv 2607.25208) and GSpyNetTreeS (arXiv 2511.16861), not read in full."
+ },
+ {
+  "thread": "gravity-spy-prior-work",
+  "claim": "No published 2022-2026 paper applies contrastive or SimCLR-style self-supervised pretraining to LIGO/Virgo glitch spectrograms; the closest are a 2023 pseudo-label self-supervised CNN (F1 94.15% vs 97.18% supervised on Gravity Spy), a 2026 KAGRA ConvAE/DEC clustering (NMI 0.34-0.37, ARI 0.30-0.44 vs PCA 0.22/0.17 on 2,215 events, 7 classes), and 2026 frozen-foundation-model work (DINOv2 ViT-S/14 on O4a, AST audio transformer) that report no retrieval metrics.",
+  "url": "https://arxiv.org/abs/2605.28572",
+  "title": "Unsupervised Morphological Characterization of Gravitational-Wave Glitches in LIGO O4a Using Frozen DINOv2 Features (Cirfeta)",
+  "year": "2026",
+  "confidence": "medium",
+  "relevance": "The gap HyperNet targets (features better than random/raw without real labels or pretrained weights) is unoccupied in the literature. But reviewers will expect a frozen-DINOv2 or frozen-ImageNet cosine k-NN row as the 'foundation model' reference. All 2026 items are newer than training data and were read from abstracts only; verify before citing."
+ },
+ {
+  "thread": "gravity-spy-prior-work",
+  "claim": "The Gravity Spy v1.1 training set (Zenodo 1486046, 1 Nov 2018, CC BY 4.0) stores each sample as four {1,140,170} arrays (0.5, 1, 2, 4 s) in trainingsetv1d1.h5, with the plot-only crop x=[66,532], y=[105,671] applied to the raw PNGs; the v1.1 README itself does not state class or split counts.",
+  "url": "https://zenodo.org/record/1486046",
+  "title": "Gravity Spy Training Set v1.1.0 (Coughlin, Zenodo)",
+  "year": "2018",
+  "confidence": "high",
+  "relevance": "Confirms HyperNet's 140x170 input and crop match the publisher's canonical preprocessing (and the v15 crop [105,66,671,532] on 800x600 images), so comparisons to Coughlin 2019 and Bahaadini 2018 are on the same pixels. The v1.1 TEST split has now been scored three times; the O3 release above is the natural replacement."
+ },
+ {
+  "thread": "synthetic-pretraining",
+  "claim": "Among statistical and procedural noise generators trained contrastively, flat-shape generators transfer worst and oriented/textured ones best: Dead-leaves Squares 0.35, Oriented 0.37, Shapes 0.39, Textures 0.41, Spectrum-only 0.31, Spectrum+Color 0.37, Spectrum+Color+WMM 0.40, StyleGAN-Oriented 0.43 (ImageNet-100 linear top-1, AlexNet, alignment/uniformity loss), versus real ImageNet-100 0.63 and a random CNN 0.21.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2106.05963",
+  "title": "Learning to See by Looking at Noise (Baradad, Wulff, Wang, Isola, Torralba, NeurIPS 2021)",
+  "year": "2021",
+  "confidence": "high",
+  "relevance": "HyperNet's flat-colored clean shapes on simple backgrounds sit at the Dead-leaves Squares/Shapes end of this ordering, the weakest synthetic family measured; adding texture inside shapes and a 1/f-like background (the Spectrum+Color+WMM and Textures variants) is what moved the needle in this study."
+ },
+ {
+  "thread": "synthetic-pretraining",
+  "claim": "In Baradad et al. 2021 the properties that predicted transfer were dataset diversity (recall, r=0.83 with accuracy) and similarity of the color distribution to natural images (r=-0.57 for color distance), while matching the 1/f power spectrum was only weakly correlated with accuracy.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2106.05963",
+  "title": "Learning to See by Looking at Noise (NeurIPS 2021)",
+  "year": "2021",
+  "confidence": "high",
+  "relevance": "For spectrogram transfer the analogue of 'color distribution' is the intensity/colormap statistics of Gravity Spy Q-transform images; the synthetic distribution should be rendered with the same colormap and value histogram, and should span a wide range of patterns (diversity) rather than a few shape families."
+ },
+ {
+  "thread": "synthetic-pretraining",
+  "claim": "Under a shared ResNet-50/MoCo-v2 protocol every synthetic dataset beats random initialization by a wide margin on ImageNet-1k linear probing: random init 4.36, Dead-leaves Mixed 20.00, FractalDB-1k 23.86, Shaders-21k 30.25, StyleGAN-Oriented 38.12, Shaders-21k+MixUp 44.83, versus Places365 55.59 and ImageNet-1k 67.50.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2211.16412",
+  "title": "Procedural Image Programs for Representation Learning (Baradad et al., NeurIPS 2022)",
+  "year": "2022",
+  "confidence": "high",
+  "relevance": "No published synthetic-pretraining result shows trained features losing to random features; HyperNet's v0.1-v0.3 finding that trained blocks never beat random is an outlier that implicates the objective and the narrow drawing distribution, not synthetic pretraining as such. Note these protocols all use a linear probe with real labels, unlike HyperNet's frozen one-reference retrieval."
+ },
+ {
+  "thread": "synthetic-pretraining",
+  "claim": "Shaders-21k transfer scales logarithmically with the number of distinct generative programs and is not saturated at 21k; the strongest per-program predictor of poor transfer is high intra-image self-similarity (LPIPS, r=0.46), and the worst StyleGAN latent walks 'collapsed to repetitive shapes, grayscale, or solid color' while the best were colorful and filled the canvas.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2211.16412",
+  "title": "Procedural Image Programs for Representation Learning (NeurIPS 2022)",
+  "year": "2022",
+  "confidence": "high",
+  "relevance": "HyperNet's shape-family renders (solid fills, simple backgrounds, repeated motifs) match the description of the lowest-performing programs; a v0.4 generator should be scored by gzip size and intra-image LPIPS self-similarity before training, and the number of independent pattern programs should be in the thousands."
+ },
+ {
+  "thread": "synthetic-pretraining",
+  "claim": "Supervised labels over synthetic programs help only in the mid regime (roughly 20 to 1000 programs); with 21k programs contrastive SimCLR (47.74) and SupCon (48.10) match while plain cross-entropy (40.3) falls behind, and MixUp between rendered images is what closes the gap to real data for the contrastive learner (S-21k 30.25 to 44.83 on ImageNet-1k).",
+  "url": "https://ar5iv.labs.arxiv.org/html/2211.16412",
+  "title": "Procedural Image Programs for Representation Learning (NeurIPS 2022)",
+  "year": "2022",
+  "confidence": "high",
+  "relevance": "HyperNet's family-classification head with a small number of families corresponds to the mid regime where labels help, but its InfoNCE positives are two renders of one program, so there is no cross-program mixing; MixUp-style compositing of several synthetic patterns into one image (which naturally produces overlapping glitch-like structures on a background) was the single largest lever in this paper."
+ },
+ {
+  "thread": "synthetic-pretraining",
+  "claim": "Shaders-21k+MixUp nearly matches real-image pretraining on VTAB Specialized (satellite/medical) tasks: 84.08 vs Places365 84.19 vs random init 54.30, with EuroSAT 92.72, Resisc45 83.68, Retinopathy 75.21 and Camelyon 84.72, and shader features beat ImageNet-1k features on dSprites orientation (18.33-19.01 vs 12.92).",
+  "url": "https://ar5iv.labs.arxiv.org/html/2211.16412",
+  "title": "Procedural Image Programs for Representation Learning (NeurIPS 2022)",
+  "year": "2022",
+  "confidence": "high",
+  "relevance": "Non-natural scientific imagery is exactly where synthetic pretraining comes closest to real pretraining, so the goal of beating random features on spectrograms is realistic in the literature; the gap in HyperNet is therefore in distribution and objective choice, not in the premise."
+ },
+ {
+  "thread": "synthetic-pretraining",
+  "claim": "In FractalDB the number of synthetic categories matters more than instances per category (16 to 1000 categories: +7.9 C10 / +16.0 C100; 16 to 1000 instances: +5.2 / +8.9), images must be rendered densely enough to form contours (patch rendering 92.9/73.6 vs point 87.4/66.1 on C10/C100), fill rate above ~20% hurts sharply (C100 72.3 at 0.10 vs 63.2 at 0.25), and color 'appears not to be strong'.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2101.08515",
+  "title": "Pre-training without Natural Images (Kataoka et al., ACCV 2020 / IJCV)",
+  "year": "2020",
+  "confidence": "high",
+  "relevance": "HyperNet's few shape families are the wrong axis of scale: the FDSL evidence says scale the number of distinct pattern types (hundreds to thousands) and keep each type's within-class variation modest; dense, textured, moderately sparse renders beat sparse flat shapes."
+ },
+ {
+  "thread": "synthetic-pretraining",
+  "claim": "Contour structure, not fill or color, carries the FDSL pretraining signal for ViTs: drawing background-colored lines over RCDB images to break contours dropped fine-tuning accuracy on C10/C100/Cars/Flowers from 95.5/79.4/78.4/96.4 to 46.2/22.1/1.1/8.8; with 21k classes ExFractalDB (82.7) and RCDB (82.4) beat ImageNet-21k (81.8) on ImageNet-1k fine-tuning of ViT-B.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2206.09132",
+  "title": "Replacing Labeled Real-image Datasets with Auto-generated Contours (Kataoka et al., CVPR 2022)",
+  "year": "2022",
+  "confidence": "medium",
+  "relevance": "HyperNet already hands the CNN Sobel edges as a fixed input channel, so a contour-only synthetic prior adds little; Gravity Spy glitches are soft-edged energy blobs, streaks and bands in noise, where the discriminative signal is intensity profile, orientation and periodicity rather than closed contours, so the RCDB/VisualAtom recipe is a poor fit for spectrograms."
+ },
+ {
+  "thread": "synthetic-pretraining",
+  "claim": "VisualAtom-21k (sinusoidal-contour classes) reaches 83.7% ImageNet-1k top-1 with ViT-B at 384px versus JFT-300M 84.2% and ImageNet-21k 83.0%, and its ablations show narrowing the contour frequency range [0,20] to [20,20]-style ranges lowers every downstream score; the authors conclude 'variety of contour shapes is a crucial factor'.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2303.01112",
+  "title": "Visual Atoms: Pre-training Vision Transformers with Sinusoidal Waves (Takashima et al., CVPR 2023)",
+  "year": "2023",
+  "confidence": "high",
+  "relevance": "Each VisualAtom class is a parameter DISTRIBUTION with per-image resampling of nuisance parameters, which is precisely the within-type variation the v15 scope review found missing from HyperNet's same-program positive pairs; v0.4 should define glitch-like types as parameter ranges and draw independent members."
+ },
+ {
+  "thread": "synthetic-pretraining",
+  "claim": "One synthetic image per category suffices when instances are replaced by augmentation: OFDB-1k (one fractal per class) fine-tunes to 84.0 vs lower FractalDB-1k, 85.3 with random-patch augmentation, and OFDB-21k (21k images) matches or exceeds ImageNet-21k (14M images) on ImageNet-1k; the ECCV 2024 follow-up shows a single fractal with parameter perturbations ('1p-frac') is on par with ImageNet-1k pretraining for full fine-tuning.",
+  "url": "https://arxiv.org/abs/2307.14710",
+  "title": "Pre-training Vision Transformers with Very Limited Synthesized Images (Nakamura et al., ICCV 2023); see also Scaling Backwards, ECCV 2024, https://arxiv.org/abs/2408.00677",
+  "year": "2023",
+  "confidence": "medium",
+  "relevance": "What transfers is the task of discriminating many classes under controlled augmentation, not the pixel realism or volume of the images; HyperNet's 755k-param CNN with contrastive same-program pairs does not pose a many-class discrimination problem of this kind, and these results are for fine-tuned ViTs, so they do not guarantee frozen-feature gains."
+ },
+ {
+  "thread": "synthetic-pretraining",
+  "claim": "For audio spectrograms, Formula-SED (harmonic stacks plus FIR-filtered uniform noise, parameter trajectories drawn from Gaussian processes, reverb, up to four mixed sources, multi-label classification of discretized synthesis parameters) pretrains a 1.1M-parameter CRNN to PSDS1 0.405 on DESED versus 0.352 from scratch and 0.387 with AudioSet-strong pretraining; scaling to 1M clips gives 0.420, and removing Mixup is the largest single augmentation loss (0.405 to 0.376).",
+  "url": "https://arxiv.org/html/2504.04428v1",
+  "title": "Formula-Supervised Sound Event Detection: Pre-Training Without Real Data (Shibata et al., 2025; newer than my training data, verify)",
+  "year": "2025",
+  "confidence": "high",
+  "relevance": "This is a working spectrogram-domain FDSL recipe at HyperNet's parameter scale: time-frequency primitives with GP-smoothed parameter curves (which produce the smooth blobs, bends and bands seen in Gravity Spy), noise with time-varying filtering, and an objective that classifies the generating parameters rather than matching two views of one clip."
+ },
+ {
+  "thread": "synthetic-pretraining",
+  "claim": "AudioPG's cumulative ablation shows which spectrogram primitives matter: sine-only pretraining gives 42.25% ESC-50, adding harmonics 69.25, adding ADSR dynamics 73.25, adding spectral damping plus noise bursts and background noise 82.00 (50-epoch protocol); the full model fine-tunes to 90.60 ESC-50 / 0.546 FSD50K mAP vs 54.00 / 0.398 from scratch, pretraining in under 20 minutes on one GPU with a 75%-mask log-Mel MAE.",
+  "url": "https://arxiv.org/html/2606.14791v1",
+  "title": "From Physics to Representation: Audio Learning with Synthetic Pre-training via Procedural Generation (AudioPG, 2026; newer than my training data, verify)",
+  "year": "2026",
+  "confidence": "high",
+  "relevance": "The biggest gain comes from noise and damping, i.e. a realistic noisy background and softened edges, exactly what HyperNet's clean flat drawings lack; multiple overlapping events per image also help. A v0.4 generator should composite 1-5 chirps/bands/blobs/bursts over a 1/f background at varied SNR."
+ },
+ {
+  "thread": "synthetic-pretraining",
+  "claim": "Procedural spectrogram data has far lower patch diversity and much higher temporal predictability than real audio (shared-codebook entropy: marginal 3.14 vs 6.70, temporal 0.715 vs 3.807 for FormulaBank vs AudioSet-28K), so masked-autoencoder pretraining on it needs low mask ratios (10-25%) where real audio prefers 50-75%; formula-class coverage drives FDSL gains while within-class rendering diversity drives MAE gains, and FormulaBank-pretrained AudioMAE lifts ESC-50 from 69.50 (scratch) to 86.25 and FSD50K mAP from 0.409 to 0.565.",
+  "url": "https://arxiv.org/html/2609.15067v1",
+  "title": "Rethinking Procedural Audio Pre-training: Source Scaling and Objective Adaptation (Peng et al., 2026; newer than my training data, verify)",
+  "year": "2026",
+  "confidence": "medium",
+  "relevance": "Hyperparameters inherited from natural-image recipes (augmentation strength, temperature, mask ratio) can be wrong for a low-entropy synthetic source; HyperNet's first-epoch information loss is consistent with an objective that is too easy on clean drawings. If v0.4 uses reconstruction or contrastive losses, their difficulty should be set from the synthetic source's own entropy, and class coverage and member diversity should be scaled as separate axes."
+ },
+ {
+  "thread": "synthetic-pretraining",
+  "claim": "When the downstream prior must handle noise rather than object identity, 1/f^alpha spectral noise is the best synthetic pretraining source and unstructured noise the worst: for implicit-neural-representation denoising on CelebA-HQ, Snp-Spectrum 27.6 dB PSNR vs Siren 28.3, Strainer (real data) 27.3, Snp-Uniform 23.0, Snp-Gaussian 23.8; dead leaves falls in between; on OASIS-MRI fitting, noise pretraining (79.3 dB) beats real-data pretraining (62.8-67.0) and random init (53.03).",
+  "url": "https://arxiv.org/html/2603.29034v1",
+  "title": "The Surprising Effectiveness of Noise Pretraining for Implicit Neural Representations (Vyas et al., CVPR 2026; newer than my training data, verify)",
+  "year": "2026",
+  "confidence": "medium",
+  "relevance": "Gravity Spy backgrounds are colored detector noise with a steep spectrum; a synthetic prior that includes 1/f^alpha backgrounds (with alpha sampled over a range) teaches the network what 'nothing' looks like, which is the first requirement for driving false alarms below the ~90 per 10,000 all current methods show."
+ },
+ {
+  "thread": "synthetic-pretraining",
+  "claim": "Formula-driven and fractal pretraining transfer to grayscale scientific/medical imagery at parity with ImageNet: fractal self-supervised pretraining matched or exceeded ImageNet pretraining for early-stage lung-cancer CT GTV segmentation (2025), and FDIF (signed-distance-function volumes, no real data, 2026) outperforms the prior formula-driven method on AMOS, ACDC and KiTS and is comparable to self-supervised pretraining on large real datasets.",
+  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12769625/",
+  "title": "Fractal-driven self-supervised learning enhances early-stage lung cancer GTV segmentation (2025); FDIF listing at https://www.catalyzex.com/paper/fdif-formula-driven-supervised-learning-with (2026); both newer than my training data, verify",
+  "year": "2025",
+  "confidence": "low",
+  "relevance": "Supports the project premise that synthetic-only pretraining can work on non-photographic grayscale data, but all these results use fine-tuning with real labels; none tests frozen features with one labeled reference, which remains HyperNet's unaddressed regime."
+ },
+ {
+  "thread": "random-features",
+  "claim": "Certain convolutional pooling architectures are inherently frequency selective and translation invariant with random weights, and a large fraction of the performance of state-of-the-art feature-learning methods is attributable to the architecture alone, so random-weight performance can rank architectures without training.",
+  "url": "https://mlanthology.org/icml/2011/saxe2011icml-random",
+  "title": "On Random Weights and Unsupervised Feature Learning (Saxe, Koh, Chen, Bhand, Suresh, Ng)",
+  "year": "2011",
+  "confidence": "high",
+  "relevance": "Explains why HyperNet's random fine/middle/coarse blocks on a 6x6 grid score 0.51-0.54 DEV AP: the conv+pool structure plus fixed Sobel/contrast channels already gives band-pass, shift-tolerant features that spectrogram glitches need. The 0.388 random vs 0.219 trained result is the Saxe effect, not a bug."
+ },
+ {
+  "thread": "random-features",
+  "claim": "On audio spectrograms, randomly weighted CNN features with a linear/SVM readout beat MFCC baselines and reach a large fraction of trained-CNN accuracy: GTZAN 59.65% (random VGG+SVM) vs 53.44% MFCC vs 82.1% trained; Extended Ballroom 89.82% vs 63.25% vs 93.7%; UrbanSound8K 70.74% vs 65.49% vs 73%.",
+  "url": "https://ar5iv.labs.arxiv.org/html/1805.00237",
+  "title": "Randomly weighted CNNs for (music) audio classification (Pons, Serra)",
+  "year": "2019",
+  "confidence": "high",
+  "relevance": "Direct precedent that untrained CNN features are a strong spectrogram baseline. HyperNet's v0.2/v0.3 random-readout numbers are consistent with this literature; the README can cite it to show the random baseline is expected, not a protocol failure."
+ },
+ {
+  "thread": "random-features",
+  "claim": "A randomly weighted Wide ResNet-50 contains an untrained subnetwork (30% of weights, Signed Kaiming Constant init) that reaches 73.3% ImageNet top-1, matching a trained ResNet-34; random ResNet-101 subnetwork reaches 72.3%; the random distribution matters (Kaiming Normal 67.95% vs Signed Kaiming Constant 73.3% for WRN-50).",
+  "url": "https://ar5iv.labs.arxiv.org/html/1911.13299",
+  "title": "What's Hidden in a Randomly Weighted Neural Network? (Ramanujan et al., CVPR 2020)",
+  "year": "2020",
+  "confidence": "high",
+  "relevance": "Random weights contain enough diverse filters that selection alone (not weight change) can solve hard tasks; the choice of init distribution shifts results by 5-7 points. For v0.4: try several init seeds/distributions for the random readout and treat the seed as a hyperparameter selected on DEV only, since random-feature quality is not a single number."
+ },
+ {
+  "thread": "random-features",
+  "claim": "Deep networks have a critical period: Fisher information between layers rises rapidly in the first epochs then decreases ('Information Plasticity'), strong connections formed early 'do not appear to change during additional training', and the initial learning transient largely determines the final outcome; deficits that preserve low-level image statistics (e.g. vertical flip) cause no lasting damage.",
+  "url": "https://arxiv.org/abs/1711.08856",
+  "title": "Critical Learning Periods in Deep Networks (Achille, Rovere, Soatto)",
+  "year": "2017/2019",
+  "confidence": "high",
+  "relevance": "Matches HyperNet's observation that final-embedding AP falls from 0.432 to 0.17-0.22 after epoch 1 and never recovers in deeper blocks (only run01's fine block recovers). The first epoch commits the middle/coarse blocks to the synthetic drawing statistics. Implication: any fix must act at epoch 0 (data distribution, objective), not later fine-tuning."
+ },
+ {
+  "thread": "random-features",
+  "claim": "Most of the structural change in a network happens in the earliest iterations/epochs: weight distributions become highly non-independent after only a few hundred iterations, networks are not robust to re-randomizing weights while keeping signs, and blurred inputs or a self-supervised auxiliary task reproduce the same early changes without labels (labels only speed it up).",
+  "url": "https://arxiv.org/abs/2002.10365",
+  "title": "The Early Phase of Neural Network Training (Frankle, Schwab, Morcos)",
+  "year": "2020",
+  "confidence": "high",
+  "relevance": "Confirms that a label-free contrastive objective is sufficient to cause the early irreversible change HyperNet sees. HyperNet's 2,688 steps per run is well past the few-hundred-iteration window, so logging per-layer DEV AP every ~50 steps during epoch 1 would locate exactly when spectrogram information is lost."
+ },
+ {
+  "thread": "random-features",
+  "claim": "In sufficiently deep networks the early layers build linearly separable features while the later layers ('the tunnel') compress representations, add little in-distribution, degrade out-of-distribution generalization, and this tunnel appears early in training; OOD probe performance tracks the numerical rank of the representation, and the last layer before the tunnel is the best place for a linear probe on external data.",
+  "url": "https://arxiv.org/abs/2305.19753",
+  "title": "The Tunnel Effect: Building Data Representations in Deep Neural Networks (Masarczyk et al., NeurIPS 2023)",
+  "year": "2023",
+  "confidence": "high",
+  "relevance": "The closest published analogue of HyperNet's depth-ordered damage (stem OK, fine -0.12, middle -0.20, coarse -0.26). For v0.4: measure effective rank of each block's features on DEV spectrograms at epoch 0/1/12; if rank collapses in fine/middle/coarse, the tunnel-effect diagnosis is confirmed and the fix is to keep the pre-tunnel readout and/or reduce depth or compression pressure."
+ },
+ {
+  "thread": "random-features",
+  "claim": "The tunnel effect is not universal: training on high-resolution datasets with many classes greatly reduces representation compression in deep layers and improves OOD transferability; the effect is tied to intermediate neural collapse and depends on architecture, data, resolution and augmentation.",
+  "url": "https://arxiv.org/abs/2405.15018",
+  "title": "What Variables Affect Out-of-Distribution Generalization in Pretrained Models? (Harun et al.)",
+  "year": "2024",
+  "confidence": "medium",
+  "relevance": "HyperNet trains at 96 px on a limited number of synthetic families per run with a family-classification head, which is the regime (low resolution, few effective classes, low diversity) where compression and OOD loss are worst. Suggests v0.4 variables: many more families (v15's million-family curriculum), higher render resolution, and removing the family-classification head."
+ },
+ {
+  "thread": "random-features",
+  "claim": "Contrastive learning exhibits dimensional collapse (embeddings occupy a low-dimensional subspace), driven by strong augmentation along feature dimensions and by implicit regularization in over-parameterized projectors; removing the trainable projector and feeding a subvector of the representation to the loss (DirectCLR) outperforms SimCLR with a linear projector on ImageNet.",
+  "url": "https://arxiv.org/abs/2110.09348",
+  "title": "Understanding Dimensional Collapse in Contrastive Self-supervised Learning (Jing, Vincent, LeCun, Tian, ICLR 2022)",
+  "year": "2022",
+  "confidence": "high",
+  "relevance": "HyperNet's InfoNCE on global embeddings plus a VICReg-style variance/covariance term (part_encoder_v2.py, weight 5 on variance, 1 on covariance) is applied to the 128-D 'raw' projection, so it protects the embedding's rank but not the rank of the fine/middle/coarse feature maps where the damage is. v0.4 could apply the variance/covariance penalty to pooled block features, or report per-block singular-value spectra as a diagnostic."
+ },
+ {
+  "thread": "random-features",
+  "claim": "Contrastive models become invariant to the augmentations they are trained with, these learned invariances strongly affect downstream performance, and different downstream tasks benefit from opposite (in)variances, so the standard augmentation recipe causes performance loss on some tasks; fusing representations with complementary invariances transfers broadly.",
+  "url": "https://arxiv.org/abs/2111.11398",
+  "title": "Why Do Self-Supervised Models Transfer? Investigating the Impact of Invariance on Downstream Tasks (Ericsson, Gouk, Hospedales)",
+  "year": "2021",
+  "confidence": "high",
+  "relevance": "Spectrograms are not invariant to vertical shift (frequency), affine warps or flips; HyperNet's two renders differ by exactly such transforms, so the network learns to discard the cues that separate glitch classes (e.g. Whistle vs Scattered Light differ by frequency location and slope). This is the mechanism behind 'trained features are more position sensitive at large shifts but worse at ranking'. v0.4: audit the augmentation set against the physics of glitch classes and keep an early-layer (less invariant) readout in a fused descriptor."
+ },
+ {
+  "thread": "random-features",
+  "claim": "Contrastive pretraining on purely synthetic/noise images transfers to real data in proportion to the diversity and structural statistics of the generator, not its realism: on ImageNet-100 linear probe (AlexNet) random CNN 0.21, FractalDB 0.33, dead-leaves textures 0.41, StyleGAN oriented 0.43, Places 0.55, ImageNet-100 0.63; recall/log-volume diversity correlate with accuracy (r about 0.79-0.83), colour similarity to natural images correlates negatively (r = -0.57), and perceptual variation between the two crops of a positive pair has a sweet spot near 0.37.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2106.05963",
+  "title": "Learning to See by Looking at Noise (Baradad, Wulff, Wang, Isola, Torralba, NeurIPS 2021)",
+  "year": "2021",
+  "confidence": "high",
+  "relevance": "The strongest positive precedent for HyperNet's premise: synthetic-only contrastive pretraining CAN beat random features by a wide margin, but only when the synthetic distribution is diverse and has oriented, wavelet-like, textured statistics. HyperNet's shape-family drawings (clean strokes, masks) are closer to the low-diversity end. v0.4 should add dead-leaves/texture/noise-background generators and tune positive-pair dissimilarity, and report the diversity metrics the paper uses."
+ },
+ {
+  "thread": "random-features",
+  "claim": "Formula-driven fractal pretraining (no natural images) improves fine-tuning over scratch on most benchmarks (CIFAR-10 93.4 vs 87.6; CIFAR-100 75.7 vs 62.7; Omniglot 20.9 vs 1.1) but is worse than scratch on ImageNet-1k (70.3 vs 76.1), and fully randomized labels make training fail entirely; well-defined, balanced categories are required.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2101.08515",
+  "title": "Pre-training without Natural Images (Kataoka et al.)",
+  "year": "2020/2021",
+  "confidence": "high",
+  "relevance": "Shows synthetic pretraining can hurt relative to scratch on some targets (IN1k) while helping others, and that the category structure of the synthetic data is what carries the benefit. HyperNet's family-classification loss over procedural programs is a FractalDB-style objective; its category definition (one program instance = one family) is the weak point the v15 scope review names."
+ },
+ {
+  "thread": "random-features",
+  "claim": "Deep ReLU networks learn low-frequency components of a target first regardless of amplitude, and high-frequency components are significantly less robust to parameter perturbation; the deep image prior's convolutional architecture fits low-frequency structured content before noise, so an untrained conv generator is already a low-level image prior and early stopping acts as a low-pass filter.",
+  "url": "https://ar5iv.labs.arxiv.org/html/1806.08734",
+  "title": "On the Spectral Bias of Neural Networks (Rahaman et al., ICML 2019); see also The Spectral Bias of the Deep Image Prior https://arxiv.org/abs/1912.08905 and Deep Image Prior https://arxiv.org/abs/1711.10925",
+  "year": "2019",
+  "confidence": "medium",
+  "relevance": "Explains why the random network is a good spectrogram prior (stationary-GP-like, band-pass) but does NOT explain the depth gradient of HyperNet's damage; spectral bias would hurt all layers roughly alike. Treat spectral bias as the reason random is strong, and the tunnel/invariance mechanisms as the reason trained is weak. Low confidence that fine-tuning schedule tweaks (early stopping) fix it, since the loss is already present after epoch 1."
+ },
+ {
+  "thread": "random-features",
+  "claim": "Joint time-frequency scattering (a convolutional network with fixed wavelet filters and no learning) beats delta-MFCC and time scattering on three audio tasks and matches or beats CNNs on two: TIMIT phone error 15.7% (JTFS) vs 17.3% time scattering vs 18.3% MFCC vs 11.9% CNN; Medley-solos-DB instrument error 22.0% vs 38.0% vs 39.3% vs 26.0% (spiral CNN); DCASE2013 scene error 5% vs 12% vs 42% vs 7% (L3 network).",
+  "url": "https://ar5iv.labs.arxiv.org/html/1807.08869",
+  "title": "Joint Time-Frequency Scattering (Anden, Lostanlen, Mallat; IEEE TSP 2019)",
+  "year": "2019",
+  "confidence": "high",
+  "relevance": "A principled fixed extractor (Kymatio implements it, arXiv 1812.11214) that encodes exactly the chirp/modulation structure glitch classes differ by. A 2-D scattering (J=2-3, L=8) on the 140x170 crop is a natural v0.4 control alongside raw pixels and the random readout; if it beats 0.572 mean AP, the bar for any learned feature rises."
+ },
+ {
+  "thread": "random-features",
+  "claim": "Applied directly to Gravity Spy v1.1.0 spectrogram data (21 usable classes, 70/15/15 split, random-forest classifier), Kymatio wavelet scattering (J=7, 7 angles, orders 1+2, Morlet) gives 88.57% test accuracy vs 87.41% for the Q-transform image and 91.03% when both are merged; WST on GPU is about 3.35x faster than the GWpy Q-transform (0.063 s vs 0.211 s per sample).",
+  "url": "https://arxiv.org/html/2411.19122v2",
+  "title": "Wavelet Scattering Transform for Gravitational Waves Analysis. An Application to Glitch Characterization (Licciardi, Carbone, Rondoni, Nagar)",
+  "year": "2024/2025",
+  "confidence": "high",
+  "relevance": "The only paper found that applies a scattering transform to the same Gravity Spy spectrograms. It is a supervised 21-class result, not one-reference retrieval, so numbers are not comparable to mean AP, but it establishes WST as a strong, fixed, physics-motivated feature on this exact data. v0.4 should add a WST (first-order, J around 3-4 on the 140x170 image, or on the Q-transform image) readout under the frozen one-reference protocol as a baseline, and can reuse their J/angle settings."
+ },
+ {
+  "thread": "random-features",
+  "claim": "First-layer conv features are general (Gabor-like filters, colour blobs) across datasets, while deeper layers become task-specific; transferability drops with task distance, but transferring from even distant tasks still beat random filters in the deep AlexNet/ImageNet setting, whereas earlier small-network studies found random filters nearly as good as learned ones.",
+  "url": "https://arxiv.org/abs/1411.1792",
+  "title": "How transferable are features in deep neural networks? (Yosinski, Clune, Bengio, Lipson, NeurIPS 2014)",
+  "year": "2014",
+  "confidence": "medium",
+  "relevance": "Explains the stem's immunity (+0.004): it sits on fixed Sobel/contrast channels and learns generic edge/blob detectors that any image task reuses. It also warns that random beating trained is the expected regime for small networks and distant domains; HyperNet (755k params, drawings to spectrograms) is squarely that regime, so the comparison to make is random vs trained-on-diverse-data, not random vs the current curriculum."
+ },
+ {
+  "thread": "fresh-data",
+  "claim": "Zenodo 5649212 (v1.0.0, CC BY 4.0, 742.2 MB) holds Gravity Spy ML classifications for every Omicron trigger with SNR>7.5 and peak frequency 10-2048 Hz from O1, O2, O3a and O3b, as eight CSVs (H1/L1 x run; L1_O3b.csv is 216.1 MB, L1_O3a.csv 142.3 MB, H1_O3b.csv 111.6 MB) with columns event_time, peak_time, peak_time_ns, start_time, duration, peak_frequency, snr, gravityspy_id, 22 per-class confidences, ml_label, ml_confidence and url1-url4 (0.5/1/2/4 s omega scans).",
+  "url": "https://zenodo.org/records/5649212",
+  "title": "Gravity Spy Machine Learning Classifications of LIGO Glitches from Observing Runs O1, O2, O3a, and O3b",
+  "year": "2021 (modified 2023)",
+  "confidence": "high",
+  "relevance": "This is the only public image-addressable release larger than v1.1. GPS times permit time grouping; ml_confidence permits a purity cut; url3 is the 2-second omega scan HyperNet already uses. The O3 CSVs alone give a 100k+ haystack."
+ },
+ {
+  "thread": "fresh-data",
+  "claim": "Glanzer et al. 2023 (the paper behind 5649212) classified 233,981 glitches from LIGO Hanford and 379,805 from LIGO Livingston through the end of O3, about 614k rows in total.",
+  "url": "https://arxiv.org/abs/2208.12849",
+  "title": "Data quality up to the third observing run of Advanced LIGO: Gravity Spy glitch classifications",
+  "year": "2023",
+  "confidence": "high",
+  "relevance": "Sets the upper bound of the haystack (~614k events, ~320k in O3) before any confidence cut."
+ },
+ {
+  "thread": "fresh-data",
+  "claim": "In O3, at the fiducial 90% ML confidence, the rare classes have very few events: Chirp 8 (H1) + 12 (L1), Wandering Line 10 + 28, Helix 15 + 37, Paired Doves 29 + 277, 1400 Ripples 85 + 2,384; at 95% the numbers fall to Chirp 5+8, Wandering Line 5+20, Helix 9+16, Paired Doves 12+130, 1400 Ripples 49+1,479.",
+  "url": "https://arxiv.org/html/2208.12849v2",
+  "title": "Data quality up to the third observing run of Advanced LIGO: Gravity Spy glitch classifications (full text)",
+  "year": "2023",
+  "confidence": "high",
+  "relevance": "A fresh O3 test set can be stratified for Paired Doves and 1400 Ripples (mostly from L1) but Chirp and Wandering Line will have ~20-40 positives at most even using both detectors and both O3 halves; plan intervals accordingly or treat them as 'few-positive' targets. These counts are machine labels, not human-verified."
+ },
+ {
+  "thread": "fresh-data",
+  "claim": "Zenodo 5911227 (CC BY 4.0, one 1.1 GB HDF5, key 'image_db') gives, for every O1-O3b glitch that received at least one registered-volunteer classification, the 22 ML scores, ml_label, ml_confidence, gravityspy_id, Nclassifications, final_score, final_label and a 'retired' flag computed with min 2 volunteer classifications, max 50, and >0.9 class posterior weighted by ML scores.",
+  "url": "https://zenodo.org/records/5911227",
+  "title": "Gravity Spy Volunteer Classifications of LIGO Glitches from Observing Runs O1, O2, O3a, and O3b",
+  "year": "2022",
+  "confidence": "high",
+  "relevance": "Joining this on gravityspy_id with the 5649212 CSVs yields human+machine agreed labels for a fresh TEST set (require retired==1 and final_label==ml_label and ml_confidence>=0.95). It contains no image URLs or times, so the CSVs remain necessary."
+ },
+ {
+  "thread": "fresh-data",
+  "claim": "gwpy's GravitySpyTable.download(download_path='download', parallel=1, download_durs=(0.5,1.0,2.0,4.0), training_set=False, labelled_samples=False) fetches the PNGs named in url1-url4 (skipping rows where url1 is empty or '?') and saves them as {ifo}_{gravityspy_id}_spectrogram_{duration}.png; the older keyword nproc has been renamed parallel; GravitySpyTable.search() queries https://gravityspytools.ciera.northwestern.edu/search/similarity_search_restful_API/ with database 'similarity_index_o3' and era keys only up to O3b; no rate limit is documented anywhere, only a 30 s timeout.",
+  "url": "https://raw.githubusercontent.com/gwpy/gwpy/main/gwpy/table/gravityspy.py",
+  "title": "gwpy/table/gravityspy.py (GravitySpyTable source) and gwpy.readthedocs.io reference",
+  "year": "2025-2026 (current main)",
+  "confidence": "high",
+  "relevance": "Download command: t=GravitySpyTable.read('L1_O3b.csv'); t[sel][:N].download(download_path='o3b_png', download_durs=[2.0], parallel=2). Use download_durs=[2.0] to cut volume 4x. Keep parallel small and batch, as the Zenodo page requests. The similarity search is a public trained-feature nearest-neighbour baseline HyperNet can be compared against, but only for O1-O3b ids."
+ },
+ {
+  "thread": "fresh-data",
+  "claim": "Gravity Spy omega-scan PNGs are 800x600 RGB with a 580x675 plot region; the v1.1 HDF5 stores a 140x170 crop of that region (crop x=[66,532], y=[105,671]).",
+  "url": "https://iopscience.iop.org/article/10.1088/1361-6382/adf58b",
+  "title": "Advancing glitch classification in Gravity Spy: multi-view fusion with attention-based machine learning for Advanced LIGO's fourth observing run",
+  "year": "2025",
+  "confidence": "high",
+  "relevance": "Images downloaded from 5649212 URLs are the same rendering as v1.1, so the existing fixed crop and 140x170 downsample (or the v15 native-crop tiling) transfer without a new preprocessing protocol."
+ },
+ {
+  "thread": "fresh-data",
+  "claim": "Wu et al. 2025 (O4 Gravity Spy classifier) used 8,439/1,687/3,538 train/val/test O3 glitches in 23 classes (consensus confidence >0.9, 84.5% of data) and only 2,267 early-O4 glitches (24 May - 19 Sep 2023) for confidence-distribution checks; their per-class table shows Wandering Line 25/8/25, Chirp 38/10/17, Helix 46/10/71, Paired Doves 124/31/146; the paper says improved O4 training sets are future work and points only to the existing Zenodo repositories.",
+  "url": "https://arxiv.org/html/2401.12913v1",
+  "title": "Advancing Glitch Classification in Gravity Spy: Multi-view Fusion with Attention-based Machine Learning for Advanced LIGO's Fourth Observing Run (preprint)",
+  "year": "2024 preprint / 2025 CQG (may be newer than training data)",
+  "confidence": "high",
+  "relevance": "Confirms the O3 labelled set with 23 classes exists only inside the collaboration (not released as a split), and that no O4 labelled image set is public. Also a useful reference that supervised deep models reach only 0.74 accuracy on Wandering Line, so one-reference results on it will be noisy."
+ },
+ {
+  "thread": "fresh-data",
+  "claim": "Zenodo 13904422 (v1, published Nov 2024, CC BY-NC-ND 4.0, 147 MB classifications.csv.bz2) contains individual volunteer classifications through 20 July 2024 with only Classification_id, Subject_id, User_hash, Anonymous_user, Workflow, Workflow_version, Timestamp and Classification; it adds 4 volunteer-only labels (70HZLINE, HIGHFREQUENCYBURST, LOWFREQUENCYBLIP, PIZZICATO) and CROWN (=Fast_Scattering), and lists 8 workflows (Level 1 with 3 classes to Level 6 with 27 classes).",
+  "url": "https://zenodo.org/records/13904422",
+  "title": "Gravity Spy Volunteer Classifications of LIGO Glitches",
+  "year": "2024-2025 (newer than training data; verify)",
+  "confidence": "high",
+  "relevance": "Although it extends into O4 time, it has no GPS times, no gravityspy_id and no image URLs, so subjects cannot be fetched or time-grouped without a Zooniverse subject export the team does not have; and the ND licence forbids redistributing derived label tables. Not usable as a fresh test set on its own."
+ },
+ {
+  "thread": "fresh-data",
+  "claim": "No Gravity Spy O4 image or ML-label dataset is on Zenodo as of 2026-11-02; Zenodo searches for 'gravity spy' return only third-party 2026 records (OmegaNeuron CSVs, gwav pipeline), and the Gravity Spy blog's 2024-2026 posts mention the end of O4 (18 Nov 2025) and GWTC-4/5 releases but no new glitch dataset; a 2026 DANTE preprint cites a Zenodo DOI for an O4a dataset (10.5281/zenodo.10657991) that resolves to an unrelated record.",
+  "url": "https://zenodo.org/api/records?q=gravityspy&size=25",
+  "title": "Zenodo search results for 'gravityspy'; blog.gravityspy.org; arXiv 2606.25702 (DANTE)",
+  "year": "2026 (newer than training data)",
+  "confidence": "medium",
+  "relevance": "Do not plan on a labelled O4 Gravity Spy release; O3a/O3b from 5649212 is the freshest labelled material. Treat the DANTE DOI as unverified."
+ },
+ {
+  "thread": "fresh-data",
+  "claim": "The v1.1 training set (Zenodo 1486046 / concept 1476551, CC BY 4.0, 8.6 GB) has 7,966 labelled glitches in 22 classes split 5,587/1,200/1,179 by sample_type, of which 134 images (97/18/19) are blank at the floor value 0.0832, including 8 of 27 Paired Doves and 108 of 447 Extremely Loud; the original v1.0 (1476156) had 8,583 images.",
+  "url": "https://github.com/Cavey03/Gravity-Spy-Glitch-Spectrogram-Classification",
+  "title": "Gravity-Spy-Glitch-Spectrogram-Classification README (third-party analysis of v1.1)",
+  "year": "2026 (third-party; verify counts locally)",
+  "confidence": "medium",
+  "relevance": "Explains the 75 'exactly constant RGB plots' v15 excluded and shows v1.1 is small (7,966) and now exhausted after three TEST uses plus v15's 4,044-event draw; the blank-image rule must be re-applied to 5649212 downloads. Note the v1.1 set was built from O1/O2 data (2018), so O3 rows are disjoint from it."
+ },
+ {
+  "thread": "fresh-data",
+  "claim": "Glanzer et al. do not deduplicate triggers; the same physical event can appear as several rows (three O3b candidates had two L1 triggers, S190524q had four No_Glitch triggers within a \u00b15 s window), and classes such as Repeating Blips and Helix occur in groups, so a fresh test set must cluster rows by event_time before sampling.",
+  "url": "https://arxiv.org/html/2208.12849v2",
+  "title": "Data quality up to the third observing run of Advanced LIGO: Gravity Spy glitch classifications (full text)",
+  "year": "2023",
+  "confidence": "high",
+  "relevance": "Supports keeping v15's time-group bootstrap; recommend grouping rows within e.g. 4 s (the longest omega-scan window) per detector and sampling one row per group for TEST, while leaving all rows in the haystack."
+ },
+ {
+  "thread": "fresh-data",
+  "claim": "GWOSC released O4a public data (May 2023 - Jan 2024, with engineering-run periods) on 26 Aug 2025, including calibrated strain and 'auxiliary channels used for noise subtraction and detector characterization'; O3 auxiliary data (about 40 channels per LIGO detector, plus 16 extra AUX_CLN channels) are served only through NDS2 (nds.gwosc.org) and OSDF, not website download.",
+  "url": "https://arxiv.org/abs/2508.18079",
+  "title": "Open Data from LIGO, Virgo, and KAGRA through the First Part of the Fourth Observing Run",
+  "year": "2025-2026 (newer than training data)",
+  "confidence": "medium",
+  "relevance": "A truly unseen, unlabeled O4a haystack can be rendered locally: fetch strain with gwpy TimeSeries.fetch_open_data('L1', t0, t1), run Omicron or a simple excess-power trigger, and render 2-s q-transform images in Gravity Spy style. No labels and a rendering style mismatch versus Panoptes PNGs, so use it for discovery, not for mAP. Auxiliary channels enable a multi-channel reference later."
+ },
+ {
+  "thread": "fresh-data",
+  "claim": "Gravity Spy 2.0 (NSF 2106865, live since 2023) shows volunteers glitches with auxiliary channels and collections; its datasets are available only 'from the corresponding author on reasonable request'; proprietary O4 data are available to LVK scientists; the ML training set after O3 is about 10^4 glitches in 23 classes, and the paper states Chirp and Wandering Line have few training samples.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2308.15530",
+  "title": "Gravity Spy: Lessons Learned and a Path Forward",
+  "year": "2023",
+  "confidence": "high",
+  "relevance": "If the team wants O4 labels or Gravity Spy 2.0 collections, the route is an email to the Gravity Spy team (Zevin/Coughlin), not a download; budget time for that or plan without it."
+ },
+ {
+  "thread": "fresh-data",
+  "claim": "Zooniverse subject and classification exports (CSV with JSON metadata columns, one row per subject or classification) are generated from the Data Export tab of a project's Lab page, i.e. only by project owners/collaborators; the public Gravity Spy project pages publish no subject export.",
+  "url": "https://help.zooniverse.org/next-steps/data-exports/",
+  "title": "Zooniverse Help: Data Exports",
+  "year": "n.d.",
+  "confidence": "high",
+  "relevance": "Rules out Zooniverse exports as a self-serve source of O4 images or of the subject_id-to-time mapping needed to use Zenodo 13904422."
+ },
+ {
+  "thread": "objectives-for-transfer",
+  "claim": "Under contrastive (not supervised) loss, a few easy-to-learn shared bits between the two views suppress learning of other, harder features, and augmentation is the only lever current methods have against this.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2011.02803",
+  "title": "Intriguing Properties of Contrastive Losses (Chen & Li, NeurIPS 2021)",
+  "year": "2021",
+  "confidence": "high",
+  "relevance": "HyperNet's two views share the exact program geometry, an easy identity signal. This predicts the observed collapse of glitch-relevant mid-level features in epoch 1 while the stem survives. The fix is to remove the easy shared feature (independent family members as positives), not to add more augmentation."
+ },
+ {
+  "thread": "objectives-for-transfer",
+  "claim": "Using positives drawn from OTHER instances (nearest neighbors in a support set) instead of two augmentations of one image raised ImageNet linear accuracy from 71.7% to 75.6%, beat supervised ImageNet on 8 of 12 transfer datasets, and reduced augmentation dependence to a 2.1% relative drop with random crops only.",
+  "url": "https://arxiv.org/abs/2104.14548",
+  "title": "With a Little Help from My Friends: Nearest-Neighbor Contrastive Learning of Visual Representations (Dwibedi et al., ICCV 2021)",
+  "year": "2021",
+  "confidence": "high",
+  "relevance": "Direct evidence that cross-instance positives improve transfer and let you drop augmentations that are unsafe on spectrograms. With a generator, HyperNet can do better than NNCLR: sample true independent family members instead of estimating neighbors."
+ },
+ {
+  "thread": "objectives-for-transfer",
+  "claim": "Supervised contrastive learning with many positives per anchor is more stable to augmentation and optimizer choice than cross-entropy and improves robustness to natural corruptions.",
+  "url": "https://arxiv.org/abs/2004.11362",
+  "title": "Supervised Contrastive Learning (Khosla et al., NeurIPS 2020)",
+  "year": "2020",
+  "confidence": "medium",
+  "relevance": "SupCon over family labels is the natural replacement for HyperNet's one-positive InfoNCE: the batch contains K independently rendered members per family and all K-1 are positives. Its reduced sensitivity to augmentation matters because HyperNet should not add crop/jitter."
+ },
+ {
+  "thread": "objectives-for-transfer",
+  "claim": "In cross-domain few-shot transfer, SupCon features beat cross-entropy and self-supervised MoCo-style features (5-shot mean over 12 datasets: CE 60.01, SelfSupCon 61.23, SupCon 62.79, CE+SelfSupCon 63.70), and contrastive models keep more low/mid-level information in their final layers (final-vs-initial stage CKA: CE 0.10 vs SupCon 0.12; final-stage CKA CE vs SelfSupCon 0.47).",
+  "url": "https://ar5iv.labs.arxiv.org/html/2103.13517",
+  "title": "A Broad Study on the Transferability of Visual Representations with Contrastive Learning (Islam et al., ICCV 2021)",
+  "year": "2021",
+  "confidence": "high",
+  "relevance": "Combining family-label SupCon with an instance term is the best-transferring recipe in this study; also warns that in-distribution synthetic validation accuracy will not predict Gravity Spy transfer, so DEV probes on real spectrograms must stay the selection signal."
+ },
+ {
+  "thread": "objectives-for-transfer",
+  "claim": "For one-shot transfer, a plain supervised embedding on base classes plus a simple classifier beats Prototypical Networks and matches MetaOptNet, and self-supervised (MoCo) embeddings are a few points worse than supervised ones from the same backbone.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2003.11539",
+  "title": "Rethinking Few-Shot Image Classification: a Good Embedding Is All You Need? (Tian et al., ECCV 2020)",
+  "year": "2020",
+  "confidence": "high",
+  "relevance": "Supports making the family-classification head (over many independently-sampled families) the primary objective rather than an auxiliary; episodic/prototypical training is not needed. HyperNet's existing 'grammar' heads classify only 4 factors of one program, not independent members of thousands of families."
+ },
+ {
+  "thread": "objectives-for-transfer",
+  "claim": "Episodic training is unnecessary for Matching and Prototypical Networks; non-episodic (standard batch) counterparts are simpler and improve accuracy on multiple few-shot datasets.",
+  "url": "https://papers.nips.cc/paper/2021/hash/cdfa4c42f465a5a66871587c69fcfa34-Abstract.html",
+  "title": "On Episodes, Prototypical Networks, and Few-Shot Learning (Laenen & Bertinetto, NeurIPS 2021)",
+  "year": "2021",
+  "confidence": "medium",
+  "relevance": "Do not build a prototypical/episodic trainer for v0.4; a nearest-class-mean readout on top of a batch-trained family embedding is the evidence-backed choice."
+ },
+ {
+  "thread": "objectives-for-transfer",
+  "claim": "On a small ResNet-18 trained from scratch on Tiny-ImageNet, VICReg (variance/covariance regularization) is the most augmentation-sensitive SSL method: 18.1% top-1 with weak augmentations vs 37.5% with strong, while BYOL (39.4 vs 40.1), SimCLR (39.5 vs 41.9) and SimSiam (45.6 vs 39.7) barely depend on augmentation strength.",
+  "url": "https://arxiv.org/html/2310.02903",
+  "title": "FroSSL: Frobenius Norm Minimization for Efficient Multiview Self-Supervised Learning",
+  "year": "2023",
+  "confidence": "medium",
+  "relevance": "HyperNet's loss carries a 5x variance + covariance term with effectively weak view differences (two renders). This is the regime where VICReg-style terms perform worst on a small net; reduce or replace that term and lean on family-label positives instead. DINO is also weak at this scale, so do not switch to DINO."
+ },
+ {
+  "thread": "objectives-for-transfer",
+  "claim": "Self-supervised features win for few-shot transfer only when the base dataset is large; with small base sets (Caltech-256, 20% of miniImageNet) they are overtaken by a supervised few-shot baseline, i.e., supervised (labelled) features are more robust to dataset size.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2010.02430",
+  "title": "Shot in the Dark: Few-Shot Learning with No Base-Class Labels (Chen et al.)",
+  "year": "2020",
+  "confidence": "medium",
+  "relevance": "HyperNet has free, exact family labels; the evidence says to use them as the main signal rather than relying on an instance-discrimination term, especially given the small 755k-parameter model and limited effective diversity."
+ },
+ {
+  "thread": "objectives-for-transfer",
+  "claim": "Contrastive pretraining on purely synthetic/noise images with MoCo v2 reaches 60.66% ImageNet-100 linear top-1 (4-Mixed), far above untrained-CNN features (10.84%) but far below real-image pretraining (ImageNet-1K 86.12%, Places 76.00%); diversity, not realism, is the key data property, and there is a sweet spot of perceptual variation.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2106.05963",
+  "title": "Learning to See by Looking at Noise (Baradad et al., NeurIPS 2021)",
+  "year": "2021",
+  "confidence": "high",
+  "relevance": "Synthetic-only pretraining CAN beat random features by a wide margin on natural images, but it required a ResNet-50, strong crops, and high-diversity generators (dead-leaves occlusion, spectrum/wavelet statistics). HyperNet's 'shape family' drawings sit near the low-diversity end (Dead leaves-Shapes 38.34). Add spectrum/texture-statistics and noise-process families that look like time-frequency energy, and measure diversity."
+ },
+ {
+  "thread": "objectives-for-transfer",
+  "claim": "Scaling procedural generators to 21,000 short programs (executed with OpenGL) reduces the gap between real-image and procedural pretraining by 38%.",
+  "url": "https://arxiv.org/abs/2211.16412",
+  "title": "Procedural Image Programs for Representation Learning (Baradad et al., NeurIPS 2022)",
+  "year": "2022",
+  "confidence": "medium",
+  "relevance": "Program-count diversity (thousands of distinct generators), not millions of parameter draws from one grammar (v15 used 1,048,576 IDs of one program family), is what moved the needle. Treat each program as a family with independently sampled members."
+ },
+ {
+  "thread": "objectives-for-transfer",
+  "claim": "Random-weight convolutional+pooling architectures are inherently frequency selective and translation invariant, and a surprising fraction of trained-method performance is attributable to architecture alone.",
+  "url": "https://mlanthology.org/icml/2011/saxe2011icml-random",
+  "title": "On Random Weights and Unsupervised Feature Learning (Saxe et al., ICML 2011)",
+  "year": "2011",
+  "confidence": "medium",
+  "relevance": "Explains why the random middle block on a 6x6 grid (0.539) is HyperNet's best probe: frequency-selective, translation-tolerant filters are nearly the ideal spectrogram descriptor. Any new objective should be checked for preserving filter frequency diversity (e.g., track the spectrum of fine/middle filters during training); losing it is the failure to detect in epoch 1."
+ },
+ {
+  "thread": "objectives-for-transfer",
+  "claim": "CNNs encode absolute position mainly via zero padding/borders, and the amount of position information increases with depth (VGG single-layer probe SPC .101 at block 1 to .657 at block 5; no-padding VGG16 drops from .742 to .381).",
+  "url": "https://ar5iv.labs.arxiv.org/html/2001.08248",
+  "title": "How much Position Information Do Convolutional Neural Networks Encode? (Islam et al., ICLR 2020)",
+  "year": "2020",
+  "confidence": "medium",
+  "relevance": "Consistent with HyperNet's finding that trained deep features are MORE position-sensitive than random: depth plus padding accumulates absolute position regardless of objective. Position loss is not the problem; if frequency-axis position must be kept, keep it explicitly (pooled 6x6 grid readout or coordinate channels) rather than through the loss."
+ },
+ {
+  "thread": "objectives-for-transfer",
+  "claim": "Invariance-only SSL discards augmentation-related information that some downstream tasks need; adding a head that predicts the transformation (E-SSL: SimCLR to 72.5% ImageNet linear; EquiMod: gains on CIFAR10 and ImageNet; LooC: separate per-augmentation embedding spaces) keeps that information without hurting invariance to the rest.",
+  "url": "https://arxiv.org/abs/2111.00899",
+  "title": "Equivariant Contrastive Learning / E-SSL (Dangovski et al., ICLR 2022); also EquiMod https://arxiv.org/abs/2211.01244 and LooC https://arxiv.org/abs/2008.05659",
+  "year": "2022",
+  "confidence": "medium",
+  "relevance": "If HyperNet applies any geometric nuisance between views (affine, scale, frequency shift), add a cheap head predicting the applied parameters so the mid-level features are not forced to delete scale/orientation/frequency-position, all of which separate Gravity Spy classes (e.g., Blip vs Koi Fish vs Whistle)."
+ },
+ {
+  "thread": "objectives-for-transfer",
+  "claim": "Domain practitioners treat augmentation of glitch spectrograms as semantics-destroying: the CTSAE authors state that augmenting glitch spectrograms distorts physical meaning and chose a plain autoencoder over contrastive methods for that reason (CTSAE ARI 0.4091 / NMI 0.6362 vs DIRECT 0.2137 / 0.4281 on Gravity Spy O3).",
+  "url": "https://arxiv.org/html/2404.15552v1",
+  "title": "CTSAE: Unsupervised Dimensionality Reduction for Clustering Gravitational Wave Glitches",
+  "year": "2024",
+  "confidence": "high",
+  "relevance": "Supports not adding crop/color/flip augmentations in v0.4 and favoring generator-side variation (independent family members) over image-side augmentation. Also a candidate comparison point if unlabeled in-domain pretraining is later allowed (open problem 4)."
+ },
+ {
+  "thread": "objectives-for-transfer",
+  "claim": "In music spectrogram SSL, pitch-shift augmentation alters properties essential for key detection; a masking-only contrastive model that avoids such augmentations reaches 68.6 on the GiantSteps key benchmark vs 14.9 for augmentation-based CLMR (different models/data, not a controlled ablation).",
+  "url": "https://arxiv.org/html/2502.12511v2",
+  "title": "Myna: Masking-Based Contrastive Learning of Musical Representations",
+  "year": "2025",
+  "confidence": "medium",
+  "relevance": "Frequency-axis shifts are analogous to pitch shift; a glitch's absolute frequency band is class-defining. If a second view is needed beyond independent family members, use time/frequency masking rather than frequency shifts, crops or jitter. 2025 paper, may be newer than training data; verify details."
+ },
+ {
+  "thread": "objectives-for-transfer",
+  "claim": "In astronomy-image contrastive learning with 845,254 unlabeled images, Gaussian noise injection was the most useful augmentation and PSF blur the weakest; the resulting linear classifier needs roughly 16x fewer labels than supervised training for Galaxy Zoo question 1.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2012.13083",
+  "title": "Self-Supervised Representation Learning for Astronomical Images (Hayat et al., ApJL 2021)",
+  "year": "2021",
+  "confidence": "medium",
+  "relevance": "Physics-motivated noise augmentation transfers to scientific images; a time-frequency noise-floor model (whitened Gaussian background, variable SNR) is the safest view-generating nuisance for spectrograms. Also the best-documented precedent for open problem 4 (unlabeled in-domain SSL) should that be permitted."
+ },
+ {
+  "thread": "objectives-for-transfer",
+  "claim": "Dimensional collapse in contrastive learning has two causes, strong augmentation along feature dimensions and implicit low-rank regularization in over-parameterized networks; removing the trainable projector (DirectCLR) gives 62.7% vs 61.1% ImageNet linear at 100 epochs.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2110.09348",
+  "title": "Understanding Dimensional Collapse in Contrastive Self-supervised Learning (Jing et al., ICLR 2022)",
+  "year": "2022",
+  "confidence": "medium",
+  "relevance": "HyperNet's variance/covariance term targets collapse of the final raw embedding but not of the middle/coarse block features that are actually read out; log the singular-value spectrum of pooled middle-block features during training and compare to the random block as a per-epoch collapse diagnostic."
+ },
+ {
+  "thread": "false-alarms",
+  "claim": "Cross-domain similarity local scaling (CSLS), which subtracts from 2*cos the mean cosine of each vector to its K=10 nearest neighbours in the other set, raises nearest-neighbour retrieval P@1 by about 4-9 points over plain cosine without any labels, and the paper attributes the gain to removing hubs.",
+  "url": "https://ar5iv.labs.arxiv.org/html/1710.04087",
+  "title": "Word Translation Without Parallel Data (Conneau, Lample, Ranzato, Denoyer, Jegou), ICLR 2018",
+  "year": "2017/2018",
+  "confidence": "high",
+  "relevance": "Directly applicable: compute the reference-by-archive cosine matrix once, subtract each archive item's mean cosine to its K nearest references/archive items and each reference's mean cosine to its K nearest archive items. Archive items that are hubs (close to every reference) are exactly the items that produce false alarms for every glitch type. Zero labels, one extra matrix op; K chosen on DEV."
+ },
+ {
+  "thread": "false-alarms",
+  "claim": "Mutual Proximity (global scaling) and NICDM (local scaling) reduce hubness from an average skewness of 2.5 to 0.29 (MP) and 0.94 (NICDM) across 30 public datasets with no statistically significant accuracy loss on any dataset, and in a live music recommender raised reachability of items from 72.6% to 86.2% and cut the largest hub's k=5 occurrence from 242 to 70.",
+  "url": "https://jmlr.org/papers/volume13/schnitzer12a/schnitzer12a.pdf",
+  "title": "Local and Global Scaling Reduce Hubs in Space (Schnitzer, Flexer, Schedl, Widmer), JMLR 13:2871-2902",
+  "year": "2012",
+  "confidence": "high",
+  "relevance": "Gives a diagnostic before any fix: compute Sk=5 (skewness of k-occurrence) on the DEV archive under raw-pixel and CNN cosine; if it is above about 1.4, hubness correction (MP or CSLS) is expected to help, if not it won't. Also the 'orphan/hub' framing predicts which archive items cause repeated false alarms across all 20 references."
+ },
+ {
+  "thread": "false-alarms",
+  "claim": "k-reciprocal re-ranking (keep gallery items only if the query is also in their top-k, then combine Jaccard distance of reciprocal sets with the original distance) raised mAP from 46.00 to 59.87 on Market-1501 for the IDE(R) baseline with no labels, but gave essentially zero gain on CUHK03 single-shot (mAP 63.1 -> 63.2), so the gain depends on the gallery having several true matches per query.",
+  "url": "https://ar5iv.labs.arxiv.org/html/1701.08398",
+  "title": "Re-ranking Person Re-identification with k-reciprocal Encoding (Zhong, Zheng, Cao, Li), CVPR 2017",
+  "year": "2017",
+  "confidence": "high",
+  "relevance": "Mutual-nearest-neighbour filtering is cheap on a 1,179-item archive and matches the Gravity Spy setting where each type has tens of true matches (Market-1501-like), not one (CUHK03 single-shot-like). But k1, k2, lambda are sensitive and must be fixed on DEV. Expect gains in AP; the false-alarm effect at a fixed cutoff must be measured separately."
+ },
+ {
+  "thread": "false-alarms",
+  "claim": "Adaptive symmetric score normalization (AS-norm: z-score each trial score against the mean and std of its top-200 most similar unlabeled cohort files on both the enrollment and test side) cut minimum DCF from 0.9539 (no normalization) to 0.6771 on NIST SRE16, about 30% relative, while the same technique with a mismatched cohort (zt-norm, NIST-only cohort) was worse than no normalization (0.9814).",
+  "url": "https://fit.vut.cz/research/group/speech/public/publi/2017/matejka_interspeech2017_IS170803.pdf",
+  "title": "Analysis of Score Normalization in Multilingual Speaker Recognition (Matejka, Novotny, Plchot, Burget, Diez Sanchez, Cernocky), Interspeech 2017, DOI 10.21437/Interspeech.2017-803",
+  "year": "2017",
+  "confidence": "high",
+  "relevance": "The closest analogue of HyperNet's problem: one enrollment (the reference), many test items, false alarms dominated by trials whose raw score distribution is shifted. AS-norm needs only unlabeled in-domain data: the DEV archive (or the archive being searched, declared as such) serves as cohort. Use top-N (N tuned on DEV, expect a flat optimum) rather than the whole cohort, and keep the cohort in-domain (spectrograms, not synthetic drawings) or it will hurt."
+ },
+ {
+  "thread": "false-alarms",
+  "claim": "With a cohort restricted to the top-40 most similar impostors, adaptive s-norm reduced EER from 2.14% to 1.69% and minDCF from 0.0947 to 0.0759 (about 20% relative) when the cohort was in-domain, but an out-of-domain (VoxCeleb) cohort raised EER to 2.46% and minDCF to 0.1303, i.e. worse than no normalization.",
+  "url": "https://arxiv.org/html/2007.07689v2",
+  "title": "Cross-Lingual Speaker Verification with Domain-Balanced Hard Prototype Mining and Language-Dependent Score Normalization (Thienpondt, Desplanques, Demuynck), Interspeech 2020",
+  "year": "2020",
+  "confidence": "high",
+  "relevance": "Confirms the cohort rule with a second system and embedding type (ECAPA-TDNN, cosine scoring like HyperNet). For HyperNet the cohort must be Gravity Spy spectrograms; synthetic renders as cohort would be the VoxCeleb case. The 'top-40' setting shows N can be small relative to a 1,179-item archive."
+ },
+ {
+  "thread": "false-alarms",
+  "claim": "OpenMax fits a per-class Weibull to the 20 largest distances between correctly classified training activations and the class mean, revises the top alpha=10 activations, and reaches F-measure 0.595 on an 80,000-image open-set test, a 4.3% gain over SoftMax at its optimal threshold; larger tail sizes reject more unknowns but also more known images, so F-measure falls.",
+  "url": "https://ar5iv.labs.arxiv.org/html/1511.06233",
+  "title": "Towards Open Set Deep Networks (Bendale, Boult), CVPR 2016",
+  "year": "2016",
+  "confidence": "high",
+  "relevance": "EVT tail fitting is a principled per-reference threshold, but the documented gain over a well-tuned global threshold is small (about 4%), and it needs tens of in-class samples per class to fit the tail, which one reference does not provide. The usable variant is fitting the Weibull/GPD to the impostor (non-match) tail of each reference's normalized scores on the unlabeled DEV archive, which needs no labels."
+ },
+ {
+  "thread": "false-alarms",
+  "claim": "SPOT sets a detection threshold z_q from a Generalized Pareto fit to peaks over an initial threshold so that P(X > z_q) < q for a user-chosen risk q, needs only an initial batch of about n=1000 values, converges to the true quantile (3.09 for q=1e-3 on Gaussian noise), and on a SYN-flood stream at q=1e-4 gave 86% true positive rate with under 4% false positives; q between 1e-3 and 1e-5 kept high TPR and low FPR.",
+  "url": "https://www.eecs.yorku.ca/course_archive/2018-19/F/6412/reading/kdd17p1067.pdf",
+  "title": "Anomaly Detection in Streams with Extreme Value Theory (Siffer, Fouque, Termier, Largouet), KDD 2017, DOI 10.1145/3097983.3098144",
+  "year": "2017",
+  "confidence": "high",
+  "relevance": "Gives a label-free recipe to translate 'one in 10,000' directly into a threshold: fit a GPD to the upper tail of each reference's normalized impostor scores on the unlabeled DEV archive and set z_q for q=1e-3 or 1e-4. The 4% false positive figure is per flow, not per-window, so do not quote it as a 10x reduction; the value here is the risk-parameterized threshold, which replaces the ad-hoc 1% DEV cutoff."
+ },
+ {
+  "thread": "false-alarms",
+  "claim": "On Gravity Spy, single-view CNNs trained on one time window reach 92.85% (0.5 s), 95.34% (1 s), 94.09% (2 s) and 93.68% (4 s) accuracy, while fusing all four windows reaches 95.75% (parallel view) and 96.89% (merged view), and individual classes favour different durations (Air Compressor 100% vs 80%, Wandering Line 57% vs 71% between the short and 4 s models).",
+  "url": "https://ar5iv.labs.arxiv.org/html/1705.00034",
+  "title": "Deep Multi-view Models for Glitch Classification (Bahaadini, Rohani, Coughlin, Zevin, Kalogera, Katsaggelos), ICASSP 2017",
+  "year": "2017",
+  "confidence": "high",
+  "relevance": "The four durations are four genuinely different views of the same event, already in the Zenodo record, so view fusion costs no labels and no new data. The error drop from 4.66% (best single view) to 3.11% (merged) is a 1.5x reduction in a supervised setting; for one-reference retrieval the per-class duration dependence suggests fusing normalized scores per view (mean or max after AS-norm) rather than concatenating features. HyperNet currently uses one 140x170 crop per event."
+ },
+ {
+  "thread": "false-alarms",
+  "claim": "On the O3 Gravity Spy data, attention-based intermediate fusion of the four time windows reached 0.941 accuracy / 0.931 F1 versus 0.911 / 0.901 for early fusion (views tiled into one image) and 0.922 / 0.901 for late (decision-level) fusion, on a test set of 3,538 glitches across 23 classes.",
+  "url": "https://arxiv.org/html/2401.12913v2",
+  "title": "Advancing Glitch Classification in Gravity Spy: Multi-view Fusion with Attention-based Machine Learning for Advanced LIGO's Fourth Observing Run (Wu et al.)",
+  "year": "2024",
+  "confidence": "high",
+  "relevance": "Two uses: (1) late fusion of the four views is a label-free baseline that already beats tiling the views into one image, so HyperNet can fuse per-view scores without any training; (2) the O3 dataset used here (about 13,600 labelled glitches, 23 classes, confidence > 0.9) is a candidate for the fresh held-out test the project needs after three uses of TEST v1.1. Newer than some training data; verify the v2 numbers against the published version."
+ },
+ {
+  "thread": "false-alarms",
+  "claim": "Test-time multi-scale augmentation (descriptors at scales 1, 1/sqrt2, 1/2, GeM-pooled) raises retrieval mAP by about 2 points (Oxford5k 85.9 -> 87.9, Paris6k 86.0 -> 87.7), and alpha-weighted query expansion (alpha=3, top 50) adds a further 4 points (87.9 -> 91.9), with no labels.",
+  "url": "https://ar5iv.labs.arxiv.org/html/1711.02512",
+  "title": "Fine-tuning CNN Image Retrieval with No Human Annotation (Radenovic, Tolias, Chum), TPAMI 2019",
+  "year": "2018",
+  "confidence": "high",
+  "relevance": "Test-time augmentation is the smallest of the label-free gains (about 2 mAP points) and query expansion is risky with one reference: with only one true seed, alphaQE pulls in the top-50 neighbours which, at 90 false alarms per 10,000, include impostors, so it should be tried only after normalization and measured for false-alarm drift on DEV. Multi-scale is cheap but the Gravity Spy views already provide a multi-scale axis in time."
+ },
+ {
+  "thread": "false-alarms",
+  "claim": "Re-ranking the top 100 global-descriptor matches with local-feature geometric verification (RANSAC, residual threshold 20, ratio test 0.95) raised DELG mAP on Revisited Oxford Hard from 45.1 to 54.2 and on ROxford+1M Hard from 27.8 to 36.8, but only from 63.4 to 64.9 on Revisited Paris Hard.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2001.05027",
+  "title": "Unifying Deep Local and Global Features for Image Search (Cao, Araujo, Sim), ECCV 2020",
+  "year": "2020",
+  "confidence": "medium",
+  "relevance": "Geometric verification helps most when the global descriptor is weakest (Hard, +1M distractors), which is HyperNet's regime, but it presumes repeatable keypoints under a rigid transform. Spectrogram glitches of one type are not geometrically aligned instances, so a direct port is unlikely; the transferable idea is a second, independent verifier on the top-k (e.g. translation-search matching of the time-frequency patch, which v15 already has) applied as a cascade stage after a cheap normalized-cosine shortlist."
+ },
+ {
+  "thread": "false-alarms",
+  "claim": "In a cascaded detector the overall false-positive rate is the product of the per-stage rates, so ten stages each passing 30% of negatives give about 6e-6 overall while ten stages each keeping 99% of positives retain about 90% recall; the original Viola-Jones face detector used 38 stages.",
+  "url": "https://courses.cs.washington.edu/courses/cse576/21sp/notes/11_FaceDetRec_21.pdf",
+  "title": "Face Detection and Recognition lecture notes (University of Washington CSE 576), citing Viola and Jones 2001",
+  "year": "2001/2021",
+  "confidence": "medium",
+  "relevance": "The only mechanism in this list that routinely delivers 100x-1000x false-alarm reduction, but every stage costs some recall and needs a verifier whose errors are not the same as the previous stage's. For HyperNet a two-stage cascade (normalized CNN cosine shortlist, then v15's translation-search matcher on the shortlist) is feasible without labels; the recall cost per stage must be measured on DEV."
+ },
+ {
+  "thread": "false-alarms",
+  "claim": "If zero events are observed in n independent trials, the 95% upper confidence bound on the event rate is about 3/n (exactly -ln(0.05)/n = 2.996/n), good for n > 30.",
+  "url": "https://en.wikipedia.org/wiki/Rule_of_three_(statistics)",
+  "title": "Rule of three (statistics), Wikipedia",
+  "year": "n/a",
+  "confidence": "high",
+  "relevance": "Sets the honest-measurement floor. On 1,179 TEST items, 90 per 10,000 is about 11 false alarms; the smallest non-zero rate observable is 8.5 per 10,000, and zero false alarms only proves a rate below 25 per 10,000. A claimed 10x reduction therefore cannot be demonstrated on TEST v1.1 at all; it needs the fresh 4,044-event set (zero events bounds the rate below 7.4 per 10,000) or pooled O3 data, and per-type false-alarm counts should be reported with binomial (Clopper-Pearson) intervals rather than a single rate."
+ },
+ {
+  "thread": "false-alarms",
+  "claim": "Speaker-recognition evaluations report an actual detection cost at a threshold fixed before scoring and separately a minimum cost at the best post-hoc threshold; the threshold is either the Bayes threshold for calibrated scores or tuned on a supervised calibration set, and the gap between actual and minimum cost is the standard measure of calibration failure, which in one SRE 2010 system report broke down at operating points with fewer than about 30 false alarms.",
+  "url": "https://arxiv.org/pdf/1304.2865",
+  "title": "The BOSARIS Toolkit: Theory, Algorithms and Code for Surviving the New DCF (Brummer, de Villiers)",
+  "year": "2013",
+  "confidence": "medium",
+  "relevance": "Template for the v0.4 protocol: declare the DEV-chosen cutoff (and any AS-norm N, CSLS K, fusion weights) in protocol.json before TEST, report recall at that fixed cutoff as the primary number (the 'actual' cost) and recall at the best TEST cutoff only as a secondary 'minimum' number, and treat a large gap as evidence the DEV calibration did not transfer. The 30-false-alarm breakdown warns that calibrating a 1-in-10,000 operating point on a 1,179-item DEV set is itself unreliable."
+ },
+ {
+  "thread": "evaluation-rigor",
+  "claim": "Reusing one holdout set for adaptively chosen hypotheses leads to overfitting to the holdout set itself; validity needs either a fresh set or a noise-adding reuse mechanism.",
+  "url": "https://arxiv.org/abs/1506.02629",
+  "title": "Generalization in Adaptive Data Analysis and Holdout Reuse (Dwork, Feldman, Hardt, Pitassi, Reingold, Roth)",
+  "year": "2015",
+  "confidence": "high",
+  "relevance": "TEST v1.1 has been scored three times (v0.1, v0.2, v0.3) and each round chose the next experiment after seeing TEST. Even with frozen protocols the TEST numbers are now mildly optimistic for the selected method. The final write-up should state the number of TEST uses and what each use informed, and confirm the headline comparisons once on a fresh set."
+ },
+ {
+  "thread": "evaluation-rigor",
+  "claim": "Empirically, adaptive overfitting from test-set reuse is small when a final held-out set is used once: across 100+ Kaggle competitions public-vs-private leaderboard gaps showed 'little evidence of substantial overfitting', and on ImageNet/CIFAR new test sets caused 3-15% (CIFAR-10) and 11-14% (ImageNet) accuracy drops that the authors attribute to distribution shift, not adaptivity, with model rankings preserved.",
+  "url": "https://arxiv.org/abs/1902.10811",
+  "title": "Do ImageNet Classifiers Generalize to ImageNet? (Recht, Roelofs, Schmidt, Shankar, ICML 2019); A Meta-Analysis of Overfitting in Machine Learning (Roelofs et al., NeurIPS 2019, https://papers.nips.cc/paper/9117-a-meta-analysis-of-overfitting-in-machine-learning)",
+  "year": "2019",
+  "confidence": "high",
+  "relevance": "The bigger risk for HyperNet is not that three uses inflated 0.572, but that a fresh Gravity Spy sample (different observing run, different glitch rates, O3-only classes) will shift all methods. The write-up should report old-TEST vs fresh-TEST side by side for every arm (trained, random, raw pixels) and treat the gap as a measured quantity, as v15 already saw when raw48 scored 19.7% on 4,044 fresh events."
+ },
+ {
+  "thread": "evaluation-rigor",
+  "claim": "Even a researcher who runs exactly one analysis faces a multiple-comparisons problem when the choice of that analysis depends on the data; the remedy is to fix analysis details before seeing the data (preregistration) or to analyse all potential comparisons.",
+  "url": "https://sites.stat.columbia.edu/gelman/research/unpublished/p_hacking.pdf",
+  "title": "The garden of forking paths: Why multiple comparisons can be a problem, even when there is no 'fishing expedition' or 'p-hacking' and the research hypothesis was posited ahead of time (Gelman and Loken)",
+  "year": "2013",
+  "confidence": "high",
+  "relevance": "HyperNet's protocol.json with SHA-256 written before TEST scoring is exactly the preregistered-phi case. The final write-up should list, per benchmark version, what was frozen (references, candidate readouts, selection rule, metric definitions, bootstrap unit, number of draws) and when, and should note the one forking point that remains: the all-random four-layer mix was best on DEV but excluded by a rule that required a trained block. Report both the rule-selected and the overall-best DEV readouts on TEST."
+ },
+ {
+  "thread": "evaluation-rigor",
+  "claim": "The NeurIPS 2020 Preregistration Workshop exists because ML rewards only positive results and omits negative ones; a preregistered paper is reviewed on protocol before results, then experiments are reported regardless of outcome (73 proposals, 38 accepted, 23 results papers published).",
+  "url": "https://proceedings.mlr.press/v148/bertinetto21a/bertinetto21a.pdf",
+  "title": "Preface, NeurIPS 2020 Workshop on Pre-registration in Machine Learning (PMLR 148)",
+  "year": "2021",
+  "confidence": "high",
+  "relevance": "This is the template for presenting a negative result: write the fresh-TEST protocol as a short preregistration document (hypotheses, arms, metrics, selection rule, stopping rule), timestamp/hash it, then present results as 'confirmatory'. Citing this workshop also gives STS judges a recognized ML venue that treats negative preregistered findings as publishable."
+ },
+ {
+  "thread": "evaluation-rigor",
+  "claim": "Kapoor and Narayanan found leakage errors in 329 papers across 17 fields and name eight leakage types, including [L1.4] duplicates in datasets, [L3.1] temporal leakage and [L3.2] nonindependence between training and test samples; when errors were corrected, complex ML models did not beat logistic regression.",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10499856",
+  "title": "Leakage and the reproducibility crisis in machine-learning-based science (Kapoor and Narayanan, Patterns 2023; arXiv 2207.07048)",
+  "year": "2023",
+  "confidence": "high",
+  "relevance": "HyperNet's leakage exposure is L1.4/L3.2 (the same glitch rendered at 0.5/1/2/4 s and near-simultaneous Omicron triggers) and L3.1 (reference and test drawn from the same hours of detector state). The write-up should include a model-info-sheet style section: how references were chosen, how many TEST events share a time group with a reference, and that no gradient ever touched a spectrogram. Also, the paper's headline (simple baselines win once leakage is removed) frames raw-pixels-beats-CNN as a known pattern rather than an embarrassment."
+ },
+ {
+  "thread": "evaluation-rigor",
+  "claim": "Published Gravity Spy ML papers split the dataset randomly or by glitch subject, never by time: Zevin et al. 2017 used 75%/12.5%/12.5% train/validation/test of ~7,718 O1 glitches in 20 classes; Wu et al. 2024 used 8,439/1,687/3,538 glitches 'selected randomly' with 'no overlapping glitch subjects'.",
+  "url": "https://ar5iv.labs.arxiv.org/html/1611.04596",
+  "title": "Gravity Spy: Integrating Advanced LIGO Detector Characterization, Machine Learning, and Citizen Science (Zevin et al. 2017); Advancing Glitch Classification in Gravity Spy: Multi-view Fusion (Wu et al. 2024, https://arxiv.org/html/2401.12913); Gravity Spy Training Set v1.1.0 (https://zenodo.org/records/1486046)",
+  "year": "2017 / 2024",
+  "confidence": "high",
+  "relevance": "No published Gravity Spy split handles temporal proximity, so HyperNet cannot inherit a time-safe split from the dataset and should build its own: group TEST events by ifo and event_time (e.g. any two triggers within the 4 s window, or a conservative 10-60 s) and never let a reference's group appear among its own candidates. Report the count of such groups. The v15 benchmark already did this (4,044 events in 3,954 time groups); v0.1-v0.3 should state whether they did."
+ },
+ {
+  "thread": "evaluation-rigor",
+  "claim": "Gravity Spy's own lessons-learned paper flags class imbalance, rare classes with very few examples, noisy training labels derived partly from ML, and the difficulty of 'four versions of the same glitch images in different time durations' as structural weaknesses of the training set.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2308.15530",
+  "title": "Gravity Spy: Lessons Learned and a Path Forward (Zevin et al., Eur. Phys. J. Plus 139, 100)",
+  "year": "2024",
+  "confidence": "high",
+  "relevance": "Mean AP over 20 classes gives a class with 4 positives the same weight as one with 300, and label noise caps attainable AP. The write-up should give per-class positive counts in TEST, report Rare-AP separately (already done) with its own interval, and treat labels as noisy upper bounds. Using one duration only (the 2 s crop) and grouping by gravityspy_id removes the four-versions duplicate path."
+ },
+ {
+  "thread": "evaluation-rigor",
+  "claim": "On imbalanced data ROC-style summaries stay unchanged while precision collapses: in Saito and Rehmsmeier's simulation the same operating point gives 160 FP/500 TP (75% precision) balanced but 1,600 FP/500 TP (25% precision) at 1:10 imbalance, and in a reanalysis a tool with ROC AUC 0.886 had PR AUC 0.054; they 'strongly recommend PRC plots'.",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4349800",
+  "title": "The Precision-Recall Plot Is More Informative than the ROC Plot When Evaluating Binary Classifiers on Imbalanced Datasets (Saito and Rehmsmeier, PLOS ONE 10(3) e0118432)",
+  "year": "2015",
+  "confidence": "high",
+  "relevance": "Mean AP (area under PR) is the right primary metric and the chance level (0.049) should always be printed next to it. v15's mean AUROC of ~0.79 alongside 3.6% recall is a live example of the ROC-looks-fine trap; the write-up should lead with AP and recall-at-cutoff, and show AUROC only as a secondary number with this caveat."
+ },
+ {
+  "thread": "evaluation-rigor",
+  "claim": "Recall at a fixed false-alarm rate is the standard operating-point metric in rare-match benchmarks, but very low rates are only estimable with very large negative sets: IJB-C reports TAR at FAR 1e-4/1e-5 (and 1e-6 on MegaFace) because its 1:1 protocol has about 15.6 million impostor pairs versus ~19,500 genuine pairs.",
+  "url": "https://arxiv.org/pdf/2107.13046",
+  "title": "MixFaceNets: Extremely Efficient Face Recognition Networks (Boutros et al.), with SphereFace2 (https://arxiv.org/pdf/2108.01513) and EPL (https://arxiv.org/pdf/2405.12447) as corroborating examples",
+  "year": "2021",
+  "confidence": "medium",
+  "relevance": "A 1% DEV cutoff on ~1,100 negatives per class rests on about 11 false alarms per class, so '90 per 10,000' is a point estimate with a wide interval, and a 1-in-10,000 operating point cannot be certified on TEST v1.1 at all (v15 already notes 'No target has 10,000 observed negatives'). The write-up should state the number of negatives behind each threshold, give the lowest false-alarm rate the data can resolve (roughly 10/N_neg), and say that a rare-event claim needs a negative pool of 10^5-10^6 unlabeled O3 spectrograms, which Zenodo 5649212 can supply."
+ },
+ {
+  "thread": "evaluation-rigor",
+  "claim": "Random-weight convolutional architectures are a recognized strong control: Saxe et al. showed certain conv-pooling architectures are 'inherently frequency selective and translation invariant' with random weights, that 'a surprising fraction of the performance of certain state-of-the-art methods can be attributed to the architecture alone', and proposed using random weights to evaluate architectures.",
+  "url": "https://mlanthology.org/icml/2011/saxe2011icml-random",
+  "title": "On Random Weights and Unsupervised Feature Learning (Saxe, Koh, Chen, Bhand, Suresh, Ng, ICML 2011)",
+  "year": "2011",
+  "confidence": "high",
+  "relevance": "HyperNet's finding that the random network beats the trained one on spectrograms is a textbook instance of this effect (random band-pass-like filters on a time-frequency image), not an anomaly. Cite it, keep the all-random arm as a named baseline in every table, and report the paired trained-minus-random difference with its interval as the primary training-effect estimate."
+ },
+ {
+  "thread": "evaluation-rigor",
+  "claim": "Few-shot evaluation reviewers expect simple baselines and consistent protocols: Chen et al. found a modified baseline 'surprisingly achieves competitive performance when compared with the state-of-the-art' and that a fine-tuning baseline 'compares favorably' under domain shift; Shimabucoro et al. recommend bootstrapping or many-fold cross-validation for model selection and warn that averaged benchmarks give no reliable per-task picture.",
+  "url": "https://arxiv.org/abs/1904.04232",
+  "title": "A Closer Look at Few-shot Classification (Chen et al., ICLR 2019); Evaluating the Evaluators: Are Current Few-Shot Learning Benchmarks Fit for Purpose? (Shimabucoro, Hospedales, Gouk, https://arxiv.org/abs/2307.02732)",
+  "year": "2019 / 2023",
+  "confidence": "medium",
+  "relevance": "Report both the interval on mean AP (resampling 20 classes, which reflects uncertainty in the class average) and the per-class AP spread (which reflects what a user of one reference would experience). With only 20 classes a class-level bootstrap is coarse; show per-class AP as a table or dot plot. Also vary the reference: one reference per class is itself a sampled quantity, so rerunning with several different references (each a separate, pre-declared seed) and reporting the spread is a cheap way to show the result is not an artefact of one lucky or unlucky reference."
+ },
+ {
+  "thread": "evaluation-rigor",
+  "claim": "For correlated observations the bootstrap must resample clusters, not individual observations: the cluster bootstrap gives consistent variance estimates under random-effect models (Field and Welsh 2007), and IR evaluation resamples topics/queries as the unit; Soboroff finds bootstrap percentile intervals give good coverage for IR measures except 'in situations of very poor retrieval performance', and warns 'computing two confidence intervals is not the same as a paired t-test'.",
+  "url": "https://research.nii.ac.jp/ntcir/workshop/OnlineProceedings11/pdf/EVIA/04-EVIA2014-SoboroffI.pdf",
+  "title": "Computing Confidence Intervals for Common IR Measures (Soboroff, EVIA 2014); Bootstrapping clustered data (Field and Welsh, https://ideas.repec.org/a/bla/jorssb/v69y2007i3p369-390.html)",
+  "year": "2014 / 2007",
+  "confidence": "high",
+  "relevance": "Define the bootstrap unit explicitly in every README: resample time groups (events within seconds of each other move together) and, for the class-average, resample classes; report paired differences (trained minus random, method minus raw pixels) from the same draws rather than comparing two separate intervals. v15's group-level paired bootstrap with 5,000 draws is the model; v0.1-v0.3 should state which unit they used and, if item-level, rerun with groups."
+ },
+ {
+  "thread": "evaluation-rigor",
+  "claim": "Regeneron ISEF's published Grand Award rubric scores method and interpretation, not outcome: Execution (20 pts) includes 'reproducibility of results', 'appropriate application of mathematical and statistical methods' and 'sufficient data collected to support interpretation and conclusions'; Design (15) requires 'variables and controls defined, appropriate and complete'; the interview (25) scores 'understanding interpretation and limitations of results and conclusions' and 'quality of ideas for further research'. No criterion asks whether the hypothesis was confirmed.",
+  "url": "https://www.societyforscience.org/isef/grand-award/criteria/",
+  "title": "Grand Award Judging Criteria, Regeneron ISEF (Society for Science)",
+  "year": "2026 (page current)",
+  "confidence": "high",
+  "relevance": "Structure the write-up and poster around these headings: controls (raw pixels, random weights, chance), statistics (grouped paired bootstrap, preregistered hashes), reproducibility (pixel-free score tensors, recompute scripts), limitations (TEST reuse, label noise, small negative pools), and further research (objective change, unlabeled in-domain pretraining as a declared budget change). A diagnosed negative result scores fully on every one of these."
+ },
+ {
+  "thread": "evaluation-rigor",
+  "claim": "Regeneron STS scores entries on the application, the Research Report and 'overall scientific potential' via three PhD-level reviewers, and its 2022 press release says finalists 'were evaluated based on their projects' scientific rigor'; the 2022 first-place project (Christine Ye) analysed LIGO gravitational-wave data. No STS document found addresses negative results explicitly.",
+  "url": "https://www.societyforscience.org/press-release/students-win-1-8-million-at-regeneron-science-talent-search-2022-for-exceptional-research-on-neutron-star-black-hole-systems-narrowband-radar-and-ribosome-movement-in-protein-translation/",
+  "title": "Students win $1.8 million at Regeneron Science Talent Search 2022 (Society for Science); Science Talent Search: Judging and Awards (https://www.societyforscience.org/regeneron-sts/judging-and-awards/)",
+  "year": "2022",
+  "confidence": "medium",
+  "relevance": "LIGO data is a proven STS subject. Since STS publishes no rubric, 'scientific rigor' and 'scientific potential' are the levers: the report should foreground the diagnostic chain (per-layer probes, locked-layer retrain, scope review) as the scientific contribution, and the fresh-TEST confirmation as the rigor evidence. Do not claim a method win the data does not support."
+ },
+ {
+  "thread": "evaluation-rigor",
+  "claim": "A large fresh pool exists for a new held-out TEST: the Zenodo record of Gravity Spy ML classifications for O1, O2, O3a and O3b (742 MB, per-IFO files) gives event_time, peak_time, snr, gravityspy_id, per-class ML confidences over the original 22 classes, ml_label, ml_confidence and url1-url4 for the 0.5/1/2/4 s Omega scans, downloadable with GWpy's GravitySpyTable.",
+  "url": "https://zenodo.org/record/5649212",
+  "title": "Gravity Spy Machine Learning Classifications of LIGO Glitches from Observing Runs O1, O2, O3a, and O3b (Glanzer et al.)",
+  "year": "2021 (data), 2023 (paper)",
+  "confidence": "high",
+  "relevance": "Draw the fresh TEST from O3 by a pre-declared rule (e.g. ml_confidence >= 0.95, snr band, exclude any event within N seconds of a v1.1 or v15 event, one event per time group, fixed per-class caps), hash the roster before downloading images, and keep a second untouched slice for a final confirmation. Note the labels are machine labels at high confidence, which biases TEST toward prototypical examples; say so, or use the volunteer-classification release (DOI 10.5281/zenodo.13904421) for human labels. This also answers open problem (4): the same pool supplies unlabeled in-domain spectrograms, and the preregistration can declare whether they are used."
+ },
+ {
+  "thread": "spectrogram-specific",
+  "claim": "In the original Gravity Spy multi-view CNN, 1.0 s is the best single duration (95.34%) and merging all four durations into one image raises accuracy to 96.89%; parallel per-duration branches give 95.75%.",
+  "url": "https://ar5iv.labs.arxiv.org/html/1705.00034",
+  "title": "Deep Multi-view Models for Glitch Classification (Bahaadini et al.)",
+  "year": "2017",
+  "confidence": "high",
+  "relevance": "HyperNet's benchmark uses only the 1.0 s image, which is the best single view, but a 1.5-3 point gain is available from fusing durations. In a one-reference retrieval protocol this needs no training: score each candidate by the mean or max of per-duration similarities against the reference's four durations. Also note the original CNN worked at 47x57 grayscale, far below HyperNet's 96x96 three-channel input, so resolution is not the bottleneck."
+ },
+ {
+  "thread": "spectrogram-specific",
+  "claim": "In the O4 Gravity Spy model, intermediate fusion of the four durations with gated attention reaches 0.941 test accuracy versus 0.911 for early fusion and 0.911 for mean pooling, and the attention weights favor 0.5 s for Blip and Koi Fish and 2-4 s for Repeating Blips and No Glitch.",
+  "url": "https://arxiv.org/html/2401.12913v2",
+  "title": "Advancing Glitch Classification in Gravity Spy: Multi-view Fusion with Attention-based Machine Learning for Advanced LIGO's Fourth Observing Run",
+  "year": "2024",
+  "confidence": "high",
+  "relevance": "Which duration is informative is class-dependent, so a fixed single duration systematically under-serves some types. For v0.4 retrieval, a max over per-duration similarities (a parameter-free stand-in for attention) lets each glitch type be matched at the window where it is visible. The paper also keeps the dataset-wide min-max scaling rather than per-image scaling, preserving absolute energy level across images."
+ },
+ {
+  "thread": "spectrogram-specific",
+  "claim": "Gravity Spy glitch classes are defined by absolute frequency bands, so vertical position in the spectrogram is class identity: Blip 30-250 Hz (~0.04 s), Koi Fish ~20-1000 Hz, Fast Scattering 20-60 Hz (0.2-0.3 s arches), Low Frequency Burst 10-20 Hz (~0.25 s), Whistle above ~128 Hz (V/U/W shape).",
+  "url": "https://arxiv.org/html/2412.17169v2",
+  "title": "Ameliorating transient noise bursts in gravitational-wave searches for intermediate-mass black holes",
+  "year": "2024",
+  "confidence": "high",
+  "relevance": "Any representation that is invariant to vertical shift, vertical flip or rotation discards exactly the attribute that separates Blip from Low Frequency Burst or Fast Scattering from Scattered Light. HyperNet's rotation-augmented reference views and translation-equivariant pooling over a 6x6 grid both risk this. Descriptor matching should be restricted to the same frequency rows, and a frequency-coordinate input channel should be added."
+ },
+ {
+  "thread": "spectrogram-specific",
+  "claim": "In a controlled CNN study on spectrogram images, vertical flipping and random color filters lowered PR AUC below the no-augmentation baseline (0.741 and 0.754 vs 0.763), pitch/time alterations also lowered it (0.748), while horizontal (time) flipping raised it to 0.819 and time/frequency masking was neutral (0.772).",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9421122/",
+  "title": "On the analysis of data augmentation methods for spectral imaged based heart sound classification using convolutional neural networks (Zhou, Chen, Chien)",
+  "year": "2022",
+  "confidence": "high",
+  "relevance": "HyperNet's positive_views applies per-channel RGB gain 0.8-1.2 and additive bias to colormapped spectrograms, which is the 'random color filter' family shown to hurt, and rotations of +/-12 degrees are partial y-axis transforms. Horizontal (time) flips are the one current geometric choice with some supporting evidence in a spectrogram domain, though that domain (heart sounds) is time-symmetric by nature."
+ },
+ {
+  "thread": "spectrogram-specific",
+  "claim": "Frequency Dynamic Convolution argues standard 2D convolution wrongly enforces translation equivariance along the frequency axis and shows that frequency-adaptive kernels improve DESED sound event detection by 6.3% PSDS, most for non-stationary events with intricate time-frequency patterns.",
+  "url": "https://arxiv.org/abs/2203.15296",
+  "title": "Frequency Dynamic Convolution: Frequency-Adaptive Pattern Recognition for Sound Event Detection (Nam et al.)",
+  "year": "2022",
+  "confidence": "high",
+  "relevance": "HyperNet's residual blocks share kernels across all 96 rows, so a filter that fires on a 'teardrop' cannot tell whether it is at 50 Hz or 500 Hz until a global readout. Glitches are precisely non-stationary events with intricate TF patterns. Frequency-conditioned kernels are the expensive fix; a frequency-position input channel (next finding) is the cheap one compatible with a 755k-parameter model."
+ },
+ {
+  "thread": "spectrogram-specific",
+  "claim": "Frequency-Aware Convolution adds a frequency-position encoding vector to the input spectrogram and, with only 515 extra parameters, matches Frequency Dynamic Convolution (8.02 million extra parameters) on DCASE 2023 Task 4; the per-channel adaptive scaling of that vector is critical in ablation.",
+  "url": "https://arxiv.org/abs/2403.13252",
+  "title": "Frequency-aware convolution for sound event detection (Song, Zhang)",
+  "year": "2024",
+  "confidence": "high",
+  "relevance": "Directly implementable in HyperNet's hand-made input stack: add one fixed channel equal to normalized row index (or a sinusoid of it) alongside RGB/contrast/Sobel. It costs no learned parameters in the concatenation form and lets even random filters become frequency-selective. This is the single cheapest change to test in v0.4 with random weights (no retraining required)."
+ },
+ {
+  "thread": "spectrogram-specific",
+  "claim": "CoordConv shows that ordinary convolutions fail even simple coordinate-dependent tasks (best models under 86% test accuracy on the easier coordinate-transform split) while adding explicit i,j coordinate channels gives perfect generalization with 10-100x fewer parameters, letting a layer choose anywhere between full translation invariance and position dependence.",
+  "url": "https://arxiv.org/pdf/1807.03247",
+  "title": "An Intriguing Failing of Convolutional Neural Networks and the CoordConv Solution (Liu et al.)",
+  "year": "2018",
+  "confidence": "high",
+  "relevance": "HyperNet's diagnosis found trained features are more position-sensitive than random, but position sensitivity learned from drawings is not frequency sensitivity. A CoordConv row channel gives the right kind of position information (frequency only; a column channel would make features time-position dependent, which is unwanted since glitch time within the window is arbitrary). Add row coordinate only."
+ },
+ {
+  "thread": "spectrogram-specific",
+  "claim": "SubSpectralNet trains separate CNN classifiers on band-wise crops of the mel-spectrogram, on the premise that discriminative information differs by frequency band, and improves DCASE 2018 acoustic scene accuracy by +14% over the baseline.",
+  "url": "https://arxiv.org/abs/1810.12642",
+  "title": "SubSpectralNet - Using Sub-Spectrogram based Convolutional Neural Networks for Acoustic Scene Classification (Phaye, Benetos, Wang)",
+  "year": "2018",
+  "confidence": "medium",
+  "relevance": "Suggests a retrieval variant: compute HyperNet descriptors per horizontal frequency band (e.g. 3-4 bands of the 96 rows) and compare band-to-band, never across bands. This is a structured alternative to the current 6x6 grid pooling and makes the similarity frequency-aware without any training."
+ },
+ {
+  "thread": "spectrogram-specific",
+  "claim": "SpecAugment's frequency masking and time masking each matter more than time warping (removing frequency masking raises LibriSpeech test-other WER from 10.0% to 11.0%, removing time masking to 10.9%, removing time warp only to 10.1%), and masked regions are set to zero, which equals the mean because inputs are zero-mean normalized.",
+  "url": "https://arxiv.org/html/1904.08779v3",
+  "title": "SpecAugment: A Simple Data Augmentation Method for Automatic Speech Recognition (Park et al.)",
+  "year": "2019",
+  "confidence": "high",
+  "relevance": "For positive-pair construction, time and frequency masking are position-preserving augmentations that force robustness to partial occlusion without inventing invariances the task lacks. Replace flip/rotation views with masked views (masked value = background level of the spectrogram, i.e. the normalized-energy floor, not black). Note F=27 of 80 mel bins is a large band; for 96 rows a mask of up to ~15-20 rows is the analogue, but masks must not routinely erase an entire narrow-band class such as Low Frequency Burst."
+ },
+ {
+  "thread": "spectrogram-specific",
+  "claim": "FilterAugment, which randomly re-weights frequency bands instead of masking them, improved sound event detection by 6.50% versus 2.13% for frequency masking, and gave 1.22% vs 1.26% EER in speaker verification.",
+  "url": "https://arxiv.org/abs/2110.03282",
+  "title": "FilterAugment: An Acoustic Environmental Data Augmentation Method (Nam et al.)",
+  "year": "2021",
+  "confidence": "medium",
+  "relevance": "Band-wise gain is a physically plausible variation for glitches (different SNR, different whitening residuals across runs) and keeps frequency position intact. It is a better photometric positive than the current per-RGB-channel gain, which on a colormap changes hue rather than energy. Apply it to the decoded scalar energy before any color mapping."
+ },
+ {
+  "thread": "spectrogram-specific",
+  "claim": "Augmentation effects are class-dependent even within one spectrogram dataset: on UrbanSound8K, combined augmentation lifted SB-CNN from ~0.73 to ~0.79 accuracy, pitch shifting was the only augmentation that hurt no class, but air conditioner accuracy dropped under dynamic range compression and background noise, and only about half the classes did better with all augmentations than with a subset.",
+  "url": "https://ar5iv.labs.arxiv.org/html/1608.04363",
+  "title": "Deep Convolutional Neural Networks and Data Augmentation for Environmental Sound Classification (Salamon, Bello)",
+  "year": "2017",
+  "confidence": "high",
+  "relevance": "Pitch shift (a vertical shift) helped audio classes because urban sounds are pitch-invariant categories; glitch classes are not, so this result should not be transplanted. The practical lesson is to report per-type AP under each augmentation choice in v0.4 rather than a mean, because a change can raise mean AP while erasing a narrow-band type."
+ },
+ {
+  "thread": "spectrogram-specific",
+  "claim": "Domain-specific (recording-device) information in audio spectrograms is concentrated in per-frequency statistics rather than channel statistics, and normalizing or centering along the frequency axis improves generalization: RFN won DCASE 2021 Task 1A and frequency centering raised acoustic scene accuracy on unseen devices by up to 18.2 percentage points.",
+  "url": "https://arxiv.org/abs/2206.12513",
+  "title": "Domain Generalization with Relaxed Instance Frequency-wise Normalization for Multi-device Acoustic Scene Classification (Kim et al.); see also https://arxiv.org/abs/2306.11764 (Primus et al. 2023)",
+  "year": "2022",
+  "confidence": "medium",
+  "relevance": "Gravity Spy spectrograms are already whitened normalized-energy images, but detector- and run-specific stationary lines remain. Subtracting a per-row mean computed over the unlabeled archive (no labels needed, so it stays inside a 'one labeled image' budget if unlabeled in-domain statistics are allowed) would suppress these. Warning: it would also attenuate line classes (1080Lines, 1400Ripples) whose identity is a persistent row, so evaluate per type before adopting."
+ },
+ {
+  "thread": "spectrogram-specific",
+  "claim": "Gravity Spy images are a colormap rendering of a scalar normalized-energy Q-transform (gwpy's default plots use viridis with the colorbar labeled 'Normalized energy', with the Omicron pipeline producing 0.5, 1, 2 and 4 s windows), and a 2026 frozen-DINOv2 study found H1 grayscale-ablation clustering ARI dropped to 0.68-0.90 versus above 0.90 for L1, attributing the gap to hue carrying detector-specific information.",
+  "url": "https://gwpy.readthedocs.io/en/stable/examples/timeseries/qscan/",
+  "title": "gwpy: Generate the Q-transform of a TimeSeries (qscan example); plus arXiv 2605.28572 'Unsupervised Morphological Characterization of Gravitational-Wave Glitches in LIGO O4a Using Frozen DINOv2 Features' (2026)",
+  "year": "2026",
+  "confidence": "medium",
+  "relevance": "HyperNet computes gray = mean(R,G,B) and Sobel on that; for viridis this mean is a non-monotonic function of energy, so edges and contrast are computed on a distorted field, and per-channel RGB gain changes hue (energy) arbitrarily. Decode the PNG back to scalar energy with a nearest-neighbor lookup against the viridis LUT (verify the exact colormap and color limit against the v1.1 PNGs first, since this is inferred from gwpy defaults), then derive log/contrast/edge channels from that scalar. The 2026 result also hints that one-reference retrieval across detectors may need per-detector handling."
+ },
+ {
+  "thread": "spectrogram-specific",
+  "claim": "HyperNet's own reference-view generator makes every odd-numbered positive view a horizontal flip of the reference crop, rotates views 2-15 by up to +/-12 degrees with 0.92-1.08 scale and +/-3 px shifts, and multiplies each RGB channel by an independent gain in 0.8-1.2 plus an additive bias of up to 6% of full scale.",
+  "url": "file:///C:/Users/brita/Documents/Codex/2026-11-01/wan/public/HyperNet/hypernet/reference_adapter.py",
+  "title": "HyperNet reference_adapter.py (local source) and part_encoder.py",
+  "year": "2026",
+  "confidence": "high",
+  "relevance": "These are the concrete choices the literature argues against: rotation mixes the frequency axis into time (vertical-axis transform), per-channel RGB gain on a colormap is a color-filter augmentation, and the letterbox of 140x170 to 79x96 discards frequency rows. Horizontal flips are the least harmful item (time-symmetric morphologies) but reverse time-asymmetric classes such as Chirp and Whistle sweeps. Replace with: time shift, time/frequency masking, band-wise gain on decoded energy, and multi-duration views of the same event as the natural positives."
+ },
+ {
+  "thread": "in-domain-ssl",
+  "claim": "BYOL-A trains a 600,192-parameter CNN from scratch on 64x96 log-mel spectrograms using only mixup, random-resize-crop and pre/post-normalization, and reducing the unlabeled pool tenfold (1,963,807 to 210,315 clips) costs only about 1 point of average linear-probe accuracy (73.3% to 72.3%).",
+  "url": "https://ar5iv.labs.arxiv.org/html/2103.06695",
+  "title": "BYOL for Audio: Self-Supervised Learning for General-Purpose Audio Representation (IJCNN 2021)",
+  "year": "2021",
+  "confidence": "high",
+  "relevance": "The closest published recipe to HyperNet's size and input type: a sub-1M-parameter CNN on spectrograms, non-contrastive (no negatives), with only two augmentations. It is the natural v0.4 recipe if unlabeled spectrograms are allowed; the weak sensitivity to pool size suggests tens of thousands of images may suffice, though no result exists below 210k."
+ },
+ {
+  "thread": "in-domain-ssl",
+  "claim": "On radio-galaxy cutouts, BYOL pretrained on 107,893 unlabeled RGZ DR1 images with a ResNet-18 beats training from scratch at every label count tested, including 36 labels (16.15% vs 19.03% error) and 145 labels (7.79% vs 11.92%).",
+  "url": "https://arxiv.org/html/2305.16127v3",
+  "title": "Radio Galaxy Zoo: Towards building the first multi-purpose foundation model for radio astronomy with self-supervised learning",
+  "year": "2023",
+  "confidence": "high",
+  "relevance": "Shows SSL on ~10^5 unlabeled in-domain scientific images helps most at the smallest label counts, which is HyperNet's regime; but the smallest tested budget is 36 labels, not 1, and the gain is measured after fine-tuning, not with a frozen one-reference readout."
+ },
+ {
+  "thread": "in-domain-ssl",
+  "claim": "With small unlabeled pools (about 1k to 100k images), from-scratch BYOL does not beat random initialization, while SimCLR/SwAV beat it only modestly and stay well below ImageNet init; the authors state raw-data SSL on small or non-diverse sets 'encodes noisy features which are not superior to a randomly initialized network'.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2109.01721",
+  "title": "Resource and data efficient self supervised learning",
+  "year": "2021",
+  "confidence": "high",
+  "relevance": "Direct evidence that at Gravity Spy v1.1 scale (several thousand train images) SSL may merely match random features, and that BYOL-style methods are the most fragile at small scale. Argues for a pool of >=10^4 images and for including the all-random readout as the primary control."
+ },
+ {
+  "thread": "in-domain-ssl",
+  "claim": "Self-supervised pretraining on only 2k to 12k target images at small resolution (56 px) beats training from random init by 2 to 4 points on fine-grained datasets, and the authors report 56x56 SSL pretraining outperforms 224x224 (71.0% vs 67.3% on CUB200, ResNet-18 SimCLR, 800 epochs).",
+  "url": "https://ar5iv.labs.arxiv.org/html/2103.13559",
+  "title": "Rethinking Self-Supervised Learning: Small is Beautiful",
+  "year": "2021",
+  "confidence": "medium",
+  "relevance": "Most optimistic small-data result: SSL on roughly Gravity Spy-train-sized pools helps at HyperNet's 96 px scale, but the gains are after full-label fine-tuning and the texture-dataset failure is a warning for noisy spectrogram backgrounds."
+ },
+ {
+  "thread": "in-domain-ssl",
+  "claim": "Denoising/masked-autoencoder pretraining is robust to small pretraining sets while joint-embedding methods degrade; one image per class (1,000 ImageNet images) still gives about +4 points over training from scratch, and transfer stops improving beyond ~5% of ImageNet at fixed iterations.",
+  "url": "https://arxiv.org/pdf/2112.10740",
+  "title": "Are Large-scale Datasets Necessary for Self-Supervised Pre-training?",
+  "year": "2021",
+  "confidence": "medium",
+  "relevance": "Suggests a masked-reconstruction objective is the safer choice for a few-thousand-image Gravity Spy pool, and that a modest pool can already move a network off random init; however, the +4 point result is for ViT fine-tuning, not a frozen CNN readout."
+ },
+ {
+  "thread": "in-domain-ssl",
+  "claim": "An unaugmented autoencoder (CTSAE) trained on 41,745 unlabeled Gravity Spy O3 glitch spectrograms outperforms the supervised DIRECT embedding on clustering (ARI 0.4091 vs 0.2137; NMI 0.6362 vs 0.4281) and matches semi-supervised VAT with 1% labels, and the authors explicitly avoid augmentations because they 'can significantly distort their physical semantics'.",
+  "url": "https://arxiv.org/html/2404.15552v1",
+  "title": "Cross-Temporal Spectrogram Autoencoder (CTSAE): Unsupervised Dimensionality Reduction for Clustering Gravitational Wave Glitches",
+  "year": "2024",
+  "confidence": "high",
+  "relevance": "The only published in-domain unsupervised representation on Gravity Spy spectrograms: 4x10^4 images and a reconstruction objective with no augmentation gave features better than a label-trained embedding. Also documents an O3 pool size that exists and is larger than v1.1."
+ },
+ {
+  "thread": "in-domain-ssl",
+  "claim": "On 845,254 unlabeled SDSS galaxy images, contrastive pretraining lets a linear probe reach high Galaxy Zoo accuracy with 256 labels where the supervised network fails to converge, needs ~16x fewer labels on one question, and the augmentation ablation found additive noise the strongest and PSF blur the weakest augmentation.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2012.13083",
+  "title": "Self-Supervised Representation Learning for Astronomical Images (ApJL 911, L33)",
+  "year": "2021",
+  "confidence": "high",
+  "relevance": "Template for physics-informed augmentations: noise and position jitter helped, blur hurt. For glitch spectrograms the analogues are additive background noise, time shift and small gain changes rather than geometric warps. Shows the frozen-linear regime is where SSL shines, but at ~10^6 images."
+ },
+ {
+  "thread": "in-domain-ssl",
+  "claim": "On SKA-precursor radio images, SimCLR pretraining (ResNet-18) on 55k to 178k uncurated survey cutouts beats supervised-from-scratch fine-tuning only below about 10% of labels (gains above 20% there), uncurated random cutouts beat curated source-centred sets by about 5%, and in-domain pretraining beats ImageNet by more than 10%.",
+  "url": "https://arxiv.org/html/2404.18462v1",
+  "title": "Self-supervised contrastive learning of radio data for source detection, classification and peculiar object discovery (PASA 41, e085)",
+  "year": "2024",
+  "confidence": "high",
+  "relevance": "Says the pool should be uncurated and large (random time slices of strain spectrograms, not only labeled glitch crops), and warns that nuisance variables like noise level leak into SSL features unless augmentation removes them, which matters for a false-alarm-limited search."
+ },
+ {
+  "thread": "in-domain-ssl",
+  "claim": "Contrastive InfoNCE does not guarantee avoiding shortcut features: encoders favor the simpler feature (color over shape/texture, MNIST digit over STL object), lower InfoNCE loss correlates with worse accuracy on the harder features, and which pairs are presented decides which features become discriminative.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2106.11230",
+  "title": "Can contrastive learning avoid shortcut solutions? (NeurIPS 2021)",
+  "year": "2021",
+  "confidence": "high",
+  "relevance": "Explains how HyperNet's synthetic InfoNCE pairs could train away spectrogram-relevant texture features while loss still falls: the positive pair (two renders of one program) makes exact geometry the discriminative feature. Any v0.4 objective should be checked by probing several feature types, not by loss."
+ },
+ {
+  "thread": "in-domain-ssl",
+  "claim": "Dimensional collapse in contrastive learning has two causes, strong augmentation along feature directions and implicit regularization in over-parameterized multilayer networks, and is detected by the singular-value spectrum of the embedding covariance; SimCLR without a projector drops to 51.5% ImageNet linear accuracy vs 66.5% with a 2-layer projector.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2110.09348",
+  "title": "Understanding Dimensional Collapse in Contrastive Self-supervised Learning",
+  "year": "2021",
+  "confidence": "high",
+  "relevance": "Gives a cheap diagnostic for the trained HyperNet embedding (worst layer in every version): plot the singular-value spectrum of embeddings on DEV for trained vs random weights. Also motivates keeping a nonlinear projector and discarding it, and using an anti-collapse variance term as v0.14 run02 already does."
+ },
+ {
+  "thread": "in-domain-ssl",
+  "claim": "Self-supervised pretraining that includes unlabeled images of the test classes (transductive) raises miniImageNet 1-shot accuracy from 57.5% to 80.4% (ResNet-101, MoCo), and the authors state the gain comes from 'data from the test classes themselves', not from extra unlabeled data; they disclose this by naming the setting (UBC-TFSL) and the exact unlabeled counts.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2010.02430",
+  "title": "Shot in the Dark: Few-Shot Learning with No Base-Class Labels (CVPRW 2021)",
+  "year": "2020",
+  "confidence": "high",
+  "relevance": "Pretraining on the Gravity Spy haystack would be transductive and could plausibly move mean AP a lot, but it changes the claim. The accepted disclosure pattern is to name the setting, state how many unlabeled haystack images were seen, and report the inductive (pool disjoint from haystack) variant alongside."
+ },
+ {
+  "thread": "in-domain-ssl",
+  "claim": "A controlled study of pretraining on unlabeled test-set text before few-shot classification (25 tasks; BERT, GPT-2, Mistral 7B) found pretraining boosts of 2.2 to 6.3 points but evaluation bias from using test rather than independent text of only -0.39 to +0.48 points, with no task significant at 0.05; the author still argues knowing whether a model saw unlabeled test data 'is still important' and recommends multiple training folds.",
+  "url": "https://arxiv.org/html/2410.00179v2",
+  "title": "Evaluating the fairness of task-adaptive pretraining on unlabeled test data before few-shot text classification (GenBench, EMNLP 2024)",
+  "year": "2024",
+  "confidence": "medium",
+  "relevance": "Empirical evidence (in NLP) that unlabeled-test pretraining mostly adds a legitimate boost rather than leakage, but the norm is still disclosure plus repeated reference subsampling; HyperNet's five references per type should become multiple seeded folds with intervals."
+ },
+ {
+  "thread": "in-domain-ssl",
+  "claim": "Transductive few-shot methods lose substantial accuracy, sometimes falling below inductive methods, when the query set has arbitrary (Dirichlet) class proportions instead of perfectly balanced classes.",
+  "url": "https://arxiv.org/abs/2204.11181",
+  "title": "Realistic Evaluation of Transductive Few-Shot Learning",
+  "year": "2021",
+  "confidence": "medium",
+  "relevance": "A haystack search is extremely imbalanced (rare types under 100 examples among thousands of negatives), so any transductive gain measured on the balanced-ish Gravity Spy TEST may not survive a true one-in-10,000 search; favors inductive pretraining pools."
+ },
+ {
+  "thread": "in-domain-ssl",
+  "claim": "The one self-supervised result on Gravity Spy itself uses pseudo-labels from image transformations, not contrastive learning, and trails supervised training: F1 94.15% self-supervised vs 97.18% supervised with ConvNeXt-family networks.",
+  "url": "https://arxiv.org/abs/2303.13917",
+  "title": "Convolutional Neural Networks for the classification of glitches in gravitational-wave data streams",
+  "year": "2023",
+  "confidence": "high",
+  "relevance": "Confirms no published SimCLR/BYOL/DINO baseline on Gravity Spy spectrograms exists as of this search; a v0.4 in-domain SSL result would be new, so the random-feature control and pre-registered protocol carry the evidentiary weight."
+ },
+ {
+  "thread": "in-domain-ssl",
+  "claim": "Randomly weighted CNN features are a strong spectrogram baseline: with an SVM readout they beat MFCCs on all three audio datasets tested (GTZAN 59.65% vs 53.44%; Extended Ballroom 89.82% vs 63.25%; UrbanSound8K 70.74% vs 65.49%) but remain below trained CNNs (82.1%, 93.7%, 73%).",
+  "url": "https://ar5iv.labs.arxiv.org/html/1805.00237",
+  "title": "Randomly weighted CNNs for (music) audio classification",
+  "year": "2018",
+  "confidence": "high",
+  "relevance": "Contextualizes HyperNet's result: random conv features beating hand features on spectrograms is expected, and the published gap to trained features (10-20 points) is the headroom that in-domain SSL would have to recover."
+ },
+ {
+  "thread": "in-domain-ssl",
+  "claim": "Self-supervised pretraining utility is high only at small label budgets and 'approaches zero before performance plateaus', and linear-probe accuracy does not predict fine-tuned utility (AMDIM had the best linear accuracy but lower utility than CMC and Rotation).",
+  "url": "https://ar5iv.labs.arxiv.org/html/2003.14323",
+  "title": "How Useful is Self-Supervised Pretraining for Visual Tasks? (CVPR 2020)",
+  "year": "2020",
+  "confidence": "medium",
+  "relevance": "Supports evaluating v0.4 with the frozen kNN/AP readout HyperNet already uses (linear-probe-like) rather than fine-tuning, but warns that objective rankings from a linear readout may not generalize to other readouts or tasks."
+ },
+ {
+  "thread": "in-domain-ssl",
+  "claim": "Larger unlabeled Gravity Spy pools exist but not as a ready image archive: Zenodo 5649212 provides O1-O3b machine-learning classifications as metadata tables and tells users to regenerate Omega-scan images with GWpy, while a 2024 Zenodo record (10.5281/zenodo.13904421) holds volunteer classifications through 20 July 2024; CTSAE used 41,745 O3 glitches.",
+  "url": "https://zenodo.org/record/5649212",
+  "title": "Gravity Spy Machine Learning Classifications of LIGO Glitches from Observing Runs O1, O2, O3a, and O3b",
+  "year": "2021-2024",
+  "confidence": "medium",
+  "relevance": "Defines the realistic declared data budget: an O3 (or O4) pool of 10^4-10^5 spectrograms regenerated from public strain, time-disjoint from v1.1 DEV/TEST, usable both as the inductive SSL pool and as the fresh held-out test the project needs. Image regeneration pipeline and label-free sampling were not verified here."
+ },
+ {
+  "thread": "followup:physics-synthetic-families",
+  "claim": "Gravity Spy's production config fixes the rendering pipeline: channel L1:GDS-CALIB_STRAIN, frame type L1_HOFT_C00, sampleFrequency 16384, blockTime 64 s, searchQRange [4,64], searchFrequencyRange [10,2048], searchMaximumEnergyLoss 0.2, searchWindowDuration 0.5 s, plotTimeRanges [0.5,1,2,4], plotNormalizedERange [0,25.5].",
+  "url": "https://raw.githubusercontent.com/Gravity-Spy/GravitySpy/develop/Production/wini.ini",
+  "title": "Gravity-Spy/GravitySpy develop: Production/wini.ini (with gravityspy/utils/utils.py and gravityspy/plot/plot.py)",
+  "year": "2018-2021 (repo)",
+  "confidence": "high",
+  "relevance": "A v0.4 synthetic generator can call gwpy q_transform with exactly these settings on a 64 s block starting at round(t0-32) and read the scalar normalized-energy array clipped at 25.5, instead of rendering drawings and reading luma-of-viridis. The frame type C00 (online calibration) is also the key reason regenerated GWOSC images will not be pixel-identical (see GWOSC finding)."
+ },
+ {
+  "thread": "followup:physics-synthetic-families",
+  "claim": "gwpy's Q-transform returns per-frequency-row median-normalized energy (|x|^2 / row median, float32), picks the loudest tile within the 'search' window to select the Q-plane, interpolates to tres/fres with cubic splines, and TimeSeries.q_transform whitens with a 2 s FIR filter built from an ASD estimated from the same data (asd_kw passthrough; default fftlength max(2, ceil(2048*dt)) s).",
+  "url": "https://raw.githubusercontent.com/gwpy/gwpy/main/gwpy/signal/qtransform.py",
+  "title": "gwpy/signal/qtransform.py and gwpy/timeseries/timeseries.py (q_transform)",
+  "year": "2024-2026 (main branch)",
+  "confidence": "high",
+  "relevance": "Because normalization is per row by median over the 64 s block, the pixel value of a glitch depends on the whole block's noise, not just the window. Synthetic injections must therefore be embedded in a full 64 s colored-noise block to get the same statistics; the 'search=0.5' plane selection also means Q is chosen per event, a natural augmentation axis. Normalized energy is dimensionless, so SNR scaling of injections maps directly onto the 0-25.5 clip."
+ },
+ {
+  "thread": "followup:physics-synthetic-families",
+  "claim": "Powell et al. 2015 define the canonical simulated-glitch families and ranges: sine-Gaussian h = h0 sin(2pi f0 t) exp(-t^2/2tau^2) with tau = Q/(sqrt2 pi f0), h0 = hrss/sqrt(tau); Gaussian pulse; ring-down h = h0 sin(2pi f0 t) exp(-t/2tau); data set 3 draws f0 40-1500 Hz, Q 2-20, hrss 5e-22 to 4e-21 Hz^-1/2, Gaussian duration 1-10 ms, SNR 1-400, in Gaussian noise from early aLIGO (Livingston) sensitivity curves.",
+  "url": "https://ar5iv.labs.arxiv.org/html/1505.01299",
+  "title": "Classification methods for noise transients in advanced gravitational-wave detectors (Powell et al., CQG 32, 215012)",
+  "year": "2015",
+  "confidence": "high",
+  "relevance": "Gives the parameter distributions for a 'type = parameter distribution' family: SG with f0 40-1500 Hz and Q 2-20 covers Blip/Tomte/Koi-Fish-like teardrops; Gaussian pulses 1-10 ms are broadband blips; ring-downs give asymmetric tails. Members sampled independently from these ranges are exactly the independent positives the v15 scope review says the task needs."
+ },
+ {
+  "thread": "followup:physics-synthetic-families",
+  "claim": "Razzano & Cuoco 2018 add whistle-like, scattered-light-like and chirp-like families with explicit formulas and ranges, inject them into stationary Gaussian noise colored by the public GW150914 H1 sensitivity curve at 8192 Hz, train a 4-block CNN on 2-s spectrograms (14,000 images), reach 0.998 test accuracy on synthetic classes, and do NOT test on real glitches.",
+  "url": "https://ar5iv.labs.arxiv.org/html/1803.09933",
+  "title": "Image-based deep learning for classification of noise transients in gravitational wave detectors (Razzano & Cuoco, CQG 35, 095016)",
+  "year": "2018",
+  "confidence": "high",
+  "relevance": "Direct recipes for Whistle (frequency-swept SG, 500-3200 Hz) and Scattered Light (32-64 Hz with harmonics, ~1 s) classes, and a published precedent that synthetic-only training reaches 99.8% on synthetic but was never validated on Gravity Spy, so the sim-to-real number is unknown and would be a genuine contribution of v0.4."
+ },
+ {
+  "thread": "followup:physics-synthetic-families",
+  "claim": "Llorens-Monteagudo et al. 2018 inject SG, Gaussian and ring-down glitches (f0 40-1500 Hz, Q 2-20, hrss 5e-22 to 4e-21, parameters log-uniform) at 16384 Hz into 'white Gaussian noise weighted by the Advanced LIGO broadband PSD'; dictionary learning classifies 2879/3000 (96%), with errors concentrated below SNR ~10 and at frequency extremes; no real glitches or Gravity Spy test.",
+  "url": "https://ar5iv.labs.arxiv.org/html/1811.03867",
+  "title": "Classification of gravitational-wave glitches via dictionary learning (arXiv:1811.03867)",
+  "year": "2018",
+  "confidence": "high",
+  "relevance": "Confirms the standard injection-into-aLIGO-PSD-noise recipe at Gravity Spy's native 16384 Hz and shows that low SNR (<10) is where classes blur, so SNR should be a controlled augmentation axis and a reported variable in v0.4 evaluation."
+ },
+ {
+  "thread": "followup:physics-synthetic-families",
+  "claim": "The LVK O3 all-sky short burst search's generic injection set (used by cWB and BayesWave) is: Gaussian pulses tau 0.1 and 2.5 ms; circular sine-Gaussians at (f0,Q) = (70,3), (70,100), (235,100), (554,8.9), (849,3), (1304,9), (1615,100), (2000,3), (2477,8.9), (3067,3); white-noise bursts with f_low 100 and 250 Hz (bandwidth 100 Hz, 0.1 s) and f0 750 Hz; hrss at 50% efficiency ranges 0.8e-22 to 25.2e-22 Hz^-1/2.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2107.03701",
+  "title": "All-sky search for short gravitational-wave bursts in the third Advanced LIGO and Advanced Virgo run (LVK)",
+  "year": "2021",
+  "confidence": "high",
+  "relevance": "Adds the white-noise-burst family (band-limited Gaussian noise burst) missing from the glitch-classification papers; WNBs are the natural surrogate for broadband Koi Fish / Extremely Loud morphology, and the Q grid (3 to 100) spans everything from blip-like to line-like tiles in the Q-transform."
+ },
+ {
+  "thread": "followup:physics-synthetic-families",
+  "claim": "Scattered-light arches have a closed-form model: h(t) = A sin[(4pi/lambda) x(t) + phi], instantaneous frequency f(t) = |2 v(t)/lambda|; for harmonic scatterer motion x = C sin(2pi f_mod t) this becomes h = A sin[(f_harm/f_mod) sin(2pi f_mod t) + phi] with f_harm the arch peak frequency, each arch lasting 1/(2 f_mod), f_mod ~1/6 Hz, N bounces giving N-times harmonics; multi-arch fits use f_harm,k = f_harm,0 + k f_diff and per-arch amplitude/phase.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2211.15867",
+  "title": "Bayesian modelling of scattered light in the LIGO interferometers (Udall & Davis)",
+  "year": "2022",
+  "confidence": "high",
+  "relevance": "This is the exact generator for the Gravity Spy Scattered Light class (2-2.5 s arches, often stacked, from 0.03-0.5 Hz ground motion) and Fast Scattering (0.2-0.3 s arches at 0.25/0.5 s spacing): sample f_mod, f_harm, N harmonics, phases and amplitudes to get independent members of one type, rendered through the same Q-transform."
+ },
+ {
+  "thread": "followup:physics-synthetic-families",
+  "claim": "Colored Gaussian noise with no real data is available from PyCBC: pycbc.psd.aLIGOZeroDetHighPower(flen, delta_f, f_low) (analytic lalsimulation fit) and pycbc.noise.noise_from_psd(tsamples, delta_t, psd, seed=...) produce seeded time-domain realizations; PyCBC warns the lalsimulation PSDs return meaningless extrapolated values outside their validity range with no warning. The aLIGO design ASD is also published as a plain text file (aLIGODesign.txt, 55 kB) in LIGO-T1800044-v5.",
+  "url": "https://pycbc.org/pycbc/latest/html/psd.html",
+  "title": "PyCBC documentation: Handling PSDs (and LIGO-T1800044-v5 public page)",
+  "year": "2018 (T1800044); PyCBC docs current",
+  "confidence": "high",
+  "relevance": "Answers question (2): backgrounds can be generated entirely from an analytic curve with a seed per sample, so every positive pair can sit in an independent noise realization. Nonstationarity (slow PSD amplitude drift, added narrow lines at 60 Hz harmonics / ~500 Hz violin modes, noise-floor steps) must be added by hand; no published parameter set for a nonstationary simulator was found (see gaps). Real LIGO RMS varies about +/-5% on daily/weekly scales (arXiv 0711.3041), a defensible drift amplitude."
+ },
+ {
+  "thread": "followup:physics-synthetic-families",
+  "claim": "Gravity Spy class morphologies map onto these families with published scales: Blip ~0.04 s broadband teardrop; Tomte triangular 16-150 Hz, power <64 Hz; Koi Fish broadband 20-1000 Hz with 'fins' near 30 Hz; Whistle U/V/W sweep above 128 Hz, mostly >500 Hz; Scattered Light arches 2-2.5 s; Fast Scattering 0.2-0.3 s arches spaced 0.25/0.5 s, <60 Hz; 1080 Lines dots every ~0.1 s at ~1080 Hz; Power Line flat 0.2-0.5 s lines at 60 Hz harmonics; Repeating Blips every 0.25-0.5 s; Low-frequency Burst ~0.25 s at 10-20 Hz; Violin Mode ~500 Hz and harmonics; Chirp originally hardware injections.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2208.12849",
+  "title": "Data quality up to the third observing run of Advanced LIGO: Gravity Spy glitch classifications (Glanzer et al., CQG 2023)",
+  "year": "2023",
+  "confidence": "high",
+  "relevance": "Supplies the per-class target ranges for the mapping requested in (1): SG/Gaussian/WNB -> Blip, Tomte, Koi Fish, Low Frequency Burst (by f0 and Q); swept SG -> Whistle; arch model -> Scattered Light / Fast Scattering; stationary sinusoid bursts -> Power Line, 1080 Lines, Violin Mode; blip trains -> Repeating Blips; PyCBC CBC -> Chirp. The O3 release (Zenodo 5649212, GPS times, Omicron metadata, 1e5+ labelled events) is the fresh held-out pool for problem (2)."
+ },
+ {
+  "thread": "followup:physics-synthetic-families",
+  "claim": "No paper was found that trains a CNN only on parameterized injections and tests on Gravity Spy images: Razzano & Cuoco (0.998) and Llorens-Monteagudo (96%) test only on synthetic data; Fernandes et al. 2023 train on real Gravity Spy (ResNet18 98.68% accuracy); the 2026 GlitchGAN paper synthesizes from real O3 reconstructions and reports Gravity Spy accepting only ~79.3% of its synthetic glitches overall (Koi Fish ~70%, Whistle 72%).",
+  "url": "https://arxiv.org/html/2606.27227v1",
+  "title": "Realistic Time-Domain Synthesis of Gravitational-Wave Detector Glitches using Class-Conditional Derivative GANs (GlitchGAN) [2026, newer than training data; verify] with arXiv 2303.13917",
+  "year": "2026 / 2023",
+  "confidence": "medium",
+  "relevance": "Answers (3): the sim-to-real transfer number for injection-trained CNNs on Gravity Spy does not exist in the literature, so v0.4 should pre-register it as a measured quantity (DEV only) rather than assume transfer. The GlitchGAN warning means a classifier that fits Q-transform magnitude can be fooled by unrealistic waveforms; for retrieval this is less harmful, but it argues for validating that synthetic types cluster with real ones (e.g. UMAP) before trusting training gains."
+ },
+ {
+  "thread": "followup:physics-synthetic-families",
+  "claim": "The v1.1 metadata records channel GDS-CALIB_STRAIN (the online C00 calibration) for every visible row, with event_time as GPS seconds (e.g. 1134216192.93164 L1 Whistle) and search Omicron; the visible rows span GPS 1127425468 to 1163924453, i.e. O1 plus pre-O2 engineering-run time (23 Nov 2016), which is outside both the GWOSC O1 (1126051217-1137254417) and O2 (1164556817-1187733618) bulk releases.",
+  "url": "https://zenodo.org/records/1486046/files/trainingset_v1d1_metadata.csv?download=1",
+  "title": "trainingset_v1d1_metadata.csv (Zenodo 1486046) with gwosc.datasets docs and GWOSC O2 release page",
+  "year": "2018",
+  "confidence": "medium",
+  "relevance": "Answers part of (4): event_time is directly usable as the GPS centre for a GWOSC fetch, but a fraction of v1.1 events (those between 1137254417 and 1164556817) cannot be regenerated from public bulk strain at all; v0.4 should count that fraction over the full CSV before promising a regenerated v1.1."
+ },
+ {
+  "thread": "followup:physics-synthetic-families",
+  "claim": "GWOSC O1/O2 strain is 16384 Hz h(t) (also 4096 Hz) in 4096 s files, high-passed at 8 Hz, from channels H1/L1:DCS-CALIB_STRAIN_C02 (O1) and H1/L1:DCH-CLEAN_STRAIN_C02 (O2), where CLEAN means linear-coupling subtraction of beam jitter, calibration lines and mains power lines (up to 30% sensitive-volume gain); CAT1 gaps are NaN; GWOSC channel names are ifo:LOSC-STRAIN (O1 4 kHz) and ifo:GWOSC-16KHZ_R1_STRAIN.",
+  "url": "https://ar5iv.labs.arxiv.org/html/1912.11716",
+  "title": "Open data from the first and second observing runs of Advanced LIGO and Advanced Virgo (LVC, SoftwareX 2021) with arXiv 1809.05348 and gwosc.locate docs",
+  "year": "2019-2021",
+  "confidence": "high",
+  "relevance": "Regenerated energy maps will differ from the h5 arrays by (a) calibration version C00 vs C02 (small amplitude/phase changes, different per-row medians), (b) O2 line and jitter subtraction, which directly removes or weakens the 60 Hz-harmonic structure that defines the Power_Line class and alters 1080Lines/Violin backgrounds, (c) the 8 Hz high-pass and NaN gaps inside the 64 s whitening block. So regeneration yields a valid new scalar-energy benchmark but not a pixel-level reproduction; the HyperNet protocol should treat it as fresh data and re-verify labels visually for line classes."
+ },
+ {
+  "thread": "followup:physics-synthetic-families",
+  "claim": "The public h5 arrays are {1,140,170} single-channel images per duration derived from 8x6-inch viridis PNGs cropped at x=[66,532], y=[105,671] (466x566 px plot area), so the stored values are a resized rendering of clipped normalized energy, not the energy itself; the Q used per image is whichever plane had the loudest tile within +/-0.25 s.",
+  "url": "https://zenodo.org/records/1486046",
+  "title": "Gravity Spy Training Set v1.1.0 (Zenodo record 1486046)",
+  "year": "2018",
+  "confidence": "high",
+  "relevance": "Supports v0.4 goal (b): a scalar input built by rendering gwpy's q_transform output directly (clip at 25.5, log2 frequency axis, 466x566 then resize to 140x170 or 96x96) reproduces the geometry of the archive images while preserving energy linearly; the same function applied to synthetic injections makes synthetic and real inputs share one preprocessing path."
+ },
+ {
+  "thread": "followup:physics-synthetic-families",
+  "claim": "Repeating Blips, 1080 Lines, Power Line and Low Frequency Burst all have published repetition or frequency scales that can be written as parameter distributions: blips repeating every 0.25-0.50 s; dots every ~0.1 s at ~1080 Hz with noise below 64 Hz; flat lines 0.2-0.5 s at 60 Hz harmonics; ~0.25 s humps at 10-20 Hz.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2208.12849",
+  "title": "Data quality up to the third observing run of Advanced LIGO: Gravity Spy glitch classifications",
+  "year": "2023",
+  "confidence": "high",
+  "relevance": "Gives concrete generator priors for the train/line classes that generic FDSL primitives miss: a Repeating Blips member = k SG blips (k ~ 3-10) at period U(0.25,0.5) s with jitter; 1080 Lines = SG at f0 ~ N(1080, 5) Hz, Q high, every 0.1 s plus a low-frequency floor rise; Power Line = windowed sinusoid at 60n Hz with duration U(0.2,0.5) s; these are the independently-sampled positives the contrastive loss needs."
+ },
+ {
+  "thread": "followup:unread-primary-sources-2025-2026",
+  "claim": "OmegaNeuron uses the already-trained Gravity Spy CNN frozen as a feature extractor (the DIRECT-style 200-dimensional embedding), four gwpy spectrograms per transient at 0.5/1/2/4 s, cosine similarity in that 200-d space, and defines no threshold or false-alarm rate; image pixel size and whether the four durations are merged are not stated.",
+  "url": "https://arxiv.org/html/2602.23460v1",
+  "title": "OmegaNeuron: Applying GravitySpy Similarity Methods to the Search for LIGO Glitch Witnesses (Aleman & Davis)",
+  "year": "2026",
+  "confidence": "high",
+  "relevance": "Cite as the current deployed-style similarity method: frozen supervised CNN + cosine. It does not evaluate retrieval against labels, so it is not a numeric baseline for v0.4's mAP; v0.4 can legitimately state that the published method has no false-alarm handling, which is exactly open problem (3). Newer than training data; verified from the arXiv HTML."
+ },
+ {
+  "thread": "followup:unread-primary-sources-2025-2026",
+  "claim": "No public, runnable Gravity Spy similarity baseline exists in gwdetchar: the gwdetchar 2.4.0 sdist (PyPI, uploaded 2026-09-16) has subpackages io, lasso, nagios, omega, saturation, scattering, utils and no module, dependency or string matching omeganeuron/gravityspy/keras/torch; the OmegaNeuron Zenodo record 10.5281/zenodo.18792606 contains only three CSV ranking tables (8-17 kB each) and no code or model weights.",
+  "url": "https://pypi.org/pypi/gwdetchar/json",
+  "title": "gwdetchar 2.4.0 on PyPI; github.com/gwdetchar/gwdetchar; zenodo.org/records/18792606",
+  "year": "2026",
+  "confidence": "high",
+  "relevance": "v0.4 cannot point reviewers to an existing runnable similarity-search baseline; it must either implement a DIRECT-style baseline (frozen Gravity Spy CNN embedding + cosine) itself or state that the published code is not public as of 2026-11. The 'implemented within gwdetchar' sentence in the paper is not yet reflected in any released version."
+ },
+ {
+  "thread": "followup:unread-primary-sources-2025-2026",
+  "claim": "Cirfeta 2605.28572 processes 1,277 h of public O4a strain into ~188k 32-s Q-transform spectrograms (256x256, cividis, q in [4,64], 20-2048 Hz) embedded with frozen dinov2_vits14_reg (384-d L2-normalized CLS); the grayscale ablation table gives H1 ARI 0.620/0.897/0.900/0.682 and L1 0.966/0.681/0.852/0.981, contradicting the abstract's '0.68-0.90' and 'L1 > 0.90 in all four sessions'.",
+  "url": "https://arxiv.org/html/2605.28572",
+  "title": "Unsupervised Morphological Characterization of Gravitational-Wave Glitches in LIGO O4a Using Frozen DINOv2 Features (Cirfeta)",
+  "year": "2026",
+  "confidence": "high",
+  "relevance": "Do not cite the 0.68-0.90 range as a clean result; cite Table 4 with the discrepancy noted. The paper offers no one-reference retrieval number, so it is context (frozen pretrained ViT on spectrograms) rather than a comparable baseline; its ARI 0.133 on 19 Gravity Spy classes shows frozen DINOv2 is weak at glitch-class structure, relevant to the 'learned vs random features' problem. Newer than training data."
+ },
+ {
+  "thread": "followup:unread-primary-sources-2025-2026",
+  "claim": "The VIGILant Virgo O3b dataset is 11,193 glitches in 7 classes (Scattering 4000, Resonance_Line 2000, Tomte 1801, Blip 1156, No_Glitch 1000, Extremely_Loud 938, Koi_Fish 298), 170x140 grayscale spectrograms with three time windows stacked as channels ('encoded134'), split 70/15/15 (7835/1679/1679); no Zenodo DOI is given, and the 'openly available' link is a public git.ligo.org repository (AGPL-3) containing notebooks, a PNG generator script and tree-model joblibs, not an image archive.",
+  "url": "https://arxiv.org/html/2604.13687v2",
+  "title": "Automatic classification pipeline for glitches in the Virgo detector (Fernandes et al.)",
+  "year": "2026",
+  "confidence": "high",
+  "relevance": "A Virgo labeled set exists but would have to be regenerated from Virgo data via the repo's script (needs LIGO/Virgo data access for Omicron triggers), so it is not a drop-in fresh test set. Its 170x140 per-duration format matches Gravity Spy, which makes it a plausible held-out domain if the images can be regenerated. Newer than training data."
+ },
+ {
+  "thread": "followup:unread-primary-sources-2025-2026",
+  "claim": "The DANTE line of preprints (arXiv 2606.25702 and sequels) publishes no labeled O4a glitch dataset DOI; the only Zenodo record is the software/evidence archive 10.5281/zenodo.22763556 (DANTE v3.8.1, 2026-09-15, one 25 MB zip), and the pipeline's own reported recall is poor (Blip/AsymBlip 0.00% even at SNR ~380).",
+  "url": "https://arxiv.org/html/2606.25702",
+  "title": "DANTE: A Reference-Guided Unsupervised Pipeline for Extended-Transient Anomaly Characterization in LIGO O4a (Cirfeta); zenodo.org/records/22763556",
+  "year": "2026",
+  "confidence": "high",
+  "relevance": "Do not describe DANTE as providing an O4a labeled dataset. For open problem (2), no public labeled O4a Gravity Spy set was found in these sources; GWOSC O4a strain is public but labels are not. Newer than training data."
+ },
+ {
+  "thread": "followup:unread-primary-sources-2025-2026",
+  "claim": "In Coughlin et al. 2019 the 30.0% vs 99.0% figures are not a conflict: 99.0% (Figure 3 caption) is DIRECT's data-set reduction at 50% Water Jet retention, while 30.0% (body text) is the raw-pixel/PCA reduction at the same retention; the body text separately says 99.9% for Raven Peck where the caption says 99.0%. The paper never states the number of known Raven Peck or Water Jet examples.",
+  "url": "https://arxiv.org/pdf/1903.04058v2",
+  "title": "Classifying the unknown: discovering novel gravitational-wave detector glitches using similarity learning (Coughlin et al., PRD 99, 082002)",
+  "year": "2019",
+  "confidence": "high",
+  "relevance": "The 'raw pixels fail on Water Jet' story is real but rests on one query image, two classes, and an unreported number of known examples; cite it as qualitative evidence only, and note that on Raven Peck raw pixels matched or beat DIRECT, which is consistent with HyperNet's own raw-pixel results. The one-reference ranking protocol in Fig. 3 is the closest published precedent for HyperNet's benchmark."
+ },
+ {
+  "thread": "followup:unread-primary-sources-2025-2026",
+  "claim": "Bahaadini et al. 2018 (Information Sciences 444:172-186, DOI 10.1016/j.ins.2018.02.068) could not be read: arXiv 2207.04001 is a different paper (Yan, Leung & Hui, GAN augmentation, MNRAS 2022), arXiv 1805.02296 is the DIRECT ICIP paper, ScienceDirect returns HTTP 403, Crossref has no abstract, and OpenAlex lists no repository full text; the companion Zenodo training set 10.5281/zenodo.1476156 confirms 140x170 images at 0.5/1/2/4 s but gives no class count or accuracy.",
+  "url": "https://zenodo.org/records/1476156",
+  "title": "Machine learning for Gravity Spy: Glitch classification and dataset (Zenodo record; journal article unread)",
+  "year": "2018",
+  "confidence": "high",
+  "relevance": "The write-up should not quote a specific 22-class accuracy or per-class table from Bahaadini 2018 unless someone with journal access reads it; the two arXiv IDs previously cited for it must be removed. The v1d1 metadata CSV's sample_type column is the authoritative definition of the TEST split HyperNet has been using."
+ },
+ {
+  "thread": "followup:unread-primary-sources-2025-2026",
+  "claim": "Formula-SED (ICASSP 2025) pretrains CRNNs on 1M formula-synthesized clips labeled by discretized synthesis parameters; on DESED the 1.1M-parameter CRNN improves from PSDS1 0.352 / PSDS2 0.579 / event-F1 45.7% (scratch) to 0.405 / 0.641 / 49.6% with 100k Formula-SED samples and 0.420 / 0.653 / 51.4% with 1M, with no numeric speed-up reported.",
+  "url": "https://arxiv.org/html/2504.04428",
+  "title": "Formula-Supervised Sound Event Detection: Pre-Training Without Real Data (Shibata et al.)",
+  "year": "2025",
+  "confidence": "high",
+  "relevance": "The recipe that worked is supervised prediction of continuous synthesis parameters (pitch, harmonic count, envelope, inharmonicity) rather than instance-level contrastive pairs; this is a concrete alternative objective for v0.4's synthetic spectrogram-like data. Gains are modest (+0.05 PSDS1) and require fine-tuning on real labels, which HyperNet forbids."
+ },
+ {
+  "thread": "followup:unread-primary-sources-2025-2026",
+  "claim": "AudioPG (June 2026) pretrains a ViT-Base masked autoencoder at 75% mask ratio on 1024x128 log-Mel inputs synthesized on the fly from harmonic additive synthesis, two-operator FM, sawtooth/square pulses, noise-burst transients, stochastic low-pass damping and background noise, with 1-5 ADSR-shaped events per clip and f0 in 50-2000 Hz; full fine-tuning reaches ESC-50 90.60 (+/-2.55), FSD50K mAP 0.546, UrbanSound8K 88.17, Speech Commands V2 97.03 versus scratch 54.00 / 0.398 / 75.34 / 96.30.",
+  "url": "https://arxiv.org/html/2606.14791",
+  "title": "From Physics to Representation: Audio Learning with Synthetic Pre-training via Procedural Generation (Liu et al.)",
+  "year": "2026",
+  "confidence": "high",
+  "relevance": "Confirms the earlier threads' summary. Key transferable point: the objective is reconstruction (MAE), not contrastive views of one program, and the synthetic distribution is built from physically grounded primitives with explicit transients and spectral damping, both of which are spectrogram-relevant. Newer than training data; supplementary parameter ranges unverified."
+ },
+ {
+  "thread": "followup:unread-primary-sources-2025-2026",
+  "claim": "FormulaBank / 'Rethinking Procedural Audio Pre-training' (Sep 2026) scales formula classes C in {14,28,56,112,224} and within-class renderings I in {16,...,1000}, tests mask ratios {0.10,0.25,0.50,0.75,0.80,0.90}, and finds procedural audio prefers 10-25% masking while AudioSet-28K prefers 50-75%; full FormulaBank (C=224, I=125) gives ESC-50 77.00 (FDSL) / 77.50 (AudioMAE) versus scratch 69.50 and real-audio AudioMAE 86.25.",
+  "url": "https://arxiv.org/html/2609.15067",
+  "title": "Rethinking Procedural Audio Pre-training: Source Scaling and Objective Adaptation (Peng et al.)",
+  "year": "2026",
+  "confidence": "high",
+  "relevance": "Directly actionable for v0.4: procedurally generated data is too predictable for the usual heavy masking/augmentation, so objectives tuned for natural data (here, InfoNCE on two renders of one program) may be mis-set; low mask ratios or harder negatives across programs are suggested. Also note the gains over scratch here are smaller (+7.5 ESC-50) than AudioPG's (+36.6), so headline numbers across these papers are not comparable. Newer than training data."
+ },
+ {
+  "thread": "followup:unread-primary-sources-2025-2026",
+  "claim": "The noise-INR paper (Mar 2026) pretrains implicit neural representations on synthetic noise classes (Uniform, Gaussian, Dead Leaves, Spectral); unstructured noise greatly improves signal-fitting capacity but gives poor denoising priors, while 1/|f|^alpha spectral noise matches the best data-driven initializations.",
+  "url": "https://arxiv.org/abs/2603.29034",
+  "title": "The Surprising Effectiveness of Noise Pretraining for Implicit Neural Representations (Vyas et al.)",
+  "year": "2026",
+  "confidence": "medium",
+  "relevance": "Only loosely relevant: it concerns INR initialization, not discriminative CNN features, so it should not be cited as evidence that noise pretraining yields good retrieval features. Its one usable idea is that matching the spectral statistics (1/f-like) of the target domain matters more than object-like structure. Newer than training data; full text not read."
+ },
+ {
+  "thread": "followup:unread-primary-sources-2025-2026",
+  "claim": "Zenodo 5649212 (Gravity Spy ML classifications O1-O3b) H1_O1.csv has 15,305 rows with 22 ml_label classes; 10,236 rows have ml_confidence >= 0.95, and url1-url4 resolve to 800x600 PNGs on panoptes-uploads.zooniverse.org.",
+  "url": "https://zenodo.org/records/5649212",
+  "title": "Gravity Spy Machine Learning Classifications of LIGO Glitches from Observing Runs O1, O2, O3a, and O3b",
+  "year": "2021",
+  "confidence": "high",
+  "relevance": "This is a viable source for fresh, larger held-out test data (open problem 2): ML-labeled (not human-labeled) spectrograms at 800x600 that would need cropping to the 140x170 region, with a confidence cutoff as the label filter; H1_O1 alone gives ~10k high-confidence images across 21 classes, and the O3 files are an order of magnitude larger. Check overlap with the v1.1 training set by gravityspy_id before use."
+ },
+ {
+  "thread": "followup:unread-primary-sources-2025-2026",
+  "claim": "The three remaining glitch-ML preprints offer no retrieval baseline and no public image data: the AST paper (2601.20034) reports only t-SNE/silhouette figures on 10 Gravity Spy classes (4,000-8,000 per class, 1024x128 log-mel, no code link); GSpyNetTreeS (2511.16861) is a YOLOv3-like detector on 280x340 1-s Q-scans with 13,000 unique images and per-class TP/FP/FN at threshold 0.5, no mAP; the KAGRA O3GK study (2608.24690) uses 2,215 four-channel 224x224 samples with DEC reaching silhouette 0.3042 / NMI 0.3673 / ARI 0.2981, and its auxiliary-channel data are not public.",
+  "url": "https://arxiv.org/html/2608.24690",
+  "title": "Unsupervised Deep Learning Method for Clustering KAGRA O3GK Transient Noise Data (Kim, Jung, Kwak); also arXiv 2601.20034 and 2511.16861",
+  "year": "2026",
+  "confidence": "high",
+  "relevance": "None of these provide a comparable one-reference retrieval number or a downloadable held-out image set; cite them only as context that the 2025-2026 literature still evaluates with clustering indices or supervised detection, which strengthens the case that HyperNet's mAP/recall-at-FAR protocol is distinct. All three are newer than training data."
+ },
+ {
+  "thread": "followup:random-control-variance-and-fixed-extractors",
+  "claim": "Saxe et al. 2011 scored every random-weight architecture as the mean over several independent random weight sets (10 sets each for convolutional and non-convolutional on NORB-mono, 5/5 on CIFAR-10-mono), reported 95% CIs in Fig. 4, and found the sampling distribution (uniform, Laplacian, Gaussian) did not affect accuracy as long as it was zero-centred.",
+  "url": "https://icml.cc/2011/papers/551_icmlpaper.pdf",
+  "title": "On Random Weights and Unsupervised Feature Learning (Saxe, Koh, Chen, Bhand, Suresh, Ng, ICML 2011)",
+  "year": "2011",
+  "confidence": "high",
+  "relevance": "The canonical random-weights paper never used a single random draw as its control; v0.4 should report the seed-1403 control as one sample of a distribution measured over at least 5-10 seeds, and can cite Saxe for the practice of averaging and for init-distribution insensitivity."
+ },
+ {
+  "thread": "followup:random-control-variance-and-fixed-extractors",
+  "claim": "Ramanujan et al. 2020 ran every CIFAR-10 random-subnetwork experiment with 5 seeds and plotted mean \u00b1 1 SD; on ImageNet the Signed Kaiming Constant init beat Kaiming Normal by about 5-7 points at 30% of weights (ResNet-50 68.6% vs 61.71%, ResNet-101 72.3% vs 66.15%, Wide ResNet-50 73.3% vs 67.95%), and accuracy 'vastly decreases' with Xavier Normal or Kaiming Uniform (Fig. 7).",
+  "url": "https://ar5iv.labs.arxiv.org/html/1911.13299",
+  "title": "What's Hidden in a Randomly Weighted Neural Network? (Ramanujan, Wortsman, Kembhavi, Farhadi, Rastegari, CVPR 2020)",
+  "year": "2020",
+  "confidence": "high",
+  "relevance": "Init distribution and width change what random weights can do by several points even at fixed architecture; v0.4's random-control sweep should include Kaiming Normal (current), Signed Kaiming Constant and orthogonal inits, and at least one wider variant, each over 5 seeds, before claiming training 'never beats random'. Note the result is for masked subnetworks, not frozen full features, so treat it as motivation, not a prediction."
+ },
+ {
+  "thread": "followup:random-control-variance-and-fixed-extractors",
+  "claim": "Pons & Serra 2019 reported random-CNN audio features as averages over only 3 runs, and their best random features used ~3,500 feature maps versus ~120, with random VGG-style features reaching 59.65% on GTZAN (MFCC baseline 53.44%; trained CNN 82.1%), 89.82% on Extended Ballroom (trained 93.7%) and 70.74% on UrbanSound8K (trained 73%).",
+  "url": "https://ar5iv.labs.arxiv.org/html/1805.00237",
+  "title": "Randomly weighted CNNs for (music) audio classification (Pons & Serra, ICASSP 2019)",
+  "year": "2019",
+  "confidence": "high",
+  "relevance": "On spectrogram-like input, random features improve markedly with width (120 to 3,500 maps). The all-random four-layer mix (0.576) is one width; a widened random control is a cheap arm that could move the bar v0.4 has to clear. Three runs is the weakest seed budget in the literature; v0.4 should exceed it."
+ },
+ {
+  "thread": "followup:random-control-variance-and-fixed-extractors",
+  "claim": "Licciardi et al. 2025 applied the wavelet scattering transform to Gravity Spy v1.1.0 as a 1D time scattering of the whitened strain (4 s window, 2048 Hz, Morlet, (J,A)=(7,7), orders 1 and 2, zeroth order dropped), interpolated the coefficient maps (S1 42x128, S2 114x128) to 140x170, and with a cuML random forest got test accuracy S1 88.11%, S2 68.65%, S1+S2 88.57%, Q-transform image 87.41%, WST+Q ensemble 91.03%; no kNN, cosine or retrieval number and no code repository are given.",
+  "url": "https://arxiv.org/html/2411.19122v2",
+  "title": "Wavelet Scattering Transform for Gravitational Waves Analysis. An Application to Glitch Characterization (Licciardi, Carbone, Rondoni, Nagar; arXiv 2411.19122, Phys. Rev. D 111, 084044)",
+  "year": "2025 (v1 Nov 2024, v2 Mar 2025; newer than much training data, verify)",
+  "confidence": "high",
+  "relevance": "This is the published scattering bar on exactly HyperNet's dataset, but it operates on raw strain, not the 140x170 spectrogram crops, and reports only supervised random-forest accuracy. v0.4 can name a 'scattering' arm but must build it (Kymatio Scattering1D on strain, or Scattering2D on the crop) and score it with the same one-reference cosine protocol; no published retrieval number exists to copy."
+ },
+ {
+  "thread": "followup:random-control-variance-and-fixed-extractors",
+  "claim": "Kymatio Scattering2D exposes J (log-2 scale), L (number of angles, default 8, filters optimised for L=8), max_order (1 or 2) and pre_pad; it outputs 1 + LJ + L^2 J(J-1)/2 channels per input channel at spatial size M//2^J x N//2^J, and documents no rotation-averaging or rotation-invariant option (that flag exists only in HarmonicScattering3D).",
+  "url": "https://www.kymat.io/codereference.html",
+  "title": "Kymatio code reference (Scattering2D)",
+  "year": "n.d. (docs)",
+  "confidence": "high",
+  "relevance": "A 2D scattering arm on the 140x170 crop with J=3, L=8, order 2 gives 1+24+96 = 121 channels at 17x21 (after padding), i.e. about 43k dims before pooling; keeping orientation channels unaveraged is the default, which matches spectrograms' fixed time/frequency axes. The arm is label-free and deterministic, so it has no seed variance, which makes it a clean fixed bar."
+ },
+ {
+  "thread": "followup:random-control-variance-and-fixed-extractors",
+  "claim": "Xue & Roshan 2019 report that kNN on random depthwise signed convolutional features reaches retrieval precision on the Corel-Princeton Image Similarity benchmark 'comparable' to trained networks (behind trained VGG16, ahead of ResNet18), that classification accuracy rises with the number of random kernels (up to 100,000 used), and give no seed-variance statement.",
+  "url": "https://ar5iv.labs.arxiv.org/html/1806.05789",
+  "title": "Image classification and retrieval with random depthwise signed convolutional neural networks (Xue & Roshan, IWANN 2019)",
+  "year": "2019",
+  "confidence": "medium",
+  "relevance": "The only retrieval-specific random-feature paper found also leaves seed variance unmeasured and finds width helps; it supports adding a wide random arm and reporting seed spread as a novel contribution of v0.4 rather than something borrowed."
+ },
+ {
+  "thread": "followup:random-control-variance-and-fixed-extractors",
+  "claim": "Mehrer et al. 2020 show that networks differing only in random seed have representational consistency as low as 44% shared RDM variance in the deepest conv layer (All-CNN-C, 10 instances, 45 pairwise comparisons), that consistency falls with depth, and that it is anticorrelated with training progress (r = -0.91); centroid-based consistency (0.88) is far higher than exemplar-based (0.44).",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7665054",
+  "title": "Individual differences among deep neural network models (Mehrer, Spoerer, Kriegeskorte, Kietzmann, Nature Communications 11:5725)",
+  "year": "2020",
+  "confidence": "medium",
+  "relevance": "Seed-to-seed representational differences grow with depth, so the coarse block (the layer v0.3 compares) is exactly where a single-seed control is least representative; the paper's recommendation to analyse groups of networks, not one, applies to both the trained and the random arms."
+ },
+ {
+  "thread": "followup:random-control-variance-and-fixed-extractors",
+  "claim": "Picard 2021/2023 measured seed spread for trained CIFAR-10 ResNet-9 as 90.70 \u00b1 0.20% (min 90.14, max 91.41) over 500 seeds and found black-swan seeds over 10,000; on ImageNet linear heads over 50 seeds SDs were about 0.1% with min-max gaps of about 0.5%.",
+  "url": "https://arxiv.org/abs/2109.08203v2",
+  "title": "Torch.manual_seed(3407) is all you need (Picard)",
+  "year": "2021 (v2 2023)",
+  "confidence": "high",
+  "relevance": "Gives a reference scale for seed variance in trained nets (~0.2 points over 500 seeds, with rare outliers). No comparable number exists for frozen random features in retrieval; if v0.4 finds a seed SD of a few hundredths of mAP for the random control, that alone would mean the v0.3 differences (-0.004 to -0.029) are within one control SD."
+ },
+ {
+  "thread": "followup:random-control-variance-and-fixed-extractors",
+  "claim": "Sakai's topic-set-size design implies about 300 topics (queries) are needed for a paired t-test to detect a 0.05 difference in mean average precision at Cohen's five-eighty convention (alpha 0.05, power 0.80), and his review of 1,055 SIGIR/TOIS papers found many IR experiments seriously underpowered.",
+  "url": "https://static.aminer.org/pdf/20170130/pdfs/sigir/wsby64dh28ioeolu9rzgt5dvmsjmahi3.pdf",
+  "title": "Statistical Significance, Power, and Sample Sizes: A Systematic Review of SIGIR and TOIS, 2006-2015 (Sakai, SIGIR 2016); cites Sakai, Topic Set Size Design, Information Retrieval Journal 2015",
+  "year": "2016",
+  "confidence": "medium",
+  "relevance": "With 20 classes (topics) the detectable mAP difference is far above 0.05 unless per-class paired differences are very tightly correlated. Derived from v0.3's own paired 95% half-widths (0.011-0.033, i.e. paired SE about 0.006-0.017), the minimum detectable paired effect at 80% power is roughly 2.8 x SE = 0.015-0.045 mAP. v0.4 should pre-register this MDE from a pilot variance estimate (Sakai's method: alpha, beta, minDt, variance of per-topic differences) and treat references as the unit that can be multiplied (10 or 20 per class) to shrink the reference-bootstrap component, while the class-bootstrap component stays fixed at 20 classes."
+ },
+ {
+  "thread": "followup:random-control-variance-and-fixed-extractors",
+  "claim": "Lafargue et al. 2024 show that few-shot CIs computed by sampling tasks with replacement understate uncertainty on small datasets by several times (OCI/CCI half-width ratios about 3.7-8.7x at T=600), that paired tests on the same tasks raise conclusive comparisons from 57/135 (42%) to 94/135 (70%), and that the optimal number of queries per class is about 1 for 1-shot and 5 for 5-shot.",
+  "url": "https://arxiv.org/html/2409.02850",
+  "title": "Oops, I Sampled it Again: Reinterpreting Confidence Intervals in Few-Shot Learning (Lafargue, Smith, Vermet, L\u00f6we, Reid, Gripon, Valmadre)",
+  "year": "2024",
+  "confidence": "high",
+  "relevance": "Supports pre-registering event-level paired differences (same reference, same 1,179 test events, per-method score difference) as the primary statistic, and spending the data budget on more independent references per class (10-20) rather than on resampling the same events; also warns that bootstrap over 5 references per class that reuse the same test events is a closed-form resample and may understate the interval."
+ },
+ {
+  "thread": "followup:random-control-variance-and-fixed-extractors",
+  "claim": "Shimabucoro, Hospedales & Gouk 2023 found that few-shot performance estimators are badly biased and variable at the task level: 5-way 5-shot per-episode mean absolute error of 8.7-16.8 points for ProtoNet (hold-out 16.75, 5-fold CV 8.67, LOO 10.16, bootstrap 15.00 on CIFAR-FS), with 'at least a 50% chance the validation accuracy would be wrong by more than 10%', and a maximum Spearman rank correlation with the oracle of only about 0.4.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2307.02732",
+  "title": "Evaluating the Evaluators: Are Current Few-Shot Learning Benchmarks Fit for Purpose? (Shimabucoro, Hospedales, Gouk; ICML 2023 workshop / TMLR 2024 as 'Are Validation Methods for Few-Shot Learning Fit for Purpose?')",
+  "year": "2023",
+  "confidence": "medium",
+  "relevance": "Any DEV-based selection among readouts using 5 references per class is itself a noisy few-shot estimator; v0.4 should not pick its selected arm from a single DEV draw but from a cross-validated or multi-reference estimate, and should state the selection noise alongside the TEST result."
+ },
+ {
+  "thread": "followup:random-control-variance-and-fixed-extractors",
+  "claim": "The only published Gravity Spy one-reference similarity search (Coughlin et al. 2019, DIRECT: VGG16+ImageNet, contrastive fine-tune on Gravity Spy pairs, 200-d, cosine) used 'a single known' Raven Peck and a single Water Jet glitch as queries without stating how they were chosen, reported no AP/precision, and found raw pixels and PCA matched DIRECT on Raven Peck but failed on Water Jet; the metric was fraction of the archive removable at 50% retention (about 0.95-0.97 Raven Peck, 0.91-0.92 Water Jet with leakyReLU).",
+  "url": "https://arxiv.org/html/1903.04058v2",
+  "title": "Classifying the unknown: discovering novel gravitational-wave detector glitches using similarity learning (Coughlin et al., Phys. Rev. D 99, 082002)",
+  "year": "2019",
+  "confidence": "high",
+  "relevance": "Reference quality is unhandled in the closest prior protocol; v0.4 should pre-register how references are drawn (random vs medoid in a fixed-extractor space vs curated) and report both, and can adopt the 'fraction of archive removed at fixed retention' metric as a retrieval-side complement to recall at 1% false alarms. Also shows raw pixels already match a trained similarity model on an easy class, echoing v0.1."
+ },
+ {
+  "thread": "followup:random-control-variance-and-fixed-extractors",
+  "claim": "Few-shot sample-selection studies find medoid/herding/k-medoids selection gives only small but consistent gains over random exemplars, with random remaining a strong baseline and the gap shrinking as the budget grows; no study was found that measures reference (query) choice effects on one-shot retrieval mAP.",
+  "url": "https://arxiv.org/pdf/2402.03038",
+  "title": "Automatic Combination of Sample Selection Strategies for Few-Shot Learning (search result; full tables not verified)",
+  "year": "2024 (Few-Medoids item 2026, newer than training data)",
+  "confidence": "low",
+  "relevance": "A 'medoid reference' arm (medoid computed in the raw-pixel or scattering space from the same class, no extra labels) is cheap and plausibly worth a few points; a blank/constant reference as in v15 is not a protocol found anywhere and should be documented as a HyperNet-specific floor control, not a comparison arm."
+ },
+ {
+  "thread": "followup:random-control-variance-and-fixed-extractors",
+  "claim": "Fresh held-out Gravity Spy data exists at scale: Glanzer et al. 2023 report 233,981 ML-classified glitches at Hanford and 379,805 at Livingston (613,786 total) through O3b; Zenodo 5649212 (v1.0.0, 7 Nov 2021, CC BY 4.0) provides eight CSVs (H1/L1 x O1/O2/O3a/O3b, 742 MB) with url1-url4 links to Omega scans at 0.5/1/2/4 s, 22 classes for O1/O2 plus Blip_Low_Frequency and Fast_Scattering for O3, but no images in the record.",
+  "url": "https://zenodo.org/record/5649212",
+  "title": "Gravity Spy Machine Learning Classifications of LIGO Glitches from Observing Runs O1, O2, O3a, and O3b (Zenodo 5649212); Glanzer et al., Class. Quantum Grav. 2023 (arXiv 2208.12849)",
+  "year": "2021 (data), 2023 (paper)",
+  "confidence": "high",
+  "relevance": "v0.4 can pre-register a never-used TEST drawn from O3a/O3b (e.g. high-confidence ML labels, matching the 22 v1.1 classes, excluding O1 events in the v1.1 training set), which also addresses the three prior uses of TEST v1.1; the labels are machine labels, so a confidence threshold must be part of the pre-registration."
+ },
+ {
+  "thread": "followup:random-control-variance-and-fixed-extractors",
+  "claim": "Gravity Spy v1.1.0 (Zenodo 1486046, 1 Nov 2018) stores each sample as four 140x170 single-channel arrays (0.5, 1, 2, 4 s) in trainingsetv1d1.h5, with the split recorded in a sample_type column and a PNG crop window of x=[66,532], y=[105,671].",
+  "url": "https://zenodo.org/records/1486046",
+  "title": "Gravity Spy Training Set v1.1.0 (Zenodo 1486046)",
+  "year": "2018",
+  "confidence": "high",
+  "relevance": "Confirms the 140x170 crops HyperNet uses are the record's native arrays, so a fixed-extractor arm (HOG, Gabor, Scattering2D) can be run on identical inputs across all four durations; Licciardi et al. instead resized a 470x570 Q-transform to 140x170, so their accuracy is not on the identical pixels."
+ },
+ {
+  "thread": "followup:per-class-failure-and-readout",
+  "claim": "On frozen TEST (v0.1/v0.2/v0.3 results.json), raw pixels beat every CNN readout on Chirp, Power_Line, Tomte, Blip, Low_Frequency_Burst and (except random middle 6x6) Air_Compressor, while the random early mix wins on 1080Lines, 1400Ripples, Scattered_Light, Wandering_Line, Whistle, Violin_Mode, Helix and Scratchy.",
+  "url": "https://zenodo.org/records/1486046",
+  "title": "Gravity Spy Training Set v1.1.0 (Zenodo) plus repo results.json for v0.1-v0.3",
+  "year": "2018 / 2026",
+  "confidence": "high",
+  "relevance": "The classes raw pixels win are the compact low-frequency ones; the classes the CNN wins are high-frequency or extended. A single readout cannot serve both, which motivates a per-arm normalization and a hybrid readout rather than a new training objective as the first v0.4 move."
+ },
+ {
+  "thread": "followup:per-class-failure-and-readout",
+  "claim": "The published Gravity Spy class morphologies line up with the split: raw-pixel winners are compact structures below about 250 Hz at a fixed position (Blip broadband teardrop ~0.04 s; Tomte triangular 16-150 Hz; Power Line narrow flat lines at 60 Hz or harmonics, 0.2-0.5 s; Air Compressor thick flat line ~50 Hz; Low-frequency Burst 10-20 Hz hump), whereas CNN winners are high-frequency or long textured ones (1080 Lines dotted at ~1080 Hz; 1400 Ripples wavy ~1400 Hz; Scattered Light stacked arches 2-2.5 s; Wandering Line undulating above ~256 Hz; Whistle U/V/W shapes mostly above 500 Hz).",
+  "url": "https://ar5iv.labs.arxiv.org/html/2208.12849",
+  "title": "Data quality up to the third observing run of Advanced LIGO: Gravity Spy glitch classifications (Glanzer et al.)",
+  "year": "2023",
+  "confidence": "high",
+  "relevance": "Gives a morphology-based prediction for which classes any pooling choice will hurt: anything whose identity is a single low-frequency row or a sub-0.1 s blob needs full pixel resolution in the low-frequency band; anything defined by repetition or texture tolerates (and benefits from) pooled random filters."
+ },
+ {
+  "thread": "followup:per-class-failure-and-readout",
+  "claim": "The loss under coarse pooling tracks spatial resolution: raw pixels pooled to a 6x6 grid score 0.353 DEV (Air_Compressor 0.03, Tomte 0.25, Chirp 0.42) while 12x12 already restores Power_Line to 0.98 and Chirp to 0.82, 24x24 restores Tomte to 0.80, and Air_Compressor needs 48x48 (0.77); on the random CNN a 12x12 middle grid lifts Chirp from 0.85 (6x6) to 0.94.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2208.12849",
+  "title": "DEV-only re-scoring (scratchpad dev_readout_study.py) interpreted with the Glanzer 2023 morphologies",
+  "year": "2026",
+  "confidence": "high",
+  "relevance": "A 60 Hz line needs about one twelfth of the frequency axis; a 50 Hz thick line or a 0.04 s teardrop needs the full 48 rows. Finer grids alone do not fix the mix (12x12 concat is worse overall), so the fix is to keep a full-resolution pixel arm alongside the pooled CNN arm rather than to refine the CNN grid."
+ },
+ {
+  "thread": "followup:per-class-failure-and-readout",
+  "claim": "The 0.1 mAP collapse of raw pixels under the 600-image per-feature standardization is caused by a 15x spread of per-pixel standard deviation across frequency rows: the scaler multiplies the quiet high-frequency rows by up to 15x relative to the low-frequency rows where Blip, Tomte, Chirp, Power_Line and Air_Compressor live.",
+  "url": "https://www.tensorflow.org/versions/r2.15/api_docs/python/tf/image/per_image_standardization",
+  "title": "DEV-only re-scoring (scratchpad dev_readout_study.py); per-image standardization definition (TensorFlow docs)",
+  "year": "2026",
+  "confidence": "high",
+  "relevance": "The normalization rule is an arm-specific hyperparameter. v0.2/v0.3 applied one rule to all arms, which penalized the pixel baseline by 0.1 and so overstated every CNN readout's margin over 'scaled raw pixels'. v0.4 should choose normalization per arm on DEV and never report the per-feature-scaled pixel baseline as the comparison point. The draft scripts/gravity_spy_v04.py feeds pixel_vector (already per-image z) through the per-feature standardizer, which is the worst pixel combination here (0.386 DEV)."
+ },
+ {
+  "thread": "followup:per-class-failure-and-readout",
+  "claim": "139 of 7,966 1.0 s spectrograms in trainingsetv1d1.h5 are constant images at the floor value 0.0832 (101 train / 18 validation / 20 test), 113 of them labeled Extremely_Loud, and two of the 100 frozen references are blank: Extremely_Loud reference 0 (TEbrworflu) and Paired_Doves reference 2 (czWnUnW5Gu).",
+  "url": "https://ar5iv.labs.arxiv.org/html/2208.12849",
+  "title": "Gravity Spy Training Set v1.1 (local MD5-checked h5) and Glanzer et al. 2023",
+  "year": "2018 / 2023",
+  "confidence": "high",
+  "relevance": "A blank reference cannot define a search target. v0.4 should declare a rule before TEST: either exclude constant images from the reference pool and the haystack, or keep them in the haystack but score them as non-targets, and report which rule was used."
+ },
+ {
+  "thread": "followup:per-class-failure-and-readout",
+  "claim": "Blank images behave oppositely under the two pixel normalizations: under per-image z (v0.1 raw pixels) a blank becomes a zero vector, so the blank Extremely_Loud reference scores every item 0 and gets AP equal to the base rate (0.043 vs base 0.054, AUROC 0.500, 0 top-20 hits); under random CNN features or per-feature standardization all blanks are identical vectors with cosine 1.0, so the same reference retrieves 17 blank Extremely_Loud items in its top 20.",
+  "url": "https://zenodo.org/records/1486046",
+  "title": "Repo artifacts benchmarks/gravity_spy_v0.1/per_reference.jsonl and scores.npz (frozen TEST scores re-scored, no new method)",
+  "year": "2026",
+  "confidence": "high",
+  "relevance": "Blanks explain the one class where the standardized pixel arm beat plain pixels (Extremely_Loud 0.459 vs 0.363) and part of the Paired_Doves floor, but they do not change the headline ordering (+0.009 to +0.012 mean AP). Note this re-scoring used already-frozen TEST scores; it is an audit, not a new TEST run."
+ },
+ {
+  "thread": "followup:per-class-failure-and-readout",
+  "claim": "Label-free fusion of per-image-z raw pixels with the random early-layer mix beats both arms on DEV and repairs the losing classes: z-score sum 0.597, feature concatenation 0.592, max of cosines 0.587, RRF (k=60) 0.580, versus 0.566 (v0.2 winner), 0.582 (v0.3 all-random four-layer mix, DEV) and 0.493 (raw).",
+  "url": "http://cormack.uwaterloo.ca/cormacksigir09-rrf.pdf",
+  "title": "DEV-only re-scoring, with RRF as defined by Cormack, Clarke and Buettcher (SIGIR 2009)",
+  "year": "2026",
+  "confidence": "high",
+  "relevance": "A +0.10 DEV gain over raw pixels, roughly the width of the v0.2 class-bootstrap interval (+0.074 [-0.007, +0.157]), is the cheapest candidate for a clear TEST interval. The fusion weight and rule must be fixed on DEV and written into protocol.json before TEST; z-sum with weight 0.5 and concat with weight 1.0 are the two to pre-register."
+ },
+ {
+  "thread": "followup:per-class-failure-and-readout",
+  "claim": "Reciprocal rank fusion (sum of 1/(k + rank), k = 60) beat the best individual TREC run, Condorcet Fuse and CombMNZ by 4-5% MAP on average and needs no training; the authors report k=60 as near-optimal but not critical.",
+  "url": "http://cormack.uwaterloo.ca/cormacksigir09-rrf.pdf",
+  "title": "Reciprocal Rank Fusion outperforms Condorcet and individual Rank Learning Methods (SIGIR 2009); Elastic Search Labs hybrid retrieval post (2023-07-20, https://www.elastic.co/search-labs/blog/improving-information-retrieval-elastic-stack-hybrid)",
+  "year": "2009 / 2023",
+  "confidence": "high",
+  "relevance": "RRF is the fusion rule that needs no tuned weight at all, so it is the safest to pre-register; on DEV it is 0.017 below z-sum, consistent with the literature finding that score-aware fusion edges RRF when scores are comparable. A pre-registered weight for z-sum is defensible only because it is set on DEV, which is labeled; RRF avoids even that."
+ },
+ {
+  "thread": "followup:per-class-failure-and-readout",
+  "claim": "Unwhitened PCA fit on the 600 unlabeled train images raises raw pixels from 0.493 to 0.544 DEV (k = 32 or 64), while PCA whitening lowers it (0.494 at k=32 falling to 0.366 at k=256) and Ledoit-Wolf-style shrinkage toward the mean eigenvalue only partly recovers it (0.507 at k=32, 0.434 at k=256); Coughlin et al. 2019 likewise found PCA no better than raw pixels for glitch similarity.",
+  "url": "https://arxiv.org/html/1903.04058v2",
+  "title": "Classifying the unknown: discovering novel gravitational-wave detector glitches using similarity learning (Coughlin et al., PRD 99, 082002)",
+  "year": "2019",
+  "confidence": "high",
+  "relevance": "PCA truncation (no whitening) is a label-free +0.05 arm that fits the declared 600-image budget and can be pre-registered; whitening amplifies low-variance directions exactly as per-feature standardization does and should not be used on pixels. Coates et al. 2011 (AISTATS, https://web.eecs.umich.edu/~honglak/aistats11-AnalysisSingleLayerUnsupervisedFeatureLearning.pdf) report whitening is 'crucial' for clustering-based features but 'somewhat ambiguous' for autoencoder/RBM features, matching the per-arm pattern seen here."
+ },
+ {
+  "thread": "followup:per-class-failure-and-readout",
+  "claim": "Pooling the random middle block over time only (a 12-row frequency profile per channel) scores 0.546 DEV versus 0.539 for the 6x6 grid, raising Power_Line (0.68 -> 0.76) and 1080Lines (0.54 -> 0.75) but lowering Chirp (0.85 -> 0.67); adding the frequency-row profiles of stem, fine and middle to the early mix gives 0.574 (vs 0.566); a raw-pixel frequency profile alone is weak (0.31), though a max-over-time profile reaches 0.488 with 1080Lines 0.87.",
+  "url": "https://ar5iv.labs.arxiv.org/html/2403.13252",
+  "title": "DEV-only re-scoring; frequency-aware convolution for sound event detection (Song, 2024) as the literature precedent for keeping the frequency axis unpooled",
+  "year": "2026 / 2024",
+  "confidence": "medium",
+  "relevance": "Frequency-row pooling is the right readout for line-like classes (exact row) and the wrong one for sweeps (Chirp), confirming the morphology split. It is a small, pre-registrable addition to the mix; the audio literature precedent (no pooling along frequency, frequency-positional encoding) was only confirmed from a search summary, not read in full."
+ },
+ {
+  "thread": "followup:per-class-failure-and-readout",
+  "claim": "The Chirp class consists mostly of hardware injections (simulated signals), centred in the Omega scan, which is why raw pixels reach 0.97 DEV / 0.81 TEST on it; Chirp AP therefore measures matching of a synthetic, position-fixed template, not glitch generalization, and 4 s Chirps are easily confused with Blips.",
+  "url": "https://arxiv.org/abs/1611.04596",
+  "title": "Gravity Spy: Integrating Advanced LIGO Detector Characterization, Machine Learning, and Citizen Science (Zevin et al.); Convolutional Neural Networks for the classification of glitches in gravitational-wave data streams (Fernandes et al., arXiv 2303.13917)",
+  "year": "2017 / 2023",
+  "confidence": "high",
+  "relevance": "Chirp's 0.3 AP gap is the largest per-class loss but the least informative: the class is a centred synthetic waveform that pixel correlation matches almost perfectly. Report Chirp separately or down-weight it when arguing about learned-vs-random features; a fixed-axis, centred Omega scan is also why any method that discards absolute position (coarse grids, global pooling) loses on it."
+ },
+ {
+  "thread": "followup:per-class-failure-and-readout",
+  "claim": "Random-weight convolutional-pooling architectures are inherently frequency selective and translation invariant, trained weights add only a few points over random ones, and random-weight performance correlates with trained performance well enough to use random weights for architecture search.",
+  "url": "https://icml.cc/2011/papers/551_icmlpaper.pdf",
+  "title": "On Random Weights and Unsupervised Feature Learning (Saxe, Koh, Chen, Bhand, Suresh, Ng, ICML 2011)",
+  "year": "2011",
+  "confidence": "high",
+  "relevance": "Supports the v0.2/v0.3 reading that HyperNet's architecture and fixed input channels, not its training, carry the glitch signal, and licenses a DEV-only architecture/readout search with random weights (grid size, pooling axis, layer mix) as a legitimate, cheap step before any new curriculum."
+ },
+ {
+  "thread": "followup:per-class-failure-and-readout",
+  "claim": "Score-level (late) fusion with z-score normalization and CombSUM slightly outperformed feature-level concatenation for image retrieval with pre-trained CNNs, and the IR metasearch literature (Montague and Aslam 2001) established zero-mean-unit-variance score normalization as a standard precursor to CombSUM/CombMNZ.",
+  "url": "https://journals.riverpublishers.com/index.php/JMM/article/view/24029",
+  "title": "Feature-level Fusion vs. Score-level Fusion for Image Retrieval Based on Pre-trained Deep Neural Networks (Neshov et al.)",
+  "year": "2024 / 2001",
+  "confidence": "medium",
+  "relevance": "Matches the DEV ordering here (z-sum 0.597 > concat 0.592 > RRF 0.580). The z-statistics can be computed label-free per reference against the 600 unlabeled images (the draft v0.4 already does this for its four-duration fusion), so a raw-plus-CNN z-fusion fits the existing protocol machinery."
+ },
+ {
+  "thread": "followup:per-class-failure-and-readout",
+  "claim": "The newest Gravity Spy similarity work (OmegaNeuron, arXiv 2602.23460, February 2026, after my training data) uses the frozen Gravity Spy DIRECT 200-D embedding with cosine similarity for single-event witness-channel search and reports no raw-pixel or PCA baseline and no retrieval metric, so there is still no published one-reference glitch-retrieval benchmark with a pixel baseline to compare HyperNet against.",
+  "url": "https://arxiv.org/html/2602.23460v1",
+  "title": "OmegaNeuron: Applying GravitySpy Similarity Methods to the Search for LIGO Glitch Witnesses",
+  "year": "2026",
+  "confidence": "medium",
+  "relevance": "Flagged as newer than my training data. It confirms the field still relies on a label-trained embedding for similarity search, so a pre-registered label-free hybrid that beats raw pixels with a clear interval on fresh Gravity Spy data would be a novel, citable result, and the STS write-up should state that no external one-shot retrieval baseline exists."
+ }
+]

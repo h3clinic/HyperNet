@@ -1,0 +1,331 @@
+{
+  "format": "hypernet.gravity_spy_oneshot.v0.4",
+  "created_utc": "2026-11-03T17:51:59Z",
+  "test_scores_computed_before_freeze": false,
+  "question": "Do features trained on the spectrogram-like curriculum beat the same architecture at random weights?",
+  "selection_rule": "Within each arm, the readout x scoring x epoch (or seed) with the highest DEV mean AP",
+  "primary_contrast": "best_trained minus best_random, TEST mean AP, paired class bootstrap",
+  "secondary_contrasts": [
+    "best_family minus best_instance (objective effect, same data)",
+    "best_trained minus every random seed at the selected random readout (spread of the control)",
+    "best_trained minus best_raw_pixels",
+    "best_trained minus best_scattering",
+    "best_trained minus best_hybrid",
+    "best_random minus v0.3 random four-layer 1.0 s (0.576 TEST, blanks included there)"
+  ],
+  "selected": {
+    "best_trained": "spectro_family_e8|coarse_grid6|fused4",
+    "best_family": "spectro_family_e8|coarse_grid6|fused4",
+    "best_instance": "spectro_instance_e12|full_concat|fused4",
+    "best_random": "random2026|full_concat|fused4",
+    "best_scattering": "scattering_perfeature|fused4",
+    "best_raw_pixels": "raw_pixels|1.0s",
+    "best_hybrid": "hybrid_px_random|fused4"
+  },
+  "random_seed_dev_spread": {
+    "random1403|full_concat|fused4": 0.6027594570479322,
+    "random2026|full_concat|fused4": 0.6110866339606287,
+    "random7|full_concat|fused4": 0.5893070924833423,
+    "random11|full_concat|fused4": 0.5950682061568893,
+    "random23|full_concat|fused4": 0.6073841393656287
+  },
+  "dev_mean_ap": {
+    "hybrid_px_random|1.0s": 0.598390885314022,
+    "hybrid_px_random|fused4": 0.6054605558064332,
+    "random11|coarse_grid6|1.0s": 0.5038266576755939,
+    "random11|coarse_grid6|fused4": 0.558643403885511,
+    "random11|full_concat|1.0s": 0.5412201147167838,
+    "random11|full_concat|fused4": 0.5950682061568893,
+    "random11|global|1.0s": 0.36771079549970853,
+    "random11|global|fused4": 0.443406607770436,
+    "random1403|coarse_grid6|1.0s": 0.5356401895506707,
+    "random1403|coarse_grid6|fused4": 0.5696771421540391,
+    "random1403|full_concat|1.0s": 0.5724608697214044,
+    "random1403|full_concat|fused4": 0.6027594570479322,
+    "random1403|global|1.0s": 0.4398869679055667,
+    "random1403|global|fused4": 0.4838210255732102,
+    "random2026|coarse_grid6|1.0s": 0.5393611239708639,
+    "random2026|coarse_grid6|fused4": 0.5773470328859795,
+    "random2026|full_concat|1.0s": 0.5808648166688825,
+    "random2026|full_concat|fused4": 0.6110866339606287,
+    "random2026|global|1.0s": 0.39560984862704507,
+    "random2026|global|fused4": 0.4722396436422616,
+    "random23|coarse_grid6|1.0s": 0.516767751262969,
+    "random23|coarse_grid6|fused4": 0.5748040226593089,
+    "random23|full_concat|1.0s": 0.5539180071794478,
+    "random23|full_concat|fused4": 0.6073841393656287,
+    "random23|global|1.0s": 0.34535381922815045,
+    "random23|global|fused4": 0.4456831869655008,
+    "random7|coarse_grid6|1.0s": 0.5111118882282091,
+    "random7|coarse_grid6|fused4": 0.5607997599882503,
+    "random7|full_concat|1.0s": 0.5507942724450594,
+    "random7|full_concat|fused4": 0.5893070924833423,
+    "random7|global|1.0s": 0.36922375856359624,
+    "random7|global|fused4": 0.4630299181845448,
+    "raw_pixels|1.0s": 0.5051111908408686,
+    "raw_pixels|fused4": 0.5023444201293563,
+    "scattering_perfeature|1.0s": 0.5600885298322708,
+    "scattering_perfeature|fused4": 0.59859823886717,
+    "scattering_perimage|1.0s": 0.5256573576378523,
+    "scattering_perimage|fused4": 0.5398278620446446,
+    "spectro_family_e12|coarse_grid6|1.0s": 0.5898350855275811,
+    "spectro_family_e12|coarse_grid6|fused4": 0.6822498147749341,
+    "spectro_family_e12|full_concat|1.0s": 0.6041538390610446,
+    "spectro_family_e12|full_concat|fused4": 0.6757966378110185,
+    "spectro_family_e12|global|1.0s": 0.4560071936400826,
+    "spectro_family_e12|global|fused4": 0.5492650526352205,
+    "spectro_family_e4|coarse_grid6|1.0s": 0.5735702575888519,
+    "spectro_family_e4|coarse_grid6|fused4": 0.6769742958955308,
+    "spectro_family_e4|full_concat|1.0s": 0.5969623826844699,
+    "spectro_family_e4|full_concat|fused4": 0.6782614029454161,
+    "spectro_family_e4|global|1.0s": 0.4537251847803151,
+    "spectro_family_e4|global|fused4": 0.5438874166416119,
+    "spectro_family_e8|coarse_grid6|1.0s": 0.5939243050670547,
+    "spectro_family_e8|coarse_grid6|fused4": 0.6918351646608853,
+    "spectro_family_e8|full_concat|1.0s": 0.6115598999791694,
+    "spectro_family_e8|full_concat|fused4": 0.6848933595221848,
+    "spectro_family_e8|global|1.0s": 0.46043120582006464,
+    "spectro_family_e8|global|fused4": 0.5544216380965823,
+    "spectro_instance_e12|coarse_grid6|1.0s": 0.3033815746793864,
+    "spectro_instance_e12|coarse_grid6|fused4": 0.36114310926467563,
+    "spectro_instance_e12|full_concat|1.0s": 0.4690166808865376,
+    "spectro_instance_e12|full_concat|fused4": 0.542155534691571,
+    "spectro_instance_e12|global|1.0s": 0.23015454607751748,
+    "spectro_instance_e12|global|fused4": 0.2926934813723519,
+    "spectro_instance_e4|coarse_grid6|1.0s": 0.3035518447127835,
+    "spectro_instance_e4|coarse_grid6|fused4": 0.36488670705262277,
+    "spectro_instance_e4|full_concat|1.0s": 0.45276547295829406,
+    "spectro_instance_e4|full_concat|fused4": 0.5176092817934775,
+    "spectro_instance_e4|global|1.0s": 0.21824560401841553,
+    "spectro_instance_e4|global|fused4": 0.2859525517359849,
+    "spectro_instance_e8|coarse_grid6|1.0s": 0.30319559021727394,
+    "spectro_instance_e8|coarse_grid6|fused4": 0.36521684425573697,
+    "spectro_instance_e8|full_concat|1.0s": 0.46502120995419727,
+    "spectro_instance_e8|full_concat|fused4": 0.5383845709731307,
+    "spectro_instance_e8|global|1.0s": 0.23051512044206723,
+    "spectro_instance_e8|global|fused4": 0.2960369884249692
+  },
+  "models": {
+    "random_seeds": [
+      1403,
+      2026,
+      7,
+      11,
+      23
+    ],
+    "spectro_family_e4": "8de5aa9b5f3c0479d0ea05b3ab211d587db7af5c0375b1cee112e3f5c6c4d92e",
+    "spectro_family_e8": "a662b96698f9b0ed2ffd94514935d4caa3cc4c1dcce455f227285d48dcb7ce3f",
+    "spectro_family_e12": "36d89a2298be732b30e0cfa6c20cadc96a6ca374de6b7c36d673c9e32117ba80",
+    "spectro_family_plan": {
+      "objective": "family",
+      "positives": "independent members of one family",
+      "loss": {
+        "family_ce": 1,
+        "supcon": 1,
+        "mask": 0.25
+      },
+      "steps": 2688,
+      "images_per_step": 64,
+      "curriculum_sha256": "29e2e9180d3321c674bb50f63c1c1a30e912c6185af5daf1bbd038f4b477cea8",
+      "training_script_sha256": "e7b64ef1af2143b7124691dff4cb3dcafd9f546486a648e2eb9984671f0a16e0"
+    },
+    "spectro_instance_e4": "77fed69aaee064fc755e1ac87a745c9402be7298cc628ce00a92c2862165f29f",
+    "spectro_instance_e8": "e5fcb16f4c59a3282fa1f4fc2f1f569da202eb2edafd6b1b5f3c63f38d203832",
+    "spectro_instance_e12": "a1c8904c21d0d326ecd490a9b27204a296e52f4f530e770fe3521030ee17d975",
+    "spectro_instance_plan": {
+      "objective": "instance",
+      "positives": "two augmented views of one member",
+      "loss": "matching_loss_v2 unchanged",
+      "steps": 2688,
+      "images_per_step": 128,
+      "curriculum_sha256": "29e2e9180d3321c674bb50f63c1c1a30e912c6185af5daf1bbd038f4b477cea8",
+      "training_script_sha256": "e7b64ef1af2143b7124691dff4cb3dcafd9f546486a648e2eb9984671f0a16e0"
+    }
+  },
+  "blank_rule": "image max minus min below 1e-6 on the 1.0 s view",
+  "blank_count_total": 139,
+  "dev_items_after_blank_exclusion": 1182,
+  "replaced_blank_references": [
+    {
+      "class": "Extremely_Loud",
+      "reference": 0,
+      "blank_id": "TEbrworflu",
+      "new_id": "761A5rYHFa"
+    },
+    {
+      "class": "Paired_Doves",
+      "reference": 2,
+      "blank_id": "czWnUnW5Gu",
+      "new_id": "HGtGOLIe9N"
+    }
+  ],
+  "reference_gravityspy_ids": {
+    "1080Lines": [
+      "LJjw3p3EI0",
+      "E6e3TQp765",
+      "9BoTjVbUhu",
+      "xjjkUWWx3l",
+      "RbcMIPBTfp"
+    ],
+    "1400Ripples": [
+      "GLLQFp2CwK",
+      "uiofjZyKyh",
+      "J9hdr0Gz6H",
+      "RWYExXLh6F",
+      "cZ4vfsw2YN"
+    ],
+    "Air_Compressor": [
+      "u6R2vUnzl0",
+      "Vns4mS6sb3",
+      "8IrFjuinyr",
+      "8imbjhAi00",
+      "pruBtY7y0L"
+    ],
+    "Blip": [
+      "KZ9ymUPcMB",
+      "37PFuzqg40",
+      "lH4OC7YOLg",
+      "j5EW44OZPh",
+      "nBwqmAFQXl"
+    ],
+    "Chirp": [
+      "NJwYbLbB2b",
+      "IPMQdphytD",
+      "nJqG8hsd2C",
+      "g0UHF8d6Ok",
+      "vHNn2VQNx8"
+    ],
+    "Extremely_Loud": [
+      "761A5rYHFa",
+      "TOmRx6N4RN",
+      "RfkXcUbDDI",
+      "0q4vXdyhJS",
+      "euqgFnzrw8"
+    ],
+    "Helix": [
+      "5lL68EymOk",
+      "PWYWma9EAW",
+      "7tU5SUbTrD",
+      "sF47jOlPED",
+      "4CpKbCVwK1"
+    ],
+    "Koi_Fish": [
+      "U5H8HLakt0",
+      "WmI7xd6Ngb",
+      "1fgJRveZ7B",
+      "A4HrBr9OT7",
+      "6b6itmFPc5"
+    ],
+    "Light_Modulation": [
+      "zxALwutVBF",
+      "gjYZFjgdE7",
+      "HqnYWf1JYo",
+      "LUO5zAmWib",
+      "abywCmnnPa"
+    ],
+    "Low_Frequency_Burst": [
+      "aRU9ZmRE10",
+      "4OLiPZyCuJ",
+      "7nXluXM3KG",
+      "xMLBWxLtBe",
+      "JFprgMqyJb"
+    ],
+    "Low_Frequency_Lines": [
+      "vSpzzRcP72",
+      "UYE5QKZCPc",
+      "tdINX2QXdS",
+      "BapDBNvcDZ",
+      "rrhhM1R1dn"
+    ],
+    "Paired_Doves": [
+      "Jmu8lzu6lb",
+      "QGKPYKyJH4",
+      "HGtGOLIe9N",
+      "7nLzZvkp9b",
+      "bDNd4nwivK"
+    ],
+    "Power_Line": [
+      "6VIZedttB7",
+      "9nTvyKQd1j",
+      "BUde7EGqzr",
+      "U5LJ3jkksw",
+      "DtCK3GTYEY"
+    ],
+    "Repeating_Blips": [
+      "9xp9BW4npl",
+      "W7oI3wLRz6",
+      "T4wKdT4pOT",
+      "DbkpLDrs28",
+      "QRML6snHU8"
+    ],
+    "Scattered_Light": [
+      "NtPVD5U6uv",
+      "Ll9rJWVqMb",
+      "Gtn5pYKTrV",
+      "4X4vKuXQYj",
+      "tkPyosNNv8"
+    ],
+    "Scratchy": [
+      "x1c9ty2wOo",
+      "5z1mc0gtWt",
+      "5dvt52HGTA",
+      "EjxP2bkBtz",
+      "3IxUVYMUUt"
+    ],
+    "Tomte": [
+      "QI5EcCnucU",
+      "FKPXh16Ufs",
+      "vz1a6wIDM9",
+      "Cr3BFskpBf",
+      "KpBPLFLlBe"
+    ],
+    "Violin_Mode": [
+      "iqAd2kcmA3",
+      "M8M3Ox6JlJ",
+      "ErmyqSd7XG",
+      "ulhjj9wojp",
+      "D3sClY1TPI"
+    ],
+    "Wandering_Line": [
+      "Sd8CaYSOab",
+      "RyWp0dcwW0",
+      "1eOIJvG4v1",
+      "mgh0AVpXkV",
+      "rJxqGGeNLz"
+    ],
+    "Whistle": [
+      "vWBx2seVcM",
+      "X6Di6E4Pnk",
+      "dj6h708Tv5",
+      "yfXN8OitPI",
+      "mcdaOBnef5"
+    ]
+  },
+  "normalization_per_arm": {
+    "cnn": "per-feature standardization on 600 unlabeled train images",
+    "raw_pixels": "per-image z (v0.1)",
+    "scattering": "per-feature, or log1p then per-image z; both are arms"
+  },
+  "candidate_epochs": [
+    4,
+    8,
+    12
+  ],
+  "readouts": [
+    "global",
+    "coarse_grid6",
+    "full_concat"
+  ],
+  "scorings": [
+    "1.0s",
+    "fused4"
+  ],
+  "fused4": "mean over 0.5/1/2/4 s of per-reference z-scores; z statistics from the 600 unlabeled train spectrograms",
+  "scattering_control": "Kymatio Scattering2D J=3 L=8 on the 96px grayscale crop, untrained",
+  "hybrid_control": "mean of per-reference z-scores of raw pixels and random1403 four-layer mix",
+  "v01_protocol_sha256": "816be8b4ff7c77477d9c56146558031b602782d874706d43d202de0d3b3a604a",
+  "test_reuse_note": "Fourth use of the v1.1 TEST split (after v0.1, v0.2, v0.3), each under a frozen protocol.",
+  "unlabeled_standardization_images": 600,
+  "weight_updates_on_spectrograms": 0,
+  "dev_studies": "benchmarks/gravity_spy_v0.4/dev_studies"
+}
