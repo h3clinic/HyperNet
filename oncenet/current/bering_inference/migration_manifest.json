@@ -1,0 +1,29 @@
+{
+  "version": "CPUcanonical_mathattention_Wv3_migration_v3",
+  "created_epoch": 1793873962.2043903,
+  "original_asset_hashes_sha256": "01cccaa2135b39b4006091b0b826c9df91039a0a32b13e857637fabe2a828fb8",
+  "original_model_code_sha256": "0f246610cdf2f713cbcf12bff704c3db17cfac4b51000ba519363f9026b3befd",
+  "migrated_model_code_sha256": "43c24bc090a6dd03071e2ec3e5989099ed00b4e1c2326fc8244172a6d491c6a6",
+  "weights_sha256": "1923efa8b01b682c9fa512a6c4c7960093c96482b50b10bde7f99c3085a6c4a2",
+  "original_object_manifest_sha256": "7e4ab9e15e759ece5457569ae13e79800355f6a1e281c166d08bdd720345f93f",
+  "change": "Promote passed CPU-canonical-input + CUDA math-attention kernel controls; same fixed acceptance policy",
+  "fixture": "Three existing supports plus +3-column circular shifts; no new query images",
+  "acceptance_policy": {
+    "input_atol": 2e-05,
+    "input_rtol": 1e-05,
+    "rank_channel_exact": true,
+    "feature_atol": 0.0001,
+    "feature_rtol": 0.0001,
+    "score_atol": 1e-05,
+    "score_rtol": 0.0001
+  },
+  "historical_gpu_scores_verified": false,
+  "no_accuracy_or_discovery_claim": true,
+  "archive_continuation_output": "/kaggle/working/bering_results_cpu_rank_v3",
+  "parent_v1_failed_parity_sha256": "b9bcadb87f381715a9f9d869a1037bee6b94b0c31a77eed0a32fd970d7d3fff4",
+  "parent_asset_hashes_sha256": "7fb4a3d58f9929e459b245d7aa70d313c5f0b746f9d2925b0487d3760d032999",
+  "migrated_scanner_code_sha256": "5f5b4f8e0d9264fa0bb44a3acd6a901712917b7b5eb37e236a19c2d9d453246f",
+  "original_cpu_fixture_sha256": "dd956e981e1fbb5e86db130a92e6baf763b37d76687b98ffff03f06fae47bb91",
+  "parent_v2_failed_parity_sha256": "b66d2db2f9ac1009c1fa1806eb15862abb6ae1038d36be62efe98eff888f5e71",
+  "passed_kernel_probe_sha256": "885140f18e4a2daefac17596c710db1717c8d450b920de5f359759fea858f9c6"
+}

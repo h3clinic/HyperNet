@@ -1,0 +1,141 @@
+{
+  "passed": true,
+  "cpu_only": true,
+  "heldout_rendered": 0,
+  "real_images_read": 0,
+  "files": {
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\spectrogram\\train.py": "78abb8435780ac4a753f5f162318a552c9d83b8fdc9b24ba1c58737ccfef536a",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\spectrogram\\generator.py": "cdf3f2872bf35e3a71e80954e9d3c5a5b676adad729ced363cf67387da802a99",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\spectrogram\\checks.py": "d6353c9bb2af74c6c58511847b67822b792dba281e2ce272a78a10e7beb80b71",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\spectrogram\\plan.json": "52e10c4db647ee6021543ab435e00a817c81fbedb52b536d578a6a48a3ad45ba",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\spectrogram\\research.json": "2c72f8fc47850297a3c98238d8537b5b0e6fb4f33d57383a182a4dc1bb915499",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\protocol.json": "550103b3d64411be6ba7d8c70bc14337c5456e3f93812ae09f3e3222f986df0a",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\diversity\\protocol.json": "5cfd9fe0efd1adcf6bce6bf1a8068f0472f579dc23718cf197001960f9721d9e"
+  },
+  "original_objective_called_directly": true,
+  "unchanged_architecture_parameters": 42480,
+  "paired_relative_order_exact": true,
+  "gradient_norm": 3.2959659099578857,
+  "objective_stats": {
+    "loss": 2.184570550918579,
+    "rank": 0.03962017595767975,
+    "attraction": 0.04807017743587494,
+    "local_cosine": 0.1942734271287918,
+    "local_variance_floor": 0.01230327133089304,
+    "global_infonce": 1.7005128860473633,
+    "global_variance_floor": 0.255427747964859,
+    "positive": 0.9519298076629639,
+    "hard_negative": 0.9515500068664551,
+    "logit_candidates": 8
+  },
+  "family_counts_checked": {
+    "chirp": 13,
+    "line": 12,
+    "arch": 16,
+    "burst": 11,
+    "repeated": 8
+  },
+  "training_identities_rendered": 60,
+  "geometry": {
+    "maximum_affine_error": 3.8106160360484864e-06,
+    "minimum_foreground_points": 69,
+    "replacement_identities": 0
+  },
+  "minimum_negative_max_pixel_difference": 0.09066212177276611,
+  "query_backgrounds_exact": true,
+  "reference_scene_not_mutated": true,
+  "namespace": {
+    "train_45011": {
+      "identities": 3200,
+      "minimum": 4600000,
+      "maximum": 4603199,
+      "component_keys": [
+        "scene",
+        "reference_pose",
+        "query_pose",
+        "reference_appearance",
+        "query_appearance",
+        "repetition",
+        "connectivity",
+        "curvature",
+        "orientation",
+        "local_points"
+      ],
+      "seed_sha256": "f9f5ade336192b70dd2d67260920f712fccb3d0fe66d4f1057e602036c418857"
+    },
+    "train_45029": {
+      "identities": 3200,
+      "minimum": 4610000,
+      "maximum": 4613199,
+      "component_keys": [
+        "scene",
+        "reference_pose",
+        "query_pose",
+        "reference_appearance",
+        "query_appearance",
+        "repetition",
+        "connectivity",
+        "curvature",
+        "orientation",
+        "local_points"
+      ],
+      "seed_sha256": "5edd202b808b54e57be8e06316aab130a261643e92d884aaea938cb3af0813cd"
+    },
+    "train_45047": {
+      "identities": 3200,
+      "minimum": 4620000,
+      "maximum": 4623199,
+      "component_keys": [
+        "scene",
+        "reference_pose",
+        "query_pose",
+        "reference_appearance",
+        "query_appearance",
+        "repetition",
+        "connectivity",
+        "curvature",
+        "orientation",
+        "local_points"
+      ],
+      "seed_sha256": "3bda03fcb54ae6b62cd4c7a5995c8ce2fb0f20348714c4b26f79c20354dbd053"
+    },
+    "spectrogram_test": {
+      "identities": 256,
+      "minimum": 4690000,
+      "maximum": 4690255,
+      "component_keys": [
+        "scene",
+        "reference_pose",
+        "query_pose",
+        "reference_appearance",
+        "query_appearance",
+        "repetition",
+        "connectivity",
+        "curvature",
+        "orientation",
+        "local_points"
+      ],
+      "seed_sha256": "1e874c9e61fc874640e8e63fdfc47ae468446407ef3e011a3f6a9618d055c799"
+    },
+    "retention_test": {
+      "identities": 256,
+      "minimum": 4691000,
+      "maximum": 4691255,
+      "component_keys": [
+        "graph",
+        "reference_pose",
+        "query_pose",
+        "reference_appearance",
+        "query_appearance",
+        "repetition",
+        "connectivity",
+        "curvature",
+        "orientation",
+        "v45_local_foreground_points"
+      ],
+      "seed_sha256": "95a70fd3d04e0fe3b3f9dffe84ec1d61313e406199237253b003a8ab19b29a58"
+    }
+  },
+  "unique_component_seeds": 101120,
+  "limits": "Geometry tracks analytic centers; different widths and raster interpolation make edge intensities approximate. Namespace disjointness does not imply new semantic families."
+}

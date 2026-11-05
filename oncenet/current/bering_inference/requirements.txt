@@ -1,0 +1,5 @@
+numpy
+scipy
+soundfile
+torch
+google-crc32c

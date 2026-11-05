@@ -1,0 +1,76 @@
+{
+  "training_source_files": [
+    {
+      "relative_path": "outputs/hypernet_v46/spectrogram/train.py",
+      "absolute_path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\spectrogram\\train.py",
+      "bytes": 13210,
+      "sha256": "78abb8435780ac4a753f5f162318a552c9d83b8fdc9b24ba1c58737ccfef536a"
+    },
+    {
+      "relative_path": "outputs/hypernet_v46/spectrogram/generator.py",
+      "absolute_path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\spectrogram\\generator.py",
+      "bytes": 8375,
+      "sha256": "cdf3f2872bf35e3a71e80954e9d3c5a5b676adad729ced363cf67387da802a99"
+    },
+    {
+      "relative_path": "outputs/hypernet_v45/multiseed/diversity/train.py",
+      "absolute_path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\diversity\\train.py",
+      "bytes": 9560,
+      "sha256": "60240b7c03d9fb89de502785824ba635c14a205611e6c91c588cae1734876b3c"
+    },
+    {
+      "relative_path": "outputs/hypernet_v45/multiseed/train.py",
+      "absolute_path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\train.py",
+      "bytes": 14010,
+      "sha256": "6c1f061159bc48f84847ab01d321086b47c0f7c9a9d991b2f6d3fa9b1b4bd62a"
+    },
+    {
+      "relative_path": "outputs/hypernet_v45/multiseed/model.py",
+      "absolute_path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\model.py",
+      "bytes": 2501,
+      "sha256": "ed01703a6a1ad0aa5de9ebf8a21bd2b05a107a535bb27f7165ba6fda531327c5"
+    },
+    {
+      "relative_path": "outputs/hypernet_v45/multiseed/generator.py",
+      "absolute_path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\generator.py",
+      "bytes": 2302,
+      "sha256": "ae6a7a399c315caba401e2475928b5d1e65761a2206faaa139cf7a3e8193a9ba"
+    },
+    {
+      "relative_path": "outputs/hypernet_v44/correction/generator.py",
+      "absolute_path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v44\\correction\\generator.py",
+      "bytes": 1988,
+      "sha256": "c127ca0cf99a690b88895e0ff2f22d128081d25086eb1b800e6f38a704faa74a"
+    },
+    {
+      "relative_path": "outputs/hypernet_v44/generator.py",
+      "absolute_path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v44\\generator.py",
+      "bytes": 5670,
+      "sha256": "d5528aa5924674ded9f2407e6d1ec2a9dfafe1e102af980fb9373f6ae7aa1d35"
+    }
+  ],
+  "random_initial_states": [
+    {
+      "relative_path": "outputs/hypernet_v45/multiseed/seed_45011/random.pt",
+      "absolute_path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\seed_45011\\random.pt",
+      "bytes": 174817,
+      "sha256": "3fc52ecf8b131be27f6623f1930b8c74e81450dfc2bf8b07a0f5c980ed90eb78",
+      "seed": 45011
+    },
+    {
+      "relative_path": "outputs/hypernet_v45/multiseed/seed_45029/random.pt",
+      "absolute_path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\seed_45029\\random.pt",
+      "bytes": 174817,
+      "sha256": "e473372c62e01c41863d7321408e919e5e6958cef4645f7c4285cc0fa494aa19",
+      "seed": 45029
+    },
+    {
+      "relative_path": "outputs/hypernet_v45/multiseed/seed_45047/random.pt",
+      "absolute_path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\seed_45047\\random.pt",
+      "bytes": 174817,
+      "sha256": "09559f87e56e573a17b6a28d44a90a454f64df7528194765f9c10ce4705929f3",
+      "seed": 45047
+    }
+  ],
+  "note": "Original bytes and random states; portable tools do not invoke historical absolute-path assert_protocol/freeze/test routines."
+}

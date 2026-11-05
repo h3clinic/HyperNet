@@ -1,0 +1,55 @@
+{
+  "format": "archive_overlap_audit_v1",
+  "pretraining": "77000 real unlabeled windows; no borrowed neural weights; not mathematical-only",
+  "pretraining_sources": {
+    "bering_files": [
+      "BERING03_M2___050519_202000.x.flac",
+      "BERING03_M2___050709_130000.x.flac",
+      "BERING03_M2___050829_050845.x.flac",
+      "BERING04_M2___051015_040941.x.flac",
+      "BERING04_M2___051122_120500.x.flac",
+      "BERING04_M2___051230_203922.x.flac",
+      "Bering-M2y04d153h04m21.x.flac",
+      "Bering1M2_d13_040623_051623.x.flac",
+      "Bering_1_stM2_040628_212530.x.flac",
+      "Bering_2_stM2_040928_120000.x.flac",
+      "Bering_2_stM2_041014_143737.x.flac",
+      "Bering_2_stM2_041115_230904.x.flac",
+      "Bering_2_stM2_050111_110008.x.flac",
+      "Bering_2_stM4_041016_004847.x.flac",
+      "Bering_2_stM4_041028_084757.x.flac",
+      "Bering_2_stM4_041127_131416.x.flac",
+      "Bering_4_stM4_051213_145730.x.flac",
+      "Bering_4_stM4_051230_202211.x.flac",
+      "Bering_4_stM4_060116_211326.x.flac"
+    ],
+    "bering_windows": 57000,
+    "dclde_20090328_windows": 20000
+  },
+  "eligible_key_count": 1353,
+  "excluded_known_pretraining_object_keys": [
+    "mbarc_bering/audio/mbarc_lmr_bering01-m2/audio/Bering-M2y04d153h04m21.x.flac",
+    "mbarc_bering/audio/mbarc_lmr_bering01-m2/audio/Bering1M2_d13_040623_051623.x.flac",
+    "mbarc_bering/audio/mbarc_lmr_bering01-m2/audio/Bering_1_stM2_040628_212530.x.flac",
+    "mbarc_bering/audio/mbarc_lmr_bering04-m4/audio/Bering_4_stM4_051213_145730.x.flac",
+    "mbarc_bering/audio/mbarc_lmr_bering04-m4/audio/Bering_4_stM4_051230_202211.x.flac",
+    "mbarc_bering/audio/mbarc_lmr_bering04-m4/audio/Bering_4_stM4_060116_211326.x.flac"
+  ],
+  "exact_filename_pretraining_intersection_remaining": [],
+  "temporal_or_acoustic_duplicate_audit": "Not established: timestamps from names do not rule out replicated/overlapping recordings. No unseen-accuracy claim.",
+  "support_provenance": {
+    "narw": "DCLDE North Atlantic RIWH detected upcall, 2009-03-28 00:19:30; not verified North Pacific species exemplar; support day used in unlabeled pretraining",
+    "sei": "DCLDE SEWH 2009-04-02 19:47:20, Possibly_Detected; not confirmed species ground truth; same day included in earlier validation",
+    "bloop": "NOAA PMEL 1997 Bloop/icequake clip, real 45-57s; K=8; not a novel biological phenomenon"
+  },
+  "selection_budget": "Earlier selected checkpoint/depth using 10 labeled supports and 6641 selection query windows across 60 alternatives; one positive per retrieval episode is not one labeled example for all method development.",
+  "search_labels": "Unlabeled Bering search; no recall, accuracy, false-alarm, or discovery claims from rankings.",
+  "known_calendar_separation": "Bering 2004-2006 versus DCLDE supports 2009 and PMEL 1997; does not prove no source duplicates.",
+  "source_hashes": {
+    "whale\\corpus_build.log": "3c4cf1861a3e51eac57d02140ccd6c327bc450fb6298cc385cfc065fadf6976c",
+    "whale\\code\\build_corpus.py": "66e89184001aa2dca57dd4c053b9da0149e8d62ee066b7db051da2065000380d",
+    "whale\\bering\\inventory.json": "3cc65102eabea5c32c132f9d0e349e912c25f339142f241eee9cf854466d821b",
+    "whale\\code\\make_examples.py": "a7e866bf670d7409423c213c32452322594ee0289abee1606838abcc52c0eec2",
+    "whale\\whale_ssl_v3\\selection_v2.json": "cd9ddfa331f46e6b9325717f2a028086385bcf59b554e803713a64b99906bc2c"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "protocol_sha256": "a8bc9bd07820e5086718d1243d6efde20d81b19608c514c72f56aa3f2f197815",
+  "generator_sha256": "cdf3f2872bf35e3a71e80954e9d3c5a5b676adad729ced363cf67387da802a99",
+  "gallery_code_sha256": "d4b839f750dbc8ce6e694906c5d5b8d6df17aed94c5c4a224709e708a058612c",
+  "image_sha256": "4926e1c6a7efce39c2c0ccd0848bb1830cd94c715393e6f2e08e4951d883cdb5",
+  "initialization_seed": 45011,
+  "split": "train",
+  "identities": [
+    4600442,
+    4602980,
+    4602057,
+    4603116,
+    4603121,
+    4602445,
+    4602339,
+    4601651,
+    4600228,
+    4601183,
+    4602520,
+    4601909
+  ],
+  "families": [
+    "arch",
+    "chirp",
+    "arch",
+    "line",
+    "line",
+    "chirp",
+    "repeated",
+    "line",
+    "burst",
+    "burst",
+    "chirp",
+    "repeated"
+  ],
+  "selection": "First12 actual shuffled training episodes; append first training episode of any missing family.",
+  "test_images_rendered": 0,
+  "real_images_read": 0
+}

@@ -1,0 +1,38 @@
+{
+  "declared_epoch": 1793826694.1039236,
+  "experiment": "Exploratory global-diversity rescue motivated only by training diagnostics",
+  "seeds": [
+    45011,
+    45029,
+    45047
+  ],
+  "steps": 800,
+  "batch": 4,
+  "parameters": 42480,
+  "initialization": "Same frozen random checkpoint for each original seed; never warm-start from trained arms",
+  "paired_data": "Same original corrected-generator3200identities and order per seed",
+  "loss": "Original improved loss unchanged + symmetric global instance InfoNCE + global descriptor variance floor",
+  "global_infonce": "temperature0.1; 0.5*CE(reference[4] @ concat(positive[4],four_edited_query_batches[16]).T /0.1, labels0..3) +0.5*CE(positive[4] @reference[4].T /0.1,labels0..3)",
+  "global_variance": "All6views24samples of4032D normalized dual base descriptors; multiply bysqrt(4032), std=sqrt(var_across24samples(unbiased=False)+1e-4); penaltymean(relu(1-std)); coefficient1",
+  "coefficients": {
+    "global_infonce": 1,
+    "global_variance": 1
+  },
+  "optimizer": "OriginalAdamW3e-4,weight_decay1e-4,gradientclip1; all42480parameters",
+  "readouts": [
+    "base",
+    "spatial"
+  ],
+  "primary_readout": "base",
+  "test": "Infer only3newcheckpoints once on existing256heldoutsyntheticidentities; reuse original9savedmargins without reruns; existingUSEDrealDEVonly, no new realholdout",
+  "motivation": "Training losses approach0.12 withpositive/hardnegativecosinesboth~1; local featurevariance can coexist withnearlyconstantglobaldescriptors. No synthetic orrealDEVoutcomes used todeclare thisaddendum.",
+  "limitations": [
+    "Softvariance andInfoNCE can resistapproachingcollapse but exactconstantnormalizeddescriptors remainastationarypoint.",
+    "All24viewsvariance may includeview/augmentationvariation; no guaranteethatvariance issemantic.",
+    "Establishedcontrastive/variance ideas; no noveltheorem ortransferguarantee.",
+    "Three800-step seeds areabounded exploration,not historicaltraining replication."
+  ],
+  "original_protocol_sha256": "550103b3d64411be6ba7d8c70bc14337c5456e3f93812ae09f3e3222f986df0a",
+  "original_synthetic_started_at_declaration": false,
+  "real_development_results_at_declaration": false
+}

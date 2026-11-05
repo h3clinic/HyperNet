@@ -1,0 +1,18 @@
+[
+  {
+    "index": 0,
+    "object_key": "mbarc_bering/audio/mbarc_lmr_bering01-m2/audio/Bering1M2_d13_040623_065008.x.flac",
+    "http_status": 200,
+    "bytes": 449773669,
+    "generation": "1791319070278518",
+    "hash": "crc32c=VtNPVg=="
+  },
+  {
+    "index": 1,
+    "object_key": "mbarc_bering/audio/mbarc_lmr_bering04-m4/audio/Bering_4_stM4_051230_162748.x.flac",
+    "http_status": 200,
+    "bytes": 234562721,
+    "generation": "1791323045444551",
+    "hash": "crc32c=NvcmMQ=="
+  }
+]

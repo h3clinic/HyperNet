@@ -1,0 +1,10 @@
+{
+  "recovered": true,
+  "recovery_utc": "2026-11-05T22:40:35.372291+00:00",
+  "failure_record": "calibration_file_lock_failure_20261105.json",
+  "action": "Restarted unchanged frozen fit after removing ordinary readers of live progress files. No monkeypatch or protocol modification.",
+  "fit_commitment_sha256": "b784f4699e432d3dce3ddc375a34cece6e7cfe09fe12f849a46519c0d58134aa",
+  "all_prior_feature_fingerprints_matched": true,
+  "fresh_query_scores_seen": false,
+  "fitted_files": 242
+}

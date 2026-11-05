@@ -1,0 +1,4012 @@
+{
+  "complete": true,
+  "version": "hypernet_gs_s45029_joint4_strict_fp32_v1",
+  "migration_manifest_sha256": "5719b840f5b909dd99bfc1a46499af047a2e19a4ad96f8ed2be7c3a9ce94c0d2",
+  "development_events": 1558,
+  "new_scientific_test": false,
+  "reserve_closed": true,
+  "new_training": false,
+  "borrowed_weights": false,
+  "rows": [
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "positive": 243,
+      "negative": 1315,
+      "tp": 94,
+      "fp": 2,
+      "tn": 1313,
+      "fn": 149,
+      "balanced_accuracy": 0.692655181586318,
+      "mcc": 0.5813897893140066,
+      "precision": 0.9791666666666666,
+      "recall": 0.3868312757201646,
+      "specificity": 0.9984790874524715,
+      "f1": 0.5545722713864307,
+      "mcc_degenerate": false,
+      "fa_per10000": 15.20912547528517,
+      "auroc": 0.8626328060210612,
+      "pauc_std_01": 0.7439355314493574,
+      "pauc_std_001": 0.577203363295818
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "positive": 243,
+      "negative": 1315,
+      "tp": 94,
+      "fp": 2,
+      "tn": 1313,
+      "fn": 149,
+      "balanced_accuracy": 0.692655181586318,
+      "mcc": 0.5813897893140066,
+      "precision": 0.9791666666666666,
+      "recall": 0.3868312757201646,
+      "specificity": 0.9984790874524715,
+      "f1": 0.5545722713864307,
+      "mcc_degenerate": false,
+      "fa_per10000": 15.20912547528517,
+      "auroc": 0.8626766183166691,
+      "pauc_std_01": 0.7439355314493574,
+      "pauc_std_001": 0.577203363295818
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "positive": 227,
+      "negative": 1331,
+      "tp": 81,
+      "fp": 2,
+      "tn": 1329,
+      "fn": 146,
+      "balanced_accuracy": 0.677662782115398,
+      "mcc": 0.5582045270780628,
+      "precision": 0.9759036144578314,
+      "recall": 0.3568281938325991,
+      "specificity": 0.9984973703981969,
+      "f1": 0.5225806451612903,
+      "mcc_degenerate": false,
+      "fa_per10000": 15.026296018031555,
+      "auroc": 0.9421653091147393,
+      "pauc_std_01": 0.7352078110660406,
+      "pauc_std_001": 0.6699862821258612
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "positive": 227,
+      "negative": 1331,
+      "tp": 81,
+      "fp": 2,
+      "tn": 1329,
+      "fn": 146,
+      "balanced_accuracy": 0.677662782115398,
+      "mcc": 0.5582045270780628,
+      "precision": 0.9759036144578314,
+      "recall": 0.3568281938325991,
+      "specificity": 0.9984973703981969,
+      "f1": 0.5225806451612903,
+      "mcc_degenerate": false,
+      "fa_per10000": 15.026296018031555,
+      "auroc": 0.9421454505737463,
+      "pauc_std_01": 0.7352078110660406,
+      "pauc_std_001": 0.6699862821258612
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "positive": 240,
+      "negative": 1318,
+      "tp": 163,
+      "fp": 5,
+      "tn": 1313,
+      "fn": 77,
+      "balanced_accuracy": 0.8376865199797674,
+      "mcc": 0.7860406482689377,
+      "precision": 0.9702380952380952,
+      "recall": 0.6791666666666667,
+      "specificity": 0.996206373292868,
+      "f1": 0.7990196078431373,
+      "mcc_degenerate": false,
+      "fa_per10000": 37.93626707132018,
+      "auroc": 0.9874778705108751,
+      "pauc_std_01": 0.7799156378757723,
+      "pauc_std_001": 0.5297851252383906
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "positive": 240,
+      "negative": 1318,
+      "tp": 163,
+      "fp": 5,
+      "tn": 1313,
+      "fn": 77,
+      "balanced_accuracy": 0.8376865199797674,
+      "mcc": 0.7860406482689377,
+      "precision": 0.9702380952380952,
+      "recall": 0.6791666666666667,
+      "specificity": 0.996206373292868,
+      "f1": 0.7990196078431373,
+      "mcc_degenerate": false,
+      "fa_per10000": 37.93626707132018,
+      "auroc": 0.9874778705108751,
+      "pauc_std_01": 0.7799156378757723,
+      "pauc_std_001": 0.5297851252383906
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "positive": 207,
+      "negative": 1351,
+      "tp": 65,
+      "fp": 9,
+      "tn": 1342,
+      "fn": 142,
+      "balanced_accuracy": 0.6536739648927079,
+      "mcc": 0.4904676063803455,
+      "precision": 0.8783783783783784,
+      "recall": 0.3140096618357488,
+      "specificity": 0.993338267949667,
+      "f1": 0.4626334519572954,
+      "mcc_degenerate": false,
+      "fa_per10000": 66.61732050333087,
+      "auroc": 0.9159148528375831,
+      "pauc_std_01": 0.6084183742457087,
+      "pauc_std_001": 0.5203389499095586
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "positive": 207,
+      "negative": 1351,
+      "tp": 65,
+      "fp": 9,
+      "tn": 1342,
+      "fn": 142,
+      "balanced_accuracy": 0.6536739648927079,
+      "mcc": 0.4904676063803455,
+      "precision": 0.8783783783783784,
+      "recall": 0.3140096618357488,
+      "specificity": 0.993338267949667,
+      "f1": 0.4626334519572954,
+      "mcc_degenerate": false,
+      "fa_per10000": 66.61732050333087,
+      "auroc": 0.9158612157035224,
+      "pauc_std_01": 0.6084183742457087,
+      "pauc_std_001": 0.5203389499095586
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "positive": 243,
+      "negative": 1315,
+      "tp": 38,
+      "fp": 1,
+      "tn": 1314,
+      "fn": 205,
+      "balanced_accuracy": 0.5778090722746405,
+      "mcc": 0.36142239181435265,
+      "precision": 0.9743589743589743,
+      "recall": 0.15637860082304528,
+      "specificity": 0.9992395437262357,
+      "f1": 0.2695035460992908,
+      "mcc_degenerate": false,
+      "fa_per10000": 7.604562737642585,
+      "auroc": 0.8626328060210612,
+      "pauc_std_01": 0.7439355314493574,
+      "pauc_std_001": 0.577203363295818
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "positive": 243,
+      "negative": 1315,
+      "tp": 38,
+      "fp": 1,
+      "tn": 1314,
+      "fn": 205,
+      "balanced_accuracy": 0.5778090722746405,
+      "mcc": 0.36142239181435265,
+      "precision": 0.9743589743589743,
+      "recall": 0.15637860082304528,
+      "specificity": 0.9992395437262357,
+      "f1": 0.2695035460992908,
+      "mcc_degenerate": false,
+      "fa_per10000": 7.604562737642585,
+      "auroc": 0.8626766183166691,
+      "pauc_std_01": 0.7439355314493574,
+      "pauc_std_001": 0.577203363295818
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "positive": 227,
+      "negative": 1331,
+      "tp": 63,
+      "fp": 0,
+      "tn": 1331,
+      "fn": 164,
+      "balanced_accuracy": 0.6387665198237885,
+      "mcc": 0.49707941383593995,
+      "precision": 1.0,
+      "recall": 0.2775330396475771,
+      "specificity": 1.0,
+      "f1": 0.43448275862068964,
+      "mcc_degenerate": false,
+      "fa_per10000": 0.0,
+      "auroc": 0.9421653091147393,
+      "pauc_std_01": 0.7352078110660406,
+      "pauc_std_001": 0.6699862821258612
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "positive": 227,
+      "negative": 1331,
+      "tp": 63,
+      "fp": 0,
+      "tn": 1331,
+      "fn": 164,
+      "balanced_accuracy": 0.6387665198237885,
+      "mcc": 0.49707941383593995,
+      "precision": 1.0,
+      "recall": 0.2775330396475771,
+      "specificity": 1.0,
+      "f1": 0.43448275862068964,
+      "mcc_degenerate": false,
+      "fa_per10000": 0.0,
+      "auroc": 0.9421454505737463,
+      "pauc_std_01": 0.7352078110660406,
+      "pauc_std_001": 0.6699862821258612
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "positive": 240,
+      "negative": 1318,
+      "tp": 83,
+      "fp": 4,
+      "tn": 1314,
+      "fn": 157,
+      "balanced_accuracy": 0.6713992159838138,
+      "mcc": 0.5389347532498987,
+      "precision": 0.9540229885057471,
+      "recall": 0.3458333333333333,
+      "specificity": 0.9969650986342944,
+      "f1": 0.5076452599388379,
+      "mcc_degenerate": false,
+      "fa_per10000": 30.349013657056148,
+      "auroc": 0.9874778705108751,
+      "pauc_std_01": 0.7799156378757723,
+      "pauc_std_001": 0.5297851252383906
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "positive": 240,
+      "negative": 1318,
+      "tp": 83,
+      "fp": 4,
+      "tn": 1314,
+      "fn": 157,
+      "balanced_accuracy": 0.6713992159838138,
+      "mcc": 0.5389347532498987,
+      "precision": 0.9540229885057471,
+      "recall": 0.3458333333333333,
+      "specificity": 0.9969650986342944,
+      "f1": 0.5076452599388379,
+      "mcc_degenerate": false,
+      "fa_per10000": 30.349013657056148,
+      "auroc": 0.9874778705108751,
+      "pauc_std_01": 0.7799156378757723,
+      "pauc_std_001": 0.5297851252383906
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "positive": 207,
+      "negative": 1351,
+      "tp": 8,
+      "fp": 1,
+      "tn": 1350,
+      "fn": 199,
+      "balanced_accuracy": 0.518953575272566,
+      "mcc": 0.16978019328718413,
+      "precision": 0.8888888888888888,
+      "recall": 0.03864734299516908,
+      "specificity": 0.999259807549963,
+      "f1": 0.07407407407407407,
+      "mcc_degenerate": false,
+      "fa_per10000": 7.401924500370096,
+      "auroc": 0.9159148528375831,
+      "pauc_std_01": 0.6084183742457087,
+      "pauc_std_001": 0.5203389499095586
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "positive": 207,
+      "negative": 1351,
+      "tp": 8,
+      "fp": 1,
+      "tn": 1350,
+      "fn": 199,
+      "balanced_accuracy": 0.518953575272566,
+      "mcc": 0.16978019328718413,
+      "precision": 0.8888888888888888,
+      "recall": 0.03864734299516908,
+      "specificity": 0.999259807549963,
+      "f1": 0.07407407407407407,
+      "mcc_degenerate": false,
+      "fa_per10000": 7.401924500370096,
+      "auroc": 0.9158612157035224,
+      "pauc_std_01": 0.6084183742457087,
+      "pauc_std_001": 0.5203389499095586
+    }
+  ],
+  "macro": [
+    {
+      "version": "legacy_tf32",
+      "alpha": 0.001,
+      "balanced_accuracy": 0.7154196121435478,
+      "mcc": 0.6040256427603381,
+      "recall": 0.43420894951379485,
+      "fa_per10000": 33.697252266991946,
+      "auroc": 0.9270477096210646,
+      "pauc_std_01": 0.7168693386592198,
+      "pauc_std_001": 0.5743284301424072,
+      "tp": 403,
+      "fp": 18
+    },
+    {
+      "version": "legacy_tf32",
+      "alpha": 0.0005,
+      "balanced_accuracy": 0.6017320958387022,
+      "mcc": 0.39180418804684386,
+      "recall": 0.20459807919978118,
+      "fa_per10000": 11.338875223767205,
+      "auroc": 0.9270477096210646,
+      "pauc_std_01": 0.7168693386592198,
+      "pauc_std_001": 0.5743284301424072,
+      "tp": 192,
+      "fp": 6
+    },
+    {
+      "version": "strict_fp32",
+      "alpha": 0.001,
+      "balanced_accuracy": 0.7154196121435478,
+      "mcc": 0.6040256427603381,
+      "recall": 0.43420894951379485,
+      "fa_per10000": 33.697252266991946,
+      "auroc": 0.9270402887762033,
+      "pauc_std_01": 0.7168693386592198,
+      "pauc_std_001": 0.5743284301424072,
+      "tp": 403,
+      "fp": 18
+    },
+    {
+      "version": "strict_fp32",
+      "alpha": 0.0005,
+      "balanced_accuracy": 0.6017320958387022,
+      "mcc": 0.39180418804684386,
+      "recall": 0.20459807919978118,
+      "fa_per10000": 11.338875223767205,
+      "auroc": 0.9270402887762033,
+      "pauc_std_01": 0.7168693386592198,
+      "pauc_std_001": 0.5743284301424072,
+      "tp": 192,
+      "fp": 6
+    }
+  ],
+  "detector_rows": [
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "detector": "H1",
+      "positive": 168,
+      "negative": 567,
+      "tp": 70,
+      "fp": 1,
+      "tn": 566,
+      "fn": 98,
+      "balanced_accuracy": 0.7074514991181657,
+      "mcc": 0.589765725149555,
+      "precision": 0.9859154929577465,
+      "recall": 0.4166666666666667,
+      "specificity": 0.9982363315696648,
+      "f1": 0.5857740585774058,
+      "mcc_degenerate": false,
+      "fa_per10000": 17.636684303350968,
+      "auroc": 0.8769736289577559,
+      "pauc_std_01": 0.7399760201865969,
+      "pauc_std_001": 0.5325043474118012
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "detector": "L1",
+      "positive": 75,
+      "negative": 748,
+      "tp": 24,
+      "fp": 1,
+      "tn": 747,
+      "fn": 51,
+      "balanced_accuracy": 0.659331550802139,
+      "mcc": 0.5343696198283288,
+      "precision": 0.96,
+      "recall": 0.32,
+      "specificity": 0.9986631016042781,
+      "f1": 0.48,
+      "mcc_degenerate": false,
+      "fa_per10000": 13.36898395721925,
+      "auroc": 0.8400891265597148,
+      "pauc_std_01": 0.7376544039269431,
+      "pauc_std_001": 0.6464899116224779
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "detector": "H1",
+      "positive": 168,
+      "negative": 567,
+      "tp": 70,
+      "fp": 1,
+      "tn": 566,
+      "fn": 98,
+      "balanced_accuracy": 0.7074514991181657,
+      "mcc": 0.589765725149555,
+      "precision": 0.9859154929577465,
+      "recall": 0.4166666666666667,
+      "specificity": 0.9982363315696648,
+      "f1": 0.5857740585774058,
+      "mcc_degenerate": false,
+      "fa_per10000": 17.636684303350968,
+      "auroc": 0.8769946250104981,
+      "pauc_std_01": 0.7399760201865969,
+      "pauc_std_001": 0.5325043474118012
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "detector": "L1",
+      "positive": 75,
+      "negative": 748,
+      "tp": 24,
+      "fp": 1,
+      "tn": 747,
+      "fn": 51,
+      "balanced_accuracy": 0.659331550802139,
+      "mcc": 0.5343696198283288,
+      "precision": 0.96,
+      "recall": 0.32,
+      "specificity": 0.9986631016042781,
+      "f1": 0.48,
+      "mcc_degenerate": false,
+      "fa_per10000": 13.36898395721925,
+      "auroc": 0.840035650623886,
+      "pauc_std_01": 0.7376544039269431,
+      "pauc_std_001": 0.6464899116224779
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "detector": "H1",
+      "positive": 102,
+      "negative": 633,
+      "tp": 29,
+      "fp": 0,
+      "tn": 633,
+      "fn": 73,
+      "balanced_accuracy": 0.642156862745098,
+      "mcc": 0.5048919165116169,
+      "precision": 1.0,
+      "recall": 0.28431372549019607,
+      "specificity": 1.0,
+      "f1": 0.44274809160305345,
+      "mcc_degenerate": false,
+      "fa_per10000": 0.0,
+      "auroc": 0.9240002478084441,
+      "pauc_std_01": 0.675086083080894,
+      "pauc_std_001": 0.6419778516709336
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "detector": "L1",
+      "positive": 125,
+      "negative": 698,
+      "tp": 52,
+      "fp": 2,
+      "tn": 696,
+      "fn": 73,
+      "balanced_accuracy": 0.706567335243553,
+      "mcc": 0.5988448385784533,
+      "precision": 0.9629629629629629,
+      "recall": 0.416,
+      "specificity": 0.997134670487106,
+      "f1": 0.5810055865921788,
+      "mcc_degenerate": false,
+      "fa_per10000": 28.653295128939828,
+      "auroc": 0.9542808022922636,
+      "pauc_std_01": 0.7758534794315417,
+      "pauc_std_001": 0.6998499249624812
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "detector": "H1",
+      "positive": 102,
+      "negative": 633,
+      "tp": 29,
+      "fp": 0,
+      "tn": 633,
+      "fn": 73,
+      "balanced_accuracy": 0.642156862745098,
+      "mcc": 0.5048919165116169,
+      "precision": 1.0,
+      "recall": 0.28431372549019607,
+      "specificity": 1.0,
+      "f1": 0.44274809160305345,
+      "mcc_degenerate": false,
+      "fa_per10000": 0.0,
+      "auroc": 0.9240002478084441,
+      "pauc_std_01": 0.675086083080894,
+      "pauc_std_001": 0.6419778516709336
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "detector": "L1",
+      "positive": 125,
+      "negative": 698,
+      "tp": 52,
+      "fp": 2,
+      "tn": 696,
+      "fn": 73,
+      "balanced_accuracy": 0.706567335243553,
+      "mcc": 0.5988448385784533,
+      "precision": 0.9629629629629629,
+      "recall": 0.416,
+      "specificity": 0.997134670487106,
+      "f1": 0.5810055865921788,
+      "mcc_degenerate": false,
+      "fa_per10000": 28.653295128939828,
+      "auroc": 0.9542464183381089,
+      "pauc_std_01": 0.7758534794315417,
+      "pauc_std_001": 0.6998499249624812
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "detector": "H1",
+      "positive": 133,
+      "negative": 602,
+      "tp": 89,
+      "fp": 4,
+      "tn": 598,
+      "fn": 44,
+      "balanced_accuracy": 0.8312642070292009,
+      "mcc": 0.7672194187374453,
+      "precision": 0.956989247311828,
+      "recall": 0.6691729323308271,
+      "specificity": 0.9933554817275747,
+      "f1": 0.7876106194690266,
+      "mcc_degenerate": false,
+      "fa_per10000": 66.44518272425249,
+      "auroc": 0.9897459595833438,
+      "pauc_std_01": 0.7316409941697597,
+      "pauc_std_001": 0.6313946446907664
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "detector": "L1",
+      "positive": 107,
+      "negative": 716,
+      "tp": 74,
+      "fp": 1,
+      "tn": 715,
+      "fn": 33,
+      "balanced_accuracy": 0.845096068501018,
+      "mcc": 0.8065605507786203,
+      "precision": 0.9866666666666667,
+      "recall": 0.6915887850467289,
+      "specificity": 0.9986033519553073,
+      "f1": 0.8131868131868132,
+      "mcc_degenerate": false,
+      "fa_per10000": 13.966480446927374,
+      "auroc": 0.9843888685845559,
+      "pauc_std_01": 0.8428680760876381,
+      "pauc_std_001": 0.49974987493746875
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "detector": "H1",
+      "positive": 133,
+      "negative": 602,
+      "tp": 89,
+      "fp": 4,
+      "tn": 598,
+      "fn": 44,
+      "balanced_accuracy": 0.8312642070292009,
+      "mcc": 0.7672194187374453,
+      "precision": 0.956989247311828,
+      "recall": 0.6691729323308271,
+      "specificity": 0.9933554817275747,
+      "f1": 0.7876106194690266,
+      "mcc_degenerate": false,
+      "fa_per10000": 66.44518272425249,
+      "auroc": 0.9897334698873429,
+      "pauc_std_01": 0.7316409941697597,
+      "pauc_std_001": 0.6313946446907664
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "detector": "L1",
+      "positive": 107,
+      "negative": 716,
+      "tp": 74,
+      "fp": 1,
+      "tn": 715,
+      "fn": 33,
+      "balanced_accuracy": 0.845096068501018,
+      "mcc": 0.8065605507786203,
+      "precision": 0.9866666666666667,
+      "recall": 0.6915887850467289,
+      "specificity": 0.9986033519553073,
+      "f1": 0.8131868131868132,
+      "mcc_degenerate": false,
+      "fa_per10000": 13.966480446927374,
+      "auroc": 0.9843888685845559,
+      "pauc_std_01": 0.8428680760876381,
+      "pauc_std_001": 0.49974987493746875
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "detector": "H1",
+      "positive": 115,
+      "negative": 620,
+      "tp": 39,
+      "fp": 7,
+      "tn": 613,
+      "fn": 76,
+      "balanced_accuracy": 0.6639200561009818,
+      "mcc": 0.4917205150215598,
+      "precision": 0.8478260869565217,
+      "recall": 0.3391304347826087,
+      "specificity": 0.9887096774193549,
+      "f1": 0.484472049689441,
+      "mcc_degenerate": false,
+      "fa_per10000": 112.9032258064516,
+      "auroc": 0.9149649368863956,
+      "pauc_std_01": 0.5774101926180693,
+      "pauc_std_001": 0.5214998803749701
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "detector": "L1",
+      "positive": 92,
+      "negative": 731,
+      "tp": 26,
+      "fp": 2,
+      "tn": 729,
+      "fn": 66,
+      "balanced_accuracy": 0.6399363587699994,
+      "mcc": 0.48646386604880804,
+      "precision": 0.9285714285714286,
+      "recall": 0.2826086956521739,
+      "specificity": 0.9972640218878249,
+      "f1": 0.43333333333333335,
+      "mcc_degenerate": false,
+      "fa_per10000": 27.359781121751027,
+      "auroc": 0.9129691310295605,
+      "pauc_std_01": 0.6956396208126817,
+      "pauc_std_001": 0.5160623790155947
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "detector": "H1",
+      "positive": 115,
+      "negative": 620,
+      "tp": 39,
+      "fp": 7,
+      "tn": 613,
+      "fn": 76,
+      "balanced_accuracy": 0.6639200561009818,
+      "mcc": 0.4917205150215598,
+      "precision": 0.8478260869565217,
+      "recall": 0.3391304347826087,
+      "specificity": 0.9887096774193549,
+      "f1": 0.484472049689441,
+      "mcc_degenerate": false,
+      "fa_per10000": 112.9032258064516,
+      "auroc": 0.9148948106591865,
+      "pauc_std_01": 0.5774101926180693,
+      "pauc_std_001": 0.5214998803749701
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "detector": "L1",
+      "positive": 92,
+      "negative": 731,
+      "tp": 26,
+      "fp": 2,
+      "tn": 729,
+      "fn": 66,
+      "balanced_accuracy": 0.6399363587699994,
+      "mcc": 0.48646386604880804,
+      "precision": 0.9285714285714286,
+      "recall": 0.2826086956521739,
+      "specificity": 0.9972640218878249,
+      "f1": 0.43333333333333335,
+      "mcc_degenerate": false,
+      "fa_per10000": 27.359781121751027,
+      "auroc": 0.912924522690775,
+      "pauc_std_01": 0.6956396208126817,
+      "pauc_std_001": 0.5160623790155947
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "detector": "H1",
+      "positive": 168,
+      "negative": 567,
+      "tp": 17,
+      "fp": 1,
+      "tn": 566,
+      "fn": 151,
+      "balanced_accuracy": 0.5497134038800705,
+      "mcc": 0.27011819308913987,
+      "precision": 0.9444444444444444,
+      "recall": 0.10119047619047619,
+      "specificity": 0.9982363315696648,
+      "f1": 0.1827956989247312,
+      "mcc_degenerate": false,
+      "fa_per10000": 17.636684303350968,
+      "auroc": 0.8769736289577559,
+      "pauc_std_01": 0.7399760201865969,
+      "pauc_std_001": 0.5325043474118012
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "detector": "L1",
+      "positive": 75,
+      "negative": 748,
+      "tp": 21,
+      "fp": 0,
+      "tn": 748,
+      "fn": 54,
+      "balanced_accuracy": 0.64,
+      "mcc": 0.5110255689978498,
+      "precision": 1.0,
+      "recall": 0.28,
+      "specificity": 1.0,
+      "f1": 0.4375,
+      "mcc_degenerate": false,
+      "fa_per10000": 0.0,
+      "auroc": 0.8400891265597148,
+      "pauc_std_01": 0.7376544039269431,
+      "pauc_std_001": 0.6464899116224779
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "detector": "H1",
+      "positive": 168,
+      "negative": 567,
+      "tp": 17,
+      "fp": 1,
+      "tn": 566,
+      "fn": 151,
+      "balanced_accuracy": 0.5497134038800705,
+      "mcc": 0.27011819308913987,
+      "precision": 0.9444444444444444,
+      "recall": 0.10119047619047619,
+      "specificity": 0.9982363315696648,
+      "f1": 0.1827956989247312,
+      "mcc_degenerate": false,
+      "fa_per10000": 17.636684303350968,
+      "auroc": 0.8769946250104981,
+      "pauc_std_01": 0.7399760201865969,
+      "pauc_std_001": 0.5325043474118012
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "detector": "L1",
+      "positive": 75,
+      "negative": 748,
+      "tp": 21,
+      "fp": 0,
+      "tn": 748,
+      "fn": 54,
+      "balanced_accuracy": 0.64,
+      "mcc": 0.5110255689978498,
+      "precision": 1.0,
+      "recall": 0.28,
+      "specificity": 1.0,
+      "f1": 0.4375,
+      "mcc_degenerate": false,
+      "fa_per10000": 0.0,
+      "auroc": 0.840035650623886,
+      "pauc_std_01": 0.7376544039269431,
+      "pauc_std_001": 0.6464899116224779
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "detector": "H1",
+      "positive": 102,
+      "negative": 633,
+      "tp": 16,
+      "fp": 0,
+      "tn": 633,
+      "fn": 86,
+      "balanced_accuracy": 0.5784313725490196,
+      "mcc": 0.37161849080476267,
+      "precision": 1.0,
+      "recall": 0.1568627450980392,
+      "specificity": 1.0,
+      "f1": 0.2711864406779661,
+      "mcc_degenerate": false,
+      "fa_per10000": 0.0,
+      "auroc": 0.9240002478084441,
+      "pauc_std_01": 0.675086083080894,
+      "pauc_std_001": 0.6419778516709336
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "detector": "L1",
+      "positive": 125,
+      "negative": 698,
+      "tp": 47,
+      "fp": 0,
+      "tn": 698,
+      "fn": 78,
+      "balanced_accuracy": 0.688,
+      "mcc": 0.5815549720937913,
+      "precision": 1.0,
+      "recall": 0.376,
+      "specificity": 1.0,
+      "f1": 0.5465116279069767,
+      "mcc_degenerate": false,
+      "fa_per10000": 0.0,
+      "auroc": 0.9542808022922636,
+      "pauc_std_01": 0.7758534794315417,
+      "pauc_std_001": 0.6998499249624812
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "detector": "H1",
+      "positive": 102,
+      "negative": 633,
+      "tp": 16,
+      "fp": 0,
+      "tn": 633,
+      "fn": 86,
+      "balanced_accuracy": 0.5784313725490196,
+      "mcc": 0.37161849080476267,
+      "precision": 1.0,
+      "recall": 0.1568627450980392,
+      "specificity": 1.0,
+      "f1": 0.2711864406779661,
+      "mcc_degenerate": false,
+      "fa_per10000": 0.0,
+      "auroc": 0.9240002478084441,
+      "pauc_std_01": 0.675086083080894,
+      "pauc_std_001": 0.6419778516709336
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "detector": "L1",
+      "positive": 125,
+      "negative": 698,
+      "tp": 47,
+      "fp": 0,
+      "tn": 698,
+      "fn": 78,
+      "balanced_accuracy": 0.688,
+      "mcc": 0.5815549720937913,
+      "precision": 1.0,
+      "recall": 0.376,
+      "specificity": 1.0,
+      "f1": 0.5465116279069767,
+      "mcc_degenerate": false,
+      "fa_per10000": 0.0,
+      "auroc": 0.9542464183381089,
+      "pauc_std_01": 0.7758534794315417,
+      "pauc_std_001": 0.6998499249624812
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "detector": "H1",
+      "positive": 133,
+      "negative": 602,
+      "tp": 51,
+      "fp": 3,
+      "tn": 599,
+      "fn": 82,
+      "balanced_accuracy": 0.6892376289561112,
+      "mcc": 0.5584587807852396,
+      "precision": 0.9444444444444444,
+      "recall": 0.38345864661654133,
+      "specificity": 0.9950166112956811,
+      "f1": 0.5454545454545454,
+      "mcc_degenerate": false,
+      "fa_per10000": 49.833887043189364,
+      "auroc": 0.9897459595833438,
+      "pauc_std_01": 0.7316409941697597,
+      "pauc_std_001": 0.6313946446907664
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "detector": "L1",
+      "positive": 107,
+      "negative": 716,
+      "tp": 32,
+      "fp": 1,
+      "tn": 715,
+      "fn": 75,
+      "balanced_accuracy": 0.6488343862580275,
+      "mcc": 0.5102830715288709,
+      "precision": 0.9696969696969697,
+      "recall": 0.29906542056074764,
+      "specificity": 0.9986033519553073,
+      "f1": 0.45714285714285713,
+      "mcc_degenerate": false,
+      "fa_per10000": 13.966480446927374,
+      "auroc": 0.9843888685845559,
+      "pauc_std_01": 0.8428680760876381,
+      "pauc_std_001": 0.49974987493746875
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "detector": "H1",
+      "positive": 133,
+      "negative": 602,
+      "tp": 51,
+      "fp": 3,
+      "tn": 599,
+      "fn": 82,
+      "balanced_accuracy": 0.6892376289561112,
+      "mcc": 0.5584587807852396,
+      "precision": 0.9444444444444444,
+      "recall": 0.38345864661654133,
+      "specificity": 0.9950166112956811,
+      "f1": 0.5454545454545454,
+      "mcc_degenerate": false,
+      "fa_per10000": 49.833887043189364,
+      "auroc": 0.9897334698873429,
+      "pauc_std_01": 0.7316409941697597,
+      "pauc_std_001": 0.6313946446907664
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "detector": "L1",
+      "positive": 107,
+      "negative": 716,
+      "tp": 32,
+      "fp": 1,
+      "tn": 715,
+      "fn": 75,
+      "balanced_accuracy": 0.6488343862580275,
+      "mcc": 0.5102830715288709,
+      "precision": 0.9696969696969697,
+      "recall": 0.29906542056074764,
+      "specificity": 0.9986033519553073,
+      "f1": 0.45714285714285713,
+      "mcc_degenerate": false,
+      "fa_per10000": 13.966480446927374,
+      "auroc": 0.9843888685845559,
+      "pauc_std_01": 0.8428680760876381,
+      "pauc_std_001": 0.49974987493746875
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "detector": "H1",
+      "positive": 115,
+      "negative": 620,
+      "tp": 5,
+      "fp": 1,
+      "tn": 619,
+      "fn": 110,
+      "balanced_accuracy": 0.5209326788218794,
+      "mcc": 0.16902859486404853,
+      "precision": 0.8333333333333334,
+      "recall": 0.043478260869565216,
+      "specificity": 0.9983870967741936,
+      "f1": 0.08264462809917356,
+      "mcc_degenerate": false,
+      "fa_per10000": 16.129032258064516,
+      "auroc": 0.9149649368863956,
+      "pauc_std_01": 0.5774101926180693,
+      "pauc_std_001": 0.5214998803749701
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "detector": "L1",
+      "positive": 92,
+      "negative": 731,
+      "tp": 3,
+      "fp": 0,
+      "tn": 731,
+      "fn": 89,
+      "balanced_accuracy": 0.5163043478260869,
+      "mcc": 0.17049768084303257,
+      "precision": 1.0,
+      "recall": 0.03260869565217391,
+      "specificity": 1.0,
+      "f1": 0.06315789473684211,
+      "mcc_degenerate": false,
+      "fa_per10000": 0.0,
+      "auroc": 0.9129691310295605,
+      "pauc_std_01": 0.6956396208126817,
+      "pauc_std_001": 0.5160623790155947
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "detector": "H1",
+      "positive": 115,
+      "negative": 620,
+      "tp": 5,
+      "fp": 1,
+      "tn": 619,
+      "fn": 110,
+      "balanced_accuracy": 0.5209326788218794,
+      "mcc": 0.16902859486404853,
+      "precision": 0.8333333333333334,
+      "recall": 0.043478260869565216,
+      "specificity": 0.9983870967741936,
+      "f1": 0.08264462809917356,
+      "mcc_degenerate": false,
+      "fa_per10000": 16.129032258064516,
+      "auroc": 0.9148948106591865,
+      "pauc_std_01": 0.5774101926180693,
+      "pauc_std_001": 0.5214998803749701
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "detector": "L1",
+      "positive": 92,
+      "negative": 731,
+      "tp": 3,
+      "fp": 0,
+      "tn": 731,
+      "fn": 89,
+      "balanced_accuracy": 0.5163043478260869,
+      "mcc": 0.17049768084303257,
+      "precision": 1.0,
+      "recall": 0.03260869565217391,
+      "specificity": 1.0,
+      "f1": 0.06315789473684211,
+      "mcc_degenerate": false,
+      "fa_per10000": 0.0,
+      "auroc": 0.912924522690775,
+      "pauc_std_01": 0.6956396208126817,
+      "pauc_std_001": 0.5160623790155947
+    }
+  ],
+  "false_alarm_by_label": [
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "1400Ripples",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "70HZLINE",
+      "fp": 0,
+      "negative": 17
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Air_Compressor",
+      "fp": 0,
+      "negative": 4
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Blip",
+      "fp": 0,
+      "negative": 207
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "CROWN",
+      "fp": 0,
+      "negative": 146
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Extremely_Loud",
+      "fp": 0,
+      "negative": 59
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "HIGHFREQUENCYBURST",
+      "fp": 0,
+      "negative": 64
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Helix",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Koi_Fish",
+      "fp": 0,
+      "negative": 42
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Light_Modulation",
+      "fp": 0,
+      "negative": 5
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Low_Frequency_Lines",
+      "fp": 0,
+      "negative": 227
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "No_Glitch",
+      "fp": 2,
+      "negative": 67
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "None_of_the_Above",
+      "fp": 0,
+      "negative": 22
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "PIZZICATO",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Paired_Doves",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Power_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Repeating_Blips",
+      "fp": 0,
+      "negative": 41
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Scattered_Light",
+      "fp": 0,
+      "negative": 240
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Scratchy",
+      "fp": 0,
+      "negative": 20
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Tomte",
+      "fp": 0,
+      "negative": 87
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Wandering_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Whistle",
+      "fp": 0,
+      "negative": 55
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "1400Ripples",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "70HZLINE",
+      "fp": 0,
+      "negative": 17
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Air_Compressor",
+      "fp": 0,
+      "negative": 4
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Blip",
+      "fp": 0,
+      "negative": 207
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "CROWN",
+      "fp": 0,
+      "negative": 146
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Extremely_Loud",
+      "fp": 0,
+      "negative": 59
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "HIGHFREQUENCYBURST",
+      "fp": 0,
+      "negative": 64
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Helix",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Koi_Fish",
+      "fp": 0,
+      "negative": 42
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Light_Modulation",
+      "fp": 0,
+      "negative": 5
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Low_Frequency_Lines",
+      "fp": 0,
+      "negative": 227
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "No_Glitch",
+      "fp": 2,
+      "negative": 67
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "None_of_the_Above",
+      "fp": 0,
+      "negative": 22
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "PIZZICATO",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Paired_Doves",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Power_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Repeating_Blips",
+      "fp": 0,
+      "negative": 41
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Scattered_Light",
+      "fp": 0,
+      "negative": 240
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Scratchy",
+      "fp": 0,
+      "negative": 20
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Tomte",
+      "fp": 0,
+      "negative": 87
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Wandering_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.001,
+      "negative_label": "Whistle",
+      "fp": 0,
+      "negative": 55
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "1400Ripples",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "70HZLINE",
+      "fp": 0,
+      "negative": 17
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Air_Compressor",
+      "fp": 0,
+      "negative": 4
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Blip",
+      "fp": 0,
+      "negative": 207
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "CROWN",
+      "fp": 0,
+      "negative": 146
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Extremely_Loud",
+      "fp": 0,
+      "negative": 59
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "HIGHFREQUENCYBURST",
+      "fp": 0,
+      "negative": 64
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Helix",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Koi_Fish",
+      "fp": 0,
+      "negative": 42
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Light_Modulation",
+      "fp": 0,
+      "negative": 5
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Low_Frequency_Burst",
+      "fp": 0,
+      "negative": 243
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "No_Glitch",
+      "fp": 0,
+      "negative": 67
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "None_of_the_Above",
+      "fp": 0,
+      "negative": 22
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "PIZZICATO",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Paired_Doves",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Power_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Repeating_Blips",
+      "fp": 0,
+      "negative": 41
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Scattered_Light",
+      "fp": 2,
+      "negative": 240
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Scratchy",
+      "fp": 0,
+      "negative": 20
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Tomte",
+      "fp": 0,
+      "negative": 87
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Wandering_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Whistle",
+      "fp": 0,
+      "negative": 55
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "1400Ripples",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "70HZLINE",
+      "fp": 0,
+      "negative": 17
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Air_Compressor",
+      "fp": 0,
+      "negative": 4
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Blip",
+      "fp": 0,
+      "negative": 207
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "CROWN",
+      "fp": 0,
+      "negative": 146
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Extremely_Loud",
+      "fp": 0,
+      "negative": 59
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "HIGHFREQUENCYBURST",
+      "fp": 0,
+      "negative": 64
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Helix",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Koi_Fish",
+      "fp": 0,
+      "negative": 42
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Light_Modulation",
+      "fp": 0,
+      "negative": 5
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Low_Frequency_Burst",
+      "fp": 0,
+      "negative": 243
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "No_Glitch",
+      "fp": 0,
+      "negative": 67
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "None_of_the_Above",
+      "fp": 0,
+      "negative": 22
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "PIZZICATO",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Paired_Doves",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Power_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Repeating_Blips",
+      "fp": 0,
+      "negative": 41
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Scattered_Light",
+      "fp": 2,
+      "negative": 240
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Scratchy",
+      "fp": 0,
+      "negative": 20
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Tomte",
+      "fp": 0,
+      "negative": 87
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Wandering_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.001,
+      "negative_label": "Whistle",
+      "fp": 0,
+      "negative": 55
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "1400Ripples",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "70HZLINE",
+      "fp": 0,
+      "negative": 17
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Air_Compressor",
+      "fp": 0,
+      "negative": 4
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Blip",
+      "fp": 0,
+      "negative": 207
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "CROWN",
+      "fp": 0,
+      "negative": 146
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Extremely_Loud",
+      "fp": 0,
+      "negative": 59
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "HIGHFREQUENCYBURST",
+      "fp": 0,
+      "negative": 64
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Helix",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Koi_Fish",
+      "fp": 0,
+      "negative": 42
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Light_Modulation",
+      "fp": 0,
+      "negative": 5
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Low_Frequency_Burst",
+      "fp": 0,
+      "negative": 243
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Low_Frequency_Lines",
+      "fp": 5,
+      "negative": 227
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "No_Glitch",
+      "fp": 0,
+      "negative": 67
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "None_of_the_Above",
+      "fp": 0,
+      "negative": 22
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "PIZZICATO",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Paired_Doves",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Power_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Repeating_Blips",
+      "fp": 0,
+      "negative": 41
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Scratchy",
+      "fp": 0,
+      "negative": 20
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Tomte",
+      "fp": 0,
+      "negative": 87
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Wandering_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Whistle",
+      "fp": 0,
+      "negative": 55
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "1400Ripples",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "70HZLINE",
+      "fp": 0,
+      "negative": 17
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Air_Compressor",
+      "fp": 0,
+      "negative": 4
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Blip",
+      "fp": 0,
+      "negative": 207
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "CROWN",
+      "fp": 0,
+      "negative": 146
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Extremely_Loud",
+      "fp": 0,
+      "negative": 59
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "HIGHFREQUENCYBURST",
+      "fp": 0,
+      "negative": 64
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Helix",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Koi_Fish",
+      "fp": 0,
+      "negative": 42
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Light_Modulation",
+      "fp": 0,
+      "negative": 5
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Low_Frequency_Burst",
+      "fp": 0,
+      "negative": 243
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Low_Frequency_Lines",
+      "fp": 5,
+      "negative": 227
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "No_Glitch",
+      "fp": 0,
+      "negative": 67
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "None_of_the_Above",
+      "fp": 0,
+      "negative": 22
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "PIZZICATO",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Paired_Doves",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Power_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Repeating_Blips",
+      "fp": 0,
+      "negative": 41
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Scratchy",
+      "fp": 0,
+      "negative": 20
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Tomte",
+      "fp": 0,
+      "negative": 87
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Wandering_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.001,
+      "negative_label": "Whistle",
+      "fp": 0,
+      "negative": 55
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "1400Ripples",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "70HZLINE",
+      "fp": 0,
+      "negative": 17
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Air_Compressor",
+      "fp": 0,
+      "negative": 4
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "CROWN",
+      "fp": 1,
+      "negative": 146
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Extremely_Loud",
+      "fp": 0,
+      "negative": 59
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "HIGHFREQUENCYBURST",
+      "fp": 0,
+      "negative": 64
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Helix",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Koi_Fish",
+      "fp": 0,
+      "negative": 42
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Light_Modulation",
+      "fp": 0,
+      "negative": 5
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Low_Frequency_Burst",
+      "fp": 0,
+      "negative": 243
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Low_Frequency_Lines",
+      "fp": 0,
+      "negative": 227
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "No_Glitch",
+      "fp": 0,
+      "negative": 67
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "None_of_the_Above",
+      "fp": 0,
+      "negative": 22
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "PIZZICATO",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Paired_Doves",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Power_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Repeating_Blips",
+      "fp": 5,
+      "negative": 41
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Scattered_Light",
+      "fp": 0,
+      "negative": 240
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Scratchy",
+      "fp": 0,
+      "negative": 20
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Tomte",
+      "fp": 0,
+      "negative": 87
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Wandering_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Whistle",
+      "fp": 3,
+      "negative": 55
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "1400Ripples",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "70HZLINE",
+      "fp": 0,
+      "negative": 17
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Air_Compressor",
+      "fp": 0,
+      "negative": 4
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "CROWN",
+      "fp": 1,
+      "negative": 146
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Extremely_Loud",
+      "fp": 0,
+      "negative": 59
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "HIGHFREQUENCYBURST",
+      "fp": 0,
+      "negative": 64
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Helix",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Koi_Fish",
+      "fp": 0,
+      "negative": 42
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Light_Modulation",
+      "fp": 0,
+      "negative": 5
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Low_Frequency_Burst",
+      "fp": 0,
+      "negative": 243
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Low_Frequency_Lines",
+      "fp": 0,
+      "negative": 227
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "No_Glitch",
+      "fp": 0,
+      "negative": 67
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "None_of_the_Above",
+      "fp": 0,
+      "negative": 22
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "PIZZICATO",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Paired_Doves",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Power_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Repeating_Blips",
+      "fp": 5,
+      "negative": 41
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Scattered_Light",
+      "fp": 0,
+      "negative": 240
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Scratchy",
+      "fp": 0,
+      "negative": 20
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Tomte",
+      "fp": 0,
+      "negative": 87
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Wandering_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.001,
+      "negative_label": "Whistle",
+      "fp": 3,
+      "negative": 55
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "1400Ripples",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "70HZLINE",
+      "fp": 0,
+      "negative": 17
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Air_Compressor",
+      "fp": 0,
+      "negative": 4
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Blip",
+      "fp": 0,
+      "negative": 207
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "CROWN",
+      "fp": 0,
+      "negative": 146
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Extremely_Loud",
+      "fp": 0,
+      "negative": 59
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "HIGHFREQUENCYBURST",
+      "fp": 0,
+      "negative": 64
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Helix",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Koi_Fish",
+      "fp": 0,
+      "negative": 42
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Light_Modulation",
+      "fp": 0,
+      "negative": 5
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Low_Frequency_Lines",
+      "fp": 0,
+      "negative": 227
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "No_Glitch",
+      "fp": 1,
+      "negative": 67
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "None_of_the_Above",
+      "fp": 0,
+      "negative": 22
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "PIZZICATO",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Paired_Doves",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Power_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Repeating_Blips",
+      "fp": 0,
+      "negative": 41
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Scattered_Light",
+      "fp": 0,
+      "negative": 240
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Scratchy",
+      "fp": 0,
+      "negative": 20
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Tomte",
+      "fp": 0,
+      "negative": 87
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Wandering_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Whistle",
+      "fp": 0,
+      "negative": 55
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "1400Ripples",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "70HZLINE",
+      "fp": 0,
+      "negative": 17
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Air_Compressor",
+      "fp": 0,
+      "negative": 4
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Blip",
+      "fp": 0,
+      "negative": 207
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "CROWN",
+      "fp": 0,
+      "negative": 146
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Extremely_Loud",
+      "fp": 0,
+      "negative": 59
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "HIGHFREQUENCYBURST",
+      "fp": 0,
+      "negative": 64
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Helix",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Koi_Fish",
+      "fp": 0,
+      "negative": 42
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Light_Modulation",
+      "fp": 0,
+      "negative": 5
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Low_Frequency_Lines",
+      "fp": 0,
+      "negative": 227
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "No_Glitch",
+      "fp": 1,
+      "negative": 67
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "None_of_the_Above",
+      "fp": 0,
+      "negative": 22
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "PIZZICATO",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Paired_Doves",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Power_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Repeating_Blips",
+      "fp": 0,
+      "negative": 41
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Scattered_Light",
+      "fp": 0,
+      "negative": 240
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Scratchy",
+      "fp": 0,
+      "negative": 20
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Tomte",
+      "fp": 0,
+      "negative": 87
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Wandering_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Burst",
+      "alpha": 0.0005,
+      "negative_label": "Whistle",
+      "fp": 0,
+      "negative": 55
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "1400Ripples",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "70HZLINE",
+      "fp": 0,
+      "negative": 17
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Air_Compressor",
+      "fp": 0,
+      "negative": 4
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Blip",
+      "fp": 0,
+      "negative": 207
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "CROWN",
+      "fp": 0,
+      "negative": 146
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Extremely_Loud",
+      "fp": 0,
+      "negative": 59
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "HIGHFREQUENCYBURST",
+      "fp": 0,
+      "negative": 64
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Helix",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Koi_Fish",
+      "fp": 0,
+      "negative": 42
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Light_Modulation",
+      "fp": 0,
+      "negative": 5
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Low_Frequency_Burst",
+      "fp": 0,
+      "negative": 243
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "No_Glitch",
+      "fp": 0,
+      "negative": 67
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "None_of_the_Above",
+      "fp": 0,
+      "negative": 22
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "PIZZICATO",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Paired_Doves",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Power_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Repeating_Blips",
+      "fp": 0,
+      "negative": 41
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Scattered_Light",
+      "fp": 0,
+      "negative": 240
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Scratchy",
+      "fp": 0,
+      "negative": 20
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Tomte",
+      "fp": 0,
+      "negative": 87
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Wandering_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Whistle",
+      "fp": 0,
+      "negative": 55
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "1400Ripples",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "70HZLINE",
+      "fp": 0,
+      "negative": 17
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Air_Compressor",
+      "fp": 0,
+      "negative": 4
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Blip",
+      "fp": 0,
+      "negative": 207
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "CROWN",
+      "fp": 0,
+      "negative": 146
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Extremely_Loud",
+      "fp": 0,
+      "negative": 59
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "HIGHFREQUENCYBURST",
+      "fp": 0,
+      "negative": 64
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Helix",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Koi_Fish",
+      "fp": 0,
+      "negative": 42
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Light_Modulation",
+      "fp": 0,
+      "negative": 5
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Low_Frequency_Burst",
+      "fp": 0,
+      "negative": 243
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "No_Glitch",
+      "fp": 0,
+      "negative": 67
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "None_of_the_Above",
+      "fp": 0,
+      "negative": 22
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "PIZZICATO",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Paired_Doves",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Power_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Repeating_Blips",
+      "fp": 0,
+      "negative": 41
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Scattered_Light",
+      "fp": 0,
+      "negative": 240
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Scratchy",
+      "fp": 0,
+      "negative": 20
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Tomte",
+      "fp": 0,
+      "negative": 87
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Wandering_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Low_Frequency_Lines",
+      "alpha": 0.0005,
+      "negative_label": "Whistle",
+      "fp": 0,
+      "negative": 55
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "1400Ripples",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "70HZLINE",
+      "fp": 0,
+      "negative": 17
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Air_Compressor",
+      "fp": 0,
+      "negative": 4
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Blip",
+      "fp": 0,
+      "negative": 207
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "CROWN",
+      "fp": 0,
+      "negative": 146
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Extremely_Loud",
+      "fp": 0,
+      "negative": 59
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "HIGHFREQUENCYBURST",
+      "fp": 0,
+      "negative": 64
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Helix",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Koi_Fish",
+      "fp": 0,
+      "negative": 42
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Light_Modulation",
+      "fp": 0,
+      "negative": 5
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Low_Frequency_Burst",
+      "fp": 0,
+      "negative": 243
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Low_Frequency_Lines",
+      "fp": 4,
+      "negative": 227
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "No_Glitch",
+      "fp": 0,
+      "negative": 67
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "None_of_the_Above",
+      "fp": 0,
+      "negative": 22
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "PIZZICATO",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Paired_Doves",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Power_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Repeating_Blips",
+      "fp": 0,
+      "negative": 41
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Scratchy",
+      "fp": 0,
+      "negative": 20
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Tomte",
+      "fp": 0,
+      "negative": 87
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Wandering_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Whistle",
+      "fp": 0,
+      "negative": 55
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "1400Ripples",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "70HZLINE",
+      "fp": 0,
+      "negative": 17
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Air_Compressor",
+      "fp": 0,
+      "negative": 4
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Blip",
+      "fp": 0,
+      "negative": 207
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "CROWN",
+      "fp": 0,
+      "negative": 146
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Extremely_Loud",
+      "fp": 0,
+      "negative": 59
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "HIGHFREQUENCYBURST",
+      "fp": 0,
+      "negative": 64
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Helix",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Koi_Fish",
+      "fp": 0,
+      "negative": 42
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Light_Modulation",
+      "fp": 0,
+      "negative": 5
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Low_Frequency_Burst",
+      "fp": 0,
+      "negative": 243
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Low_Frequency_Lines",
+      "fp": 4,
+      "negative": 227
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "No_Glitch",
+      "fp": 0,
+      "negative": 67
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "None_of_the_Above",
+      "fp": 0,
+      "negative": 22
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "PIZZICATO",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Paired_Doves",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Power_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Repeating_Blips",
+      "fp": 0,
+      "negative": 41
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Scratchy",
+      "fp": 0,
+      "negative": 20
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Tomte",
+      "fp": 0,
+      "negative": 87
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Wandering_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Scattered_Light",
+      "alpha": 0.0005,
+      "negative_label": "Whistle",
+      "fp": 0,
+      "negative": 55
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "1400Ripples",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "70HZLINE",
+      "fp": 0,
+      "negative": 17
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Air_Compressor",
+      "fp": 0,
+      "negative": 4
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "CROWN",
+      "fp": 0,
+      "negative": 146
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Extremely_Loud",
+      "fp": 0,
+      "negative": 59
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "HIGHFREQUENCYBURST",
+      "fp": 0,
+      "negative": 64
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Helix",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Koi_Fish",
+      "fp": 0,
+      "negative": 42
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Light_Modulation",
+      "fp": 0,
+      "negative": 5
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Low_Frequency_Burst",
+      "fp": 0,
+      "negative": 243
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Low_Frequency_Lines",
+      "fp": 0,
+      "negative": 227
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "No_Glitch",
+      "fp": 0,
+      "negative": 67
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "None_of_the_Above",
+      "fp": 0,
+      "negative": 22
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "PIZZICATO",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Paired_Doves",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Power_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Repeating_Blips",
+      "fp": 1,
+      "negative": 41
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Scattered_Light",
+      "fp": 0,
+      "negative": 240
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Scratchy",
+      "fp": 0,
+      "negative": 20
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Tomte",
+      "fp": 0,
+      "negative": 87
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Wandering_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "legacy_tf32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Whistle",
+      "fp": 0,
+      "negative": 55
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "1400Ripples",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "70HZLINE",
+      "fp": 0,
+      "negative": 17
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Air_Compressor",
+      "fp": 0,
+      "negative": 4
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "CROWN",
+      "fp": 0,
+      "negative": 146
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Extremely_Loud",
+      "fp": 0,
+      "negative": 59
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "HIGHFREQUENCYBURST",
+      "fp": 0,
+      "negative": 64
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Helix",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Koi_Fish",
+      "fp": 0,
+      "negative": 42
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Light_Modulation",
+      "fp": 0,
+      "negative": 5
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Low_Frequency_Burst",
+      "fp": 0,
+      "negative": 243
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Low_Frequency_Lines",
+      "fp": 0,
+      "negative": 227
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "No_Glitch",
+      "fp": 0,
+      "negative": 67
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "None_of_the_Above",
+      "fp": 0,
+      "negative": 22
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "PIZZICATO",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Paired_Doves",
+      "fp": 0,
+      "negative": 1
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Power_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Repeating_Blips",
+      "fp": 1,
+      "negative": 41
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Scattered_Light",
+      "fp": 0,
+      "negative": 240
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Scratchy",
+      "fp": 0,
+      "negative": 20
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Tomte",
+      "fp": 0,
+      "negative": 87
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Wandering_Line",
+      "fp": 0,
+      "negative": 3
+    },
+    {
+      "version": "strict_fp32",
+      "target": "Blip",
+      "alpha": 0.0005,
+      "negative_label": "Whistle",
+      "fp": 0,
+      "negative": 55
+    }
+  ],
+  "changed_development_alarms": [],
+  "union_false_alarms": [
+    {
+      "version": "legacy_tf32",
+      "alpha": 0.001,
+      "fp": 11,
+      "negative": 641,
+      "fa_per10000": 171.606864274571
+    },
+    {
+      "version": "strict_fp32",
+      "alpha": 0.001,
+      "fp": 11,
+      "negative": 641,
+      "fa_per10000": 171.606864274571
+    },
+    {
+      "version": "legacy_tf32",
+      "alpha": 0.0005,
+      "fp": 2,
+      "negative": 641,
+      "fa_per10000": 31.201248049921997
+    },
+    {
+      "version": "strict_fp32",
+      "alpha": 0.0005,
+      "fp": 2,
+      "negative": 641,
+      "fa_per10000": 31.201248049921997
+    }
+  ],
+  "selection": "All outcomes reported; none used to select a change",
+  "limitations": [
+    "Repeatedly consumed development data, not fresh confirmation.",
+    "One positive event with four renderings plus labeled negative FIT/CAL, not one total real example.",
+    "Calibration exchangeability across deployment eras is not established.",
+    "Strict FP32 is not bitwise portable across every kernel/hardware; frozen fixture gates each runtime."
+  ]
+}

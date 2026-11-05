@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "cpu_only": true,
+  "heldout_test_consumed": false,
+  "source_hashes": {
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\model.py": "ed01703a6a1ad0aa5de9ebf8a21bd2b05a107a535bb27f7165ba6fda531327c5",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\generator.py": "ae6a7a399c315caba401e2475928b5d1e65761a2206faaa139cf7a3e8193a9ba",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\train.py": "6c1f061159bc48f84847ab01d321086b47c0f7c9a9d991b2f6d3fa9b1b4bd62a",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\checks.py": "67801b66258706d71f55404b422851049cfa67ffa3fcaac07ef3faee42887827",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\plan.json": "70339a9d74ff27404c63764ab55532764854b8a4e620a34aeb9de1ecd3badc4e",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v44\\correction\\generator.py": "c127ca0cf99a690b88895e0ff2f22d128081d25086eb1b800e6f38a704faa74a",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v44\\generator.py": "d5528aa5924674ded9f2407e6d1ec2a9dfafe1e102af980fb9373f6ae7aa1d35"
+  },
+  "readout_parity": {
+    "base_max_error": 0.0,
+    "spatial_max_error": 1.4901161193847656e-08,
+    "base_dimension": 2016,
+    "spatial_dimension": 3040
+  },
+  "geometry": {
+    "identities": 72,
+    "maximum_affine_error": 3.8144439002962827e-06,
+    "minimum_available_points": 25,
+    "replacement_identities": 1
+  },
+  "unchanged_image_identities": [
+    4500442,
+    4502980,
+    4511287,
+    4511673,
+    4520203,
+    4520353
+  ],
+  "paired_initial_weights_exact": true,
+  "independent_initialization_pairwise_l2": [
+    10.078991889953613,
+    10.045783042907715,
+    10.177029609680176
+  ],
+  "objective_checks": {
+    "baseline": {
+      "loss": 0.1422055959701538,
+      "rank": 0.04431116580963135,
+      "attraction": 0.03708839416503906,
+      "local_cosine": 0.3657873272895813,
+      "variance_floor": 0.04345517233014107,
+      "positive": 0.9629116058349609,
+      "hard_negative": 0.9672228097915649,
+      "gradient_norm": 1.1087170839309692,
+      "all_parameters_trainable": true
+    },
+    "improved": {
+      "loss": 0.3272719979286194,
+      "rank": 0.04431116580963135,
+      "attraction": 0.03708839416503906,
+      "local_cosine": 0.3657873272895813,
+      "variance_floor": 0.04345517233014107,
+      "positive": 0.9629116058349609,
+      "hard_negative": 0.9672228097915649,
+      "gradient_norm": 3.163957357406616,
+      "all_parameters_trainable": true
+    }
+  },
+  "added_objective_gradient_difference_l2": 2.7699944972991943,
+  "collapsed_variance_penalty": 0.7999999523162842,
+  "limitations": "Geometry is exact for analytic centers but rendered stroke edges are discretized. Soft variance penalty detects collapse but does not prove optimization avoids it. CPU checks use train identities only."
+}

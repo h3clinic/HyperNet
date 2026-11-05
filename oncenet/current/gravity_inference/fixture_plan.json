@@ -1,0 +1,49 @@
+{
+  "created_epoch": 1793867846.057995,
+  "selection_rule": "Per target, first two USED-development event IDs in ascending SHA256(gs-portability-v1:+event_id); no scores consulted",
+  "query_ids": [
+    "mlhqkn4vIx",
+    "389prCCSiW",
+    "qYy1dBJ4Xj",
+    "StrfvDQThx",
+    "O6svOnsFq3",
+    "m0Uvlpj7ij",
+    "5uhozg1AUR",
+    "3XMLnRFr4O"
+  ],
+  "support_ids": [
+    "632xGf8n9x",
+    "Vengh4mj2t",
+    "dac0D6ni5R",
+    "yxumvoPABn"
+  ],
+  "query_labels": [
+    "Low_Frequency_Burst",
+    "Low_Frequency_Burst",
+    "Low_Frequency_Lines",
+    "Low_Frequency_Lines",
+    "Scattered_Light",
+    "Scattered_Light",
+    "Blip",
+    "Blip"
+  ],
+  "support_labels": [
+    "Low_Frequency_Burst",
+    "Low_Frequency_Lines",
+    "Scattered_Light",
+    "Blip"
+  ],
+  "source_records_sha256": "d7ec862ccd35be98041320caca00a6930d5a4efcb2201a5ea102b1a8b5ae6400",
+  "source_splits_sha256": "8e759ab659d4ed114b0f9ae03aa3c5569d24459ee31d18280d8628ec8e6161d2",
+  "scores_not_read_before_this_plan": true,
+  "reserved_closed": true,
+  "scope": "Portability/throughput fixture only. Eight already-used queries cannot estimate model accuracy.",
+  "tolerances": {
+    "preprocess_atol": 1e-06,
+    "feature_atol": 5e-05,
+    "feature_rtol": 0.0005,
+    "score_atol": 0.05,
+    "score_rtol": 0.0001
+  },
+  "required_decision_parity": "Exact at both original alpha values; report failures, never adjust cutoffs or tolerances."
+}

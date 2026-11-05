@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "created_utc": "2026-11-05T22:29:48.181103+00:00",
+  "reviewer": "independent network_figures agent",
+  "scope": "Metadata/code review before image acquisition; no neural inference or outcome scoring",
+  "source_hashes": {
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_factorial_20261105\\prepare_data.py": "245ecb38ad8f2de1e170cf82d601d315b6a0ca9e49fa0e52a46a05a74d8c124a",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_factorial_20261105\\data_plan.json": "898723a9109468a832613c15065b3e810deaedb5e9ae8e8358dcf6d611c9a7fb",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_factorial_20261105\\intent_unlabelled.json": "d59938b30bf3a836649319f07919cbbe6e18e6af5ca618820db89cb8c0b8269a",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_factorial_20261105\\labels.json": "1a968612f04a35bc3ebd646f7c651232457b940f59bb1a63b693af2ad0a17be8"
+  },
+  "amendment_sha256": "dc648ec08c0dd18bb8a8e5e24719b7bd5acc64301536ca72418a7a662ba4a317",
+  "checks": {
+    "all_8291_original_transitive_source_hashes_verified": true,
+    "only_transitive_binding_change_is_reviewed_prepare_data_code": true,
+    "intent_and_labels_unchanged": true,
+    "all_57_explicit_required_historical_sources_exist": true,
+    "historical_ids_independently_reconstructed": 65217,
+    "historical_forbidden_detector_hours_independently_reconstructed": 12058,
+    "missing_historical_timestamps": 0,
+    "selected_prior_event_id_overlap": 0,
+    "selected_prior_detector_hour_overlap": 0,
+    "selected_unique_events": 2400,
+    "selected_unique_detector_hours": 2400,
+    "selected_same_detector_pairs_within_8s": 0,
+    "minimum_selected_same_detector_separation_seconds": {
+      "H1": 283.76758003234863,
+      "L1": 148.17188000679016
+    },
+    "selected_ids_and_label_order_align": true,
+    "all_selected_labels_at_least_5_consistent_registered_users_and_80_percent_agreement": true,
+    "raw_selected_vote_recount_implementation_reviewed": true,
+    "original_vote_ingest_filters_anonymous_and_machine_labels": true,
+    "four_distinct_official_png_urls_required": true,
+    "explicit_protocol_digest_and_exact_input_code_hashes_required_for_acquisition": true,
+    "full_transitive_metadata_source_hash_revalidation_before_acquisition": true,
+    "native_png_format_size_and_independent_colorbar_validation": true,
+    "fixed_exclusions_common_to_all_models_no_replacements": true,
+    "source_native_pixel_and_crop_hashes_recorded": true,
+    "raw_sha256_alias_only_amendment_reviewed": true,
+    "no_legacy_crop_geometry_equivalence_assumed": true
+  },
+  "label_sources": {
+    "workflow_7766_all_versions": 2340,
+    "workflow_7766_version_13_2": 60
+  },
+  "fresh_target_counts": {
+    "Low_Frequency_Burst": 100,
+    "Low_Frequency_Lines": 100,
+    "Scattered_Light": 100,
+    "Blip": 100
+  },
+  "outside_target_count": 2000,
+  "limitations": [
+    "Volunteer consensus is a fallible label proxy, not expert adjudication; prior ML routing affects volunteer exposure.",
+    "Historical image hashes are incomplete;65,217 known event IDs and detector-hour exclusions are the primary separation guarantee, not universal perceptual de-duplication.",
+    "Same-detector hours can remain physically dependent; sample-stratified prevalence does not represent archive prevalence.",
+    "Low Frequency Burst has90H1 and10L1 planned positives. Report per-detector descriptive metrics without reselecting models or thresholds.",
+    "Acquisition behavior is code-reviewed but has not yet been executed by this reviewer."
+  ],
+  "blocking_findings": []
+}

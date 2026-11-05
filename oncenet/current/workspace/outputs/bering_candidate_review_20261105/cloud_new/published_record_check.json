@@ -1,0 +1,63 @@
+{
+  "checked_utc_date": "2026-11-05",
+  "scope": "Bounded primary-source literature and exact-filename search; no additional audio downloaded, no model scoring, no expert contact.",
+  "candidate": {
+    "file": "Bering-M2y04d129h15m00.x.flac",
+    "nominal_filename_date": "2004-05-08",
+    "legacy_window_offsets_s": [3868, 3120],
+    "observed_shape": "Two similar short, two-part descending events around 50 to 33 Hz. Biological origin and species remain unresolved."
+  },
+  "supported_interpretation": "Unidentified low-frequency transient candidates in an already-studied 2004 Bering M2 deployment. Their approximate frequency contour resembles a published sei-whale call family, but this does not establish species, Pacific occurrence, or novelty. Instrument noise is specifically documented for this deployment and must be excluded.",
+  "primary_sources": [
+    {
+      "title": "Bering Sea Baleen Whale Acoustics, NPRB Final Report F0519",
+      "authors": "Hildebrand and Munger",
+      "year": 2007,
+      "url": "https://researchworkspace.com/files/2585889/519_Final_report.pdf",
+      "locations": "Table1 on printed p7; fin-whale methods on printed p9",
+      "findings": "M2 recording coverage includes April 26 to July 28, 2004; the table records right, fin and humpback whales. The 2004 M2 deployment received manual fin-whale presence/absence review; automated detection was omitted because instrument electronic noise overlapped call frequencies.",
+      "implication": "The deployment was already studied. Electronics is a documented alternative source for low-frequency features. This report does not label our exact two offsets."
+    },
+    {
+      "title": "Cooperative Acoustic Monitoring of North Pacific Right Whales, MPLTM493",
+      "authors": "Hildebrand and Munger",
+      "year": 2007,
+      "url": "https://www.cetus.ucsd.edu/docs/reports/MPLTM493-2007.pdf",
+      "locations": "Table3 printed p16; methods printed pp16–18; results p20",
+      "findings": "BSM2 April 26 to July 28, 2004 is listed at 80 kHz and 72 m depth. Investigators distinguished right-whale calls from similar low-frequency humpback components using longer temporal patterns and visual/aural review. Their earliest reported right-whale detections were May 23, 2004.",
+      "implication": "Our May 8 descending transients cannot extend that right-whale record without species evidence. Short shape similarity alone was already recognized as ambiguous."
+    },
+    {
+      "title": "50 to 30-Hz triplet and singlet down sweep vocalizations produced by sei whales in the western North Atlantic Ocean",
+      "authors": "Tremblay, Van Parijs and Cholewiak",
+      "year": 2019,
+      "doi": "10.1121/1.5110713",
+      "url": "https://repository.library.noaa.gov/view/noaa/63169",
+      "pdf": "https://repository.library.noaa.gov/view/noaa/63169/noaa_63169_DS1.pdf",
+      "findings": "50 to 30 Hz downsweeps were attributed to sei whales through association with established 82 to 34 Hz calls and spatial/temporal tracking.",
+      "implication": "This contour is not a globally unknown sound type. The study concerns the Atlantic, and its attribution evidence is stronger than our two-window resemblance."
+    },
+    {
+      "title": "NOAA NEFSC Passive Acoustics Branch manual: Baleen Whales",
+      "url": "https://nefsc.github.io/NEFSC_PAB_lab_manual/content/Analysis/Species_list/Myst_list.html",
+      "findings": "Its sei-whale section describes 50 to 30 Hz downsweeps lasting 0.6–1.94 s and says archival daily presence is assessed using downsweep doublets/triplets.",
+      "implication": "The duration/frequency resemblance supports expert triage, not automatic species confirmation. Two isolated events approximately 749 s apart are not a demonstrated call doublet."
+    },
+    {
+      "title": "MBARC BERING Raw Audio Data",
+      "url": "https://catalog.data.gov/dataset/mbarc-bering-raw-audio-data",
+      "doi": "10.25921/gqr4-hf12",
+      "findings": "NOAA describes publicly archived historical Scripps recordings and later conversion to FLAC. The landing-page date range starts September 2004, inconsistent with May 2004 filenames; the original 2007 deployment reports cover April–July 2004.",
+      "implication": "Use source-specific deployment records and recorder timing to settle dates; a new public archive release does not establish that recordings were unexamined."
+    }
+  ],
+  "exact_record_search": {
+    "query": "\"Bering-M2y04d129h15m00.x.flac\"",
+    "result": "No exact-file scientific annotation was located in this bounded indexed-web check.",
+    "limitation": "This is not evidence that the offsets were never inspected, privately annotated, or included in an aggregate study. Historical publications generally do not index individual FLAC filenames."
+  },
+  "species_confirmed": false,
+  "biological_origin_confirmed": false,
+  "novelty_confirmed": false,
+  "next_review": "Compare longer same-file context with documented electronic-noise patterns and known whale call sequences; seek source-specific annotations and acoustic expert assessment before assigning species or an unreported occurrence."
+}

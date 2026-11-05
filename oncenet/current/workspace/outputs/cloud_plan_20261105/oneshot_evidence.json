@@ -1,0 +1,477 @@
+{
+  "created_utc": "2026-11-05T08:23:19.137944+00:00",
+  "scope": "Local persisted artifacts only. No new inference, training, fitting, reserved-image or reserved-metadata access.",
+  "overall_ready": false,
+  "one_shot_definition": "One positive support event per retrieval episode after pretraining. This does not mean one real example in the entire pipeline.",
+  "gravity_spy_locked": {
+    "status": "Methods and reused-development comparison ready; new rare-target archive deployment not ready",
+    "release": "HyperNet-GS-A-joint4-45029-locked-20261105",
+    "encoder_parameters": 42480,
+    "pretraining": "Own random initialization and mathematical spectrogram generation; zero real encoder-training images; no borrowed neural weights",
+    "supports": {
+      "Low_Frequency_Burst": {
+        "reference_event_id": "632xGf8n9x",
+        "negative_fit_count": 512,
+        "negative_calibration_count": 4049,
+        "reference_png_count": 4
+      },
+      "Low_Frequency_Lines": {
+        "reference_event_id": "Vengh4mj2t",
+        "negative_fit_count": 512,
+        "negative_calibration_count": 4073,
+        "reference_png_count": 4
+      },
+      "Scattered_Light": {
+        "reference_event_id": "dac0D6ni5R",
+        "negative_fit_count": 512,
+        "negative_calibration_count": 4057,
+        "reference_png_count": 4
+      },
+      "Blip": {
+        "reference_event_id": "yxumvoPABn",
+        "negative_fit_count": 512,
+        "negative_calibration_count": 4082,
+        "reference_png_count": 4
+      }
+    },
+    "primary_alpha": 0.001,
+    "negative_data_required": "512 negative fitting examples per target plus4049/4073/4057/4082 calibration negatives",
+    "reference_views": "Four authentic0.5/1/2/4second PNG renders of one support event, not a single PNG",
+    "development_events": 1558,
+    "metrics": {
+      "model": "s45029_spectrogram",
+      "seed": 45029,
+      "training": "spectrogram",
+      "matcher": "joint4",
+      "pool": "original",
+      "grouping": "pooled",
+      "alpha": 0.001,
+      "balanced_accuracy": 0.7154196121435478,
+      "mcc": 0.6040256427603381,
+      "recall": 0.43420894951379485,
+      "fa_per10000": 33.697252266991946,
+      "auroc": 0.9270477096210646,
+      "pauc_std_01": 0.7168693386592198,
+      "pauc_std_001": 0.5743284301424072,
+      "tp": 403,
+      "fp": 18
+    },
+    "export_audit_passed": true,
+    "selection": "Checkpoint and four-window matcher chosen retrospectively by development MCC",
+    "reserved_set": "195 events remain closed; prior split-audit attestations inherited without reopening",
+    "paper_wording": "HyperNet-GS uses procedural pretraining followed by one positive reference event per target and separately labeled negative fitting/calibration data. We report development-selected results on1558 previously used events; independent confirmation remains pending.",
+    "limits": [
+      "Frozen references cover LFB,LFL,ScatteredLight,Blip, not the five rare archive targets.",
+      "Known800x600GravitySpy renderer required; no direct whale or seismic waveform compatibility.",
+      "Nominal low-alarm setting did not meet the intended10/10000 development false-alarm target."
+    ]
+  },
+  "whale_bering": {
+    "status": "Single-example similarity scanner exists; low-alarm species validation and discovery confirmation incomplete",
+    "model": "HyperNet-W v3",
+    "encoder_parameters": 1566756,
+    "different_from_locked_gravity_spy_model": true,
+    "pretraining": {
+      "borrowed_weights": false,
+      "real_unlabeled_windows": 77000,
+      "real_labels_read_for_encoder_training": 0,
+      "synthetic_only": false,
+      "composition": "57000 windows from19 Bering recordings, plus20000 DCLDE2009-03-28 windows",
+      "bering_file_names": [
+        "BERING03_M2___050519_202000.x.flac",
+        "BERING03_M2___050709_130000.x.flac",
+        "BERING03_M2___050829_050845.x.flac",
+        "BERING04_M2___051015_040941.x.flac",
+        "BERING04_M2___051122_120500.x.flac",
+        "BERING04_M2___051230_203922.x.flac",
+        "Bering-M2y04d153h04m21.x.flac",
+        "Bering1M2_d13_040623_051623.x.flac",
+        "Bering_1_stM2_040628_212530.x.flac",
+        "Bering_2_stM2_040928_120000.x.flac",
+        "Bering_2_stM2_041014_143737.x.flac",
+        "Bering_2_stM2_041115_230904.x.flac",
+        "Bering_2_stM2_050111_110008.x.flac",
+        "Bering_2_stM4_041016_004847.x.flac",
+        "Bering_2_stM4_041028_084757.x.flac",
+        "Bering_2_stM4_041127_131416.x.flac",
+        "Bering_4_stM4_051213_145730.x.flac",
+        "Bering_4_stM4_051230_202211.x.flac",
+        "Bering_4_stM4_060116_211326.x.flac"
+      ],
+      "corpus_hash_reported_in_protocol": "30b836025185e8486e3b0ae98fd1a3a157204dfd690f564e50ae37335765647a",
+      "large_corpus_rehashed_for_this_audit": false
+    },
+    "selected_checkpoint": "ckpt_02250.pt:final",
+    "model_selection": {
+      "day": "2009-03-28",
+      "positive_supports": 10,
+      "query_windows": 6641,
+      "selection_label_counts": {
+        "0": 6000,
+        "1": 641
+      },
+      "search": "10 checkpoints x6 representation depths; mean AP across support episodes",
+      "exclusion": "8second neighborhood around each selection support"
+    },
+    "supports": {
+      "narw": {
+        "box": [
+          10,
+          150,
+          77,
+          131
+        ],
+        "speed": 1,
+        "note": "DCLDE 2013 RIWH upcall 2009-03-28 00:19:30 (first Level 0 test reference)",
+        "window_shape": [
+          140,
+          160
+        ]
+      },
+      "sei": {
+        "box": [
+          50,
+          110,
+          120,
+          140
+        ],
+        "speed": 1,
+        "note": "DCLDE 2013 SEWH 2009-04-02 19:47:20",
+        "window_shape": [
+          140,
+          160
+        ]
+      },
+      "bloop": {
+        "box": [
+          50,
+          110,
+          55,
+          133
+        ],
+        "speed": 8,
+        "note": "NOAA PMEL bloop.wav, real 45-57 s, 5-35 Hz",
+        "window_shape": [
+          140,
+          160
+        ]
+      }
+    },
+    "right_whale": {
+      "species_scope": "North Atlantic right whale, not verified North Pacific right whale",
+      "reference_start_local": "2009-03-28T00:19:30-05:00",
+      "annotation_confidence": "Detected",
+      "source_title": "DCLDE 2013 NOAA NEFSC Baleen Whale (including North Atlantic Right Whale) Annotations",
+      "annotation_file": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\dclde2013\\labels\\NEFSC_SBNMS_200903_NOPP6_CH10_allbaleen_detection_log_updated-2025-07-02.csv",
+      "bering_transfer_claim_ready": false
+    },
+    "sei": {
+      "support_start_local": "2009-04-02T19:47:20-05:00",
+      "annotation_confidence": "Possibly_Detected",
+      "all_three_annotations": [
+        {
+          "Start_DateTime_ISO8601": "2009-04-02T19:45:48-05:00",
+          "End_DateTime_ISO8601": "2009-04-02T19:45:49-05:00",
+          "Low.Freq..Hz.": "25.568",
+          "High.Freq..Hz.": "68.3",
+          "Detection_Confidence": "Possibly_Detected"
+        },
+        {
+          "Start_DateTime_ISO8601": "2009-04-02T19:47:20-05:00",
+          "End_DateTime_ISO8601": "2009-04-02T19:47:21-05:00",
+          "Low.Freq..Hz.": "18.466",
+          "High.Freq..Hz.": "68.182",
+          "Detection_Confidence": "Possibly_Detected"
+        },
+        {
+          "Start_DateTime_ISO8601": "2009-04-02T19:47:51-05:00",
+          "End_DateTime_ISO8601": "2009-04-02T19:47:52-05:00",
+          "Low.Freq..Hz.": "22.727",
+          "High.Freq..Hz.": "69.602",
+          "Detection_Confidence": "Possibly_Detected"
+        }
+      ],
+      "verified_species_reference": false,
+      "retrieval_results": {
+        "example_0": {
+          "v3": {
+            "best_rank": {
+              "call_1": 2,
+              "call_2": 6
+            },
+            "ap": 0.4166709773087799,
+            "n": 301044
+          },
+          "pixels": {
+            "best_rank": {
+              "call_1": 2,
+              "call_2": 10
+            },
+            "ap": 0.4083385199477189,
+            "n": 301044
+          },
+          "xcorr": {
+            "best_rank": {
+              "call_1": 2,
+              "call_2": 4
+            },
+            "ap": 0.5208394698838554,
+            "n": 301044
+          }
+        },
+        "example_1": {
+          "v3": {
+            "best_rank": {
+              "call_0": 2,
+              "call_2": 58
+            },
+            "ap": 0.1336281431356402,
+            "n": 301044
+          },
+          "pixels": {
+            "best_rank": {
+              "call_0": 3,
+              "call_2": 24
+            },
+            "ap": 0.1041805387198592,
+            "n": 301044
+          },
+          "xcorr": {
+            "best_rank": {
+              "call_0": 1,
+              "call_2": 26
+            },
+            "ap": 0.269243955616689,
+            "n": 301044
+          }
+        },
+        "example_2": {
+          "v3": {
+            "best_rank": {
+              "call_0": 20,
+              "call_1": 701
+            },
+            "ap": 0.013605220518002307,
+            "n": 301044
+          },
+          "pixels": {
+            "best_rank": {
+              "call_0": 238,
+              "call_1": 17
+            },
+            "ap": 0.016924813020402236,
+            "n": 301044
+          },
+          "xcorr": {
+            "best_rank": {
+              "call_0": 434,
+              "call_1": 371
+            },
+            "ap": 0.0019489189759773458,
+            "n": 301044
+          }
+        }
+      },
+      "caveat": "Three possible sei calls in one short recording; each leave-one-example trial searches other two calls. Not confirmed-species ground truth or an independent multi-site benchmark."
+    },
+    "bloop": {
+      "source": "Local saved NOAA PMEL Icequakes(Bloop) page and audio excerpt",
+      "reference_segment_real_seconds": [
+        45,
+        57
+      ],
+      "reference_frequency_hz": [
+        5,
+        35
+      ],
+      "time_compression": 8,
+      "interpretation": "Similarity to a known NOAA icequake-associated sound, not an unknown biological species or new discovery"
+    },
+    "labeled_evaluation": {
+      "dataset": "NOAA DCLDE2013 western North Atlantic annotations",
+      "positive_reference_events_per_trial": 1,
+      "reference_trials": 20,
+      "support_day": "2009-03-28",
+      "query_days": "2009-03-29 through2009-04-03",
+      "query_windows": 246632,
+      "positive_windows": 7443,
+      "summary": {
+        "raw_pixels": {
+          "ap": 0.07857871299564166,
+          "auroc": 0.5809795049174205,
+          "p100": 0.46950000000000003,
+          "p1000": 0.24844999999999998
+        },
+        "raw_rank": {
+          "ap": 0.03736995380504613,
+          "auroc": 0.5357923448148217,
+          "p100": 0.0975,
+          "p1000": 0.0737
+        },
+        "xcorr": {
+          "ap": 0.22193909880095766,
+          "auroc": 0.7407583983802823,
+          "p100": 0.624,
+          "p1000": 0.4997
+        },
+        "xcorr_box": {
+          "ap": 0.30174225748744377,
+          "auroc": 0.7155915586397987,
+          "p100": 0.9465,
+          "p1000": 0.7565999999999999
+        },
+        "block_pixels": {
+          "ap": 0.2710026872687957,
+          "auroc": 0.7281545241861328,
+          "p100": 0.8264999999999999,
+          "p1000": 0.6361500000000001
+        },
+        "whale_ssl_v3:phase_block:final": {
+          "ap": 0.3493950211016578,
+          "auroc": 0.7753997020470434,
+          "p100": 0.8939999999999999,
+          "p1000": 0.7937999999999998
+        }
+      },
+      "threshold_calibration": "None in this result; reports AP/AUROC and top-k precision",
+      "units": "4second windows at2second stride;7443 positive windows are not7443 independent calls",
+      "uncertainty": "Stored bootstrap samples reference-level metric differences, not independent recording/day/station clusters"
+    },
+    "leakage_and_dependence": [
+      "The search archive includes recordings used in unlabeled pretraining unless explicitly excluded by a future file/time audit.",
+      "Support/selection-day audio was included in unlabeled pretraining, so this is not wholly unseen-support inference.",
+      "Checkpoint selection uses many labeled target examples; one-shot describes each retrieval episode, not total labeled development use.",
+      "Held-out-day query exclusion is implemented, but an independent corpus-membership/pixel/time duplicate audit is not present here.",
+      "Overlappingwindows, repeatedsupporttrials, one-site/weekdata and repeated model evaluation limit independence."
+    ],
+    "paper_wording": "As a separate domain-adapted experiment, HyperNet-W was pretrained without labels on77000 real acoustic spectrogram windows. Each retrieval episode used one annotated call crop. On246632 DCLDE query windows from dates outside the support/selection day, mean AP over20 support trials was0.3494 versus0.3017 for boxed cross-correlation. These are ranking results; a calibrated low-false-alarm deployment result and cross-ocean species confirmation have not yet been established."
+  },
+  "gravity_spy_rare_archive": {
+    "status": "Existing DINO candidate retrieval complete; no verified discoveries or alarm-rate estimate",
+    "model": "facebook/dinov2-small",
+    "weight_updates": 0,
+    "one_reference_per_target": true,
+    "references": [
+      {
+        "event_id": "cZm6omdJEv",
+        "label": "1400Ripples",
+        "split": "train",
+        "event_time": 1137229623.13867,
+        "ifo": "L1",
+        "array_sha256": "d51e5a3fe652e092d79217820c2dd9e4f161ec4664526329c7bf864c00385e74",
+        "role": "reference"
+      },
+      {
+        "event_id": "3FcGoZua0h",
+        "label": "Chirp",
+        "split": "train",
+        "event_time": 1128670702.98926,
+        "ifo": "L1",
+        "array_sha256": "3dde8cc4f2d2fc22f93bfcd8294de13e64bdfa61d2641830694ab70526de74dc",
+        "role": "reference"
+      },
+      {
+        "event_id": "Or7fVqZMQC",
+        "label": "Helix",
+        "split": "train",
+        "event_time": 1128421749.89453,
+        "ifo": "L1",
+        "array_sha256": "f86611828b0221d3c1a26a03f887254b6a37145c1b94c573282493f4b7659b09",
+        "role": "reference"
+      },
+      {
+        "event_id": "N5b4FRXonv",
+        "label": "Paired_Doves",
+        "split": "train",
+        "event_time": 1129968026.16406,
+        "ifo": "H1",
+        "array_sha256": "69879abc89f94f6749218811dff6f8bb72ec332a051880bfc43a847f206cdb34",
+        "role": "reference"
+      },
+      {
+        "event_id": "AS6UI4PRa7",
+        "label": "Wandering_Line",
+        "split": "train",
+        "event_time": 1134781091.63281,
+        "ifo": "H1",
+        "array_sha256": "bac1aa7eef85f0bd2b68ed26a097b80a89dbff09c3f596b93d55d237c1c11501",
+        "role": "reference"
+      }
+    ],
+    "input_duration_seconds": 0.5,
+    "pool_events": 38471,
+    "unique_scored_images": 33216,
+    "excluded_or_duplicate": 5255,
+    "upstream_pool_selection": "ml_confidence < 0.7 OR (ml_label != r AND P(r) >= 0.3) for r in rare types",
+    "query_ground_truth": "Unknown; upstream machine labels/confidence are not independent verified query labels",
+    "confirmed_discoveries": 0,
+    "false_alarm_rate": "unknown; no verified query labels",
+    "saved_score_audit_passed": true,
+    "paper_wording": "A separate frozen DINOv2-small reference-retrieval scan indexed33216 unique0.5second GravitySpy images from a38471-event candidate pool. Five known rare-class exemplars supplied similarity queries. Candidate rankings were computationally audited, but query labels, false-alarm rates and world novelty were not confirmed.",
+    "limits": [
+      "This was already searched locally; repeating it in cloud is not a new untouched archive.",
+      "The five rare-class references and0.5second rendering differ from the four-target lockedHyperNet pipeline.",
+      "Lowconfidence/upstreamrareprobability selection is not a blind survey of all archival events."
+    ]
+  },
+  "axial_seamount": {
+    "status": "Not ready: no implemented runner, acquired manifest, support references or labeled evaluation found in inspected project artifacts",
+    "needed": [
+      "Traceable source station/channel/date/file roster and licensing/availability",
+      "Verified earthquake and eruption reference events with one-event support boundaries",
+      "Sampling/time-compression/frequency mapping appropriate to each station",
+      "Independent known-event validation and background calibration",
+      "Source/time leakage audit and a measured throughput pilot"
+    ],
+    "paper_wording": "AxialSeamount is a planned evaluation domain; no results or discoveries are currently claimed."
+  },
+  "oddest_sound": {
+    "status": "Undefined and not implemented as a validated experiment",
+    "distinction": "An exemplar asks for more of a known pattern. Oddest-sound novelty ranking has no positive example and is a separate unsupervised task.",
+    "required_definition": "Freeze representation, background distribution, novelty score, nuisance rejection and review budget before viewing ranked candidates"
+  },
+  "paper_required_evidence_before_discovery_claim": [
+    "Frozen single support ID/crop and hash, labels/provenance, exclusion neighborhood, encoder hash and all auxiliary real-data budgets.",
+    "Separate pretraining, development, negative calibration and held-out source/time groups; include all exclusions and duplicate audits.",
+    "Known labeled examples versus matched negatives at a frozen operating point; report recall,TP,FP,FAperhour/window and event-cluster uncertainty.",
+    "Same query/support/calibration across HyperNet,DINO,pixels andcross-correlation; disclose domain-pretrainingdifferences.",
+    "Hash ranked candidate table and source timestamps before inspection; archive coverage denominator and failed downloads retained.",
+    "Human/expert verification and external novelty checks before calling any candidate a scientific discovery."
+  ],
+  "source_hashes": {
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_locked\\manifest.json": "d4baab51a77383630c616b6dff40f3a89b25ef43319a38a1da0d5ab81646aa6c",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_locked\\selected_results.json": "6c2164a6015be0ff2d9bec85f050244dbc8c109cb34df3a0b1949fe531d8d2ef",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_locked\\runtime_audit.json": "0712c4e3135937ce35b64c66bb27d2ce29bc7a3bcf4688889519aa2f4b5bf0ca",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\whale_ssl_v3\\protocol.json": "d2c2dd0427e0a17b4cc8e6973b620f6649f5c1695c44be7d08bbc5d9211bcd15",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\level0_whale_v3_results.json": "8a9750bcb2bbae6e4019544320451f40f10e3a88ac29353420b9f6f6eaea946d",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\sei_oneshot_results.json": "c91e9a3836cfd36a8c4e987c3a5e4d9a3788b912c994bd00c5e6c8be5ca28fb1",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\whale_ssl_v3\\selection_v2.json": "cd9ddfa331f46e6b9325717f2a028086385bcf59b554e803713a64b99906bc2c",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\dino_archive_v01\\protocol.json": "13a80e85d6435069915f4eb3536bfcf49fb7afd1f3215edecdc73963c3004098",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\dino_archive_v01\\status.json": "a831ad5062dceead09e16eb98becdb1903f824d4685deded528aa0a3975f048c",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\dino_archive_v01\\audit.json": "2ed3fde3829be4809a27370859fe2f863744670b79efeff01fccb5dbc5080747",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\dclde2013\\labels\\NEFSC_SBNMS_200903_NOPP6_CH10_allbaleen_detection_log_updated-2025-07-02.csv": "77867a159b4715bc22f2654853be5b7778fba8ffc874434613374b8255cdeedf",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\dclde2013\\labels\\NEFSC_SBNMS_200903_NOPP6_CH10-revised.json": "15f2359beed86d2f322ba7676c9c82398c98c2892803843c97554787ba51ea82",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\dclde2013\\index.csv": "ba514d5b330d97973e39ae8626e990ab00976f7bf8155d7eb63aa297817d6ac8",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\selection_ids.npy": "869c516c32d8a5408bf65ae7efa1f1d360fa436a6db106edc6afe28a39b4681b",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\examples\\narw.npz": "fe5b0f90d4cc47be58dc21a55d0d255e7360e5f1dcd46d0bb967fcc6c1270194",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\examples\\sei.npz": "e3a4474bb5d28e8ac57f19649b1a30ecebef1c90e58688a8184196fa13a5f308",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\examples\\bloop.npz": "f65a92420e8d18b4557681b406172e8c4f665d85ce0b652ee8e67753c405505b",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\code\\make_examples.py": "a7e866bf670d7409423c213c32452322594ee0289abee1606838abcc52c0eec2",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\code\\oneshot.py": "b5eb5659f9abcaddbf37ad25d876fff1d38f2bba29494d95522d3ebfaf86dbbb",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\code\\eval_level0.py": "586e647d85520bda974981c56145528336d2965808dfce768d6f02ac8e81d840",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\code\\select_v2.py": "5d2ed678cc1cab0bb7f18f154fcb35cc3b41bea9a17e012ccb851a1d828d034b",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\code\\build_corpus.py": "66e89184001aa2dca57dd4c053b9da0149e8d62ee066b7db051da2065000380d",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\code\\build_dclde.py": "b8969df41abdb182218d63463bf2504b429b15a37f24e0a6fd2cc37ac3dfc89e",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\code\\sei_oneshot.py": "d3e409a843fcf694f5953ee61dad058c2fc29a0823e960e5750f8cb87783a9bc",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\code\\scan_oneshot.py": "1e9bcda2bcaccfec12e6082837714fa3b00e6f948459dde7f2a50545715e8cbd",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\code\\spectro.py": "31d7d1c36a9c65bcdbcccb98b2bc013b5e33ffd613332ff0a281b87ee646b9bd",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\code\\labels.py": "2a31a63d05d46934343a6c7642a8e95dd65e5c8af1cb294376a6235327111aaf",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\corpus_build.log": "3c4cf1861a3e51eac57d02140ccd6c327bc450fb6298cc385cfc065fadf6976c",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\whale_ssl_v3\\train.py": "11ebb88b7ff52b2ef9307e1c8c7b0be057a737e606aa7ffc9318102f92e67745",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\whale_ssl_v3\\model.py": "0f246610cdf2f713cbcf12bff704c3db17cfac4b51000ba519363f9026b3befd",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\whale_ssl_v3\\selected.pt": "1923efa8b01b682c9fa512a6c4c7960093c96482b50b10bde7f99c3085a6c4a2",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\whale\\bloop\\source_page.html": "fbc0b90e3fa2a4b652156ebcc810b50de1149fc10ce6f9e6ef5c7c9a0a4fc1e8",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\dino_archive_v01\\scan.py": "d807dd68d05c6d0a61509aaef96043eeb737a7f6e9fcb01337a5724bfcd62d7d",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\cloud_plan_20261105\\audit_oneshot_evidence.py": "3ac9d1cccad416e49f0f7d50523e6c1d741061d683f8eea6efcedef02ef7ccf0"
+  }
+}

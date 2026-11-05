@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "model": "oncenet",
+      "feature_max_absolute_errors": {
+        "d05": 0.0,
+        "d1": 0.0,
+        "d2": 0.0,
+        "d4": 0.0
+      },
+      "feature_tolerance": 2e-05,
+      "checks": {
+        "Low_Frequency_Burst": {
+          "max_score_error": 0.0,
+          "primary_decision_changes": 0
+        },
+        "Low_Frequency_Lines": {
+          "max_score_error": 0.0,
+          "primary_decision_changes": 0
+        },
+        "Scattered_Light": {
+          "max_score_error": 0.0,
+          "primary_decision_changes": 0
+        },
+        "Blip": {
+          "max_score_error": 0.0,
+          "primary_decision_changes": 0
+        }
+      },
+      "events": 12,
+      "passed": true
+    },
+    {
+      "model": "random",
+      "feature_max_absolute_errors": {
+        "d05": 5.858391523361206e-05,
+        "d1": 6.0267746448516846e-05,
+        "d2": 5.34839928150177e-05,
+        "d4": 4.577171057462692e-05
+      },
+      "feature_tolerance": 0.02,
+      "checks": {
+        "Low_Frequency_Burst": {
+          "max_score_error": 0.07887723736894259,
+          "primary_decision_changes": 0
+        },
+        "Low_Frequency_Lines": {
+          "max_score_error": 0.33609084036936565,
+          "primary_decision_changes": 0
+        },
+        "Scattered_Light": {
+          "max_score_error": 0.10483593828666926,
+          "primary_decision_changes": 0
+        },
+        "Blip": {
+          "max_score_error": 0.062097048558754864,
+          "primary_decision_changes": 0
+        }
+      },
+      "events": 12,
+      "passed": true
+    },
+    {
+      "model": "dino",
+      "feature_max_absolute_errors": {
+        "d05": 0.0006328581366688013,
+        "d1": 0.0001932494342327118,
+        "d2": 0.00022396445274353027,
+        "d4": 0.00024518370628356934
+      },
+      "feature_tolerance": 0.02,
+      "checks": {
+        "Low_Frequency_Burst": {
+          "max_score_error": 0.025643336311894416,
+          "primary_decision_changes": 0
+        },
+        "Low_Frequency_Lines": {
+          "max_score_error": 0.004252797242159101,
+          "primary_decision_changes": 0
+        },
+        "Scattered_Light": {
+          "max_score_error": 0.013988614683423606,
+          "primary_decision_changes": 0
+        },
+        "Blip": {
+          "max_score_error": 0.00694112822111137,
+          "primary_decision_changes": 0
+        }
+      },
+      "events": 12,
+      "passed": true
+    }
+  ],
+  "used_event_ids": [
+    "mlhqkn4vIx",
+    "389prCCSiW",
+    "qYy1dBJ4Xj",
+    "StrfvDQThx",
+    "O6svOnsFq3",
+    "m0Uvlpj7ij",
+    "5uhozg1AUR",
+    "3XMLnRFr4O",
+    "632xGf8n9x",
+    "Vengh4mj2t",
+    "dac0D6ni5R",
+    "yxumvoPABn"
+  ],
+  "reserved_inference": false
+}

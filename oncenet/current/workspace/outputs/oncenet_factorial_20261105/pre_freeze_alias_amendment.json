@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-11-05T22:28:57.142993+00:00",
+  "reason": "Recognize legacy native-file raw_sha256 as sha256 for exact duplicate exclusion before acquisition.",
+  "protocol_exists": false,
+  "only_code_change": "raw_sha256 alias collection; no crop alias assumptions",
+  "old_code_sha256": "15dda025b1d803d9ecbb750ab19abbfedb2d68b1866cc5d89346961895d67dd1",
+  "new_code_sha256": "245ecb38ad8f2de1e170cf82d601d315b6a0ca9e49fa0e52a46a05a74d8c124a",
+  "old_plan_sha256": "0d1803b188fc1cf5255af1935351218e77a06b6e012d633b52c27e9cf704c8cd",
+  "new_plan_sha256": "898723a9109468a832613c15065b3e810deaedb5e9ae8e8358dcf6d611c9a7fb",
+  "intent_sha256": "d59938b30bf3a836649319f07919cbbe6e18e6af5ca618820db89cb8c0b8269a",
+  "labels_sha256": "1a968612f04a35bc3ebd646f7c651232457b940f59bb1a63b693af2ad0a17be8",
+  "selection_changed": false,
+  "new_images_opened": false,
+  "new_images_downloaded": false
+}

@@ -1,0 +1,183 @@
+{
+  "version": "OnceNet_reserved_195_confirmation_v1",
+  "frozen_utc": "2026-11-05T19:34:50.710510+00:00",
+  "code_sha256": "f64601530a2c402035a1a782f34e4dc234d46abae7681e80355bba2354a7d5ad",
+  "source_hashes": {
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_confirmation_20261105\\run_confirmation.py": "f64601530a2c402035a1a782f34e4dc234d46abae7681e80355bba2354a7d5ad",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\reserve_metadata_audit.json": "4a6a6e8e32f46d31adabee4fdea0eafa096113aa0f160ae4ab5e8ab7fc48e256",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_confirmation_20261105\\intent_unlabelled.json": "0b8bb91fc9616dc33315e34f5a4080fc0777eb0e157079fa0cff6c293475de6f",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\data\\records.json": "d7ec862ccd35be98041320caca00a6930d5a4efcb2201a5ea102b1a8b5ae6400",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\evaluation\\registry.json": "b42b3b758ed4975e8799f9cd5b92d809bb4e8f7b81720b109ad4d7eb61269458",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\evaluation\\results.json": "d51c53883eb9a3d5a86990fe698fc41ae81662b5276f0c71b745ec3badb4b1a6",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\evaluation\\audit.json": "385923f0651207ce65896bec60dc1c20932f02bbb001638ce9ecf951ac68fc59",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\evaluation\\fits.json": "be88cffc84c42450d1717647988714ea5a49175a67bf44a5efe76031767f40c5",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v47\\splits.json": "8e759ab659d4ed114b0f9ae03aa3c5569d24459ee31d18280d8628ec8e6161d2",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v47\\evaluation\\audit.json": "ba363747cf1ad9f5f48ec530aede6ecb59255bef238c22de1dd76cec4452c130",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_locked\\manifest.json": "d4baab51a77383630c616b6dff40f3a89b25ef43319a38a1da0d5ab81646aa6c",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v16\\data\\gravity_fresh_v16\\official_metadata\\H1_O1.csv": "3072bb98217855c686fbab23fd89a8d6421d5ab80a862593ba37749f60cb5060",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v16\\data\\gravity_fresh_v16\\official_metadata\\L1_O1.csv": "5dc27a70c0b01c83e9c502e134acefeb7da06d8ba225d66a8046809f66b13535",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\cloud_plan_20261105\\gs_fp32\\encoder.pt": "47f034f0d725cb4ee8c01b0706ecbddf751905f219ba1a9c1ab5109128d9bef1",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\cloud_plan_20261105\\gs_fp32\\model.py": "aeb422e56e1a3f558f6e6e351a6a95bae03a912195924f5d6a34c4568b183d94",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\cloud_plan_20261105\\gs_fp32\\preprocess.py": "0bec7aa1d77a3ff8a2e67b6181acfd551323fb6fb2028784a06eb6d9e21382df",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\cloud_plan_20261105\\gs_fp32\\matcher.npz": "108df03ee563c7b98c49f661edeed24a9f36aab8079ea4f254694c51d01ea384",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\cloud_plan_20261105\\gs_fp32\\calibration.npz": "8540042a9f6266f0384a2f33f8746f7da2231d2845af35518317e1bfd933d4ab",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\cloud_plan_20261105\\gs_fp32\\migration_manifest.json": "5719b840f5b909dd99bfc1a46499af047a2e19a4ad96f8ed2be7c3a9ce94c0d2",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\cloud_plan_20261105\\gs_fp32\\development_audit.json": "1b8ba446b499aa92151144321834e0a7e95e46c03903405f800c7e624c7614da",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\cloud_plan_20261105\\gs_fp32\\scores_decisions.npz": "0428769b21b5f46620931be2a91780e8a250e80f063720cfa381bccc77f10337",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\cloud_plan_20261105\\gs_fp32\\kaggle_pilot\\events.json": "9bc85de19a6043022903f857357e9650697192caa06b13a90369943a3d1a072c",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\seed_45029\\random.pt": "e473372c62e01c41863d7321408e919e5e6958cef4645f7c4285cc0fa494aa19",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\evaluation\\s45029_random_states.npz": "a01a3ec4c586e40b483d00f778614f8f6b93826f1e486c6897d0b2b512f878a6",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\evaluation\\s45029_random_scores.npz": "efc833ad6182efd1d98bdcca9f62d8576deb2c9454fcd3e6a8d19570270f5e58",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v43\\model_weights\\small\\config.json": "1809f83e3bdb1609a501a610ad4a742f4fd8ae44d72ca4aa0df52d1f2ac8628d",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v43\\model_weights\\small\\model.safetensors": "ae1e99fcefd534ed978cdeb8326f08030c96e28b7a81ffcbc98a857c84d14be1",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v43\\model_weights\\small\\preprocessor_config.json": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v43\\model_weights\\small\\README.md": "4c20dca454a8e5c670e8de5c7e6040f512aeca5438516f7623eedc4e3b00599c",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v47\\evaluation\\dino_small\\states.npz": "d31e728bf7e3fa9378091658dd673583e1bbdb661d0848ac2713e8f6e0392c2f",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v47\\evaluation\\dino_small\\normalization.json": "93a506883858484c8ff638eea09426daaaa7ebf7b0a6cde880ef7fbc7f02739a",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v47\\evaluation\\dino_small\\fused.npz": "af15d38696113f15671023c1f29dabf72684a3e4d865f7b94c5c14f9d9599a80",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\data\\full_d05.npy": "d5f9ff0753ec78fa18b25e20ea642ec25d5f616345505bd28b40e04941f4ea8e",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\data\\low_d05.npy": "f3fe43f00e28e22f1f52655a85f78da9a9df2591cc4d5308e2b4b172a741d56f",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\data\\full_d1.npy": "7ede8d3c66ba6eb6004f5cbd1aae12f6914f6953f3bbaedc2a34d97139da6474",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\data\\low_d1.npy": "2e5665656bf24b0243d8ca0fa23f34d634c2353fba5a15f6a4f6eaada801e316",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\data\\full_d2.npy": "86675dc3dccefb8372dc28dde30c6c4029a1845a68da895736e8582b7100aa04",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\data\\low_d2.npy": "98cba814b333f083c55422efa66daf3dc2c728a11115791a1aeec2419f924494",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\data\\full_d4.npy": "33be457a82ce67c94eb2d0649917a1ba3c8241f5318de0804a4f5f1a2cd0c5c2",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\data\\low_d4.npy": "d8d7d5a4a66920ff6d13432d950317dca272fd94d6444c2c7ec26040daeebf23",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\cloud_plan_20261105\\gs_fp32\\features\\d05.npy": "0c89eb931b53374ebf609b30b5715105b1864bc74151fce055265b1013cba379",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\cloud_plan_20261105\\gs_fp32\\features\\d1.npy": "1812d8f6637a16b2f3ba5de5e1ce5e121978cf41a962d708a0e74fdb767b7c9a",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\cloud_plan_20261105\\gs_fp32\\features\\d2.npy": "9368a7eb23301effddce33108bb8510dc8e32ea6fbd9121289f282317b306cbc",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\cloud_plan_20261105\\gs_fp32\\features\\d4.npy": "3e4470174b4f9d40359d152058f02de36c432c055bc885c3c2a626de1ba8c5ff",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\evaluation\\features\\s45029_random\\d05.npy": "16e46bf8fad1eff7702452f084433960132c9d57df3c1f78e10e094275fb0991",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\evaluation\\features\\s45029_random\\d1.npy": "c247293dd9daf4c201bcbc3080ab0c4647b1b6be18ca5506c592316f5625a70d",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\evaluation\\features\\s45029_random\\d2.npy": "bab48d14510c8e90542ecde3cb47a76fbd6961b088e8c6d75c85d3c8595f3a21",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\evaluation\\features\\s45029_random\\d4.npy": "fd1fba9568a00e8a97d1012136799cb7c48e567ef6b497ffcf09b0d386b0b223",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\evaluation\\features\\dino_small\\d05.npy": "5bd18987b2fa3817fdc2eb0b69d4a7ed69bc53eb4efac2753791caa0ebe9c56a",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\evaluation\\features\\dino_small\\d1.npy": "3652234129934f6dd0e0b554052b6a17d0328777b3ade1cd6cea256e84b15df2",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\evaluation\\features\\dino_small\\d2.npy": "bb88fb0df7c4e6a9d8ff182e7240ed3a4ef1b2b639c0c0ef49db239003e9255d",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\evaluation\\features\\dino_small\\d4.npy": "9bd11dda136b711bb06dd873c2ba3397acff765ef15d243e5a8a094410b1629c",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_confirmation_20261105\\frozen_thresholds.json": "a6001b738b69841478a3f4445d3077ada6a8125093b12f005ea145a26afb6799",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v38\\fresh_gravity\\records.json": "fb51dd9806e86d194e95fbac59cca986088599fa2b272c3f9ff874cd2adb335f",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v39\\fresh_gravity\\records.json": "6005edf21c6955e327bdf8050f95554e854e2a6d275492fe7bb6e85683bcec65",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v40\\fresh_gravity\\records.json": "30ddeb27a40dd028950ca819c94eb3e2afb0fc61aa13a10b2115cb6ebe802f0d",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v40\\paired_gravity_1s\\records.json": "434127ed7163a37efe61488ebc709c8eb32bed9b54f5dcf8121975a134a2da00",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v40\\paired_gravity_4s\\records.json": "f62c9c54569722a1302bb2f33fcf64edffebe560bd65976f6e7f24894a2afafd",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v41\\data_gravity\\records.json": "bef3984a3072ac7b8e3c27a7d822b9798e968e0a37548b59566ba11838468328",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v42\\fresh_gravity\\records.json": "e7c70b9abf0d88b40cd96f73dc9dbb4c9c429b9a5e179b194bc4e7aa25044789",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v43\\fresh_gravity\\records.json": "7d0d6f9fe9afaee0fe80fa94decc650b265f6ac67ca776ee857b10e09f7fe1b2",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v44\\fresh_gravity\\records.json": "c3ddbdcb22dfd763d70e70249acb52528f895fc9351c65133775897f70555a13"
+  },
+  "candidate_count": 195,
+  "candidate_identity_file": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_confirmation_20261105\\intent_unlabelled.json",
+  "labels_only_for_final_metrics": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\reserve_metadata_audit.json",
+  "prior_metadata_labels_were_already_visible": true,
+  "minimum_existing_used_same_detector_gap_seconds": 8.28125,
+  "models": {
+    "oncenet": {
+      "checkpoint": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\cloud_plan_20261105\\gs_fp32\\encoder.pt",
+      "matcher": "strict FP32 deployed joint4, original CAL",
+      "parameters": 42480
+    },
+    "random": {
+      "checkpoint": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\seed_45029\\random.pt",
+      "matcher": "v46 fixed joint4, original CAL",
+      "parameters": 42480
+    },
+    "dino": {
+      "folder": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v43\\model_weights\\small",
+      "matcher": "v47 late_mean4 standardized per-duration ELDA, original pooled CAL",
+      "parameters": 22056576
+    }
+  },
+  "references": {
+    "Low_Frequency_Burst": "632xGf8n9x",
+    "Low_Frequency_Lines": "Vengh4mj2t",
+    "Scattered_Light": "dac0D6ni5R",
+    "Blip": "yxumvoPABn"
+  },
+  "positive_reference_events_per_target": 1,
+  "no_training": true,
+  "no_refit": true,
+  "borrowed_oncenet_weights": false,
+  "preprocessing": "Exact bound gs_fp32.preprocess: native viridis inversion full+low,128x128; four authentic 0.5/1/2/4-second PNGs per event.",
+  "inference": {
+    "device": "cpu",
+    "dtype": "float32",
+    "threads": 2,
+    "cnn_batch": 32,
+    "dino_batch": 8,
+    "no_amp": true,
+    "no_gpu": true
+  },
+  "eligibility": "All 195 intent IDs retained in accounting. Exclude an event from all methods if any actual duration fails three bounded download attempts, PNG800x600 integrity or independent legend check; any exact native or native full-plot pixel collision with historical consumed events, or another reserve event (keep first frozen-order event). No replacements or exclusions by label, heatmap appearance, score, confidence, detector or morphology. Constant derived low views are not whole-event collisions.",
+  "source_pixel_history_files": [
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v38\\fresh_gravity\\records.json",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v39\\fresh_gravity\\records.json",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v40\\fresh_gravity\\records.json",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v40\\paired_gravity_1s\\records.json",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v40\\paired_gravity_4s\\records.json",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v41\\data_gravity\\records.json",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v42\\fresh_gravity\\records.json",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v43\\fresh_gravity\\records.json",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v44\\fresh_gravity\\records.json"
+  ],
+  "download": {
+    "workers": 8,
+    "attempts": 3,
+    "timeout_seconds": [
+      10,
+      40
+    ],
+    "max_bytes": 10000000
+  },
+  "primary": {
+    "alpha": 0.001,
+    "metrics": [
+      "macro_balanced_accuracy",
+      "macro_mcc",
+      "macro_recall",
+      "macro_fa_per10000",
+      "per_target_TP_FP_TN_FN",
+      "union_false_alarms_non_target"
+    ]
+  },
+  "secondary": {
+    "alpha": 0.01,
+    "note": "Newly predeclared analysis of the same frozen scores/CAL; original release advertised .001/.0005. No calibration or threshold fitting change."
+  },
+  "decision": "Conservative finite-sample rank: score strictly greater than sortedCAL[-floor((N+1)*alpha)]; ties do not alarm.",
+  "ranking": [
+    "AUROC",
+    "standardized partial AUROC at max_fpr .001 and .01",
+    "descriptive maximum empirical recall with achieved FPR<=.001 and .01; no exported test-selected thresholds"
+  ],
+  "intervals": {
+    "bootstrap_seed": 51105,
+    "draws": 2000,
+    "unit": "detector x floor(GPS_seconds/3600) cluster, sampled with replacement",
+    "paired": true,
+    "comparisons": [
+      "oncenet_minus_random",
+      "oncenet_minus_dino"
+    ],
+    "metrics": [
+      "balanced_accuracy",
+      "mcc",
+      "recall",
+      "fa_per10000",
+      "pauc_std_001",
+      "pauc_std_01"
+    ],
+    "undefined_draws": "Skip and report if any target lacks positives or negatives; do not replace draws",
+    "confidence": 0.95
+  },
+  "score_commitment": "Write and SHA256 all three model scores before opening labels for test metrics. All fixed models reported; no winner selection.",
+  "runtime_parity": "Before reserve scoring, compare each CPU encoder on the same 12 already-used portability fixture events against historical feature arrays; record full numerical errors and alarm changes. Require zero primary alarm flips for each model. Halt on nonfinite/wrong shape, OnceNet descriptor max absolute drift>0.00002 or comparator drift>0.02. Any failure requires reported numerical diagnosis; no silent runtime migration. This consumed-data numerical check cannot establish universal feature equality. Thresholds are saved and hash-bound before reserve image access.",
+  "limitations": [
+    "Prospective image/model outcome evaluation, not label-blind metadata sampling; known reserve class counts informed its original selection.",
+    "Only195 planned events, only12Blip/13ScatteredLight; insufficient negatives to certify10false alarms/10000.",
+    "Detector and time dependence, incomplete cases and consensus-label errors remain.",
+    "Pixel separation checks cover available historical native/crop hashes, not unavailable source pixels or all possible perceptual duplicates.",
+    "One positive event plus existing labeled negative FIT/CAL and repeated earlier DEV selection.",
+    "No claims of new discoveries or universal superiority."
+  ]
+}

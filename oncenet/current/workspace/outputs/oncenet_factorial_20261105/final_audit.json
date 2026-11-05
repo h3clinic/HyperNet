@@ -1,0 +1,123 @@
+{
+  "passed": true,
+  "completed_utc": "2026-11-05T22:55:36.697039+00:00",
+  "protocol_sha256": "52acaeca63bf959e340fecaac65dd796a6de5920409a1c217172e160cff33380",
+  "results_sha256": "282f277a0c0eac12f2945b4979b2aa859d90ed3a78e754ff0495726c1ba8f84d",
+  "score_commitment_sha256": "89d7ac84b4f9975ce490a00a7c55f19a9e0177e9c14b59c2a917a1d15c8975f0",
+  "scope": "Independent completed-artifact provenance/hash/cohort/source-pixel audit. No model inference, new scoring, training, threshold fitting or bootstrap rerun.",
+  "source_hashes": {
+    "run_experiment.py": "8f49f037539a602eb9533e7dc7737b623920df1da47e7d86b1a03303a191ed70",
+    "factorial_core.py": "557c83f11653181e0c6d4342a73657616452d85bbbdb6fcc396cd2229809e194",
+    "factorial_metrics.py": "f3e5ce56e0b7c38473084c7480f97e74e892ee18fe3fd42b7020f04f7d816276",
+    "prepare_data.py": "245ecb38ad8f2de1e170cf82d601d315b6a0ca9e49fa0e52a46a05a74d8c124a",
+    "data_plan.json": "898723a9109468a832613c15065b3e810deaedb5e9ae8e8358dcf6d611c9a7fb",
+    "model_registry.json": "c0601e659914bc717dade81a8c144d525e4acfd3bf089357e6794ccdfd4f0c45",
+    "reference_plan.json": "25e5ff19cd1aca834b024cc861c7b40e1e1be5d49b70a2f7056904fce3b41cb5",
+    "implementation_checks.json": "a0d0bfccf9a8514b93a5b3123a9b71e9bb9f4d42bfc56540acdbda895570ae28",
+    "independent_runner_review.json": "bb4d231cf3aca3ba6aa6c128124f5f2090c041b0d9c2e40b4d8106d02856a5c9",
+    "independent_data_review.json": "101eeef7f5fac3ea9338553c643a0d8ea3df9ec75793082199fb28c393f14c5a",
+    "independent_preflight.json": "34cf37ebf9bf47f5ff8f28a493f7571846138fc4d3079bef09f3efac0b5ff6bf",
+    "fit_commitment.json": "b784f4699e432d3dce3ddc375a34cece6e7cfe09fe12f849a46519c0d58134aa",
+    "acquisition.json": "5ba0543d2dc63f4786abdb41bd29f4caa7b2c3c8495cfa642030eaa87d5d3119",
+    "score_commitment.json": "89d7ac84b4f9975ce490a00a7c55f19a9e0177e9c14b59c2a917a1d15c8975f0",
+    "scores.npy": "53ed5e7de8e614b7658e2658886ff34c23864cf7bbcb17a86079df6c761d364f",
+    "thresholds.npy": "b550923ad7342e7a7a21d96011b84da66e15af97a1b7532e4393a89dde522e98",
+    "records_unlabelled.json": "7b19bbcf75e3d9c53b21ed22e0dd490a557e394ecadfd9715f9cda64c2ef8a5f",
+    "source_bindings.json": "954e765ff485b762a0c2b7a6a9e723098ec845e8a1324985ca7fd92f80488e0f",
+    "labels.json": "1a968612f04a35bc3ebd646f7c651232457b940f59bb1a63b693af2ad0a17be8",
+    "results.json": "282f277a0c0eac12f2945b4979b2aa859d90ed3a78e754ff0495726c1ba8f84d",
+    "recovery.json": "2b07103174c177cd2d06e474f64b8c3e1a7e6fdf4a5819d081330a0eaaa8799c",
+    "calibration_file_lock_failure_20261105.json": "6033b23fc3cd54594500e55e5ba8b38be94fa7fff33ae4ca9fb320a0cf458176",
+    "independent_result_audit.json": "e9c1dad4fad9a761e20599a542aca2e5c2b249ffad2d57d401f5b3058b499334",
+    "detector_descriptive.json": "6b25cbb85d75ca445ea04611cd03bb4d4765ad58e0ced6c2897166b82752bca8"
+  },
+  "timeline_utc": {
+    "protocol": "2026-11-05T22:31:46.196593+00:00",
+    "preflight": "2026-11-05T22:32:48.235370+00:00",
+    "fit_progress_file_failure": "2026-11-05T22:35:12.982401+00:00",
+    "fit_commitment": "2026-11-05T22:40:14.953633+00:00",
+    "recovery_record": "2026-11-05T22:40:35.372291+00:00",
+    "acquisition": "2026-11-05T22:48:57.671415+00:00",
+    "all_condition_score_commitment": "2026-11-05T22:50:50.864831+00:00",
+    "results": "2026-11-05T22:51:57.804370+00:00",
+    "independent_metrics_audit": "2026-11-05T22:52:19.009915+00:00"
+  },
+  "first_native_file_mtime_utc": "2026-11-05T22:40:41.645206+00:00",
+  "checks": {
+    "all_37_protocol_bindings_match": true,
+    "all_8291_metadata_source_bindings_match": true,
+    "all_fit_and_acquisition_and_score_files_match": true,
+    "all_six_frozen_checkpoint_hashes_match": true,
+    "all_9600_native_file_hashes_match": true,
+    "all_9600_renderer_quality_records_pass": true,
+    "reconstructed_historical_native_crop_collision_audit_pass": true,
+    "all_2400_intent_ids_retained_in_same_order": true,
+    "all_2400_detector_hours_distinct": true,
+    "references_excluded_from_union_of_FIT_CAL": true,
+    "all240_calibration_records_complete": true,
+    "all12_memory_feature_bindings_have_matching_model_protocol_order": true,
+    "all_model_scores_committed_before_label_metrics": true,
+    "no_frozen_scientific_code_change_during_recovery": true
+  },
+  "cohort": {
+    "unique_events": 2400,
+    "source_views": 9600,
+    "excluded": 0,
+    "target_counts": {
+      "Low_Frequency_Burst": 100,
+      "Low_Frequency_Lines": 100,
+      "Scattered_Light": 100,
+      "Blip": 100
+    },
+    "outside_target_events": 2000,
+    "detector_hours": 2400,
+    "score_shape": [
+      2,
+      2,
+      3,
+      5,
+      4,
+      2400
+    ],
+    "seed_count": 3,
+    "reference_episodes": 5
+  },
+  "recorded_historical_hash_counts": {
+    "sha256": 94805,
+    "pixel_sha256": 52146,
+    "crop_pixel_sha256": 33780
+  },
+  "recovery": {
+    "documented": true,
+    "failure": "Windows PermissionError during atomic live status replacement in historical feature extraction",
+    "action": "Restarted unchanged frozen fit after removing ordinary readers of live progress files. No monkeypatch or protocol modification.",
+    "occurred_before_acquisition_and_fresh_scoring": true,
+    "all_previous_feature_fingerprints_matched": true
+  },
+  "independent_metrics": {
+    "audit_sha256": "e9c1dad4fad9a761e20599a542aca2e5c2b249ffad2d57d401f5b3058b499334",
+    "passed": true,
+    "checks": {
+      "protocol_and_score_commitment_hashes": true,
+      "frozen_threshold_hash": true,
+      "helper_hash_bound_in_preflight": true,
+      "chronology": true,
+      "labels_joined_by_unique_event_id": true,
+      "sklearn_ranking_metrics": 720,
+      "sklearn_fixed_confusion_checks": 480,
+      "maximum_ranking_metric_absolute_error": 2.220446049250313e-16,
+      "macro_primary_cell_and_contrast_estimates": true
+    },
+    "bootstrap_rerun": false
+  },
+  "limitations": [
+    "Metadata and labels informed cohort sampling; volunteer consensus is not expert adjudication.",
+    "Exact pixel history is incomplete; the reconstructed hash checks do not prove absence of all perceptual duplicates.",
+    "Low-FPR tails have only about2300 negatives per target; no deployment false-alarm guarantee.",
+    "Intervals condition on fixed seeds/references/FIT/CAL and may not capture residual cross-hour dependence.",
+    "Positive factorial averages must not be interpreted as improvement for every class, reference or matcher.",
+    "No independent bootstrap repetition; frozen interval code reviewed and point metrics independently checked.",
+    "Memory feature fingerprints are verified as stored provenance; neural features were not recomputed during this audit.",
+    "This does not establish universal superiority, new scientific discoveries or competition outcomes."
+  ]
+}

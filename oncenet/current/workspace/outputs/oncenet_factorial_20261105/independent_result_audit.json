@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "completed_utc": "2026-11-05T22:52:19.009915+00:00",
+  "source_hashes": {
+    "protocol.json": "52acaeca63bf959e340fecaac65dd796a6de5920409a1c217172e160cff33380",
+    "independent_preflight.json": "34cf37ebf9bf47f5ff8f28a493f7571846138fc4d3079bef09f3efac0b5ff6bf",
+    "results.json": "282f277a0c0eac12f2945b4979b2aa859d90ed3a78e754ff0495726c1ba8f84d",
+    "score_commitment.json": "89d7ac84b4f9975ce490a00a7c55f19a9e0177e9c14b59c2a917a1d15c8975f0",
+    "fit_commitment.json": "b784f4699e432d3dce3ddc375a34cece6e7cfe09fe12f849a46519c0d58134aa",
+    "scores.npy": "53ed5e7de8e614b7658e2658886ff34c23864cf7bbcb17a86079df6c761d364f",
+    "thresholds.npy": "b550923ad7342e7a7a21d96011b84da66e15af97a1b7532e4393a89dde522e98",
+    "records_unlabelled.json": "7b19bbcf75e3d9c53b21ed22e0dd490a557e394ecadfd9715f9cda64c2ef8a5f",
+    "labels.json": "1a968612f04a35bc3ebd646f7c651232457b940f59bb1a63b693af2ad0a17be8",
+    "factorial_metrics.py": "f3e5ce56e0b7c38473084c7480f97e74e892ee18fe3fd42b7020f04f7d816276",
+    "detector_summary.py": "738557ff7c6d742673cbdf0a3643de6da981537a6486836145170d7b09951db3",
+    "independent_result_audit.py": "c55b075bd7440e8a3343348711b2928fc1d5d7d6f2241d3960ece405957a4f11"
+  },
+  "detector_descriptive_sha256": "6b25cbb85d75ca445ea04611cd03bb4d4765ad58e0ced6c2897166b82752bca8",
+  "gate": "Completed results checked before any query-score access",
+  "new_inference": false,
+  "new_training": false,
+  "bootstrap_rerun": false,
+  "threshold_changes": false,
+  "sample_selection": false,
+  "checks": {
+    "protocol_and_score_commitment_hashes": true,
+    "frozen_threshold_hash": true,
+    "helper_hash_bound_in_preflight": true,
+    "chronology": true,
+    "labels_joined_by_unique_event_id": true,
+    "sklearn_ranking_metrics": 720,
+    "sklearn_fixed_confusion_checks": 480,
+    "maximum_ranking_metric_absolute_error": 2.220446049250313e-16,
+    "macro_primary_cell_and_contrast_estimates": true
+  },
+  "cells": [
+    {
+      "training": "random",
+      "matcher": "cosine",
+      "sklearn_macro_pauc_std_001": 0.5792497698124425
+    },
+    {
+      "training": "random",
+      "matcher": "negative_aware",
+      "sklearn_macro_pauc_std_001": 0.6365030341257586
+    },
+    {
+      "training": "trained",
+      "matcher": "cosine",
+      "sklearn_macro_pauc_std_001": 0.6232210308052577
+    },
+    {
+      "training": "trained",
+      "matcher": "negative_aware",
+      "sklearn_macro_pauc_std_001": 0.6650499162624791
+    }
+  ],
+  "primary_point_estimates": {
+    "training_main": 0.036259071564767875,
+    "matcher_main": 0.049541074885268765
+  },
+  "limitations": [
+    "No independent bootstrap rerun; uncertainty is from the frozen original analysis.",
+    "Detector-stratified comparisons are descriptive and use unchanged calibration thresholds."
+  ]
+}

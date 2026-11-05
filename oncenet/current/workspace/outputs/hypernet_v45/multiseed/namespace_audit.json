@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "protocol_sha256": "550103b3d64411be6ba7d8c70bc14337c5456e3f93812ae09f3e3222f986df0a",
+  "audit_code_sha256": "5371b579fcd93d04df46608606ef8b4843154e116531980e1482ed3dfec70d79",
+  "components": [
+    "graph",
+    "reference_pose",
+    "query_pose",
+    "reference_appearance",
+    "query_appearance",
+    "repetition",
+    "connectivity",
+    "curvature",
+    "orientation",
+    "v45_local_foreground_points"
+  ],
+  "groups": {
+    "train_45011": {
+      "split": "train",
+      "identities": 3200,
+      "minimum_identity": 4500000,
+      "maximum_identity": 4503199,
+      "order_sha256": "011e6765dae77b7f6c9b7c5dcd384e87a98425982de05ec201403b9fef3778ec",
+      "component_seeds": 32000,
+      "component_seeds_sha256": "112c07ba9d3403ef25035b97c94c26d47d2d16aa4e2ea8894c29410aac256f68"
+    },
+    "train_45029": {
+      "split": "train",
+      "identities": 3200,
+      "minimum_identity": 4510000,
+      "maximum_identity": 4513199,
+      "order_sha256": "8ad8526265f24c12488f0e960422213d2ee57b117813d65e3acf3ffe5c147e2d",
+      "component_seeds": 32000,
+      "component_seeds_sha256": "181be06d9f80598c02734283e9c923df2bb6d290adebd4d80be3395c6551b214"
+    },
+    "train_45047": {
+      "split": "train",
+      "identities": 3200,
+      "minimum_identity": 4520000,
+      "maximum_identity": 4523199,
+      "order_sha256": "21a6592aa0c6b6a8314e69428ad7513c1c227a3d3bb8e826b9cf182c3e99aae2",
+      "component_seeds": 32000,
+      "component_seeds_sha256": "b232c6d76ec9e32bb18fc925cabc2fb6d701f5bb9772ac6cd0345ecd7e687894"
+    },
+    "synthetic_test": {
+      "split": "test",
+      "identities": 256,
+      "minimum_identity": 4590000,
+      "maximum_identity": 4590255,
+      "order_sha256": "0c63764fa4db882c75c9cb30a7480a80474d0c86901454a38c1027a0dc6b3d92",
+      "component_seeds": 2560,
+      "component_seeds_sha256": "3f1dbf0fa2f96b3bb9b12321c457ac3f588ecdab2c8d13e5b4e410d1cff0ade1"
+    }
+  },
+  "pairwise": [
+    {
+      "left": "train_45011",
+      "right": "train_45029",
+      "identity_overlap": 0,
+      "component_seed_overlap": 0
+    },
+    {
+      "left": "train_45011",
+      "right": "train_45047",
+      "identity_overlap": 0,
+      "component_seed_overlap": 0
+    },
+    {
+      "left": "train_45011",
+      "right": "synthetic_test",
+      "identity_overlap": 0,
+      "component_seed_overlap": 0
+    },
+    {
+      "left": "train_45029",
+      "right": "train_45047",
+      "identity_overlap": 0,
+      "component_seed_overlap": 0
+    },
+    {
+      "left": "train_45029",
+      "right": "synthetic_test",
+      "identity_overlap": 0,
+      "component_seed_overlap": 0
+    },
+    {
+      "left": "train_45047",
+      "right": "synthetic_test",
+      "identity_overlap": 0,
+      "component_seed_overlap": 0
+    }
+  ],
+  "global_unique_component_seeds": 98560,
+  "test_images_rendered": 0,
+  "test_models_executed": 0,
+  "natural_images_read": 0,
+  "limitation": "Distinct deterministic latent seeds prevent exact seed reuse. Training and test share the graph grammar, renderer and edit types; this does not establish semantic family separation."
+}

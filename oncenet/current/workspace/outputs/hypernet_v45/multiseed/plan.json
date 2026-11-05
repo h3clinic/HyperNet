@@ -1,0 +1,102 @@
+{
+  "experiment": "v45 bounded paired from-scratch seed pilot",
+  "seeds": [
+    45011,
+    45029,
+    45047
+  ],
+  "steps_per_arm": 800,
+  "batch": 4,
+  "arms": [
+    "random",
+    "baseline",
+    "improved"
+  ],
+  "trained_arms": [
+    "baseline",
+    "improved"
+  ],
+  "parameters": 42480,
+  "trainable_parameters": 42480,
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "gradient_clip": 1.0,
+    "schedule": null
+  },
+  "borrowed_weights": false,
+  "warm_start": false,
+  "teacher": false,
+  "real_encoder_training_images": 0,
+  "initialization": "Three independent PyTorch random seeds. Within each seed, both trained arms start with exactly its frozen random state. This does not replicate the historical v33/v37 pretraining budget.",
+  "paired_data": "Identical 3200 identities/order/images for both arms within each seed; distinct disjoint identity ranges across seeds; unchanged corrected-v44 image renderer.",
+  "train_identity_ranges": {
+    "45011": [
+      4500000,
+      4503199
+    ],
+    "45029": [
+      4510000,
+      4513199
+    ],
+    "45047": [
+      4520000,
+      4523199
+    ]
+  },
+  "order_sha256": {
+    "45011": "011e6765dae77b7f6c9b7c5dcd384e87a98425982de05ec201403b9fef3778ec",
+    "45029": "8ad8526265f24c12488f0e960422213d2ee57b117813d65e3acf3ffe5c147e2d",
+    "45047": "21a6592aa0c6b6a8314e69428ad7513c1c227a3d3bb8e826b9cf182c3e99aae2"
+  },
+  "baseline_loss": "3*mean(relu(.04+max_four_negative_cosine-positive_cosine)) + .25*mean(1-positive_cosine); normalized dual base descriptor",
+  "improved_addition": "0.5*[mean(1-cosine(aligned foreground vectors)) + 0.1*variance_floor]. Unit-normalized 48D local vectors; variance_floor=mean(relu(.05-sqrt(var+1e-4)))/.05 averaged over both views. 32 points per identity; only full-image reference/positive dense features. No local negatives.",
+  "coefficient_choice": "Fixed engineering constants before training or new accuracy inspection; no coefficient sweep.",
+  "readouts": {
+    "primary": "base",
+    "secondary": "spatial",
+    "base_dual_dimension": 4032,
+    "spatial_dual_dimension": 6080,
+    "selection": false
+  },
+  "synthetic": {
+    "identities": 256,
+    "offset": 4590000,
+    "split": "test",
+    "shared_all_nine_checkpoints": true,
+    "edits": [
+      "repetition",
+      "connectivity",
+      "curvature",
+      "orientation"
+    ],
+    "evaluate_once_after_all_training": true,
+    "select_checkpoints": false
+  },
+  "real_evaluation": "Existing USED development records only, one fixed positive reference/class, separate negative FIT/CAL. No new real holdout; retrospective development, not external confirmation.",
+  "diagnosis": [
+    "Global pooled graph-identity ranking can meet synthetic invariances without stable local correspondences.",
+    "Earlier local InfoNCE treats other sampled positions as negatives, including potentially equivalent repeated primitives. This is a code-level conflict hypothesis, not a demonstrated causal explanation.",
+    "V44 teacher anchoring, partial freezing and own-v37 warm start confound whether its objective transfers from independent random initialization. This pilot removes them identically in both arms.",
+    "V44 development evidence and previously consumed test outcomes are known. Only the new synthetic latent identities are untouched; no claim of fresh real confirmation."
+  ],
+  "sources": [
+    {
+      "title": "VICReg, ICLR 2022",
+      "url": "https://arxiv.org/abs/2105.04906"
+    },
+    {
+      "title": "VICRegL, NeurIPS 2022",
+      "url": "https://arxiv.org/abs/2210.01571"
+    }
+  ],
+  "research_claim": "Noncontrastive local invariance and variance regularization are established ideas. This is an adaptation without covariance penalty/projector, not a reproduction, new theorem, or guarantee of semantic transfer.",
+  "limitations": [
+    "256 test identities share the training grammar/renderer; four edits per identity are dependent.",
+    "Three seeds are a bounded seed check, not a large-run generalization guarantee.",
+    "Image identity is narrower than a real semantic category; preserved count/orientation need not be true category invariances.",
+    "Variance floor is a soft penalty, not a proof against collapse.",
+    "Reference/query raster support accounts for stroke discretization; analytic center geometry correspondence is approximate at raster edges."
+  ]
+}

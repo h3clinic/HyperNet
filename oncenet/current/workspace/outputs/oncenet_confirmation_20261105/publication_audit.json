@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "results_sha256": "3118b91275e9db778e05f900ff55e1a490abaad3c10e3b1ff4010d280d90b821",
+  "csv_rows": 24,
+  "csv_numeric_parity": true,
+  "all_limitations_present": true,
+  "all_3_models_both_alphas_rendered": true,
+  "primary_per_target_rows": 12,
+  "no_new_inference": true,
+  "http_resources_checked": 7,
+  "all_http_status200": true
+}

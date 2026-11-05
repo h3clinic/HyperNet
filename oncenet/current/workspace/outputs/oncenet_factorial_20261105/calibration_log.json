@@ -1,0 +1,2402 @@
+[
+  {
+    "model": "s45011_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 0,
+    "reference_id": "632xGf8n9x",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "d6e77ae6071a4c5a5ce12dd16efacd1847f8907f87ff07f4dbb59252a35c5785"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 0,
+    "reference_id": "632xGf8n9x",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "9276e1f0ca82f9a9104518f9b8cc06816902e1a990d8c25c189d9d573f871567"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 1,
+    "reference_id": "whSWETJlnk",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "288da658ccb02959480ecb1c187901a47329d446a80a8937a10e9f10f16f7f86"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 1,
+    "reference_id": "whSWETJlnk",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "aa424ca6b4874ed5d69497a0e704b1b679663c6ebf983964ece86c96d986fc3d"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 2,
+    "reference_id": "D0zveH7qXJ",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "c77792e682643c1925e3a59421b3ef509cc59f05bff3801b39bc9ef69ca88356"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 2,
+    "reference_id": "D0zveH7qXJ",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "1307eac01db783b9b9f5b3468ad9f0165a71f77ac7381e7c4f3dd80a1d162165"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 3,
+    "reference_id": "cszwIEItx8",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "ccb5eb83b899cf7f2b498e01154cc2dd74b7f986d509ed02ac949d247c00a91d"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 3,
+    "reference_id": "cszwIEItx8",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "afa540405b2bcd79a339979a9b8ba2301dbc27d0173c4fedca74f040043ebd23"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 4,
+    "reference_id": "bhtOPTRKKg",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "e369543c299c52484b93efc7e451ca4eaba6a0b17f9b37a3e3881f72a8773a47"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 4,
+    "reference_id": "bhtOPTRKKg",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "186fcaa4c10f3234c65ef58e12884aad400f51f864a6df21093be11d1b5422fc"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 0,
+    "reference_id": "Vengh4mj2t",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "10bd2934cae7dd856aa1181430ff03ac3e44d8fe25a03a204352932caa6e31a3"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 0,
+    "reference_id": "Vengh4mj2t",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "9a4ba5bd0ea3f7742734701c585a20859a4bf1c2f9cd1336b3f012faed11c347"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 1,
+    "reference_id": "zQmfqzqN7j",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "13fe63f37a42e837cbdfbc9fd5b204895cb868bfb60cce03918d2046f64f4f3a"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 1,
+    "reference_id": "zQmfqzqN7j",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "13747bdec60264f556661a1a5ad4f984b90f9036e626f59d78ee22e2cba22dbd"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 2,
+    "reference_id": "DXSl6w0fzx",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "acaa1297b2f9d7882972417c445ca9590aa44a7cc3a7cb233e626a9e69b42437"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 2,
+    "reference_id": "DXSl6w0fzx",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "c27d7112e0d5a3120ade104e1b4614792a6f5dcd7225db9592b55df050c90ffd"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 3,
+    "reference_id": "EQqxjxhDns",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "d69634ea4b68b51aabbc315b7668882f5bcf118f83b5ecc33276f316fa16978e"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 3,
+    "reference_id": "EQqxjxhDns",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "ba1f250a7bc0908c6e1e53ff8a0b8f3b0b829a24c7b61edc0405436786862150"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 4,
+    "reference_id": "Fenv2uuWYt",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "66cafe0e38b4e84698b4a2c8ae848c21eb50dc8058b030ec499a45699011eca2"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 4,
+    "reference_id": "Fenv2uuWYt",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "7ce953f8819042d692a14e1560ff93ae5dd56a4b29b69c5a951627aacd6902e0"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 0,
+    "reference_id": "dac0D6ni5R",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "f62c1dad2b8e9fe50e15379c53be1c47495fbc9220433267f58271fd7f5b0ea0"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 0,
+    "reference_id": "dac0D6ni5R",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "528f77ec03d9ef4faa8fa45d1e3f50b4acbb2fa49dcda82103140bbb15807875"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 1,
+    "reference_id": "uex4Scdrv4",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "623a92a2f1b954e8b02c6a4330c826f63510a26703932c88177338ad831f8fb5"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 1,
+    "reference_id": "uex4Scdrv4",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "1bc71828d9fdf73a1cb95facd9b24b779f4165bdee72e198556028e0a998fc58"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 2,
+    "reference_id": "5o8imiiYKM",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "a7b2547d7bb1cbb7d47f11b21185cb66859344b388db37f8ef3e925105646bf6"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 2,
+    "reference_id": "5o8imiiYKM",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "a41af2763c1ca8a971b9e9a7606606b9af8950cd3903cbabe6d7a78898237d2c"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 3,
+    "reference_id": "1TjEcR0v8b",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "928286a49712772f2e63f892d3026b59a60307949d7ee04d25196e2b72b2ee0a"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 3,
+    "reference_id": "1TjEcR0v8b",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "b6a30b4533d7263a0485107617cadb492a2f5f112bc5839e8f9266419b6c025c"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 4,
+    "reference_id": "rqav7Cv0Gp",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "3dd4f76410eea1b4be67af9b5f2c91e223093f6d69bb784eb0bb654fde0e9e3b"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 4,
+    "reference_id": "rqav7Cv0Gp",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "f7db53e0bfdee98936ff737bfc992503084c2145039e0b6cfa2513e5634ed950"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Blip",
+    "reference_episode": 0,
+    "reference_id": "yxumvoPABn",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "908417d84f0726a713a98dcdb8ac5f5ea95b27230762ef87d51d470d4742bfef"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Blip",
+    "reference_episode": 0,
+    "reference_id": "yxumvoPABn",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "c4de7ce086b691d11f5812eede2274ff2b77fe5e663b834659d7c47c63be81a8"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Blip",
+    "reference_episode": 1,
+    "reference_id": "lvqnk2ojPQ",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "e9da887a1c2d3f17d3c4b5c265f3b51648ba24caac14988d1cfc2435af9eb162"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Blip",
+    "reference_episode": 1,
+    "reference_id": "lvqnk2ojPQ",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "d81b3b2281273ee2eb50d36a9af74350efa111206ce9495e2146f3faff8fd278"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Blip",
+    "reference_episode": 2,
+    "reference_id": "uq8wQZXH0R",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "2b382b5599415ea47e4b5a6e76224c5cb9efd215bcbf4b6caf96d68730b025b5"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Blip",
+    "reference_episode": 2,
+    "reference_id": "uq8wQZXH0R",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "57af6c12f75f84ce98c014d5b72fcf590bb2fc20e6209c9e963cc9a6b7074e0b"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Blip",
+    "reference_episode": 3,
+    "reference_id": "huUM2MMLeO",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "41af9109e9b7a012b12a9443ab00dc00a53122935bc58732fc4f5b187b71448a"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Blip",
+    "reference_episode": 3,
+    "reference_id": "huUM2MMLeO",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "8a88ce9764befaf879a2367db3c11f55ecb64001fbcd994ccf77b1e7410eae7f"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Blip",
+    "reference_episode": 4,
+    "reference_id": "qHkuAjaf5E",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "94a10e3234c151cf2a8b3dc93e4005c3eb66e01787071e9d65d52506ba51ad56"
+  },
+  {
+    "model": "s45011_trained",
+    "target": "Blip",
+    "reference_episode": 4,
+    "reference_id": "qHkuAjaf5E",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "93ed039c2388bf6d84ed90b6c707b704e6ae323350b57d668ffe4c7e39f7af9c"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 0,
+    "reference_id": "632xGf8n9x",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "3784ad40940bb7984d476970e59b5a1ee8c256f2a6e8fbd0eeb6af630e1613c0"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 0,
+    "reference_id": "632xGf8n9x",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "508f6c655de6eb0971712eac385886b9a24d99f7549b135e92a77f43d77145d0"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 1,
+    "reference_id": "whSWETJlnk",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "e0994424ab46f2b8ae177360bf9d98931c91cfbbb4087a0f0f9a7b91a90300c2"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 1,
+    "reference_id": "whSWETJlnk",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "ef580197226a2fac797c6383edcb02bed667383674dfa8284f00cc00df2c5922"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 2,
+    "reference_id": "D0zveH7qXJ",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "503f08f3d92e6f793bc2213b70680553099f51d1905bc99382c390c5fadef6fa"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 2,
+    "reference_id": "D0zveH7qXJ",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "1463a3a1417c0ac4f346e58f48ad23427d43cd34fa2e7f60c3de095e5d971832"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 3,
+    "reference_id": "cszwIEItx8",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "a673b2cf958cf2a13a5fee6e0b26a2497a3126dff1de101e07c00b53b7b3fa3f"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 3,
+    "reference_id": "cszwIEItx8",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "2894a908430c350634fb91eb42c41c73f236d3c406159b8185181d2dcf15c10f"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 4,
+    "reference_id": "bhtOPTRKKg",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "5d09b7ec54c0f3e66c4c014762f0b588ff4e452b85a1039a0914b8b070a80e0d"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 4,
+    "reference_id": "bhtOPTRKKg",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "4b5fda7142300edbf88a3ec3778cb56262926f1e22fea0589c552847a5e09f9c"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 0,
+    "reference_id": "Vengh4mj2t",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "1ca6b97b14b889b0bd285d3b7facb2d51350dfd7d7973b8b7dff77143c83174b"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 0,
+    "reference_id": "Vengh4mj2t",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "191af3bb63544aa9f95d9b4387d9c30b99330c193b5be84c597fbd93a162f22e"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 1,
+    "reference_id": "zQmfqzqN7j",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "bc1da5365c59a511f56688452560c288ff6639a3bf3011493be0e7a5cea699ca"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 1,
+    "reference_id": "zQmfqzqN7j",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "c24e7176464002e43fbcb11f4528c27cba6b9fec2bc7f31f956fa3040eeec445"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 2,
+    "reference_id": "DXSl6w0fzx",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "67f0dbc6087e6c3f91181325b1849cb3eebc8c01a9ea184c092b394486203a6b"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 2,
+    "reference_id": "DXSl6w0fzx",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "66b0ce65bdfe7d1549d9c5bc1c2b7796d4a2db365de4ff534ef73c123dffaf5a"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 3,
+    "reference_id": "EQqxjxhDns",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "d13a59cb4be4281f6c230a43f20b5d59e816d64574a68858961c0c8238efd5a5"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 3,
+    "reference_id": "EQqxjxhDns",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "f87b83f7c95aea03553fa6fe5f2d8cf0d0a7d93ed582dd72b24d029aeb8af546"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 4,
+    "reference_id": "Fenv2uuWYt",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "ab1a78f10650df3528b3d1bbcc60ab58d35211a0d3fdb1d11ae6d8c90a3410ba"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 4,
+    "reference_id": "Fenv2uuWYt",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "be07e8a0dfdab5b720edd2bde4f6a269d777700373e8a627bbf9e76c45170b29"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Scattered_Light",
+    "reference_episode": 0,
+    "reference_id": "dac0D6ni5R",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "b933797b01a08394eb1e98e9ceac7043b5ae4dc92912f405c86cdee065c3b054"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Scattered_Light",
+    "reference_episode": 0,
+    "reference_id": "dac0D6ni5R",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "385b8146572b0480d02126539e5b20bffe50ccfa27846e76100f3ba9c75ff589"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Scattered_Light",
+    "reference_episode": 1,
+    "reference_id": "uex4Scdrv4",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "2888de44a33f49a9def48b46c84f021263d52613eb4be456072ef2e5940bdf04"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Scattered_Light",
+    "reference_episode": 1,
+    "reference_id": "uex4Scdrv4",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "bc6bdf9e79f19f412e41f00f7289bf586b2bddceb0c18565143ea8f6ce7dcc07"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Scattered_Light",
+    "reference_episode": 2,
+    "reference_id": "5o8imiiYKM",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "83490e73ee987e7097a7a417b36dd7a8824b58f6ae3326caa77b2d396e53642b"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Scattered_Light",
+    "reference_episode": 2,
+    "reference_id": "5o8imiiYKM",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "e77eca44da3c1319bbf69293f7aa7897d8458aba9b769617c367eed6b5402dcf"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Scattered_Light",
+    "reference_episode": 3,
+    "reference_id": "1TjEcR0v8b",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "a5c017105109ed97aaa36fce97dfc3a448bbf125244f1497667930c6614e831c"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Scattered_Light",
+    "reference_episode": 3,
+    "reference_id": "1TjEcR0v8b",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "c45cbfd0ed77f4fa68169829fa62acfd80500386aaec6b8bd50dea1d7024e17d"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Scattered_Light",
+    "reference_episode": 4,
+    "reference_id": "rqav7Cv0Gp",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "cd7ed73b506ac3b8e22617ad11bac9be3a4854d7b0371c2d139e8548f564ae9f"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Scattered_Light",
+    "reference_episode": 4,
+    "reference_id": "rqav7Cv0Gp",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "693ce555f80ac55b28a211be04ac1c211775569b6af71070fe281a4300d844d5"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Blip",
+    "reference_episode": 0,
+    "reference_id": "yxumvoPABn",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "60d916095b4936c724f9d75d27925120029277d643c65c4ce34c884d1e6218bc"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Blip",
+    "reference_episode": 0,
+    "reference_id": "yxumvoPABn",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "b91a3102aa4eb96f8ed2f00495e41b6d98e3b3ae084bd64f3a1651fc71f7cf76"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Blip",
+    "reference_episode": 1,
+    "reference_id": "lvqnk2ojPQ",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "ba973927f79dbe026a865875a68d4f9a0ce8b3b20219289bc03c55be020c62cd"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Blip",
+    "reference_episode": 1,
+    "reference_id": "lvqnk2ojPQ",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "e6949061e51401e001612765e5ed59a105d7ca78af901ab15fb1f55fc8f63b13"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Blip",
+    "reference_episode": 2,
+    "reference_id": "uq8wQZXH0R",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "bd73be6212932fcb9386f149494be620f3a487a6e5bb22db8a0672161005c928"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Blip",
+    "reference_episode": 2,
+    "reference_id": "uq8wQZXH0R",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "a6f42cda03c9bfa8d3e65070e2dac96b04b34ff8b21f576cf5ecb7fe4fbfee3b"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Blip",
+    "reference_episode": 3,
+    "reference_id": "huUM2MMLeO",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "951860d624591a0ecc4937b3012f91d9d31a81c3ec72be11ce2d8f24ead59691"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Blip",
+    "reference_episode": 3,
+    "reference_id": "huUM2MMLeO",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "76133578f8da8eceff7a6cd90805cc26656123c4fa9e192d3727098e5af5bbf1"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Blip",
+    "reference_episode": 4,
+    "reference_id": "qHkuAjaf5E",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "67c16bee9d2ff113645ba1b5528deffc22f1cf837baaeed7fcf338e1a862e457"
+  },
+  {
+    "model": "s45011_random",
+    "target": "Blip",
+    "reference_episode": 4,
+    "reference_id": "qHkuAjaf5E",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "de88286b5e6b2357a26343dd675672be48bf9033a750a54c2123dc1441a512c8"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 0,
+    "reference_id": "632xGf8n9x",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "06bdcdca353a7b114fd74000f919dc7b24d635245cfa73f7575ddb8ede8ca3d4"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 0,
+    "reference_id": "632xGf8n9x",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "6e09a507cc1ff61847715614b56502b6898100fc12c8365fa7e8ef7e6d2061a0"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 1,
+    "reference_id": "whSWETJlnk",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "519e66570c4d8f8926b584d4112cd6d1f299e0eef8d6ae8b1bb2eb684e1f2faa"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 1,
+    "reference_id": "whSWETJlnk",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "e9e6c156a8f241f5650b8fd81b0bffc125b4056fcc1a6f44c5528f3d1dc1f1b4"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 2,
+    "reference_id": "D0zveH7qXJ",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "cc6ad16318ef355fcd8617ee83c4df585a339c31d0068948b9c4f058d16a7f78"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 2,
+    "reference_id": "D0zveH7qXJ",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "e82abf05b4ad0654fb2d00a79970c64dcb667642d72cd7a134d224460e09a7c2"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 3,
+    "reference_id": "cszwIEItx8",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "7ff82afd70f02c92a381b6cea5f0a69f58f4f52fff2fddc06e4c38f4afb55d90"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 3,
+    "reference_id": "cszwIEItx8",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "0eba5ca2d2de445389ae25a268d382b41ad4ec63f39d0ed03d1b858c1acff3f8"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 4,
+    "reference_id": "bhtOPTRKKg",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "82e7a8d7292df622eb364afc7330630aa6a4bf84a2e17377112f52172ad1b139"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 4,
+    "reference_id": "bhtOPTRKKg",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "c186b58ed1b8d7ec3e82c76947a27b6143a27678ebca6ca2e1b4aef504639fa7"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 0,
+    "reference_id": "Vengh4mj2t",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "2baf96758f7ef63f8e479b18688298acd4c3176d59c59350f4b13e1000091fd3"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 0,
+    "reference_id": "Vengh4mj2t",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "80ecf06b0fc89f6ad88f6677fc0bdaf2a87dac1db7c4ecbbab389b230daa0aaa"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 1,
+    "reference_id": "zQmfqzqN7j",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "3eb37435ea77ae9b3f99516290f73c2dcff0171c101bb00f877d3f2f33ab99e1"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 1,
+    "reference_id": "zQmfqzqN7j",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "d2d60ac625b71d77a3752460ecd574a7c831116e587b0bfa52134d8ec47d7734"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 2,
+    "reference_id": "DXSl6w0fzx",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "2db288fa6dff769c8b88200a401d1786911bcd309cd1c2bc9bcee7ef98bc1737"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 2,
+    "reference_id": "DXSl6w0fzx",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "0c1e5bc35918a854808fb7157f5367470e5eda1cb4c7fafa0b3b353750211f34"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 3,
+    "reference_id": "EQqxjxhDns",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "b9d7571056390d30a001c61dfaaf4101ac6b02c86dd3e50ba019cf92dbb98ba3"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 3,
+    "reference_id": "EQqxjxhDns",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "f289b853b2a50efbc887a32ebe86123363ad4c89f4a9001e2cde05834c9a076c"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 4,
+    "reference_id": "Fenv2uuWYt",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "5a605cd2313304aaf16d84c6e2c4fa4fe3663f4caea7f5bce926093ee66a4a3d"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 4,
+    "reference_id": "Fenv2uuWYt",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "10fbe82b880e1e066ccd96e66bd6bb58c50d4fd3504d24a4c9e78f1307686f77"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 0,
+    "reference_id": "dac0D6ni5R",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "2ce4beb15c31d7290bd0e39dad5ff15eff4158f171b87ce1378489fa0b340d2a"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 0,
+    "reference_id": "dac0D6ni5R",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "69d7f658689c3c1c5df0c2f83fb1a722def73147b1f1c830ba87f5c5e97d1f6d"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 1,
+    "reference_id": "uex4Scdrv4",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "7c6e74a083b71a1c5c719df9c3bdc744a37d114c31f5026c170cada037f20460"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 1,
+    "reference_id": "uex4Scdrv4",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "b76998e5a220d928d13f1ddf9f4923d44f376ebc9a30c4cec6202b90c0a9de53"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 2,
+    "reference_id": "5o8imiiYKM",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "8dbd3efc9cbd2b26de156f41d62e0615bccea6bd94fee6304b027d6d8a7a94c8"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 2,
+    "reference_id": "5o8imiiYKM",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "0ab4df9b9369a90e9038f1d588a7fa0ec2eeaab96db33e63f8ed59ecfdade5e9"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 3,
+    "reference_id": "1TjEcR0v8b",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "0c4af0bca8fcd1b371cae3d3f90cf5b8d6aaa6721bf9b7c4bc106f165aa44314"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 3,
+    "reference_id": "1TjEcR0v8b",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "ea05c69395edd797554e25711dac36a8ec044b29e9e7f6a868575739ec939d97"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 4,
+    "reference_id": "rqav7Cv0Gp",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "e7b10fa5b9a9c41252d032c35773ed6a30e422085250db8cee0d1eae7ddf5fa0"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 4,
+    "reference_id": "rqav7Cv0Gp",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "fa4fe37ebbb878ac1d84ab896eec9c9d9033327fadafbec55ab9c103e3f0e2ea"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Blip",
+    "reference_episode": 0,
+    "reference_id": "yxumvoPABn",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "0b56274cc10ebc3f094c207b05c7ef3b367cab6e8962b16c2b397ca8eb7bffd4"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Blip",
+    "reference_episode": 0,
+    "reference_id": "yxumvoPABn",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "b2a766a172874bad3ee775a750fa3a58500b3d9346f6a36e427419563ecefc18"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Blip",
+    "reference_episode": 1,
+    "reference_id": "lvqnk2ojPQ",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "79438c322d77534ce1a898b094a13d8c067a3aca348dea4215d3dfab09f0de27"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Blip",
+    "reference_episode": 1,
+    "reference_id": "lvqnk2ojPQ",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "6b00161e30100885a32cb7f1f83ff54842dee6074e2a7a4e0df6f14f8a39420b"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Blip",
+    "reference_episode": 2,
+    "reference_id": "uq8wQZXH0R",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "58e9b9dfc9594aab4f408cb50bcd625e1e2398b295b46a751f289d0ea824d987"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Blip",
+    "reference_episode": 2,
+    "reference_id": "uq8wQZXH0R",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "644d65d48c3b72d72d3484ce00360bd58e9e23b1f8b789e77f2e64bc94a868f7"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Blip",
+    "reference_episode": 3,
+    "reference_id": "huUM2MMLeO",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "46c7a63e335783c9ae96cf3764d6865ffdfcbe14eb4f2fd48765d52107bd080e"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Blip",
+    "reference_episode": 3,
+    "reference_id": "huUM2MMLeO",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "a2495c9d33c94a026c143d9d3726f97ef3ebe2de5edf9e35bbd6d285700c1d79"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Blip",
+    "reference_episode": 4,
+    "reference_id": "qHkuAjaf5E",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "b865aac5e34636e3c66a4676bab3efb8ce6c3d97414d8ed2264d795355589e16"
+  },
+  {
+    "model": "s45029_trained",
+    "target": "Blip",
+    "reference_episode": 4,
+    "reference_id": "qHkuAjaf5E",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "520840fd4241eda3266946ef0ff30948aaed7205621d72d8ddd298ef52125466"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 0,
+    "reference_id": "632xGf8n9x",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "6ea74f3c7a8e1e0d11a01ef625696e26f7ebaaf1db43278fb5f0cca1253beb23"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 0,
+    "reference_id": "632xGf8n9x",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "865ab8c7db6dd11581c0b395670b3e03c164bb0d251e67ffdc93dba0e0b76ad1"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 1,
+    "reference_id": "whSWETJlnk",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "d3732d8277f812746d51e76dd9267169fbfe888ccd3ac23646e4fd1ff749eb94"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 1,
+    "reference_id": "whSWETJlnk",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "d6099108c9b8d5e3cb83970ed6480802d026a9c69633d26e9e2e8873f07b3522"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 2,
+    "reference_id": "D0zveH7qXJ",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "97fe1dfff638604077d97926d4d6a858853984fb5f9a2bf839ecb6211695d296"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 2,
+    "reference_id": "D0zveH7qXJ",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "f3658d39d67dcb8ecdc8e2040867909ad8be639b9292af4e08f5045b080c7e82"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 3,
+    "reference_id": "cszwIEItx8",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "b738825b18095258f947ea43cacbc7424bfb9dc87cf7a5c0906790094dd307ce"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 3,
+    "reference_id": "cszwIEItx8",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "fd2c3a6d0bf223376e58c1b089be34d4836da3dfeee878d9a926ac12b88d8dd7"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 4,
+    "reference_id": "bhtOPTRKKg",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "82797931e9ad4e0db86905fab53cc592be86786bc73bab200763e42031ad8658"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 4,
+    "reference_id": "bhtOPTRKKg",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "bf416a01e4f0d20b9fd019b265d0896ab0a15dada7d2231598f0d269173113ba"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 0,
+    "reference_id": "Vengh4mj2t",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "8089e7f8f4238a700455ed3f09d3c6b7ca26db77894d207acde6786ea0ffde90"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 0,
+    "reference_id": "Vengh4mj2t",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "13d4aba511ffc9efb35ed4ddf5d3f9419c7099a48112d6c45884688ea0effdbb"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 1,
+    "reference_id": "zQmfqzqN7j",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "297ac62d0652b99bb5bfaf8c37b8c06ca65b07a46f42fbcc5c8e681555ce6eef"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 1,
+    "reference_id": "zQmfqzqN7j",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "1750d05a63fb185228e64b8fdbb5c0295c0754eb1ed996a5c5bc39671a206bce"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 2,
+    "reference_id": "DXSl6w0fzx",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "95adc91a885e725a18be0aab7ffb0e9adbee1031cb4c0f46f97c41975e6924c4"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 2,
+    "reference_id": "DXSl6w0fzx",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "7390144e83be387fe641925eeea089966601f98a65ad135e2106089557582c60"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 3,
+    "reference_id": "EQqxjxhDns",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "5fd214f4f5e5b230a536b5194b2d29a7e9894530ffc1d8ebfe5421f4d19ae57a"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 3,
+    "reference_id": "EQqxjxhDns",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "6a0841b9770a59b4a3f9d7b20ef7cc01f9731e428dcea303ef88b4a8268f3053"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 4,
+    "reference_id": "Fenv2uuWYt",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "1063a23f8b750b79206b9ddee1376147778eca6bfa6f8c4f178fe900307d1be5"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 4,
+    "reference_id": "Fenv2uuWYt",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "344e2f55f8a954372a453420b8baae16fe9fd34cd91420533cec9519c77dfa5b"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Scattered_Light",
+    "reference_episode": 0,
+    "reference_id": "dac0D6ni5R",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "1fe824170a736abb866ce0ef29a1514af37518c51027fc650c1a16f45caff358"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Scattered_Light",
+    "reference_episode": 0,
+    "reference_id": "dac0D6ni5R",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "ead6282bed5b87b3571af87936f97681734a3344035b12633a6a2cd40f6c2366"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Scattered_Light",
+    "reference_episode": 1,
+    "reference_id": "uex4Scdrv4",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "7d96c1825d8fe623082e4f4fa4834a2177bb4753a5b7f99789648e35ef1469fa"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Scattered_Light",
+    "reference_episode": 1,
+    "reference_id": "uex4Scdrv4",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "ae4cb2e4ee97bd9a9aee7c9131ea4b9f7a366f34e1dbe695c022433a3b71e01b"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Scattered_Light",
+    "reference_episode": 2,
+    "reference_id": "5o8imiiYKM",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "f700792e6d6a16c7a76c2ed6c4b45563e80a0a4062665ee929062e31d386cca1"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Scattered_Light",
+    "reference_episode": 2,
+    "reference_id": "5o8imiiYKM",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "3e47ca96c1de7efd2b674434ad554b32abaf954a28268e76cddcae32ecb9d8cb"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Scattered_Light",
+    "reference_episode": 3,
+    "reference_id": "1TjEcR0v8b",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "1551810853ebee76537c777736890b6e4eddbffef243b4c2d93d6f5ad39b6b21"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Scattered_Light",
+    "reference_episode": 3,
+    "reference_id": "1TjEcR0v8b",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "3562b0e18d016d627c5897034af38575c84029dafacea153e6e167d5f4079b1b"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Scattered_Light",
+    "reference_episode": 4,
+    "reference_id": "rqav7Cv0Gp",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "4bf5cfcfd1732a186c6223e809ba3ed524e4f972c0b17304dbf5fcdc8b99bccb"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Scattered_Light",
+    "reference_episode": 4,
+    "reference_id": "rqav7Cv0Gp",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "0071884dd8bb2d771bf7d8dfc1f854a7a91c454a5d766023aa810d5e8091b8e3"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Blip",
+    "reference_episode": 0,
+    "reference_id": "yxumvoPABn",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "538490281f721262bfb5282596aef1bdd9126c2ab8c4d6960d48f16bc6aed6be"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Blip",
+    "reference_episode": 0,
+    "reference_id": "yxumvoPABn",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "7820940b745d70b1194a34bd699921d0ac76aaf01605bbd35c4faed8ec2e0907"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Blip",
+    "reference_episode": 1,
+    "reference_id": "lvqnk2ojPQ",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "ea04e6b918823a36c0b5cd8f03ba5b5ceb55cd22d96945a7363c76b339eeee4f"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Blip",
+    "reference_episode": 1,
+    "reference_id": "lvqnk2ojPQ",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "c362c170e466096a23756e5e36a542fb181dc78f974a27d6ee21b595d9627978"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Blip",
+    "reference_episode": 2,
+    "reference_id": "uq8wQZXH0R",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "1fe46242c0b99cb5b6c4c4bcb70e4a778fe665bac0a7a13b94dd9271f388eebd"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Blip",
+    "reference_episode": 2,
+    "reference_id": "uq8wQZXH0R",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "a2684d732a19729875534048987f979657a13c201db5d3743ab3be86339176c6"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Blip",
+    "reference_episode": 3,
+    "reference_id": "huUM2MMLeO",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "d2ab3b8d3091f455cb2c5f781114f0e56666a21dce6fbae1cde613084d671cbf"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Blip",
+    "reference_episode": 3,
+    "reference_id": "huUM2MMLeO",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "57202c040de59b9878febe0674e26faf288c99f785c778c369dee482b3a61f1c"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Blip",
+    "reference_episode": 4,
+    "reference_id": "qHkuAjaf5E",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "dacc646f35009ce50b56321701d5ea806ee6eb4fd7c70d26cc33d242802fa6e9"
+  },
+  {
+    "model": "s45029_random",
+    "target": "Blip",
+    "reference_episode": 4,
+    "reference_id": "qHkuAjaf5E",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "930daa20b361aabb7b4e5e83fdbab59f27a16f666586f4189fa6633804ed973e"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 0,
+    "reference_id": "632xGf8n9x",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "3c64c04f5f3a13eccd8eb71830eda48086bd34b6e22e3d97f56982026f1d48e2"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 0,
+    "reference_id": "632xGf8n9x",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "98dd8759aed471c7889e6413e8c1f7552928b157931c0070cdb64f3746367ca3"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 1,
+    "reference_id": "whSWETJlnk",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "6eeb572cae031e3d98ab70db02f80408de85579adc8421ddc6f4c47ff06d0411"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 1,
+    "reference_id": "whSWETJlnk",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "13c41dd2f4a86d9fea3b3974e997dc9d66f5fe42ac4cc3b42373e5bdc02f8815"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 2,
+    "reference_id": "D0zveH7qXJ",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "2a0accf9fa577b3a01c3c807f9081cbb22988da6b4e9c77cc0706b5057e219e3"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 2,
+    "reference_id": "D0zveH7qXJ",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "708e2e6159910c4bb6474119a965860dcfcda8b095fce78b4ffa2498b6b9d575"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 3,
+    "reference_id": "cszwIEItx8",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "4243f0efd91f718285fb22a1d98e7decc440a97a05163cee84cb8f59ae9f14dd"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 3,
+    "reference_id": "cszwIEItx8",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "9651b7dd2307c4731ad76086a3e0a02d8c5bbfee05e6e2a7f200c8c953a50048"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 4,
+    "reference_id": "bhtOPTRKKg",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "b6652a655c3e785f8ec2bbf1ff1dd1073e2561e3e9c19012431d5493dff2d40d"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 4,
+    "reference_id": "bhtOPTRKKg",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "7cbbd08a0904d68d87ef39ccfe1073f9502a68290474246a29b9af83257c9739"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 0,
+    "reference_id": "Vengh4mj2t",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "0db6a2ef19f82fdb23f493ab09d7f51b89aa4d059eedf1be44e3e8621c1cd43b"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 0,
+    "reference_id": "Vengh4mj2t",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "a45b6b060ee2f2b77d7c003e5023cb5ff0bc8c73c7e464476bccd328fd6e8a3c"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 1,
+    "reference_id": "zQmfqzqN7j",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "e1d7a807b559af9402ed80fb36e3fc07423c388a759e588cb7c7a924917969ed"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 1,
+    "reference_id": "zQmfqzqN7j",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "2abff9abd1fe29d7f55778d4b35303d6546bfd953e0b01e0c521daa6098ad77d"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 2,
+    "reference_id": "DXSl6w0fzx",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "c744949c5de7dddd9f3f67ca47712f20b25ca3bc6645ba1d5e3007058d38ebcc"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 2,
+    "reference_id": "DXSl6w0fzx",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "8511824986394e3fe02a7a99b457dc2eaf5b5f12f5bd422f0e9254d0c7161b75"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 3,
+    "reference_id": "EQqxjxhDns",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "d233a72a315abf4cd2dcb8ff2bec0cee052b8fc9adeeee9e487a6ed056093635"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 3,
+    "reference_id": "EQqxjxhDns",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "2c41392031b22a09fecd7c8995f5c622af4ba9f296066b94674c75dafdbc13a9"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 4,
+    "reference_id": "Fenv2uuWYt",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "a68092a480a30b1ca775db95f984c7816bc8c72f93308dba1b7e621da4b86127"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 4,
+    "reference_id": "Fenv2uuWYt",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "cf4855a17029481bb67206d98247ecbba20bc934c8a50a928c47cabd5d56990b"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 0,
+    "reference_id": "dac0D6ni5R",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "8622a5f7565400bd9a8466ffe4e2875345300a0c6e554b9629885733d9141bc0"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 0,
+    "reference_id": "dac0D6ni5R",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "19adcb107e2e2e7977422da59fafece3b9648ce04b7f0e48811ce2d820707ca4"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 1,
+    "reference_id": "uex4Scdrv4",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "c05207ae6b68e3e6debd0858cf26bd02f95c287588fc1477931c8b1e37a1c0f4"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 1,
+    "reference_id": "uex4Scdrv4",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "d793298af05598e12c8b4d8dae4494d23741e24bc8542c7e7ce3e72b540101cd"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 2,
+    "reference_id": "5o8imiiYKM",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "86842c91526beee6988335d87bb22488ac984da1d7ad3b2e6d1f1c684cb76092"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 2,
+    "reference_id": "5o8imiiYKM",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "a778869821188725cafbc1ade100cf7871920b15a1ee7e64f8c5f6f93cd699f2"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 3,
+    "reference_id": "1TjEcR0v8b",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "3f4ed0770f0f490c776c74caf752bf1a1c979043826309b21ace5004c65f07c5"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 3,
+    "reference_id": "1TjEcR0v8b",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "1549648c075fb976bcc00b106b10012c7ab6138e7acfebafc5742b676767362d"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 4,
+    "reference_id": "rqav7Cv0Gp",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "ee8d7bfa925de2b1b154bad596891e61269276fab19ccfeae7b6f52853f5cde2"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Scattered_Light",
+    "reference_episode": 4,
+    "reference_id": "rqav7Cv0Gp",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "4edc1d8ded105cd42e8e979149ea628126c6f6b8d6bf33caf6e6403897c1c6d6"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Blip",
+    "reference_episode": 0,
+    "reference_id": "yxumvoPABn",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "bb14a203ffde4195a8d10b794cc742608bde098d6feafc3501ba358e447e844c"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Blip",
+    "reference_episode": 0,
+    "reference_id": "yxumvoPABn",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "58783edad47cfa70169ff67cccca384f1768da65f80821123a08099ac154ff77"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Blip",
+    "reference_episode": 1,
+    "reference_id": "lvqnk2ojPQ",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "630820aa3d4581ead0b089c3f7a5bdb3d866367f96c8213a90a7e609e6730d75"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Blip",
+    "reference_episode": 1,
+    "reference_id": "lvqnk2ojPQ",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "2048aec60172065cdc89e01a6b4048e51b5af8e1aad92c66e84b2c77c9f5578c"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Blip",
+    "reference_episode": 2,
+    "reference_id": "uq8wQZXH0R",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "e01001f9f109afedd1f3ba785713490ed226011e3c4e3a71467901e6e3d463ef"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Blip",
+    "reference_episode": 2,
+    "reference_id": "uq8wQZXH0R",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "bb3abbe5257379969f994a95d778534cc8c822cd5464dd45c646cdd30e572eff"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Blip",
+    "reference_episode": 3,
+    "reference_id": "huUM2MMLeO",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "deb31534d303e43815b0e2d2d17f6c25779565007dc229d775fc5549c7e0769e"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Blip",
+    "reference_episode": 3,
+    "reference_id": "huUM2MMLeO",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "5e6d867011ec48b1c601569c17cc7b792c9834755cf5dfa365be86b4a5fc2f19"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Blip",
+    "reference_episode": 4,
+    "reference_id": "qHkuAjaf5E",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "e69169e0dfd24cfec1025a3a083cfc1bac58622f2eb2108359b1ea89e19ba4e8"
+  },
+  {
+    "model": "s45047_trained",
+    "target": "Blip",
+    "reference_episode": 4,
+    "reference_id": "qHkuAjaf5E",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "49ca1c8675fde6dba0ddb7b2cc30b1e95e774458fe5e4568a8c5cd405a71ce37"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 0,
+    "reference_id": "632xGf8n9x",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "3159eca12a03d37c46273c227e09ee367023e863ccd4b9ffd70bf57227eca51d"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 0,
+    "reference_id": "632xGf8n9x",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "cb764b264f88a39a75b05828a0461064b384673ca3a4e6cc841bb46c1e26d4e4"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 1,
+    "reference_id": "whSWETJlnk",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "c6bf7b0f2a2d7c7395c99827a6db112380b86d6e1cf4e92d88f1f8f789f8e8eb"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 1,
+    "reference_id": "whSWETJlnk",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "dc3ece029fa508a0f5eb8a7d613a0604fbbde6fe582bee2dda1237d1930b66df"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 2,
+    "reference_id": "D0zveH7qXJ",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "38e850c1889a3e7d595e7b4d263382c66bc47cc3bbb332bde051ee2e1e88654f"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 2,
+    "reference_id": "D0zveH7qXJ",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "3db35bb3e1c715623bda27b6342d36259648f8b45b31d125b83a19fa97355013"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 3,
+    "reference_id": "cszwIEItx8",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "03e37366df601db3232a36dc4bb8523f8ba071f60120ae779d3182cb34743e38"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 3,
+    "reference_id": "cszwIEItx8",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "aa699d2af27c766368bba659b491e087074774edcbff6d71fe69ba38e3b43b92"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 4,
+    "reference_id": "bhtOPTRKKg",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "ac08e9df65c208ef529a8e72d1aea2cd5445f9ffb3ea0fd73af606ca56ee3ed8"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Low_Frequency_Burst",
+    "reference_episode": 4,
+    "reference_id": "bhtOPTRKKg",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4049,
+    "calibration_score_sha256": "72426c3062f29d0800c1b896e89fd8ae786eb22c5758d5990f063085a73879a6"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 0,
+    "reference_id": "Vengh4mj2t",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "19040cad1c6d644b93205525803cfa5a18e04ec08eb7a357064858f1559fe479"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 0,
+    "reference_id": "Vengh4mj2t",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "fda32050aa5adb54bde4566805742318d225c00eba6944bf644a64ddd30ea45e"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 1,
+    "reference_id": "zQmfqzqN7j",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "bc97b7f2b2126032df988f12a9d64444adcdbb8fb66266bf8063f302e848f1da"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 1,
+    "reference_id": "zQmfqzqN7j",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "ffc54f97b242d7e172bb98538194c057e378e945e39693f93539a255d9eef653"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 2,
+    "reference_id": "DXSl6w0fzx",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "0c872c704401f1674506490d87c617e54db30041435ace84ce3e190763acc8bb"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 2,
+    "reference_id": "DXSl6w0fzx",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "09bc1419aeb8f54aba65032eff351d693caf189beb3f7d1c632625dcadbf3471"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 3,
+    "reference_id": "EQqxjxhDns",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "dde13c9bb7d51b85b5199777c6e7090fe079169ae4824772864a608fc52ea29e"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 3,
+    "reference_id": "EQqxjxhDns",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "7f56534b05e5396b448683042819cc21b43e101b7d30c09e59accefdd7e14c7b"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 4,
+    "reference_id": "Fenv2uuWYt",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "42e4a74128ea3b40d6f866f6f1e23453f34b0acf1236a830dedd31a74b313ff0"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Low_Frequency_Lines",
+    "reference_episode": 4,
+    "reference_id": "Fenv2uuWYt",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4073,
+    "calibration_score_sha256": "5cdf4f683d6d3e0dac0b0ffb5db46b69d2ee32170594f976e5adab8e1f0a4c18"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Scattered_Light",
+    "reference_episode": 0,
+    "reference_id": "dac0D6ni5R",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "9515c17c4d2ed39c39150425dc5280c62e9e10f9ecbf6d3ed09cf69da0c489b1"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Scattered_Light",
+    "reference_episode": 0,
+    "reference_id": "dac0D6ni5R",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "814d18b16688c52ae131f9dd31b04c81f2ba310afcdaab2eb6f0501e94fd286b"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Scattered_Light",
+    "reference_episode": 1,
+    "reference_id": "uex4Scdrv4",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "5fc8e4b606f04e520420228e2613895de434b89a37fdada686e930dc0d19f596"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Scattered_Light",
+    "reference_episode": 1,
+    "reference_id": "uex4Scdrv4",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "42b9be8ee71b42fcc48e6e1a9e0515af5ac96869b6f07d19dd57d8464bfe4c01"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Scattered_Light",
+    "reference_episode": 2,
+    "reference_id": "5o8imiiYKM",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "070019ef563348661b5ec6686a67badb0e567d999e133db271eb0040723f7f5e"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Scattered_Light",
+    "reference_episode": 2,
+    "reference_id": "5o8imiiYKM",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "c82532671f1e0b987248e94171bfe010a1787447a7373a3ba70285cca05ba736"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Scattered_Light",
+    "reference_episode": 3,
+    "reference_id": "1TjEcR0v8b",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "1e8e6bff1564665202882dc3e3d591acfdec8faaa0258d32f470ea3accf4c3ed"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Scattered_Light",
+    "reference_episode": 3,
+    "reference_id": "1TjEcR0v8b",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "9843922f2044dd940b9a295edd26e4e29f0efbbab6c43f314db287ed2e8fe210"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Scattered_Light",
+    "reference_episode": 4,
+    "reference_id": "rqav7Cv0Gp",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "3460b97d2372b1af7ba5cd27210f11bdb89885dfbe3d6e66f5795f3b241e2d7e"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Scattered_Light",
+    "reference_episode": 4,
+    "reference_id": "rqav7Cv0Gp",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4057,
+    "calibration_score_sha256": "47482d8f03ecc6e9e2b577363477332fe4f47f89842658ade2a9924fc2a0b84b"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Blip",
+    "reference_episode": 0,
+    "reference_id": "yxumvoPABn",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "df6c17e114422216100dfd4a092963afe354edbf2e8b95bdfda34924cef635c6"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Blip",
+    "reference_episode": 0,
+    "reference_id": "yxumvoPABn",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "101800448ac1ea60ec084b3ce9015480f658608ad5964e7691e9fb8d18fd020e"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Blip",
+    "reference_episode": 1,
+    "reference_id": "lvqnk2ojPQ",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "4789ea6aeeba4fbfc70dcece19303f637efe1d5d34a7ecf8b757e5d4ef795b9a"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Blip",
+    "reference_episode": 1,
+    "reference_id": "lvqnk2ojPQ",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "66ed9aa1ba25d100c2d5b8fa8a2a6f1aa64e02aeb3adc5d30e3fda93a2553d58"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Blip",
+    "reference_episode": 2,
+    "reference_id": "uq8wQZXH0R",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "92c5fb9349b48340590cedb19270fa05a22578abbc7a2c6380e42544b4685d1d"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Blip",
+    "reference_episode": 2,
+    "reference_id": "uq8wQZXH0R",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "9712a8e46fecc6ce85fa447091faf7e86669a59a93ff3ba5df85e3b6886393cc"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Blip",
+    "reference_episode": 3,
+    "reference_id": "huUM2MMLeO",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "7439a1a026fd7f40f8cf67b7d6409627cee3208789e55fc395c7693cf2ebe891"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Blip",
+    "reference_episode": 3,
+    "reference_id": "huUM2MMLeO",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "532e783cfb9529b7723009370b45bd5b5554058ee4144cafdb2f0b3943589216"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Blip",
+    "reference_episode": 4,
+    "reference_id": "qHkuAjaf5E",
+    "matcher": "cosine",
+    "fit_count": 0,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "709ac4dd7138b50f36c02522bcfd03eca8ac435931d544a26ad0ab6a7f43675d"
+  },
+  {
+    "model": "s45047_random",
+    "target": "Blip",
+    "reference_episode": 4,
+    "reference_id": "qHkuAjaf5E",
+    "matcher": "negative_aware",
+    "fit_count": 512,
+    "calibration_count": 4082,
+    "calibration_score_sha256": "74aca602345669cb34df4b9e087b29d8e981ac47be33acf4060c8288473f32df"
+  }
+]

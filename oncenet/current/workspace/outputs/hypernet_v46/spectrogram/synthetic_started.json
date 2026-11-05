@@ -1,0 +1,80 @@
+{
+  "protocol_sha256": "a8bc9bd07820e5086718d1243d6efde20d81b19608c514c72f56aa3f2f197815",
+  "models": [
+    {
+      "id": "s45011_random",
+      "seed": 45011,
+      "arm": "random",
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\seed_45011\\random.pt",
+      "sha256": "3fc52ecf8b131be27f6623f1930b8c74e81450dfc2bf8b07a0f5c980ed90eb78",
+      "parameters": 42480
+    },
+    {
+      "id": "s45029_random",
+      "seed": 45029,
+      "arm": "random",
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\seed_45029\\random.pt",
+      "sha256": "e473372c62e01c41863d7321408e919e5e6958cef4645f7c4285cc0fa494aa19",
+      "parameters": 42480
+    },
+    {
+      "id": "s45047_random",
+      "seed": 45047,
+      "arm": "random",
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\seed_45047\\random.pt",
+      "sha256": "09559f87e56e573a17b6a28d44a90a454f64df7528194765f9c10ce4705929f3",
+      "parameters": 42480
+    },
+    {
+      "id": "s45011_global_diversity",
+      "seed": 45011,
+      "arm": "global_diversity",
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\diversity\\seed_45011\\global_diversity.pt",
+      "sha256": "89bedc3b4ff9073e5df2d24f3de29489c1b264f863ca09cfeb15c2e28d0f5bdc",
+      "parameters": 42480
+    },
+    {
+      "id": "s45029_global_diversity",
+      "seed": 45029,
+      "arm": "global_diversity",
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\diversity\\seed_45029\\global_diversity.pt",
+      "sha256": "aee8072aca592217e0f4de546043f4b34662a046b11a3febb5cbf9efe490f79b",
+      "parameters": 42480
+    },
+    {
+      "id": "s45047_global_diversity",
+      "seed": 45047,
+      "arm": "global_diversity",
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\diversity\\seed_45047\\global_diversity.pt",
+      "sha256": "ef1c7a5afff574acbb18fda507965813faad7d1b4f1e19c137ee07584f7ae9dc",
+      "parameters": 42480
+    },
+    {
+      "id": "s45011_spectrogram",
+      "seed": 45011,
+      "arm": "spectrogram",
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\spectrogram\\seed_45011\\spectrogram.pt",
+      "sha256": "5fdb5e04210972203f11ae674cfd861d8268d0b6561f3a31cd37c408405f790c",
+      "parameters": 42480
+    },
+    {
+      "id": "s45029_spectrogram",
+      "seed": 45029,
+      "arm": "spectrogram",
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\spectrogram\\seed_45029\\spectrogram.pt",
+      "sha256": "47f034f0d725cb4ee8c01b0706ecbddf751905f219ba1a9c1ab5109128d9bef1",
+      "parameters": 42480
+    },
+    {
+      "id": "s45047_spectrogram",
+      "seed": 45047,
+      "arm": "spectrogram",
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\spectrogram\\seed_45047\\spectrogram.pt",
+      "sha256": "9c377603016575d5a8b5586ce95b6927aa58b3ac5f6972084e9544f40ef1979c",
+      "parameters": 42480
+    }
+  ],
+  "registry_sha256": "b3af51943275ad69fc57c564a7a3f0a35479e5d3a0c03538b00c49a5402688ec",
+  "time": 1793830319.0976381,
+  "pid": 48984
+}

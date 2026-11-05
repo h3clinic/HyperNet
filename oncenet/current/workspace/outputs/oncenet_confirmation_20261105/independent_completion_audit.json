@@ -1,0 +1,97 @@
+{
+  "passed": true,
+  "reviewed_utc": "2026-11-05T19:45:50.529499+00:00",
+  "scope": "Read-only artifact, chronology, cohort and metric verification of completed scores. No model inference, training, new scoring, threshold fitting or bootstrap repetition.",
+  "code_sha256": "f64601530a2c402035a1a782f34e4dc234d46abae7681e80355bba2354a7d5ad",
+  "protocol_sha256": "fe8c2f0555fc5bb74accd6b3cd01d6453f56bad4d799bba26b57a10a0d118f2f",
+  "results_sha256": "3118b91275e9db778e05f900ff55e1a490abaad3c10e3b1ff4010d280d90b821",
+  "commitment_sha256": "6d744232f3228016b0a99c125bbf4ec1f2e9d10c5f551ba1c4baf4d27c8c9d1f",
+  "timeline_utc": {
+    "protocol": "2026-11-05T19:34:50.710510+00:00",
+    "independent_preflight": "2026-11-05T19:36:44.159808+00:00",
+    "acquisition": "2026-11-05T19:40:38.886087+00:00",
+    "all_model_scores": "2026-11-05T19:43:46.088763+00:00",
+    "results": "2026-11-05T19:45:32.030082+00:00"
+  },
+  "cohort": {
+    "intent": 195,
+    "retained": 195,
+    "excluded": 0,
+    "source_pngs": 780,
+    "per_class": {
+      "Air_Compressor": 1,
+      "Blip": 12,
+      "Koi_Fish": 2,
+      "Light_Modulation": 2,
+      "Low_Frequency_Burst": 66,
+      "Low_Frequency_Lines": 78,
+      "No_Glitch": 8,
+      "None_of_the_Above": 4,
+      "Paired_Doves": 1,
+      "Power_Line": 2,
+      "Repeating_Blips": 3,
+      "Scattered_Light": 13,
+      "Tomte": 2,
+      "Wandering_Line": 1
+    },
+    "non_target_backgrounds": 26,
+    "detector_hour_clusters": 175
+  },
+  "checks": {
+    "all_committed_score_and_acquisition_hashes_match": true,
+    "fixed_thresholds_precede_acquisition": true,
+    "all_models_share_same_order_and_four_views": true,
+    "all24_target_operating_point_confusion_rows_recomputed": true,
+    "six_macro_rows_recomputed": true,
+    "AUROC_independently_checked_by_pairwise_rank_formula": true,
+    "any_target_background_counts_recomputed": true,
+    "consumed_fixture_primary_alarm_parity_passed": true,
+    "bootstrap_summary_schema_and_group_count_checked": true
+  },
+  "maximum_metric_reconstruction_error": 1.1102230246251565e-16,
+  "operating_points": [
+    {
+      "model": "oncenet",
+      "alpha": 0.001,
+      "all_confusion_counts_and_macro_metrics_verified": true
+    },
+    {
+      "model": "oncenet",
+      "alpha": 0.01,
+      "all_confusion_counts_and_macro_metrics_verified": true
+    },
+    {
+      "model": "random",
+      "alpha": 0.001,
+      "all_confusion_counts_and_macro_metrics_verified": true
+    },
+    {
+      "model": "random",
+      "alpha": 0.01,
+      "all_confusion_counts_and_macro_metrics_verified": true
+    },
+    {
+      "model": "dino",
+      "alpha": 0.001,
+      "all_confusion_counts_and_macro_metrics_verified": true
+    },
+    {
+      "model": "dino",
+      "alpha": 0.01,
+      "all_confusion_counts_and_macro_metrics_verified": true
+    }
+  ],
+  "not_repeated": [
+    "Neural inference",
+    "Calibration",
+    "Bootstrap intervals",
+    "Partial-AUC implementation (reviewed statically and independently exercised in prior descriptive script)"
+  ],
+  "limitations": [
+    "Only26 outside-target backgrounds for union false alarms; target-versus-rest denominators117\u2013183 are also small.",
+    "No false-alarm guarantee follows from a zero observed count.",
+    "The three models share fixed positive references; this does not test robustness to reference selection.",
+    "Comparator CPU numerical portability was checked on12 consumed events; zero primary flips there is not universal feature equivalence.",
+    "The source cohort was reserved for model outcomes, but its metadata labels were already visible."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "cpu_only": true,
+  "heldout_images_rendered": 0,
+  "real_outcomes_read": 0,
+  "files": {
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\diversity\\train.py": "60240b7c03d9fb89de502785824ba635c14a205611e6c91c588cae1734876b3c",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\diversity\\checks.py": "f8251563037d56c69eb72dc04c9b39ec33671e56fdf7c5d9ed08ac69ce43691d",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\diversity\\intent.json": "a0eb22484c897420eb94b0a5f0b82def9f7016953043e1a810fff319e962fd4d",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\diversity\\intent_superseded.json": "819ff606beeac4ad650079f8ece8d1017bc82d3bbcf0834e87a7ab347ac7e5db",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\protocol.json": "550103b3d64411be6ba7d8c70bc14337c5456e3f93812ae09f3e3222f986df0a",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\namespace_audit.py": "5371b579fcd93d04df46608606ef8b4843154e116531980e1482ed3dfec70d79",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\namespace_audit.json": "894dd95b94df05e870fd43eb4d928e38b9ef5b13740f2fbb55d91faaf568321f"
+  },
+  "exact_original_loss_components": true,
+  "logit_shape": [
+    4,
+    8
+  ],
+  "variance_formula_numpy_error": 1.862645149230957e-09,
+  "parameter_count": 42480,
+  "all_gradients_finite": true,
+  "gradient_norm": 6.143481254577637,
+  "training_example_stats": {
+    "loss": 2.478882312774658,
+    "rank": 0.03912284970283508,
+    "attraction": 0.02165740728378296,
+    "local_cosine": 0.2297201305627823,
+    "local_variance_floor": 0.01108960434794426,
+    "global_infonce": 1.8511732816696167,
+    "global_variance_floor": 0.3895115256309509,
+    "positive": 0.978342592716217,
+    "hard_negative": 0.9774654507637024,
+    "logit_candidates": 8
+  },
+  "exact_collapse_gradient_max": 7.275957614183426e-12,
+  "exact_collapse_infonce": 2.079441547393799,
+  "exact_collapse_variance_penalty": 0.4899998903274536,
+  "near_collapse_variance_gradient_norm": 0.0003410894132684916,
+  "limitation": "This is a soft near-collapse safeguard, not mathematical exclusion of the exact constant stationary point."
+}

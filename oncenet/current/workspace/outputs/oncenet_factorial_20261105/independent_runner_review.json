@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "reviewed_utc": "2026-11-05T22:31:02.348784+00:00",
+  "scope": "Independent read-only code/metadata/hash review. No fresh images opened, no model inference, no training, no evaluation metrics computed.",
+  "runner_sha256": "8f49f037539a602eb9533e7dc7737b623920df1da47e7d86b1a03303a191ed70",
+  "core_sha256": "557c83f11653181e0c6d4342a73657616452d85bbbdb6fcc396cd2229809e194",
+  "metrics_sha256": "f3e5ce56e0b7c38473084c7480f97e74e892ee18fe3fd42b7020f04f7d816276",
+  "other_bindings": {
+    "prepare_data.py": "245ecb38ad8f2de1e170cf82d601d315b6a0ca9e49fa0e52a46a05a74d8c124a",
+    "reference_plan.json": "25e5ff19cd1aca834b024cc861c7b40e1e1be5d49b70a2f7056904fce3b41cb5",
+    "model_registry.json": "c0601e659914bc717dade81a8c144d525e4acfd3bf089357e6794ccdfd4f0c45",
+    "implementation_checks.json": "a0d0bfccf9a8514b93a5b3123a9b71e9bb9f4d42bfc56540acdbda895570ae28",
+    "data_plan.json": "898723a9109468a832613c15065b3e810deaedb5e9ae8e8358dcf6d611c9a7fb",
+    "intent_unlabelled.json": "d59938b30bf3a836649319f07919cbbe6e18e6af5ca618820db89cb8c0b8269a",
+    "independent_data_review.json": "101eeef7f5fac3ea9338553c643a0d8ea3df9ec75793082199fb28c393f14c5a",
+    "pre_freeze_alias_amendment.json": "dc648ec08c0dd18bb8a8e5e24719b7bd5acc64301536ca72418a7a662ba4a317"
+  },
+  "checks": {
+    "explicit_random_trained_axis_mapping": true,
+    "cosine_negative_aware_matcher_axis_consistent": true,
+    "all_six_checkpoint_hashes_and_three_pairs_verified": true,
+    "twenty_references_have_zero_overlap_with_union_of_FIT_CAL": true,
+    "five_distinct_reference_detector_hours_per_target": true,
+    "fresh_intent_unique_2400_events_and_2400_detector_hours": true,
+    "reference_choice_hash_order_without_score_selection": true,
+    "historical_fitting_precedes_complete_fresh_acquisition": true,
+    "fit_and_acquisition_protocol_bindings_required": true,
+    "acquisition_input_array_and_record_hashes_checked_before_scoring": true,
+    "feature_cache_hash_and_row_bindings_checked": true,
+    "scoring_requires_independent_preflight_protocol_and_runner_hash": true,
+    "one_complete_all_condition_score_commitment_precedes_label_join": true,
+    "analyze_requires_score_commitment_protocol_and_file_hashes": true,
+    "conditional_shared_group_bootstrap_not_pseudoreplicated": true,
+    "core_and_metrics_synthetic_checks_and_used_fixture_checks_match_reviewed_sources": true,
+    "memory_only_features_no_persisted_feature_arrays": true,
+    "recomputed_feature_fingerprints_compared_on_resume": true,
+    "scientific_model_input_matcher_threshold_and_endpoint_unchanged": true,
+    "updated_data_code_bound_in_final_data_plan": true
+  },
+  "minimum_selected_same_detector_gap_seconds": {
+    "H1": 283.76758003234863,
+    "L1": 148.17188000679016
+  },
+  "used_fixture_cpu_cuda_max_feature_error": 5.599285941570997e-07,
+  "blockers": [],
+  "limitations": [
+    "Protocol is not yet frozen; orchestrator must bind these exact reviewed sources and then produce independent_preflight with final protocol hash.",
+    "Metadata and consensus labels informed sampling; this is not label-blind sampling.",
+    "About2300 negatives per target resolve roughly two false-positive steps below FPR.001; low-alarm precision is limited.",
+    "Intervals are conditional on fixed three seeds and five reference episodes, with approximate bootstrap coverage.",
+    "Historical source-pixel coverage is incomplete; no universal perceptual-duplicate claim."
+  ],
+  "previous_reviews": [
+    {
+      "review_sha256": "8f52202c0bf474c15965b337e2cb6ad5bf4f88bba0e22f9c31ca99d197a8801c",
+      "runner_sha256": "57cf314e4465b14eaa226badd5272989d8a4815f43f5e7d9fd47da7a0b2685ea",
+      "reviewed_utc": "2026-11-05T22:27:06.940922+00:00",
+      "passed": true
+    }
+  ],
+  "storage_revision": "Before protocol freeze, changed feature storage to RAM only, keeping per-duration shape/dtype/SHA256 fingerprints; repeated extraction must exactly reproduce prior fingerprints. Inputs, fits, thresholds and all-condition scores still persist. No scientific choices or event identities changed."
+}

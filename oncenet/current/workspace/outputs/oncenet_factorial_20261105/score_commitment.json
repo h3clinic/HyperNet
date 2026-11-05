@@ -1,0 +1,19 @@
+{
+  "committed_utc": "2026-11-05T22:50:50.864831+00:00",
+  "protocol_sha256": "52acaeca63bf959e340fecaac65dd796a6de5920409a1c217172e160cff33380",
+  "files": {
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_factorial_20261105\\scores.npy": "53ed5e7de8e614b7658e2658886ff34c23864cf7bbcb17a86079df6c761d364f",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_factorial_20261105\\thresholds.npy": "b550923ad7342e7a7a21d96011b84da66e15af97a1b7532e4393a89dde522e98",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_factorial_20261105\\records_unlabelled.json": "7b19bbcf75e3d9c53b21ed22e0dd490a557e394ecadfd9715f9cda64c2ef8a5f",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_factorial_20261105\\acquisition.json": "5ba0543d2dc63f4786abdb41bd29f4caa7b2c3c8495cfa642030eaa87d5d3119"
+  },
+  "shape": [
+    2,
+    2,
+    3,
+    5,
+    4,
+    2400
+  ],
+  "all_conditions_scored_before_metrics": true
+}

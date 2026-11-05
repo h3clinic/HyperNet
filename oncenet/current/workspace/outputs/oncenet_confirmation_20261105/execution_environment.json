@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-11-05T19:38:36.557337+00:00",
+  "python": "C:\\Users\\brita\\.venvs\\hypernet-gpu\\Scripts\\python.exe",
+  "version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.22.1",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "requests": "2.34.2",
+    "opencv-python-headless": "5.0.0.93",
+    "Pillow": "13.0.0"
+  },
+  "initial_environment_recovery": "First acquisition attempt stopped at missing requests import before any image access; installed cached requests and OpenCV. No frozen files changed."
+}

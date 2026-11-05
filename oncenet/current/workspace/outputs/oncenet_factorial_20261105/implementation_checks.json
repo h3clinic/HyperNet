@@ -1,0 +1,116 @@
+{
+  "passed": true,
+  "completed_utc": "2026-11-05T22:29:54.283619+00:00",
+  "core": {
+    "passed": true,
+    "real_data_access": false,
+    "neural_inference": false,
+    "elda_direct_inverse_max_abs_error": 4.440892098500626e-15,
+    "prepared_elda_exact_parity_five_references": true,
+    "repeated_input_parity": true,
+    "cosine_parity": true,
+    "calibration_ties_and_resolution": true
+  },
+  "metrics": {
+    "passed": true,
+    "weighted_ROC_comparisons": 30,
+    "cases": [
+      "all ties",
+      "perfect",
+      "reversed",
+      "continuous",
+      "mixed ties",
+      "zero and repeated bootstrap weights",
+      "strict threshold ties",
+      "infinite threshold",
+      "independent sklearn confusion/MCC",
+      "factorial contrast signs"
+    ]
+  },
+  "cpu_cuda_fixture": [
+    {
+      "model": "s45011_trained",
+      "duration_max_absolute_errors": {
+        "d05": 5.599285941570997e-07,
+        "d1": 3.25744622386992e-07,
+        "d2": 1.546577550470829e-07,
+        "d4": 8.940696716308594e-08
+      }
+    },
+    {
+      "model": "s45011_random",
+      "duration_max_absolute_errors": {
+        "d05": 3.3155083656311035e-07,
+        "d1": 1.3122917152941227e-07,
+        "d2": 6.891787052154541e-08,
+        "d4": 7.82310962677002e-08
+      }
+    },
+    {
+      "model": "s45029_trained",
+      "duration_max_absolute_errors": {
+        "d05": 3.8770667742937803e-07,
+        "d1": 2.946908352896571e-07,
+        "d2": 1.1920928955078125e-07,
+        "d4": 1.1920928955078125e-07
+      }
+    },
+    {
+      "model": "s45029_random",
+      "duration_max_absolute_errors": {
+        "d05": 5.526289896806702e-07,
+        "d1": 3.6465644370764494e-07,
+        "d2": 2.2128006094135344e-07,
+        "d4": 2.1606683731079102e-07
+      }
+    },
+    {
+      "model": "s45047_trained",
+      "duration_max_absolute_errors": {
+        "d05": 1.3853423297405243e-07,
+        "d1": 1.266016624867916e-07,
+        "d2": 8.195638656616211e-08,
+        "d4": 8.940696716308594e-08
+      }
+    },
+    {
+      "model": "s45047_random",
+      "duration_max_absolute_errors": {
+        "d05": 1.9441358745098114e-07,
+        "d1": 1.5133991837501526e-07,
+        "d2": 1.0803341865539551e-07,
+        "d4": 1.0617077350616455e-07
+      }
+    }
+  ],
+  "fixture_indices": [
+    4040,
+    4041,
+    4042,
+    4044,
+    4046,
+    4047,
+    4048,
+    4049,
+    4051,
+    4057,
+    4061,
+    4063
+  ],
+  "fixture_is_previously_consumed": true,
+  "torch_version": "2.14.1+cu130",
+  "device": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "settings": {
+    "dtype": "float32",
+    "matmul_precision": "highest",
+    "tf32": false,
+    "autocast": false,
+    "cudnn_benchmark": false,
+    "batch": 32
+  },
+  "source_hashes": {
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_factorial_20261105\\factorial_core.py": "557c83f11653181e0c6d4342a73657616452d85bbbdb6fcc396cd2229809e194",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_factorial_20261105\\factorial_metrics.py": "f3e5ce56e0b7c38473084c7480f97e74e892ee18fe3fd42b7020f04f7d816276",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_factorial_20261105\\run_experiment.py": "8f49f037539a602eb9533e7dc7737b623920df1da47e7d86b1a03303a191ed70"
+  }
+}

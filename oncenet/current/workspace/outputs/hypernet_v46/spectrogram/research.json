@@ -1,0 +1,41 @@
+{
+  "sources": [
+    {
+      "title": "Detection of gravitational-wave bursts with chirplet-like template families",
+      "authors": "Chassande-Mottin et al.",
+      "year": 2010,
+      "url": "https://arxiv.org/abs/1005.2876",
+      "mechanism": "Gaussian-windowed sinusoids and chirps motivate finite time-frequency ridges.",
+      "implementation": "Approximate Gaussian energy ridges, not the paper chirplet search or waveform bank."
+    },
+    {
+      "title": "Reducing Scattered Light in LIGO's Third Observing Run",
+      "authors": "Soni et al.",
+      "year": 2020,
+      "url": "https://arxiv.org/abs/2007.14876",
+      "mechanism": "Scattered light associated with moving surfaces gives arches; instantaneous frequency scales with surface speed.",
+      "implementation": "Sinusoidal absolute-frequency arches; no real auxiliary channels or empirical physical parameters fitted."
+    },
+    {
+      "title": "ArchGEM: an Advanced Data Analysis Tool for Analyzing Scattered Light Noise in LIGO",
+      "authors": "McGowan et al.",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2604.23416",
+      "mechanism": "Phase-derived Doppler frequency and arch geometry; f_peak=2*A*omega/lambda.",
+      "implementation": "Motivates arch parameterization only. No GMM, paper code, labels, or pretrained model used."
+    },
+    {
+      "title": "Gravity Spy: lessons learned and a path forward",
+      "year": 2024,
+      "url": "https://link.springer.com/article/10.1140/epjp/s13360-023-04795-4",
+      "mechanism": "Four temporal windows expose different glitch timescales.",
+      "implementation": "Four-window input is a separate root-owned ablation. This generator training keeps the original one-second full plus low-frequency crop."
+    }
+  ],
+  "mathematical_model": "P(t,f)=sum_j A_j e_j(t) exp(-(log(f)-log(f_j(t)))^2/(2*sigma_j^2)); localized bursts use a2D Gaussian. Chirps use f0*(1+k*u+q*u^2), arches fpeak*abs(cos(pi*(t-t0)/period+phase)); colored positive image-space noise has a power-law FFT envelope. Foreground RMS is equalized then shared gain/log1p compression applied.",
+  "limits": [
+    "Not a physical detector or exact Q-transform simulator; correlated noise is an image-space approximation.",
+    "Prior development failures motivated the domain-specific families and no claim of untouched domain choice is made.",
+    "The papers motivate mechanisms; the parameter distributions and implementation are engineering choices, not published performance guarantees."
+  ]
+}

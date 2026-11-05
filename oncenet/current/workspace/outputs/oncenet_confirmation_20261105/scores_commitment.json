@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "committed_utc": "2026-11-05T19:43:46.088763+00:00",
+  "protocol_sha256": "fe8c2f0555fc5bb74accd6b3cd01d6453f56bad4d799bba26b57a10a0d118f2f",
+  "code_sha256": "f64601530a2c402035a1a782f34e4dc234d46abae7681e80355bba2354a7d5ad",
+  "label_metrics_not_yet_computed": true,
+  "files": {
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_confirmation_20261105\\oncenet_scores.npz": "bb3d2f69eb8a2ed79c95dc7da1c72a73798ccb19df778a677f61b9c24a78850a",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_confirmation_20261105\\random_scores.npz": "e14e5483c2dba79224e93a2ed6aa9bd4a00b26107c49086814c7a99d3a09e1ba",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_confirmation_20261105\\dino_scores.npz": "08d3002bbd6a978daab14aca46e397f38dc924d26b0336328c0b24937900480b"
+  },
+  "thresholds_sha256": "a6001b738b69841478a3f4445d3077ada6a8125093b12f005ea145a26afb6799",
+  "elapsed_seconds": 159.4654016494751
+}

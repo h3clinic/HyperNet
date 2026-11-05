@@ -1,0 +1,398 @@
+[
+  {
+    "event_id": "mlhqkn4vIx",
+    "label": "Low_Frequency_Burst",
+    "role": "query",
+    "ifo": "H1",
+    "event_time": 1250176852.35938,
+    "windows": {
+      "d05": {
+        "path": "images/mlhqkn4vIx/d05.png",
+        "sha256": "b900269daa807fcd0e4ce40eec9e527e1c89e28ba2f794011a6ba895181a9832",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/7cee5578-44bd-4fe0-89c1-5d4af97975fd.png",
+        "duration_seconds": 0.5
+      },
+      "d1": {
+        "path": "images/mlhqkn4vIx/d1.png",
+        "sha256": "15a530e8d62f232c078e642ebcc1d8a8938deda43590cdb9149dd0fb83a5487f",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/a4a22376-a58f-463c-82bf-72787b91cc85.png",
+        "duration_seconds": 1.0
+      },
+      "d2": {
+        "path": "images/mlhqkn4vIx/d2.png",
+        "sha256": "0c80b081df98f65654caf4deef027aa734f9e9f77697aed409f8780be682f588",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/4064ddd8-ad7c-4d8c-a009-7ea76bafb172.png",
+        "duration_seconds": 2.0
+      },
+      "d4": {
+        "path": "images/mlhqkn4vIx/d4.png",
+        "sha256": "c61f6be60aa73b1a16bea36b73e1064d02e5663713fc85a4b9d2dcda21878bc8",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/30663572-5271-4447-bd9b-9176181ecb09.png",
+        "duration_seconds": 4.0
+      }
+    }
+  },
+  {
+    "event_id": "389prCCSiW",
+    "label": "Low_Frequency_Burst",
+    "role": "query",
+    "ifo": "H1",
+    "event_time": 1238728728.28125,
+    "windows": {
+      "d05": {
+        "path": "images/389prCCSiW/d05.png",
+        "sha256": "e35cdb2542ac2759e8b317f91955900fa905c3aeb60972b7488a4f279f19252c",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/670d9464-ab3b-46f0-a446-769770ebd663.png",
+        "duration_seconds": 0.5
+      },
+      "d1": {
+        "path": "images/389prCCSiW/d1.png",
+        "sha256": "a4a590771ae563a6c0b0afc3b24e751e732927cb9d1a79131a959f066af37cee",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/1cd04294-aafa-40b9-9126-041d5edf4f65.png",
+        "duration_seconds": 1.0
+      },
+      "d2": {
+        "path": "images/389prCCSiW/d2.png",
+        "sha256": "a61b9405589fcbbc690c23f7112af10cf3389a03e2a2f31391869fab3666c5de",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/31e22167-c655-43e8-bef8-09c3acc2cf45.png",
+        "duration_seconds": 2.0
+      },
+      "d4": {
+        "path": "images/389prCCSiW/d4.png",
+        "sha256": "bebd31ed254c754d4b7e310327f5efb5d8ad764eadb43ddd776b96e6e3b48f3b",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/4a2d2acc-730c-4392-a88e-99bc88efddc3.png",
+        "duration_seconds": 4.0
+      }
+    }
+  },
+  {
+    "event_id": "qYy1dBJ4Xj",
+    "label": "Low_Frequency_Lines",
+    "role": "query",
+    "ifo": "H1",
+    "event_time": 1131186946.28125,
+    "windows": {
+      "d05": {
+        "path": "images/qYy1dBJ4Xj/d05.png",
+        "sha256": "766c904ad50043e3aee68ee8cdc145887f2f253c203c6fa4dbb029eae2a16dbd",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/f60b7352-2b68-4e0b-a84d-2d7b5eded70e.png",
+        "duration_seconds": 0.5
+      },
+      "d1": {
+        "path": "images/qYy1dBJ4Xj/d1.png",
+        "sha256": "c7fe990d668196710ad074d9bc0494edc886d68552f0003110b861de080e4d44",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/fa727ca3-c0b8-4021-8139-dc5fda311fbf.png",
+        "duration_seconds": 1.0
+      },
+      "d2": {
+        "path": "images/qYy1dBJ4Xj/d2.png",
+        "sha256": "3750a6a7aa8dd4119de9cb088ea0ca7c782809acb0ac1bced513528ad74b8cc5",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/3b63f802-8fdf-430b-a958-0fbce2d538c3.png",
+        "duration_seconds": 2.0
+      },
+      "d4": {
+        "path": "images/qYy1dBJ4Xj/d4.png",
+        "sha256": "bf6afd045fe07b7a917e123ef0b163bc95a86bb2918b3f9b7d2fae886c8b6c9d",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/5a17ef68-a89b-4b78-bf3d-8fee3efeda83.png",
+        "duration_seconds": 4.0
+      }
+    }
+  },
+  {
+    "event_id": "StrfvDQThx",
+    "label": "Low_Frequency_Lines",
+    "role": "query",
+    "ifo": "L1",
+    "event_time": 1134488954.625,
+    "windows": {
+      "d05": {
+        "path": "images/StrfvDQThx/d05.png",
+        "sha256": "acc1a0257fc27a8cf7c0995e8c2cc55140aa40d0a2cf8e853deb47d9f01b2410",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/de5b9510-0b3b-4e99-a91e-36fd94b81924.png",
+        "duration_seconds": 0.5
+      },
+      "d1": {
+        "path": "images/StrfvDQThx/d1.png",
+        "sha256": "0b55aa67e746dfb906b3fe5fe3173ae05eac7cde2c60943cae3cbb1dfe888279",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/13233c43-2c49-41b2-bfa0-bdd817e71dd3.png",
+        "duration_seconds": 1.0
+      },
+      "d2": {
+        "path": "images/StrfvDQThx/d2.png",
+        "sha256": "d968829e6cc76aa10cb7a3eba63236ede96e8feccd0d692e1ef7f8138aaff0f4",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/c4c936db-92be-4cef-835d-0499f64c0e17.png",
+        "duration_seconds": 2.0
+      },
+      "d4": {
+        "path": "images/StrfvDQThx/d4.png",
+        "sha256": "a093e60cea6e45d041528ba85c50bef668304e3d4e36f9f2c2ce5f2cf85a3e17",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/f7d7ba6c-e4ac-431e-9772-44c8fa309dc7.png",
+        "duration_seconds": 4.0
+      }
+    }
+  },
+  {
+    "event_id": "O6svOnsFq3",
+    "label": "Scattered_Light",
+    "role": "query",
+    "ifo": "H1",
+    "event_time": 1244939795.6875,
+    "windows": {
+      "d05": {
+        "path": "images/O6svOnsFq3/d05.png",
+        "sha256": "da868eb2bfd9118440d204d9a561925c41ef2a99ff94b81d5eb3ccd223b3c732",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/b6d761b7-aa91-47f5-b0f6-73314b97640e.png",
+        "duration_seconds": 0.5
+      },
+      "d1": {
+        "path": "images/O6svOnsFq3/d1.png",
+        "sha256": "4e131ab469dbb519cfb751b12b4cf7fb75ebf6672692740728da12534482eeb5",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/b0e450a4-8bc4-44e4-bc93-f9d3d5d83375.png",
+        "duration_seconds": 1.0
+      },
+      "d2": {
+        "path": "images/O6svOnsFq3/d2.png",
+        "sha256": "01c2fc2fe4b336697ace2e726d5001f57e547407149ed2566348893855a2cb50",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/7a8239d1-5400-4450-a36d-be42e8c90d52.png",
+        "duration_seconds": 2.0
+      },
+      "d4": {
+        "path": "images/O6svOnsFq3/d4.png",
+        "sha256": "21dddb846698aac4e8538fafdf6fb34ddbed4f4c78db4bd55e2f921a91811fb8",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/086c515d-8fb6-4fe3-b2e9-a6bc011c1317.png",
+        "duration_seconds": 4.0
+      }
+    }
+  },
+  {
+    "event_id": "m0Uvlpj7ij",
+    "label": "Scattered_Light",
+    "role": "query",
+    "ifo": "H1",
+    "event_time": 1133691069.375,
+    "windows": {
+      "d05": {
+        "path": "images/m0Uvlpj7ij/d05.png",
+        "sha256": "c1877ef9ba8ee5fe96ef09e5a1b0e05ce02a67ebbe2c6b5a2083f2312241e99a",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/5bb68170-ccee-4972-b96d-46ac6a5ba701.png",
+        "duration_seconds": 0.5
+      },
+      "d1": {
+        "path": "images/m0Uvlpj7ij/d1.png",
+        "sha256": "b9233980efdffd3d1756f47bd3a07ca2d21039210b95f4d0c352165006b986d5",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/67e05784-f73c-4c02-b1fe-181100739261.png",
+        "duration_seconds": 1.0
+      },
+      "d2": {
+        "path": "images/m0Uvlpj7ij/d2.png",
+        "sha256": "7f4ac542a45ecd8f820257da2a3dee70d87f71721f983450b548f5b88d0fdad9",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/785106aa-b2ba-49fb-ab6f-bf77b8bf5607.png",
+        "duration_seconds": 2.0
+      },
+      "d4": {
+        "path": "images/m0Uvlpj7ij/d4.png",
+        "sha256": "bda7ba3ea9735b1ffd3cfd0b26aa6c62993597646614cc4fd99af2a4c7fb78dc",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/57cabfd3-338c-4eb4-a30a-25a6d37e16f3.png",
+        "duration_seconds": 4.0
+      }
+    }
+  },
+  {
+    "event_id": "5uhozg1AUR",
+    "label": "Blip",
+    "role": "query",
+    "ifo": "H1",
+    "event_time": 1246349168.69434,
+    "windows": {
+      "d05": {
+        "path": "images/5uhozg1AUR/d05.png",
+        "sha256": "4e1f5110fd592b995d645cdd78d413cdaf2952f037fff765259d2f00a005fdca",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/99eefc39-679c-41e2-b00c-dde8543e2b2e.png",
+        "duration_seconds": 0.5
+      },
+      "d1": {
+        "path": "images/5uhozg1AUR/d1.png",
+        "sha256": "c0abc3ebed079a513fe24798d08ecbfc3eb2b9618920f5ebb421a09f07aea154",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/0248e5b3-8410-44c1-bdc3-5030833078c4.png",
+        "duration_seconds": 1.0
+      },
+      "d2": {
+        "path": "images/5uhozg1AUR/d2.png",
+        "sha256": "6251fa101cce46d90e5cc2c487d3bb714d88c9325957045ad8ab7204fac46232",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/45d7990e-eb0e-4b81-9e55-325546a5ea60.png",
+        "duration_seconds": 2.0
+      },
+      "d4": {
+        "path": "images/5uhozg1AUR/d4.png",
+        "sha256": "6209ed03e8c7d3e7048c1bdc8443c87c2404360a929c51a648ff0cef97719889",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/8101b25c-f386-4d02-a6eb-50e2d270942b.png",
+        "duration_seconds": 4.0
+      }
+    }
+  },
+  {
+    "event_id": "3XMLnRFr4O",
+    "label": "Blip",
+    "role": "query",
+    "ifo": "L1",
+    "event_time": 1241330742.83789,
+    "windows": {
+      "d05": {
+        "path": "images/3XMLnRFr4O/d05.png",
+        "sha256": "f416dfdb1aa09c0b643b9db8b18e6fb3f2bc3c450b727e2b90ba19200a20f497",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/cbdcb657-d1e6-4858-8658-1e0e4f0e151f.png",
+        "duration_seconds": 0.5
+      },
+      "d1": {
+        "path": "images/3XMLnRFr4O/d1.png",
+        "sha256": "1fc8426b269491e99632494bfb04328f678d832320763b3f627879b014d6fdc2",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/ac8cd782-939a-4917-80f1-2619f1468749.png",
+        "duration_seconds": 1.0
+      },
+      "d2": {
+        "path": "images/3XMLnRFr4O/d2.png",
+        "sha256": "4a8f879d9f6268116d7800208358a380463711c27d737bc80bfebef3743dffee",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/733de765-ab70-49ce-a4a9-b4e5fd96de20.png",
+        "duration_seconds": 2.0
+      },
+      "d4": {
+        "path": "images/3XMLnRFr4O/d4.png",
+        "sha256": "e8659f34d2ff45e5910c6e3ffcd10c67c625cf61813222b8c8617cb50bec85eb",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/fb2c6d26-f326-4905-b1ee-ba6892e68ec6.png",
+        "duration_seconds": 4.0
+      }
+    }
+  },
+  {
+    "event_id": "632xGf8n9x",
+    "label": "Low_Frequency_Burst",
+    "role": "support",
+    "ifo": "L1",
+    "event_time": 1136609309.48438,
+    "windows": {
+      "d05": {
+        "path": "images/632xGf8n9x/d05.png",
+        "sha256": "870169a531d4816753d582cde8d85585c4fcf857078f09595f33ccabfca91731",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/7284e879-a2a1-4ef3-b71b-44f52c1101e5.png",
+        "duration_seconds": 0.5
+      },
+      "d1": {
+        "path": "images/632xGf8n9x/d1.png",
+        "sha256": "173b08b0c6281981c575604c99fc3d9d559a85ad8ba8c6739f722a2ed0cf7fbd",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/f720d098-ad3d-41d8-a5e6-0403aa5ce9bb.png",
+        "duration_seconds": 1.0
+      },
+      "d2": {
+        "path": "images/632xGf8n9x/d2.png",
+        "sha256": "6dd7d7860312c0f81591942246ec855fcec595e272ac3d75958480f2d5134950",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/30a13a5d-ac40-4758-adb6-59e73413fe35.png",
+        "duration_seconds": 2.0
+      },
+      "d4": {
+        "path": "images/632xGf8n9x/d4.png",
+        "sha256": "ec71b08ff03f504dae18db6c7b48bd30964eabf4addfff949d99cad1c9822095",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/92b9a3fb-ddb9-4436-b00c-c59eb1117406.png",
+        "duration_seconds": 4.0
+      }
+    }
+  },
+  {
+    "event_id": "Vengh4mj2t",
+    "label": "Low_Frequency_Lines",
+    "role": "support",
+    "ifo": "L1",
+    "event_time": 1246884351.125,
+    "windows": {
+      "d05": {
+        "path": "images/Vengh4mj2t/d05.png",
+        "sha256": "e26475351eb90c9b480032d67ba5672beadfd7ab7a65983e861a43818c6473fa",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/7e3f4050-7f0b-4d31-9e31-15e6af2679b3.png",
+        "duration_seconds": 0.5
+      },
+      "d1": {
+        "path": "images/Vengh4mj2t/d1.png",
+        "sha256": "1a0e11f22b76f49caf392fc5e1d7ad3712c42af510e6a2cf1a88248e4ae4792d",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/17403c33-386e-4d97-8d6a-fb241eda9cfb.png",
+        "duration_seconds": 1.0
+      },
+      "d2": {
+        "path": "images/Vengh4mj2t/d2.png",
+        "sha256": "af1b952e157eec999cc501556a3d9127521cdea8fe927189dbc39ab988262b98",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/3bdf65a2-e6f1-4d3c-9cfd-25d5c8a3811e.png",
+        "duration_seconds": 2.0
+      },
+      "d4": {
+        "path": "images/Vengh4mj2t/d4.png",
+        "sha256": "8323d249602189a3e4ba815dad4e64a95abc88fc70ef8c25929dff6ee3360866",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/0fa332f3-a59a-456c-95f0-037a895032c9.png",
+        "duration_seconds": 4.0
+      }
+    }
+  },
+  {
+    "event_id": "dac0D6ni5R",
+    "label": "Scattered_Light",
+    "role": "support",
+    "ifo": "H1",
+    "event_time": 1133278475.3125,
+    "windows": {
+      "d05": {
+        "path": "images/dac0D6ni5R/d05.png",
+        "sha256": "2a88d26750778f2347219faada95e1cb99fc63612257955deea1f160462a4fcb",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/437c8671-ad20-4872-98f6-1c39b174bdfd.png",
+        "duration_seconds": 0.5
+      },
+      "d1": {
+        "path": "images/dac0D6ni5R/d1.png",
+        "sha256": "4828be21d10b6233e58297bd4697177016020775dd1082b228bf612d7344eb15",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/f4c64b04-c6ae-4d15-a55a-e0ad4aa6bc20.png",
+        "duration_seconds": 1.0
+      },
+      "d2": {
+        "path": "images/dac0D6ni5R/d2.png",
+        "sha256": "3c8e0c3668266599a95b87d7cd408b9cd6b4da8ce247b5b2d1e161cd570ce48c",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/260b1034-3855-4738-9a3c-7210449dfdbd.png",
+        "duration_seconds": 2.0
+      },
+      "d4": {
+        "path": "images/dac0D6ni5R/d4.png",
+        "sha256": "ba11eaf6df9afb1c6fb3fec7ba905a09919666faf8d2d64c95c7d61c65cc2438",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/9f9ad6c1-5996-4a27-9be1-9a1563f524fb.png",
+        "duration_seconds": 4.0
+      }
+    }
+  },
+  {
+    "event_id": "yxumvoPABn",
+    "label": "Blip",
+    "role": "support",
+    "ifo": "H1",
+    "event_time": 1132715748.59228,
+    "windows": {
+      "d05": {
+        "path": "images/yxumvoPABn/d05.png",
+        "sha256": "5bc615e63f6da2a2c7189a956c1c51006c02042f98e2255c81f2e0fd2f1c4b17",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/a5fdb8f9-1c77-4f2f-b3d4-7ff1af7aadf1.png",
+        "duration_seconds": 0.5
+      },
+      "d1": {
+        "path": "images/yxumvoPABn/d1.png",
+        "sha256": "0b52a4865280d43ce08fb369d30f6e6ac804a6d033484836517f0700c25578e5",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/bb2fc5af-e642-49a0-8125-5366fd92e1fe.png",
+        "duration_seconds": 1.0
+      },
+      "d2": {
+        "path": "images/yxumvoPABn/d2.png",
+        "sha256": "a94476cc78641a14245502b98ab79f7859af74e4e1e5a8697eacfd8002c9414f",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/e4cf913e-81a4-4cb3-814b-ec5cd9e9e642.png",
+        "duration_seconds": 2.0
+      },
+      "d4": {
+        "path": "images/yxumvoPABn/d4.png",
+        "sha256": "10c92b1d3c6ad682f0a6f1ff3b133c8a7bcd1dd3dd0a90aa008f09a9031f8ec9",
+        "source_url": "https://panoptes-uploads.zooniverse.org/production/subject_location/e753741b-f34a-4c2a-9de2-63d9e90cb263.png",
+        "duration_seconds": 4.0
+      }
+    }
+  }
+]

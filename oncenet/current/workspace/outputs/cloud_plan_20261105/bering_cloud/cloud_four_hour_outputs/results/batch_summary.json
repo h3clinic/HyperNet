@@ -1,0 +1,21 @@
+{
+  "version": "CPUcanonical_mathattention_Wv3_migration_v3",
+  "completed_files": 607,
+  "requested_files": 1353,
+  "unprocessed_files": 746,
+  "audio_hours": 949.21875,
+  "download_bytes": 268806752314,
+  "execution": {
+    "returncode": 2,
+    "wall_seconds": 14412.906541358,
+    "watchdog_stopped": false
+  },
+  "ranked_sha256": "9d99d3d74ba9a2dbd5aee8049d005004be850ed2c76973a8968211095200810f",
+  "ranked_windows": 900,
+  "rank_list_inspected": false,
+  "candidate_only": true,
+  "confirmed_discoveries": 0,
+  "no_accuracy_or_false_alarm_claim": true,
+  "reference_and_calibration_caveats": "One support per target; HyperNet-W uses real unlabeled pretraining and earlier labeled selection. Sei uncertain, NARW not North Pacific. No calibrated Bering alarm threshold.",
+  "timestamp_caveat": "start_s retains original column-offset convention; absolute recording timing requires expert/source review."
+}

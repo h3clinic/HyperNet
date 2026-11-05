@@ -1,0 +1,71 @@
+{
+  "frozen_epoch": 1793826849.0235813,
+  "intent_sha256": "a0eb22484c897420eb94b0a5f0b82def9f7016953043e1a810fff319e962fd4d",
+  "original_protocol_sha256": "550103b3d64411be6ba7d8c70bc14337c5456e3f93812ae09f3e3222f986df0a",
+  "files": {
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\diversity\\train.py": "60240b7c03d9fb89de502785824ba635c14a205611e6c91c588cae1734876b3c",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\diversity\\checks.py": "f8251563037d56c69eb72dc04c9b39ec33671e56fdf7c5d9ed08ac69ce43691d",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\diversity\\intent.json": "a0eb22484c897420eb94b0a5f0b82def9f7016953043e1a810fff319e962fd4d",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\diversity\\intent_superseded.json": "819ff606beeac4ad650079f8ece8d1017bc82d3bbcf0834e87a7ab347ac7e5db",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\protocol.json": "550103b3d64411be6ba7d8c70bc14337c5456e3f93812ae09f3e3222f986df0a",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\namespace_audit.py": "5371b579fcd93d04df46608606ef8b4843154e116531980e1482ed3dfec70d79",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\namespace_audit.json": "894dd95b94df05e870fd43eb4d928e38b9ef5b13740f2fbb55d91faaf568321f"
+  },
+  "checks_sha256": "50019112dd7dbf1f4d244b19d373b63ac41065e369d2c132800120de37f3c2dc",
+  "seeds": [
+    45011,
+    45029,
+    45047
+  ],
+  "steps": 800,
+  "batch": 4,
+  "arm": "global_diversity",
+  "parameters": 42480,
+  "readouts": [
+    "base",
+    "spatial"
+  ],
+  "primary_readout": "base",
+  "formula": {
+    "declared_epoch": 1793826729.393179,
+    "experiment": "Exploratory global-diversity rescue motivated only by training diagnostics",
+    "seeds": [
+      45011,
+      45029,
+      45047
+    ],
+    "steps": 800,
+    "batch": 4,
+    "parameters": 42480,
+    "initialization": "Same frozen random checkpoint for each original seed; never warm-start from trained arms",
+    "paired_data": "Same original corrected-generator3200identities and order per seed",
+    "loss": "Original improved loss unchanged + symmetric global instance InfoNCE + global descriptor variance floor",
+    "global_infonce": "Temperature0.1; each of4referenceanchors has8logits: ownpositive first, own4editedqueries next, other3identitypositives last; crossentropy label0; coefficient1; no symmetric reverse term.",
+    "global_variance": "Four identitycentroids c_i=normalize(z_reference_i+z_positive_i); g_i=sqrt(4032)*c_i; std=sqrt(var_across4identitycentroids(unbiased=False)+1e-4); penaltymean(relu(0.5-std)); coefficient1",
+    "coefficients": {
+      "global_infonce": 1,
+      "global_variance": 1
+    },
+    "optimizer": "OriginalAdamW3e-4,weight_decay1e-4,gradientclip1; all42480parameters",
+    "readouts": [
+      "base",
+      "spatial"
+    ],
+    "primary_readout": "base",
+    "test": "Infer only3newcheckpoints once on existing256heldoutsyntheticidentities; reuse original9savedmargins without reruns; existingUSEDrealDEVonly, no new realholdout",
+    "motivation": "Training losses approach0.12 withpositive/hardnegativecosinesboth~1; local featurevariance can coexist withnearlyconstantglobaldescriptors. No synthetic orrealDEVoutcomes used todeclare thisaddendum.",
+    "limitations": [
+      "Softvariance andInfoNCE can resistapproachingcollapse but exactconstantnormalizeddescriptors remainastationarypoint.",
+      "Variance is measured between four identity centroids after averaging the reference and positive; shared augmentation effects can remain and there is no guarantee that variance is semantic.",
+      "Establishedcontrastive/variance ideas; no noveltheorem ortransferguarantee.",
+      "Three800-step seeds areabounded exploration,not historicaltraining replication."
+    ],
+    "original_protocol_sha256": "550103b3d64411be6ba7d8c70bc14337c5456e3f93812ae09f3e3222f986df0a",
+    "original_synthetic_started_at_declaration": false,
+    "real_development_results_at_declaration": false,
+    "intent_revision": 2,
+    "prior_intent_sha256": "819ff606beeac4ad650079f8ece8d1017bc82d3bbcf0834e87a7ab347ac7e5db",
+    "revision_reason": "Parent corrected formula before any original synthetic or real development outcome; this revision is final."
+  },
+  "original_experiment_unchanged": true
+}

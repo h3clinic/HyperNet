@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "reviewer": "Independent network_figures agent; read-only preflight",
+  "reviewed_utc": "2026-11-05T19:36:44.159808+00:00",
+  "code_sha256": "f64601530a2c402035a1a782f34e4dc234d46abae7681e80355bba2354a7d5ad",
+  "protocol_sha256": "fe8c2f0555fc5bb74accd6b3cd01d6453f56bad4d799bba26b57a10a0d118f2f",
+  "audit_script_sha256": "d699ac22f9956a8a5c99a6bf9d979714b29889d4af0088b35e89c6a539652853",
+  "source_hashes_verified": 62,
+  "acquisition_or_neural_inference_run": false,
+  "reserved_images_opened": false,
+  "checks": {
+    "frozen_checkpoint_and_state_hashes_match_prior_registry_and_bindings": true,
+    "imported_model_preprocess_dino_weights_config_and_fixture_arrays_bound": true,
+    "exact_195_intent_ids_and_official_four_distinct_duration_urls": true,
+    "fixture_is_12_already_consumed_events_no_reserve_overlap": true,
+    "random_and_oncenet_joint4_base_descriptor_16128_effective_dimension4032": true,
+    "dino_official_normalization_CLS_plus_patchmean_dual_view_1536": true,
+    "dino_per_duration_ELDA_and_saved_median_MAD_scaling_then_mean": true,
+    "same_one_reference_target_and_fixed_FIT_CAL_ids_verified_in_freeze": true,
+    "negative_CAL_thresholds_saved_before_reserve_acquisition_and_no_refit": true,
+    "strict_rank_ties_and_zero_budget_no_alarm_logic": true,
+    "independent_approval_bound_to_exact_code_and_protocol": true,
+    "source_layout_and_legend_failures_shared_across_models_no_replacement": true,
+    "CPU_only_no_neural_training_or_model_selection": true,
+    "parity_requires_zero_primary_alarm_flips_before_reserve_scoring": true,
+    "scores_committed_before_heldout_label_join": true,
+    "BA_MCC_recall_confusion_counts_and_per_target_FA_definitions_reviewed": true,
+    "paired_hour_detector_cluster_bootstrap_and_undefined_draw_reporting": true,
+    "binomial_tail_bounds_and_small_negative_sample_caveat": true
+  },
+  "history_pixel_audit": {
+    "historical_record_files": 10,
+    "unique_event_ids": 13034,
+    "event_ids_with_available_direct_native_or_crop_hash": 13034,
+    "event_ids_without_available_direct_hash": 0,
+    "unique_native_pixel_hashes": 51366,
+    "unique_native_crop_hashes": 33000,
+    "all_8250_current_consumed_events_have_all_four_duration_native_and_crop_hashes": true
+  },
+  "resolved_during_review": [
+    "Approval now binds code and protocol hash rather than a stale passed flag.",
+    "Distinct official URLs enforced for all four durations.",
+    "Fixture arrays and imported scientific assets added to hash bindings.",
+    "Frozen numerical thresholds saved before reserve image access.",
+    "Consumed-fixture primary alarm flips now halt rather than silently pass feature tolerance.",
+    "Historical exact-pixel coverage limits disclosed; absent bootstrap intervals represented as null."
+  ],
+  "limitations": [
+    "This is a preflight code/artifact audit, not evidence that future runtime parity or model performance will pass.",
+    "Twelve consumed fixtures cannot prove universal CPU/GPU equality; comparator max feature drift bound remains0.02 with zero primary alarm changes required.",
+    "Historical pixel hashes are incomplete outside the current8250-event pool; exact hashes do not exclude perceptual duplicates.",
+    "Reserved metadata labels were already visible, though new scores are committed before the final label join.",
+    "The195 planned events cannot tightly validate a0.001 false-positive rate; report negative counts, intervals and incomplete cases.",
+    "Macroscopic per-target false-alarm averages are distinct from any-target false alarms on background images."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "stage": "completed",
+  "step": 800,
+  "total": 800,
+  "seed": 45047,
+  "protocol_sha256": "a8bc9bd07820e5086718d1243d6efde20d81b19608c514c72f56aa3f2f197815",
+  "checkpoint_sha256": "9c377603016575d5a8b5586ce95b6927aa58b3ac5f6972084e9544f40ef1979c",
+  "random_initialization_sha256": "09559f87e56e573a17b6a28d44a90a454f64df7528194765f9c10ce4705929f3",
+  "elapsed_seconds": 269.20029735565186,
+  "no_checkpoint_selection": true
+}

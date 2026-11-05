@@ -1,0 +1,103 @@
+{
+  "status": "passed",
+  "passed": true,
+  "version": "CPUcanonical_mathattention_Wv3_migration_v3",
+  "policy": {
+    "input_atol": 2e-05,
+    "input_rtol": 1e-05,
+    "rank_channel_exact": true,
+    "feature_atol": 0.0001,
+    "feature_rtol": 0.0001,
+    "score_atol": 1e-05,
+    "score_rtol": 0.0001
+  },
+  "rows": [
+    {
+      "key": "input__standardized",
+      "max_abs_error": 0.0,
+      "bitwise_equal": true,
+      "passed": true
+    },
+    {
+      "key": "input__rank",
+      "max_abs_error": 0.0,
+      "bitwise_equal": true,
+      "passed": true
+    },
+    {
+      "key": "feature__v3",
+      "max_abs_error": 3.4570693969726562e-06,
+      "bitwise_equal": false,
+      "passed": true
+    },
+    {
+      "key": "feature__pixels",
+      "max_abs_error": 0.0,
+      "bitwise_equal": true,
+      "passed": true
+    },
+    {
+      "key": "score__sei__v3",
+      "max_abs_error": 2.980232238769531e-07,
+      "bitwise_equal": false,
+      "passed": true
+    },
+    {
+      "key": "score__sei__pixels",
+      "max_abs_error": 5.960464477539063e-08,
+      "bitwise_equal": false,
+      "passed": true
+    },
+    {
+      "key": "score__sei__xcorr",
+      "max_abs_error": 4.76837158203125e-07,
+      "bitwise_equal": false,
+      "passed": true
+    },
+    {
+      "key": "score__narw__v3",
+      "max_abs_error": 2.384185791015625e-07,
+      "bitwise_equal": false,
+      "passed": true
+    },
+    {
+      "key": "score__narw__pixels",
+      "max_abs_error": 1.1920928955078125e-07,
+      "bitwise_equal": false,
+      "passed": true
+    },
+    {
+      "key": "score__narw__xcorr",
+      "max_abs_error": 2.7418136596679688e-06,
+      "bitwise_equal": false,
+      "passed": true
+    },
+    {
+      "key": "score__bloop__v3",
+      "max_abs_error": 4.172325134277344e-07,
+      "bitwise_equal": false,
+      "passed": true
+    },
+    {
+      "key": "score__bloop__pixels",
+      "max_abs_error": 2.384185791015625e-07,
+      "bitwise_equal": false,
+      "passed": true
+    },
+    {
+      "key": "score__bloop__xcorr",
+      "max_abs_error": 1.1920928955078125e-06,
+      "bitwise_equal": false,
+      "passed": true
+    }
+  ],
+  "seconds": 4.412435722000055,
+  "overlay_manifest_sha256": "a11c8b764ed73ca5ed01fa84f784044e03610c09509eb015499cddbabe59e5cc",
+  "overlay_asset_hashes_sha256": "4aeb8acb91a7ff95e777fa73fa1b9d9eda5e36c34f91c537d9a84007d95d6793",
+  "original_cpu_fixture_sha256": "dd956e981e1fbb5e86db130a92e6baf763b37d76687b98ffff03f06fae47bb91",
+  "direct_v3_runtime_test": true,
+  "compared_to": "original CPU fixture, not historical GPU scores",
+  "fixtures": 6,
+  "archive_scan_started": false,
+  "no_training_or_accuracy_claim": true
+}

@@ -1,0 +1,79 @@
+{
+  "analysis": "post_hoc_development_only",
+  "created_utc": "2026-11-05T19:27:39.892357+00:00",
+  "models": [
+    "OnceNet_strict_fp32_joint4_s45029",
+    "DINOv2_small_late_mean4"
+  ],
+  "targets": [
+    "Low_Frequency_Burst",
+    "Low_Frequency_Lines",
+    "Scattered_Light",
+    "Blip"
+  ],
+  "fpr_budgets": [
+    0.001,
+    0.01
+  ],
+  "bootstraps": 2000,
+  "rng_seed": 20261105,
+  "metrics": [
+    "auroc",
+    "recall_interpolated_fpr_0.001",
+    "recall_empirical_fpr_at_most_0.001",
+    "pauc_standardized_0.001",
+    "recall_interpolated_fpr_0.01",
+    "recall_empirical_fpr_at_most_0.01",
+    "pauc_standardized_0.01"
+  ],
+  "source_files": {
+    "records": {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\data\\records.json",
+      "sha256": "d7ec862ccd35be98041320caca00a6930d5a4efcb2201a5ea102b1a8b5ae6400"
+    },
+    "splits": {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v47\\splits.json",
+      "sha256": "8e759ab659d4ed114b0f9ae03aa3c5569d24459ee31d18280d8628ec8e6161d2"
+    },
+    "old_protocol": {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v47\\protocol.json",
+      "sha256": "f07bef0f3bf62ca5dac0af4c83449aa90fb0b0840fce99bfd44cc46b2ea40967"
+    },
+    "old_results": {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v47\\evaluation\\results.json",
+      "sha256": "012b75ade92e1beb61dbbff86445d81be2a8c9d130e94565b8efc51f3ee0de4d"
+    },
+    "once_scores": {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\cloud_plan_20261105\\gs_fp32\\scores_decisions.npz",
+      "sha256": "0428769b21b5f46620931be2a91780e8a250e80f063720cfa381bccc77f10337"
+    },
+    "once_binding": {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\cloud_plan_20261105\\gs_fp32\\pre_dev_binding.json",
+      "sha256": "45e8296efd86cbbbc48e263294cfc915e181a5b88adeef8a21f18ea12a648ede"
+    },
+    "once_manifest": {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\cloud_plan_20261105\\gs_fp32\\migration_manifest.json",
+      "sha256": "5719b840f5b909dd99bfc1a46499af047a2e19a4ad96f8ed2be7c3a9ce94c0d2"
+    },
+    "once_existing_metrics": {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\cloud_plan_20261105\\gs_fp32\\development_audit.json",
+      "sha256": "1b8ba446b499aa92151144321834e0a7e95e46c03903405f800c7e624c7614da"
+    },
+    "dino_scores": {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v47\\evaluation\\dino_small\\fused.npz",
+      "sha256": "af15d38696113f15671023c1f29dabf72684a3e4d865f7b94c5c14f9d9599a80"
+    },
+    "locked_comparison": {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_locked\\comparison.json",
+      "sha256": "b565cfce7b53e27e26cec54bd54db214348abb78f15196e3e163d4195eeff059"
+    },
+    "script": {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_confirmation_20261105\\matched_operating_point_development.py",
+      "sha256": "086919ba6a19cf4b8827cf39b1c2c29004a73914840453e8c33f901cd4949d18"
+    }
+  },
+  "reserved_data_reads": false,
+  "new_inference": false,
+  "deployment_threshold_updates": false,
+  "prespecified_for_this_descriptive_run_not_preregistered_confirmation": true
+}

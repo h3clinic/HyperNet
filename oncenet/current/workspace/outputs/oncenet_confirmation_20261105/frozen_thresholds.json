@@ -1,0 +1,128 @@
+{
+  "oncenet": {
+    "Low_Frequency_Burst": {
+      "0.001": {
+        "threshold": 504.77882184848454,
+        "calibration_count": 4049
+      },
+      "0.01": {
+        "threshold": 249.0257217218329,
+        "calibration_count": 4049
+      }
+    },
+    "Low_Frequency_Lines": {
+      "0.001": {
+        "threshold": 372.25475910330135,
+        "calibration_count": 4073
+      },
+      "0.01": {
+        "threshold": 229.89214817070172,
+        "calibration_count": 4073
+      }
+    },
+    "Scattered_Light": {
+      "0.001": {
+        "threshold": 432.0392751429464,
+        "calibration_count": 4057
+      },
+      "0.01": {
+        "threshold": 235.85340211544926,
+        "calibration_count": 4057
+      }
+    },
+    "Blip": {
+      "0.001": {
+        "threshold": 232.99060312208704,
+        "calibration_count": 4082
+      },
+      "0.01": {
+        "threshold": 139.55271196962443,
+        "calibration_count": 4082
+      }
+    }
+  },
+  "random": {
+    "Low_Frequency_Burst": {
+      "0.001": {
+        "threshold": 155.19663783655145,
+        "calibration_count": 4049
+      },
+      "0.01": {
+        "threshold": 84.58053280045834,
+        "calibration_count": 4049
+      }
+    },
+    "Low_Frequency_Lines": {
+      "0.001": {
+        "threshold": 547.1667563338383,
+        "calibration_count": 4073
+      },
+      "0.01": {
+        "threshold": 241.88555741630807,
+        "calibration_count": 4073
+      }
+    },
+    "Scattered_Light": {
+      "0.001": {
+        "threshold": 976.7460549739518,
+        "calibration_count": 4057
+      },
+      "0.01": {
+        "threshold": 251.47763165771505,
+        "calibration_count": 4057
+      }
+    },
+    "Blip": {
+      "0.001": {
+        "threshold": 108.4634048374617,
+        "calibration_count": 4082
+      },
+      "0.01": {
+        "threshold": 43.40668662260505,
+        "calibration_count": 4082
+      }
+    }
+  },
+  "dino": {
+    "Low_Frequency_Burst": {
+      "0.001": {
+        "threshold": 4.406687303946311,
+        "calibration_count": 4049
+      },
+      "0.01": {
+        "threshold": 2.9869750849629333,
+        "calibration_count": 4049
+      }
+    },
+    "Low_Frequency_Lines": {
+      "0.001": {
+        "threshold": 8.928054079914116,
+        "calibration_count": 4073
+      },
+      "0.01": {
+        "threshold": 5.195722506660634,
+        "calibration_count": 4073
+      }
+    },
+    "Scattered_Light": {
+      "0.001": {
+        "threshold": 5.574153123471147,
+        "calibration_count": 4057
+      },
+      "0.01": {
+        "threshold": 3.1966955150517284,
+        "calibration_count": 4057
+      }
+    },
+    "Blip": {
+      "0.001": {
+        "threshold": 4.6768455657366,
+        "calibration_count": 4082
+      },
+      "0.01": {
+        "threshold": 2.657773274270211,
+        "calibration_count": 4082
+      }
+    }
+  }
+}

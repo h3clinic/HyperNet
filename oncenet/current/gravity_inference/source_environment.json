@@ -1,0 +1,7 @@
+{
+  "torch": "2.14.1+cu130",
+  "numpy": "2.5.3",
+  "device": "cpu",
+  "threads": 2,
+  "strict_fp32": true
+}

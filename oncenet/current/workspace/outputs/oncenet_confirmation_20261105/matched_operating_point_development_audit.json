@@ -1,0 +1,136 @@
+{
+  "passed": true,
+  "analysis_sha256": "79dc39ee46950289bd83521d18cb3335e35a2fb33cc552ccc849e88b9c83a214",
+  "method": "Direct strict cutoff above next disallowed negative order statistic; direct positive-negative rank-pair AUROC. No sklearn, inference, fitting, policy export or reserved reads.",
+  "checks": [
+    {
+      "model": "OnceNet_strict_fp32_joint4_s45029",
+      "target": "Low_Frequency_Burst",
+      "fpr_budget": 0.001,
+      "tp": 65,
+      "fp": 1,
+      "matched": true
+    },
+    {
+      "model": "OnceNet_strict_fp32_joint4_s45029",
+      "target": "Low_Frequency_Burst",
+      "fpr_budget": 0.01,
+      "tp": 141,
+      "fp": 13,
+      "matched": true
+    },
+    {
+      "model": "OnceNet_strict_fp32_joint4_s45029",
+      "target": "Low_Frequency_Lines",
+      "fpr_budget": 0.001,
+      "tp": 78,
+      "fp": 1,
+      "matched": true
+    },
+    {
+      "model": "OnceNet_strict_fp32_joint4_s45029",
+      "target": "Low_Frequency_Lines",
+      "fpr_budget": 0.01,
+      "tp": 130,
+      "fp": 13,
+      "matched": true
+    },
+    {
+      "model": "OnceNet_strict_fp32_joint4_s45029",
+      "target": "Scattered_Light",
+      "fpr_budget": 0.001,
+      "tp": 44,
+      "fp": 1,
+      "matched": true
+    },
+    {
+      "model": "OnceNet_strict_fp32_joint4_s45029",
+      "target": "Scattered_Light",
+      "fpr_budget": 0.01,
+      "tp": 199,
+      "fp": 13,
+      "matched": true
+    },
+    {
+      "model": "OnceNet_strict_fp32_joint4_s45029",
+      "target": "Blip",
+      "fpr_budget": 0.001,
+      "tp": 10,
+      "fp": 1,
+      "matched": true
+    },
+    {
+      "model": "OnceNet_strict_fp32_joint4_s45029",
+      "target": "Blip",
+      "fpr_budget": 0.01,
+      "tp": 85,
+      "fp": 13,
+      "matched": true
+    },
+    {
+      "model": "DINOv2_small_late_mean4",
+      "target": "Low_Frequency_Burst",
+      "fpr_budget": 0.001,
+      "tp": 35,
+      "fp": 1,
+      "matched": true
+    },
+    {
+      "model": "DINOv2_small_late_mean4",
+      "target": "Low_Frequency_Burst",
+      "fpr_budget": 0.01,
+      "tp": 108,
+      "fp": 13,
+      "matched": true
+    },
+    {
+      "model": "DINOv2_small_late_mean4",
+      "target": "Low_Frequency_Lines",
+      "fpr_budget": 0.001,
+      "tp": 79,
+      "fp": 1,
+      "matched": true
+    },
+    {
+      "model": "DINOv2_small_late_mean4",
+      "target": "Low_Frequency_Lines",
+      "fpr_budget": 0.01,
+      "tp": 105,
+      "fp": 13,
+      "matched": true
+    },
+    {
+      "model": "DINOv2_small_late_mean4",
+      "target": "Scattered_Light",
+      "fpr_budget": 0.001,
+      "tp": 34,
+      "fp": 1,
+      "matched": true
+    },
+    {
+      "model": "DINOv2_small_late_mean4",
+      "target": "Scattered_Light",
+      "fpr_budget": 0.01,
+      "tp": 157,
+      "fp": 13,
+      "matched": true
+    },
+    {
+      "model": "DINOv2_small_late_mean4",
+      "target": "Blip",
+      "fpr_budget": 0.001,
+      "tp": 4,
+      "fp": 1,
+      "matched": true
+    },
+    {
+      "model": "DINOv2_small_late_mean4",
+      "target": "Blip",
+      "fpr_budget": 0.01,
+      "tp": 95,
+      "fp": 13,
+      "matched": true
+    }
+  ],
+  "paired_false_alarm_counts_equal_all_targets_and_budgets": true
+}

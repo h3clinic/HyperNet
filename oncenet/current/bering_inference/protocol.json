@@ -1,0 +1,37 @@
+{
+  "one_reference_per_target": true,
+  "targets": [
+    "sei",
+    "narw",
+    "bloop"
+  ],
+  "model": "HyperNet-W v3 selected.pt",
+  "parameters": 1566756,
+  "borrowed_weights": false,
+  "pretraining_data": "77000 REAL unlabeled audio windows",
+  "matcher": "phase block cosine; pixels same matcher; normalized boxed cross-correlation",
+  "precision": "float32, TF32 disabled, no autocast; numerical cross-device parity must be measured",
+  "four_hour_hard_parent_limit": true,
+  "pilot_max_files": 2,
+  "default_batch_size": 128,
+  "shared_encode": "sei and narw use identical K=1 query preprocessing, frozen encoder and layer; share only query tokens. Bloop K=8 separate.",
+  "output": "per-object float32 scores; no threshold fitting or alert-rate claim; source/asset/output hashes in commit metadata",
+  "sources": {
+    "whale\\code\\oneshot.py": "b5eb5659f9abcaddbf37ad25d876fff1d38f2bba29494d95522d3ebfaf86dbbb",
+    "whale\\code\\spectro.py": "31d7d1c36a9c65bcdbcccb98b2bc013b5e33ffd613332ff0a281b87ee646b9bd",
+    "whale\\whale_ssl_v3\\model.py": "0f246610cdf2f713cbcf12bff704c3db17cfac4b51000ba519363f9026b3befd",
+    "whale\\whale_ssl_v3\\selected.pt": "1923efa8b01b682c9fa512a6c4c7960093c96482b50b10bde7f99c3085a6c4a2",
+    "whale\\whale_ssl_v3\\protocol.json": "d2c2dd0427e0a17b4cc8e6973b620f6649f5c1695c44be7d08bbc5d9211bcd15",
+    "whale\\examples\\sei.npz": "e3a4474bb5d28e8ac57f19649b1a30ecebef1c90e58688a8184196fa13a5f308",
+    "whale\\examples\\narw.npz": "fe5b0f90d4cc47be58dc21a55d0d255e7360e5f1dcd46d0bb967fcc6c1270194",
+    "whale\\examples\\bloop.npz": "f65a92420e8d18b4557681b406172e8c4f665d85ce0b652ee8e67753c405505b"
+  },
+  "legacy_function_sources": {
+    "whale\\code\\eval_level0.py": "586e647d85520bda974981c56145528336d2965808dfce768d6f02ac8e81d840",
+    "whale\\code\\cache_bering.py": "f0ef7dbba06278e0fa829d827aa5f329bf392dcbec0dd8b08f198e7d1af3bd03",
+    "whale\\code\\scan_oneshot.py": "1e9bcda2bcaccfec12e6082837714fa3b00e6f948459dde7f2a50545715e8cbd"
+  },
+  "deployment_version": "CPUcanonical_mathattention_Wv3_migration_v3",
+  "numerical_migration": "Original CPU input conversion/standardization/ranks plus CUDA MHA fastpath disabled and math-only SDP; reproduced original CPU fixture without changing weights/references/readout or acceptance policy.",
+  "historical_gpu_parity_claim": false
+}

@@ -1,0 +1,1821 @@
+{
+  "schema": "oncenet-current-source-snapshot-v1",
+  "created_utc": "2026-11-05T23:43:49.238118+00:00",
+  "source_repository": "https://github.com/h3clinic/HyperNet",
+  "base_main_commit": "a456d8adc89ae73ebe41d751e802ef58baca0762",
+  "remote_whale_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+  "copied_files": [
+    {
+      "destination": "bering_inference/asset_hashes.json",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cloud_cpu_rank_v3/asset_hashes.json",
+      "sha256": "4aeb8acb91a7ff95e777fa73fa1b9d9eda5e36c34f91c537d9a84007d95d6793",
+      "bytes": 1800,
+      "purpose": "CPU-canonical Bering deployment; distinct from original training implementation"
+    },
+    {
+      "destination": "bering_inference/manifest.json",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cloud_cpu_rank_v3/manifest.json",
+      "sha256": "7e4ab9e15e759ece5457569ae13e79800355f6a1e281c166d08bdd720345f93f",
+      "bytes": 395527,
+      "purpose": "CPU-canonical Bering deployment; distinct from original training implementation"
+    },
+    {
+      "destination": "bering_inference/migration_manifest.json",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cloud_cpu_rank_v3/migration_manifest.json",
+      "sha256": "6d9c22498408c4d7058d7b8898c06cbcb4c1cd39e0a23c89318e29a5979037c6",
+      "bytes": 1800,
+      "purpose": "CPU-canonical Bering deployment; distinct from original training implementation"
+    },
+    {
+      "destination": "bering_inference/overlap_audit.json",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cloud_cpu_rank_v3/overlap_audit.json",
+      "sha256": "f229759a236fb6044ac3e5823133f736c3f1e6c4a9671308ca0fc15c0cc7965a",
+      "bytes": 3454,
+      "purpose": "CPU-canonical Bering deployment; distinct from original training implementation"
+    },
+    {
+      "destination": "bering_inference/parity_check.py",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cloud_cpu_rank_v3/parity_check.py",
+      "sha256": "fadc441b4059b5fdd06aa80458bac4ac8adeaf7462307c0010746b1deae95acf",
+      "bytes": 1771,
+      "purpose": "CPU-canonical Bering deployment; distinct from original training implementation"
+    },
+    {
+      "destination": "bering_inference/pilot_source_head.json",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cloud_cpu_rank_v3/pilot_source_head.json",
+      "sha256": "18086c1d0b28fe2ddf5613b9ede8306ee75393976cca43f1c285e00968285bbf",
+      "bytes": 507,
+      "purpose": "CPU-canonical Bering deployment; distinct from original training implementation"
+    },
+    {
+      "destination": "bering_inference/protocol.json",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cloud_cpu_rank_v3/protocol.json",
+      "sha256": "37a81709275d310566227cc2ed64d1253515d42a413a4217ce2812bf47acfb54",
+      "bytes": 2338,
+      "purpose": "CPU-canonical Bering deployment; distinct from original training implementation"
+    },
+    {
+      "destination": "bering_inference/requirements.txt",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cloud_cpu_rank_v3/requirements.txt",
+      "sha256": "c6a63683da605f58dcdeb0ce7e430f0f0e5828f9ce6efcd53aaa0bcca7a9fd76",
+      "bytes": 42,
+      "purpose": "CPU-canonical Bering deployment; distinct from original training implementation"
+    },
+    {
+      "destination": "bering_inference/scanner.py",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cloud_cpu_rank_v3/scanner.py",
+      "sha256": "5f5b4f8e0d9264fa0bb44a3acd6a901712917b7b5eb37e236a19c2d9d453246f",
+      "bytes": 20334,
+      "purpose": "CPU-canonical Bering deployment; distinct from original training implementation"
+    },
+    {
+      "destination": "bering_inference/whale/code/eval_level0.py",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cloud_cpu_rank_v3/whale/code/eval_level0.py",
+      "sha256": "1630724e11b8ab7dd0f172fd5062de6a7a95052c859d02acb6a5ad4ccca3335e",
+      "bytes": 2320,
+      "purpose": "CPU-canonical Bering deployment; distinct from original training implementation"
+    },
+    {
+      "destination": "bering_inference/whale/code/legacy_audio.py",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cloud_cpu_rank_v3/whale/code/legacy_audio.py",
+      "sha256": "edd12c2b32db452db66768f0503988e87216a1afec9d96a2f0b11cbb1e16d7a0",
+      "bytes": 1301,
+      "purpose": "CPU-canonical Bering deployment; distinct from original training implementation"
+    },
+    {
+      "destination": "bering_inference/whale/code/oneshot.py",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cloud_cpu_rank_v3/whale/code/oneshot.py",
+      "sha256": "b5eb5659f9abcaddbf37ad25d876fff1d38f2bba29494d95522d3ebfaf86dbbb",
+      "bytes": 3790,
+      "purpose": "CPU-canonical Bering deployment; distinct from original training implementation"
+    },
+    {
+      "destination": "bering_inference/whale/code/spectro.py",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cloud_cpu_rank_v3/whale/code/spectro.py",
+      "sha256": "31d7d1c36a9c65bcdbcccb98b2bc013b5e33ffd613332ff0a281b87ee646b9bd",
+      "bytes": 2555,
+      "purpose": "CPU-canonical Bering deployment; distinct from original training implementation"
+    },
+    {
+      "destination": "bering_inference/whale/examples/bloop.npz",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cloud_cpu_rank_v3/whale/examples/bloop.npz",
+      "sha256": "f65a92420e8d18b4557681b406172e8c4f665d85ce0b652ee8e67753c405505b",
+      "bytes": 23594,
+      "purpose": "CPU-canonical Bering deployment; distinct from original training implementation"
+    },
+    {
+      "destination": "bering_inference/whale/examples/narw.npz",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cloud_cpu_rank_v3/whale/examples/narw.npz",
+      "sha256": "fe5b0f90d4cc47be58dc21a55d0d255e7360e5f1dcd46d0bb967fcc6c1270194",
+      "bytes": 23718,
+      "purpose": "CPU-canonical Bering deployment; distinct from original training implementation"
+    },
+    {
+      "destination": "bering_inference/whale/examples/sei.npz",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cloud_cpu_rank_v3/whale/examples/sei.npz",
+      "sha256": "e3a4474bb5d28e8ac57f19649b1a30ecebef1c90e58688a8184196fa13a5f308",
+      "bytes": 23566,
+      "purpose": "CPU-canonical Bering deployment; distinct from original training implementation"
+    },
+    {
+      "destination": "bering_inference/whale/whale_ssl_v3/model.py",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cloud_cpu_rank_v3/whale/whale_ssl_v3/model.py",
+      "sha256": "43c24bc090a6dd03071e2ec3e5989099ed00b4e1c2326fc8244172a6d491c6a6",
+      "bytes": 3878,
+      "purpose": "CPU-canonical Bering deployment; distinct from original training implementation"
+    },
+    {
+      "destination": "bering_inference/whale/whale_ssl_v3/protocol.json",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cloud_cpu_rank_v3/whale/whale_ssl_v3/protocol.json",
+      "sha256": "d2c2dd0427e0a17b4cc8e6973b620f6649f5c1695c44be7d08bbc5d9211bcd15",
+      "bytes": 705,
+      "purpose": "CPU-canonical Bering deployment; distinct from original training implementation"
+    },
+    {
+      "destination": "bering_inference/whale/whale_ssl_v3/selected.pt",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cloud_cpu_rank_v3/whale/whale_ssl_v3/selected.pt",
+      "sha256": "1923efa8b01b682c9fa512a6c4c7960093c96482b50b10bde7f99c3085a6c4a2",
+      "bytes": 6290677,
+      "purpose": "CPU-canonical Bering deployment; distinct from original training implementation"
+    },
+    {
+      "destination": "gravity_inference/calibration.npz",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/kaggle_pilot/calibration.npz",
+      "sha256": "8540042a9f6266f0384a2f33f8746f7da2231d2845af35518317e1bfd933d4ab",
+      "bytes": 131216,
+      "purpose": "frozen strict FP32 inference bundle; raw fixture PNGs must be restored separately"
+    },
+    {
+      "destination": "gravity_inference/encoder.pt",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/kaggle_pilot/encoder.pt",
+      "sha256": "47f034f0d725cb4ee8c01b0706ecbddf751905f219ba1a9c1ab5109128d9bef1",
+      "bytes": 174917,
+      "purpose": "frozen strict FP32 inference bundle; raw fixture PNGs must be restored separately"
+    },
+    {
+      "destination": "gravity_inference/events.json",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/kaggle_pilot/events.json",
+      "sha256": "9bc85de19a6043022903f857357e9650697192caa06b13a90369943a3d1a072c",
+      "bytes": 17732,
+      "purpose": "frozen strict FP32 inference bundle; raw fixture PNGs must be restored separately"
+    },
+    {
+      "destination": "gravity_inference/expected.npz",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/kaggle_pilot/expected.npz",
+      "sha256": "1b8e38fac151b8410050289034f7e4c0bc36dce1834f82f473450e6f2418b3ff",
+      "bytes": 5632805,
+      "purpose": "frozen strict FP32 inference bundle; raw fixture PNGs must be restored separately"
+    },
+    {
+      "destination": "gravity_inference/fixture_plan.json",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/kaggle_pilot/fixture_plan.json",
+      "sha256": "b2471a39dbe480e3c341802ad57326eeb58563bda958f2cb4fbf0b97925e4ded",
+      "bytes": 1459,
+      "purpose": "frozen strict FP32 inference bundle; raw fixture PNGs must be restored separately"
+    },
+    {
+      "destination": "gravity_inference/manifest.json",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/kaggle_pilot/manifest.json",
+      "sha256": "fc2e08e8e34d219613231e27a40446f4ca26d63286a3ebab8602a2d8228987b9",
+      "bytes": 7154,
+      "purpose": "frozen strict FP32 inference bundle; raw fixture PNGs must be restored separately"
+    },
+    {
+      "destination": "gravity_inference/manifest.sha256",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/kaggle_pilot/manifest.sha256",
+      "sha256": "7ad64b6862c1edd35d49d96d3fb2cb58782881904317b6f0fced8bcc7d6cd3cb",
+      "bytes": 81,
+      "purpose": "frozen strict FP32 inference bundle; raw fixture PNGs must be restored separately"
+    },
+    {
+      "destination": "gravity_inference/matcher.npz",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/kaggle_pilot/matcher.npz",
+      "sha256": "108df03ee563c7b98c49f661edeed24a9f36aab8079ea4f254694c51d01ea384",
+      "bytes": 1039026,
+      "purpose": "frozen strict FP32 inference bundle; raw fixture PNGs must be restored separately"
+    },
+    {
+      "destination": "gravity_inference/model.py",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/kaggle_pilot/model.py",
+      "sha256": "aeb422e56e1a3f558f6e6e351a6a95bae03a912195924f5d6a34c4568b183d94",
+      "bytes": 2932,
+      "purpose": "frozen strict FP32 inference bundle; raw fixture PNGs must be restored separately"
+    },
+    {
+      "destination": "gravity_inference/preprocess.py",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/kaggle_pilot/preprocess.py",
+      "sha256": "0bec7aa1d77a3ff8a2e67b6181acfd551323fb6fb2028784a06eb6d9e21382df",
+      "bytes": 6260,
+      "purpose": "frozen strict FP32 inference bundle; raw fixture PNGs must be restored separately"
+    },
+    {
+      "destination": "gravity_inference/provenance.json",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/kaggle_pilot/provenance.json",
+      "sha256": "d48fa970660a9275c0c6bb6894d427aa88cba6c6467a4a7fd8f8221514ba4a5d",
+      "bytes": 1104,
+      "purpose": "frozen strict FP32 inference bundle; raw fixture PNGs must be restored separately"
+    },
+    {
+      "destination": "gravity_inference/run_pilot.py",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/kaggle_pilot/run_pilot.py",
+      "sha256": "8867a9b554878503478a801ad685d5571be284b77b6860b68e8f482945e94903",
+      "bytes": 12749,
+      "purpose": "frozen strict FP32 inference bundle; raw fixture PNGs must be restored separately"
+    },
+    {
+      "destination": "gravity_inference/source_environment.json",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/kaggle_pilot/source_environment.json",
+      "sha256": "27a114976ed1eeccdfed06ec28ab61819ccb23c2b53016dedd910146804f8247",
+      "bytes": 115,
+      "purpose": "frozen strict FP32 inference bundle; raw fixture PNGs must be restored separately"
+    },
+    {
+      "destination": "repro_tools/export_generator.py",
+      "source_workspace_relative": "outputs/oncenet_working_draft_20261105/repro_tools/export_generator.py",
+      "sha256": "f381e23cabc64d3ab4b604d7af14fa00bc9d241577e4d7b13169ed5d0f35ba8b",
+      "bytes": 3174,
+      "purpose": "existing portable launcher, copied without code changes"
+    },
+    {
+      "destination": "repro_tools/gravity_training_bindings.json",
+      "source_workspace_relative": "outputs/oncenet_working_draft_20261105/repro_tools/gravity_training_bindings.json",
+      "sha256": "387335d8567b5e75fed6339de8afb36ee589fee97b6fc8a204a983bf15fc1e79",
+      "bytes": 3827,
+      "purpose": "existing portable launcher, copied without code changes"
+    },
+    {
+      "destination": "repro_tools/predict_gravity.py",
+      "source_workspace_relative": "outputs/oncenet_working_draft_20261105/repro_tools/predict_gravity.py",
+      "sha256": "0e3b9cc96a27d14ae562ba3011b3b20922a4963a08f31dc4a98e57dbd60207c7",
+      "bytes": 6097,
+      "purpose": "existing portable launcher, copied without code changes"
+    },
+    {
+      "destination": "repro_tools/train_gravity.py",
+      "source_workspace_relative": "outputs/oncenet_working_draft_20261105/repro_tools/train_gravity.py",
+      "sha256": "2efa6526017162a95c8d6a70ca7e8728dd6480beac1a14c76f14b7255524c341",
+      "bytes": 8185,
+      "purpose": "existing portable launcher, copied without code changes"
+    },
+    {
+      "destination": "workspace/outputs/bering_candidate_review_20261105/cloud_new/integrity_and_candidate_audit.json",
+      "source_workspace_relative": "outputs/bering_candidate_review_20261105/cloud_new/integrity_and_candidate_audit.json",
+      "sha256": "e8900ba45d823c2d9b77a935a918d1130674af423d1bf29f4131f1c2279b2617",
+      "bytes": 18645,
+      "purpose": "acoustic validation and candidate provenance"
+    },
+    {
+      "destination": "workspace/outputs/bering_candidate_review_20261105/cloud_new/published_record_check.json",
+      "source_workspace_relative": "outputs/bering_candidate_review_20261105/cloud_new/published_record_check.json",
+      "sha256": "90711096b5fca7a32e858242aff1998991b6d8a926135734406f089918d157f7",
+      "bytes": 5149,
+      "purpose": "acoustic validation and candidate provenance"
+    },
+    {
+      "destination": "workspace/outputs/cloud_plan_20261105/bering_cloud/cloud_four_hour_outputs/results/batch_summary.json",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/cloud_four_hour_outputs/results/batch_summary.json",
+      "sha256": "49bdbc2c15b8025a8297a7bf1777ed37d994753e2edcef2f2feac467ce029ca3",
+      "bytes": 909,
+      "purpose": "acoustic validation and candidate provenance"
+    },
+    {
+      "destination": "workspace/outputs/cloud_plan_20261105/bering_cloud/cloud_four_hour_outputs/results/run_summary.json",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/cloud_four_hour_outputs/results/run_summary.json",
+      "sha256": "570ace3043a81fc923b9653df4b22a7adf5cb47d547b0c2f57fe857a1577c050",
+      "bytes": 89812,
+      "purpose": "acoustic validation and candidate provenance"
+    },
+    {
+      "destination": "workspace/outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cpu_rank_migration_v3/parity.json",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cpu_rank_migration_v3/parity.json",
+      "sha256": "e9c93c9f525c517b27281bcf50dd2ee90be23d243a2edc84b588dfa34da3bc35",
+      "bytes": 2659,
+      "purpose": "acoustic validation and candidate provenance"
+    },
+    {
+      "destination": "workspace/outputs/cloud_plan_20261105/gs_fp32/calibration.npz",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/calibration.npz",
+      "sha256": "8540042a9f6266f0384a2f33f8746f7da2231d2845af35518317e1bfd933d4ab",
+      "bytes": 131216,
+      "purpose": "strict FP32 deployed Gravity Spy pipeline"
+    },
+    {
+      "destination": "workspace/outputs/cloud_plan_20261105/gs_fp32/development_audit.json",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/development_audit.json",
+      "sha256": "1b8ba446b499aa92151144321834e0a7e95e46c03903405f800c7e624c7614da",
+      "bytes": 99469,
+      "purpose": "strict FP32 deployed Gravity Spy pipeline"
+    },
+    {
+      "destination": "workspace/outputs/cloud_plan_20261105/gs_fp32/encoder.pt",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/encoder.pt",
+      "sha256": "47f034f0d725cb4ee8c01b0706ecbddf751905f219ba1a9c1ab5109128d9bef1",
+      "bytes": 174917,
+      "purpose": "strict FP32 deployed Gravity Spy pipeline"
+    },
+    {
+      "destination": "workspace/outputs/cloud_plan_20261105/gs_fp32/matcher.npz",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/matcher.npz",
+      "sha256": "108df03ee563c7b98c49f661edeed24a9f36aab8079ea4f254694c51d01ea384",
+      "bytes": 1039026,
+      "purpose": "strict FP32 deployed Gravity Spy pipeline"
+    },
+    {
+      "destination": "workspace/outputs/cloud_plan_20261105/gs_fp32/migration_manifest.json",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/migration_manifest.json",
+      "sha256": "5719b840f5b909dd99bfc1a46499af047a2e19a4ad96f8ed2be7c3a9ce94c0d2",
+      "bytes": 296743,
+      "purpose": "strict FP32 deployed Gravity Spy pipeline"
+    },
+    {
+      "destination": "workspace/outputs/cloud_plan_20261105/gs_fp32/model.py",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/model.py",
+      "sha256": "aeb422e56e1a3f558f6e6e351a6a95bae03a912195924f5d6a34c4568b183d94",
+      "bytes": 2932,
+      "purpose": "strict FP32 deployed Gravity Spy pipeline"
+    },
+    {
+      "destination": "workspace/outputs/cloud_plan_20261105/gs_fp32/preprocess.py",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/preprocess.py",
+      "sha256": "0bec7aa1d77a3ff8a2e67b6181acfd551323fb6fb2028784a06eb6d9e21382df",
+      "bytes": 6260,
+      "purpose": "strict FP32 deployed Gravity Spy pipeline"
+    },
+    {
+      "destination": "workspace/outputs/cloud_plan_20261105/gs_fp32/scores_decisions.npz",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/scores_decisions.npz",
+      "sha256": "0428769b21b5f46620931be2a91780e8a250e80f063720cfa381bccc77f10337",
+      "bytes": 598622,
+      "purpose": "strict FP32 deployed Gravity Spy pipeline"
+    },
+    {
+      "destination": "workspace/outputs/cloud_plan_20261105/oneshot_evidence.json",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/oneshot_evidence.json",
+      "sha256": "84372d7ecd54541d36e4664f5c9df1215718d61be315f0b7803de3929ee6ddc2",
+      "bytes": 24023,
+      "purpose": "acoustic validation and candidate provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_model_sweep/balanced_metrics.py",
+      "source_workspace_relative": "outputs/hypernet_model_sweep/balanced_metrics.py",
+      "sha256": "c00e0b3875e9ceed0c842b7a5838ef3e6549c0becf85edfea9b8c94b125e554c",
+      "bytes": 1254,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v23/calibrate.py",
+      "source_workspace_relative": "outputs/hypernet_v23/calibrate.py",
+      "sha256": "8d0cf2b18f312440ee268e47d6cd0c5ee5b7a7269b9e386963c30779074bf43b",
+      "bytes": 6391,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v43/matcher.py",
+      "source_workspace_relative": "outputs/hypernet_v43/matcher.py",
+      "sha256": "5036e6e5b2e6275f72e5815817b75b356da73eb522996c93829552666c7fe6ba",
+      "bytes": 7949,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v44/correction/generator.py",
+      "source_workspace_relative": "outputs/hypernet_v44/correction/generator.py",
+      "sha256": "c127ca0cf99a690b88895e0ff2f22d128081d25086eb1b800e6f38a704faa74a",
+      "bytes": 1988,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v44/generator.py",
+      "source_workspace_relative": "outputs/hypernet_v44/generator.py",
+      "sha256": "d5528aa5924674ded9f2407e6d1ec2a9dfafe1e102af980fb9373f6ae7aa1d35",
+      "bytes": 5670,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v45/multiseed/checks.json",
+      "source_workspace_relative": "outputs/hypernet_v45/multiseed/checks.json",
+      "sha256": "8e75461ed9891fd78ca919644a2418c03647dd3d0d943c7ce8a6a77a8ffd85f8",
+      "bytes": 3103,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v45/multiseed/checks.py",
+      "source_workspace_relative": "outputs/hypernet_v45/multiseed/checks.py",
+      "sha256": "67801b66258706d71f55404b422851049cfa67ffa3fcaac07ef3faee42887827",
+      "bytes": 4106,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v45/multiseed/diversity/checks.json",
+      "source_workspace_relative": "outputs/hypernet_v45/multiseed/diversity/checks.json",
+      "sha256": "50019112dd7dbf1f4d244b19d373b63ac41065e369d2c132800120de37f3c2dc",
+      "bytes": 2447,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v45/multiseed/diversity/checks.py",
+      "source_workspace_relative": "outputs/hypernet_v45/multiseed/diversity/checks.py",
+      "sha256": "f8251563037d56c69eb72dc04c9b39ec33671e56fdf7c5d9ed08ac69ce43691d",
+      "bytes": 2874,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v45/multiseed/diversity/intent.json",
+      "source_workspace_relative": "outputs/hypernet_v45/multiseed/diversity/intent.json",
+      "sha256": "a0eb22484c897420eb94b0a5f0b82def9f7016953043e1a810fff319e962fd4d",
+      "bytes": 2614,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v45/multiseed/diversity/intent_superseded.json",
+      "source_workspace_relative": "outputs/hypernet_v45/multiseed/diversity/intent_superseded.json",
+      "sha256": "819ff606beeac4ad650079f8ece8d1017bc82d3bbcf0834e87a7ab347ac7e5db",
+      "bytes": 2229,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v45/multiseed/diversity/protocol.json",
+      "source_workspace_relative": "outputs/hypernet_v45/multiseed/diversity/protocol.json",
+      "sha256": "5cfd9fe0efd1adcf6bce6bf1a8068f0472f579dc23718cf197001960f9721d9e",
+      "bytes": 4603,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v45/multiseed/diversity/train.py",
+      "source_workspace_relative": "outputs/hypernet_v45/multiseed/diversity/train.py",
+      "sha256": "60240b7c03d9fb89de502785824ba635c14a205611e6c91c588cae1734876b3c",
+      "bytes": 9560,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v45/multiseed/generator.py",
+      "source_workspace_relative": "outputs/hypernet_v45/multiseed/generator.py",
+      "sha256": "ae6a7a399c315caba401e2475928b5d1e65761a2206faaa139cf7a3e8193a9ba",
+      "bytes": 2302,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v45/multiseed/model.py",
+      "source_workspace_relative": "outputs/hypernet_v45/multiseed/model.py",
+      "sha256": "ed01703a6a1ad0aa5de9ebf8a21bd2b05a107a535bb27f7165ba6fda531327c5",
+      "bytes": 2501,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v45/multiseed/namespace_audit.json",
+      "source_workspace_relative": "outputs/hypernet_v45/multiseed/namespace_audit.json",
+      "sha256": "894dd95b94df05e870fd43eb4d928e38b9ef5b13740f2fbb55d91faaf568321f",
+      "bytes": 3195,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v45/multiseed/namespace_audit.py",
+      "source_workspace_relative": "outputs/hypernet_v45/multiseed/namespace_audit.py",
+      "sha256": "5371b579fcd93d04df46608606ef8b4843154e116531980e1482ed3dfec70d79",
+      "bytes": 2180,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v45/multiseed/plan.json",
+      "source_workspace_relative": "outputs/hypernet_v45/multiseed/plan.json",
+      "sha256": "70339a9d74ff27404c63764ab55532764854b8a4e620a34aeb9de1ecd3badc4e",
+      "bytes": 4490,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v45/multiseed/protocol.json",
+      "source_workspace_relative": "outputs/hypernet_v45/multiseed/protocol.json",
+      "sha256": "550103b3d64411be6ba7d8c70bc14337c5456e3f93812ae09f3e3222f986df0a",
+      "bytes": 7051,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v45/multiseed/seed_45011/random.pt",
+      "source_workspace_relative": "outputs/hypernet_v45/multiseed/seed_45011/random.pt",
+      "sha256": "3fc52ecf8b131be27f6623f1930b8c74e81450dfc2bf8b07a0f5c980ed90eb78",
+      "bytes": 174817,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v45/multiseed/seed_45029/random.pt",
+      "source_workspace_relative": "outputs/hypernet_v45/multiseed/seed_45029/random.pt",
+      "sha256": "e473372c62e01c41863d7321408e919e5e6958cef4645f7c4285cc0fa494aa19",
+      "bytes": 174817,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v45/multiseed/seed_45047/random.pt",
+      "source_workspace_relative": "outputs/hypernet_v45/multiseed/seed_45047/random.pt",
+      "sha256": "09559f87e56e573a17b6a28d44a90a454f64df7528194765f9c10ce4705929f3",
+      "bytes": 174817,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v45/multiseed/train.py",
+      "source_workspace_relative": "outputs/hypernet_v45/multiseed/train.py",
+      "sha256": "6c1f061159bc48f84847ab01d321086b47c0f7c9a9d991b2f6d3fa9b1b4bd62a",
+      "bytes": 14010,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/common.py",
+      "source_workspace_relative": "outputs/hypernet_v46/common.py",
+      "sha256": "0fefe96dbad8201094b4d8284e433f605ba14c809c29ea421de81c4718f552e0",
+      "bytes": 3536,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/data_preflight.py",
+      "source_workspace_relative": "outputs/hypernet_v46/data_preflight.py",
+      "sha256": "bb59a2285d4f4e311e81b4557100b86863c54d9ed87e401c1f90487e4d69bea6",
+      "bytes": 1128,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/duration_data.py",
+      "source_workspace_relative": "outputs/hypernet_v46/duration_data.py",
+      "sha256": "8ec16f64ce245cc7298f306c988b601539d4314a0a50d72fd0f0a0e99c83adf8",
+      "bytes": 17072,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/evaluate.py",
+      "source_workspace_relative": "outputs/hypernet_v46/evaluate.py",
+      "sha256": "44cefc48b0fb8f51ce5a82c2b276bdda0870f8dd3efe084586d38dac9b122c3a",
+      "bytes": 14351,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/evaluation_audit.py",
+      "source_workspace_relative": "outputs/hypernet_v46/evaluation_audit.py",
+      "sha256": "492d9c6f6d2e75b46796843e03b7c8849001e49d65fea9326420641d2a6208ab",
+      "bytes": 27651,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/keep_awake.py",
+      "source_workspace_relative": "outputs/hypernet_v46/keep_awake.py",
+      "sha256": "963655328526723e47e6134b807c81aa170280fa50ef7d2617e36a8faf5f3b56",
+      "bytes": 567,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/make_figure.py",
+      "source_workspace_relative": "outputs/hypernet_v46/make_figure.py",
+      "sha256": "33caa33fe9cdebc8bd1111bc8e4bbfef50218ba8c63b10be51fe78bdebbc344d",
+      "bytes": 8064,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/matcher_checks.py",
+      "source_workspace_relative": "outputs/hypernet_v46/matcher_checks.py",
+      "sha256": "a7867cdfc55a5b0d7fcb3c3b51cbfd995450776bd4b1652e8f484000220dfedc",
+      "bytes": 1659,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/reference_montage.py",
+      "source_workspace_relative": "outputs/hypernet_v46/reference_montage.py",
+      "sha256": "24ef5b800f9855ed46f681985e5eccdffb409445c39f271934388a5ec97527cc",
+      "bytes": 3080,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/report.py",
+      "source_workspace_relative": "outputs/hypernet_v46/report.py",
+      "sha256": "799343f9e382009afc9dae7958501995f69e485bac1100f5f8aeb68405437ad0",
+      "bytes": 22438,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/spectrogram/checkpoints.json",
+      "source_workspace_relative": "outputs/hypernet_v46/spectrogram/checkpoints.json",
+      "sha256": "b3af51943275ad69fc57c564a7a3f0a35479e5d3a0c03538b00c49a5402688ec",
+      "bytes": 1184,
+      "purpose": "selected procedural-training plan, completed registry and audit evidence"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/spectrogram/checks.json",
+      "source_workspace_relative": "outputs/hypernet_v46/spectrogram/checks.json",
+      "sha256": "c144ae4bb19771fd17ff2d52e6cfb45cb7541929037e418df90c5d941ce43fed",
+      "bytes": 5105,
+      "purpose": "selected procedural-training plan, completed registry and audit evidence"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/spectrogram/checks.py",
+      "source_workspace_relative": "outputs/hypernet_v46/spectrogram/checks.py",
+      "sha256": "d6353c9bb2af74c6c58511847b67822b792dba281e2ce272a78a10e7beb80b71",
+      "bytes": 5731,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/spectrogram/gallery_manifest.json",
+      "source_workspace_relative": "outputs/hypernet_v46/spectrogram/gallery_manifest.json",
+      "sha256": "de0a6ef0fcb4938717ccdc84df0802234bbe919778e9938d71547451f9000487",
+      "bytes": 973,
+      "purpose": "selected procedural-training plan, completed registry and audit evidence"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/spectrogram/generator.py",
+      "source_workspace_relative": "outputs/hypernet_v46/spectrogram/generator.py",
+      "sha256": "cdf3f2872bf35e3a71e80954e9d3c5a5b676adad729ced363cf67387da802a99",
+      "bytes": 8375,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/spectrogram/plan.json",
+      "source_workspace_relative": "outputs/hypernet_v46/spectrogram/plan.json",
+      "sha256": "52e10c4db647ee6021543ab435e00a817c81fbedb52b536d578a6a48a3ad45ba",
+      "bytes": 4269,
+      "purpose": "selected procedural-training plan, completed registry and audit evidence"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/spectrogram/protocol.json",
+      "source_workspace_relative": "outputs/hypernet_v46/spectrogram/protocol.json",
+      "sha256": "a8bc9bd07820e5086718d1243d6efde20d81b19608c514c72f56aa3f2f197815",
+      "bytes": 5885,
+      "purpose": "selected procedural-training plan, completed registry and audit evidence"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/spectrogram/research.json",
+      "source_workspace_relative": "outputs/hypernet_v46/spectrogram/research.json",
+      "sha256": "2c72f8fc47850297a3c98238d8537b5b0e6fb4f33d57383a182a4dc1bb915499",
+      "bytes": 2548,
+      "purpose": "selected procedural-training plan, completed registry and audit evidence"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/spectrogram/seed_45011/completed.json",
+      "source_workspace_relative": "outputs/hypernet_v46/spectrogram/seed_45011/completed.json",
+      "sha256": "53981214d0f7494f2b89930846b879d3ea0ab2eee60ddb0d32281779759c1995",
+      "bytes": 442,
+      "purpose": "own fixed trained encoder and completion record"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/spectrogram/seed_45011/spectrogram.pt",
+      "source_workspace_relative": "outputs/hypernet_v46/spectrogram/seed_45011/spectrogram.pt",
+      "sha256": "5fdb5e04210972203f11ae674cfd861d8268d0b6561f3a31cd37c408405f790c",
+      "bytes": 174917,
+      "purpose": "own fixed trained encoder and completion record"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/spectrogram/seed_45029/completed.json",
+      "source_workspace_relative": "outputs/hypernet_v46/spectrogram/seed_45029/completed.json",
+      "sha256": "2a6610ac0ed426623a01706cbfbf1bbe0f6a222cf6ea17237839f40ee25856e5",
+      "bytes": 442,
+      "purpose": "own fixed trained encoder and completion record"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/spectrogram/seed_45029/spectrogram.pt",
+      "source_workspace_relative": "outputs/hypernet_v46/spectrogram/seed_45029/spectrogram.pt",
+      "sha256": "47f034f0d725cb4ee8c01b0706ecbddf751905f219ba1a9c1ab5109128d9bef1",
+      "bytes": 174917,
+      "purpose": "own fixed trained encoder and completion record"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/spectrogram/seed_45047/completed.json",
+      "source_workspace_relative": "outputs/hypernet_v46/spectrogram/seed_45047/completed.json",
+      "sha256": "c334bfd909b87bc4fc56ed31cdb5c67779a3680e5a6c63862a20097d5d831890",
+      "bytes": 442,
+      "purpose": "own fixed trained encoder and completion record"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/spectrogram/seed_45047/spectrogram.pt",
+      "source_workspace_relative": "outputs/hypernet_v46/spectrogram/seed_45047/spectrogram.pt",
+      "sha256": "9c377603016575d5a8b5586ce95b6927aa58b3ac5f6972084e9544f40ef1979c",
+      "bytes": 174917,
+      "purpose": "own fixed trained encoder and completion record"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/spectrogram/synthetic_completed.json",
+      "source_workspace_relative": "outputs/hypernet_v46/spectrogram/synthetic_completed.json",
+      "sha256": "d46823f0bc00aa431235b87ac074b9ee913164d5a53ada8001a57bbdc9191864",
+      "bytes": 361,
+      "purpose": "selected procedural-training plan, completed registry and audit evidence"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/spectrogram/synthetic_results.json",
+      "source_workspace_relative": "outputs/hypernet_v46/spectrogram/synthetic_results.json",
+      "sha256": "ce1a7d09c522de0a7c8507e402eddbede2cb94f9e5fa36c1390f6ec4f6894b57",
+      "bytes": 1539993,
+      "purpose": "selected procedural-training plan, completed registry and audit evidence"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/spectrogram/synthetic_started.json",
+      "source_workspace_relative": "outputs/hypernet_v46/spectrogram/synthetic_started.json",
+      "sha256": "33acaeb8e179fb31a356d2914f0ad889dc4a8c507e7db33614b8c5fb03a98462",
+      "bytes": 3395,
+      "purpose": "selected procedural-training plan, completed registry and audit evidence"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/spectrogram/train.py",
+      "source_workspace_relative": "outputs/hypernet_v46/spectrogram/train.py",
+      "sha256": "78abb8435780ac4a753f5f162318a552c9d83b8fdc9b24ba1c58737ccfef536a",
+      "bytes": 13210,
+      "purpose": "unchanged mathematical training dependency and initial-state provenance"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v46/synthetic_audit.py",
+      "source_workspace_relative": "outputs/hypernet_v46/synthetic_audit.py",
+      "sha256": "f1434d07b1f54a7f32e118a0585a53253e5f95a4bfae0d6a46efd9ff10724792",
+      "bytes": 12098,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v47/audit.py",
+      "source_workspace_relative": "outputs/hypernet_v47/audit.py",
+      "sha256": "161d850be681556d6ab6333d17afcbb259d335d4dfe9b65afb1d15537928b7de",
+      "bytes": 30989,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v47/checks.py",
+      "source_workspace_relative": "outputs/hypernet_v47/checks.py",
+      "sha256": "ebad47a99b5ba2c6c03999fbf1dbb1f89b788d4fea7b8c22c7cf8ad12476dd6a",
+      "bytes": 4629,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v47/core.py",
+      "source_workspace_relative": "outputs/hypernet_v47/core.py",
+      "sha256": "bf92bb868650aea2f8e97614a01cf62d8e34b307f434a0248a46f794bc51257b",
+      "bytes": 4138,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v47/evaluate.py",
+      "source_workspace_relative": "outputs/hypernet_v47/evaluate.py",
+      "sha256": "ca8c0b3840cf291fe4be4614830c5f4bf775ad7599f618d36c84417b03c3ff79",
+      "bytes": 10189,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v47/report.py",
+      "source_workspace_relative": "outputs/hypernet_v47/report.py",
+      "sha256": "27178c10bf684a8ca0c85b43cd5d7e49e892bd7157c847871d1bf882f27cd1e0",
+      "bytes": 21247,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v47/split.py",
+      "source_workspace_relative": "outputs/hypernet_v47/split.py",
+      "sha256": "638200598b86c60ec8d8f77c0e1e322f9ca5843d41ca6e53ed3c97aeb6d637a3",
+      "bytes": 10699,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/hypernet_v47/uncertainty.py",
+      "source_workspace_relative": "outputs/hypernet_v47/uncertainty.py",
+      "sha256": "68380e66de9c3fcb21b847868f14a338d1a3f5e8dd45f5d9f03583774f5c459a",
+      "bytes": 10729,
+      "purpose": "frozen research source"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/acquisition.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/acquisition.json",
+      "sha256": "1a7d247c986e1c6cb13dc44622a2064ab764d5dcc052530cf51e4f957db24276",
+      "bytes": 3407,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/audit_matched_operating_point_development.py",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/audit_matched_operating_point_development.py",
+      "sha256": "74703fb1923c2d91fc811e111394bb31a7f53ef19572f3ab9e7f6e3eb7b69a04",
+      "bytes": 2290,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/confirmation_comparison.csv",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/confirmation_comparison.csv",
+      "sha256": "7eb7d709f0f0b8def9a5b7f753991a1026d75b2574841d6f9190a73e5239dd6e",
+      "bytes": 4245,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/consumed_fixture_parity.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/consumed_fixture_parity.json",
+      "sha256": "6df46358aeecfe2dcd80036aa1e5c926ed683c2ce6cce966b9a154aa2bf8f2bc",
+      "bytes": 2843,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/dino_binding.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/dino_binding.json",
+      "sha256": "98b239e14343f361b91149a155582902346116be689a191b139f7dd02403a084",
+      "bytes": 232,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/execution_environment.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/execution_environment.json",
+      "sha256": "6ef7045111a8f0d96f0dd3709dac2998a61adeb4de55c620514f0b75e7f3ec8b",
+      "bytes": 722,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/frozen_thresholds.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/frozen_thresholds.json",
+      "sha256": "a6001b738b69841478a3f4445d3077ada6a8125093b12f005ea145a26afb6799",
+      "bytes": 2944,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/independent_completion_audit.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/independent_completion_audit.json",
+      "sha256": "b287d612000760aa47a3712ebe69ae8e1f53a54455abf497d7e549dd65b14b04",
+      "bytes": 3704,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/independent_completion_review.py",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/independent_completion_review.py",
+      "sha256": "d471b36b42707f5fd1c96d48404ed089a5aebf5aee079204b4000df6e56c4bda",
+      "bytes": 7300,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/independent_preflight_audit.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/independent_preflight_audit.json",
+      "sha256": "eec7fb513251e6364f482f3fc5b93405a5bc81fd0782d36c68bb7a31a2d4771d",
+      "bytes": 3667,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/independent_preflight_review.py",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/independent_preflight_review.py",
+      "sha256": "d699ac22f9956a8a5c99a6bf9d979714b29889d4af0088b35e89c6a539652853",
+      "bytes": 8922,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/intent_unlabelled.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/intent_unlabelled.json",
+      "sha256": "0b8bb91fc9616dc33315e34f5a4080fc0777eb0e157079fa0cff6c293475de6f",
+      "bytes": 126772,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/matched_operating_point_development.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/matched_operating_point_development.json",
+      "sha256": "79dc39ee46950289bd83521d18cb3335e35a2fb33cc552ccc849e88b9c83a214",
+      "bytes": 59753,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/matched_operating_point_development.py",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/matched_operating_point_development.py",
+      "sha256": "086919ba6a19cf4b8827cf39b1c2c29004a73914840453e8c33f901cd4949d18",
+      "bytes": 14016,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/matched_operating_point_development_audit.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/matched_operating_point_development_audit.json",
+      "sha256": "7a6af5b8cfef864e1b1b6a5d2a099d82cb3ff61b846a93435a375d1160029899",
+      "bytes": 3315,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/matched_operating_point_development_plan.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/matched_operating_point_development_plan.json",
+      "sha256": "1478a8e12cf0ec0d24f2cb30615a8d7973df63d05ad65a0ca2b63195877ba89c",
+      "bytes": 3500,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/oncenet_binding.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/oncenet_binding.json",
+      "sha256": "5446bf048594f9749ec896f64bc9606f53570d35b44f340dad34186f1043ca39",
+      "bytes": 232,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/protocol.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/protocol.json",
+      "sha256": "fe8c2f0555fc5bb74accd6b3cd01d6453f56bad4d799bba26b57a10a0d118f2f",
+      "bytes": 17920,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/protocol.sha256",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/protocol.sha256",
+      "sha256": "bc1c571d00bdab74913b6cb688ed88503f048b63b220af2452b127623784d943",
+      "bytes": 66,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/publication_audit.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/publication_audit.json",
+      "sha256": "aeaf505bc667c193da79fc9fe349910c7b07b5d76a5bc19ee97efde88b3834e5",
+      "bytes": 371,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/publication_manifest.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/publication_manifest.json",
+      "sha256": "fcafb7a0ec1991d01afa2ce34a3621735db75d389aedf1b92f3a9cacedb9d5b2",
+      "bytes": 1828,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/publish_confirmation.py",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/publish_confirmation.py",
+      "sha256": "9d0a5840e118e5ad1df4583e9a4918c330fdb0d3bae3dcff043d78ad92710b1d",
+      "bytes": 9780,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/random_binding.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/random_binding.json",
+      "sha256": "e822d18007d8f52e9a2493acba110b43c5aac0bcf19217c9609fd866ac54796d",
+      "bytes": 232,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/records_unlabelled.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/records_unlabelled.json",
+      "sha256": "f6420f6067cc14017c2c70333db1bf28d5df07b64f3f8da6406486c58f27015f",
+      "bytes": 1037812,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/report_summary.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/report_summary.json",
+      "sha256": "e23342168751e926003427364161683f69bcf8e33d9f2d6246b3bd10cbe7ba0f",
+      "bytes": 16653,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/results.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/results.json",
+      "sha256": "3118b91275e9db778e05f900ff55e1a490abaad3c10e3b1ff4010d280d90b821",
+      "bytes": 28758,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/run_confirmation.py",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/run_confirmation.py",
+      "sha256": "f64601530a2c402035a1a782f34e4dc234d46abae7681e80355bba2354a7d5ad",
+      "bytes": 25480,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/scores_commitment.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/scores_commitment.json",
+      "sha256": "6d744232f3228016b0a99c125bbf4ec1f2e9d10c5f551ba1c4baf4d27c8c9d1f",
+      "bytes": 1013,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_confirmation_20261105/source_bindings.json",
+      "source_workspace_relative": "outputs/oncenet_confirmation_20261105/source_bindings.json",
+      "sha256": "34cd0fba345970d868e22e0d06488fbc54b05e8ed0ee4e454ab5a090f366e9f5",
+      "bytes": 829535,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/acquisition.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/acquisition.json",
+      "sha256": "5ba0543d2dc63f4786abdb41bd29f4caa7b2c3c8495cfa642030eaa87d5d3119",
+      "bytes": 1909120,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/calibration_file_lock_failure_20261105.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/calibration_file_lock_failure_20261105.json",
+      "sha256": "6033b23fc3cd54594500e55e5ba8b38be94fa7fff33ae4ca9fb320a0cf458176",
+      "bytes": 2576,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/calibration_log.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/calibration_log.json",
+      "sha256": "21db5fea2b9b8fa4d3fd3dcb4dd084335d885ee3ccdd9dcb924706242ed35f5b",
+      "bytes": 77705,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/cell_summary.csv",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/cell_summary.csv",
+      "sha256": "288b68cae77242e6a6b5423859839e125df4eb1f658e5acc64b4bff952695723",
+      "bytes": 1507,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/data_plan.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/data_plan.json",
+      "sha256": "898723a9109468a832613c15065b3e810deaedb5e9ae8e8358dcf6d611c9a7fb",
+      "bytes": 2924579,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/detector_descriptive.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/detector_descriptive.json",
+      "sha256": "6b25cbb85d75ca445ea04611cd03bb4d4765ad58e0ced6c2897166b82752bca8",
+      "bytes": 1207723,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/detector_summary.py",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/detector_summary.py",
+      "sha256": "738557ff7c6d742673cbdf0a3643de6da981537a6486836145170d7b09951db3",
+      "bytes": 7205,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/experiment_intent.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/experiment_intent.json",
+      "sha256": "1709b7c5279874c455093ae4fead870db96d2a87bdd109569f0dc52ed1c38163",
+      "bytes": 3341,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/factorial_core.py",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/factorial_core.py",
+      "sha256": "557c83f11653181e0c6d4342a73657616452d85bbbdb6fcc396cd2229809e194",
+      "bytes": 20174,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/factorial_metrics.py",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/factorial_metrics.py",
+      "sha256": "f3e5ce56e0b7c38473084c7480f97e74e892ee18fe3fd42b7020f04f7d816276",
+      "bytes": 17521,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/final_audit.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/final_audit.json",
+      "sha256": "75e9f8c14b1796ef133706128a139cde4b1e98d3b831486a91d9f4e6b543f9b2",
+      "bytes": 6915,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/fit_commitment.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/fit_commitment.json",
+      "sha256": "b784f4699e432d3dce3ddc375a34cece6e7cfe09fe12f849a46519c0d58134aa",
+      "bytes": 53578,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/implementation_checks.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/implementation_checks.json",
+      "sha256": "a0d0bfccf9a8514b93a5b3123a9b71e9bb9f4d42bfc56540acdbda895570ae28",
+      "bytes": 3394,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/independent_data_review.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/independent_data_review.json",
+      "sha256": "101eeef7f5fac3ea9338553c643a0d8ea3df9ec75793082199fb28c393f14c5a",
+      "bytes": 3716,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/independent_preflight.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/independent_preflight.json",
+      "sha256": "34cf37ebf9bf47f5ff8f28a493f7571846138fc4d3079bef09f3efac0b5ff6bf",
+      "bytes": 1692,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/independent_result_audit.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/independent_result_audit.json",
+      "sha256": "e9c1dad4fad9a761e20599a542aca2e5c2b249ffad2d57d401f5b3058b499334",
+      "bytes": 2877,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/independent_result_audit.py",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/independent_result_audit.py",
+      "sha256": "c55b075bd7440e8a3343348711b2928fc1d5d7d6f2241d3960ece405957a4f11",
+      "bytes": 9880,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/independent_runner_review.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/independent_runner_review.json",
+      "sha256": "bb4d231cf3aca3ba6aa6c128124f5f2090c041b0d9c2e40b4d8106d02856a5c9",
+      "bytes": 4155,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/intent_unlabelled.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/intent_unlabelled.json",
+      "sha256": "d59938b30bf3a836649319f07919cbbe6e18e6af5ca618820db89cb8c0b8269a",
+      "bytes": 1636322,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/labels.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/labels.json",
+      "sha256": "1a968612f04a35bc3ebd646f7c651232457b940f59bb1a63b693af2ad0a17be8",
+      "bytes": 798551,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/model_registry.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/model_registry.json",
+      "sha256": "c0601e659914bc717dade81a8c144d525e4acfd3bf089357e6794ccdfd4f0c45",
+      "bytes": 3830,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/pre_freeze_alias_amendment.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/pre_freeze_alias_amendment.json",
+      "sha256": "dc648ec08c0dd18bb8a8e5e24719b7bd5acc64301536ca72418a7a662ba4a317",
+      "bytes": 918,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/prepare_data.py",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/prepare_data.py",
+      "sha256": "245ecb38ad8f2de1e170cf82d601d315b6a0ca9e49fa0e52a46a05a74d8c124a",
+      "bytes": 22479,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/protocol.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/protocol.json",
+      "sha256": "52acaeca63bf959e340fecaac65dd796a6de5920409a1c217172e160cff33380",
+      "bytes": 3349994,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/protocol.sha256",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/protocol.sha256",
+      "sha256": "c5be67582314bf64d43697c3237d05ce68130cc2ffa860ec7c981397c681cd6a",
+      "bytes": 66,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/publish_report.py",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/publish_report.py",
+      "sha256": "ed0439b9aa5f65ef3c2dffc41809af1d59b6a9b7e874ed689528ccdd61374bbf",
+      "bytes": 12410,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/records_unlabelled.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/records_unlabelled.json",
+      "sha256": "7b19bbcf75e3d9c53b21ed22e0dd490a557e394ecadfd9715f9cda64c2ef8a5f",
+      "bytes": 12820322,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/recovery.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/recovery.json",
+      "sha256": "2b07103174c177cd2d06e474f64b8c3e1a7e6fdf4a5819d081330a0eaaa8799c",
+      "bytes": 502,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/reference_plan.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/reference_plan.json",
+      "sha256": "25e5ff19cd1aca834b024cc861c7b40e1e1be5d49b70a2f7056904fce3b41cb5",
+      "bytes": 335386,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/results.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/results.json",
+      "sha256": "282f277a0c0eac12f2945b4979b2aa859d90ed3a78e754ff0495726c1ba8f84d",
+      "bytes": 2577960,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/run_experiment.py",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/run_experiment.py",
+      "sha256": "8f49f037539a602eb9533e7dc7737b623920df1da47e7d86b1a03303a191ed70",
+      "bytes": 14778,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/score_commitment.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/score_commitment.json",
+      "sha256": "89d7ac84b4f9975ce490a00a7c55f19a9e0177e9c14b59c2a917a1d15c8975f0",
+      "bytes": 1020,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/scores.npy",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/scores.npy",
+      "sha256": "53ed5e7de8e614b7658e2658886ff34c23864cf7bbcb17a86079df6c761d364f",
+      "bytes": 4608128,
+      "purpose": "committed numerical predictions, not raw images"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/source_bindings.json",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/source_bindings.json",
+      "sha256": "954e765ff485b762a0c2b7a6a9e723098ec845e8a1324985ca7fd92f80488e0f",
+      "bytes": 10180805,
+      "purpose": "frozen confirmation implementation, scientific metadata, results and audit"
+    },
+    {
+      "destination": "workspace/outputs/oncenet_factorial_20261105/thresholds.npy",
+      "source_workspace_relative": "outputs/oncenet_factorial_20261105/thresholds.npy",
+      "sha256": "b550923ad7342e7a7a21d96011b84da66e15af97a1b7532e4393a89dde522e98",
+      "bytes": 3968,
+      "purpose": "committed numerical predictions, not raw images"
+    },
+    {
+      "destination": "workspace/outputs/whale_confirmation_20261105/provenance_audit.json",
+      "source_workspace_relative": "outputs/whale_confirmation_20261105/provenance_audit.json",
+      "sha256": "8d8dfe4125d10f061bccddd337ec889dfd8faef2080a5f7b966f8c5396ab44a6",
+      "bytes": 17137,
+      "purpose": "acoustic validation and candidate provenance"
+    },
+    {
+      "destination": "workspace/whale/bering/inventory.json",
+      "source_workspace_relative": "whale/bering/inventory.json",
+      "sha256": "3cc65102eabea5c32c132f9d0e349e912c25f339142f241eee9cf854466d821b",
+      "bytes": 373930,
+      "purpose": "original acoustic training/selection provenance; no waveform data"
+    },
+    {
+      "destination": "workspace/whale/code/build_corpus.py",
+      "source_workspace_relative": "whale/code/build_corpus.py",
+      "sha256": "66e89184001aa2dca57dd4c053b9da0149e8d62ee066b7db051da2065000380d",
+      "bytes": 1359,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/build_dclde.py",
+      "source_workspace_relative": "whale/code/build_dclde.py",
+      "sha256": "b8969df41abdb182218d63463bf2504b429b15a37f24e0a6fd2cc37ac3dfc89e",
+      "bytes": 2372,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/build_events.py",
+      "source_workspace_relative": "whale/code/build_events.py",
+      "sha256": "7a714bfc1cffcf2471c48b59afc75d4edbb3a61a11e8270810792ddfba5370d9",
+      "bytes": 1598,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/cache_bering.py",
+      "source_workspace_relative": "whale/code/cache_bering.py",
+      "sha256": "f0ef7dbba06278e0fa829d827aa5f329bf392dcbec0dd8b08f198e7d1af3bd03",
+      "bytes": 3414,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/diag_layers.py",
+      "source_workspace_relative": "whale/code/diag_layers.py",
+      "sha256": "df35e319c790ee212c3c781650ad8df0622f3afa0263a34090d62e75c0cb1d00",
+      "bytes": 2674,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/eval_level0.py",
+      "source_workspace_relative": "whale/code/eval_level0.py",
+      "sha256": "586e647d85520bda974981c56145528336d2965808dfce768d6f02ac8e81d840",
+      "bytes": 12995,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/fair_measure.py",
+      "source_workspace_relative": "whale/code/fair_measure.py",
+      "sha256": "9730760b667cb9001c30f763f9f6c3d194e070f212e19f86cb8e113bb250bd93",
+      "bytes": 2347,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/fetch_bering_sample.py",
+      "source_workspace_relative": "whale/code/fetch_bering_sample.py",
+      "sha256": "ffe45b5d93918097d0e8b2360430bd835c7435e3ec68b673713e57c65eb11c56",
+      "bytes": 1396,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/june_compare.py",
+      "source_workspace_relative": "whale/code/june_compare.py",
+      "sha256": "a6a3abbd0ef659ea52a5c6e0169bb2d11432fdda075b229d873d21850d73b00d",
+      "bytes": 3091,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/june_control.py",
+      "source_workspace_relative": "whale/code/june_control.py",
+      "sha256": "036cb47b5b2a54064069c5d446025fa447180089a90253bb0db0422d8002889b",
+      "bytes": 1352,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/labels.py",
+      "source_workspace_relative": "whale/code/labels.py",
+      "sha256": "2a31a63d05d46934343a6c7642a8e95dd65e5c8af1cb294376a6235327111aaf",
+      "bytes": 848,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/make_examples.py",
+      "source_workspace_relative": "whale/code/make_examples.py",
+      "sha256": "a7e866bf670d7409423c213c32452322594ee0289abee1606838abcc52c0eec2",
+      "bytes": 2480,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/make_video.py",
+      "source_workspace_relative": "whale/code/make_video.py",
+      "sha256": "ea98bb4e4c9b6a530d32af38f4b41edd1a965a1601aa562894d99c2909146286",
+      "bytes": 11665,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/new_candidates.py",
+      "source_workspace_relative": "whale/code/new_candidates.py",
+      "sha256": "af66bad64b4ab2f1e2fa787d8816612023b3727f12662fafccf062611f1a3692",
+      "bytes": 1389,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/oneshot.py",
+      "source_workspace_relative": "whale/code/oneshot.py",
+      "sha256": "b5eb5659f9abcaddbf37ad25d876fff1d38f2bba29494d95522d3ebfaf86dbbb",
+      "bytes": 3790,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/scan_loop.py",
+      "source_workspace_relative": "whale/code/scan_loop.py",
+      "sha256": "f5c8465f413d18ddfbfb876e2fd20aefc3192c10e53e8dc1b3766cb55478bfcb",
+      "bytes": 971,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/scan_oneshot.py",
+      "source_workspace_relative": "whale/code/scan_oneshot.py",
+      "sha256": "1e9bcda2bcaccfec12e6082837714fa3b00e6f948459dde7f2a50545715e8cbd",
+      "bytes": 2954,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/sei_oneshot.py",
+      "source_workspace_relative": "whale/code/sei_oneshot.py",
+      "sha256": "d3e409a843fcf694f5953ee61dad058c2fc29a0823e960e5750f8cb87783a9bc",
+      "bytes": 1977,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/sei_top.py",
+      "source_workspace_relative": "whale/code/sei_top.py",
+      "sha256": "5fa0cfecf22fb569f5a9494626a54fa3008dcd81f5a91e092b7850bbfe031007",
+      "bytes": 2192,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/select_phase.py",
+      "source_workspace_relative": "whale/code/select_phase.py",
+      "sha256": "a3c8ddc1fc7c482ffd56dd2d9380c2747bfad313c2561e92acb6fed46dd558d6",
+      "bytes": 1825,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/select_v2.py",
+      "source_workspace_relative": "whale/code/select_v2.py",
+      "sha256": "5d2ed678cc1cab0bb7f18f154fcb35cc3b41bea9a17e012ccb851a1d828d034b",
+      "bytes": 2472,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/select_variant.py",
+      "source_workspace_relative": "whale/code/select_variant.py",
+      "sha256": "f53f283785b9003b5ecc697069f5fa226a86fdbaf59d790be71987dea4a5317a",
+      "bytes": 1823,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/code/spectro.py",
+      "source_workspace_relative": "whale/code/spectro.py",
+      "sha256": "31d7d1c36a9c65bcdbcccb98b2bc013b5e33ffd613332ff0a281b87ee646b9bd",
+      "bytes": 2555,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/pretrained/audio_models.py",
+      "source_workspace_relative": "whale/pretrained/audio_models.py",
+      "sha256": "eb42432d9bd1afacc77b502621692118f4b92422998ef0bdcca17f126c7ffa3a",
+      "bytes": 5795,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/pretrained/bench.py",
+      "source_workspace_relative": "whale/pretrained/bench.py",
+      "sha256": "90f865b590ac6ecbe18b2330d7235180e98620a631dcbb4180614cd8aac4a8b1",
+      "bytes": 11210,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/pretrained/keep_awake.py",
+      "source_workspace_relative": "whale/pretrained/keep_awake.py",
+      "sha256": "437b2df10aab8ddd72e4538104f4d52831c85d3f6f06e390688c5c90fbbdb4a1",
+      "bytes": 697,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/pretrained/scan_bering.py",
+      "source_workspace_relative": "whale/pretrained/scan_bering.py",
+      "sha256": "642892cfb80658183edc8fe5bb42b55033dfbce8cd75761a9db1710b0b2b2f4e",
+      "bytes": 4290,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/pretrained/validate_google.py",
+      "source_workspace_relative": "whale/pretrained/validate_google.py",
+      "sha256": "e0f00c735d274f338b94075c37986bd00d9505672160b200ea4cda463c2dd8dc",
+      "bytes": 2692,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/selection_ids.npy",
+      "source_workspace_relative": "whale/selection_ids.npy",
+      "sha256": "869c516c32d8a5408bf65ae7efa1f1d360fa436a6db106edc6afe28a39b4681b",
+      "bytes": 53256,
+      "purpose": "original acoustic training/selection provenance; no waveform data"
+    },
+    {
+      "destination": "workspace/whale/whale_ssl_v1/model.py",
+      "source_workspace_relative": "whale/whale_ssl_v1/model.py",
+      "sha256": "0f246610cdf2f713cbcf12bff704c3db17cfac4b51000ba519363f9026b3befd",
+      "bytes": 3837,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/whale_ssl_v1/train.py",
+      "source_workspace_relative": "whale/whale_ssl_v1/train.py",
+      "sha256": "55591b29ae8e77cd4f916d2ac37883ba6efd347a794db28c3e1d817612697a44",
+      "bytes": 8762,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/whale_ssl_v2/model.py",
+      "source_workspace_relative": "whale/whale_ssl_v2/model.py",
+      "sha256": "0f246610cdf2f713cbcf12bff704c3db17cfac4b51000ba519363f9026b3befd",
+      "bytes": 3837,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/whale_ssl_v2/train.py",
+      "source_workspace_relative": "whale/whale_ssl_v2/train.py",
+      "sha256": "a976812ca7918f74037057aef192fb1678aadd90b04b99f1076bfb65d67f653e",
+      "bytes": 8772,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/whale_ssl_v3/history.json",
+      "source_workspace_relative": "whale/whale_ssl_v3/history.json",
+      "sha256": "b952c78dcb8dec240c70c8ffbf5248d5f87be965efe968583b503b2e49a7f92e",
+      "bytes": 10783,
+      "purpose": "original acoustic training/selection provenance; no waveform data"
+    },
+    {
+      "destination": "workspace/whale/whale_ssl_v3/model.py",
+      "source_workspace_relative": "whale/whale_ssl_v3/model.py",
+      "sha256": "0f246610cdf2f713cbcf12bff704c3db17cfac4b51000ba519363f9026b3befd",
+      "bytes": 3837,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "workspace/whale/whale_ssl_v3/progress.json",
+      "source_workspace_relative": "whale/whale_ssl_v3/progress.json",
+      "sha256": "d2bd5b3c23f80675c3d82466e665b902874d4eb287bbc2caa03ea10a5752a819",
+      "bytes": 267,
+      "purpose": "original acoustic training/selection provenance; no waveform data"
+    },
+    {
+      "destination": "workspace/whale/whale_ssl_v3/protocol.json",
+      "source_workspace_relative": "whale/whale_ssl_v3/protocol.json",
+      "sha256": "d2c2dd0427e0a17b4cc8e6973b620f6649f5c1695c44be7d08bbc5d9211bcd15",
+      "bytes": 705,
+      "purpose": "original acoustic training/selection provenance; no waveform data"
+    },
+    {
+      "destination": "workspace/whale/whale_ssl_v3/selection_v2.json",
+      "source_workspace_relative": "whale/whale_ssl_v3/selection_v2.json",
+      "sha256": "cd9ddfa331f46e6b9325717f2a028086385bcf59b554e803713a64b99906bc2c",
+      "bytes": 2864,
+      "purpose": "original acoustic training/selection provenance; no waveform data"
+    },
+    {
+      "destination": "workspace/whale/whale_ssl_v3/train.py",
+      "source_workspace_relative": "whale/whale_ssl_v3/train.py",
+      "sha256": "11ebb88b7ff52b2ef9307e1c8c7b0be057a737e606aa7ffc9318102f92e67745",
+      "bytes": 10547,
+      "purpose": "original whale branch training, preprocessing, matching and scan code"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/build_corpus.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/build_corpus.py",
+      "sha256": "66e89184001aa2dca57dd4c053b9da0149e8d62ee066b7db051da2065000380d",
+      "bytes": 1359,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/build_dclde.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/build_dclde.py",
+      "sha256": "b8969df41abdb182218d63463bf2504b429b15a37f24e0a6fd2cc37ac3dfc89e",
+      "bytes": 2372,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/build_events.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/build_events.py",
+      "sha256": "7a714bfc1cffcf2471c48b59afc75d4edbb3a61a11e8270810792ddfba5370d9",
+      "bytes": 1598,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/cache_bering.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/cache_bering.py",
+      "sha256": "f0ef7dbba06278e0fa829d827aa5f329bf392dcbec0dd8b08f198e7d1af3bd03",
+      "bytes": 3414,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/diag_layers.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/diag_layers.py",
+      "sha256": "df35e319c790ee212c3c781650ad8df0622f3afa0263a34090d62e75c0cb1d00",
+      "bytes": 2674,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/eval_level0.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/eval_level0.py",
+      "sha256": "586e647d85520bda974981c56145528336d2965808dfce768d6f02ac8e81d840",
+      "bytes": 12995,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/fair_measure.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/fair_measure.py",
+      "sha256": "9730760b667cb9001c30f763f9f6c3d194e070f212e19f86cb8e113bb250bd93",
+      "bytes": 2347,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/fetch_bering_sample.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/fetch_bering_sample.py",
+      "sha256": "ffe45b5d93918097d0e8b2360430bd835c7435e3ec68b673713e57c65eb11c56",
+      "bytes": 1396,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/june_compare.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/june_compare.py",
+      "sha256": "a6a3abbd0ef659ea52a5c6e0169bb2d11432fdda075b229d873d21850d73b00d",
+      "bytes": 3091,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/june_control.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/june_control.py",
+      "sha256": "036cb47b5b2a54064069c5d446025fa447180089a90253bb0db0422d8002889b",
+      "bytes": 1352,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/labels.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/labels.py",
+      "sha256": "2a31a63d05d46934343a6c7642a8e95dd65e5c8af1cb294376a6235327111aaf",
+      "bytes": 848,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/make_examples.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/make_examples.py",
+      "sha256": "a7e866bf670d7409423c213c32452322594ee0289abee1606838abcc52c0eec2",
+      "bytes": 2480,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/make_video.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/make_video.py",
+      "sha256": "ea98bb4e4c9b6a530d32af38f4b41edd1a965a1601aa562894d99c2909146286",
+      "bytes": 11665,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/new_candidates.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/new_candidates.py",
+      "sha256": "af66bad64b4ab2f1e2fa787d8816612023b3727f12662fafccf062611f1a3692",
+      "bytes": 1389,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/oneshot.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/oneshot.py",
+      "sha256": "b5eb5659f9abcaddbf37ad25d876fff1d38f2bba29494d95522d3ebfaf86dbbb",
+      "bytes": 3790,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/scan_loop.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/scan_loop.py",
+      "sha256": "f5c8465f413d18ddfbfb876e2fd20aefc3192c10e53e8dc1b3766cb55478bfcb",
+      "bytes": 971,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/scan_oneshot.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/scan_oneshot.py",
+      "sha256": "1e9bcda2bcaccfec12e6082837714fa3b00e6f948459dde7f2a50545715e8cbd",
+      "bytes": 2954,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/sei_oneshot.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/sei_oneshot.py",
+      "sha256": "d3e409a843fcf694f5953ee61dad058c2fc29a0823e960e5750f8cb87783a9bc",
+      "bytes": 1977,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/sei_top.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/sei_top.py",
+      "sha256": "5fa0cfecf22fb569f5a9494626a54fa3008dcd81f5a91e092b7850bbfe031007",
+      "bytes": 2192,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/select_phase.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/select_phase.py",
+      "sha256": "a3c8ddc1fc7c482ffd56dd2d9380c2747bfad313c2561e92acb6fed46dd558d6",
+      "bytes": 1825,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/select_v2.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/select_v2.py",
+      "sha256": "5d2ed678cc1cab0bb7f18f154fcb35cc3b41bea9a17e012ccb851a1d828d034b",
+      "bytes": 2472,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/select_variant.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/select_variant.py",
+      "sha256": "f53f283785b9003b5ecc697069f5fa226a86fdbaf59d790be71987dea4a5317a",
+      "bytes": 1823,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/code/spectro.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/code/spectro.py",
+      "sha256": "31d7d1c36a9c65bcdbcccb98b2bc013b5e33ffd613332ff0a281b87ee646b9bd",
+      "bytes": 2555,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/pretrained/audio_models.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/pretrained/audio_models.py",
+      "sha256": "eb42432d9bd1afacc77b502621692118f4b92422998ef0bdcca17f126c7ffa3a",
+      "bytes": 5795,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/pretrained/bench.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/pretrained/bench.py",
+      "sha256": "90f865b590ac6ecbe18b2330d7235180e98620a631dcbb4180614cd8aac4a8b1",
+      "bytes": 11210,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/pretrained/keep_awake.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/pretrained/keep_awake.py",
+      "sha256": "437b2df10aab8ddd72e4538104f4d52831c85d3f6f06e390688c5c90fbbdb4a1",
+      "bytes": 697,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/pretrained/scan_bering.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/pretrained/scan_bering.py",
+      "sha256": "642892cfb80658183edc8fe5bb42b55033dfbce8cd75761a9db1710b0b2b2f4e",
+      "bytes": 4290,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/pretrained/validate_google.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/pretrained/validate_google.py",
+      "sha256": "e0f00c735d274f338b94075c37986bd00d9505672160b200ea4cda463c2dd8dc",
+      "bytes": 2692,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/whale_ssl_v1/model.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/whale_ssl_v1/model.py",
+      "sha256": "0f246610cdf2f713cbcf12bff704c3db17cfac4b51000ba519363f9026b3befd",
+      "bytes": 3837,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/whale_ssl_v1/train.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/whale_ssl_v1/train.py",
+      "sha256": "55591b29ae8e77cd4f916d2ac37883ba6efd347a794db28c3e1d817612697a44",
+      "bytes": 8762,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/whale_ssl_v2/model.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/whale_ssl_v2/model.py",
+      "sha256": "0f246610cdf2f713cbcf12bff704c3db17cfac4b51000ba519363f9026b3befd",
+      "bytes": 3837,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/whale_ssl_v2/train.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/whale_ssl_v2/train.py",
+      "sha256": "a976812ca7918f74037057aef192fb1678aadd90b04b99f1076bfb65d67f653e",
+      "bytes": 8772,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/whale_ssl_v3/model.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/whale_ssl_v3/model.py",
+      "sha256": "0f246610cdf2f713cbcf12bff704c3db17cfac4b51000ba519363f9026b3befd",
+      "bytes": 3837,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "branch_snapshot/whale-oneshot_e647212/whale/whale_ssl_v3/train.py",
+      "source_commit": "e647212ba827361a697647b604f26b0cd3ce3a30",
+      "source_git_path": "whale/whale_ssl_v3/train.py",
+      "sha256": "11ebb88b7ff52b2ef9307e1c8c7b0be057a737e606aa7ffc9318102f92e67745",
+      "bytes": 10547,
+      "purpose": "remote branch executable source snapshot; no merge, raw media or new result claim"
+    },
+    {
+      "destination": "gravity_inference/README.txt",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/kaggle_pilot/README.txt",
+      "sha256": "d0f1c2394081be34e2b9cb9598a28731ef50cd53d8b4c6e30d900adb46f71735",
+      "bytes": 474,
+      "purpose": "unchanged hash-bound inference-bundle supporting file, required by original manifest"
+    },
+    {
+      "destination": "gravity_inference/pilot.ipynb",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/gs_fp32/kaggle_pilot/pilot.ipynb",
+      "sha256": "fa08c21948ecd82d1a5ea1109be2b4a6657d65251f75f7ce1ed7d92222df06de",
+      "bytes": 5533,
+      "purpose": "unchanged hash-bound inference-bundle supporting file, required by original manifest"
+    },
+    {
+      "destination": "bering_inference/README.txt",
+      "source_workspace_relative": "outputs/cloud_plan_20261105/bering_cloud/verified_deployment_evidence/bering_cloud_cpu_rank_v3/README.txt",
+      "sha256": "41a6a2738f189b3f51b9fc1c3d2c211d281b0201d64554b7cc3b2964daac24f0",
+      "bytes": 3814,
+      "purpose": "unchanged hash-bound Bering deployment documentation required by asset_hashes.json"
+    }
+  ],
+  "files": 251,
+  "total_bytes": 64858032,
+  "executable_source_byte_identity": true,
+  "existing_repository_files_modified": false,
+  "git_staging_commit_push_performed": false,
+  "third_party_pretrained_weight_files_included": false,
+  "raw_dataset_images_or_audio_included": false,
+  "private_application_files_included": false,
+  "new_neural_training_or_evaluation_performed": false,
+  "security_scan": {
+    "credential_pattern_matches": [],
+    "private_subject_word_matches": [],
+    "python_sources_parse": true
+  },
+  "scope_notes": [
+    "The published selected OnceNet encoder has42480parameters and was trained on mathematical data. The separate Bering model has1566756parameters and used real unlabeled acoustic pretraining.",
+    "Frozen experimental runners retain original hash-bound absolute paths and closed-run guards. They are archival implementations, not automatic portable rerun commands.",
+    "Original official fixture PNGs are excluded. Restore files from their recorded public URLs/hashes before invoking full inference-bundle verification or query wrappers.",
+    "The newest remote whale code snapshot is separate from the CPU-canonical inference snapshot; it is not silently merged or used to change frozen results.",
+    "No repository license grant was found; existing attribution and third-party terms remain applicable."
+  ]
+}

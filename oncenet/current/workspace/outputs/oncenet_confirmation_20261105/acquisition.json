@@ -1,0 +1,72 @@
+{
+  "complete": true,
+  "completed_utc": "2026-11-05T19:40:38.886087+00:00",
+  "intent_count": 195,
+  "eligible_count": 195,
+  "excluded": [],
+  "source_pixel_history_counts": {
+    "pixel_sha256": 51366,
+    "crop_pixel_sha256": 33000
+  },
+  "source_pixel_history_coverage": [
+    {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v46\\data\\records.json",
+      "record_count": 8250,
+      "records_with_available_native_or_crop_hash": 8250
+    },
+    {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v38\\fresh_gravity\\records.json",
+      "record_count": 5540,
+      "records_with_available_native_or_crop_hash": 5540
+    },
+    {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v39\\fresh_gravity\\records.json",
+      "record_count": 5219,
+      "records_with_available_native_or_crop_hash": 5219
+    },
+    {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v40\\fresh_gravity\\records.json",
+      "record_count": 5333,
+      "records_with_available_native_or_crop_hash": 5333
+    },
+    {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v40\\paired_gravity_1s\\records.json",
+      "record_count": 5332,
+      "records_with_available_native_or_crop_hash": 5332
+    },
+    {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v40\\paired_gravity_4s\\records.json",
+      "record_count": 5332,
+      "records_with_available_native_or_crop_hash": 5332
+    },
+    {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v41\\data_gravity\\records.json",
+      "record_count": 5980,
+      "records_with_available_native_or_crop_hash": 5980
+    },
+    {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v42\\fresh_gravity\\records.json",
+      "record_count": 1609,
+      "records_with_available_native_or_crop_hash": 1609
+    },
+    {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v43\\fresh_gravity\\records.json",
+      "record_count": 662,
+      "records_with_available_native_or_crop_hash": 662
+    },
+    {
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v44\\fresh_gravity\\records.json",
+      "record_count": 816,
+      "records_with_available_native_or_crop_hash": 816
+    }
+  ],
+  "pixel_audit_limitation": "Only available exact native/crop hashes are checked; no claim to universal perceptual duplicate exclusion.",
+  "all_models_same_cohort": true,
+  "no_model_inference": true,
+  "files": {
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_confirmation_20261105\\source_bindings.json": "34cd0fba345970d868e22e0d06488fbc54b05e8ed0ee4e454ab5a090f366e9f5",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_confirmation_20261105\\records_unlabelled.json": "f6420f6067cc14017c2c70333db1bf28d5df07b64f3f8da6406486c58f27015f",
+    "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_confirmation_20261105\\inputs.npz": "1f573c0f5ad72163213891d981e7a83b8dbdd0343cf2d05b7c6c32fdf9403588"
+  },
+  "protocol_sha256": "fe8c2f0555fc5bb74accd6b3cd01d6453f56bad4d799bba26b57a10a0d118f2f"
+}

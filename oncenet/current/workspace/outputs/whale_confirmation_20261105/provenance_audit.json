@@ -1,0 +1,405 @@
+{
+  "format": "whale_confirmation_provenance_audit_v1",
+  "created_utc": "2026-11-05T16:54:06.231284+00:00",
+  "scope": "Read-only source/model audit and synthetic-input CPU throughput; no real evaluation, training, GPU or reserved GravitySpy access",
+  "deployment_bundle": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\cloud_plan_20261105\\bering_cloud\\verified_deployment_evidence\\bering_cloud_cpu_rank_v3",
+  "all_asset_hashes_match": true,
+  "asset_checks": {
+    "manifest.json": {
+      "expected": "7e4ab9e15e759ece5457569ae13e79800355f6a1e281c166d08bdd720345f93f",
+      "actual": "7e4ab9e15e759ece5457569ae13e79800355f6a1e281c166d08bdd720345f93f"
+    },
+    "overlap_audit.json": {
+      "expected": "f229759a236fb6044ac3e5823133f736c3f1e6c4a9671308ca0fc15c0cc7965a",
+      "actual": "f229759a236fb6044ac3e5823133f736c3f1e6c4a9671308ca0fc15c0cc7965a"
+    },
+    "parity_check.py": {
+      "expected": "fadc441b4059b5fdd06aa80458bac4ac8adeaf7462307c0010746b1deae95acf",
+      "actual": "fadc441b4059b5fdd06aa80458bac4ac8adeaf7462307c0010746b1deae95acf"
+    },
+    "pilot_source_head.json": {
+      "expected": "18086c1d0b28fe2ddf5613b9ede8306ee75393976cca43f1c285e00968285bbf",
+      "actual": "18086c1d0b28fe2ddf5613b9ede8306ee75393976cca43f1c285e00968285bbf"
+    },
+    "protocol.json": {
+      "expected": "37a81709275d310566227cc2ed64d1253515d42a413a4217ce2812bf47acfb54",
+      "actual": "37a81709275d310566227cc2ed64d1253515d42a413a4217ce2812bf47acfb54"
+    },
+    "README.txt": {
+      "expected": "41a6a2738f189b3f51b9fc1c3d2c211d281b0201d64554b7cc3b2964daac24f0",
+      "actual": "41a6a2738f189b3f51b9fc1c3d2c211d281b0201d64554b7cc3b2964daac24f0"
+    },
+    "requirements.txt": {
+      "expected": "c6a63683da605f58dcdeb0ce7e430f0f0e5828f9ce6efcd53aaa0bcca7a9fd76",
+      "actual": "c6a63683da605f58dcdeb0ce7e430f0f0e5828f9ce6efcd53aaa0bcca7a9fd76"
+    },
+    "scanner.py": {
+      "expected": "5f5b4f8e0d9264fa0bb44a3acd6a901712917b7b5eb37e236a19c2d9d453246f",
+      "actual": "5f5b4f8e0d9264fa0bb44a3acd6a901712917b7b5eb37e236a19c2d9d453246f"
+    },
+    "whale/code/eval_level0.py": {
+      "expected": "1630724e11b8ab7dd0f172fd5062de6a7a95052c859d02acb6a5ad4ccca3335e",
+      "actual": "1630724e11b8ab7dd0f172fd5062de6a7a95052c859d02acb6a5ad4ccca3335e"
+    },
+    "whale/code/legacy_audio.py": {
+      "expected": "edd12c2b32db452db66768f0503988e87216a1afec9d96a2f0b11cbb1e16d7a0",
+      "actual": "edd12c2b32db452db66768f0503988e87216a1afec9d96a2f0b11cbb1e16d7a0"
+    },
+    "whale/code/oneshot.py": {
+      "expected": "b5eb5659f9abcaddbf37ad25d876fff1d38f2bba29494d95522d3ebfaf86dbbb",
+      "actual": "b5eb5659f9abcaddbf37ad25d876fff1d38f2bba29494d95522d3ebfaf86dbbb"
+    },
+    "whale/code/spectro.py": {
+      "expected": "31d7d1c36a9c65bcdbcccb98b2bc013b5e33ffd613332ff0a281b87ee646b9bd",
+      "actual": "31d7d1c36a9c65bcdbcccb98b2bc013b5e33ffd613332ff0a281b87ee646b9bd"
+    },
+    "whale/examples/bloop.npz": {
+      "expected": "f65a92420e8d18b4557681b406172e8c4f665d85ce0b652ee8e67753c405505b",
+      "actual": "f65a92420e8d18b4557681b406172e8c4f665d85ce0b652ee8e67753c405505b"
+    },
+    "whale/examples/narw.npz": {
+      "expected": "fe5b0f90d4cc47be58dc21a55d0d255e7360e5f1dcd46d0bb967fcc6c1270194",
+      "actual": "fe5b0f90d4cc47be58dc21a55d0d255e7360e5f1dcd46d0bb967fcc6c1270194"
+    },
+    "whale/examples/sei.npz": {
+      "expected": "e3a4474bb5d28e8ac57f19649b1a30ecebef1c90e58688a8184196fa13a5f308",
+      "actual": "e3a4474bb5d28e8ac57f19649b1a30ecebef1c90e58688a8184196fa13a5f308"
+    },
+    "whale/whale_ssl_v3/model.py": {
+      "expected": "43c24bc090a6dd03071e2ec3e5989099ed00b4e1c2326fc8244172a6d491c6a6",
+      "actual": "43c24bc090a6dd03071e2ec3e5989099ed00b4e1c2326fc8244172a6d491c6a6"
+    },
+    "whale/whale_ssl_v3/protocol.json": {
+      "expected": "d2c2dd0427e0a17b4cc8e6973b620f6649f5c1695c44be7d08bbc5d9211bcd15",
+      "actual": "d2c2dd0427e0a17b4cc8e6973b620f6649f5c1695c44be7d08bbc5d9211bcd15"
+    },
+    "whale/whale_ssl_v3/selected.pt": {
+      "expected": "1923efa8b01b682c9fa512a6c4c7960093c96482b50b10bde7f99c3085a6c4a2",
+      "actual": "1923efa8b01b682c9fa512a6c4c7960093c96482b50b10bde7f99c3085a6c4a2"
+    },
+    "migration_manifest.json": {
+      "expected": "6d9c22498408c4d7058d7b8898c06cbcb4c1cd39e0a23c89318e29a5979037c6",
+      "actual": "6d9c22498408c4d7058d7b8898c06cbcb4c1cd39e0a23c89318e29a5979037c6"
+    }
+  },
+  "local_selected_matches_bundle": true,
+  "training": {
+    "corpus_sha256": "30b836025185e8486e3b0ae98fd1a3a157204dfd690f564e50ae37335765647a",
+    "matches_protocol": true,
+    "total_windows": 77000,
+    "real_unlabeled_not_mathematical": true,
+    "event_src_sha256": "34743ce5cc73df0c6ffa206add4324878586cf475c99d20e6d812a2527ef6c94",
+    "event_boxes_sha256": "e4806869ac46da0a8ed1aed1e0984d6ca1063050536a1d70fc51b106e0082138",
+    "events_total": 26212,
+    "events_eligible": 21433,
+    "eligible_matches_protocol": true,
+    "source_indices_valid": true,
+    "sources": [
+      {
+        "source": "BERING03_M2___050519_202000.x.flac",
+        "corpus_start": 0,
+        "corpus_end_exclusive": 3000,
+        "all_events": 29,
+        "eligible_events": 24
+      },
+      {
+        "source": "BERING03_M2___050709_130000.x.flac",
+        "corpus_start": 3000,
+        "corpus_end_exclusive": 6000,
+        "all_events": 348,
+        "eligible_events": 272
+      },
+      {
+        "source": "BERING03_M2___050829_050845.x.flac",
+        "corpus_start": 6000,
+        "corpus_end_exclusive": 9000,
+        "all_events": 774,
+        "eligible_events": 572
+      },
+      {
+        "source": "BERING04_M2___051015_040941.x.flac",
+        "corpus_start": 9000,
+        "corpus_end_exclusive": 12000,
+        "all_events": 492,
+        "eligible_events": 383
+      },
+      {
+        "source": "BERING04_M2___051122_120500.x.flac",
+        "corpus_start": 12000,
+        "corpus_end_exclusive": 15000,
+        "all_events": 229,
+        "eligible_events": 162
+      },
+      {
+        "source": "BERING04_M2___051230_203922.x.flac",
+        "corpus_start": 15000,
+        "corpus_end_exclusive": 18000,
+        "all_events": 397,
+        "eligible_events": 309
+      },
+      {
+        "source": "Bering-M2y04d153h04m21.x.flac",
+        "corpus_start": 18000,
+        "corpus_end_exclusive": 21000,
+        "all_events": 594,
+        "eligible_events": 547
+      },
+      {
+        "source": "Bering1M2_d13_040623_051623.x.flac",
+        "corpus_start": 21000,
+        "corpus_end_exclusive": 24000,
+        "all_events": 284,
+        "eligible_events": 247
+      },
+      {
+        "source": "Bering_1_stM2_040628_212530.x.flac",
+        "corpus_start": 24000,
+        "corpus_end_exclusive": 27000,
+        "all_events": 270,
+        "eligible_events": 173
+      },
+      {
+        "source": "Bering_2_stM2_040928_120000.x.flac",
+        "corpus_start": 27000,
+        "corpus_end_exclusive": 30000,
+        "all_events": 422,
+        "eligible_events": 321
+      },
+      {
+        "source": "Bering_2_stM2_041014_143737.x.flac",
+        "corpus_start": 30000,
+        "corpus_end_exclusive": 33000,
+        "all_events": 1915,
+        "eligible_events": 1825
+      },
+      {
+        "source": "Bering_2_stM2_041115_230904.x.flac",
+        "corpus_start": 33000,
+        "corpus_end_exclusive": 36000,
+        "all_events": 1856,
+        "eligible_events": 1090
+      },
+      {
+        "source": "Bering_2_stM2_050111_110008.x.flac",
+        "corpus_start": 36000,
+        "corpus_end_exclusive": 39000,
+        "all_events": 0,
+        "eligible_events": 0
+      },
+      {
+        "source": "Bering_2_stM4_041016_004847.x.flac",
+        "corpus_start": 39000,
+        "corpus_end_exclusive": 42000,
+        "all_events": 2467,
+        "eligible_events": 2284
+      },
+      {
+        "source": "Bering_2_stM4_041028_084757.x.flac",
+        "corpus_start": 42000,
+        "corpus_end_exclusive": 45000,
+        "all_events": 886,
+        "eligible_events": 824
+      },
+      {
+        "source": "Bering_2_stM4_041127_131416.x.flac",
+        "corpus_start": 45000,
+        "corpus_end_exclusive": 48000,
+        "all_events": 2999,
+        "eligible_events": 2824
+      },
+      {
+        "source": "Bering_4_stM4_051213_145730.x.flac",
+        "corpus_start": 48000,
+        "corpus_end_exclusive": 51000,
+        "all_events": 25,
+        "eligible_events": 22
+      },
+      {
+        "source": "Bering_4_stM4_051230_202211.x.flac",
+        "corpus_start": 51000,
+        "corpus_end_exclusive": 54000,
+        "all_events": 1922,
+        "eligible_events": 1503
+      },
+      {
+        "source": "Bering_4_stM4_060116_211326.x.flac",
+        "corpus_start": 54000,
+        "corpus_end_exclusive": 57000,
+        "all_events": 4,
+        "eligible_events": 2
+      },
+      {
+        "source": "DCLDE2013 March28",
+        "corpus_start": 57000,
+        "corpus_end_exclusive": 77000,
+        "all_events": 10299,
+        "eligible_events": 8049
+      }
+    ],
+    "limits": "Source groups recoverable from corpus_build.log. No saved exact within-Bering-file timestamps. DCLDE March28 support day overlaps training; later DCLDE week already evaluated, not independent confirmation. No acoustic duplicate audit."
+  },
+  "prior_selection": {
+    "positive_supports": 10,
+    "query_windows": 6641,
+    "checkpoint_layer_choices": 60,
+    "selected": "ckpt_02250.pt:final"
+  },
+  "prior_overlap_audit": {
+    "format": "archive_overlap_audit_v1",
+    "pretraining": "77000 real unlabeled windows; no borrowed neural weights; not mathematical-only",
+    "pretraining_sources": {
+      "bering_files": [
+        "BERING03_M2___050519_202000.x.flac",
+        "BERING03_M2___050709_130000.x.flac",
+        "BERING03_M2___050829_050845.x.flac",
+        "BERING04_M2___051015_040941.x.flac",
+        "BERING04_M2___051122_120500.x.flac",
+        "BERING04_M2___051230_203922.x.flac",
+        "Bering-M2y04d153h04m21.x.flac",
+        "Bering1M2_d13_040623_051623.x.flac",
+        "Bering_1_stM2_040628_212530.x.flac",
+        "Bering_2_stM2_040928_120000.x.flac",
+        "Bering_2_stM2_041014_143737.x.flac",
+        "Bering_2_stM2_041115_230904.x.flac",
+        "Bering_2_stM2_050111_110008.x.flac",
+        "Bering_2_stM4_041016_004847.x.flac",
+        "Bering_2_stM4_041028_084757.x.flac",
+        "Bering_2_stM4_041127_131416.x.flac",
+        "Bering_4_stM4_051213_145730.x.flac",
+        "Bering_4_stM4_051230_202211.x.flac",
+        "Bering_4_stM4_060116_211326.x.flac"
+      ],
+      "bering_windows": 57000,
+      "dclde_20090328_windows": 20000
+    },
+    "eligible_key_count": 1353,
+    "excluded_known_pretraining_object_keys": [
+      "mbarc_bering/audio/mbarc_lmr_bering01-m2/audio/Bering-M2y04d153h04m21.x.flac",
+      "mbarc_bering/audio/mbarc_lmr_bering01-m2/audio/Bering1M2_d13_040623_051623.x.flac",
+      "mbarc_bering/audio/mbarc_lmr_bering01-m2/audio/Bering_1_stM2_040628_212530.x.flac",
+      "mbarc_bering/audio/mbarc_lmr_bering04-m4/audio/Bering_4_stM4_051213_145730.x.flac",
+      "mbarc_bering/audio/mbarc_lmr_bering04-m4/audio/Bering_4_stM4_051230_202211.x.flac",
+      "mbarc_bering/audio/mbarc_lmr_bering04-m4/audio/Bering_4_stM4_060116_211326.x.flac"
+    ],
+    "exact_filename_pretraining_intersection_remaining": [],
+    "temporal_or_acoustic_duplicate_audit": "Not established: timestamps from names do not rule out replicated/overlapping recordings. No unseen-accuracy claim.",
+    "support_provenance": {
+      "narw": "DCLDE North Atlantic RIWH detected upcall, 2009-03-28 00:19:30; not verified North Pacific species exemplar; support day used in unlabeled pretraining",
+      "sei": "DCLDE SEWH 2009-04-02 19:47:20, Possibly_Detected; not confirmed species ground truth; same day included in earlier validation",
+      "bloop": "NOAA PMEL 1997 Bloop/icequake clip, real 45-57s; K=8; not a novel biological phenomenon"
+    },
+    "selection_budget": "Earlier selected checkpoint/depth using 10 labeled supports and 6641 selection query windows across 60 alternatives; one positive per retrieval episode is not one labeled example for all method development.",
+    "search_labels": "Unlabeled Bering search; no recall, accuracy, false-alarm, or discovery claims from rankings.",
+    "known_calendar_separation": "Bering 2004-2006 versus DCLDE supports 2009 and PMEL 1997; does not prove no source duplicates.",
+    "source_hashes": {
+      "whale\\corpus_build.log": "3c4cf1861a3e51eac57d02140ccd6c327bc450fb6298cc385cfc065fadf6976c",
+      "whale\\code\\build_corpus.py": "66e89184001aa2dca57dd4c053b9da0149e8d62ee066b7db051da2065000380d",
+      "whale\\bering\\inventory.json": "3cc65102eabea5c32c132f9d0e349e912c25f339142f241eee9cf854466d821b",
+      "whale\\code\\make_examples.py": "a7e866bf670d7409423c213c32452322594ee0289abee1606838abcc52c0eec2",
+      "whale\\whale_ssl_v3\\selection_v2.json": "cd9ddfa331f46e6b9325717f2a028086385bcf59b554e803713a64b99906bc2c"
+    }
+  },
+  "references": {
+    "narw": {
+      "npz_sha256": "fe5b0f90d4cc47be58dc21a55d0d255e7360e5f1dcd46d0bb967fcc6c1270194",
+      "window_sha256": "d46ffaad59899bf780a741dd9b14b453a592188a62fbea9620a72b13d77e5958",
+      "box": [
+        10,
+        150,
+        77,
+        131
+      ],
+      "shape": [
+        140,
+        160
+      ],
+      "speed": 1,
+      "note": "DCLDE 2013 RIWH upcall 2009-03-28 00:19:30 (first Level 0 test reference)"
+    },
+    "sei": {
+      "npz_sha256": "e3a4474bb5d28e8ac57f19649b1a30ecebef1c90e58688a8184196fa13a5f308",
+      "window_sha256": "5f47767e4a6bf3406ebb8f63b393587c16b21b94e34e26090bad6c6f55361aa1",
+      "box": [
+        50,
+        110,
+        120,
+        140
+      ],
+      "shape": [
+        140,
+        160
+      ],
+      "speed": 1,
+      "note": "DCLDE 2013 SEWH 2009-04-02 19:47:20"
+    },
+    "bloop": {
+      "npz_sha256": "f65a92420e8d18b4557681b406172e8c4f665d85ce0b652ee8e67753c405505b",
+      "window_sha256": "8ef7950a3963ba5cc214229064d742103f124938b37d4501b4ce1f620496fdaf",
+      "box": [
+        50,
+        110,
+        55,
+        133
+      ],
+      "shape": [
+        140,
+        160
+      ],
+      "speed": 8,
+      "note": "NOAA PMEL bloop.wav, real 45-57 s, 5-35 Hz"
+    }
+  },
+  "random_control": {
+    "existing_random_checkpoint_in_whale": false,
+    "recommendation": "Freeze scratch SpectroEncoder at seed2404 before any scoring; same final layer, reference phases, preprocessing, matching and calibration. Current-library reconstruction, not provably byte-identical original init. Rebuild reference tokens with random encoder; replacing encoder alone leaves trained reference tokens and is invalid.",
+    "seed": 2404,
+    "torch_version": "2.11.0+cu128",
+    "canonical_state_content_sha256": "e3572a1c16e2670dd6f8cad149e5af52d81dce72ae69574d0ff6d985570bf24d",
+    "checkpoint_saved": false
+  },
+  "inference_recommendation": {
+    "cpu_python": "C:\\Users\\brita\\.venvs\\hypernet-gpu\\Scripts\\python.exe",
+    "api": "Insert bundle whale/code into sys.path; CUDA_VISIBLE_DEVICES empty before torch import; oneshot.DEV=cpu before OneShot creation; OneShot(window,box,methods=(v3,pixels,xcorr),phases=10).score(uint8_Bx140x160). Use one process, float32, 2-4threads, interop1, sequential trained/random passes. No scanner.run_item (requires CUDA).",
+    "independent_data": "Exclude all19 Bering training recordings, DCLDE2013 previously evaluated week, support-source recordings and duplicates. Separate calibration/test by recording/day/deployment.",
+    "calibration": "Finite alpha0.001 split-conformal operating point needs at least999 calibration negatives, and dependence among overlapping windows must be handled at event/recording-group level; do not call correlated windows independent.",
+    "default_python_limitation": "Default Python312 lacks soundfile; use existing hypernet-gpu environment with CUDA hidden, no package changes needed."
+  },
+  "cpu_benchmark": {
+    "scope": "Single timed synthetic-noise batch per config; not accuracy, real test or final ETA",
+    "measurements": [
+      {
+        "threads": 2,
+        "batch": 16,
+        "seconds": 0.16516699999920093,
+        "windows_per_second": 96.87165111721717,
+        "methods": [
+          "v3",
+          "pixels",
+          "xcorr"
+        ]
+      },
+      {
+        "threads": 4,
+        "batch": 16,
+        "seconds": 0.09863169999152888,
+        "windows_per_second": 162.21965150528868,
+        "methods": [
+          "v3",
+          "pixels",
+          "xcorr"
+        ]
+      },
+      {
+        "threads": 4,
+        "batch": 32,
+        "seconds": 0.22309499999391846,
+        "windows_per_second": 143.43665255103124,
+        "methods": [
+          "v3",
+          "pixels",
+          "xcorr"
+        ]
+      }
+    ]
+  }
+}

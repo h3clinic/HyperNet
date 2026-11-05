@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "completed_utc": "2026-11-05T22:32:48.235370+00:00",
+  "protocol_sha256": "52acaeca63bf959e340fecaac65dd796a6de5920409a1c217172e160cff33380",
+  "runner_sha256": "8f49f037539a602eb9533e7dc7737b623920df1da47e7d86b1a03303a191ed70",
+  "review_hashes": {
+    "independent_runner_review.json": "bb4d231cf3aca3ba6aa6c128124f5f2090c041b0d9c2e40b4d8106d02856a5c9",
+    "independent_data_review.json": "101eeef7f5fac3ea9338553c643a0d8ea3df9ec75793082199fb28c393f14c5a"
+  },
+  "source_checks": {
+    "protocol_bindings": 37,
+    "metadata_source_bindings": 8291,
+    "all_current_hashes_match": true
+  },
+  "descriptive_post_protocol_supplement": {
+    "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\oncenet_factorial_20261105\\detector_summary.py",
+    "sha256": "738557ff7c6d742673cbdf0a3643de6da981537a6486836145170d7b09951db3",
+    "scope": "H1/L1 point summaries of all frozen factorial cells; no new primary tests, no tuning, no changed thresholds, no selected references/seeds; missing-target strata have unavailable full-target macro.",
+    "timing": "Bound before fresh acquisition completion and all model scoring; planned metadata already known.",
+    "pooled_primary_unchanged": true
+  },
+  "no_new_image_access": true,
+  "no_model_inference": true,
+  "no_training": true,
+  "no_test_metrics": true,
+  "scope": "Independent exact source/review/hash verification after protocol freeze; prior runner and data code reviews retained.",
+  "limitations": [
+    "Planned label-informed cohort, not label-blind population sample.",
+    "Conditional group intervals and sparse low-FPR tails remain as preregistered."
+  ]
+}

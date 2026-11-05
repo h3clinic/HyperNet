@@ -1,0 +1,105 @@
+{
+  "experiment": "v46 generator-only mathematical spectrogram ablation",
+  "seeds": [
+    45011,
+    45029,
+    45047
+  ],
+  "parameters": 42480,
+  "steps": 800,
+  "batch": 4,
+  "arm": "spectrogram",
+  "initialization": "The exact saved v45 random checkpoint for each seed; no trained or external borrowed weights",
+  "borrowed_neural_weights": false,
+  "real_encoder_training_images": 0,
+  "trained_changes": "Generator only. Frozen v45 global-diversity architecture, base/local/InfoNCE/variance objectives, optimizer and clipping are called unchanged.",
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "clip": 1.0
+  },
+  "original_objective_protocol_sha256": "5cfd9fe0efd1adcf6bce6bf1a8068f0472f579dc23718cf197001960f9721d9e",
+  "original_model_protocol_sha256": "550103b3d64411be6ba7d8c70bc14337c5456e3f93812ae09f3e3222f986df0a",
+  "initial_controls": [
+    {
+      "seed": 45011,
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\seed_45011\\random.pt",
+      "sha256": "3fc52ecf8b131be27f6623f1930b8c74e81450dfc2bf8b07a0f5c980ed90eb78"
+    },
+    {
+      "seed": 45029,
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\seed_45029\\random.pt",
+      "sha256": "e473372c62e01c41863d7321408e919e5e6958cef4645f7c4285cc0fa494aa19"
+    },
+    {
+      "seed": 45047,
+      "path": "C:\\Users\\brita\\Documents\\Codex\\2026-11-01\\wan\\outputs\\hypernet_v45\\multiseed\\seed_45047\\random.pt",
+      "sha256": "09559f87e56e573a17b6a28d44a90a454f64df7528194765f9c10ce4705929f3"
+    }
+  ],
+  "train_ranges": {
+    "45011": [
+      4600000,
+      4603199
+    ],
+    "45029": [
+      4610000,
+      4613199
+    ],
+    "45047": [
+      4620000,
+      4623199
+    ]
+  },
+  "order_sha256": {
+    "45011": "5286664cbddb9372277b8c6ad3c858499ed128f81149a37a0fbf245759686bf1",
+    "45029": "b9e6ea42067e346ede9d7e43b9d0c9e3ba8f44f8425b97d3813a03e8425a4b43",
+    "45047": "a6ee3c93150a166b7ec40c569330e595b24fbfd840adf701e635312425f0a977"
+  },
+  "relative_order_same_as_v45": true,
+  "families": [
+    "chirp",
+    "line",
+    "arch",
+    "burst",
+    "repeated"
+  ],
+  "positive_invariances": "Same components/count/relative geometry under mild axis-preserving affine pose, linewidth/envelope/gain/colored-noise changes; component frequency geometry unchanged by appearance.",
+  "negative_edits": [
+    "repetition",
+    "connectivity",
+    "curvature",
+    "orientation"
+  ],
+  "negative_nuisance_control": "Positive and all edited queries share background/pose/gain/width; each foreground RMS normalized before shared intensity transform.",
+  "input": "Native256x2561-second time/log-frequency10\u20132048Hz, downsample128x128full and nativebottomthird enlarged128x128low; RGB channels identical. No axes, timestamps, text or borders.",
+  "readouts": [
+    "base",
+    "spatial"
+  ],
+  "primary_readout": "base",
+  "synthetic_sets": {
+    "spectrogram": {
+      "split": "test",
+      "offset": 4690000,
+      "identities": 256,
+      "generator_namespace": "v46-spectral-power"
+    },
+    "retention": {
+      "split": "test",
+      "offset": 4691000,
+      "identities": 256,
+      "generator_namespace": "v44-part-graphs"
+    }
+  },
+  "synthetic_models": "All9 matched random3/v45global3/v46spectrogram3 evaluated once on each new set after training; no test-driven selection.",
+  "real_scope": "Root evaluates only previously consumed USED data with fixed one positive reference and negative FIT/CAL. Separate one-second/four-duration ablation. No new real holdout or claims of confirmed discoveries.",
+  "limitations": [
+    "Domain-motivated power-ridge simulator rather than universal image generator.",
+    "New latent test identities share their respective grammars and renderer.",
+    "Four edits per identity are dependent and three seeds are not additional test images.",
+    "Soft variance regularization does not mathematically remove the exact constant stationary point.",
+    "Changes in generator distribution include primitive shapes and nuisance statistics; this ablation cannot separate those internally."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "manifest.json": "7e4ab9e15e759ece5457569ae13e79800355f6a1e281c166d08bdd720345f93f",
+  "overlap_audit.json": "f229759a236fb6044ac3e5823133f736c3f1e6c4a9671308ca0fc15c0cc7965a",
+  "parity_check.py": "fadc441b4059b5fdd06aa80458bac4ac8adeaf7462307c0010746b1deae95acf",
+  "pilot_source_head.json": "18086c1d0b28fe2ddf5613b9ede8306ee75393976cca43f1c285e00968285bbf",
+  "protocol.json": "37a81709275d310566227cc2ed64d1253515d42a413a4217ce2812bf47acfb54",
+  "README.txt": "41a6a2738f189b3f51b9fc1c3d2c211d281b0201d64554b7cc3b2964daac24f0",
+  "requirements.txt": "c6a63683da605f58dcdeb0ce7e430f0f0e5828f9ce6efcd53aaa0bcca7a9fd76",
+  "scanner.py": "5f5b4f8e0d9264fa0bb44a3acd6a901712917b7b5eb37e236a19c2d9d453246f",
+  "whale/code/eval_level0.py": "1630724e11b8ab7dd0f172fd5062de6a7a95052c859d02acb6a5ad4ccca3335e",
+  "whale/code/legacy_audio.py": "edd12c2b32db452db66768f0503988e87216a1afec9d96a2f0b11cbb1e16d7a0",
+  "whale/code/oneshot.py": "b5eb5659f9abcaddbf37ad25d876fff1d38f2bba29494d95522d3ebfaf86dbbb",
+  "whale/code/spectro.py": "31d7d1c36a9c65bcdbcccb98b2bc013b5e33ffd613332ff0a281b87ee646b9bd",
+  "whale/examples/bloop.npz": "f65a92420e8d18b4557681b406172e8c4f665d85ce0b652ee8e67753c405505b",
+  "whale/examples/narw.npz": "fe5b0f90d4cc47be58dc21a55d0d255e7360e5f1dcd46d0bb967fcc6c1270194",
+  "whale/examples/sei.npz": "e3a4474bb5d28e8ac57f19649b1a30ecebef1c90e58688a8184196fa13a5f308",
+  "whale/whale_ssl_v3/model.py": "43c24bc090a6dd03071e2ec3e5989099ed00b4e1c2326fc8244172a6d491c6a6",
+  "whale/whale_ssl_v3/protocol.json": "d2c2dd0427e0a17b4cc8e6973b620f6649f5c1695c44be7d08bbc5d9211bcd15",
+  "whale/whale_ssl_v3/selected.pt": "1923efa8b01b682c9fa512a6c4c7960093c96482b50b10bde7f99c3085a6c4a2",
+  "migration_manifest.json": "6d9c22498408c4d7058d7b8898c06cbcb4c1cd39e0a23c89318e29a5979037c6"
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "protocol_sha256": "a8bc9bd07820e5086718d1243d6efde20d81b19608c514c72f56aa3f2f197815",
+  "registry_sha256": "b3af51943275ad69fc57c564a7a3f0a35479e5d3a0c03538b00c49a5402688ec",
+  "synthetic_results_sha256": "ce1a7d09c522de0a7c8507e402eddbede2cb94f9e5fa36c1390f6ec4f6894b57",
+  "models": 9,
+  "sets": 2,
+  "identities_per_set": 256
+}
