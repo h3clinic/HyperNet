@@ -1,0 +1,118 @@
+{
+ "rates": {
+  "0.65": {
+   "autumn_events": 247,
+   "autumn_hours": 1568,
+   "autumn_per_100h": 15.75,
+   "june_events": 373,
+   "june_hours": 216,
+   "june_per_100h": 173.02000427246094
+  },
+  "0.7": {
+   "autumn_events": 49,
+   "autumn_hours": 1568,
+   "autumn_per_100h": 3.119999885559082,
+   "june_events": 72,
+   "june_hours": 216,
+   "june_per_100h": 33.400001525878906
+  },
+  "0.75": {
+   "autumn_events": 9,
+   "autumn_hours": 1568,
+   "autumn_per_100h": 0.5699999928474426,
+   "june_events": 8,
+   "june_hours": 216,
+   "june_per_100h": 3.7100000381469727
+  }
+ },
+ "june_top": [
+  {
+   "file": "BERING03_M2___050626_191615",
+   "start_s": 1772.0,
+   "v3": 0.794,
+   "xcorr": 0.694,
+   "start_end_dur": [
+    56.7,
+    47.3,
+    0.48
+   ]
+  },
+  {
+   "file": "BERING03_M2___050626_191615",
+   "start_s": 3242.0,
+   "v3": 0.768,
+   "xcorr": 0.676,
+   "start_end_dur": [
+    56.7,
+    47.3,
+    0.42
+   ]
+  },
+  {
+   "file": "BERING03_M2___050630_073845",
+   "start_s": 1892.0,
+   "v3": 0.766,
+   "xcorr": 0.632,
+   "start_end_dur": [
+    56.7,
+    44.2,
+    0.38
+   ]
+  },
+  {
+   "file": "BERING03_M2___050629_033115",
+   "start_s": 7362.0,
+   "v3": 0.763,
+   "xcorr": 0.641,
+   "start_end_dur": [
+    63.0,
+    47.3,
+    0.38
+   ]
+  },
+  {
+   "file": "BERING03_M2___050629_125345",
+   "start_s": 6378.0,
+   "v3": 0.763,
+   "xcorr": 0.55,
+   "start_end_dur": [
+    56.7,
+    50.4,
+    0.1
+   ]
+  },
+  {
+   "file": "BERING03_M2___050627_201615",
+   "start_s": 1252.0,
+   "v3": 0.76,
+   "xcorr": 0.633,
+   "start_end_dur": [
+    59.9,
+    47.3,
+    0.42
+   ]
+  },
+  {
+   "file": "BERING03_M2___050629_190845",
+   "start_s": 5786.0,
+   "v3": 0.756,
+   "xcorr": 0.655,
+   "start_end_dur": [
+    59.9,
+    47.3,
+    0.35
+   ]
+  },
+  {
+   "file": "BERING03_M2___050627_201615",
+   "start_s": 10398.0,
+   "v3": 0.754,
+   "xcorr": 0.69,
+   "start_end_dur": [
+    56.7,
+    41.0,
+    0.38
+   ]
+  }
+ ]
+}

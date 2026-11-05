@@ -1,0 +1,22 @@
+{
+ "queries": 6641,
+ "positives": 641,
+ "raw_pixels": 0.21854370898900521,
+ "xcorr": 0.4852064520843947,
+ "xcorr_box": 0.5122548885701245,
+ "token_nn": 0.25352066522322236,
+ "box_token_nn": 0.2674429931651044,
+ "aligned": 0.27347078261755964,
+ "chosen": "phase_block:local",
+ "phase_aligned:pixels": 0.148153478313597,
+ "phase_aligned:local": 0.34463933401600355,
+ "phase_aligned:block1": 0.3499262394793491,
+ "phase_aligned:block2": 0.3180122383901155,
+ "phase_aligned:block4": 0.2898127330264043,
+ "phase_aligned:desc": 0.2647138275374636,
+ "phase_block:pixels": 0.5281695286927472,
+ "phase_block:local": 0.5434012607934635,
+ "phase_block:block1": 0.5404059750608456,
+ "phase_block:block2": 0.5287060458412125,
+ "phase_block:block4": 0.49191127929221085
+}

@@ -1,0 +1,14 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793838780.673481   38492 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793838784.204352   38492 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+mbarc_lmr_bering02-m2 582 files, 552 to do
+1 552 Bering_2_stM2_041003_091115.x.flac 5624 clips 0 hits 61s
+2 552 Bering_2_stM2_041003_130537.x.flac 5624 clips 0 hits 112s
+3 552 Bering_2_stM2_041003_170000.x.flac 5624 clips 0 hits 152s
+4 552 Bering_2_stM2_041003_205422.x.flac 5624 clips 0 hits 220s
+5 552 Bering_2_stM2_041004_004845.x.flac 5624 clips 0 hits 274s
+6 552 Bering_2_stM2_041004_044307.x.flac 5624 clips 0 hits 326s
+7 552 Bering_2_stM2_041004_083730.x.flac 5624 clips 0 hits 375s
+8 552 Bering_2_stM2_041004_123152.x.flac 5624 clips 0 hits 424s
+9 552 Bering_2_stM2_041004_162615.x.flac 5624 clips 0 hits 478s

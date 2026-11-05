@@ -1,5 +1,7 @@
 # HyperNet
 
+**Audio branch:** [one-shot whale call search](whale/README.md) uses one example call to search unlabeled ocean recordings. So far it has found 20 sei-like candidate calls in Bering Sea recordings from autumn 2004. These are unconfirmed candidates.
+
 **One-reference recognition experiments with explicit training budgets. The latest v13 real-photo test failed: zero of 96 positive TEST photographs were correctly localized and accepted.** The earlier synthetic-pattern result did not transfer to natural-category detection in this cohort. No borrowed pretrained weights or natural-photo weight training are used in these HyperNet paths.
 
 Version **0.13.0** tests one automatically selected boxed reference per category on 288 new COCO query photos. The primary keeps its synthetic cutoff and rejects all TEST positives and negatives. A secondary cutoff calibrated using **96 additional real DEV photos** accepts 7/96 positive scenes and 2/96 negative scenes for the native matcher, but **none of its selected positive boxes is correct at IoU ≥0.5**. Presence balanced accuracy of 52.60% does not establish successful localization. [All four methods, both operating points and audits](benchmarks/v0.13/README.md) are published, including the failure.
