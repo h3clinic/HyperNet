@@ -13,7 +13,9 @@ The reference is one labeled sei whale downsweep from DCLDE 2013: `NOPP6_EST_200
 | M2, Bering 2 | Oct 2004 – Jan 2005 | done |
 | M4, Bering 2 | Oct – Dec 2004 | done |
 | M2, Bering 3 | Apr – Sep 2005 | done |
-| M2, Bering 4 | from late Sep 2005 | running |
+| M2, Bering 4 | Sep 2005 – Jan 2006 | done |
+
+All 3,007 recording files (about 13 months of audio) have been searched.
 
 - **20 sei-like candidate calls.** They sweep from about 60 Hz down to 25–35 Hz in about 1 s.
   - 14 on 25 Oct 2004 at M2, in 4 bouts.
@@ -22,6 +24,8 @@ The reference is one labeled sei whale downsweep from DCLDE 2013: `NOPP6_EST_200
   - 4 on 21 Nov 2004 at M2.
 - **Fin whale control.** June 2005 (216 h at M2) gives similar match scores, but those calls end at 44–50 Hz, compared with 19–35 Hz for the candidates. The search score alone does not separate the species; the shape test in `code/fair_measure.py` does. See `june_control_results.json`, `fair_measure.json` and `june_control_hits.png`.
 - **2005 (Apr–Sep):** almost all strong matches are fin-like. One borderline call on 15 Jul 2005 ends at 38 Hz (`july2005_candidate.png`).
+- **Sep 2005 – Jan 2006:** of the top 60 matches, 45 are fin-like, 13 unclear (mostly fin 20 Hz pulses) and 2 sei-like (`bering04_top60.json`). The sei-like ones are a clean 70→35 Hz downsweep on 6 Jan 2006 at about 10:07 and a 65→25 Hz sweep among fin calls on 7 Jan 2006 at about 07:11. A sweep on 29 Sep 2005 (55→18 Hz) is also possible. See `final_new_candidates.png` and `autumn2005_check.png`.
+- **Overall top 40 across all 4 deployments** (`new_candidates_final.json`): the sei-like matches are all from Oct–Nov 2004. The 2005–06 calls above rank lower.
 - **Cross-check with Google's multispecies whale model** (trained, 12 classes, no sei class), run on the found clips only: inconclusive. Its fin class fired on 0 of 20 candidates, 0 of 17 fin-like calls, 0 of 84 background windows and 0 of 3 labeled sei calls. See `google_validation.json` and `pretrained/validate_google.py`.
 - **Prior reports:** we found no published sei whale (or 65→35 Hz downsweep) detections from these moorings for 2004–06.
 

@@ -132,6 +132,18 @@
   "edge": false
  },
  {
+  "score": 0.76,
+  "dep": "mbarc_lmr_bering04-m2",
+  "file": "BERING04_M2___051030_025307",
+  "s": 7654.0,
+  "kind": "fin-like",
+  "start": 53.6,
+  "end": 47.3,
+  "dur": 0.42,
+  "width": 6.3,
+  "edge": false
+ },
+ {
   "score": 0.759,
   "dep": "mbarc_lmr_bering03-m2",
   "file": "BERING03_M2___050608_021845",
@@ -349,6 +361,18 @@
  },
  {
   "score": 0.745,
+  "dep": "mbarc_lmr_bering04-m2",
+  "file": "BERING04_M2___051010_223556",
+  "s": 10036.0,
+  "kind": "unclear",
+  "start": 28.4,
+  "end": 19.0,
+  "dur": 1.2,
+  "width": 9.4,
+  "edge": false
+ },
+ {
+  "score": 0.745,
   "dep": "mbarc_lmr_bering03-m2",
   "file": "BERING03_M2___050701_173000",
   "s": 9298.0,
@@ -453,30 +477,6 @@
   "end": 56.7,
   "dur": 0.05,
   "width": 3.1,
-  "edge": false
- },
- {
-  "score": 0.74,
-  "dep": "mbarc_lmr_bering03-m2",
-  "file": "BERING03_M2___050601_013345",
-  "s": 5630.0,
-  "kind": "fin-like",
-  "start": 63.0,
-  "end": 50.4,
-  "dur": 0.65,
-  "width": 12.6,
-  "edge": false
- },
- {
-  "score": 0.74,
-  "dep": "mbarc_lmr_bering03-m2",
-  "file": "BERING03_M2___050715_055845",
-  "s": 6384.0,
-  "kind": "sei-like",
-  "start": 59.9,
-  "end": 37.9,
-  "dur": 1.08,
-  "width": 22.0,
   "edge": false
  }
 ]
