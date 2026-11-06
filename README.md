@@ -1,6 +1,6 @@
 # OnceNet
 
-One-reference retrieval of rare visual and acoustic patterns. The repository retains its historical **HyperNet** name and Python package paths.
+One-reference retrieval of rare visual and acoustic patterns. The project was originally named **HyperNet**; historical Python package paths are retained.
 
 ## Current models
 
